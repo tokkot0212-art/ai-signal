@@ -87,6 +87,17 @@ main{max-width:720px;margin:0 auto;padding:14px 16px}
 .count{font-size:12px;color:var(--sub);margin-left:auto}
 .title{font-size:17px;font-weight:750;line-height:1.45;margin:10px 0 6px;word-break:break-word}
 .summary{font-size:14.5px;color:var(--ink);margin:0 0 8px}
+.ov{background:var(--chip);border-radius:12px;padding:12px 14px;margin:8px 0 4px}
+.ov-h{font-size:11.5px;font-weight:800;color:var(--sub);letter-spacing:.06em;margin:0 0 4px}
+.ov-h:not(:first-child){margin-top:10px}
+.ov p{margin:0;font-size:14.5px;line-height:1.7}
+.ov ul{margin:0;padding-left:1.2em;font-size:14px;line-height:1.65}
+.ov li{margin:2px 0}
+.ov li::marker{color:var(--accent)}
+.terms{display:flex;flex-direction:column;gap:6px}
+.term{font-size:13.5px;line-height:1.55}
+.term b{display:inline-block;color:var(--accent);background:var(--surface);border-radius:6px;padding:0 7px;margin-right:6px;font-size:12.5px}
+.ov.raw p{color:var(--sub);font-size:13.5px}
 .meters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0}
 .meter label{font-size:11px;color:var(--sub);display:flex;justify-content:space-between}
 .meter label b{color:var(--ink);font-weight:700}
@@ -198,6 +209,8 @@ function render(){
   let html = "";
   if (feed.demo) html += `<div class="banner">サンプルデータを表示しています（架空の投稿）。X APIキーを設定すると本物のフィードに切り替わります。</div>`;
   if (feed.note) html += `<div class="banner">${esc(feed.note)}</div>`;
+  if (!feed.demo && !(feed.stats||{}).llm_reviewed && feed.clusters.some(c => c.verdict !== "excluded"))
+    html += `<div class="banner">日本語の概要・解説は、GitHub Secrets に ANTHROPIC_API_KEY を登録すると表示されます。</div>`;
   html += `<p class="intro">${INTRO[state.tab]}</p>`;
   html += list.length ? list.map(card).join("") : `<div class="empty">この条件に当てはまる話題はありません</div>`;
   $("#main").innerHTML = html;
@@ -205,6 +218,17 @@ function render(){
   const s = feed.stats || {};
   $("#footer").textContent = `投稿${s.posts ?? 0}件 → 話題${s.clusters ?? 0}件に整理` +
     (s.month_budget_usd ? ` ・ 今月のAPI費用 $${(s.month_spend_usd||0).toFixed(2)} / $${s.month_budget_usd}` : "");
+}
+
+function overview(c){
+  if (!c.summary){
+    const raw = (c.posts[0]?.text || "").replace(/https?:\/\/\S+/g,"").trim();
+    if (!raw) return "";
+    return `<div class="ov raw"><div class="ov-h">投稿の冒頭（原文）</div><p>${esc(raw.slice(0,140))}${raw.length>140?"…":""}</p></div>`;
+  }
+  const pts = (c.points||[]).length ? `<div class="ov-h">理解を深めるポイント</div><ul>${c.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>` : "";
+  const terms = (c.terms||[]).length ? `<div class="ov-h">用語メモ</div><div class="terms">${c.terms.map(t=>`<div class="term"><b>${esc(t.term)}</b>${esc(t.desc)}</div>`).join("")}</div>` : "";
+  return `<div class="ov"><div class="ov-h">概要</div><p>${esc(c.summary)}</p>${pts}${terms}</div>`;
 }
 
 function card(c){
@@ -235,7 +259,7 @@ function card(c){
       <span class="count">${c.post_count}件の投稿 · ${c.authors.length}人</span>
     </div>
     <div class="title">${esc(c.title)}</div>
-    ${c.summary ? `<p class="summary">${esc(c.summary)}</p>` : ""}
+    ${overview(c)}
     <div class="meters">
       <div class="meter"><label>信頼度 <b>${c.credibility}</b></label><div class="track"><div class="fill" style="width:${c.credibility}%;background:${barColor(c.credibility)}"></div></div></div>
       <div class="meter"><label>熱量 <b>${c.heat}</b></label><div class="track"><div class="fill" style="width:${c.heat}%;background:var(--accent)"></div></div></div>

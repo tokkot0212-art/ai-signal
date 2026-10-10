@@ -553,7 +553,8 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
             apply_review(c, r)
             cache[c["id"]] = {"sig": sig, "r": r}
             n += 1
-    translate_posts(targets, key, lc, cache)
+    # 訳は概要の上限に関係なく、ノイズ以外の英語投稿すべてに付ける
+    translate_posts([c for c in clusters if c["verdict"] != "excluded"], key, lc, cache)
     return n
 
 

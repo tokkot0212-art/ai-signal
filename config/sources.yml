@@ -145,5 +145,5 @@ rumor_phrases:
 llm:
   enabled: true
   model: claude-haiku-5-5
-  max_clusters: 30   # 1回の実行で概要を付ける話題の最大数（ノイズは対象外）
+  max_clusters: 80   # 概要を付ける話題の最大数（ノイズは対象外。作成済みは再利用するので課金は新しい話題の分だけ）
   batch_size: 6      # 1回のAPI呼び出しでまとめて処理する話題数

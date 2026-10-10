@@ -414,13 +414,43 @@ REVIEW_TOOL = {
 }
 
 
-def _call_claude(key: str, model: str, prompt: str) -> list[dict]:
+TRANSLATE_TOOL = {
+    "name": "submit_translations",
+    "description": "各投稿の日本語訳を提出する",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "translations": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {"post_id": {"type": "string"}, "ja": {"type": "string"}},
+                    "required": ["post_id", "ja"],
+                },
+            }
+        },
+        "required": ["translations"],
+    },
+}
+
+TRANSLATE_PROMPT = """次のXの投稿（英語など日本語以外）を、自然で読みやすい日本語に翻訳してください。
+- 意訳しすぎず、数値・固有名詞・製品名・URLはそのまま残す
+- 絵文字やハッシュタグは残してよい
+- 全ての投稿について submit_translations ツールで提出する
+
+投稿:
+"""
+
+
+def _call_claude(key: str, model: str, prompt: str, tool: dict = None) -> list[dict]:
     """ツール呼び出しで構造化された結果を受け取る（自由文JSONの崩れを防ぐ）。"""
+    tool = tool or REVIEW_TOOL
+    field = "reviews" if tool is REVIEW_TOOL else "translations"
     body = json.dumps({
         "model": model,
         "max_tokens": 8000,
-        "tools": [REVIEW_TOOL],
-        "tool_choice": {"type": "tool", "name": "submit_reviews"},
+        "tools": [tool],
+        "tool_choice": {"type": "tool", "name": tool["name"]},
         "messages": [{"role": "user", "content": prompt}],
     }).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
@@ -434,8 +464,8 @@ def _call_claude(key: str, model: str, prompt: str) -> list[dict]:
     if resp.get("stop_reason") == "max_tokens":
         print("[llm] output hit max_tokens; some topics may be missing", file=sys.stderr)
     for b in resp.get("content", []):
-        if b.get("type") == "tool_use" and b.get("name") == "submit_reviews":
-            return _normalize_reviews((b.get("input") or {}).get("reviews"))
+        if b.get("type") == "tool_use" and b.get("name") == tool["name"]:
+            return _normalize_reviews((b.get("input") or {}).get(field))
     return []
 
 
@@ -523,7 +553,40 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
             apply_review(c, r)
             cache[c["id"]] = {"sig": sig, "r": r}
             n += 1
+    translate_posts(targets, key, lc, cache)
     return n
+
+
+def translate_posts(clusters: list[dict], key: str, lc: dict, cache: dict):
+    """日本語以外の投稿に日本語訳を付ける。訳は投稿IDごとに保存して再利用する。"""
+    tr_cache = cache.setdefault("_translations", {})
+    need = []
+    for c in clusters:
+        for p in c["posts"]:
+            if p.get("lang") == "ja" or not p.get("text"):
+                continue
+            if p.get("text_ja"):
+                tr_cache[p["id"]] = p["text_ja"]
+            elif p["id"] in tr_cache:
+                p["text_ja"] = tr_cache[p["id"]]
+            else:
+                need.append(p)
+    for i in range(0, len(need), 10):
+        chunk = need[i:i + 10]
+        payload = [{"post_id": p["id"], "text": p["text"][:1200]} for p in chunk]
+        try:
+            res = _call_claude(key, lc.get("model", "claude-haiku-5-5"),
+                               TRANSLATE_PROMPT + json.dumps(payload, ensure_ascii=False), TRANSLATE_TOOL)
+        except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
+            print(f"[llm] translation skipped: {e}", file=sys.stderr)
+            continue
+        got = {str(r.get("post_id")): r.get("ja") for r in res}
+        for p in chunk:
+            ja = got.get(p["id"])
+            if isinstance(ja, str) and ja.strip():
+                p["text_ja"] = ja.strip()
+                tr_cache[p["id"]] = p["text_ja"]
+        print(f"[llm] translated {sum(1 for p in chunk if p.get('text_ja'))}/{len(chunk)} posts")
 
 
 # ---------------------------------------------------------------- main
@@ -648,7 +711,10 @@ def main():
                                         if any(t["author_id"] == k for t in store.values())})
         save_json(DATA / "state.json", state)
         live = {c["id"] for c in clusters}
-        save_json(DATA / "llm_cache.json", {k: v for k, v in llm_cache.items() if k in live})
+        pruned = {k: v for k, v in llm_cache.items() if k in live}
+        live_posts = set(store.keys())
+        pruned["_translations"] = {k: v for k, v in llm_cache.get("_translations", {}).items() if k in live_posts}
+        save_json(DATA / "llm_cache.json", pruned)
     print(f"clusters={len(clusters)} {counts}")
 
 

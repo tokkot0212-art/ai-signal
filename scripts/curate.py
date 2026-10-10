@@ -435,8 +435,27 @@ def _call_claude(key: str, model: str, prompt: str) -> list[dict]:
         print("[llm] output hit max_tokens; some topics may be missing", file=sys.stderr)
     for b in resp.get("content", []):
         if b.get("type") == "tool_use" and b.get("name") == "submit_reviews":
-            return (b.get("input") or {}).get("reviews", []) or []
+            return _normalize_reviews((b.get("input") or {}).get("reviews"))
     return []
+
+
+def _normalize_reviews(reviews) -> list[dict]:
+    """モデルが配列を文字列で返すことがあるので、どちらでも受け取れるようにする。"""
+    if isinstance(reviews, str):
+        try:
+            reviews = json.loads(reviews)
+        except json.JSONDecodeError:
+            m = re.search(r"\[.*\]", reviews, re.S)
+            try:
+                reviews = json.loads(m.group(0)) if m else []
+            except json.JSONDecodeError:
+                print("[llm] could not parse reviews string", file=sys.stderr)
+                reviews = []
+    if isinstance(reviews, dict):
+        reviews = [reviews]
+    if not isinstance(reviews, list):
+        return []
+    return [r for r in reviews if isinstance(r, dict)]
 
 
 def apply_review(c: dict, r: dict):
@@ -602,7 +621,11 @@ def main():
                     reviewed += 1
                     break
     else:
-        reviewed = llm_review(clusters, cfg, llm_cache)
+        try:
+            reviewed = llm_review(clusters, cfg, llm_cache)
+        except Exception as e:  # 概要づくりが失敗しても、取得したニュースは必ず保存する
+            print(f"[llm] review failed, continuing without summaries: {e!r}", file=sys.stderr)
+            reviewed = sum(1 for c in clusters if c.get("summary"))
     clusters.sort(key=lambda c: (VERDICT_ORDER.index(c["verdict"]) == 3, -c["score"]))
 
     counts = {v: sum(c["verdict"] == v for c in clusters) for v in VERDICT_ORDER}

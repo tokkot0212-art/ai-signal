@@ -364,7 +364,7 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
     confirmed=公式発表や一次情報で裏付けあり, promising=信頼できそうだが裏付け待ち,
     unverified=噂・誇張・出典不明, excluded=釣り・宣伝・無関係
 - note: 判定理由を1文で
-- translations: 日本語以外（lang が ja でない）の投稿だけ、本文の自然な日本語訳。{"投稿id":"日本語訳"} の形。
+- translations: 日本語以外（lang が ja でない）の投稿だけ、本文の自然な日本語訳。
     意訳しすぎず、数値・固有名詞・URLはそのまま残す。日本語の投稿は含めない
 
 厳守:
@@ -372,27 +372,71 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 - points と terms では一般的な背景知識を使ってよいが、推測は「〜とみられる」「未確認」と明記する
 - 噂・リークは summary の冒頭に【未確認】と付ける
 
-出力はJSON配列のみ（前後に文章を付けない）:
-[{"id":"...","title":"...","summary":"...","points":["..."],"terms":[{"term":"...","desc":"..."}],"verdict":"...","note":"...","translations":{"投稿id":"日本語訳"}}]
+結果は submit_reviews ツールで提出してください。translations は [{"post_id":"投稿id","ja":"日本語訳"}] の形です。
 
 クラスタ:
 """
 
 
+REVIEW_TOOL = {
+    "name": "submit_reviews",
+    "description": "各クラスタの日本語の概要・ポイント・用語・判定・翻訳を提出する",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "reviews": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {"type": "string"},
+                        "title": {"type": "string"},
+                        "summary": {"type": "string"},
+                        "points": {"type": "array", "items": {"type": "string"}},
+                        "terms": {"type": "array", "items": {
+                            "type": "object",
+                            "properties": {"term": {"type": "string"}, "desc": {"type": "string"}},
+                            "required": ["term", "desc"]}},
+                        "verdict": {"type": "string",
+                                    "enum": ["confirmed", "promising", "unverified", "excluded"]},
+                        "note": {"type": "string"},
+                        "translations": {"type": "array", "items": {
+                            "type": "object",
+                            "properties": {"post_id": {"type": "string"}, "ja": {"type": "string"}},
+                            "required": ["post_id", "ja"]}},
+                    },
+                    "required": ["id", "title", "summary", "points", "verdict", "note"],
+                },
+            }
+        },
+        "required": ["reviews"],
+    },
+}
+
+
 def _call_claude(key: str, model: str, prompt: str) -> list[dict]:
+    """ツール呼び出しで構造化された結果を受け取る（自由文JSONの崩れを防ぐ）。"""
     body = json.dumps({
         "model": model,
         "max_tokens": 8000,
+        "tools": [REVIEW_TOOL],
+        "tool_choice": {"type": "tool", "name": "submit_reviews"},
         "messages": [{"role": "user", "content": prompt}],
     }).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json",
     })
-    with urllib.request.urlopen(req, timeout=120) as r:
-        resp = json.loads(r.read().decode())
-    text = "".join(b.get("text", "") for b in resp.get("content", []))
-    m = re.search(r"\[.*\]", text, re.S)
-    return json.loads(m.group(0)) if m else []
+    try:
+        with urllib.request.urlopen(req, timeout=180) as r:
+            resp = json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        raise urllib.error.URLError(f"HTTP {e.code}: {e.read().decode(errors='replace')[:300]}")
+    if resp.get("stop_reason") == "max_tokens":
+        print("[llm] output hit max_tokens; some topics may be missing", file=sys.stderr)
+    for b in resp.get("content", []):
+        if b.get("type") == "tool_use" and b.get("name") == "submit_reviews":
+            return (b.get("input") or {}).get("reviews", []) or []
+    return []
 
 
 def apply_review(c: dict, r: dict):
@@ -403,6 +447,8 @@ def apply_review(c: dict, r: dict):
                   if isinstance(t, dict) and t.get("term") and t.get("desc")][:3]
     c["llm_note"] = r.get("note")
     tr = r.get("translations") or {}
+    if isinstance(tr, list):
+        tr = {str(x.get("post_id")): x.get("ja") for x in tr if isinstance(x, dict)}
     if isinstance(tr, dict):
         for p in c["posts"]:
             ja = tr.get(p["id"])
@@ -448,6 +494,7 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
         except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
             print(f"[llm] batch skipped: {e}", file=sys.stderr)
             continue
+        print(f"[llm] batch {i // batch + 1}: {len(results)}/{len(chunk)} topics reviewed")
         by_id = {c["id"]: (c, sig) for c, sig in chunk}
         for r in results:
             hit = by_id.get(r.get("id"))

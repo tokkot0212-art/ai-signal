@@ -343,77 +343,109 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
         "authors": list(authors.values())[:10], "post_count": len(group),
         "posts": posts, "links": links[:5],
         "reasons_pos": pos[:6], "reasons_neg": neg[:6], "llm_note": None,
+        "points": [], "terms": [],
     }
 
 
 # ---------------------------------------------------------------- LLM (optional)
 
-LLM_PROMPT = """あなたはAIニュースのファクトチェック担当です。Xの投稿を話題ごとにまとめたクラスタを渡します。
-各クラスタについて、日本語で次を判断してください。
-- title: 何が起きたかを25字程度で（誇張せず事実だけ）
-- summary: 2文以内の要約（投稿に書かれていない事実を足さない）
+LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェック担当です。Xの投稿を話題ごとにまとめたクラスタを渡します。
+読者はAIに関心のある日本人の社会人で、専門家ではありません。英語の投稿も日本語で説明してください。
+
+各クラスタについて次を作ってください。
+- title: 何が起きたかを30字以内で（誇張・煽りなし、事実だけ）
+- summary: 日本語の概要を2〜3文。誰が・何を・いつ・どうしたかを、投稿に書かれている事実だけで書く
+- points: 理解を深めるポイントを2〜3個（各60字以内）。
+    「何が新しいのか」「なぜ重要か・誰に影響するか」「注意点・まだ分からないこと」の観点から選ぶ
+- terms: 読者がつまずきそうな専門用語を最大3個。{"term":"用語","desc":"40字以内のやさしい説明"}
 - verdict: confirmed / promising / unverified / excluded のいずれか
-   confirmed=公式発表や一次情報で裏付けあり, promising=信頼できそうだが裏付け待ち,
-   unverified=噂・誇張・出典不明, excluded=釣り・宣伝・無関係
+    confirmed=公式発表や一次情報で裏付けあり, promising=信頼できそうだが裏付け待ち,
+    unverified=噂・誇張・出典不明, excluded=釣り・宣伝・無関係
 - note: 判定理由を1文で
 
-出力はJSON配列のみ: [{"id":"...","title":"...","summary":"...","verdict":"...","note":"..."}]
+厳守:
+- summary には投稿にない事実（数値・日付・企業名）を足さない
+- points と terms では一般的な背景知識を使ってよいが、推測は「〜とみられる」「未確認」と明記する
+- 噂・リークは summary の冒頭に【未確認】と付ける
+
+出力はJSON配列のみ（前後に文章を付けない）:
+[{"id":"...","title":"...","summary":"...","points":["..."],"terms":[{"term":"...","desc":"..."}],"verdict":"...","note":"..."}]
 
 クラスタ:
 """
 
 
-def llm_review(clusters: list[dict], cfg: dict) -> int:
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    lc = cfg.get("llm", {})
-    if not key or not lc.get("enabled"):
-        return 0
-    targets = [c for c in clusters if c["verdict"] != "excluded"][: lc.get("max_clusters", 15)]
-    if not targets:
-        return 0
-    payload_clusters = []
-    for c in targets:
-        payload_clusters.append({
-            "id": c["id"],
-            "rule_verdict": c["verdict"],
-            "links": [l["domain"] for l in c["links"]],
-            "posts": [{"by": p["username"], "text": p["text"][:600]} for p in c["posts"][:4]],
-        })
+def _call_claude(key: str, model: str, prompt: str) -> list[dict]:
     body = json.dumps({
-        "model": lc.get("model", "claude-haiku-5-5"),
-        "max_tokens": 4000,
-        "messages": [{"role": "user", "content": LLM_PROMPT + json.dumps(payload_clusters, ensure_ascii=False)}],
+        "model": model,
+        "max_tokens": 6000,
+        "messages": [{"role": "user", "content": prompt}],
     }).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json",
     })
-    try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            resp = json.loads(r.read().decode())
-        text = "".join(b.get("text", "") for b in resp.get("content", []))
-        m = re.search(r"\[.*\]", text, re.S)
-        results = json.loads(m.group(0)) if m else []
-    except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
-        print(f"[llm] skipped: {e}", file=sys.stderr)
-        return 0
+    with urllib.request.urlopen(req, timeout=120) as r:
+        resp = json.loads(r.read().decode())
+    text = "".join(b.get("text", "") for b in resp.get("content", []))
+    m = re.search(r"\[.*\]", text, re.S)
+    return json.loads(m.group(0)) if m else []
 
-    by_id = {c["id"]: c for c in targets}
-    n = 0
-    for r in results:
-        c = by_id.get(r.get("id"))
-        if not c:
+
+def apply_review(c: dict, r: dict):
+    c["title"] = (r.get("title") or c["title"]).strip()
+    c["summary"] = r.get("summary")
+    c["points"] = [p for p in (r.get("points") or []) if isinstance(p, str)][:3]
+    c["terms"] = [t for t in (r.get("terms") or [])
+                  if isinstance(t, dict) and t.get("term") and t.get("desc")][:3]
+    c["llm_note"] = r.get("note")
+    v = r.get("verdict")
+    if v in VERDICT_ORDER:
+        cur, new = VERDICT_ORDER.index(c["verdict"]), VERDICT_ORDER.index(v)
+        # AIは「格下げ」は自由、「格上げ」は 未確認→有望 の1段だけ許可（証拠なしの昇格を防ぐ）
+        if new > cur or (c["verdict"] == "unverified" and v == "promising"):
+            c["verdict"] = v
+
+
+def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
+    """日本語の概要・ポイント・用語解説を付ける。一度作った概要はキャッシュして再課金しない。"""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    lc = cfg.get("llm", {})
+    if not key or not lc.get("enabled"):
+        return 0
+    targets = [c for c in clusters if c["verdict"] != "excluded"][: lc.get("max_clusters", 30)]
+    todo = []
+    for c in targets:
+        sig = ",".join(sorted(p["id"] for p in c["posts"]))
+        hit = cache.get(c["id"])
+        if hit and hit.get("sig") == sig:
+            apply_review(c, hit["r"])  # 投稿の顔ぶれが同じなら前回の概要を再利用
+        else:
+            todo.append((c, sig))
+    n = len(targets) - len(todo)
+    batch = lc.get("batch_size", 8)
+    for i in range(0, len(todo), batch):
+        chunk = todo[i:i + batch]
+        payload = [{
+            "id": c["id"],
+            "rule_verdict": c["verdict"],
+            "links": [l["domain"] for l in c["links"]],
+            "posts": [{"by": p["username"], "text": p["text"][:700]} for p in c["posts"][:5]],
+        } for c, _ in chunk]
+        try:
+            results = _call_claude(key, lc.get("model", "claude-haiku-5-5"),
+                                   LLM_PROMPT + json.dumps(payload, ensure_ascii=False))
+        except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
+            print(f"[llm] batch skipped: {e}", file=sys.stderr)
             continue
-        c["title"] = r.get("title") or c["title"]
-        c["summary"] = r.get("summary")
-        c["llm_note"] = r.get("note")
-        v = r.get("verdict")
-        if v in VERDICT_ORDER:
-            cur = VERDICT_ORDER.index(c["verdict"])
-            new = VERDICT_ORDER.index(v)
-            # AIは「格下げ」は自由、「格上げ」は 未確認→有望 の1段だけ許可（証拠なしの昇格を防ぐ）
-            if new > cur or (c["verdict"] == "unverified" and v == "promising"):
-                c["verdict"] = v
-        n += 1
+        by_id = {c["id"]: (c, sig) for c, sig in chunk}
+        for r in results:
+            hit = by_id.get(r.get("id"))
+            if not hit:
+                continue
+            c, sig = hit
+            apply_review(c, r)
+            cache[c["id"]] = {"sig": sig, "r": r}
+            n += 1
     return n
 
 
@@ -436,12 +468,14 @@ def main():
     store = load_json(DATA / "tweets.json", {})
     now = datetime.now(timezone.utc)
     demo = False
+    demo_llm = {}
     note = None
 
     if args.fixture:
         fx = load_json(Path(args.fixture), {})
         now = parse_ts(fx["now"])
         demo = True
+        demo_llm = fx.get("demo_llm", {})
         for k in ("tier1", "tier2"):
             cfg["trusted"][k] = cfg["trusted"].get(k, []) + fx.get("extra_trusted", {}).get(k, [])
         store = {t["id"]: t for t in fx["tweets"]}
@@ -500,7 +534,17 @@ def main():
 
     clusters = [build_cluster(g, user_cache, cfg) for g in cluster(tweets)]
     clusters.sort(key=lambda c: (VERDICT_ORDER.index(c["verdict"]) == 3, -c["score"]))
-    reviewed = 0 if demo else llm_review(clusters, cfg)
+    llm_cache = load_json(DATA / "llm_cache.json", {})
+    if demo:  # サンプルでは事前に用意した概要を表示
+        reviewed = 0
+        for c in clusters:
+            for p in c["posts"]:
+                if p["id"] in demo_llm:
+                    apply_review(c, demo_llm[p["id"]])
+                    reviewed += 1
+                    break
+    else:
+        reviewed = llm_review(clusters, cfg, llm_cache)
     clusters.sort(key=lambda c: (VERDICT_ORDER.index(c["verdict"]) == 3, -c["score"]))
 
     counts = {v: sum(c["verdict"] == v for c in clusters) for v in VERDICT_ORDER}
@@ -522,6 +566,8 @@ def main():
         save_json(DATA / "users.json", {k: v for k, v in user_cache.items()
                                         if any(t["author_id"] == k for t in store.values())})
         save_json(DATA / "state.json", state)
+        live = {c["id"] for c in clusters}
+        save_json(DATA / "llm_cache.json", {k: v for k, v in llm_cache.items() if k in live})
     print(f"clusters={len(clusters)} {counts}")
 
 

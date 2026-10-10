@@ -1,0 +1,53 @@
+name: Curate AI news from X
+
+on:
+  schedule:
+    # 日本時間 7:23 / 12:23 / 20:23 に実行（cron は UTC 表記）
+    - cron: "23 22 * * *"
+    - cron: "23 3 * * *"
+    - cron: "23 11 * * *"
+  workflow_dispatch: {}   # Actions 画面の「Run workflow」で手動実行も可
+
+permissions:
+  contents: write
+
+concurrency:
+  group: curate
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Curate
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$X_BEARER_TOKEN" ]; then
+            echo "::warning::X_BEARER_TOKEN が未設定のため、サンプル表示のままです"
+            exit 0
+          fi
+          python scripts/curate.py
+
+      - name: Commit feed
+        run: |
+          git config user.name "ai-x-curator-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/feed.json data/
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "feed: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

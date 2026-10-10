@@ -1,0 +1,484 @@
+{
+ "generated_at": "2026-10-10T07:00:00Z",
+ "demo": true,
+ "note": null,
+ "stats": {
+  "posts": 10,
+  "clusters": 7,
+  "confirmed": 2,
+  "promising": 1,
+  "unverified": 1,
+  "excluded": 3,
+  "llm_reviewed": 0,
+  "month_spend_usd": 0.0,
+  "month_budget_usd": 30
+ },
+ "clusters": [
+  {
+   "id": "30106fe80a",
+   "verdict": "confirmed",
+   "title": "Introducing Orion-2, our new open-weight reasoning model. Weights, eval code and…",
+   "summary": null,
+   "score": 100,
+   "credibility": 100,
+   "heat": 94,
+   "first_seen": "2026-10-10T01:00:00Z",
+   "latest": "2026-10-10T03:30:00Z",
+   "authors": [
+    {
+     "username": "sample_ailab",
+     "name": "Sample AI Lab（架空）",
+     "tier": 1
+    },
+    {
+     "username": "sample_researcher",
+     "name": "研究者サンプル",
+     "tier": 2
+    },
+    {
+     "username": "dev_tanaka",
+     "name": "田中（架空の開発者）",
+     "tier": 0
+    }
+   ],
+   "post_count": 3,
+   "posts": [
+    {
+     "id": "1001",
+     "url": "https://x.com/sample_ailab/status/1001",
+     "username": "sample_ailab",
+     "name": "Sample AI Lab（架空）",
+     "avatar": "",
+     "text": "Introducing Orion-2, our new open-weight reasoning model. Weights, eval code and the technical report are available now. https://t.co/a1",
+     "created_at": "2026-10-10T01:00:00Z",
+     "metrics": {
+      "like_count": 18400,
+      "retweet_count": 4100,
+      "quote_count": 900,
+      "reply_count": 760,
+      "bookmark_count": 5200
+     },
+     "cred": 100,
+     "heat": 94,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（github.com）"
+     ],
+     "neg": []
+    },
+    {
+     "id": "1002",
+     "url": "https://x.com/sample_researcher/status/1002",
+     "username": "sample_researcher",
+     "name": "研究者サンプル",
+     "avatar": "",
+     "text": "Ran Orion-2 open-weight reasoning model on our internal eval suite. Strong on math, weaker on long-context retrieval than the report suggests. Notes: https://t.co/b1",
+     "created_at": "2026-10-10T02:10:00Z",
+     "metrics": {
+      "like_count": 3200,
+      "retweet_count": 610,
+      "quote_count": 80,
+      "reply_count": 140,
+      "bookmark_count": 1900
+     },
+     "cred": 85,
+     "heat": 78,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "一次情報リンク（github.com）"
+     ],
+     "neg": []
+    },
+    {
+     "id": "1003",
+     "url": "https://x.com/dev_tanaka/status/1003",
+     "username": "dev_tanaka",
+     "name": "田中（架空の開発者）",
+     "avatar": "",
+     "text": "Orion-2 をローカルで動かしてみた。量子化版でもRTX 4090で実用速度。ライセンスは商用可だけど条件あり、READMEを読んでから使うのが吉。 https://t.co/c1",
+     "created_at": "2026-10-10T03:30:00Z",
+     "metrics": {
+      "like_count": 640,
+      "retweet_count": 120,
+      "quote_count": 9,
+      "reply_count": 33,
+      "bookmark_count": 410
+     },
+     "cred": 65,
+     "heat": 65,
+     "pos": [
+      "一次情報リンク（github.com）"
+     ],
+     "neg": []
+    }
+   ],
+   "links": [
+    {
+     "url": "https://github.com/sample-ailab/orion-2",
+     "domain": "github.com",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "独立した3アカウントが言及",
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "一次情報リンク（github.com）",
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [],
+   "llm_note": null
+  },
+  {
+   "id": "c123c1989a",
+   "verdict": "confirmed",
+   "title": "New paper: small agents that plan with a learned world model beat larger agents …",
+   "summary": null,
+   "score": 84,
+   "credibility": 85,
+   "heat": 69,
+   "first_seen": "2026-10-09T20:00:00Z",
+   "latest": "2026-10-10T00:45:00Z",
+   "authors": [
+    {
+     "username": "sample_researcher",
+     "name": "研究者サンプル",
+     "tier": 2
+    },
+    {
+     "username": "ml_engineer_k",
+     "name": "MLエンジニアK（架空）",
+     "tier": 0
+    }
+   ],
+   "post_count": 2,
+   "posts": [
+    {
+     "id": "1008",
+     "url": "https://x.com/sample_researcher/status/1008",
+     "username": "sample_researcher",
+     "name": "研究者サンプル",
+     "avatar": "",
+     "text": "New paper: small agents that plan with a learned world model beat larger agents on long-horizon web tasks at 1/8 the inference cost. https://t.co/e1",
+     "created_at": "2026-10-09T20:00:00Z",
+     "metrics": {
+      "like_count": 2700,
+      "retweet_count": 520,
+      "quote_count": 60,
+      "reply_count": 75,
+      "bookmark_count": 2100
+     },
+     "cred": 85,
+     "heat": 69,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "一次情報リンク（arxiv.org）"
+     ],
+     "neg": []
+    },
+    {
+     "id": "1009",
+     "url": "https://x.com/ml_engineer_k/status/1009",
+     "username": "ml_engineer_k",
+     "name": "MLエンジニアK（架空）",
+     "avatar": "",
+     "text": "この論文、小さいエージェントが学習済みworld modelで計画して長期タスクで大型エージェントに勝つ話。推論コスト1/8は実務的に大きい。 https://t.co/f1",
+     "created_at": "2026-10-10T00:45:00Z",
+     "metrics": {
+      "like_count": 380,
+      "retweet_count": 90,
+      "quote_count": 5,
+      "reply_count": 12,
+      "bookmark_count": 300
+     },
+     "cred": 65,
+     "heat": 54,
+     "pos": [
+      "一次情報リンク（arxiv.org）"
+     ],
+     "neg": []
+    }
+   ],
+   "links": [
+    {
+     "url": "https://arxiv.org/abs/2610.01234",
+     "domain": "arxiv.org",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "独立した2アカウントが言及",
+    "信頼リストの研究者・記者",
+    "一次情報リンク（arxiv.org）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null
+  },
+  {
+   "id": "8554fe9ee0",
+   "verdict": "unverified",
+   "title": "LEAK: sources say a major lab will reportedly ship a new frontier model next wee…",
+   "summary": null,
+   "score": 54,
+   "credibility": 35,
+   "heat": 82,
+   "first_seen": "2026-10-09T22:00:00Z",
+   "latest": "2026-10-09T22:00:00Z",
+   "authors": [
+    {
+     "username": "insider_leaks",
+     "name": "Insider Leaks",
+     "tier": 0
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "1006",
+     "url": "https://x.com/insider_leaks/status/1006",
+     "username": "insider_leaks",
+     "name": "Insider Leaks",
+     "avatar": "",
+     "text": "LEAK: sources say a major lab will reportedly ship a new frontier model next week with 10M context. Not confirmed yet.",
+     "created_at": "2026-10-09T22:00:00Z",
+     "metrics": {
+      "like_count": 5400,
+      "retweet_count": 1300,
+      "quote_count": 2900,
+      "reply_count": 880,
+      "bookmark_count": 700
+     },
+     "cred": 35,
+     "heat": 82,
+     "pos": [],
+     "neg": [
+      "引用が多く議論・炎上気味",
+      "噂・リーク（一次情報なし）"
+     ]
+    }
+   ],
+   "links": [],
+   "reasons_pos": [],
+   "reasons_neg": [
+    "引用が多く議論・炎上気味",
+    "噂・リーク（一次情報なし）"
+   ],
+   "llm_note": null
+  },
+  {
+   "id": "1ccacea166",
+   "verdict": "promising",
+   "title": "国内大手3社が生成AIの社内利用ガイドラインを共同で策定へ。個人情報の入力ルールと出力の著作権チェックが柱。取材メモ→",
+   "summary": null,
+   "score": 54,
+   "credibility": 53,
+   "heat": 55,
+   "first_seen": "2026-10-10T00:20:00Z",
+   "latest": "2026-10-10T00:20:00Z",
+   "authors": [
+    {
+     "username": "tech_writer_s",
+     "name": "テック記者S（架空）",
+     "tier": 0
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "1007",
+     "url": "https://x.com/tech_writer_s/status/1007",
+     "username": "tech_writer_s",
+     "name": "テック記者S（架空）",
+     "avatar": "",
+     "text": "国内大手3社が生成AIの社内利用ガイドラインを共同で策定へ。個人情報の入力ルールと出力の著作権チェックが柱。取材メモ→ https://t.co/d1",
+     "created_at": "2026-10-10T00:20:00Z",
+     "metrics": {
+      "like_count": 410,
+      "retweet_count": 160,
+      "quote_count": 22,
+      "reply_count": 18,
+      "bookmark_count": 230
+     },
+     "cred": 53,
+     "heat": 55,
+     "pos": [],
+     "neg": []
+    }
+   ],
+   "links": [
+    {
+     "url": "https://news.example.jp/articles/2026/10/ai-guideline",
+     "domain": "news.example.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [],
+   "reasons_neg": [],
+   "llm_note": null
+  },
+  {
+   "id": "0477d720ad",
+   "verdict": "excluded",
+   "title": "THIS CHANGES EVERYTHING 🤯🤯 AI agents just replaced ENTIRE dev teams. Bookmark th…",
+   "summary": null,
+   "score": 39,
+   "credibility": 0,
+   "heat": 97,
+   "first_seen": "2026-10-10T05:00:00Z",
+   "latest": "2026-10-10T05:00:00Z",
+   "authors": [
+    {
+     "username": "growth_farm_ai",
+     "name": "AI Growth 🚀",
+     "tier": 0
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "1005",
+     "url": "https://x.com/growth_farm_ai/status/1005",
+     "username": "growth_farm_ai",
+     "name": "AI Growth 🚀",
+     "avatar": "",
+     "text": "THIS CHANGES EVERYTHING 🤯🤯 AI agents just replaced ENTIRE dev teams. Bookmark this and follow me for more insane AI tools!!! 🧵👇",
+     "created_at": "2026-10-10T05:00:00Z",
+     "metrics": {
+      "like_count": 9100,
+      "retweet_count": 2400,
+      "quote_count": 150,
+      "reply_count": 300,
+      "bookmark_count": 600
+     },
+     "cred": 0,
+     "heat": 97,
+     "pos": [],
+     "neg": [
+      "釣り表現：bookmark this・insane・follow me",
+      "感嘆符の連打",
+      "フォロワー数に対し反応が不自然に多い",
+      "フォロバ狙いの傾向"
+     ]
+    }
+   ],
+   "links": [],
+   "reasons_pos": [],
+   "reasons_neg": [
+    "釣り表現：bookmark this・insane・follow me",
+    "感嘆符の連打",
+    "フォロワー数に対し反応が不自然に多い",
+    "フォロバ狙いの傾向"
+   ],
+   "llm_note": null
+  },
+  {
+   "id": "1966e694ba",
+   "verdict": "excluded",
+   "title": "ChatGPT完全に終わった…新しい神ツールが出てしまった😱 無料で配布中！リプで「欲しい」と送ってくれた人にDMで教えます🎁",
+   "summary": null,
+   "score": 34,
+   "credibility": 0,
+   "heat": 86,
+   "first_seen": "2026-10-10T06:00:00Z",
+   "latest": "2026-10-10T06:00:00Z",
+   "authors": [
+    {
+     "username": "ai_hype_daily",
+     "name": "AI最新情報まとめ🔥",
+     "tier": 0
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "1010",
+     "url": "https://x.com/ai_hype_daily/status/1010",
+     "username": "ai_hype_daily",
+     "name": "AI最新情報まとめ🔥",
+     "avatar": "",
+     "text": "ChatGPT完全に終わった…新しい神ツールが出てしまった😱 無料で配布中！リプで「欲しい」と送ってくれた人にDMで教えます🎁",
+     "created_at": "2026-10-10T06:00:00Z",
+     "metrics": {
+      "like_count": 900,
+      "retweet_count": 610,
+      "quote_count": 4,
+      "reply_count": 1200,
+      "bookmark_count": 80
+     },
+     "cred": 0,
+     "heat": 86,
+     "pos": [],
+     "neg": [
+      "釣り表現：完全に終わった・神ツール・無料で配布",
+      "作成46日の新規アカウント",
+      "フォロバ狙いの傾向"
+     ]
+    }
+   ],
+   "links": [],
+   "reasons_pos": [],
+   "reasons_neg": [
+    "釣り表現：完全に終わった・神ツール・無料で配布",
+    "作成46日の新規アカウント",
+    "フォロバ狙いの傾向"
+   ],
+   "llm_note": null
+  },
+  {
+   "id": "70b8dcb933",
+   "verdict": "excluded",
+   "title": "【保存推奨】知らないと損するAIツール10選🔥🔥🔥 これ使わない人ヤバすぎ‼️ 人生変わるレベル😳👇",
+   "summary": null,
+   "score": 32,
+   "credibility": 0,
+   "heat": 79,
+   "first_seen": "2026-10-10T04:00:00Z",
+   "latest": "2026-10-10T04:00:00Z",
+   "authors": [
+    {
+     "username": "ai_hype_daily",
+     "name": "AI最新情報まとめ🔥",
+     "tier": 0
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "1004",
+     "url": "https://x.com/ai_hype_daily/status/1004",
+     "username": "ai_hype_daily",
+     "name": "AI最新情報まとめ🔥",
+     "avatar": "",
+     "text": "【保存推奨】知らないと損するAIツール10選🔥🔥🔥 これ使わない人ヤバすぎ‼️ 人生変わるレベル😳👇 #AI #ChatGPT #生成AI #副業 #AIツール",
+     "created_at": "2026-10-10T04:00:00Z",
+     "metrics": {
+      "like_count": 2100,
+      "retweet_count": 380,
+      "quote_count": 12,
+      "reply_count": 95,
+      "bookmark_count": 1500
+     },
+     "cred": 0,
+     "heat": 79,
+     "pos": [],
+     "neg": [
+      "釣り表現：保存推奨・知らないと損・ヤバすぎ",
+      "ハッシュタグ乱用",
+      "作成46日の新規アカウント",
+      "フォロバ狙いの傾向"
+     ]
+    }
+   ],
+   "links": [],
+   "reasons_pos": [],
+   "reasons_neg": [
+    "釣り表現：保存推奨・知らないと損・ヤバすぎ",
+    "ハッシュタグ乱用",
+    "作成46日の新規アカウント",
+    "フォロバ狙いの傾向"
+   ],
+   "llm_note": null
+  }
+ ]
+}

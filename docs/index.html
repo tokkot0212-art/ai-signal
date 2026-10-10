@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>AIシグナル</title>
+<meta name="description" content="Xから本物のAIニュースだけを選別する自分用リーダー">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="AIシグナル">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{
+  --bg:#f6f4ef; --surface:#ffffff; --ink:#16181d; --sub:#5d626c; --line:#e4e0d6;
+  --chip:#efece4; --accent:#1b4dd6;
+  --ok:#11845b; --ok-bg:#e3f4ec; --blue:#1b4dd6; --blue-bg:#e6ecfc;
+  --warn:#a6600b; --warn-bg:#fbf0dc; --mute:#80858f; --mute-bg:#ecebe7;
+  --bar:#e9e6de;
+  --radius:16px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1115; --surface:#171a20; --ink:#eceef2; --sub:#9aa0ab; --line:#262a33;
+    --chip:#20242c; --accent:#7ea2ff;
+    --ok:#4fd19b; --ok-bg:#12291f; --blue:#7ea2ff; --blue-bg:#18213a;
+    --warn:#f0b452; --warn-bg:#2d2312; --mute:#8b919c; --mute-bg:#1f2228;
+    --bar:#262a33;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1115; --surface:#171a20; --ink:#eceef2; --sub:#9aa0ab; --line:#262a33;
+  --chip:#20242c; --accent:#7ea2ff;
+  --ok:#4fd19b; --ok-bg:#12291f; --blue:#7ea2ff; --blue-bg:#18213a;
+  --warn:#f0b452; --warn-bg:#2d2312; --mute:#8b919c; --mute-bg:#1f2228;
+  --bar:#262a33;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  padding-bottom:calc(env(safe-area-inset-bottom) + 24px);
+}
+header{
+  position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);
+  padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;border-bottom:1px solid var(--line);
+}
+.top{display:flex;align-items:center;gap:10px;max-width:720px;margin:0 auto}
+.logo{width:30px;height:30px;border-radius:9px;flex:none}
+h1{font-size:20px;letter-spacing:.02em;margin:0;font-weight:800}
+.updated{font-size:12px;color:var(--sub);margin-left:auto;text-align:right;line-height:1.3}
+.iconbtn{border:0;background:var(--chip);color:var(--ink);width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;flex:none;cursor:pointer}
+.iconbtn svg{width:18px;height:18px}
+.iconbtn.spin svg{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tabs{display:flex;gap:4px;margin:12px auto 0;max-width:720px;background:var(--chip);padding:4px;border-radius:12px}
+.tab{flex:1;border:0;background:transparent;color:var(--sub);font:inherit;font-size:14px;font-weight:700;
+  padding:7px 4px;border-radius:9px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.tab .n{font-weight:600;color:var(--sub);margin-left:4px;font-size:12px}
+.filters{display:flex;gap:6px;max-width:720px;margin:10px auto 0;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--line);background:transparent;color:var(--sub);font:inherit;font-size:13px;
+  padding:4px 12px;border-radius:999px;white-space:nowrap;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+main{max-width:720px;margin:0 auto;padding:14px 16px}
+.banner{background:var(--warn-bg);color:var(--warn);border-radius:12px;padding:10px 14px;font-size:13px;margin-bottom:12px}
+.intro{font-size:13px;color:var(--sub);margin:0 2px 12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:12px;
+  transition:opacity .2s}
+.card.read{opacity:.55}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:800;padding:2px 9px;border-radius:999px;letter-spacing:.03em}
+.b-confirmed{color:var(--ok);background:var(--ok-bg)}
+.b-promising{color:var(--blue);background:var(--blue-bg)}
+.b-unverified{color:var(--warn);background:var(--warn-bg)}
+.b-excluded{color:var(--mute);background:var(--mute-bg)}
+.time{font-size:12px;color:var(--sub)}
+.count{font-size:12px;color:var(--sub);margin-left:auto}
+.title{font-size:17px;font-weight:750;line-height:1.45;margin:10px 0 6px;word-break:break-word}
+.summary{font-size:14.5px;color:var(--ink);margin:0 0 8px}
+.meters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0}
+.meter label{font-size:11px;color:var(--sub);display:flex;justify-content:space-between}
+.meter label b{color:var(--ink);font-weight:700}
+.track{height:6px;background:var(--bar);border-radius:6px;overflow:hidden;margin-top:3px}
+.fill{height:100%;border-radius:6px}
+.authors{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.au{font-size:12.5px;background:var(--chip);border-radius:8px;padding:2px 8px;color:var(--sub)}
+.au.t1{color:var(--ok);font-weight:700}
+.au.t2{color:var(--blue);font-weight:700}
+details{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+summary{cursor:pointer;font-size:13.5px;color:var(--accent);font-weight:700;list-style:none;padding:4px 0}
+summary::-webkit-details-marker{display:none}
+summary::after{content:" ▾"}
+details[open] summary::after{content:" ▴"}
+.reasons{list-style:none;margin:6px 0 10px;padding:0;font-size:13.5px}
+.reasons li{padding:2px 0 2px 22px;position:relative}
+.reasons li::before{position:absolute;left:2px;font-weight:800}
+.reasons .p::before{content:"✓";color:var(--ok)}
+.reasons .m::before{content:"✕";color:var(--warn)}
+.reasons .ai::before{content:"AI";font-size:10px;top:5px;color:var(--accent)}
+.post{border-left:3px solid var(--line);padding:6px 0 6px 12px;margin:10px 0}
+.post .who{font-size:13px;font-weight:700}
+.post .who span{color:var(--sub);font-weight:500}
+.post .txt{font-size:14px;white-space:pre-wrap;word-break:break-word;margin:3px 0}
+.post .meta{font-size:12px;color:var(--sub);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post a,.links a{color:var(--accent);text-decoration:none;font-weight:700}
+.links{display:flex;flex-direction:column;gap:4px;margin:8px 0 2px;font-size:13.5px}
+.links .prim::before{content:"一次情報 ";font-size:11px;color:var(--ok);font-weight:800}
+.open{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:14px;font-weight:700;color:var(--accent);
+  text-decoration:none;background:var(--blue-bg);padding:7px 14px;border-radius:10px}
+.empty{text-align:center;color:var(--sub);padding:48px 16px;font-size:14px}
+footer{max-width:720px;margin:4px auto 0;padding:0 16px;font-size:12px;color:var(--sub);text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <img class="logo" src="icons/icon-192.png" alt="">
+    <h1>AIシグナル</h1>
+    <div class="updated" id="updated">読み込み中…</div>
+    <button class="iconbtn" id="refresh" aria-label="更新">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>
+    </button>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="signal" aria-selected="true">シグナル<span class="n" id="n-signal"></span></button>
+    <button class="tab" role="tab" data-tab="unverified" aria-selected="false">未確認<span class="n" id="n-unverified"></span></button>
+    <button class="tab" role="tab" data-tab="excluded" aria-selected="false">ノイズ<span class="n" id="n-excluded"></span></button>
+  </div>
+  <div class="filters" id="filters">
+    <button class="chip" data-h="6" aria-pressed="false">6時間</button>
+    <button class="chip" data-h="24" aria-pressed="true">24時間</button>
+    <button class="chip" data-h="72" aria-pressed="false">3日</button>
+    <button class="chip" data-unread aria-pressed="false">未読のみ</button>
+  </div>
+</header>
+<main id="main"></main>
+<footer id="footer"></footer>
+
+<script>
+const LABEL = {confirmed:"確認済み", promising:"有望", unverified:"未確認", excluded:"ノイズ"};
+const INTRO = {
+  signal:"公式発表・一次情報・複数の信頼アカウントで裏付けのある話題です。",
+  unverified:"噂・リーク・出典不明の話題。続報で確認されれば「シグナル」へ移ります。",
+  excluded:"釣り表現・回数稼ぎ・不自然な拡散と判定した投稿。判定理由を確認できます。"
+};
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+let feed = null;
+let state = { tab: store.get("tab","signal"), hours: store.get("hours",24), unread: store.get("unread",false) };
+let readSet = new Set(store.get("read", []));
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const num = n => n >= 10000 ? (n/10000).toFixed(1).replace(/\.0$/,"")+"万" : n >= 1000 ? (n/1000).toFixed(1).replace(/\.0$/,"")+"千" : String(n||0);
+
+function ago(iso, ref){
+  const m = Math.max(0, Math.round(((ref || Date.now()) - new Date(iso)) / 60000));
+  if (m < 1) return "たった今";
+  if (m < 60) return m + "分前";
+  const h = Math.round(m/60);
+  return h < 24 ? h + "時間前" : Math.round(h/24) + "日前";
+}
+function refNow(){ return feed && feed.demo ? new Date(feed.generated_at).getTime() : Date.now(); }
+function barColor(v){ return v >= 70 ? "var(--ok)" : v >= 50 ? "var(--blue)" : v >= 35 ? "var(--warn)" : "var(--mute)"; }
+
+function inTab(c){
+  if (state.tab === "signal") return c.verdict === "confirmed" || c.verdict === "promising";
+  return c.verdict === state.tab;
+}
+function inTime(c){ return refNow() - new Date(c.latest) <= state.hours * 3600e3; }
+
+function render(){
+  if (!feed) return;
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.tab === state.tab));
+  document.querySelectorAll("#filters .chip").forEach(b => {
+    b.setAttribute("aria-pressed", b.hasAttribute("data-unread") ? state.unread : Number(b.dataset.h) === state.hours);
+  });
+  const timed = feed.clusters.filter(inTime);
+  $("#n-signal").textContent = timed.filter(c => c.verdict==="confirmed"||c.verdict==="promising").length;
+  $("#n-unverified").textContent = timed.filter(c => c.verdict==="unverified").length;
+  $("#n-excluded").textContent = timed.filter(c => c.verdict==="excluded").length;
+
+  let list = timed.filter(inTab);
+  if (state.unread) list = list.filter(c => !readSet.has(c.id));
+
+  let html = "";
+  if (feed.demo) html += `<div class="banner">サンプルデータを表示しています（架空の投稿）。X APIキーを設定すると本物のフィードに切り替わります。</div>`;
+  if (feed.note) html += `<div class="banner">${esc(feed.note)}</div>`;
+  html += `<p class="intro">${INTRO[state.tab]}</p>`;
+  html += list.length ? list.map(card).join("") : `<div class="empty">この条件に当てはまる話題はありません</div>`;
+  $("#main").innerHTML = html;
+
+  const s = feed.stats || {};
+  $("#footer").textContent = `投稿${s.posts ?? 0}件 → 話題${s.clusters ?? 0}件に整理` +
+    (s.month_budget_usd ? ` ・ 今月のAPI費用 $${(s.month_spend_usd||0).toFixed(2)} / $${s.month_budget_usd}` : "");
+}
+
+function card(c){
+  const ref = refNow();
+  const authors = c.authors.slice(0,5).map(a =>
+    `<span class="au ${a.tier===1?"t1":a.tier===2?"t2":""}">@${esc(a.username)}</span>`).join("");
+  const reasons = [
+    ...(c.llm_note ? [`<li class="ai">${esc(c.llm_note)}</li>`] : []),
+    ...c.reasons_pos.map(r => `<li class="p">${esc(r)}</li>`),
+    ...c.reasons_neg.map(r => `<li class="m">${esc(r)}</li>`)
+  ].join("");
+  const links = c.links.length ? `<div class="links">${c.links.map(l =>
+    `<a class="${l.primary?"prim":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.domain)} ↗</a>`).join("")}</div>` : "";
+  const posts = c.posts.map(p => {
+    const m = p.metrics || {};
+    return `<div class="post">
+      <div class="who">${esc(p.name)} <span>@${esc(p.username)} · ${ago(p.created_at, ref)} · 信頼度${p.cred}</span></div>
+      <div class="txt">${esc(p.text)}</div>
+      <div class="meta"><span>♥ ${num(m.like_count)}</span><span>↻ ${num(m.retweet_count)}</span><span>❝ ${num(m.quote_count)}</span>
+        <a href="${esc(p.url)}" target="_blank" rel="noopener" data-read="${c.id}">Xで開く ↗</a></div>
+    </div>`;
+  }).join("");
+  const main = c.posts[0];
+  return `<article class="card ${readSet.has(c.id)?"read":""}" id="c-${c.id}">
+    <div class="row">
+      <span class="badge b-${c.verdict}">${LABEL[c.verdict]}</span>
+      <span class="time">${ago(c.latest, ref)}</span>
+      <span class="count">${c.post_count}件の投稿 · ${c.authors.length}人</span>
+    </div>
+    <div class="title">${esc(c.title)}</div>
+    ${c.summary ? `<p class="summary">${esc(c.summary)}</p>` : ""}
+    <div class="meters">
+      <div class="meter"><label>信頼度 <b>${c.credibility}</b></label><div class="track"><div class="fill" style="width:${c.credibility}%;background:${barColor(c.credibility)}"></div></div></div>
+      <div class="meter"><label>熱量 <b>${c.heat}</b></label><div class="track"><div class="fill" style="width:${c.heat}%;background:var(--accent)"></div></div></div>
+    </div>
+    <div class="authors">${authors}</div>
+    ${links}
+    <details data-read="${c.id}">
+      <summary>なぜこの判定？・元の投稿</summary>
+      <ul class="reasons">${reasons || '<li class="p">特記事項なし</li>'}</ul>
+      ${posts}
+    </details>
+    <a class="open" href="${esc(main.url)}" target="_blank" rel="noopener" data-read="${c.id}">Xで見る ↗</a>
+  </article>`;
+}
+
+function markRead(id){
+  if (readSet.has(id)) return;
+  readSet.add(id);
+  store.set("read", [...readSet].slice(-800));
+  const el = document.getElementById("c-" + id);
+  if (el) el.classList.add("read");
+}
+
+async function load(manual){
+  const btn = $("#refresh");
+  btn.classList.add("spin");
+  try{
+    const r = await fetch("data/feed.json?t=" + Date.now(), {cache:"no-store"});
+    if (!r.ok) throw new Error(r.status);
+    feed = await r.json();
+    $("#updated").innerHTML = "更新<br>" + ago(feed.generated_at);
+    render();
+  }catch(e){
+    $("#updated").textContent = "オフライン";
+    if (!feed) $("#main").innerHTML = `<div class="empty">フィードを読み込めませんでした。通信状況を確認してください。</div>`;
+  }finally{
+    setTimeout(() => btn.classList.remove("spin"), 300);
+  }
+}
+
+document.querySelector(".tabs").addEventListener("click", e => {
+  const t = e.target.closest(".tab"); if (!t) return;
+  state.tab = t.dataset.tab; store.set("tab", state.tab); render(); window.scrollTo({top:0});
+});
+$("#filters").addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  if (b.hasAttribute("data-unread")){ state.unread = !state.unread; store.set("unread", state.unread); }
+  else { state.hours = Number(b.dataset.h); store.set("hours", state.hours); }
+  render();
+});
+$("#main").addEventListener("click", e => {
+  const a = e.target.closest("a[data-read]"); if (a) markRead(a.dataset.read);
+});
+$("#main").addEventListener("toggle", e => {
+  if (e.target.matches("details[data-read]") && e.target.open) markRead(e.target.dataset.read);
+}, true);
+$("#refresh").addEventListener("click", () => load(true));
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+load();
+</script>
+</body>
+</html>

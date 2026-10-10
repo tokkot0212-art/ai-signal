@@ -1,0 +1,89 @@
+# AIシグナル — X から「本物の」AIニュースだけを拾う自分用アプリ
+
+X（旧Twitter）の AI 関連投稿を1日3回自動で集め、**フェイク・釣り・回数稼ぎ**をふるい落として、
+iPhone のホーム画面アプリ（PWA）で読めるようにするツールです。サーバー不要、GitHub だけで動きます。
+
+```
+X API ──(GitHub Actions 1日3回)──▶ 判定エンジン ──▶ docs/data/feed.json ──▶ GitHub Pages ──▶ iPhone
+                                    （＋任意で Claude による要約・再判定）
+```
+
+## 何を「本物」とみなすか
+
+投稿ごとに **信頼度（0〜100）** と **熱量（0〜100）** を出し、同じ話題の投稿をまとめて判定します。
+
+| 判定 | 条件（ざっくり） |
+|---|---|
+| **確認済み** | 公式アカウントの発表がある／一次情報リンク＋独立した2人以上の信頼できる言及 |
+| **有望** | 信頼できそうだが裏付けはまだ1件 |
+| **未確認** | 噂・リーク表現で一次情報なし、または信頼度が低め |
+| **ノイズ** | 釣り表現、絵文字・ハッシュタグ乱用、新規アカウント、フォロワーに対して不自然な拡散など |
+
+- **加点**：信頼リストの公式・研究者、一次情報ドメイン（arxiv.org、github.com、各社公式ブログなど）、複数の独立アカウントの言及
+- **減点**：「保存推奨」「知らないと損」「〇選」「bookmark this」等、作成90日未満のアカウント、フォロバ狙い、引用ばかり伸びる炎上型
+- 青い認証バッジは有料で取れるため**加点しません**（組織認証のみ少し加点）
+- 判定理由はアプリの「なぜこの判定？」でいつでも確認でき、「ノイズ」タブで除外された投稿も見られます
+- 生成AIは**格下げは自由、格上げは「未確認→有望」の1段だけ**。裏付けなしに「確認済み」にはしません
+
+調整はすべて `config/sources.yml` で行います（信頼アカウント、ブロックリスト、釣りワード、予算）。
+
+## セットアップ（20分ほど）
+
+### 1. X API のキーを取る
+1. <https://developer.x.com> の Developer Console でアプリを作成
+2. クレジットを購入（従量課金。投稿1件 $0.005、ユーザー情報1件 $0.010）
+3. **Bearer Token** を控える
+
+### 2. GitHub にリポジトリを作る
+1. GitHub で新しいリポジトリを作成（例：`ai-signal`）
+2. このフォルダの中身をアップロード（またはローカルで `git init && git add . && git commit && git push`）
+
+### 3. キーを登録
+リポジトリの **Settings → Secrets and variables → Actions → New repository secret**
+- `X_BEARER_TOKEN` … 手順1のトークン（必須）
+- `ANTHROPIC_API_KEY` … Claude による日本語要約・再判定を使う場合のみ（任意）
+
+### 4. 公開設定
+- **Settings → Pages** → Source を「Deploy from a branch」、Branch を `main` / `/docs` に
+- **Settings → Actions → General** → Workflow permissions を「Read and write」に
+- **Actions** タブ → 「Curate AI news from X」→ **Run workflow** で初回実行
+
+数分後 `https://<ユーザー名>.github.io/<リポジトリ名>/` で開けます。
+
+### 5. iPhone のアプリにする
+1. iPhone の **Safari** で上の URL を開く
+2. 共有ボタン → **「ホーム画面に追加」**
+3. アイコンから起動すると全画面のアプリとして動きます（圏外でも前回分を表示）
+
+## 費用の目安
+
+初期設定（1回あたり最大40投稿、1日3回）で **月 $20〜30 程度**。
+- `since_id` で新着だけ取得、著者情報は7日キャッシュするので実際はもっと少なくなることが多いです
+- `budget.monthly_usd`（初期値 $30）を超えそうになると自動で取得を止め、アプリに表示します
+- Claude を使う場合は別途わずかな API 料金がかかります
+
+## ローカルで試す
+
+```bash
+pip install -r requirements.txt
+python scripts/curate.py --fixture tests/fixtures/sample.json   # 架空データで判定
+python -m unittest discover tests                              # 判定ロジックのテスト
+cd docs && python -m http.server 8000                          # http://localhost:8000
+```
+
+## 注意
+- 無料の GitHub では Pages は**公開URL**になります（`noindex` 付きで検索には出ません）。中身は公開投稿なので大きな問題はありませんが、完全に非公開にしたい場合は GitHub Pro のプライベート Pages か Cloudflare Access 等を使ってください。
+- 判定はヒューリスティック＋任意のAIです。「確認済み」でも最終的には一次情報リンクを自分で確認してください。
+- 信頼リストの初期アカウントは例です。自分が信頼する人に入れ替えるほど精度が上がります。
+
+## ファイル構成
+```
+config/sources.yml        信頼アカウント・釣りワード・予算などの設定
+scripts/curate.py         取得→採点→話題のまとめ→判定→feed.json出力
+scripts/x_client.py       X API v2 クライアント（標準ライブラリのみ）
+scripts/make_icons.py     アプリアイコン生成
+docs/                     iPhone用アプリ（GitHub Pagesで配信）
+.github/workflows/        1日3回の自動実行
+data/                     取得済み投稿・著者キャッシュ・課金記録（自動更新）
+tests/                    架空データと判定テスト
+```

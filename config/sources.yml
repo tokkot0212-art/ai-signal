@@ -1,0 +1,146 @@
+# =========================================================
+#  AI X Curator 設定ファイル
+#  ここを編集すれば、信頼するアカウントや「釣り」判定を調整できます
+# =========================================================
+
+# ---- 予算と取得量（X API は従量課金：投稿1件 $0.005 / ユーザー1件 $0.010）----
+budget:
+  monthly_usd: 30          # 月の上限。超えそうなら取得をスキップ
+  post_read_usd: 0.005
+  user_read_usd: 0.010
+
+fetch:
+  trusted_max_results: 20  # 信頼アカウントからの取得数（1回あたり, 10〜100）
+  discovery_max_results: 20 # キーワード探索での取得数（1回あたり, 10〜100）
+  keep_hours: 72            # この時間より古い投稿はフィードから外す
+  user_cache_days: 7        # 著者情報をキャッシュする日数（課金節約）
+
+# 探索クエリ（X検索演算子）。リツイート・返信は除外、リンク付き優先
+discovery_query: >-
+  (OpenAI OR Anthropic OR Claude OR Gemini OR DeepMind OR "GPT-5" OR LLM OR "生成AI" OR "AIエージェント")
+  -is:retweet -is:reply has:links (lang:ja OR lang:en)
+
+# ---- 信頼アカウント（小文字・@なしで記入）----
+# tier1: 企業・研究機関の公式（発表そのもの）
+# tier2: 実績ある研究者・記者・開発者（一次情報に近い）
+trusted:
+  tier1:
+    - openai
+    - anthropicai
+    - googledeepmind
+    - googleai
+    - aiatmeta
+    - metaai
+    - mistralai
+    - xai
+    - nvidiaai
+    - huggingface
+    - microsoftai
+    - deepseek_ai
+    - alibaba_qwen
+    - sakanaailabs
+    - openaidevs
+    - claudeai
+  tier2:
+    - sama
+    - karpathy
+    - demishassabis
+    - ylecun
+    - drjimfan
+    - _akhaliq
+    - simonw
+    - emollick
+    - natolambert
+    - swyx
+    - rowancheung
+    - npaka123
+    - shi3z
+    - ai_database
+    - itmedia_news
+    - nikkeitech
+
+# 判定から完全に外すアカウント（回数稼ぎ常習など。自分で追加）
+blocklist: []
+
+# ---- 一次情報とみなすドメイン（リンクがあれば信頼度アップ）----
+primary_domains:
+  - openai.com
+  - anthropic.com
+  - deepmind.google
+  - blog.google
+  - ai.google.dev
+  - ai.meta.com
+  - mistral.ai
+  - x.ai
+  - huggingface.co
+  - arxiv.org
+  - github.com
+  - nvidia.com
+  - microsoft.com
+  - sakana.ai
+  - qwenlm.github.io
+  - deepseek.com
+  - docs.anthropic.com
+  - platform.openai.com
+
+# ---- 釣り・回数稼ぎ表現（含まれるほど減点）----
+bait_phrases:
+  - 保存推奨
+  - 保存必須
+  - 知らないと損
+  - 知らない人多すぎ
+  - ヤバすぎ
+  - やばすぎ
+  - 完全に終わった
+  - 人生変わる
+  - 神ツール
+  - 衝撃
+  - 無料で配布
+  - プレゼント
+  - リプで
+  - DMで
+  - いいねした人
+  - フォローした人
+  - 選まとめ          # 「5選」「10選」などの数字＋選は自動で検出します
+  - 月収
+  - 稼げる
+  - 副業
+  - bookmark this
+  - save this
+  - you won't believe
+  - game changer
+  - game-changer
+  - insane
+  - mind-blowing
+  - mind blowing
+  - giveaway
+  - comment "
+  - like and retweet
+  - follow me
+  - "🧵👇"
+  - is dead
+  - rip chatgpt
+  - this changes everything
+
+# 噂・リーク系の表現（一次情報リンクが無いと「未確認」扱い）
+rumor_phrases:
+  - リーク
+  - 噂
+  - らしい
+  - 未確認
+  - 関係者によると
+  - leak
+  - leaked
+  - rumor
+  - rumour
+  - reportedly
+  - sources say
+  - allegedly
+  - unconfirmed
+
+# ---- 生成AIによる要約・最終判定（任意）----
+# ANTHROPIC_API_KEY を GitHub Secrets に入れたときだけ動きます
+llm:
+  enabled: true
+  model: claude-haiku-5-5
+  max_clusters: 15

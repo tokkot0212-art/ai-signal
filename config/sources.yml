@@ -138,9 +138,12 @@ rumor_phrases:
   - allegedly
   - unconfirmed
 
-# ---- 生成AIによる要約・最終判定（任意）----
+# ---- 日本語の概要・解説と最終判定（Claude）----
 # ANTHROPIC_API_KEY を GitHub Secrets に入れたときだけ動きます
+# 各話題に「概要」「理解を深めるポイント」「用語解説」を日本語で付けます（英語投稿も日本語化）
+# 一度作った概要はキャッシュするので、同じ話題に二重課金はしません
 llm:
   enabled: true
   model: claude-haiku-5-5
-  max_clusters: 15
+  max_clusters: 30   # 1回の実行で概要を付ける話題の最大数（ノイズは対象外）
+  batch_size: 8      # 1回のAPI呼び出しでまとめて処理する話題数

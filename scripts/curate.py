@@ -326,6 +326,8 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
             "name": u.get("name", ""),
             "avatar": u.get("profile_image_url", ""),
             "text": tweet_text(t),
+            "lang": t.get("lang", ""),
+            "text_ja": None,
             "created_at": t["created_at"],
             "metrics": t.get("public_metrics", {}),
             "cred": t["_s"]["cred"],
@@ -362,6 +364,8 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
     confirmed=公式発表や一次情報で裏付けあり, promising=信頼できそうだが裏付け待ち,
     unverified=噂・誇張・出典不明, excluded=釣り・宣伝・無関係
 - note: 判定理由を1文で
+- translations: 日本語以外（lang が ja でない）の投稿だけ、本文の自然な日本語訳。{"投稿id":"日本語訳"} の形。
+    意訳しすぎず、数値・固有名詞・URLはそのまま残す。日本語の投稿は含めない
 
 厳守:
 - summary には投稿にない事実（数値・日付・企業名）を足さない
@@ -369,7 +373,7 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 - 噂・リークは summary の冒頭に【未確認】と付ける
 
 出力はJSON配列のみ（前後に文章を付けない）:
-[{"id":"...","title":"...","summary":"...","points":["..."],"terms":[{"term":"...","desc":"..."}],"verdict":"...","note":"..."}]
+[{"id":"...","title":"...","summary":"...","points":["..."],"terms":[{"term":"...","desc":"..."}],"verdict":"...","note":"...","translations":{"投稿id":"日本語訳"}}]
 
 クラスタ:
 """
@@ -378,7 +382,7 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 def _call_claude(key: str, model: str, prompt: str) -> list[dict]:
     body = json.dumps({
         "model": model,
-        "max_tokens": 6000,
+        "max_tokens": 8000,
         "messages": [{"role": "user", "content": prompt}],
     }).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
@@ -398,6 +402,12 @@ def apply_review(c: dict, r: dict):
     c["terms"] = [t for t in (r.get("terms") or [])
                   if isinstance(t, dict) and t.get("term") and t.get("desc")][:3]
     c["llm_note"] = r.get("note")
+    tr = r.get("translations") or {}
+    if isinstance(tr, dict):
+        for p in c["posts"]:
+            ja = tr.get(p["id"])
+            if isinstance(ja, str) and ja.strip() and p.get("lang") != "ja":
+                p["text_ja"] = ja.strip()
     v = r.get("verdict")
     if v in VERDICT_ORDER:
         cur, new = VERDICT_ORDER.index(c["verdict"]), VERDICT_ORDER.index(v)
@@ -429,7 +439,8 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
             "id": c["id"],
             "rule_verdict": c["verdict"],
             "links": [l["domain"] for l in c["links"]],
-            "posts": [{"by": p["username"], "text": p["text"][:700]} for p in c["posts"][:5]],
+            "posts": [{"id": p["id"], "by": p["username"], "lang": p.get("lang", ""),
+                       "text": p["text"][:700]} for p in c["posts"][:5]],
         } for c, _ in chunk]
         try:
             results = _call_claude(key, lc.get("model", "claude-haiku-5-5"),

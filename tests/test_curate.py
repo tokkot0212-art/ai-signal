@@ -100,6 +100,17 @@ class TestQualityAndArchive(unittest.TestCase):
         self.assertEqual(c["evidence"], "official_evaluation")
         self.assertEqual(c["verdict"], "promising")
 
+    def test_own_build_not_commentary(self):
+        self.c.CFG = self.cfg
+        self.c.OFFICIAL_EVAL_RE = None
+        self.c.HANDS_ON_RE = None
+        c = {"verdict": "promising", "score": 50, "reasons_pos": [], "reasons_neg": [], "title": "t", "links": [],
+             "posts": [{"id": "1", "text": "23億パラメータの音声生成AIをブラウザだけで動かすツールを作った", "lang": "ja"}]}
+        self.c.apply_review(c, {"evidence": "commentary", "evidence_note": "note記事への誘導", "verdict": "promising",
+                                "summary": "s", "points": [], "terms": [], "note": "n"})
+        self.assertEqual(c["evidence"], "hands_on_test")
+        self.assertEqual(c["verdict"], "promising")
+
     def test_archive_merges_by_post_ids(self):
         from datetime import datetime, timezone
         tmp = Path(tempfile.mkdtemp())

@@ -46,6 +46,11 @@ class TestCurate(unittest.TestCase):
         self.assertEqual(c["verdict"], "unverified")
         self.assertEqual(c["evidence"], "opinion")
 
+    def test_commentary_is_excluded(self):
+        c = self.find("評価のやり方がイマイチ")
+        self.assertEqual(c["verdict"], "excluded")
+        self.assertEqual(c["evidence"], "commentary")
+
     def test_author_types_labeled(self):
         c = self.find("Introducing Orion-2")
         types = {a["username"]: a["type"] for a in c["authors"]}

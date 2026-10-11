@@ -136,6 +136,26 @@
      "ja": "正直、AGIは3年以内に来ると思う。最新モデルを使ってみた上での、あくまで私の感覚です。"
     }
    ]
+  },
+  "1012": {
+   "title": "評論家がOrion-2の検証記事を論評",
+   "summary": "AI評論家が他者の検証記事について評価方法に問題があると述べた。",
+   "points": [],
+   "terms": [],
+   "verdict": "promising",
+   "note": "本人は手を動かしておらず、他人の検証への論評のみ。",
+   "evidence": "commentary",
+   "evidence_note": "他人の検証への論評"
+  },
+  "1003": {
+   "title": "Orion-2をRTX 4090で動かした検証",
+   "summary": "開発者がOrion-2の量子化版をRTX 4090で実際に動かし、実用的な速度で動作したと報告した。",
+   "points": [],
+   "terms": [],
+   "verdict": "promising",
+   "note": "本人が実機で動かした結果。",
+   "evidence": "hands_on_test",
+   "evidence_note": "RTX 4090で実際に動作"
   }
  },
  "users": [
@@ -229,6 +249,17 @@
    "public_metrics": {
     "followers_count": 400000,
     "following_count": 500
+   }
+  },
+  {
+   "id": "u10",
+   "username": "ai_critic_jp",
+   "name": "AI評論家（架空）",
+   "created_at": "2015-01-01T00:00:00Z",
+   "description": "AIトレンド解説・評論",
+   "public_metrics": {
+    "followers_count": 60000,
+    "following_count": 800
    }
   }
  ],
@@ -443,6 +474,27 @@
     "reply_count": 900,
     "bookmark_count": 300
    }
+  },
+  {
+   "id": "1012",
+   "author_id": "u10",
+   "created_at": "2026-10-10T04:30:00Z",
+   "lang": "ja",
+   "text": "Orion-2の検証記事を読んだけど、評価のやり方がイマイチ。ベンチマークの選び方に問題があると思う。オープンモデルの未来について語ってみた→ https://t.co/x",
+   "entities": {
+    "urls": [
+     {
+      "expanded_url": "https://note.com/ai_critic_jp/n/abc"
+     }
+    ]
+   },
+   "public_metrics": {
+    "like_count": 900,
+    "retweet_count": 150,
+    "quote_count": 20,
+    "reply_count": 40,
+    "bookmark_count": 200
+   }
   }
  ],
  "demo_authors": {
@@ -489,6 +541,11 @@
   "u9": {
    "type": "researcher",
    "role": "大学教授",
+   "former": ""
+  },
+  "u10": {
+   "type": "commentator",
+   "role": "AI評論家",
    "former": ""
   }
  }

@@ -973,6 +973,91 @@ def archive(clusters: list[dict], now: datetime):
     save_json(ARCHIVE / "index.json", index)
 
 
+# ---------------------------------------------------------------- budget pacing
+
+def cycle_bounds(now: datetime, start_day: int) -> tuple[datetime, datetime]:
+    """X の請求サイクル（例: 毎月20日〜翌月20日）の開始・終了（JST基準）。"""
+    j = now.astimezone(JST)
+    def mk(y, m):
+        last = (datetime(y + (m == 12), m % 12 + 1, 1, tzinfo=JST) - timedelta(days=1)).day
+        return datetime(y, m, min(start_day, last), tzinfo=JST)
+    start = mk(j.year, j.month)
+    if j < start:
+        start = mk(j.year - (j.month == 1), (j.month - 2) % 12 + 1)
+    end = mk(start.year + (start.month == 12), start.month % 12 + 1)
+    return start, end
+
+
+def plan_run(state: dict, cfg: dict, now: datetime) -> dict:
+    """月の予算を残り日数で割って「今日の予算」を出し、今日の残り回数で割って今回の取得件数を決める。
+    使い残しは自動的に翌日以降へ繰り越される（残額÷残り日数で毎回計算するため）。"""
+    b = cfg["budget"]
+    start, end = cycle_bounds(now, b.get("cycle_start_day", 1))
+    ck = start.strftime("%Y-%m-%d")
+    spend = state.setdefault("cycle_spend", {})
+    if ck not in spend:  # 旧形式（暦月）からの引き継ぎ
+        spend[ck] = state.get("spend", {}).get(now.astimezone(JST).strftime("%Y-%m"), 0.0)
+    daily = state.setdefault("daily_spend", {})
+    today = now.astimezone(JST).strftime("%Y-%m-%d")
+    spent_today = daily.get(today, 0.0)
+    spent_before_today = spend[ck] - spent_today
+    days_left = max(1, (end.date() - now.astimezone(JST).date()).days)
+    cycle_days = max(1, (end.date() - start.date()).days)
+    base = b["monthly_usd"] / cycle_days                      # 1日あたりの均等割り（例: $20÷30日≒$0.67）
+    cap = base * b.get("max_daily_multiplier", 1.2)            # 使い残しの繰り越しは少しだけ（駆け込み消費を防ぐ）
+    budget_today = max(0.0, min((b["monthly_usd"] - spent_before_today) / days_left, cap))
+    hours = sorted(b.get("run_hours_jst", [7, 12, 17, 22]))
+    h = now.astimezone(JST).hour
+    runs_left = 1 + sum(1 for x in hours if x > h)            # 今回を含む今日の残り回数
+    run_budget = max(0.0, (budget_today - spent_today) / runs_left)
+
+    ratio = state.get("user_ratio", 0.3)  # 投稿1件あたりに発生する著者情報の取得（実績から学習）
+    per_post = b["post_read_usd"] + ratio * b["user_read_usd"]
+    n = int(run_budget / per_post)
+    n = min(n, cfg["fetch"].get("max_posts_per_run", 80))
+    return {"cycle_key": ck, "cycle_end": end, "today": today, "budget_today": budget_today,
+            "spent_today": spent_today, "runs_left": runs_left, "run_budget": run_budget,
+            "posts": n, "cycle_spent": spend[ck], "days_left": days_left, "daily_base": base}
+
+
+def allocate(n: int, n_trusted_q: int, share: float, state: dict) -> tuple[list[tuple[int, int]], int]:
+    """今回の取得件数を10件単位の「枠」に分け、信頼アカウントとキーワード探索に配分する。
+    - 探索の取り分（1-share）は端数を持ち越して、数回に1回は必ず探索が回るようにする
+    - 信頼アカウントのグループは毎回順番に回し、どのグループも均等に取得する"""
+    units = n // 10
+    if units <= 0:
+        return [], 0
+    credit = state.get("disc_credit", 0.0) + units * (1 - share)
+    disc_units = min(int(credit), units)
+    if units == 1 and disc_units == 1 and state.get("last_was_disc"):
+        disc_units = 0  # 1枠しかない回で探索が連続しないように
+    state["disc_credit"] = round(credit - disc_units, 3)
+    state["last_was_disc"] = disc_units > 0 and units == 1
+    t_units = units - disc_units
+    plan = []
+    if t_units:
+        k = min(n_trusted_q, t_units)
+        per = min(100, (t_units * 10) // k)
+        rot = state.get("rot", 0)
+        plan = [((rot + i) % n_trusted_q, per) for i in range(k)]
+        state["rot"] = (rot + k) % n_trusted_q
+    return plan, min(100, disc_units * 10)
+
+
+def _cycle_spent(state: dict, cfg: dict, now: datetime) -> float:
+    start, _ = cycle_bounds(now, cfg["budget"].get("cycle_start_day", 1))
+    return state.get("cycle_spend", {}).get(start.strftime("%Y-%m-%d"),
+                                            state.get("spend", {}).get(now.astimezone(JST).strftime("%Y-%m"), 0.0))
+
+
+def _today_budget(state: dict, cfg: dict, now: datetime) -> float:
+    try:
+        return plan_run(dict(state, cycle_spend=dict(state.get("cycle_spend", {})),
+                             daily_spend=dict(state.get("daily_spend", {}))), cfg, now)["budget_today"]
+    except Exception:
+        return 0.0
+
+
 def month_key(now: datetime) -> str:
     return now.strftime("%Y-%m")
 
@@ -1009,32 +1094,35 @@ def main():
         if not token:
             sys.exit("X_BEARER_TOKEN が未設定です（GitHub の Settings → Secrets に登録してください）")
         b, f = cfg["budget"], cfg["fetch"]
-        mk = month_key(now)
-        spent = state["spend"].get(mk, 0.0)
-        est = (f["trusted_max_results"] + f["discovery_max_results"]) * (b["post_read_usd"] + 0.3 * b["user_read_usd"])
-        if spent + est > b["monthly_usd"]:
-            note = f"今月の予算上限（${b['monthly_usd']}）に近いため取得をスキップしました"
+        plan = plan_run(state, cfg, now)
+        print(f"[budget] cycle ${plan['cycle_spent']:.2f}/${b['monthly_usd']} ({plan['days_left']} days left, "
+              f"base ${plan['daily_base']:.3f}/day), "
+              f"today ${plan['spent_today']:.3f}/${plan['budget_today']:.3f}, this run ${plan['run_budget']:.3f} "
+              f"-> {plan['posts']} posts ({plan['runs_left']} runs left today)")
+        suffix = "-is:retweet -is:reply"
+        handles = cfg["trusted"].get("tier1", []) + cfg["trusted"].get("tier2", [])
+        tq = build_from_queries(handles, suffix, max_len=f.get("trusted_query_len", 330))
+        trusted_plan, disc_n = allocate(plan["posts"], len(tq), b.get("trusted_share", 0.7), state)
+        if not trusted_plan and not disc_n:
+            note = "今日の予算を使い切ったため、次回の更新まで取得を休んでいます"
             print(note)
         else:
             client = XClient(token)
-            suffix = "-is:retweet -is:reply"
-            handles = cfg["trusted"].get("tier1", []) + cfg["trusted"].get("tier2", [])
-            tq = build_from_queries(handles, suffix, max_len=f.get("trusted_query_len", 330))
-            per = max(10, f["trusted_max_results"] // max(len(tq), 1))
             fetched = []
-            for i, q in enumerate(tq):
-                key = f"trusted{i}"
-                res = client.search_recent(q, per, state["since"].get(key))
+            for qi, per in trusted_plan:
+                key = f"trusted{qi}"
+                res = client.search_recent(tq[qi], per, state["since"].get(key))
                 if res:
                     state["since"][key] = max(res, key=lambda t: int(t["id"]))["id"]
                 fetched += res
-            q = re.sub(r"\s+", " ", cfg["discovery_query"]).strip()
-            res = client.search_recent(q, f["discovery_max_results"], state["since"].get("discovery"))
-            if res:
-                state["since"]["discovery"] = max(res, key=lambda t: int(t["id"]))["id"]
-            kept = [t for t in res if passes_discovery_gate(t, cfg)]
-            print(f"discovery: {len(res)} fetched, {len(kept)} passed the gate")
-            fetched += kept
+            if disc_n:
+                q = re.sub(r"\s+", " ", cfg["discovery_query"]).strip()
+                res = client.search_recent(q, disc_n, state["since"].get("discovery"))
+                if res:
+                    state["since"]["discovery"] = max(res, key=lambda t: int(t["id"]))["id"]
+                kept = [t for t in res if passes_discovery_gate(t, cfg)]
+                print(f"discovery: {len(res)} fetched, {len(kept)} passed the gate")
+                fetched += kept
             for t in fetched:
                 store[t["id"]] = t  # 同じ投稿は最新の反応数で上書き
 
@@ -1045,8 +1133,17 @@ def main():
             for u in client.lookup_users(need):
                 user_cache[u["id"]] = {**u, "_fetched": iso(now)}
             cost = client.posts_read * b["post_read_usd"] + client.users_read * b["user_read_usd"]
-            state["spend"][mk] = round(spent + cost, 4)
-            print(f"fetched posts={client.posts_read} users={client.users_read} cost=${cost:.3f} month=${state['spend'][mk]:.2f}")
+            if client.posts_read:
+                r = client.users_read / client.posts_read
+                state["user_ratio"] = round(0.7 * state.get("user_ratio", 0.3) + 0.3 * r, 3)
+            ck, today = plan["cycle_key"], plan["today"]
+            state["cycle_spend"][ck] = round(state["cycle_spend"][ck] + cost, 4)
+            state["daily_spend"][today] = round(state["daily_spend"].get(today, 0.0) + cost, 4)
+            state["daily_spend"] = dict(sorted(state["daily_spend"].items())[-60:])
+            mk = month_key(now)
+            state.setdefault("spend", {})[mk] = round(state.get("spend", {}).get(mk, 0.0) + cost, 4)
+            print(f"fetched posts={client.posts_read} users={client.users_read} cost=${cost:.3f} "
+                  f"today=${state['daily_spend'][today]:.3f} cycle=${state['cycle_spend'][ck]:.2f}")
 
     # 古い投稿を捨てる
     cutoff = now - timedelta(hours=cfg["fetch"]["keep_hours"])
@@ -1124,8 +1221,10 @@ def main():
         "stats": {
             "posts": len(tweets), "clusters": len(clusters), **counts, "dropped_low_quality": dropped,
             "llm_reviewed": reviewed,
-            "month_spend_usd": state["spend"].get(month_key(now), 0.0),
+            "month_spend_usd": _cycle_spent(state, cfg, now),
             "month_budget_usd": cfg["budget"]["monthly_usd"],
+            "today_spend_usd": state.get("daily_spend", {}).get(now.astimezone(JST).strftime("%Y-%m-%d"), 0.0),
+            "today_budget_usd": round(_today_budget(state, cfg, now), 3),
         },
         "clusters": clusters,
     }

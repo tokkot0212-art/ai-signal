@@ -253,7 +253,8 @@ function render(){
 
   const s = feed.stats || {};
   $("#footer").textContent = `投稿${s.posts ?? 0}件 → 話題${s.clusters ?? 0}件に整理` +
-    (s.month_budget_usd ? ` ・ 今月のAPI費用 $${(s.month_spend_usd||0).toFixed(2)} / $${s.month_budget_usd}` : "");
+    (s.today_budget_usd != null ? ` ・ 今日のX API $${(s.today_spend_usd||0).toFixed(2)} / $${s.today_budget_usd.toFixed(2)}` : "") +
+    (s.month_budget_usd ? ` ・ 今サイクル $${(s.month_spend_usd||0).toFixed(2)} / $${s.month_budget_usd}` : "");
 }
 
 function overview(c){

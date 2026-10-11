@@ -134,24 +134,58 @@ class TestQualityAndArchive(unittest.TestCase):
         self.assertEqual(seen_q, {0, 1})
         self.assertGreater(disc, 0)
 
-    def test_archive_merges_by_post_ids(self):
+    def _cl(self, cid, pids, first, summary=None, verdict="promising"):
+        return {"id": cid, "verdict": verdict, "title": cid, "summary": summary, "points": [], "terms": [],
+                "score": 50, "credibility": 60, "heat": 10, "first_seen": first, "latest": first,
+                "authors": [{"username": "a"}], "links": [],
+                "posts": [{"id": p, "url": "u", "username": "a", "text": "t"} for p in pids],
+                "post_count": len(pids)}
+
+    def test_archive_by_day_and_merge(self):
         from datetime import datetime, timezone
         tmp = Path(tempfile.mkdtemp())
         self.c.ARCHIVE = tmp
-        def cl(cid, pids, summary=None, verdict="promising"):
-            return {"id": cid, "verdict": verdict, "title": cid, "summary": summary, "points": [], "terms": [],
-                    "score": 50, "credibility": 60, "heat": 10, "first_seen": "2026-10-10T01:00:00Z",
-                    "latest": "2026-10-10T02:00:00Z", "authors": [{"username": "a"}], "links": [],
-                    "posts": [{"id": p, "url": "u", "username": "a", "text": "t"} for p in pids],
-                    "post_count": len(pids)}
-        now = datetime(2026, 10, 10, 3, tzinfo=timezone.utc)
-        self.c.archive([cl("A", ["1"], "要約", "confirmed"), cl("B", ["2"])], now)
-        self.c.archive([cl("C", ["1", "2", "3"])], now)  # A と B が統合された
-        items = json.loads((tmp / "2026-10.json").read_text(encoding="utf-8"))["items"]
-        self.assertEqual(len(items), 1)
-        self.assertEqual(items[0]["summary"], "要約")       # 以前の要約を保持
-        self.assertEqual(items[0]["verdict"], "confirmed")  # 格下げしない
-        self.assertEqual(set(items[0]["post_ids"]), {"1", "2", "3"})
+        now = datetime(2026, 10, 11, 3, tzinfo=timezone.utc)
+        # 10/10 23:30 JST と 10/11 09:00 JST に初出の話題
+        self.c.archive([self._cl("A", ["1"], "2026-10-10T14:30:00Z", "要約", "confirmed"),
+                        self._cl("B", ["2"], "2026-10-11T00:00:00Z")], now)
+        idx = json.loads((tmp / "index.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(idx["days"]), {"2026-10-10", "2026-10-11"})
+        self.assertTrue((tmp / "days" / "2026-10-10.md").exists())
+        # 翌日の続報で A と B が統合 → 最初に見つけた 10/10 にまとまる
+        self.c.archive([self._cl("C", ["1", "2", "3"], "2026-10-11T00:00:00Z")], now)
+        d10 = json.loads((tmp / "days" / "2026-10-10.json").read_text(encoding="utf-8"))["items"]
+        self.assertEqual(len(d10), 1)
+        self.assertEqual(d10[0]["summary"], "要約")
+        self.assertEqual(d10[0]["verdict"], "confirmed")
+        self.assertEqual(set(d10[0]["post_ids"]), {"1", "2", "3"})
+        idx = json.loads((tmp / "index.json").read_text(encoding="utf-8"))
+        self.assertNotIn("2026-10-11", idx["days"])
+
+    def test_rejudged_topic_removed_from_history(self):
+        from datetime import datetime, timezone
+        tmp = Path(tempfile.mkdtemp())
+        self.c.ARCHIVE = tmp
+        now = datetime(2026, 10, 11, 3, tzinfo=timezone.utc)
+        self.c.archive([self._cl("A", ["1"], "2026-10-11T00:00:00Z", "s")], now)
+        op = dict(self._cl("A2", ["1"], "2026-10-11T00:00:00Z", "s", "unverified"), evidence="opinion")
+        self.c.archive([op], now)
+        idx = json.loads((tmp / "index.json").read_text(encoding="utf-8"))
+        self.assertNotIn("2026-10-11", idx["days"])
+
+    def test_migrate_monthly_archive(self):
+        from datetime import datetime, timezone
+        tmp = Path(tempfile.mkdtemp())
+        self.c.ARCHIVE = tmp
+        e = self.c._archive_entry(dict(self._cl("A", ["1"], "2026-10-09T03:00:00Z", "s"), evidence="reporting"),
+                                  datetime.now(timezone.utc))
+        old = self.c._archive_entry(self._cl("B", ["2"], "2026-10-09T04:00:00Z", "s"), datetime.now(timezone.utc))
+        (tmp / "2026-10.json").write_text(json.dumps({"month": "2026-10", "items": [e, old]}), encoding="utf-8")
+        (tmp / "index.json").write_text(json.dumps({"months": {"2026-10": {"count": 1}}}), encoding="utf-8")
+        self.c.archive([], datetime(2026, 10, 11, 3, tzinfo=timezone.utc))
+        idx = json.loads((tmp / "index.json").read_text(encoding="utf-8"))
+        self.assertEqual(idx["days"]["2026-10-09"]["count"], 1)
+        self.assertFalse((tmp / "2026-10.json").exists())
 
 
 if __name__ == "__main__":

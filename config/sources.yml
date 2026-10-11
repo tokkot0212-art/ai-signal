@@ -5,20 +5,37 @@
 
 # ---- 予算と取得量（X API は従量課金：投稿1件 $0.005 / ユーザー1件 $0.010）----
 budget:
-  monthly_usd: 30          # 月の上限。超えそうなら取得をスキップ
+  monthly_usd: 20          # 月の上限（X側の支出上限$20に合わせる）。超えそうなら取得をスキップ
   post_read_usd: 0.005
   user_read_usd: 0.010
 
 fetch:
-  trusted_max_results: 20  # 信頼アカウントからの取得数（1回あたり, 10〜100）
-  discovery_max_results: 20 # キーワード探索での取得数（1回あたり, 10〜100）
+  trusted_max_results: 30  # 信頼アカウントからの取得数（1回あたり）。クエリを分けて各10件以上取る
+  trusted_query_len: 330   # 信頼アカウントを何人ずつ1クエリにまとめるか（文字数）。小さいほど取りこぼしが減る
+  discovery_max_results: 15 # キーワード探索での取得数（1回あたり, 10〜100）
   keep_hours: 72            # この時間より古い投稿はフィードから外す
-  user_cache_days: 7        # 著者情報をキャッシュする日数（課金節約）
+  user_cache_days: 30       # 著者情報をキャッシュする日数（課金節約）
 
 # 探索クエリ（X検索演算子）。リツイート・返信は除外、リンク付き優先
 discovery_query: >-
   (OpenAI OR Anthropic OR Claude OR Gemini OR DeepMind OR "GPT-5" OR LLM OR "生成AI" OR "AIエージェント")
-  -is:retweet -is:reply has:links (lang:ja OR lang:en)
+  -is:retweet -is:reply -is:quote has:links (lang:ja OR lang:en)
+  -セール -クーポン -タイムセール -プレゼント -"#PR" -"#ad" -副業
+
+# ---- 品質の足切り ----
+quality:
+  # キーワード探索の投稿は、反応（いいね+RT×2+引用×3+…）がこれ未満なら捨てる（一次情報リンク付きは残す）
+  discovery_min_engagement: 15
+  # 「裏付け」として数えるアカウントの最低フォロワー数（信頼リスト・一次情報リンク付きは別）
+  credible_min_followers: 10000
+  # 信頼アカウントの投稿でも、これらの語を含まず一次情報リンクもない雑談はノイズ扱い
+  ai_keywords: [AI, ＡＩ, LLM, LLMs, RLHF, GPT, GPTs, ChatGPT, Claude, Gemini, OpenAI, Anthropic, DeepMind, Llama, Mistral,
+    DeepSeek, Qwen, Grok, Copilot, Codex, Cursor, agent, agents, エージェント, model, models, モデル,
+    生成, 機械学習, 深層学習, 推論, 学習, 言語モデル, neural, transformer, diffusion, 拡散, benchmark,
+    ベンチマーク, eval, arXiv, paper, 論文, 研究, research, RL, 強化学習, fine-tun, ファインチューニング,
+    prompt, プロンプト, token, トークン, GPU, NVIDIA, inference, training, open-weight, オープンウェイト,
+    AGI, alignment, アライメント, 安全性, safety, robot, ロボット, 音声合成, 画像生成, 動画生成, Sora, Veo,
+    Midjourney, Stable Diffusion, Hugging Face, HuggingFace, MCP, RAG, embedding, ベクトル, Transformer]
 
 # ---- 信頼アカウント（小文字・@なしで記入）----
 # tier1: 企業・研究機関の公式（発表そのもの）

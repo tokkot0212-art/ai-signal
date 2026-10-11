@@ -32,6 +32,29 @@ FEED = ROOT / "docs" / "data" / "feed.json"
 
 VERDICT_ORDER = ["confirmed", "promising", "unverified", "excluded"]
 
+# 発言者の区分（専門性）と、信頼度への加点
+AUTHOR_TYPES = {
+    "official":     ("公式", 25),      # 企業・研究機関・政府などの公式アカウント
+    "researcher":   ("研究者", 15),    # 大学・研究所・AI企業の研究者、論文著者
+    "journalist":   ("記者・メディア", 10),
+    "practitioner": ("実務家", 3),     # エンジニア・開発者・業界の実務家
+    "individual":   ("個人", 0),
+    "promoter":     ("宣伝・情報商材", -15),
+}
+EXPERT_TYPES = {"official", "researcher", "journalist"}
+
+# 根拠（エビデンス）の種類と、話題スコアへの加点。シグナルに入れるのは evidence_ok のものだけ
+EVIDENCE = {
+    "official_announcement": ("公式発表", 10, True),
+    "paper_or_data":         ("論文・データ", 8, True),
+    "reporting":             ("報道（取材・出典あり）", 5, True),
+    "hands_on_test":         ("実際に試した検証", 5, True),
+    "expert_analysis":       ("専門家の分析", 2, True),   # 根拠を示した専門家の分析
+    "opinion":               ("意見・感想", -10, False),
+    "rumor":                 ("噂・リーク", -10, False),
+    "promo":                 ("宣伝", -20, False),
+}
+
 # ---------------------------------------------------------------- utils
 
 def load_json(p: Path, default):
@@ -179,6 +202,20 @@ def score_tweet(t: dict, user: dict | None, cfg: dict, now: datetime) -> dict:
         cred += 5
         pos.append("組織認証アカウント")
 
+    a = (user or {}).get("_author") or {}
+    atype = "official" if tier == 1 else a.get("type", "")
+    if atype in AUTHOR_TYPES and tier == 0:
+        label, bonus = AUTHOR_TYPES[atype]
+        cred += bonus
+        role = a.get("role") or label
+        if bonus > 0:
+            pos.append(f"発言者：{role}")
+        elif bonus < 0:
+            neg.append(f"発言者：{role}")
+    if a.get("former") and tier == 0:
+        cred += 5
+        pos.append(f"経歴：{a['former']}")
+
     urls = tweet_urls(t)
     domains = [domain_of(u) for u in urls if norm_url(u)]
     primary = [d for d in domains if is_primary(d, cfg["primary_domains"])]
@@ -259,7 +296,7 @@ def score_tweet(t: dict, user: dict | None, cfg: dict, now: datetime) -> dict:
     heat = max(0, min(100, round(25 * math.log10(1 + eng / age_h))))
 
     return {
-        "cred": cred, "heat": heat, "tier": tier, "pos": pos, "neg": neg,
+        "cred": cred, "heat": heat, "tier": tier, "pos": pos, "neg": neg, "atype": atype,
         "flags": sorted(flags), "domains": domains, "urls": urls,
     }
 
@@ -323,11 +360,16 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
     for t in group:
         u = users.get(t["author_id"], {})
         name = u.get("username", t["author_id"])
-        authors[name] = {"username": name, "name": u.get("name", name), "tier": t["_s"]["tier"]}
+        a = u.get("_author") or {}
+        atype = t["_s"].get("atype") or ""
+        authors[name] = {"username": name, "name": u.get("name", name), "tier": t["_s"]["tier"],
+                         "type": atype, "type_label": AUTHOR_TYPES.get(atype, ("", 0))[0],
+                         "role": a.get("role", ""), "former": a.get("former", "")}
         fol = (u.get("public_metrics") or {}).get("followers_count", 0)
         max_followers = max(max_followers, fol)
         # 「裏付け」に数えるのは、信頼リスト・一次情報リンク付き・大きめの実績アカウントだけ
-        if t["_s"]["cred"] >= 50 and (t["_s"]["tier"] or "primary" in t["_s"]["flags"] or fol >= big):
+        if t["_s"]["cred"] >= 50 and (t["_s"]["tier"] or "primary" in t["_s"]["flags"] or fol >= big
+                                      or t["_s"].get("atype") in EXPERT_TYPES):
             credible.add(name)
 
     best = max(t["_s"]["cred"] for t in group)
@@ -345,6 +387,7 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
     elif rumor or best < 50:
         verdict = "unverified"
     elif (has_trusted or len(credible) >= 2
+          or any(t["_s"].get("atype") in EXPERT_TYPES and t["_s"]["cred"] >= 55 for t in group)
           or (has_primary and (max_followers >= 1000 or heat >= 10))
           or (max_followers >= big and heat >= 15)):
         verdict = "promising"
@@ -389,6 +432,8 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
             "heat": t["_s"]["heat"],
             "pos": t["_s"]["pos"],
             "neg": t["_s"]["neg"],
+            "author_type": t["_s"].get("atype", ""),
+            "author_role": (u.get("_author") or {}).get("role", ""),
         })
 
     times = [t["created_at"] for t in group]
@@ -400,7 +445,7 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
         "authors": list(authors.values())[:10], "post_count": len(group),
         "posts": posts, "links": links[:5],
         "reasons_pos": pos[:6], "reasons_neg": neg[:6], "llm_note": None,
-        "points": [], "terms": [],
+        "points": [], "terms": [], "evidence": None, "evidence_label": None, "evidence_note": None,
     }
 
 
@@ -418,7 +463,14 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 - verdict: confirmed / promising / unverified / excluded のいずれか
     confirmed=公式発表や一次情報で裏付けあり, promising=信頼できそうだが裏付け待ち,
     unverified=噂・誇張・出典不明, excluded=釣り・宣伝・無関係
-- note: 判定理由を1文で
+- evidence: この話題の根拠の種類。次のどれか1つ
+    official_announcement=企業・機関の公式発表そのもの / paper_or_data=論文・公開データ・ベンチマーク結果 /
+    reporting=記者・メディアの取材記事や出典を示した報道 / hands_on_test=実際に試した具体的な結果（数値・手順あり） /
+    expert_analysis=専門家が根拠（データ・論文・経験の具体例）を示した分析 /
+    opinion=根拠を示さない意見・感想・予想・つぶやき（専門家・有名人でも根拠がなければこれ） /
+    rumor=噂・リーク・出典不明の情報 / promo=宣伝・セミナー告知・アフィリエイト
+- evidence_note: 根拠の中身を20字以内で（例「arXiv論文」「公式ブログ」「日経の取材記事」「本人の感想」）
+- note: 判定理由を1文で。誰の発言か（posts の author_type / author_role）と根拠の強さを踏まえる
 - translations: 日本語以外（lang が ja でない）の投稿だけ、本文の自然な日本語訳。
     意訳しすぎず、数値・固有名詞・URLはそのまま残す。日本語の投稿は含めない
 
@@ -426,6 +478,8 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 - summary には投稿にない事実（数値・日付・企業名）を足さない
 - points と terms では一般的な背景知識を使ってよいが、推測は「〜とみられる」「未確認」と明記する
 - 噂・リークは summary の冒頭に【未確認】と付ける
+- 意見・感想は summary の冒頭に【意見】と付け、「〜と述べた」のように誰の意見かが分かる書き方にする
+- 有名人や専門家の発言でも、根拠が示されていなければ evidence は opinion にする
 
 結果は submit_reviews ツールで提出してください。translations は [{"post_id":"投稿id","ja":"日本語訳"}] の形です。
 
@@ -455,12 +509,14 @@ REVIEW_TOOL = {
                         "verdict": {"type": "string",
                                     "enum": ["confirmed", "promising", "unverified", "excluded"]},
                         "note": {"type": "string"},
+                        "evidence": {"type": "string", "enum": list(EVIDENCE)},
+                        "evidence_note": {"type": "string"},
                         "translations": {"type": "array", "items": {
                             "type": "object",
                             "properties": {"post_id": {"type": "string"}, "ja": {"type": "string"}},
                             "required": ["post_id", "ja"]}},
                     },
-                    "required": ["id", "title", "summary", "points", "verdict", "note"],
+                    "required": ["id", "title", "summary", "points", "verdict", "note", "evidence"],
                 },
             }
         },
@@ -500,7 +556,7 @@ TRANSLATE_PROMPT = """次のXの投稿（英語など日本語以外）を、自
 def _call_claude(key: str, model: str, prompt: str, tool: dict = None) -> list[dict]:
     """ツール呼び出しで構造化された結果を受け取る（自由文JSONの崩れを防ぐ）。"""
     tool = tool or REVIEW_TOOL
-    field = "reviews" if tool is REVIEW_TOOL else "translations"
+    field = tool["input_schema"]["required"][0]  # reviews / translations / authors
     body = json.dumps({
         "model": model,
         "max_tokens": 8000,
@@ -602,6 +658,89 @@ def llm_merge_groups(clusters: list[dict], cfg: dict) -> list[list[str]]:
     return []
 
 
+AUTHOR_TOOL = {
+    "name": "submit_authors",
+    "description": "各アカウントの発言者区分を提出する",
+    "input_schema": {
+        "type": "object",
+        "properties": {"authors": {"type": "array", "items": {
+            "type": "object",
+            "properties": {
+                "user_id": {"type": "string"},
+                "type": {"type": "string", "enum": list(AUTHOR_TYPES)},
+                "role": {"type": "string"},
+                "former": {"type": "string"},
+            },
+            "required": ["user_id", "type", "role"]}}},
+        "required": ["authors"],
+    },
+}
+
+AUTHOR_PROMPT = """Xのアカウント情報（表示名・自己紹介・フォロワー数・認証種別）から、AI分野の発言者としての区分を判定してください。
+- official: 企業・研究機関・大学・政府・メディア企業などの公式アカウント
+- researcher: 研究者・教授・論文著者・AI企業の研究職（自己紹介や所属で確認できる場合のみ）
+- journalist: 記者・編集者・ニュースメディア
+- practitioner: エンジニア・開発者・経営者など、実務で関わっている人
+- individual: 上記に当てはまらない個人、所属や専門が分からない人
+- promoter: 情報商材・アフィリエイト・副業勧誘・フォロワー稼ぎが目的とみられるアカウント
+role: 所属や肩書きを20字以内の日本語で（例「Wharton教授」「OpenAI研究者」「ITmedia記者」）。分からなければ区分名
+former: 「元Google」「元OpenAI研究者」など、自己紹介に書かれた主要な前職があれば20字以内。なければ空文字
+自己紹介に書かれていない経歴を推測で足さないこと。submit_authors ツールで提出してください。
+
+アカウント:
+"""
+
+
+def classify_authors(user_cache: dict, author_ids: set, authors_db: dict, cfg: dict, now: datetime) -> int:
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    lc = cfg.get("llm", {})
+    if not key or not lc.get("enabled"):
+        return 0
+    stale = now - timedelta(days=60)
+    need = [uid for uid in sorted(author_ids) if uid in user_cache and
+            (uid not in authors_db or parse_ts(authors_db[uid].get("_at", "2000-01-01T00:00:00Z")) < stale)]
+    n = 0
+    for i in range(0, len(need), 25):
+        chunk = need[i:i + 25]
+        payload = []
+        for uid in chunk:
+            u = user_cache[uid]
+            payload.append({"user_id": uid, "username": u.get("username", ""), "name": u.get("name", ""),
+                            "bio": (u.get("description") or "")[:300],
+                            "followers": (u.get("public_metrics") or {}).get("followers_count", 0),
+                            "verified_type": u.get("verified_type", "")})
+        try:
+            res = _call_claude(key, lc.get("model", "claude-haiku-5-5"),
+                               AUTHOR_PROMPT + json.dumps(payload, ensure_ascii=False), AUTHOR_TOOL)
+        except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
+            print(f"[llm] author classification skipped: {e}", file=sys.stderr)
+            continue
+        for r in res:
+            uid = str(r.get("user_id"))
+            if uid in chunk and r.get("type") in AUTHOR_TYPES:
+                authors_db[uid] = {"type": r["type"], "role": (r.get("role") or "")[:24],
+                                   "former": (r.get("former") or "")[:24], "_at": iso(now)}
+                n += 1
+    if need:
+        print(f"[llm] classified {n}/{len(need)} authors")
+    return n
+
+
+def apply_evidence(c: dict, ev: str, note: str | None):
+    """根拠の種類で判定を補正する。意見・噂・宣伝はシグナルに入れない（格下げのみ）。"""
+    if ev not in EVIDENCE:
+        return
+    label, bonus, ok = EVIDENCE[ev]
+    c["evidence"], c["evidence_label"], c["evidence_note"] = ev, label, (note or None)
+    c["score"] = max(0, min(100, c["score"] + bonus))
+    if ev == "promo":
+        c["verdict"] = "excluded"
+    elif not ok and c["verdict"] in ("confirmed", "promising"):
+        c["verdict"] = "unverified"
+    tag = f"根拠：{label}" + (f"（{note}）" if note else "")
+    (c["reasons_pos"] if ok else c["reasons_neg"]).insert(0, tag)
+
+
 def apply_review(c: dict, r: dict):
     c["title"] = (r.get("title") or c["title"]).strip()
     c["summary"] = r.get("summary")
@@ -623,6 +762,7 @@ def apply_review(c: dict, r: dict):
         # AIは「格下げ」は自由、「格上げ」は 未確認→有望 の1段だけ許可（証拠なしの昇格を防ぐ）
         if new > cur or (c["verdict"] == "unverified" and v == "promising"):
             c["verdict"] = v
+    apply_evidence(c, r.get("evidence"), r.get("evidence_note"))
 
 
 def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
@@ -636,7 +776,7 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
     for c in targets:
         sig = ",".join(sorted(p["id"] for p in c["posts"]))
         hit = cache.get(c["id"])
-        if hit and hit.get("sig") == sig:
+        if hit and hit.get("sig") == sig and "evidence" in (hit.get("r") or {}):
             apply_review(c, hit["r"])  # 投稿の顔ぶれが同じなら前回の概要を再利用
         else:
             todo.append((c, sig))
@@ -649,6 +789,7 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
             "rule_verdict": c["verdict"],
             "links": [l["domain"] for l in c["links"]],
             "posts": [{"id": p["id"], "by": p["username"], "lang": p.get("lang", ""),
+                       "author_type": p.get("author_type", ""), "author_role": p.get("author_role", ""),
                        "text": p["text"][:700]} for p in c["posts"][:5]],
         } for c, _ in chunk]
         try:
@@ -735,6 +876,11 @@ def archive(clusters: list[dict], now: datetime):
                 "score": c["score"], "credibility": c["credibility"], "heat": c["heat"],
                 "first_seen": c["first_seen"], "latest": c["latest"],
                 "authors": [a["username"] for a in c["authors"]][:6],
+                "author_labels": [{"username": a["username"], "label": a.get("role") or a.get("type_label", ""),
+                                   "type": a.get("type", ""), "former": a.get("former", "")}
+                                  for a in c["authors"]][:6],
+                "evidence": c.get("evidence"), "evidence_label": c.get("evidence_label"),
+                "evidence_note": c.get("evidence_note"),
                 "links": c["links"][:3],
                 "post": {"url": p0["url"], "username": p0["username"], "text": p0["text"][:500],
                          "text_ja": p0.get("text_ja")},
@@ -748,7 +894,7 @@ def archive(clusters: list[dict], now: datetime):
                 old = entries[keep]
                 # 以前の要約しかない場合は残す／確認済みは格下げしない
                 if not entry["summary"] and old.get("summary"):
-                    for k in ("title", "summary", "points", "terms"):
+                    for k in ("title", "summary", "points", "terms", "evidence", "evidence_label", "evidence_note"):
                         entry[k] = old.get(k)
                 if old.get("verdict") == "confirmed":
                     entry["verdict"] = "confirmed"
@@ -856,6 +1002,18 @@ def main():
     dropped = sum(1 for t in store.values() if not _keep(t))
     store = {k: t for k, t in store.items() if _keep(t)}
 
+    authors_db = load_json(DATA / "authors.json", {})
+    if demo:
+        authors_db = {k: v for k, v in fx.get("demo_authors", {}).items()}
+    else:
+        try:
+            classify_authors(user_cache, {t["author_id"] for t in store.values()}, authors_db, cfg, now)
+        except Exception as e:
+            print(f"[llm] author classification failed: {e!r}", file=sys.stderr)
+    for uid, a in authors_db.items():
+        if uid in user_cache:
+            user_cache[uid] = {**user_cache[uid], "_author": a}
+
     tweets = []
     for t in store.values():
         t = dict(t)
@@ -920,9 +1078,11 @@ def main():
         except Exception as e:
             print(f"[archive] failed: {e!r}", file=sys.stderr)
         save_json(DATA / "tweets.json", store)
-        save_json(DATA / "users.json", {k: v for k, v in user_cache.items()
+        save_json(DATA / "users.json", {k: {kk: vv for kk, vv in v.items() if kk != "_author"}
+                                        for k, v in user_cache.items()
                                         if any(t["author_id"] == k for t in store.values())})
         save_json(DATA / "state.json", state)
+        save_json(DATA / "authors.json", authors_db)
         live = {c["id"] for c in clusters}
         pruned = {k: v for k, v in llm_cache.items() if k in live}
         live_posts = set(store.keys())

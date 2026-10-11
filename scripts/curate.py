@@ -43,7 +43,7 @@ AUTHOR_TYPES = {
     "promoter":     ("宣伝・情報商材", -15),
 }
 EXPERT_TYPES = {"official", "researcher", "journalist"}
-REVIEW_VERSION = 5   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
+REVIEW_VERSION = 6   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
 AUTHOR_VERSION = 2
 
 # 根拠（エビデンス）の種類と、話題スコアへの加点。シグナルに入れるのは evidence_ok のものだけ
@@ -760,6 +760,19 @@ def mentions_official_evaluation(c: dict, cfg: dict) -> str | None:
     return m.group(0) if m else None
 
 
+HANDS_ON_RE = None
+
+
+def is_own_build(c: dict, cfg: dict) -> bool:
+    """投稿者本人の「作った・試した・動かした」報告か（代表投稿の本文で判定）。"""
+    global HANDS_ON_RE
+    if HANDS_ON_RE is None:
+        words = cfg.get("quality", {}).get("hands_on_keywords", [])
+        HANDS_ON_RE = re.compile("|".join(re.escape(w) for w in words), re.I) if words else re.compile("$^")
+    p0 = (c.get("posts") or [{}])[0]
+    return bool(HANDS_ON_RE.search(p0.get("text", "")))
+
+
 def apply_evidence(c: dict, ev: str, note: str | None):
     """根拠の種類で判定を補正する。意見・噂・宣伝はシグナルに入れない（格下げのみ）。"""
     if ev not in EVIDENCE:
@@ -802,6 +815,9 @@ def apply_review(c: dict, r: dict):
         hit = mentions_official_evaluation(c, CFG)
         if hit:
             ev, note = "official_evaluation", f"{hit}の評価の紹介"
+        elif ev == "commentary" and is_own_build(c, CFG):
+            # 本人の制作・検証報告がリンク先にあるだけで「紹介」と誤判定されるのを防ぐ
+            ev, note = "hands_on_test", "本人の制作・検証の報告"
     apply_evidence(c, ev, note)
 
 

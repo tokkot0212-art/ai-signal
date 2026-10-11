@@ -81,6 +81,15 @@ class TestQualityAndArchive(unittest.TestCase):
         self.assertFalse(self.c.is_ai_related({"text": "今日はラーメンを食べた"}, self.cfg))
         self.assertFalse(self.c.is_ai_related({"text": "He said wait"}, self.cfg))
 
+    def test_official_evaluation_kept(self):
+        base = {"verdict": "promising", "score": 50, "reasons_pos": [], "reasons_neg": []}
+        c = dict(base, reasons_pos=[], reasons_neg=[])
+        self.c.apply_evidence(c, "official_evaluation", "英AISIの評価報告")
+        self.assertEqual(c["verdict"], "promising")
+        d = dict(base, reasons_pos=[], reasons_neg=[])
+        self.c.apply_evidence(d, "commentary", "他人の検証への論評")
+        self.assertEqual(d["verdict"], "excluded")
+
     def test_archive_merges_by_post_ids(self):
         from datetime import datetime, timezone
         tmp = Path(tempfile.mkdtemp())

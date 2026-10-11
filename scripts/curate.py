@@ -909,66 +909,165 @@ ARCHIVE = ROOT / "docs" / "archive"
 JST = timezone(timedelta(hours=9))
 
 
-def archive(clusters: list[dict], now: datetime):
-    """「シグナル」（確認済み・有望）を月ごとのファイルに貯める。同じ話題は最新の内容で上書き。"""
-    picks = [c for c in clusters if c["verdict"] in ("confirmed", "promising")]
-    if not picks:
-        return
-    by_month: dict[str, list[dict]] = {}
-    for c in picks:
-        mk = parse_ts(c["first_seen"]).astimezone(JST).strftime("%Y-%m")
-        by_month.setdefault(mk, []).append(c)
-    index = load_json(ARCHIVE / "index.json", {"months": {}})
-    for mk, items in by_month.items():
+def _day_of(iso_ts: str) -> str:
+    return parse_ts(iso_ts).astimezone(JST).strftime("%Y-%m-%d")
+
+
+def _archive_entry(c: dict, now: datetime) -> dict:
+    p0 = c["posts"][0]
+    return {
+        "id": c["id"], "verdict": c["verdict"], "title": c["title"],
+        "summary": c.get("summary"), "points": c.get("points", []), "terms": c.get("terms", []),
+        "score": c["score"], "credibility": c["credibility"], "heat": c["heat"],
+        "first_seen": c["first_seen"], "latest": c["latest"],
+        "authors": [a["username"] for a in c["authors"]][:6],
+        "author_labels": [{"username": a["username"], "label": a.get("role") or a.get("type_label", ""),
+                           "type": a.get("type", ""), "former": a.get("former", "")}
+                          for a in c["authors"]][:6],
+        "evidence": c.get("evidence"), "evidence_label": c.get("evidence_label"),
+        "evidence_note": c.get("evidence_note"),
+        "links": c["links"][:3],
+        "post": {"url": p0["url"], "username": p0["username"], "text": p0["text"][:500],
+                 "text_ja": p0.get("text_ja")},
+        "post_ids": [p["id"] for p in c["posts"]],
+        "post_count": c["post_count"],
+        "archived_at": iso(now),
+    }
+
+
+def _merge_entry(old: dict, new: dict) -> dict:
+    """同じ話題の続報で上書きするときの統合ルール。"""
+    if not new["summary"] and old.get("summary"):  # 要約がまだ無い回は前回の要約を残す
+        for k in ("title", "summary", "points", "terms", "evidence", "evidence_label", "evidence_note"):
+            new[k] = old.get(k)
+    if old.get("verdict") == "confirmed":  # 一度「確認済み」になったものは格下げしない
+        new["verdict"] = "confirmed"
+    new["first_seen"] = min(old.get("first_seen", new["first_seen"]), new["first_seen"])
+    new["post_ids"] = list(dict.fromkeys(old.get("post_ids", []) + new["post_ids"]))
+    new["post_count"] = max(old.get("post_count", 0), new["post_count"])
+    return new
+
+
+def _write_day_markdown(day: str, entries: list[dict]):
+    """GitHub上でもそのまま読める日別のまとめ（追加費用なし）。"""
+    lines = [f"# AIシグナル {day}", "", f"{len(entries)}件の話題", ""]
+    label = {"confirmed": "確認済み", "promising": "有望"}
+    for e in entries:
+        lines.append(f"## [{label.get(e['verdict'], e['verdict'])}] {e['title']}")
+        meta = []
+        if e.get("evidence_label"):
+            meta.append(f"根拠: {e['evidence_label']}" + (f"（{e['evidence_note']}）" if e.get("evidence_note") else ""))
+        if e.get("author_labels"):
+            meta.append("発言者: " + "、".join(f"@{a['username']}" + (f"（{a['label']}）" if a.get("label") else "")
+                                            for a in e["author_labels"][:3]))
+        if meta:
+            lines += ["", " / ".join(meta)]
+        if e.get("summary"):
+            lines += ["", e["summary"]]
+        for pt in e.get("points") or []:
+            lines.append(f"- {pt}")
+        links = [f"[{l['domain']}]({l['url']})" for l in e.get("links") or []]
+        if e.get("post"):
+            links.append(f"[Xで見る]({e['post']['url']})")
+        if links:
+            lines += ["", " ・ ".join(links)]
+        lines.append("")
+    (ARCHIVE / "days").mkdir(parents=True, exist_ok=True)
+    (ARCHIVE / "days" / f"{day}.md").write_text("\n".join(lines), encoding="utf-8")
+
+
+def _migrate_monthly(index: dict):
+    """旧形式（月ごとのファイル）を日付ごとのファイルに分ける。一度だけ動く。"""
+    for mk in list(index.get("months", {})):
         path = ARCHIVE / f"{mk}.json"
-        data = load_json(path, {"month": mk, "items": []})
-        entries = data["items"]
-        post_owner = {pid: i for i, e in enumerate(entries) for pid in e.get("post_ids", [])}
-        for c in items:
-            p0 = c["posts"][0]
-            entry = {
-                "id": c["id"], "verdict": c["verdict"], "title": c["title"],
-                "summary": c.get("summary"), "points": c.get("points", []), "terms": c.get("terms", []),
-                "score": c["score"], "credibility": c["credibility"], "heat": c["heat"],
-                "first_seen": c["first_seen"], "latest": c["latest"],
-                "authors": [a["username"] for a in c["authors"]][:6],
-                "author_labels": [{"username": a["username"], "label": a.get("role") or a.get("type_label", ""),
-                                   "type": a.get("type", ""), "former": a.get("former", "")}
-                                  for a in c["authors"]][:6],
-                "evidence": c.get("evidence"), "evidence_label": c.get("evidence_label"),
-                "evidence_note": c.get("evidence_note"),
-                "links": c["links"][:3],
-                "post": {"url": p0["url"], "username": p0["username"], "text": p0["text"][:500],
-                         "text_ja": p0.get("text_ja")},
-                "post_ids": [p["id"] for p in c["posts"]],
-                "post_count": c["post_count"],
-                "archived_at": iso(now),
-            }
-            hits = sorted({post_owner[pid] for pid in entry["post_ids"] if pid in post_owner})
-            if hits:
-                keep = hits[0]
-                old = entries[keep]
-                # 以前の要約しかない場合は残す／確認済みは格下げしない
-                if not entry["summary"] and old.get("summary"):
-                    for k in ("title", "summary", "points", "terms", "evidence", "evidence_label", "evidence_note"):
-                        entry[k] = old.get(k)
-                if old.get("verdict") == "confirmed":
-                    entry["verdict"] = "confirmed"
-                entry["first_seen"] = min(old.get("first_seen", entry["first_seen"]), entry["first_seen"])
-                entry["post_ids"] = list(dict.fromkeys(old.get("post_ids", []) + entry["post_ids"]))
-                entry["post_count"] = max(old.get("post_count", 0), entry["post_count"])
-                entries[keep] = entry
-                for extra in reversed(hits[1:]):  # 統合された話題の重複を消す
-                    entries.pop(extra)
-                post_owner = {pid: i for i, e in enumerate(entries) for pid in e.get("post_ids", [])}
-            else:
-                entries.append(entry)
-                for pid in entry["post_ids"]:
-                    post_owner[pid] = len(entries) - 1
-        entries.sort(key=lambda e: e["first_seen"], reverse=True)
-        save_json(path, data)
-        index["months"][mk] = {"count": len(entries),
-                               "confirmed": sum(e["verdict"] == "confirmed" for e in entries)}
+        data = load_json(path, {"items": []})
+        by_day: dict[str, list[dict]] = {}
+        for e in data.get("items", []):
+            # 根拠の判定が始まる前に記録した「有望」は、今の基準を満たすか不明なので移さない（確認済みは残す）
+            if not e.get("evidence") and e.get("verdict") != "confirmed":
+                continue
+            by_day.setdefault(_day_of(e["first_seen"]), []).append(e)
+        for day, items in by_day.items():
+            dp = ARCHIVE / "days" / f"{day}.json"
+            cur = load_json(dp, {"date": day, "items": []})
+            ids = {pid for e in cur["items"] for pid in e.get("post_ids", [])}
+            cur["items"] += [e for e in items if not ids.intersection(e.get("post_ids", []))]
+            save_json(dp, cur)
+            index.setdefault("days", {})[day] = {}
+        try:
+            path.unlink()
+        except FileNotFoundError:
+            pass
+    index.pop("months", None)
+
+
+def archive(clusters: list[dict], now: datetime):
+    """「シグナル」（確認済み・有望）を日付ごとのファイル（docs/archive/days/YYYY-MM-DD.json と .md）に貯める。
+    日付は話題を最初に見つけた日（日本時間）。同じ話題の続報は、その日のファイルを上書き更新する。"""
+    index = load_json(ARCHIVE / "index.json", {"days": {}})
+    if "months" in index:
+        _migrate_monthly(index)
+    index.setdefault("days", {})
+    picks = [c for c in clusters if c["verdict"] in ("confirmed", "promising")]
+
+    # 同じ話題が別の日のファイルにないか確認するため、直近数日分＋対象日のファイルを読む
+    today = now.astimezone(JST).date()
+    days = {(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(5)}
+    days |= {_day_of(c["first_seen"]) for c in picks}
+    books = {d: load_json(ARCHIVE / "days" / f"{d}.json", {"date": d, "items": []}) for d in days}
+    owner = {pid: (d, e["id"]) for d, bk in books.items() for e in bk["items"] for pid in e.get("post_ids", [])}
+    touched = set()
+
+    # 今の基準で「意見・噂」「ノイズ」と判定し直された話題は、履歴からも外す（確認済みは残す）
+    for c in clusters:
+        if c in picks or not c.get("evidence"):
+            continue
+        pids = {p["id"] for p in c["posts"]}
+        for d, bk in books.items():
+            keep = [e for e in bk["items"]
+                    if e.get("verdict") == "confirmed" or not pids.intersection(e.get("post_ids", []))]
+            if len(keep) != len(bk["items"]):
+                bk["items"] = keep
+                touched.add(d)
+    owner = {pid: (d, e["id"]) for d, bk in books.items() for e in bk["items"] for pid in e.get("post_ids", [])}
+
+    for c in picks:
+        entry = _archive_entry(c, now)
+        hits = {owner[pid] for pid in entry["post_ids"] if pid in owner}
+        olds = []
+        for d, eid in hits:
+            for i, e in enumerate(books[d]["items"]):
+                if e["id"] == eid:
+                    olds.append(books[d]["items"].pop(i))
+                    touched.add(d)
+                    break
+        for old in sorted(olds, key=lambda e: e.get("first_seen", "")):
+            entry = _merge_entry(old, entry)
+        day = _day_of(entry["first_seen"])
+        books.setdefault(day, load_json(ARCHIVE / "days" / f"{day}.json", {"date": day, "items": []}))
+        books[day]["items"].append(entry)
+        touched.add(day)
+        for pid in entry["post_ids"]:
+            owner[pid] = (day, entry["id"])
+
+    for d in touched:
+        items = sorted(books[d]["items"], key=lambda e: (e["verdict"] != "confirmed", -e.get("score", 0)))
+        books[d]["items"] = items
+        if items:
+            save_json(ARCHIVE / "days" / f"{d}.json", books[d])
+            _write_day_markdown(d, items)
+            index["days"][d] = {"count": len(items), "confirmed": sum(e["verdict"] == "confirmed" for e in items)}
+        else:
+            for ext in ("json", "md"):
+                (ARCHIVE / "days" / f"{d}.{ext}").unlink(missing_ok=True)
+            index["days"].pop(d, None)
+    # 移行直後などで件数が未計算の日を埋める
+    for d, v in list(index["days"].items()):
+        if not v:
+            items = load_json(ARCHIVE / "days" / f"{d}.json", {"items": []})["items"]
+            index["days"][d] = {"count": len(items), "confirmed": sum(e["verdict"] == "confirmed" for e in items)}
+            _write_day_markdown(d, items)
+    index["days"] = dict(sorted(index["days"].items(), reverse=True))
     index["updated_at"] = iso(now)
     save_json(ARCHIVE / "index.json", index)
 

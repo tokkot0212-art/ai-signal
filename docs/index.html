@@ -74,6 +74,8 @@ h1{font-size:20px;letter-spacing:.02em;margin:0;font-weight:800}
 .hist-bar select,.hist-bar input{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;min-width:0}
 .hist-bar input{flex:1 1 100%;order:-1}
 .hist-bar select{flex:1}
+.navb{font-size:18px;line-height:1;padding:5px 12px}
+.navb:disabled{opacity:.35}
 .hday{font-size:13px;font-weight:800;color:var(--sub);margin:18px 2px 8px;letter-spacing:.04em}
 .hitem{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:8px;padding:0}
 .hitem summary{list-style:none;cursor:pointer;padding:12px 14px;display:block;color:var(--ink);font-weight:400}
@@ -181,8 +183,10 @@ footer{max-width:720px;margin:4px auto 0;padding:0 16px;font-size:12px;color:var
     <button class="chip" data-unread aria-pressed="false">未読のみ</button>
   </div>
   <div class="hist-bar" id="histbar" hidden>
-    <select id="hmonth" aria-label="月"></select>
-    <input id="hq" type="search" placeholder="キーワードで検索（例: Claude, 論文）" autocomplete="off">
+    <button class="chip navb" id="hprev" aria-label="前の日">‹</button>
+    <select id="hmonth" aria-label="日付"></select>
+    <button class="chip navb" id="hnext" aria-label="次の日">›</button>
+    <input id="hq" type="search" placeholder="全期間をキーワード検索（例: Claude, 論文）" autocomplete="off">
     <button class="chip" id="hconf" aria-pressed="false">確認済みのみ</button>
   </div>
 </header>
@@ -195,7 +199,7 @@ const INTRO = {
   signal:"公式発表・論文やデータ・取材報道・本人が手を動かした検証など、根拠のある話題だけを表示しています。",
   unverified:"噂・リーク・出典不明の話題と、根拠を示さない意見・感想（専門家の発言を含む）。裏付けが出れば「シグナル」へ移ります。",
   excluded:"釣り・回数稼ぎ・宣伝、AIと無関係な投稿、他人の成果を論評・解説しただけの投稿。判定理由を確認できます。",
-  history:"これまでに「シグナル」に入った話題の記録です。毎回の自動更新で追加・更新されます。"
+  history:"「シグナル」に入った話題を、最初に見つけた日ごとに記録しています。‹ › で前後の日へ。検索は全期間が対象です。"
 };
 const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
@@ -268,24 +272,37 @@ function overview(c){
   return `<div class="ov"><div class="ov-h">概要</div><p>${esc(c.summary)}</p>${pts}${terms}</div>`;
 }
 
-// ---------------- 履歴
-const hist = { index:null, month:null, data:{}, q:"", conf: store.get("hconf", false) };
+// ---------------- 履歴（日付ごと）
+const hist = { index:null, day:null, data:{}, q:"", conf: store.get("hconf", false), days:[] };
+const WD = "日月火水木金土";
+function dayLabel(d){
+  const [y,m,dd] = d.split("-").map(Number);
+  const w = WD[new Date(Date.UTC(y, m-1, dd)).getUTCDay()];
+  return `${y}年${m}月${dd}日（${w}）`;
+}
+function shortDay(d){
+  const [y,m,dd] = d.split("-").map(Number);
+  return `${m}/${dd}（${WD[new Date(Date.UTC(y, m-1, dd)).getUTCDay()]}）`;
+}
+const TYPE_ORDER = {official:0, researcher:1, journalist:2, practitioner:3};
+function byExpertise(list){ return [...list].sort((a,b) => (TYPE_ORDER[a.type] ?? 9) - (TYPE_ORDER[b.type] ?? 9)); }
 async function loadHistoryIndex(){
   if (hist.index) return;
   try{
     const r = await fetch("archive/index.json?t=" + Date.now(), {cache:"no-store"});
-    hist.index = r.ok ? await r.json() : {months:{}};
-  }catch(e){ hist.index = {months:{}}; }
-  const months = Object.keys(hist.index.months||{}).sort().reverse();
-  $("#hmonth").innerHTML = months.map(m => `<option value="${m}">${m.replace("-", "年")}月（${hist.index.months[m].count}件）</option>`).join("");
-  hist.month = months[0] || null;
+    hist.index = r.ok ? await r.json() : {days:{}};
+  }catch(e){ hist.index = {days:{}}; }
+  const days = hist.index.days || {};
+  hist.days = Object.keys(days).sort().reverse();
+  $("#hmonth").innerHTML = hist.days.map(d => `<option value="${d}">${shortDay(d)}　${days[d].count}件</option>`).join("");
+  if (!hist.day || !hist.days.includes(hist.day)) hist.day = hist.days[0] || null;
 }
-async function loadMonth(m){
-  if (!m || hist.data[m]) return;
+async function loadDay(d){
+  if (!d || hist.data[d]) return;
   try{
-    const r = await fetch(`archive/${m}.json?t=` + Date.now(), {cache:"no-store"});
-    hist.data[m] = r.ok ? (await r.json()).items || [] : [];
-  }catch(e){ hist.data[m] = []; }
+    const r = await fetch(`archive/days/${d}.json?t=` + Date.now(), {cache:"no-store"});
+    hist.data[d] = r.ok ? (await r.json()).items || [] : [];
+  }catch(e){ hist.data[d] = []; }
 }
 function hl(text, q){
   const t = esc(text||"");
@@ -293,47 +310,61 @@ function hl(text, q){
   const re = new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
   return t.replace(re, m => `<mark>${m}</mark>`);
 }
-function jstDay(iso){
-  const d = new Date(new Date(iso).getTime() + 9*3600e3);
-  const w = "日月火水木金土"[d.getUTCDay()];
-  return `${d.getUTCMonth()+1}月${d.getUTCDate()}日（${w}）`;
+function histItem(e, q){
+  const pts = (e.points||[]).length ? `<div class="ov-h">理解を深めるポイント</div><ul>${e.points.map(p=>`<li>${hl(p,q)}</li>`).join("")}</ul>` : "";
+  const terms = (e.terms||[]).length ? `<div class="ov-h">用語メモ</div><div class="terms">${e.terms.map(t=>`<div class="term"><b>${esc(t.term)}</b>${esc(t.desc)}</div>`).join("")}</div>` : "";
+  const links = (e.links||[]).length ? `<div class="links">${e.links.map(l=>`<a class="${l.primary?"prim":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.domain)} ↗</a>`).join("")}</div>` : "";
+  const post = e.post ? `<div class="post"><div class="who">@${esc(e.post.username)}</div>
+      ${e.post.text_ja ? `<div class="ja"><span class="ja-tag">日本語訳</span>${hl(e.post.text_ja,q)}</div><div class="txt orig">${esc(e.post.text)}</div>` : `<div class="txt">${hl(e.post.text,q)}</div>`}
+      <div class="meta"><a href="${esc(e.post.url)}" target="_blank" rel="noopener">Xで開く ↗</a></div></div>` : "";
+  return `<details class="hitem"><summary>
+      <div class="row"><span class="badge b-${e.verdict}">${LABEL[e.verdict]}</span>${evChip(e)}<span class="count">${e.post_count}件の投稿</span></div>
+      <div class="authors">${byExpertise(e.author_labels || (e.authors||[]).map(u=>({username:u}))).slice(0,3).map(a=>authorChip({...a, role:a.label})).join("")}</div>
+      <div class="ht">${hl(e.title,q)}</div>${e.summary ? `<div class="hs">${hl(e.summary,q)}</div>` : ""}
+    </summary><div class="hb">
+      ${e.summary ? `<div class="ov"><div class="ov-h">概要</div><p>${hl(e.summary,q)}</p>${pts}${terms}</div>` : ""}
+      ${links}${post}
+    </div></details>`;
+}
+function matches(e, q){
+  return [e.title, e.summary, (e.points||[]).join(" "), (e.terms||[]).map(t=>t.term).join(" "),
+    e.post && e.post.text, e.post && e.post.text_ja, (e.authors||[]).join(" "), e.evidence_label].join(" ").toLowerCase().includes(q);
 }
 async function renderHistory(){
   $("#hconf").setAttribute("aria-pressed", hist.conf);
   $("#main").innerHTML = `<p class="intro">${INTRO.history}</p><div class="empty">読み込み中…</div>`;
   await loadHistoryIndex();
-  if (!hist.month){ $("#main").innerHTML = `<p class="intro">${INTRO.history}</p><div class="empty">まだ履歴はありません。次回の自動更新から記録されます。</div>`; return; }
-  $("#hmonth").value = hist.month;
-  await loadMonth(hist.month);
-  if (state.tab !== "history") return;
+  if (!hist.day){ $("#main").innerHTML = `<p class="intro">${INTRO.history}</p><div class="empty">まだ履歴はありません。次回の自動更新から記録されます。</div>`; return; }
   const q = hist.q.trim().toLowerCase();
-  let items = hist.data[hist.month] || [];
-  if (hist.conf) items = items.filter(e => e.verdict === "confirmed");
-  if (q) items = items.filter(e => [e.title, e.summary, (e.points||[]).join(" "), (e.terms||[]).map(t=>t.term).join(" "),
-    e.post && e.post.text, e.post && e.post.text_ja, (e.authors||[]).join(" ")].join(" ").toLowerCase().includes(q));
-  let html = `<p class="intro">${INTRO.history}</p>`;
-  if (!items.length) html += `<div class="empty">該当する話題はありません</div>`;
-  let day = "";
-  for (const e of items){
-    const d = jstDay(e.first_seen);
-    if (d !== day){ html += `<div class="hday">${d}</div>`; day = d; }
-    const pts = (e.points||[]).length ? `<div class="ov-h">理解を深めるポイント</div><ul>${e.points.map(p=>`<li>${hl(p,q)}</li>`).join("")}</ul>` : "";
-    const terms = (e.terms||[]).length ? `<div class="ov-h">用語メモ</div><div class="terms">${e.terms.map(t=>`<div class="term"><b>${esc(t.term)}</b>${esc(t.desc)}</div>`).join("")}</div>` : "";
-    const links = (e.links||[]).length ? `<div class="links">${e.links.map(l=>`<a class="${l.primary?"prim":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.domain)} ↗</a>`).join("")}</div>` : "";
-    const post = e.post ? `<div class="post"><div class="who">@${esc(e.post.username)}</div>
-        ${e.post.text_ja ? `<div class="ja"><span class="ja-tag">日本語訳</span>${hl(e.post.text_ja,q)}</div><div class="txt orig">${esc(e.post.text)}</div>` : `<div class="txt">${hl(e.post.text,q)}</div>`}
-        <div class="meta"><a href="${esc(e.post.url)}" target="_blank" rel="noopener">Xで開く ↗</a></div></div>` : "";
-    html += `<details class="hitem"><summary>
-        <div class="row"><span class="badge b-${e.verdict}">${LABEL[e.verdict]}</span>${evChip(e)}<span class="count">${e.post_count}件の投稿</span></div>
-        <div class="authors">${(e.author_labels || (e.authors||[]).map(u=>({username:u}))).slice(0,3).map(a=>authorChip({...a, role:a.label})).join("")}</div>
-        <div class="ht">${hl(e.title,q)}</div>${e.summary ? `<div class="hs">${hl(e.summary,q)}</div>` : ""}
-      </summary><div class="hb">
-        ${e.summary ? `<div class="ov"><div class="ov-h">概要</div><p>${hl(e.summary,q)}</p>${pts}${terms}</div>` : ""}
-        ${links}${post}
-      </div></details>`;
+  const i = hist.days.indexOf(hist.day);
+  $("#hmonth").value = hist.day;
+  $("#hprev").disabled = !!q || i >= hist.days.length - 1;
+  $("#hnext").disabled = !!q || i <= 0;
+  $("#hmonth").disabled = !!q;
+  let html = `<p class="intro">${INTRO.history}</p>`, total = 0;
+  if (q){
+    // 全期間を検索（日付ごとのファイルを順に読む）
+    await Promise.all(hist.days.map(loadDay));
+    if (state.tab !== "history") return;
+    for (const d of hist.days){
+      let items = (hist.data[d]||[]).filter(e => matches(e, q));
+      if (hist.conf) items = items.filter(e => e.verdict === "confirmed");
+      if (!items.length) continue;
+      total += items.length;
+      html += `<div class="hday">${dayLabel(d)}</div>` + items.map(e => histItem(e, q)).join("");
+    }
+    if (!total) html += `<div class="empty">「${esc(hist.q)}」に当てはまる話題はありません</div>`;
+    $("#footer").textContent = `全${hist.days.length}日分から ${total}件 見つかりました`;
+  } else {
+    await loadDay(hist.day);
+    if (state.tab !== "history") return;
+    let items = hist.data[hist.day] || [];
+    if (hist.conf) items = items.filter(e => e.verdict === "confirmed");
+    html += `<div class="hday">${dayLabel(hist.day)}</div>`;
+    html += items.length ? items.map(e => histItem(e, "")).join("") : `<div class="empty">この日の該当する話題はありません</div>`;
+    $("#footer").textContent = `記録 ${hist.days.length}日分 ・ この日 ${(hist.data[hist.day]||[]).length}件`;
   }
   $("#main").innerHTML = html;
-  $("#footer").textContent = `この月の記録 ${(hist.data[hist.month]||[]).length}件`;
 }
 
 const EV_OK = {official_announcement:1, paper_or_data:1, reporting:1, hands_on_test:1, expert_analysis:1};
@@ -350,7 +381,7 @@ function authorChip(a){
 
 function card(c){
   const ref = refNow();
-  const authors = c.authors.slice(0,5).map(authorChip).join("");
+  const authors = byExpertise(c.authors).slice(0,5).map(authorChip).join("");
   const reasons = [
     ...(c.llm_note ? [`<li class="ai">${esc(c.llm_note)}</li>`] : []),
     ...c.reasons_pos.map(r => `<li class="p">${esc(r)}</li>`),
@@ -436,7 +467,9 @@ $("#main").addEventListener("toggle", e => {
   if (e.target.matches("details[data-read]") && e.target.open) markRead(e.target.dataset.read);
 }, true);
 $("#refresh").addEventListener("click", () => { hist.index = null; hist.data = {}; load(true); });
-$("#hmonth").addEventListener("change", e => { hist.month = e.target.value; renderHistory(); });
+$("#hmonth").addEventListener("change", e => { hist.day = e.target.value; renderHistory(); window.scrollTo({top:0}); });
+$("#hprev").addEventListener("click", () => { const i = hist.days.indexOf(hist.day); if (i < hist.days.length-1){ hist.day = hist.days[i+1]; renderHistory(); window.scrollTo({top:0}); } });
+$("#hnext").addEventListener("click", () => { const i = hist.days.indexOf(hist.day); if (i > 0){ hist.day = hist.days[i-1]; renderHistory(); window.scrollTo({top:0}); } });
 let hqTimer; $("#hq").addEventListener("input", e => { clearTimeout(hqTimer); hqTimer = setTimeout(() => { hist.q = e.target.value; renderHistory(); }, 200); });
 $("#hconf").addEventListener("click", () => { hist.conf = !hist.conf; store.set("hconf", hist.conf); renderHistory(); });
 document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });

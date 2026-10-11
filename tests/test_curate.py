@@ -173,6 +173,26 @@ class TestQualityAndArchive(unittest.TestCase):
         idx = json.loads((tmp / "index.json").read_text(encoding="utf-8"))
         self.assertNotIn("2026-10-11", idx["days"])
 
+    def test_bad_merge_is_split_again(self):
+        from datetime import datetime, timezone
+        tmp = Path(tempfile.mkdtemp())
+        self.c.ARCHIVE = tmp
+        now = datetime(2026, 10, 11, 3, tzinfo=timezone.utc)
+        # 誤って統合された記録（投稿1と2）
+        self.c.archive([self._cl("AB", ["1", "2"], "2026-10-10T03:00:00Z", "s", "confirmed")], now, {"1", "2"})
+        # 正しく分かれた判定
+        self.c.archive([self._cl("A", ["1"], "2026-10-10T03:00:00Z", "a", "confirmed"),
+                        self._cl("B", ["2"], "2026-10-10T04:00:00Z", "b", "confirmed")], now, {"1", "2"})
+        items = json.loads((tmp / "days" / "2026-10-10.json").read_text(encoding="utf-8"))["items"]
+        self.assertEqual(sorted(tuple(e["post_ids"]) for e in items), [("1",), ("2",)])
+
+    def test_merge_guard_blocks_different_officials(self):
+        def c(cid, user, text):
+            return {"id": cid, "authors": [{"username": user, "tier": 1}], "posts": [{"text": text}]}
+        ids = self.c._guard_group([c("x", "OpenAIDevs", "Codex beta composer predictions"),
+                                   c("y", "SakanaAILabs", "artificial life podcast Codex")])
+        self.assertEqual(ids, ["x"])
+
     def test_migrate_monthly_archive(self):
         from datetime import datetime, timezone
         tmp = Path(tempfile.mkdtemp())

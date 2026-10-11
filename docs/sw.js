@@ -1,5 +1,5 @@
 // 画面はキャッシュして即表示、feed.json は常に最新を取りに行き、圏外なら前回分を表示
-const CACHE = "ai-signal-v1";
+const CACHE = "ai-signal-v2";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {

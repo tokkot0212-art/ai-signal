@@ -41,6 +41,18 @@ class TestCurate(unittest.TestCase):
     def test_single_news_promising(self):
         self.assertEqual(self.find("ガイドライン")["verdict"], "promising")
 
+    def test_expert_opinion_is_not_signal(self):
+        c = self.find("AGI arrives")
+        self.assertEqual(c["verdict"], "unverified")
+        self.assertEqual(c["evidence"], "opinion")
+
+    def test_author_types_labeled(self):
+        c = self.find("Introducing Orion-2")
+        types = {a["username"]: a["type"] for a in c["authors"]}
+        self.assertEqual(types["sample_ailab"], "official")
+        self.assertEqual(types["sample_researcher"], "researcher")
+        self.assertEqual(c["evidence"], "official_announcement")
+
 
 class TestQualityAndArchive(unittest.TestCase):
     def setUp(self):

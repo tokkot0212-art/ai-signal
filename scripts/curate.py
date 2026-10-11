@@ -111,6 +111,52 @@ def keywords(text: str) -> set[str]:
     return {t for t in toks if t and t not in STOP and len(t) >= 3}
 
 
+# ---------------------------------------------------------------- quality gates
+
+AI_RE = None
+
+
+def is_ai_related(t: dict, cfg: dict) -> bool:
+    """本文かリンク先がAIに関係するか（信頼アカウントの雑談を除外するため）。"""
+    global AI_RE
+    if AI_RE is None:
+        words = cfg.get("quality", {}).get("ai_keywords", [])
+        parts = []
+        for w in words:
+            w = str(w)
+            if re.fullmatch(r"[A-Za-z0-9\- .]+", w):
+                # 英字の短い語（AI, RL など）は単語の途中に一致しないよう前後を区切る
+                right = r"(?![A-Za-z])" if len(w) <= 3 else ""
+                parts.append(r"(?<![A-Za-z])" + re.escape(w) + right)
+            else:
+                parts.append(re.escape(w))
+        AI_RE = re.compile("|".join(parts), re.I) if parts else re.compile("$^")
+    text = tweet_text(t)
+    if AI_RE.search(text):
+        return True
+    return any(is_primary(domain_of(u), cfg["primary_domains"]) for u in tweet_urls(t))
+
+
+def engagement(t: dict) -> float:
+    m = t.get("public_metrics", {}) or {}
+    return (m.get("like_count", 0) + 2 * m.get("retweet_count", 0) + 3 * m.get("quote_count", 0)
+            + 0.5 * m.get("reply_count", 0) + m.get("bookmark_count", 0))
+
+
+def trusted_set(cfg: dict) -> set[str]:
+    tr = cfg["trusted"]
+    return {h.lower() for h in tr.get("tier1", []) + tr.get("tier2", [])}
+
+
+def passes_discovery_gate(t: dict, cfg: dict) -> bool:
+    """キーワード探索で拾った投稿の足切り（ユーザー情報を取る前に反応数だけで判定 → 課金も節約）。"""
+    q = cfg.get("quality", {})
+    need = q.get("discovery_min_engagement", 15)
+    if any(is_primary(domain_of(u), cfg["primary_domains"]) for u in tweet_urls(t)):
+        need = min(need, 3)  # 一次情報リンク付きは基準を下げる（ゼロ反応は除外）
+    return engagement(t) >= need
+
+
 # ---------------------------------------------------------------- scoring
 
 def score_tweet(t: dict, user: dict | None, cfg: dict, now: datetime) -> dict:
@@ -204,6 +250,10 @@ def score_tweet(t: dict, user: dict | None, cfg: dict, now: datetime) -> dict:
         neg.append("噂・リーク（一次情報なし）")
         flags.add("rumor")
 
+    if not is_ai_related(t, cfg):
+        flags.add("off_topic")
+        neg.append("AIと関係のない投稿")
+
     cred = max(0, min(100, cred))
     age_h = max((now - parse_ts(t["created_at"])).total_seconds() / 3600, 1.0)
     heat = max(0, min(100, round(25 * math.log10(1 + eng / age_h))))
@@ -233,7 +283,6 @@ def cluster(tweets: list[dict]) -> list[list[dict]]:
 
     by_id = {t["id"]: i for i, t in enumerate(tweets)}
     url_owner: dict[str, int] = {}
-    kws = [keywords(tweet_text(t)) for t in tweets]
 
     for i, t in enumerate(tweets):
         for u in t["_s"]["urls"]:
@@ -247,14 +296,8 @@ def cluster(tweets: list[dict]) -> list[list[dict]]:
             if ref.get("type") == "quoted" and ref.get("id") in by_id:
                 union(i, by_id[ref["id"]])
 
-    for i in range(n):
-        for j in range(i + 1, n):
-            a, b = kws[i], kws[j]
-            if not a or not b:
-                continue
-            inter = len(a & b)
-            if inter >= 3 and inter / len(a | b) >= 0.4:
-                union(i, j)
+    # 文面の似ている投稿どうしの統合は、連鎖して無関係な話題までまとまるため廃止。
+    # 同じ出来事の統合は、リンク・引用と、Claudeによる話題統合（merge_topics）で行う。
 
     groups: dict[int, list[dict]] = {}
     for i, t in enumerate(tweets):
@@ -273,12 +316,18 @@ def make_title(text: str) -> str:
 def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
     group.sort(key=lambda t: t["_s"]["cred"] + t["_s"]["heat"] / 2, reverse=True)
     rep = group[0]
+    q = cfg.get("quality", {})
+    big = q.get("credible_min_followers", 10000)
     authors, credible = {}, set()
+    max_followers = 0
     for t in group:
         u = users.get(t["author_id"], {})
         name = u.get("username", t["author_id"])
         authors[name] = {"username": name, "name": u.get("name", name), "tier": t["_s"]["tier"]}
-        if t["_s"]["cred"] >= 50:
+        fol = (u.get("public_metrics") or {}).get("followers_count", 0)
+        max_followers = max(max_followers, fol)
+        # 「裏付け」に数えるのは、信頼リスト・一次情報リンク付き・大きめの実績アカウントだけ
+        if t["_s"]["cred"] >= 50 and (t["_s"]["tier"] or "primary" in t["_s"]["flags"] or fol >= big):
             credible.add(name)
 
     best = max(t["_s"]["cred"] for t in group)
@@ -287,14 +336,20 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
     has_primary = any("primary" in t["_s"]["flags"] for t in group)
     rumor = any("rumor" in t["_s"]["flags"] for t in group) and not (has_official or has_primary)
 
-    if best < 35 or all("blocked" in t["_s"]["flags"] for t in group):
+    has_trusted = any(t["_s"]["tier"] for t in group)
+    off_topic = all("off_topic" in t["_s"]["flags"] for t in group)
+    if best < 35 or off_topic or all("blocked" in t["_s"]["flags"] for t in group):
         verdict = "excluded"
     elif has_official or (has_primary and len(credible) >= 2) or (len(credible) >= 3 and best >= 60 and not rumor):
         verdict = "confirmed"
     elif rumor or best < 50:
         verdict = "unverified"
-    else:
+    elif (has_trusted or len(credible) >= 2
+          or (has_primary and (max_followers >= 1000 or heat >= 10))
+          or (max_followers >= big and heat >= 15)):
         verdict = "promising"
+    else:
+        verdict = "unverified"  # 出どころが小さい・裏付けなし
 
     corroboration = min(15, 5 * (len(credible) - 1)) if credible else 0
     score = min(100, round(0.6 * best + 0.4 * heat + corroboration))
@@ -488,6 +543,65 @@ def _normalize_reviews(reviews) -> list[dict]:
     return [r for r in reviews if isinstance(r, dict)]
 
 
+MERGE_TOOL = {
+    "name": "submit_groups",
+    "description": "同じ出来事を扱うクラスタIDのグループを提出する",
+    "input_schema": {
+        "type": "object",
+        "properties": {"groups": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}}},
+        "required": ["groups"],
+    },
+}
+
+MERGE_PROMPT = """Xの投稿を話題ごとにまとめたクラスタの一覧です。
+「同じ具体的な出来事・発表・ニュース」を扱っているクラスタを見つけて、グループにしてください。
+- 同じ発表についての公式投稿・報道・解説・反応は同じグループ
+- 同じ会社や同じ分野というだけの別の出来事は、まとめない
+- 2つ以上のクラスタを含むグループだけを提出（単独のものは書かない）
+- 迷ったらまとめない
+submit_groups ツールで提出してください。
+
+クラスタ:
+"""
+
+
+def llm_merge_groups(clusters: list[dict], cfg: dict) -> list[list[str]]:
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    lc = cfg.get("llm", {})
+    if not key or not lc.get("enabled") or len(clusters) < 2:
+        return []
+    items = [{"id": c["id"], "text": re.sub(r"\s+", " ", c["posts"][0]["text"])[:220],
+              "links": [l["domain"] for l in c["links"][:2]]} for c in clusters[:150]]
+    body = json.dumps({
+        "model": lc.get("model", "claude-haiku-5-5"),
+        "max_tokens": 3000,
+        "tools": [MERGE_TOOL],
+        "tool_choice": {"type": "tool", "name": "submit_groups"},
+        "messages": [{"role": "user", "content": MERGE_PROMPT + json.dumps(items, ensure_ascii=False)}],
+    }).encode()
+    req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
+        "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            resp = json.loads(r.read().decode())
+    except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
+        print(f"[llm] merge skipped: {e}", file=sys.stderr)
+        return []
+    for b in resp.get("content", []):
+        if b.get("type") == "tool_use":
+            groups = (b.get("input") or {}).get("groups")
+            if isinstance(groups, str):
+                try:
+                    groups = json.loads(groups)
+                except json.JSONDecodeError:
+                    groups = []
+            valid = {c["id"] for c in clusters}
+            out = [[str(i) for i in g if str(i) in valid] for g in (groups or []) if isinstance(g, list)]
+            return [g for g in out if len(set(g)) >= 2]
+    return []
+
+
 def apply_review(c: dict, r: dict):
     c["title"] = (r.get("title") or c["title"]).strip()
     c["summary"] = r.get("summary")
@@ -592,6 +706,71 @@ def translate_posts(clusters: list[dict], key: str, lc: dict, cache: dict):
 
 # ---------------------------------------------------------------- main
 
+# ---------------------------------------------------------------- archive (history)
+
+ARCHIVE = ROOT / "docs" / "archive"
+JST = timezone(timedelta(hours=9))
+
+
+def archive(clusters: list[dict], now: datetime):
+    """「シグナル」（確認済み・有望）を月ごとのファイルに貯める。同じ話題は最新の内容で上書き。"""
+    picks = [c for c in clusters if c["verdict"] in ("confirmed", "promising")]
+    if not picks:
+        return
+    by_month: dict[str, list[dict]] = {}
+    for c in picks:
+        mk = parse_ts(c["first_seen"]).astimezone(JST).strftime("%Y-%m")
+        by_month.setdefault(mk, []).append(c)
+    index = load_json(ARCHIVE / "index.json", {"months": {}})
+    for mk, items in by_month.items():
+        path = ARCHIVE / f"{mk}.json"
+        data = load_json(path, {"month": mk, "items": []})
+        entries = data["items"]
+        post_owner = {pid: i for i, e in enumerate(entries) for pid in e.get("post_ids", [])}
+        for c in items:
+            p0 = c["posts"][0]
+            entry = {
+                "id": c["id"], "verdict": c["verdict"], "title": c["title"],
+                "summary": c.get("summary"), "points": c.get("points", []), "terms": c.get("terms", []),
+                "score": c["score"], "credibility": c["credibility"], "heat": c["heat"],
+                "first_seen": c["first_seen"], "latest": c["latest"],
+                "authors": [a["username"] for a in c["authors"]][:6],
+                "links": c["links"][:3],
+                "post": {"url": p0["url"], "username": p0["username"], "text": p0["text"][:500],
+                         "text_ja": p0.get("text_ja")},
+                "post_ids": [p["id"] for p in c["posts"]],
+                "post_count": c["post_count"],
+                "archived_at": iso(now),
+            }
+            hits = sorted({post_owner[pid] for pid in entry["post_ids"] if pid in post_owner})
+            if hits:
+                keep = hits[0]
+                old = entries[keep]
+                # 以前の要約しかない場合は残す／確認済みは格下げしない
+                if not entry["summary"] and old.get("summary"):
+                    for k in ("title", "summary", "points", "terms"):
+                        entry[k] = old.get(k)
+                if old.get("verdict") == "confirmed":
+                    entry["verdict"] = "confirmed"
+                entry["first_seen"] = min(old.get("first_seen", entry["first_seen"]), entry["first_seen"])
+                entry["post_ids"] = list(dict.fromkeys(old.get("post_ids", []) + entry["post_ids"]))
+                entry["post_count"] = max(old.get("post_count", 0), entry["post_count"])
+                entries[keep] = entry
+                for extra in reversed(hits[1:]):  # 統合された話題の重複を消す
+                    entries.pop(extra)
+                post_owner = {pid: i for i, e in enumerate(entries) for pid in e.get("post_ids", [])}
+            else:
+                entries.append(entry)
+                for pid in entry["post_ids"]:
+                    post_owner[pid] = len(entries) - 1
+        entries.sort(key=lambda e: e["first_seen"], reverse=True)
+        save_json(path, data)
+        index["months"][mk] = {"count": len(entries),
+                               "confirmed": sum(e["verdict"] == "confirmed" for e in entries)}
+    index["updated_at"] = iso(now)
+    save_json(ARCHIVE / "index.json", index)
+
+
 def month_key(now: datetime) -> str:
     return now.strftime("%Y-%m")
 
@@ -636,7 +815,7 @@ def main():
             client = XClient(token)
             suffix = "-is:retweet -is:reply"
             handles = cfg["trusted"].get("tier1", []) + cfg["trusted"].get("tier2", [])
-            tq = build_from_queries(handles, suffix)
+            tq = build_from_queries(handles, suffix, max_len=f.get("trusted_query_len", 330))
             per = max(10, f["trusted_max_results"] // max(len(tq), 1))
             fetched = []
             for i, q in enumerate(tq):
@@ -649,7 +828,9 @@ def main():
             res = client.search_recent(q, f["discovery_max_results"], state["since"].get("discovery"))
             if res:
                 state["since"]["discovery"] = max(res, key=lambda t: int(t["id"]))["id"]
-            fetched += res
+            kept = [t for t in res if passes_discovery_gate(t, cfg)]
+            print(f"discovery: {len(res)} fetched, {len(kept)} passed the gate")
+            fetched += kept
             for t in fetched:
                 store[t["id"]] = t  # 同じ投稿は最新の反応数で上書き
 
@@ -667,13 +848,40 @@ def main():
     cutoff = now - timedelta(hours=cfg["fetch"]["keep_hours"])
     store = {k: t for k, t in store.items() if parse_ts(t["created_at"]) >= cutoff}
 
+    # 既に保存されている投稿にも同じ足切りを適用（以前の取得分の掃除）
+    trusted = trusted_set(cfg)
+    def _keep(t):
+        uname = (user_cache.get(t["author_id"], {}) or {}).get("username", "").lower()
+        return uname in trusted or passes_discovery_gate(t, cfg)
+    dropped = sum(1 for t in store.values() if not _keep(t))
+    store = {k: t for k, t in store.items() if _keep(t)}
+
     tweets = []
     for t in store.values():
         t = dict(t)
         t["_s"] = score_tweet(t, user_cache.get(t["author_id"]), cfg, now)
         tweets.append(t)
 
-    clusters = [build_cluster(g, user_cache, cfg) for g in cluster(tweets)]
+    groups = cluster(tweets)
+    clusters = [build_cluster(list(g), user_cache, cfg) for g in groups]
+    if not demo:
+        try:
+            raw_by_id = {c["id"]: g for c, g in zip(clusters, groups)}
+            cand = sorted([c for c in clusters if c["verdict"] != "excluded"], key=lambda c: -c["score"])
+            merges = llm_merge_groups(cand, cfg)
+            if merges:
+                used, merged = set(), []
+                for g in merges:
+                    ids = [i for i in dict.fromkeys(g) if i not in used]
+                    if len(ids) < 2:
+                        continue
+                    used.update(ids)
+                    merged.append([t for i in ids for t in raw_by_id[i]])
+                groups = [g for c, g in zip(clusters, groups) if c["id"] not in used] + merged
+                clusters = [build_cluster(list(g), user_cache, cfg) for g in groups]
+                print(f"[llm] merged {len(used)} clusters into {len(merged)} topics")
+        except Exception as e:
+            print(f"[llm] merge failed: {e!r}", file=sys.stderr)
     clusters.sort(key=lambda c: (VERDICT_ORDER.index(c["verdict"]) == 3, -c["score"]))
     llm_cache = load_json(DATA / "llm_cache.json", {})
     if demo:  # サンプルでは事前に用意した概要を表示
@@ -698,7 +906,7 @@ def main():
         "demo": demo,
         "note": note,
         "stats": {
-            "posts": len(tweets), "clusters": len(clusters), **counts,
+            "posts": len(tweets), "clusters": len(clusters), **counts, "dropped_low_quality": dropped,
             "llm_reviewed": reviewed,
             "month_spend_usd": state["spend"].get(month_key(now), 0.0),
             "month_budget_usd": cfg["budget"]["monthly_usd"],
@@ -707,6 +915,10 @@ def main():
     }
     save_json(Path(args.out), feed)
     if not demo:
+        try:
+            archive(clusters, now)
+        except Exception as e:
+            print(f"[archive] failed: {e!r}", file=sys.stderr)
         save_json(DATA / "tweets.json", store)
         save_json(DATA / "users.json", {k: v for k, v in user_cache.items()
                                         if any(t["author_id"] == k for t in store.values())})

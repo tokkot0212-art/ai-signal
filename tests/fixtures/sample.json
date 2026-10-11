@@ -6,7 +6,8 @@
    "sample_ailab"
   ],
   "tier2": [
-   "sample_researcher"
+   "sample_researcher",
+   "famous_prof"
   ]
  },
  "demo_llm": {
@@ -37,7 +38,9 @@
    "translations": {
     "1001": "新しいオープンウェイトの推論モデル「Orion-2」を公開します。重み、評価用コード、技術レポートは今すぐ入手できます。",
     "1002": "社内の評価セットでOrion-2を試しました。数学には強いものの、長い文脈からの情報検索はレポートが示すほどではありません。メモはこちら："
-   }
+   },
+   "evidence": "official_announcement",
+   "evidence_note": "GitHubの公式公開"
   },
   "1008": {
    "title": "小型エージェントが大型に勝つ手法の論文",
@@ -65,7 +68,9 @@
    "note": "論文そのもの（一次情報）へのリンクがあり、独立した2人が内容に言及しているため。",
    "translations": {
     "1008": "新しい論文：学習済みの世界モデルを使って計画する小型エージェントが、長い手順を要するWebタスクで、大型エージェントを推論コスト8分の1で上回りました。"
-   }
+   },
+   "evidence": "paper_or_data",
+   "evidence_note": "arXiv論文"
   },
   "1006": {
    "title": "大手が来週新モデルを出すとの噂",
@@ -85,7 +90,9 @@
    "note": "出典・企業名がなく、噂表現のみで一次情報がないため。",
    "translations": {
     "1006": "リーク：情報筋によると、大手ラボが来週、1000万トークンの文脈を扱える新しいフロンティアモデルを出すとのこと。まだ確認は取れていません。"
-   }
+   },
+   "evidence": "rumor",
+   "evidence_note": "匿名の情報筋"
   },
   "1007": {
    "title": "国内大手3社が生成AI利用指針を共同策定へ",
@@ -102,7 +109,33 @@
     }
    ],
    "verdict": "promising",
-   "note": "実績ある記者の投稿だが、現時点で裏付けは1件のみのため。"
+   "note": "実績ある記者の投稿だが、現時点で裏付けは1件のみのため。",
+   "evidence": "reporting",
+   "evidence_note": "記者の取材メモ"
+  },
+  "1011": {
+   "title": "有名教授、AGIは3年以内と予想",
+   "summary": "【意見】架空の有名教授が、最新モデルを使った感覚として、AGIは3年以内に来ると思うと述べた。根拠となるデータは示していない。",
+   "points": [
+    "研究者の発言だが、本人も「感覚」と述べており根拠は示されていない",
+    "AGIの定義も示されておらず、検証できない予想"
+   ],
+   "terms": [
+    {
+     "term": "AGI",
+     "desc": "人間並みに幅広い知的作業をこなせるAIの総称"
+    }
+   ],
+   "verdict": "promising",
+   "note": "専門家の発言だが根拠を示さない予想のため意見扱い。",
+   "evidence": "opinion",
+   "evidence_note": "本人の感想",
+   "translations": [
+    {
+     "post_id": "1011",
+     "ja": "正直、AGIは3年以内に来ると思う。最新モデルを使ってみた上での、あくまで私の感覚です。"
+    }
+   ]
   }
  },
  "users": [
@@ -185,6 +218,17 @@
    "public_metrics": {
     "followers_count": 12500,
     "following_count": 900
+   }
+  },
+  {
+   "id": "u9",
+   "username": "famous_prof",
+   "name": "有名教授（架空）",
+   "created_at": "2011-01-01T00:00:00Z",
+   "description": "AI研究者",
+   "public_metrics": {
+    "followers_count": 400000,
+    "following_count": 500
    }
   }
  ],
@@ -382,6 +426,70 @@
     "reply_count": 1200,
     "bookmark_count": 80
    }
+  },
+  {
+   "id": "1011",
+   "author_id": "u9",
+   "created_at": "2026-10-10T05:30:00Z",
+   "lang": "en",
+   "text": "Honestly I think AGI arrives within 3 years. Just my feeling after using the latest models.",
+   "entities": {
+    "urls": []
+   },
+   "public_metrics": {
+    "like_count": 8000,
+    "retweet_count": 1200,
+    "quote_count": 600,
+    "reply_count": 900,
+    "bookmark_count": 300
+   }
   }
- ]
+ ],
+ "demo_authors": {
+  "u1": {
+   "type": "official",
+   "role": "AI研究機関（架空）",
+   "former": ""
+  },
+  "u2": {
+   "type": "researcher",
+   "role": "大学のML研究者",
+   "former": "元Google研究者"
+  },
+  "u3": {
+   "type": "practitioner",
+   "role": "MLエンジニア",
+   "former": ""
+  },
+  "u4": {
+   "type": "journalist",
+   "role": "テック記者",
+   "former": ""
+  },
+  "u5": {
+   "type": "promoter",
+   "role": "AIまとめ・副業",
+   "former": ""
+  },
+  "u6": {
+   "type": "promoter",
+   "role": "フォロワー稼ぎ",
+   "former": ""
+  },
+  "u7": {
+   "type": "individual",
+   "role": "匿名のリーク系",
+   "former": ""
+  },
+  "u8": {
+   "type": "practitioner",
+   "role": "MLエンジニア",
+   "former": ""
+  },
+  "u9": {
+   "type": "researcher",
+   "role": "大学教授",
+   "former": ""
+  }
+ }
 }

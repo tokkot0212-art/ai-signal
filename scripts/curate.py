@@ -630,12 +630,32 @@ MERGE_PROMPT = """Xの投稿を話題ごとにまとめたクラスタの一覧�
 「同じ具体的な出来事・発表・ニュース」を扱っているクラスタを見つけて、グループにしてください。
 - 同じ発表についての公式投稿・報道・解説・反応は同じグループ
 - 同じ会社や同じ分野というだけの別の出来事は、まとめない
+- 別々の企業・機関がそれぞれ出した発表は、テーマが似ていても別の出来事としてまとめない
 - 2つ以上のクラスタを含むグループだけを提出（単独のものは書かない）
 - 迷ったらまとめない
 submit_groups ツールで提出してください。
 
 クラスタ:
 """
+
+
+def _guard_group(cs: list[dict]) -> list[str]:
+    """Claudeの統合案の安全確認:
+    - 別々の公式アカウント（別企業・別機関）の発表は、同じ出来事とみなさない
+    - 先頭の話題と共通する固有名詞（英単語・カタカナ語）が1つもない話題は外す"""
+    if len(cs) < 2:
+        return [c["id"] for c in cs]
+    kept, officials = [], set()
+    base_kw = keywords(" ".join(p["text"] for p in cs[0]["posts"][:3]))
+    for i, c in enumerate(cs):
+        offs = {a["username"].lower() for a in c["authors"] if a.get("tier") == 1}
+        if offs and officials and not offs & officials:
+            continue  # 別の公式アカウントの発表
+        if i > 0 and not base_kw & keywords(" ".join(p["text"] for p in c["posts"][:3])):
+            continue  # 共通する固有名詞がない
+        officials |= offs
+        kept.append(c["id"])
+    return kept
 
 
 def llm_merge_groups(clusters: list[dict], cfg: dict) -> list[list[str]]:
@@ -669,9 +689,16 @@ def llm_merge_groups(clusters: list[dict], cfg: dict) -> list[list[str]]:
                     groups = json.loads(groups)
                 except json.JSONDecodeError:
                     groups = []
-            valid = {c["id"] for c in clusters}
-            out = [[str(i) for i in g if str(i) in valid] for g in (groups or []) if isinstance(g, list)]
-            return [g for g in out if len(set(g)) >= 2]
+            by_id = {c["id"]: c for c in clusters}
+            out = []
+            for g in (groups or []):
+                if not isinstance(g, list):
+                    continue
+                ids = [i for i in dict.fromkeys(str(x) for x in g) if i in by_id]
+                ids = _guard_group([by_id[i] for i in ids])
+                if len(ids) >= 2:
+                    out.append(ids)
+            return out
     return []
 
 
@@ -935,7 +962,7 @@ def _archive_entry(c: dict, now: datetime) -> dict:
     }
 
 
-def _merge_entry(old: dict, new: dict) -> dict:
+def _merge_entry(old: dict, new: dict, live_ids: set | None = None) -> dict:
     """同じ話題の続報で上書きするときの統合ルール。"""
     if not new["summary"] and old.get("summary"):  # 要約がまだ無い回は前回の要約を残す
         for k in ("title", "summary", "points", "terms", "evidence", "evidence_label", "evidence_note"):
@@ -943,7 +970,9 @@ def _merge_entry(old: dict, new: dict) -> dict:
     if old.get("verdict") == "confirmed":  # 一度「確認済み」になったものは格下げしない
         new["verdict"] = "confirmed"
     new["first_seen"] = min(old.get("first_seen", new["first_seen"]), new["first_seen"])
-    new["post_ids"] = list(dict.fromkeys(old.get("post_ids", []) + new["post_ids"]))
+    # 今も取得範囲内の投稿は「今回の判定」を正とする（誤った統合があっても次の回で分かれ直す）
+    old_ids = [p for p in old.get("post_ids", []) if live_ids is None or p not in live_ids]
+    new["post_ids"] = list(dict.fromkeys(old_ids + new["post_ids"]))
     new["post_count"] = max(old.get("post_count", 0), new["post_count"])
     return new
 
@@ -1001,7 +1030,7 @@ def _migrate_monthly(index: dict):
     index.pop("months", None)
 
 
-def archive(clusters: list[dict], now: datetime):
+def archive(clusters: list[dict], now: datetime, live_ids: set | None = None):
     """「シグナル」（確認済み・有望）を日付ごとのファイル（docs/archive/days/YYYY-MM-DD.json と .md）に貯める。
     日付は話題を最初に見つけた日（日本時間）。同じ話題の続報は、その日のファイルを上書き更新する。"""
     index = load_json(ARCHIVE / "index.json", {"days": {}})
@@ -1042,7 +1071,7 @@ def archive(clusters: list[dict], now: datetime):
                     touched.add(d)
                     break
         for old in sorted(olds, key=lambda e: e.get("first_seen", "")):
-            entry = _merge_entry(old, entry)
+            entry = _merge_entry(old, entry, live_ids)
         day = _day_of(entry["first_seen"])
         books.setdefault(day, load_json(ARCHIVE / "days" / f"{day}.json", {"date": day, "items": []}))
         books[day]["items"].append(entry)
@@ -1330,7 +1359,7 @@ def main():
     save_json(Path(args.out), feed)
     if not demo:
         try:
-            archive(clusters, now)
+            archive(clusters, now, set(store.keys()))
         except Exception as e:
             print(f"[archive] failed: {e!r}", file=sys.stderr)
         save_json(DATA / "tweets.json", store)

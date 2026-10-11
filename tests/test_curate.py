@@ -42,5 +42,47 @@ class TestCurate(unittest.TestCase):
         self.assertEqual(self.find("ガイドライン")["verdict"], "promising")
 
 
+class TestQualityAndArchive(unittest.TestCase):
+    def setUp(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import yaml
+        import curate
+        self.c = curate
+        self.cfg = yaml.safe_load((ROOT / "config/sources.yml").read_text(encoding="utf-8"))
+
+    def test_discovery_gate(self):
+        low = {"text": "AI tool", "public_metrics": {"like_count": 1}}
+        high = {"text": "AI tool", "public_metrics": {"like_count": 20}}
+        arxiv0 = {"text": "AI paper", "entities": {"urls": [{"expanded_url": "https://arxiv.org/abs/2610.1"}]},
+                  "public_metrics": {}}
+        self.assertFalse(self.c.passes_discovery_gate(low, self.cfg))
+        self.assertTrue(self.c.passes_discovery_gate(high, self.cfg))
+        self.assertFalse(self.c.passes_discovery_gate(arxiv0, self.cfg))
+
+    def test_ai_relevance(self):
+        self.assertTrue(self.c.is_ai_related({"text": "新しいLLMを公開"}, self.cfg))
+        self.assertFalse(self.c.is_ai_related({"text": "今日はラーメンを食べた"}, self.cfg))
+        self.assertFalse(self.c.is_ai_related({"text": "He said wait"}, self.cfg))
+
+    def test_archive_merges_by_post_ids(self):
+        from datetime import datetime, timezone
+        tmp = Path(tempfile.mkdtemp())
+        self.c.ARCHIVE = tmp
+        def cl(cid, pids, summary=None, verdict="promising"):
+            return {"id": cid, "verdict": verdict, "title": cid, "summary": summary, "points": [], "terms": [],
+                    "score": 50, "credibility": 60, "heat": 10, "first_seen": "2026-10-10T01:00:00Z",
+                    "latest": "2026-10-10T02:00:00Z", "authors": [{"username": "a"}], "links": [],
+                    "posts": [{"id": p, "url": "u", "username": "a", "text": "t"} for p in pids],
+                    "post_count": len(pids)}
+        now = datetime(2026, 10, 10, 3, tzinfo=timezone.utc)
+        self.c.archive([cl("A", ["1"], "要約", "confirmed"), cl("B", ["2"])], now)
+        self.c.archive([cl("C", ["1", "2", "3"])], now)  # A と B が統合された
+        items = json.loads((tmp / "2026-10.json").read_text(encoding="utf-8"))["items"]
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["summary"], "要約")       # 以前の要約を保持
+        self.assertEqual(items[0]["verdict"], "confirmed")  # 格下げしない
+        self.assertEqual(set(items[0]["post_ids"]), {"1", "2", "3"})
+
+
 if __name__ == "__main__":
     unittest.main()

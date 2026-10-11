@@ -37,6 +37,12 @@ quality:
     AGI, alignment, アライメント, 安全性, safety, robot, ロボット, 音声合成, 画像生成, 動画生成, Sora, Veo,
     Midjourney, Stable Diffusion, Hugging Face, HuggingFace, MCP, RAG, embedding, ベクトル, Transformer]
 
+  # 本人が手を動かした報告とみなす言い回し（「評論・解説」と誤判定されたときの補正に使う）
+  hands_on_keywords: [作った, 作りました, 作ってみた, 作成した, 作成しました, 作りました, 試した, 試してみた, 試しました,
+    動かした, 動かしてみた, 動かしました, 実装した, 実装しました, 計測した, 測ってみた, 検証した, 検証しました,
+    公開しました, リリースしました, 学習させた, ファインチューニングした,
+    I built, I made, I trained, I tested, I ran, I benchmarked, I measured, we built, we trained, we released, we tested]
+
   # 特例でシグナルに残す「公式評価」の機関名・資料名（紹介投稿でも可）
   official_eval_keywords: [AISI, AI Security Institute, AI Safety Institute, CAISI, NIST,
     AIセーフティ・インスティテュート, AI安全研究所, 英AISI, 米AISI, 日本AISI, J-AISI,

@@ -111,6 +111,29 @@ class TestQualityAndArchive(unittest.TestCase):
         self.assertEqual(c["evidence"], "hands_on_test")
         self.assertEqual(c["verdict"], "promising")
 
+    def test_budget_is_spread_evenly(self):
+        from datetime import datetime
+        st = {"user_ratio": 0.3}
+        now = datetime(2026, 10, 20, 7, 23, tzinfo=self.c.JST)
+        p = self.c.plan_run(st, self.cfg, now)
+        self.assertAlmostEqual(p["daily_base"], 20 / 31, places=3)       # 10/20〜11/20 は31日
+        self.assertLessEqual(p["budget_today"], p["daily_base"] * 1.2 + 1e-9)
+        self.assertEqual(p["runs_left"], 4)
+        # 予算が残っていても、1日の上限を超えて駆け込みで使わない
+        st2 = {"user_ratio": 0.3, "cycle_spend": {"2026-10-20": 0.0}}
+        p2 = self.c.plan_run(st2, self.cfg, datetime(2026, 11, 18, 7, 23, tzinfo=self.c.JST))
+        self.assertLessEqual(p2["budget_today"], p2["daily_base"] * 1.2 + 1e-9)
+
+    def test_allocation_rotates_and_includes_discovery(self):
+        st = {}
+        seen_q, disc = set(), 0
+        for _ in range(8):
+            plan, d = self.c.allocate(20, 2, 0.7, st)
+            seen_q.update(q for q, _ in plan)
+            disc += d
+        self.assertEqual(seen_q, {0, 1})
+        self.assertGreater(disc, 0)
+
     def test_archive_merges_by_post_ids(self):
         from datetime import datetime, timezone
         tmp = Path(tempfile.mkdtemp())

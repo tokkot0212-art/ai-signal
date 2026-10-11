@@ -37,19 +37,23 @@ AUTHOR_TYPES = {
     "official":     ("公式", 25),      # 企業・研究機関・政府などの公式アカウント
     "researcher":   ("研究者", 15),    # 大学・研究所・AI企業の研究者、論文著者
     "journalist":   ("記者・メディア", 10),
-    "practitioner": ("実務家", 3),     # エンジニア・開発者・業界の実務家
+    "practitioner": ("実務家", 3),     # 自分で作る・動かすエンジニア・開発者
+    "commentator":  ("評論・解説", -5), # 他人の成果を論評・解説・まとめる発信者、インフルエンサー
     "individual":   ("個人", 0),
     "promoter":     ("宣伝・情報商材", -15),
 }
 EXPERT_TYPES = {"official", "researcher", "journalist"}
+REVIEW_VERSION = 3   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
+AUTHOR_VERSION = 2
 
 # 根拠（エビデンス）の種類と、話題スコアへの加点。シグナルに入れるのは evidence_ok のものだけ
 EVIDENCE = {
     "official_announcement": ("公式発表", 10, True),
     "paper_or_data":         ("論文・データ", 8, True),
     "reporting":             ("報道（取材・出典あり）", 5, True),
-    "hands_on_test":         ("実際に試した検証", 5, True),
-    "expert_analysis":       ("専門家の分析", 2, True),   # 根拠を示した専門家の分析
+    "hands_on_test":         ("本人が手を動かした検証", 6, True),  # 自分で作った・動かした・測った
+    "expert_analysis":       ("独自データの分析", 3, True),      # 本人が集めた・測ったデータに基づく分析
+    "commentary":            ("評論・解説のみ", -20, False),     # 他人の成果や検証を論評・解説・要約しただけ
     "opinion":               ("意見・感想", -10, False),
     "rumor":                 ("噂・リーク", -10, False),
     "promo":                 ("宣伝", -20, False),
@@ -465,10 +469,16 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
     unverified=噂・誇張・出典不明, excluded=釣り・宣伝・無関係
 - evidence: この話題の根拠の種類。次のどれか1つ
     official_announcement=企業・機関の公式発表そのもの / paper_or_data=論文・公開データ・ベンチマーク結果 /
-    reporting=記者・メディアの取材記事や出典を示した報道 / hands_on_test=実際に試した具体的な結果（数値・手順あり） /
-    expert_analysis=専門家が根拠（データ・論文・経験の具体例）を示した分析 /
+    reporting=記者・メディアが自ら取材した記事や、一次情報を明示した報道 /
+    hands_on_test=投稿者本人が実際に手を動かした検証。自分で作った・動かした・測った・試した結果で、
+      手順・数値・コード・画面などの具体物があるもの（「〜を作った」「〜で試したら〜だった」）/
+    expert_analysis=投稿者本人が集めた・測った独自データに基づく分析（他人のデータの解説は含まない）/
+    commentary=他人の発表・製品・検証を論評・解説・要約・感想を述べただけのもの。
+      評論家・解説系インフルエンサー・まとめ記事・「〇〇の検証を見て思うこと」・解説動画の紹介など、
+      本人が手を動かしていないものは、肩書きや分かりやすさに関係なくすべてこれ /
     opinion=根拠を示さない意見・感想・予想・つぶやき（専門家・有名人でも根拠がなければこれ） /
     rumor=噂・リーク・出典不明の情報 / promo=宣伝・セミナー告知・アフィリエイト
+    迷ったら: 本人が手を動かした証拠（手順・数値・成果物）が投稿から読み取れなければ hands_on_test にしない
 - evidence_note: 根拠の中身を20字以内で（例「arXiv論文」「公式ブログ」「日経の取材記事」「本人の感想」）
 - note: 判定理由を1文で。誰の発言か（posts の author_type / author_role）と根拠の強さを踏まえる
 - translations: 日本語以外（lang が ja でない）の投稿だけ、本文の自然な日本語訳。
@@ -480,6 +490,7 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 - 噂・リークは summary の冒頭に【未確認】と付ける
 - 意見・感想は summary の冒頭に【意見】と付け、「〜と述べた」のように誰の意見かが分かる書き方にする
 - 有名人や専門家の発言でも、根拠が示されていなければ evidence は opinion にする
+- 他人の成果を評価・解説するだけの投稿は commentary にする（報道機関の取材記事は reporting）
 
 結果は submit_reviews ツールで提出してください。translations は [{"post_id":"投稿id","ja":"日本語訳"}] の形です。
 
@@ -680,7 +691,8 @@ AUTHOR_PROMPT = """Xのアカウント情報（表示名・自己紹介・フォ
 - official: 企業・研究機関・大学・政府・メディア企業などの公式アカウント
 - researcher: 研究者・教授・論文著者・AI企業の研究職（自己紹介や所属で確認できる場合のみ）
 - journalist: 記者・編集者・ニュースメディア
-- practitioner: エンジニア・開発者・経営者など、実務で関わっている人
+- practitioner: 自分で作る・動かすエンジニア・開発者・研究開発の実務家（自己紹介から手を動かす人と分かる場合）
+- commentator: 評論家・解説者・AI系インフルエンサー・まとめ発信者・コンサルタントなど、主に他人の成果を論評・紹介する人
 - individual: 上記に当てはまらない個人、所属や専門が分からない人
 - promoter: 情報商材・アフィリエイト・副業勧誘・フォロワー稼ぎが目的とみられるアカウント
 role: 所属や肩書きを20字以内の日本語で（例「Wharton教授」「OpenAI研究者」「ITmedia記者」）。分からなければ区分名
@@ -698,7 +710,8 @@ def classify_authors(user_cache: dict, author_ids: set, authors_db: dict, cfg: d
         return 0
     stale = now - timedelta(days=60)
     need = [uid for uid in sorted(author_ids) if uid in user_cache and
-            (uid not in authors_db or parse_ts(authors_db[uid].get("_at", "2000-01-01T00:00:00Z")) < stale)]
+            (uid not in authors_db or authors_db[uid].get("_v") != AUTHOR_VERSION
+             or parse_ts(authors_db[uid].get("_at", "2000-01-01T00:00:00Z")) < stale)]
     n = 0
     for i in range(0, len(need), 25):
         chunk = need[i:i + 25]
@@ -719,7 +732,7 @@ def classify_authors(user_cache: dict, author_ids: set, authors_db: dict, cfg: d
             uid = str(r.get("user_id"))
             if uid in chunk and r.get("type") in AUTHOR_TYPES:
                 authors_db[uid] = {"type": r["type"], "role": (r.get("role") or "")[:24],
-                                   "former": (r.get("former") or "")[:24], "_at": iso(now)}
+                                   "former": (r.get("former") or "")[:24], "_at": iso(now), "_v": AUTHOR_VERSION}
                 n += 1
     if need:
         print(f"[llm] classified {n}/{len(need)} authors")
@@ -733,7 +746,7 @@ def apply_evidence(c: dict, ev: str, note: str | None):
     label, bonus, ok = EVIDENCE[ev]
     c["evidence"], c["evidence_label"], c["evidence_note"] = ev, label, (note or None)
     c["score"] = max(0, min(100, c["score"] + bonus))
-    if ev == "promo":
+    if ev in ("promo", "commentary"):
         c["verdict"] = "excluded"
     elif not ok and c["verdict"] in ("confirmed", "promising"):
         c["verdict"] = "unverified"
@@ -776,7 +789,7 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
     for c in targets:
         sig = ",".join(sorted(p["id"] for p in c["posts"]))
         hit = cache.get(c["id"])
-        if hit and hit.get("sig") == sig and "evidence" in (hit.get("r") or {}):
+        if hit and hit.get("sig") == sig and hit.get("v") == REVIEW_VERSION:
             apply_review(c, hit["r"])  # 投稿の顔ぶれが同じなら前回の概要を再利用
         else:
             todo.append((c, sig))
@@ -806,7 +819,7 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
                 continue
             c, sig = hit
             apply_review(c, r)
-            cache[c["id"]] = {"sig": sig, "r": r}
+            cache[c["id"]] = {"sig": sig, "r": r, "v": REVIEW_VERSION}
             n += 1
     # 訳は概要の上限に関係なく、ノイズ以外の英語投稿すべてに付ける
     translate_posts([c for c in clusters if c["verdict"] != "excluded"], key, lc, cache)

@@ -43,7 +43,7 @@ AUTHOR_TYPES = {
     "promoter":     ("宣伝・情報商材", -15),
 }
 EXPERT_TYPES = {"official", "researcher", "journalist"}
-REVIEW_VERSION = 4   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
+REVIEW_VERSION = 5   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
 AUTHOR_VERSION = 2
 
 # 根拠（エビデンス）の種類と、話題スコアへの加点。シグナルに入れるのは evidence_ok のものだけ
@@ -745,6 +745,21 @@ def classify_authors(user_cache: dict, author_ids: set, authors_db: dict, cfg: d
     return n
 
 
+OFFICIAL_EVAL_RE = None
+CFG = None  # main() で設定
+
+
+def mentions_official_evaluation(c: dict, cfg: dict) -> str | None:
+    """公式評価の機関名・資料名が投稿やリンクに出てくれば、その名前を返す。"""
+    global OFFICIAL_EVAL_RE
+    if OFFICIAL_EVAL_RE is None:
+        words = cfg.get("quality", {}).get("official_eval_keywords", [])
+        OFFICIAL_EVAL_RE = re.compile("|".join(re.escape(w) for w in words), re.I) if words else re.compile("$^")
+    blob = " ".join([p.get("text", "") for p in c.get("posts", [])] + [l.get("url", "") for l in c.get("links", [])])
+    m = OFFICIAL_EVAL_RE.search(blob)
+    return m.group(0) if m else None
+
+
 def apply_evidence(c: dict, ev: str, note: str | None):
     """根拠の種類で判定を補正する。意見・噂・宣伝はシグナルに入れない（格下げのみ）。"""
     if ev not in EVIDENCE:
@@ -781,7 +796,13 @@ def apply_review(c: dict, r: dict):
         # AIは「格下げ」は自由、「格上げ」は 未確認→有望 の1段だけ許可（証拠なしの昇格を防ぐ）
         if new > cur or (c["verdict"] == "unverified" and v == "promising"):
             c["verdict"] = v
-    apply_evidence(c, r.get("evidence"), r.get("evidence_note"))
+    ev, note = r.get("evidence"), r.get("evidence_note")
+    # 特例: AIの技術発展に重要な公式評価（AISI・システムカード等）の紹介は、評論扱いにしない
+    if ev in ("commentary", "opinion") and CFG is not None:
+        hit = mentions_official_evaluation(c, CFG)
+        if hit:
+            ev, note = "official_evaluation", f"{hit}の評価の紹介"
+    apply_evidence(c, ev, note)
 
 
 def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
@@ -948,6 +969,8 @@ def main():
     args = ap.parse_args()
 
     cfg = yaml.safe_load((ROOT / "config" / "sources.yml").read_text(encoding="utf-8"))
+    global CFG
+    CFG = cfg
     state = load_json(DATA / "state.json", {"since": {}, "spend": {}})
     user_cache = load_json(DATA / "users.json", {})
     store = load_json(DATA / "tweets.json", {})

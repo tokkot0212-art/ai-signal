@@ -2,6 +2,68 @@
  "date": "2026-10-12",
  "items": [
   {
+   "id": "1f3cb2843c",
+   "verdict": "confirmed",
+   "title": "Alibabaが強化学習基盤「QwenGyre」を発表",
+   "summary": "Alibaba公式アカウント「Qwen」が、超長期のエージェント（AIが複数手順の作業を自律的に進める仕組み）学習向けの強化学習基盤「QwenGyre」を発表した。GPU割り当てを動的に変える仕組みや、学習データを整理する仕組みを備えるとしている。投稿では、Qwen3.8-2.4T-A95Bでの検証結果として、NL2RepoBenchのスコア向上や学習時間の短縮が挙げられている。",
+   "points": [
+    "新しい点は、作業の需要に応じてGPUを推論と学習の間で再配分し、実行中の処理を止めない設計とされていること",
+    "投稿では従来方式より最大1.85倍、1.78倍の高速化、Asyncと比べ学習時間約44%削減と書かれている（独立検証は未確認）",
+    "数値は投稿者自身の報告であり、論文や技術文書での詳細確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "強化学習",
+     "desc": "AIが試行錯誤で報酬を最大化するよう学ぶ学習方法"
+    },
+    {
+     "term": "エージェント",
+     "desc": "目標に向けて自律的に複数の作業を実行するAIの仕組み"
+    },
+    {
+     "term": "ベンチマーク",
+     "desc": "AIの性能を共通の課題で比べるための評価テスト"
+    }
+   ],
+   "score": 97,
+   "credibility": 100,
+   "heat": 72,
+   "first_seen": "2026-10-12T13:11:37.000Z",
+   "latest": "2026-10-12T13:11:37.000Z",
+   "authors": [
+    "Alibaba_Qwen"
+   ],
+   "author_labels": [
+    {
+     "username": "Alibaba_Qwen",
+     "label": "Qwen（Alibaba）公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "paper_or_data",
+   "evidence_label": "論文・データ",
+   "evidence_note": "arXiv論文へのリンク",
+   "links": [
+    {
+     "url": "https://arxiv.org/abs/2609.33848",
+     "domain": "arxiv.org",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/Alibaba_Qwen/status/2109633085658808515",
+    "username": "Alibaba_Qwen",
+    "text": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨\n\nIt launches with two core designs: 🥳\n- Elastic Scheduler: reallocates GPUs between rollout & training as demand shifts—live executions never interrupted. Up to 1.85× speedup over Colocate, 1.78× over Async.\n- Trajectory Processor: turns branching executions (compaction, sub-agents, retries) into prefix-shared trajectory trees with bounded, deduplicated training samples. Partial progress after timeout sti",
+    "text_ja": "QwenGyreを紹介します。超長期（XLong）のエージェント学習に弾力的な強化学習を取り入れる仕組みです。✨\n\n主に2つの中核的な設計があります。🥳\n- 弾力的スケジューラー：需要の変化に応じて、ロールアウト（試行の実行）と学習の間でGPUを再配分します。実行中の処理は中断されません。従来のColocate方式より最大1.85倍、Async方式より最大1.78倍高速です。\n- 軌跡プロセッサー：分岐する実行（圧縮、サブエージェント、リトライ）を、接頭辞を共有する軌跡ツリーに変換し、上限付きで重複排除された学習サンプルにします。タイムアウト後も途中までの進捗は採点されます。\n\nQwen3.8-2.4T-A95Bに規模を拡大し、1回のロールアウトあたり約70万トークンで、48ステップでNL2RepoBenchを52.5%から58.5%に引き上げました。エンドツーエンドの学習時間はAsync方式比で約44%短縮されています。\n\n🔗 詳細はこちら"
+   },
+   "post_ids": [
+    "2109633085658808515"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-12T18:02:07Z"
+  },
+  {
    "id": "1dc788cf78",
    "verdict": "confirmed",
    "title": "Sakana AIが自己改善型AI手法「MASS」を発表",
@@ -12,9 +74,9 @@
     "注意点: 投稿時点では概要のみ。性能や安全性の具体的な結果は、ブログや論文で確認が必要。"
    ],
    "terms": [],
-   "score": 90,
+   "score": 88,
    "credibility": 100,
-   "heat": 50,
+   "heat": 46,
    "first_seen": "2026-10-11T20:45:50.000Z",
    "latest": "2026-10-11T20:45:50.000Z",
    "authors": [
@@ -58,84 +120,7 @@
     "2109385006603006435"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T11:07:28Z"
-  },
-  {
-   "id": "d086287790",
-   "verdict": "promising",
-   "title": "Google ColabでMiniMax H3などのAIモデルを使う方法が紹介",
-   "summary": "プログラマーのnpaka123氏が、Google AI Pro（月額2,900円）でできることや、Google Colab上でMiniMax H3をセットアップして動画生成する手順、Codexから利用する方法、Qwen系モデルをローカルのPiで使う方法を投稿した。MiniMax H3については、セットアップに約14秒、960×544・10秒の動画生成に約6分32秒かかったと本人が記載している。",
-   "points": [
-    "投稿者は実際にColabでセットアップと動画生成を行い、その時間を記載しており、手順を試した結果とみられる",
-    "Colabの計算資源や料金プランは変わることがあるため、利用時は最新の公式情報の確認が必要",
-    "投稿に示された数値は一回の試行によるもので、再現性や品質は未確認"
-   ],
-   "terms": [
-    {
-     "term": "Google Colab",
-     "desc": "Googleがブラウザ上で提供するPython実行環境。高性能なGPUを使える場合がある"
-    },
-    {
-     "term": "MiniMax H3",
-     "desc": "投稿で動画生成に使われたAIモデル。詳細な仕様は投稿からは分からない"
-    },
-    {
-     "term": "ローカル",
-     "desc": "自分のパソコンや手元の機器で動かすこと。クラウドに送らずに使える"
-    }
-   ],
-   "score": 68,
-   "credibility": 73,
-   "heat": 46,
-   "first_seen": "2026-10-11T23:25:11.000Z",
-   "latest": "2026-10-12T08:34:18.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の実機セットアップ・計時結果",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/nbfa8c0162e99?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n9b3870211b8d?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n7e46a3c2752d?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/npaka123/status/2109546745676046414",
-    "username": "npaka123",
-    "text": "Google AI Pro 月額2,900円 で何ができる？ Colab A100・動画・音楽生成まで｜npaka @npaka123 https://t.co/Fu1khRtFQ2",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2109546745676046414",
-    "2109556947112652832",
-    "2109563295627940349",
-    "2109484959610331259",
-    "2109438820295016581",
-    "2109425107299131847"
-   ],
-   "post_count": 6,
-   "archived_at": "2026-10-12T11:07:28Z"
+   "archived_at": "2026-10-12T18:02:07Z"
   },
   {
    "id": "69e3a9d851",
@@ -161,9 +146,9 @@
      "desc": "実際の人間の代わりに、模擬的な利用者像を作って試すこと"
     }
    ],
-   "score": 67,
+   "score": 65,
    "credibility": 75,
-   "heat": 41,
+   "heat": 34,
    "first_seen": "2026-10-12T03:52:14.000Z",
    "latest": "2026-10-12T03:52:14.000Z",
    "authors": [
@@ -191,7 +176,84 @@
     "2109492310874677489"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T11:07:28Z"
+   "archived_at": "2026-10-12T18:02:07Z"
+  },
+  {
+   "id": "d086287790",
+   "verdict": "promising",
+   "title": "Google ColabでMiniMax H3などのAIモデルを使う方法が紹介",
+   "summary": "プログラマーのnpaka123氏が、Google AI Pro（月額2,900円）でできることや、Google Colab上でMiniMax H3をセットアップして動画生成する手順、Codexから利用する方法、Qwen系モデルをローカルのPiで使う方法を投稿した。MiniMax H3については、セットアップに約14秒、960×544・10秒の動画生成に約6分32秒かかったと本人が記載している。",
+   "points": [
+    "投稿者は実際にColabでセットアップと動画生成を行い、その時間を記載しており、手順を試した結果とみられる",
+    "Colabの計算資源や料金プランは変わることがあるため、利用時は最新の公式情報の確認が必要",
+    "投稿に示された数値は一回の試行によるもので、再現性や品質は未確認"
+   ],
+   "terms": [
+    {
+     "term": "Google Colab",
+     "desc": "Googleがブラウザ上で提供するPython実行環境。高性能なGPUを使える場合がある"
+    },
+    {
+     "term": "MiniMax H3",
+     "desc": "投稿で動画生成に使われたAIモデル。詳細な仕様は投稿からは分からない"
+    },
+    {
+     "term": "ローカル",
+     "desc": "自分のパソコンや手元の機器で動かすこと。クラウドに送らずに使える"
+    }
+   ],
+   "score": 63,
+   "credibility": 73,
+   "heat": 34,
+   "first_seen": "2026-10-11T23:25:11.000Z",
+   "latest": "2026-10-12T08:34:18.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の実機セットアップ・計時結果",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/nbfa8c0162e99?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n7e46a3c2752d?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n9b3870211b8d?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/npaka123/status/2109546745676046414",
+    "username": "npaka123",
+    "text": "Google AI Pro 月額2,900円 で何ができる？ Colab A100・動画・音楽生成まで｜npaka @npaka123 https://t.co/Fu1khRtFQ2",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109546745676046414",
+    "2109484959610331259",
+    "2109556947112652832",
+    "2109563295627940349",
+    "2109438820295016581",
+    "2109425107299131847"
+   ],
+   "post_count": 6,
+   "archived_at": "2026-10-12T18:02:07Z"
   },
   {
    "id": "dd3f575fb1",
@@ -217,9 +279,9 @@
      "desc": "同じ開発元や系統で作られた、大きさや用途の違うAIモデルの一群"
     }
    ],
-   "score": 65,
+   "score": 61,
    "credibility": 70,
-   "heat": 42,
+   "heat": 32,
    "first_seen": "2026-10-12T07:07:00.000Z",
    "latest": "2026-10-12T07:07:00.000Z",
    "authors": [
@@ -247,7 +309,7 @@
     "2109541326458954235"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T11:07:28Z"
+   "archived_at": "2026-10-12T18:02:07Z"
   },
   {
    "id": "6617355ddf",
@@ -260,9 +322,9 @@
     "注意点: 投稿は見出しのみで、どのモデル・どの経緯かは未確認。元記事の一次情報を確認すべき。"
    ],
    "terms": [],
-   "score": 60,
+   "score": 58,
    "credibility": 78,
-   "heat": 21,
+   "heat": 16,
    "first_seen": "2026-10-12T00:05:05.000Z",
    "latest": "2026-10-12T00:05:05.000Z",
    "authors": [
@@ -296,7 +358,7 @@
     "2109435150128087331"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T11:07:28Z"
+   "archived_at": "2026-10-12T18:02:07Z"
   },
   {
    "id": "6aef08f589",
@@ -322,9 +384,9 @@
      "desc": "グラフィックボードに搭載された映像・計算用のメモリのこと"
     }
    ],
-   "score": 50,
+   "score": 48,
    "credibility": 65,
-   "heat": 12,
+   "heat": 7,
    "first_seen": "2026-10-12T05:17:24.000Z",
    "latest": "2026-10-12T05:17:24.000Z",
    "authors": [
@@ -352,7 +414,7 @@
     "2109513745907261551"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T11:07:28Z"
+   "archived_at": "2026-10-12T18:02:07Z"
   }
  ]
 }

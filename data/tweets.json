@@ -1371,5 +1371,439 @@
    "retweet_count": 35
   },
   "text": "Rather suddenly, cyborgs are starting to dominate math research. https://t.co/4ViU8iybXG"
+ },
+ "2109385006603006435": {
+  "author_id": "218811492",
+  "created_at": "2026-10-11T20:45:50.000Z",
+  "edit_history_tweet_ids": [
+   "2109385006603006435"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "Self-supervision through better coordination among agents that share one language model.",
+     "display_url": "pub.sakana.ai/mass/",
+     "end": 138,
+     "expanded_url": "https://pub.sakana.ai/mass/",
+     "images": [
+      {
+       "height": 630,
+       "url": "https://pbs.twimg.com/news_img/2109382288882462720/1_MA3GzQ?format=jpg&name=orig",
+       "width": 1200
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2109382288882462720/1_MA3GzQ?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 115,
+     "status": 200,
+     "title": "Multi-Agent Self-Supervision (MASS)",
+     "unwound_url": "https://pub.sakana.ai/mass/",
+     "url": "https://t.co/BptE1taT3f"
+    },
+    {
+     "display_url": "pic.x.com/OWjbfIOEsy",
+     "end": 304,
+     "expanded_url": "https://x.com/SakanaAILabs/status/2109385006603006435/photo/1",
+     "media_key": "16_2109384498085560320",
+     "start": 281,
+     "url": "https://t.co/OWjbfIOEsy"
+    }
+   ]
+  },
+  "id": "2109385006603006435",
+  "lang": "en",
+  "note_tweet": {
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pub.sakana.ai/mass/",
+      "end": 138,
+      "expanded_url": "https://pub.sakana.ai/mass/",
+      "start": 115,
+      "url": "https://t.co/LkQe5k7jOW"
+     },
+     {
+      "display_url": "arxiv.org/abs/2610.12176",
+      "end": 1991,
+      "expanded_url": "https://arxiv.org/abs/2610.12176",
+      "start": 1968,
+      "url": "https://t.co/SzXDlAzrUO"
+     },
+     {
+      "display_url": "github.com/SakanaAI/mass",
+      "end": 2021,
+      "expanded_url": "https://github.com/SakanaAI/mass",
+      "start": 1998,
+      "url": "https://t.co/xc870ZHRgh"
+     }
+    ]
+   },
+   "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/LkQe5k7jOW\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The model itself may be the best available optimizer and evaluator. The challenge is obtaining useful self-supervision within that homogeneous loop, where a model risks reinforcing its own blind spots rather than correcting them.\n\nWe ask whether a model can learn from the collective intelligence of its own team.\n\nWe introduce Multi-Agent Self-Supervision (MASS). One shared model solves tasks through a team of virtual subagents, searches for better multi-agent workflows, then uses its own judgments to select the best ones.\n\nTraining on the best team’s executions provides self-supervision by distilling the team’s collective experience into the shared model.\n\nWe ran two cycles using a 27B open-weights model on synthetic open-ended research tasks. After the second cycle, score per output token reached 1.2-1.6x the base model's level across four research benchmarks.\n\nThree key results:\n\nFirst, MASS enables role generalization within an RSI loop: training only on task-solving data from the optimizee naturally improves the capabilities of both the optimizer and the evaluator.\n\nSecond, multi-agent trajectories are more efficient training data than single-agent trajectories for RSI.\n\nThird, optimizer capacity, rather than evaluator capacity, can be the bottleneck in the speed of improvement.\n\nWe believe the community needs to investigate homogeneous RSI carefully to support AI safety. When a model is also its own evaluator, shared blind spots could allow mistakes to be accepted as progress and reinforced through training. For AI to improve beyond human expertise safely, we need to understand these failures and preserve effective ways to detect them and intervene.\n\nPaper: https://t.co/SzXDlAzrUO\nCode: https://t.co/xc870ZHRgh\n\nThis work was a collaboration with researchers at UC Berkeley."
+  },
+  "public_metrics": {
+   "bookmark_count": 554,
+   "impression_count": 48281,
+   "like_count": 690,
+   "quote_count": 23,
+   "reply_count": 36,
+   "retweet_count": 73
+  },
+  "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/BptE1taT3f\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The https://t.co/OWjbfIOEsy"
+ },
+ "2109438820295016581": {
+  "author_id": "1497822776836882432",
+  "created_at": "2026-10-12T00:19:40.000Z",
+  "edit_history_tweet_ids": [
+   "2109438820295016581"
+  ],
+  "entities": {
+   "mentions": [
+    {
+     "end": 58,
+     "id": "1497822776836882432",
+     "start": 49,
+     "username": "npaka123"
+    }
+   ],
+   "urls": [
+    {
+     "description": "Google ColabのA100で「Qwen3.8-27B」を動かし、ローカルの「Pi」から使ってみました。 ・セットアップ：約10分 ・ブロック崩し作成：約22.6秒（piの計測） 1. Codexにセットアップを依頼する 「Colab CLI」の認証とpiのインストールは済んでいる状態から、Codexに次のプロンプトを入力しました。 Colab CLIでA100を起動し、Ollamaの qwen3.8:27b をローカルのPi coding agentから利用できるようにしてください。 SSHポート転送を検証し、推論はColab、ファイル操作はローカルで行います。",
+     "display_url": "note.com/npaka/n/n431d9…",
+     "end": 82,
+     "expanded_url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
+     "images": [
+      {
+       "height": 670,
+       "url": "https://pbs.twimg.com/news_img/2109438823839223808/2PYGdaAt?format=jpg&name=orig",
+       "width": 1280
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2109438823839223808/2PYGdaAt?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 59,
+     "status": 200,
+     "title": "Google Colab の Qwen3.8-27B をローカルのPiで利用する方法｜npaka",
+     "unwound_url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
+     "url": "https://t.co/cBm6aOufAK"
+    }
+   ]
+  },
+  "id": "2109438820295016581",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 9,
+   "impression_count": 1139,
+   "like_count": 14,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 2
+  },
+  "text": "Google Colab の Qwen3.8-27B をローカルのPiで利用する方法｜npaka @npaka123 https://t.co/cBm6aOufAK"
+ },
+ "2109435150128087331": {
+  "author_id": "31070671",
+  "created_at": "2026-10-12T00:05:05.000Z",
+  "edit_history_tweet_ids": [
+   "2109435150128087331"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "Anthropicは、Claudeの評価試験中に、未解決殺人事件サイトへの架空情報送信や脆弱性悪用などの意図しない行動が生じたと発表した。警察は発見から報告までの遅れを批判。ホワイトハウスのSI Forceも、インシデントの迅速な通知と是正は国家安全保障上の義務であると警告した。",
+     "display_url": "itmedia.co.jp/news/article/2…",
+     "end": 73,
+     "expanded_url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
+     "images": [
+      {
+       "height": 628,
+       "url": "https://pbs.twimg.com/news_img/2109435154569854977/bzBkZY52?format=jpg&name=orig",
+       "width": 1200
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2109435154569854977/bzBkZY52?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 50,
+     "status": 200,
+     "title": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告",
+     "unwound_url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
+     "url": "https://t.co/fkhOF7JNFn"
+    }
+   ]
+  },
+  "id": "2109435150128087331",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 5,
+   "impression_count": 6090,
+   "like_count": 18,
+   "quote_count": 2,
+   "reply_count": 1,
+   "retweet_count": 17
+  },
+  "text": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告\nhttps://t.co/fkhOF7JNFn"
+ },
+ "2109427861971210629": {
+  "author_id": "3584601",
+  "created_at": "2026-10-11T23:36:08.000Z",
+  "edit_history_tweet_ids": [
+   "2109427861971210629"
+  ],
+  "entities": {
+   "mentions": [
+    {
+     "end": 28,
+     "id": "3584601",
+     "start": 22,
+     "username": "shi3z"
+    }
+   ],
+   "urls": [
+    {
+     "description": "昨日は自主企画「日本酒xAIハッカソン」を新丸ビルで開催した。 今年になって伊藤かつらさんが人事院の人事官を退官され、本郷に東大生向けのシェアハウスを始めるということで、建築写真を撮るのを引き受けたのがことの発端だった。 伊藤かつらさん 伊藤さんといえば、彼女が日本マイクロソフトにいらした頃によく海外のイベントのパーティで大量のワインボトルに囲まれていて、「あそこにいけばいい酒が飲める」と、僕もふらふらついていったものだった。 伊藤さんが退官後の活動として、「女性起業家の支援」と「日本酒の普及活動」を掲げると聞いて、居ても立っても居られなくなった。 なぜなら、僕は日本酒の都、長岡の",
+     "display_url": "note.com/shi3zblog/n/n5…",
+     "end": 52,
+     "expanded_url": "https://note.com/shi3zblog/n/n54e40fa4d111?sub_rt=share_pb",
+     "images": [
+      {
+       "height": 670,
+       "url": "https://pbs.twimg.com/news_img/2109427867398660096/j1mgkhtx?format=jpg&name=orig",
+       "width": 1280
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2109427867398660096/j1mgkhtx?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 29,
+     "status": 200,
+     "title": "日本酒xAIハッカソン@丸の内｜shi3z",
+     "unwound_url": "https://note.com/shi3zblog/n/n54e40fa4d111?sub_rt=share_pb",
+     "url": "https://t.co/ySDjiQAezD"
+    }
+   ]
+  },
+  "id": "2109427861971210629",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 0,
+   "impression_count": 2557,
+   "like_count": 17,
+   "quote_count": 2,
+   "reply_count": 0,
+   "retweet_count": 3
+  },
+  "text": "日本酒xAIハッカソン@丸の内｜shi3z @shi3z https://t.co/ySDjiQAezD"
+ },
+ "2109425107299131847": {
+  "author_id": "1497822776836882432",
+  "created_at": "2026-10-11T23:25:11.000Z",
+  "edit_history_tweet_ids": [
+   "2109425107299131847"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "pic.x.com/w9YIKEhYZ3",
+     "end": 122,
+     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
+     "media_key": "3_2109424829338456064",
+     "start": 99,
+     "url": "https://t.co/w9YIKEhYZ3"
+    },
+    {
+     "display_url": "pic.x.com/w9YIKEhYZ3",
+     "end": 122,
+     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
+     "media_key": "3_2109424910594686977",
+     "start": 99,
+     "url": "https://t.co/w9YIKEhYZ3"
+    },
+    {
+     "display_url": "pic.x.com/w9YIKEhYZ3",
+     "end": 122,
+     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
+     "media_key": "3_2109424931616489473",
+     "start": 99,
+     "url": "https://t.co/w9YIKEhYZ3"
+    },
+    {
+     "display_url": "pic.x.com/w9YIKEhYZ3",
+     "end": 122,
+     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
+     "media_key": "3_2109424945793273856",
+     "start": 99,
+     "url": "https://t.co/w9YIKEhYZ3"
+    }
+   ]
+  },
+  "id": "2109425107299131847",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 15,
+   "impression_count": 2215,
+   "like_count": 32,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 5
+  },
+  "text": "Google ColabでQwen3.8-27Bのセットアップがわずか10分で完了。速い\n昔はモデルのダウンロードだけでも相当時間がかかってた\n\nセットアップ：10分\nブロック崩し作成：22.6秒 https://t.co/w9YIKEhYZ3"
+ },
+ "2109422437616029941": {
+  "author_id": "39125788",
+  "created_at": "2026-10-11T23:14:34.000Z",
+  "edit_history_tweet_ids": [
+   "2109422437616029941"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/karpathy/statu…",
+     "end": 316,
+     "expanded_url": "https://twitter.com/karpathy/status/2109361546505966046",
+     "start": 293,
+     "url": "https://t.co/HHydK3UBij"
+    }
+   ]
+  },
+  "id": "2109422437616029941",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 46,
+   "impression_count": 15410,
+   "like_count": 308,
+   "quote_count": 3,
+   "reply_count": 57,
+   "retweet_count": 17
+  },
+  "referenced_tweets": [
+   {
+    "id": "2109361546505966046",
+    "type": "quoted"
+   }
+  ],
+  "text": "Not to get too annoying about it but its worth noting that many of the 5,000 people at the labs with access to advanced model still haven't used them to their full extent: its all cybersecurity &amp;  math &amp; AI R&amp;D.\n\nThere are a lot of other fields to advance and problems to solve... https://t.co/HHydK3UBij"
+ },
+ "2109365419937239158": {
+  "author_id": "33521530",
+  "created_at": "2026-10-11T19:28:00.000Z",
+  "edit_history_tweet_ids": [
+   "2109365419937239158"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/swyx/status/20…",
+     "end": 120,
+     "expanded_url": "https://twitter.com/swyx/status/2069964772003770673",
+     "start": 97,
+     "url": "https://t.co/1xf4Eblnil"
+    }
+   ]
+  },
+  "id": "2109365419937239158",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 7,
+   "impression_count": 5966,
+   "like_count": 33,
+   "quote_count": 0,
+   "reply_count": 19,
+   "retweet_count": 3
+  },
+  "referenced_tweets": [
+   {
+    "id": "2069964772003770673",
+    "type": "quoted"
+   }
+  ],
+  "text": "reupping my talk tips thread for all our lovely AIE NYC speakers. see you tmr at speaker dinner! https://t.co/1xf4Eblnil"
+ },
+ "2109361546505966046": {
+  "author_id": "33836629",
+  "created_at": "2026-10-11T19:12:37.000Z",
+  "edit_history_tweet_ids": [
+   "2109361082217402758",
+   "2109361546505966046"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/karpathy/statu…",
+     "end": 302,
+     "expanded_url": "https://twitter.com/karpathy/status/2042334451611693415",
+     "start": 279,
+     "url": "https://t.co/79xGhQdf1n"
+    }
+   ]
+  },
+  "id": "2109361546505966046",
+  "lang": "en",
+  "note_tweet": {
+   "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.\n- Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract.\n- Now we get to professional use of frontier-grade LLMs in math&code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code.\n- And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the \"archeology\" of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while.\n\nThe funnel is driven by a combination of factors:\n1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel.\n2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&code) dimension of the funnel.\n3. Access. Free-tier, paid-tier, internal.\n\nSo this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time."
+  },
+  "public_metrics": {
+   "bookmark_count": 14762,
+   "impression_count": 1870019,
+   "like_count": 21446,
+   "quote_count": 827,
+   "reply_count": 944,
+   "retweet_count": 2696
+  },
+  "referenced_tweets": [
+   {
+    "id": "2042334451611693415",
+    "type": "quoted"
+   }
+  ],
+  "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come https://t.co/79xGhQdf1n"
+ },
+ "2109361082217402758": {
+  "author_id": "33836629",
+  "created_at": "2026-10-11T19:10:46.000Z",
+  "edit_history_tweet_ids": [
+   "2109361082217402758",
+   "2109361546505966046"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/karpathy/statu…",
+     "end": 302,
+     "expanded_url": "https://twitter.com/karpathy/status/2042334451611693415",
+     "start": 279,
+     "url": "https://t.co/79xGhQdf1n"
+    }
+   ]
+  },
+  "id": "2109361082217402758",
+  "lang": "en",
+  "note_tweet": {
+   "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.\n- Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract.\n- Now we get to professional use of frontier-grade LLMs in math&code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code.\n- And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the \"archeology\" of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while.\n\nA question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems you really care about.\n\nThe funnel is driven by a combination of factors:\n1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel.\n2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&code) dimension of the funnel.\n3. Access. Free-tier, paid-tier, internal.\n\nSo this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time."
+  },
+  "public_metrics": {
+   "bookmark_count": 61,
+   "impression_count": 42220,
+   "like_count": 87,
+   "quote_count": 3,
+   "reply_count": 12,
+   "retweet_count": 14
+  },
+  "referenced_tweets": [
+   {
+    "id": "2042334451611693415",
+    "type": "quoted"
+   }
+  ],
+  "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come https://t.co/79xGhQdf1n"
  }
 }

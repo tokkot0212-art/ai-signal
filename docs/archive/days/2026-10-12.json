@@ -1,0 +1,113 @@
+{
+ "date": "2026-10-12",
+ "items": [
+  {
+   "id": "1dc788cf78",
+   "verdict": "confirmed",
+   "title": "Sakana AIが自己改善型AI手法「MASS」を発表",
+   "summary": "Sakana AIの公式アカウントが、複数のAIエージェントのチームを使って自己改善を行う手法「Multi-Agent Self-Supervision（MASS）」を紹介した。投稿によると、1つの共有モデルが仮想的なチームを通じてタスクを解き、同じモデル内での自己評価で生じる見落としを減らすことを狙うという。",
+   "points": [
+    "新しい点: 1つのモデルが自分の“チーム”から学ぶ仕組みで、単独の自己改善より偏りを減らすことを狙う。",
+    "重要性: 人間が評価しにくい長期・高度な研究課題でAIを改善する方法の一つになりうる。",
+    "注意点: 投稿時点では概要のみ。性能や安全性の具体的な結果は、ブログや論文で確認が必要。"
+   ],
+   "terms": [],
+   "score": 95,
+   "credibility": 100,
+   "heat": 63,
+   "first_seen": "2026-10-11T20:45:50.000Z",
+   "latest": "2026-10-11T20:45:50.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式ブログ",
+   "links": [
+    {
+     "url": "https://pub.sakana.ai/mass/",
+     "domain": "pub.sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.12176",
+     "domain": "arxiv.org",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/SakanaAI/mass",
+     "domain": "github.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2109385006603006435",
+    "username": "SakanaAILabs",
+    "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/LkQe5k7jOW\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The model itself may be the best available optimizer and evaluator. The challenge is obtaining useful self-supervision within that homogeneous loop, where a model risks reinforcing its own blind spots rather than correcting",
+    "text_ja": "Multi-Agent Self-Supervision（MASS）を紹介します：集合知による再帰的な自己改善\n\nブログ: https://t.co/LkQe5k7jOW\n\nAIシステムがますますオープンエンドな研究課題に取り組むようになると、人間の専門家は結果を評価し、次の進歩を導くことが難しくなるかもしれません。モデル自身が利用可能な最良の最適化器であり評価器である可能性もあります。課題は、そのような均質なループの中で有用な自己教師信号を得ることです。モデルは自分の盲点を修正するのではなく、むしろ強化してしまう危険があります。\n\n私たちは、モデルが自分のチームの集合知から学べるかどうかを問いました。\n\nMulti-Agent Self-Supervision（MASS）を紹介します。1つの共有モデルが、仮想的なサブエージェントのチームを通じてタスクを解き、より良いマルチエージェントのワークフローを探索し、そのうえで自身の判断を使って最良のものを選び出します。\n\n最良のチームの実行結果で学習させることで、チームの集合的な経験を共有モデルに蒸留し、自己教師信号を提供します。\n\n27BのオープンウェイトモデルでFor合成的なオープンエンド研究タスクに対して2サイクルを実行しました。2サイクル目の後、出力トークンあたりのスコアは、4つの研究ベンチマーク全体で基礎モデルの1.2〜1.6倍のレベルに達しました。\n\n主な結果は3つです。\n\nまず、MASSは役割の生成を可能にします"
+   },
+   "post_ids": [
+    "2109385006603006435"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-12T01:26:49Z"
+  },
+  {
+   "id": "6617355ddf",
+   "verdict": "promising",
+   "title": "AnthropicのAI、警察に虚偽情報を提供したと報道",
+   "summary": "ITmedia NEWSは、AnthropicのAIが未解決の殺人事件の捜査で警察に虚偽の情報を提供したと伝えた。見出しによると、米政権は「通知と是正は義務」と警告したという。投稿は見出しとリンクのみで、詳細は元記事で確認する必要がある。",
+   "points": [
+    "新しい点: AIが捜査機関に誤った情報を出したとされる事例で、AIの誤情報リスクが現実の場面にも及ぶことを示す。",
+    "重要性: 警察や行政でAIを使う場合、出力の検証と誤りの報告・是正の仕組みが求められる。",
+    "注意点: 投稿は見出しのみで、どのモデル・どの経緯かは未確認。元記事の一次情報を確認すべき。"
+   ],
+   "terms": [],
+   "score": 69,
+   "credibility": 78,
+   "heat": 42,
+   "first_seen": "2026-10-12T00:05:05.000Z",
+   "latest": "2026-10-12T00:05:05.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事見出し",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2109435150128087331",
+    "username": "itmedia_news",
+    "text": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告\nhttps://t.co/fkhOF7JNFn",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109435150128087331"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-12T01:26:49Z"
+  }
+ ]
+}

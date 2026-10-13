@@ -2,6 +2,72 @@
  "date": "2026-10-13",
  "items": [
   {
+   "id": "81d5948fed",
+   "verdict": "confirmed",
+   "title": "Anthropic、Claudeへの蒸留攻撃の対策が進展したと発表",
+   "summary": "Anthropicは公式アカウントで、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）を抑える取り組みが進んだと投稿した。詳しい方法は同社の投稿ページで説明されている。研究者のNathan Lambert氏は、同社が規制当局への支援を求めて大きく発信していたことに触れつつ、APIの安全性に関する同社の主張と矛盾するとの見方を示した。",
+   "points": [
+    "蒸留攻撃とは、他社のAIの出力を大量に集めて自社モデルに真似させる手法で、無断利用の懸念がある。",
+    "Lambert氏の批判は個人の見解で、同社の対策内容の詳細は公式投稿のリンク先で確認する必要がある。",
+    "API経由で有害な振る舞いが学習されるリスクが議論の焦点で、AI提供事業者の防御策に関心がある人に影響しうる。"
+   ],
+   "terms": [
+    {
+     "term": "蒸留（distillation）",
+     "desc": "大きなAIの出力を集めて、小さなAIに性能を真似させる技術。無断利用に使われることもある。"
+    },
+    {
+     "term": "APIの安全性",
+     "desc": "外部から呼び出せる窓口を通じて、悪用や情報漏えいが起きないようにすること。"
+    }
+   ],
+   "score": 99,
+   "credibility": 100,
+   "heat": 60,
+   "first_seen": "2026-10-12T23:58:35.000Z",
+   "latest": "2026-10-13T13:38:14.000Z",
+   "authors": [
+    "AnthropicAI",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式投稿",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/distillation-defenses",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2109795898909950247",
+    "username": "AnthropicAI",
+    "text": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
+    "text_ja": "ここ数か月で、Claudeに対する蒸留攻撃を抑える取り組みを大きく前進させました。\n\n本投稿では、その方法を説明しています：https://t.co/uWiRSLBuOS"
+   },
+   "post_ids": [
+    "2109795898909950247",
+    "2110002173732077632"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-13T16:06:59Z"
+  },
+  {
    "id": "187fdec08a",
    "verdict": "confirmed",
    "title": "Metaが最上位AIモデル「Muse Wonder」を発表",
@@ -25,9 +91,9 @@
      "desc": "開発者がプログラムからAIモデルを呼び出して使うための窓口のこと。"
     }
    ],
-   "score": 98,
+   "score": 97,
    "credibility": 90,
-   "heat": 48,
+   "heat": 45,
    "first_seen": "2026-10-12T17:02:20.000Z",
    "latest": "2026-10-12T23:24:10.000Z",
    "authors": [
@@ -90,65 +156,7 @@
     "2109787238481678447"
    ],
    "post_count": 4,
-   "archived_at": "2026-10-13T10:49:25Z"
-  },
-  {
-   "id": "0ba593c9d3",
-   "verdict": "confirmed",
-   "title": "AnthropicがClaudeへの蒸留攻撃を抑える取り組みを公表",
-   "summary": "Anthropicの公式アカウントは、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）の効果を弱める点で大きな進展があったと投稿した。投稿では、その方法を別記事で説明するとしている。具体的な手法や数値は、この投稿本文からは分からない。",
-   "points": [
-    "蒸留攻撃とは、他社AIの出力を大量に集めて自社モデルを学習させ、性能を模倣する行為とみられる（一般的な理解、投稿では定義なし）",
-    "詳細は投稿内のリンク先の公式記事で確認できる。本文だけでは対策の中身は不明",
-    "AIの無断模倣への防御策は、AI開発企業の競争力や利用規約の運用に関わるため、利用者や業界全体に影響しうる"
-   ],
-   "terms": [
-    {
-     "term": "蒸留（distillation）",
-     "desc": "大きなAIの出力を使って、別の小さめのAIを学習させる手法。模倣に使われることもある。"
-    },
-    {
-     "term": "蒸留攻撃",
-     "desc": "他社AIに大量の質問を送って回答を集め、その回答で自社AIを鍛えて性能を真似する行為とみられる。"
-    }
-   ],
-   "score": 96,
-   "credibility": 100,
-   "heat": 64,
-   "first_seen": "2026-10-12T23:58:35.000Z",
-   "latest": "2026-10-12T23:58:35.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/research/distillation-defenses",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2109795898909950247",
-    "username": "AnthropicAI",
-    "text": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
-    "text_ja": "ここ数か月で、Claudeに対する蒸留攻撃の効果を弱める点で大きな進展がありました。\n\nこの投稿では、その方法を説明します：https://t.co/uWiRSLBuOS"
-   },
-   "post_ids": [
-    "2109795898909950247"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "1bb11fd6fc",
@@ -174,9 +182,9 @@
      "desc": "画面上の要素に補足情報や操作の目印を付けて、AIに文脈を伝える仕組みとみられる"
     }
    ],
-   "score": 81,
+   "score": 80,
    "credibility": 90,
-   "heat": 43,
+   "heat": 40,
    "first_seen": "2026-10-12T18:42:27.000Z",
    "latest": "2026-10-12T18:42:27.000Z",
    "authors": [
@@ -204,7 +212,7 @@
     "2109716341490106869"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "64eaacf6a8",
@@ -226,9 +234,9 @@
      "desc": "同じ関心を持つ人が集まって交流する勉強会や集まり"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 100,
-   "heat": 17,
+   "heat": 15,
    "first_seen": "2026-10-12T17:57:59.000Z",
    "latest": "2026-10-12T17:57:59.000Z",
    "authors": [
@@ -262,7 +270,7 @@
     "2109705153591029854"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "be3bb5556c",
@@ -290,7 +298,7 @@
    ],
    "score": 72,
    "credibility": 90,
-   "heat": 21,
+   "heat": 19,
    "first_seen": "2026-10-12T18:27:04.000Z",
    "latest": "2026-10-12T18:27:04.000Z",
    "authors": [
@@ -318,7 +326,7 @@
     "2109712471254761741"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "6a1c4644e6",
@@ -342,7 +350,7 @@
    ],
    "score": 66,
    "credibility": 90,
-   "heat": 5,
+   "heat": 4,
    "first_seen": "2026-10-12T17:50:42.000Z",
    "latest": "2026-10-12T17:50:42.000Z",
    "authors": [
@@ -370,7 +378,65 @@
     "2109703320965448120"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
+  },
+  {
+   "id": "bdf4b76ccc",
+   "verdict": "promising",
+   "title": "米Getty Images、破産申請へ　AI画像の台頭で経営悪化",
+   "summary": "ITmedia NEWSは、米Getty Imagesが破産申請を行う見込みだと報じた。報道によると、AI画像の台頭で経営が悪化し、「報道写真」を軸に年内の再建を目指すという。投稿はこの報道の見出しと記事リンクのみで、詳細は記事本文に依る。",
+   "points": [
+    "Getty Imagesは写真素材の大手で、生成AI画像の普及が事業にどう影響したかを示す事例として注目される。",
+    "「申請へ」は予定段階の報道であり、正式な申請や裁判所の手続きは記事本文・続報で確認が必要。",
+    "再建計画の中身（年内の目標など）は会社側の発表で裏付けを取るまで断定できない。"
+   ],
+   "terms": [
+    {
+     "term": "破産申請",
+     "desc": "経営が立ち行かなくなった際に、裁判所に債務整理を求める法的手続き。"
+    },
+    {
+     "term": "報道写真",
+     "desc": "ニュースの現場で撮影された写真のこと。"
+    }
+   ],
+   "score": 81,
+   "credibility": 78,
+   "heat": 72,
+   "first_seen": "2026-10-13T13:50:09.000Z",
+   "latest": "2026-10-13T13:50:09.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia記事見出し",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002234/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2110005170826629187",
+    "username": "itmedia_news",
+    "text": "米Getty Imagesが破産申請へ　AI画像の台頭で経営悪化、「報道写真」軸に年内の再建目指す\nhttps://t.co/EYKdBzmLpb",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110005170826629187"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "7a664a4bae",
@@ -396,9 +462,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 85,
-   "heat": 45,
+   "heat": 42,
    "first_seen": "2026-10-12T16:49:27.000Z",
    "latest": "2026-10-12T16:49:27.000Z",
    "authors": [
@@ -426,7 +492,7 @@
     "2109687906751086628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "33dfa97f70",
@@ -448,9 +514,9 @@
      "desc": "大量の文章で学習し、文章の生成や要約などを行うAIの基盤モデル。"
     }
    ],
-   "score": 72,
+   "score": 65,
    "credibility": 78,
-   "heat": 50,
+   "heat": 34,
    "first_seen": "2026-10-13T09:25:09.000Z",
    "latest": "2026-10-13T09:25:09.000Z",
    "authors": [
@@ -484,7 +550,7 @@
     "2109938481384604128"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "21a548a5f6",
@@ -506,9 +572,9 @@
      "desc": "出版社が書籍の販売や増刷を止めること。"
     }
    ],
-   "score": 68,
+   "score": 64,
    "credibility": 78,
-   "heat": 41,
+   "heat": 31,
    "first_seen": "2026-10-13T07:40:08.000Z",
    "latest": "2026-10-13T07:40:08.000Z",
    "authors": [
@@ -542,7 +608,7 @@
     "2109912052215304580"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "44d0ca5907",
@@ -559,9 +625,9 @@
      "desc": "SNSでアカウントを識別するための表示名・ID。"
     }
    ],
-   "score": 62,
+   "score": 60,
    "credibility": 78,
-   "heat": 26,
+   "heat": 20,
    "first_seen": "2026-10-13T04:20:07.000Z",
    "latest": "2026-10-13T04:20:07.000Z",
    "authors": [
@@ -595,7 +661,7 @@
     "2109861717916479826"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "9c570fa7be",
@@ -621,9 +687,9 @@
      "desc": "画像処理などで使われる並列計算向けの半導体で、AIの計算にも広く使われる。"
     }
    ],
-   "score": 59,
+   "score": 58,
    "credibility": 78,
-   "heat": 18,
+   "heat": 15,
    "first_seen": "2026-10-13T00:30:09.000Z",
    "latest": "2026-10-13T00:30:09.000Z",
    "authors": [
@@ -657,7 +723,7 @@
     "2109803845887111576"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   }
  ]
 }

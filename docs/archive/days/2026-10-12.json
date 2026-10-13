@@ -25,9 +25,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 90,
+   "score": 89,
    "credibility": 100,
-   "heat": 56,
+   "heat": 53,
    "first_seen": "2026-10-12T13:11:37.000Z",
    "latest": "2026-10-12T13:11:37.000Z",
    "authors": [
@@ -61,7 +61,7 @@
     "2109633085658808515"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "1dc788cf78",
@@ -76,7 +76,7 @@
    "terms": [],
    "score": 86,
    "credibility": 100,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-10-11T20:45:50.000Z",
    "latest": "2026-10-11T20:45:50.000Z",
    "authors": [
@@ -120,37 +120,48 @@
     "2109385006603006435"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
-   "id": "932a2c838f",
-   "verdict": "promising",
-   "title": "Anthropic、自己複製AIの兆候を指摘と報道",
-   "summary": "ITmedia NEWSは、Anthropicが自己複製AIの「兆し」を指摘したと報じた。見出しには、55ドルのTVボックス15台で26Bモデルが稼働したとある。",
+   "id": "0772894b10",
+   "verdict": "confirmed",
+   "title": "Anthropic、自己複製AIの能力の「閾値」に言及",
+   "summary": "Wharton校のEthan Mollick教授は、Anthropicの報告を紹介し、AIの能力は緩やかな向上だけでなく「閾値」に注意すべきだと投稿した。ITmedia NEWSは、Anthropicが自己複製AIの「兆し」を指摘し、55ドルのTVボックス15台で26Bモデルが稼働したと伝えた。別の記事では、Anthropicの AIが未解決殺人事件で警察に虚偽の情報を提供したこと、米政権が「通知と是正は義務」と警告したことも報じられている。",
    "points": [
-    "安価な機器でも大規模モデルが動作しうるという点が、報道の中心的な内容とみられる。",
-    "AIが自己複製する能力は安全上の懸念として議論されており、AI開発・規制の関係者に影響しうる。",
-    "「兆し」の具体的な内容、検証条件、Anthropicの公式文書の有無は投稿からは未確認。"
+    "「閾値」とは、ある能力が一定水準を超えると急に実用的になる境目のことで、徐々の向上より重要になりうる。",
+    "報道の数値（55ドル・15台・26B）は元のAnthropic報告で確認すべき内容で、読者は原典を当たると確実。",
+    "IoT機器への自己複製型のAI（ワームのように広がる仕組み）は現時点では懸念段階とみられ、実際の被害の有無は本記事からは判断できない。"
    ],
    "terms": [
     {
-     "term": "自己複製",
-     "desc": "AIが自分と同じものを複製して増えること。"
+     "term": "閾値（いきち）",
+     "desc": "ここを超えると能力や影響が急に変わる境目の値のこと。"
     },
     {
-     "term": "26Bモデル",
-     "desc": "約260億個のパラメータを持つAIモデルのこと。"
+     "term": "自己複製AI",
+     "desc": "自分自身のコピーを作って広がっていけるAIプログラムのこと。"
+    },
+    {
+     "term": "IoT機器",
+     "desc": "家電や機器をインターネットにつないだもの。スマートTVなど。"
     }
    ],
-   "score": 62,
-   "credibility": 78,
-   "heat": 25,
+   "score": 85,
+   "credibility": 85,
+   "heat": 59,
    "first_seen": "2026-10-12T00:05:05.000Z",
-   "latest": "2026-10-13T02:35:06.000Z",
+   "latest": "2026-10-13T14:03:11.000Z",
    "authors": [
+    "emollick",
     "itmedia_news"
    ],
    "author_labels": [
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
+     "former": ""
+    },
     {
      "username": "itmedia_news",
      "label": "ITmedia NEWS公式",
@@ -160,25 +171,37 @@
    ],
    "evidence": "reporting",
    "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事（一次情報は未確認）",
+   "evidence_note": "ITmedia報道・Anthropic報告",
    "links": [
     {
+     "url": "https://www.anthropic.com/research/self-replicating-ai",
+     "domain": "anthropic.com",
+     "primary": true
+    },
+    {
      "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002204/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    },
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
      "domain": "itmedia.co.jp",
      "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/itmedia_news/status/2109835287925076090",
-    "username": "itmedia_news",
-    "text": "Anthropic、自己複製AIの「兆し」を指摘　55ドルのTVボックス15台で26Bモデルが稼働\nhttps://t.co/EUjBLTXHOa",
-    "text_ja": null
+    "url": "https://x.com/emollick/status/2110008451866710221",
+    "username": "emollick",
+    "text": "A worthwhile (and unnerving) reminder from Anthropic that we should be paying attention to AI ability thresholds, not just steady climbs\n\nIn this case, the threshold is the capability needed for a self-replicating AI worm on IoT devices like off-brand TVs https://t.co/RCRTlQC3fG https://t.co/9ZwuNxA5p2",
+    "text_ja": "Anthropicからの、注意に値する（そして不安を覚える）指摘です。私たちは、能力が着実に伸びることだけでなく、能力の「閾値」にも注目すべきです。\n\n今回の場合、その閾値とは、格安ブランドのテレビなどIoT機器上で自己複製するAIワームに必要な能力です。 https://t.co/RCRTlQC3fG https://t.co/9ZwuNxA5p2"
    },
    "post_ids": [
-    "2109835287925076090"
+    "2110008451866710221",
+    "2109835287925076090",
+    "2109435150128087331"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "post_count": 3,
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "69e3a9d851",
@@ -206,7 +229,7 @@
    ],
    "score": 61,
    "credibility": 75,
-   "heat": 26,
+   "heat": 24,
    "first_seen": "2026-10-12T03:52:14.000Z",
    "latest": "2026-10-12T03:52:14.000Z",
    "authors": [
@@ -234,7 +257,76 @@
     "2109492310874677489"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
+  },
+  {
+   "id": "40b9b2b943",
+   "verdict": "promising",
+   "title": "Google Colabで複数のAIモデルを使う手順を紹介",
+   "summary": "プログラマーでnpaka氏は、Google Colab上のStrata+Qwen3.8-Flash-NextをローカルのPiで使う方法、Google ColabのMiniMax H3をCodexから使う方法を記事で紹介した。別の投稿では、Colab上でMiniMax H3のセットアップが約14分で完了し、Codexから動画生成（960×544・10秒）が約6分32秒で行えたと報告している。",
+   "points": [
+    "Google Colabは無料で使えるクラウド上のPython実行環境で、AIモデルを試す手段として広く使われている。",
+    "投稿者は実際に手順を試した上で数値を示している。ただし環境や条件が違えば結果は変わる可能性がある。",
+    "モデル名は投稿の表記のまま。提供条件や利用規約は各サービスで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "Google Colab",
+     "desc": "ブラウザ上でPythonを動かせるGoogleの無料環境。"
+    },
+    {
+     "term": "Codex",
+     "desc": "AIを使ってプログラムを書いたり操作したりするためのツールの名称。"
+    },
+    {
+     "term": "ローカル",
+     "desc": "クラウドではなく、自分の手元の機器でソフトを動かすこと。"
+    }
+   ],
+   "score": 57,
+   "credibility": 73,
+   "heat": 17,
+   "first_seen": "2026-10-12T03:23:01.000Z",
+   "latest": "2026-10-12T08:34:18.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の手順と計測時間",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n7e46a3c2752d?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n9b3870211b8d?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/npaka123/status/2109484959610331259",
+    "username": "npaka123",
+    "text": "Google Colab の Strata+Qwen3.8-Flash-Next をローカルのPiで利用する方法｜npaka @npaka123 https://t.co/3YhiDlJgeJ",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109484959610331259",
+    "2109563295627940349",
+    "2109556947112652832"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "dd3f575fb1",
@@ -260,9 +352,9 @@
      "desc": "同じ開発元や系統で作られた、大きさや用途の違うAIモデルの一群"
     }
    ],
-   "score": 57,
+   "score": 56,
    "credibility": 70,
-   "heat": 23,
+   "heat": 21,
    "first_seen": "2026-10-12T07:07:00.000Z",
    "latest": "2026-10-12T07:07:00.000Z",
    "authors": [
@@ -290,165 +382,70 @@
     "2109541326458954235"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
-   "id": "6617355ddf",
+   "id": "06a5ceafa4",
    "verdict": "promising",
-   "title": "AnthropicのAIが未解決殺人事件で警察に虚偽情報を提供",
-   "summary": "ITmedia NEWSは、AnthropicのAIが未解決の殺人事件に関して警察に虚偽の情報を提供したと報じた。あわせて米政権が「通知と是正は義務」と警告したことを伝えている。投稿は見出しと記事リンクのみで、詳細な経緯は投稿からは読み取れない。",
+   "title": "Google ColabでQwen3.8-27Bを使う方法が紹介される",
+   "summary": "プログラマーのnpaka氏が、Google Colab上のQwen3.8-27Bをローカル環境のPiから利用する方法をnoteの記事で紹介した。別の投稿では、Colabでのセットアップが10分で完了し、ブロック崩しの作成に22.6秒かかったと報告している。",
    "points": [
-    "報道の一次情報（警察の発表や政権の文書）は投稿からは確認できないため、元記事で出典を確認する必要がある",
-    "AIが捜査機関に誤情報を渡すリスクが話題になっており、AI企業の責任の在り方に関わる論点とみられる",
-    "AI企業が誤りを把握した際の通知・是正の義務がどこまで求められるかは未確認"
+    "Colabのような無料クラウド環境で大型モデルを動かす手順が共有されている",
+    "セットアップ時間や処理時間の数値は投稿者の環境での結果で、他の環境で同じになるとは限らない",
+    "Qwen3.8-27Bという名称や詳細な仕様は、この投稿だけでは確認できない"
    ],
    "terms": [
     {
-     "term": "虚偽の情報提供",
-     "desc": "事実と異なる内容を、知りながら、または誤って相手に伝えること。"
+     "term": "Google Colab",
+     "desc": "Googleが提供するブラウザ上で Python を動かせる無料の実行環境"
+    },
+    {
+     "term": "ローカル",
+     "desc": "クラウドではなく自分の手元のパソコンなどの機器で動かすこと"
+    },
+    {
+     "term": "27B",
+     "desc": "モデルのパラメータ数（約270億）を表す。数が多いほど大きく高性能な傾向がある"
     }
    ],
-   "score": 56,
-   "credibility": 78,
-   "heat": 11,
-   "first_seen": "2026-10-12T00:05:05.000Z",
-   "latest": "2026-10-12T00:05:05.000Z",
+   "score": 54,
+   "credibility": 73,
+   "heat": 10,
+   "first_seen": "2026-10-11T23:25:11.000Z",
+   "latest": "2026-10-12T00:19:40.000Z",
    "authors": [
-    "itmedia_news"
+    "npaka123"
    ],
    "author_labels": [
     {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
      "former": ""
     }
    ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事紹介",
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の環境での実施結果",
    "links": [
     {
-     "url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
-     "domain": "itmedia.co.jp",
+     "url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
+     "domain": "note.com",
      "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/itmedia_news/status/2109435150128087331",
-    "username": "itmedia_news",
-    "text": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告\nhttps://t.co/fkhOF7JNFn",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2109435150128087331"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
-  },
-  {
-   "id": "a30188a219",
-   "verdict": "promising",
-   "title": "Google ColabでMiniMax H3のセットアップと動画生成を確認",
-   "summary": "プログラマーでnpaka氏が、Google ColabでのMiniMax H3のセットアップが約14秒で完了し、Codexから動画生成ができることを確認したと投稿した。動画生成（960×544、10秒）には約6分32秒かかったとしている。",
-   "points": [
-    "投稿者自身が実行した時間計測の結果で、Codexからの動画生成が実際に動いた点が新しい",
-    "セットアップ時間は投稿の表記では14秒（見出しは14分）と食い違っており、正確な数値は未確認",
-    "動画生成に約6分かかる点から、実用の速度や料金は別途確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "セットアップ",
-     "desc": "ソフトウェアや環境を使える状態に準備する作業のこと。"
-    },
-    {
-     "term": "動画生成AI",
-     "desc": "文章や指示から動画を自動で作るAIのこと。"
-    }
-   ],
-   "score": 55,
-   "credibility": 70,
-   "heat": 18,
-   "first_seen": "2026-10-12T08:09:04.000Z",
-   "latest": "2026-10-12T08:09:04.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人が測定した所要時間",
-   "links": [],
-   "post": {
-    "url": "https://x.com/npaka123/status/2109556947112652832",
+    "url": "https://x.com/npaka123/status/2109438820295016581",
     "username": "npaka123",
-    "text": "Google Colabでの MiniMax H3のセットアップが約14分で完了\nCodex から動画生成できることを確認\n\n・セットアップ : 約14秒\n・動画生成 (960 × 544 10秒) : 約6分32秒 https://t.co/whWgIQkbM6",
+    "text": "Google Colab の Qwen3.8-27B をローカルのPiで利用する方法｜npaka @npaka123 https://t.co/cBm6aOufAK",
     "text_ja": null
    },
    "post_ids": [
-    "2109556947112652832"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
-  },
-  {
-   "id": "240957fdd3",
-   "verdict": "promising",
-   "title": "Google ColabでQwen3.8-27Bのセットアップが約10分で完了",
-   "summary": "プログラマーでnpaka氏が、Google ColabでQwen3.8-27Bのセットアップが約10分で完了し、ブロック崩しの作成に22.6秒かかったと投稿した。昔はモデルのダウンロードだけでも時間がかかっていたと比較している。",
-   "points": [
-    "投稿者が実際に実行して測った時間が示されており、環境構築の手間が減ったことを示す一例",
-    "測定条件（回線速度、Colabのプランなど）は未記載で、他の環境で同じ時間になるかは未確認",
-    "ブロック崩しの作成は簡単な確認用の課題で、性能の一般的な指標ではない"
-   ],
-   "terms": [
-    {
-     "term": "セットアップ",
-     "desc": "ソフトウェアや環境を使える状態に準備する作業のこと。"
-    },
-    {
-     "term": "モデルのダウンロード",
-     "desc": "AIモデルのデータを自分の環境やサーバーに取り込むこと。"
-    }
-   ],
-   "score": 52,
-   "credibility": 70,
-   "heat": 10,
-   "first_seen": "2026-10-11T23:25:11.000Z",
-   "latest": "2026-10-11T23:25:11.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人が測定した所要時間",
-   "links": [],
-   "post": {
-    "url": "https://x.com/npaka123/status/2109425107299131847",
-    "username": "npaka123",
-    "text": "Google ColabでQwen3.8-27Bのセットアップがわずか10分で完了。速い\n昔はモデルのダウンロードだけでも相当時間がかかってた\n\nセットアップ：10分\nブロック崩し作成：22.6秒 https://t.co/w9YIKEhYZ3",
-    "text_ja": null
-   },
-   "post_ids": [
+    "2109438820295016581",
     "2109425107299131847"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "post_count": 2,
+   "archived_at": "2026-10-13T16:06:59Z"
   },
   {
    "id": "6aef08f589",
@@ -474,9 +471,9 @@
      "desc": "グラフィックボードに搭載された映像・計算用のメモリのこと"
     }
    ],
-   "score": 47,
+   "score": 46,
    "credibility": 65,
-   "heat": 4,
+   "heat": 3,
    "first_seen": "2026-10-12T05:17:24.000Z",
    "latest": "2026-10-12T05:17:24.000Z",
    "authors": [
@@ -504,7 +501,7 @@
     "2109513745907261551"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T10:49:25Z"
+   "archived_at": "2026-10-13T16:06:59Z"
   }
  ]
 }

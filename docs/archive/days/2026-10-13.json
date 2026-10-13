@@ -2,37 +2,97 @@
  "date": "2026-10-13",
  "items": [
   {
-   "id": "4442ffc182",
+   "id": "0ba593c9d3",
    "verdict": "confirmed",
-   "title": "Metaが新モデル「Muse Wonder」シリーズを発表",
-   "summary": "Meta公式アカウントは、「Muse Wonder」と「Muse Wonder Full」からなる新しいモデルシリーズを発表した。Muse Wonderは本日よりMeta Model APIとMuse Codeで利用可能で、Muse Wonder Fullは現時点でMuse Codeの有料契約者向けに提供される。Muse Wonderは今後、個人向けエージェント製品「Muse」の体験にも搭載され、まず契約者から順次展開されるとしている。Wharton校のEthan Mollick教授は、先行アクセスで限定的に試したところ良いモデルに見えると投稿し、4月からの進歩も評価している。",
+   "title": "AnthropicがClaudeへの蒸留攻撃を抑える取り組みを公表",
+   "summary": "Anthropicの公式アカウントは、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）の効果を弱める点で大きな進展があったと投稿した。投稿では、その方法を別記事で説明するとしている。具体的な手法や数値は、この投稿本文からは分からない。",
    "points": [
-    "Meta公式発表により、新モデルの提供形態（API・有料プラン・個人向け製品）が明示された",
-    "Mollick教授の評価は限定的な試用に基づく感想で、性能の客観的な裏付けは示されていない",
-    "今後の一般提供範囲や料金体系、ベンチマーク結果は投稿からは確認できない"
+    "蒸留攻撃とは、他社AIの出力を大量に集めて自社モデルを学習させ、性能を模倣する行為とみられる（一般的な理解、投稿では定義なし）",
+    "詳細は投稿内のリンク先の公式記事で確認できる。本文だけでは対策の中身は不明",
+    "AIの無断模倣への防御策は、AI開発企業の競争力や利用規約の運用に関わるため、利用者や業界全体に影響しうる"
    ],
    "terms": [
     {
-     "term": "エージェント（AIエージェント）",
-     "desc": "AIが目標に向けて複数の作業を自律的に計画・実行する仕組み"
+     "term": "蒸留（distillation）",
+     "desc": "大きなAIの出力を使って、別の小さめのAIを学習させる手法。模倣に使われることもある。"
+    },
+    {
+     "term": "蒸留攻撃",
+     "desc": "他社AIに大量の質問を送って回答を集め、その回答で自社AIを鍛えて性能を真似する行為とみられる。"
+    }
+   ],
+   "score": 100,
+   "credibility": 100,
+   "heat": 78,
+   "first_seen": "2026-10-12T23:58:35.000Z",
+   "latest": "2026-10-12T23:58:35.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/distillation-defenses",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2109795898909950247",
+    "username": "AnthropicAI",
+    "text": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
+    "text_ja": "ここ数か月で、Claudeに対する蒸留攻撃の効果を弱める点で大きな進展がありました。\n\nこの投稿では、その方法を説明します：https://t.co/uWiRSLBuOS"
+   },
+   "post_ids": [
+    "2109795898909950247"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T03:05:28Z"
+  },
+  {
+   "id": "187fdec08a",
+   "verdict": "confirmed",
+   "title": "Metaが最上位AIモデル「Muse Wonder」を発表",
+   "summary": "Metaは公式アカウントで、新しいAIモデル群「Muse Wonder」シリーズ（Muse WonderとMuse Wonder Full）を発表した。Muse Wonderは同社のMeta Model APIとMuse Codeで利用でき、Muse Wonder Fullは Muse Codeの購読者向けに提供される。ITmedia NEWSも同社最大のモデルとして報じている。",
+   "points": [
+    "新しいのは、個人・業務のエージェント用途を想定した「フロンティア」モデルである点。AIエージェントは指示を受けて複数の作業を自律的に進めるAI",
+    "Muse WonderはAIエージェント「Muse」の一部機能にも搭載予定で、まず購読者から展開される（時期は投稿では未記載）",
+    "性能の比較データや日本での提供状況は、本投稿からは確認できない。公式発表の続報で確認したい"
+   ],
+   "terms": [
+    {
+     "term": "フロンティアモデル",
+     "desc": "現時点で最先端の性能を持つ大規模なAIモデルのこと。"
+    },
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受けて、調べ物や操作などを複数の手順で自律的にこなすAIのこと。"
     },
     {
      "term": "Model API",
-     "desc": "外部の開発者がAIモデルを自分のアプリから呼び出して使うための接続窓口"
-    },
-    {
-     "term": "フロンティアモデル",
-     "desc": "現時点で最先端の性能を持つ大規模なAIモデルのこと"
+     "desc": "開発者がプログラムからAIモデルを呼び出して使うための窓口のこと。"
     }
    ],
-   "score": 94,
+   "score": 100,
    "credibility": 90,
-   "heat": 62,
+   "heat": 54,
    "first_seen": "2026-10-12T17:02:20.000Z",
-   "latest": "2026-10-12T18:34:00.000Z",
+   "latest": "2026-10-12T23:24:10.000Z",
    "authors": [
     "AIatMeta",
-    "emollick"
+    "emollick",
+    "itmedia_news",
+    "npaka123"
    ],
    "author_labels": [
     {
@@ -46,24 +106,49 @@
      "label": "Wharton教授",
      "type": "researcher",
      "former": ""
+    },
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Meta公式アカウントの発表投稿",
-   "links": [],
+   "evidence_note": "Meta公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002197/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/nfe5f74b3e07c?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
    "post": {
     "url": "https://x.com/AIatMeta/status/2109691148943999167",
     "username": "AIatMeta",
     "text": "We’re excited to introduce the Muse Wonder series with Muse Wonder and Muse Wonder Full, our most capable models yet. Both are frontier models, built to deliver state-of-the-art performance for personal and professional agentic tasks.\n\nMuse Wonder is available today via the Meta Model API and Muse Code. Muse Wonder Full is available today for Muse Code subscribers. Muse Wonder will also soon power experiences in our personal agent product, Muse, rolling out first to subscribers.",
-    "text_ja": "「Muse Wonder」と「Muse Wonder Full」からなるMuse Wonderシリーズを発表できることをうれしく思います。どちらも現時点で最も高性能なモデルです。どちらもフロンティアモデルで、個人と業務のエージェント的なタスクで最先端の性能を出せるよう作られています。\n\nMuse Wonderは本日よりMeta Model APIとMuse Codeで利用できます。Muse Wonder Fullは本日よりMuse Codeの契約者向けに利用できます。Muse Wonderは、個人向けエージェント製品「Muse」の体験にも近日中に搭載される予定で、まず契約者から順次展開されます。"
+    "text_ja": "Muse Wonderシリーズを紹介できることをうれしく思います。Muse WonderとMuse Wonder Fullは、当社で最も高性能なモデルです。どちらもフロンティアモデルであり、個人と仕事のエージェント用途で最先端の性能を出せるよう作られています。\n\nMuse Wonderは本日からMeta Model APIとMuse Codeで利用できます。Muse Wonder FullはMuse Codeの購読者が本日から利用できます。Muse Wonderは今後まもなく、個人向けエージェント製品「Muse」の体験にも搭載され、まず購読者に順次提供されます。"
    },
    "post_ids": [
     "2109691148943999167",
-    "2109714218014667039"
+    "2109714218014667039",
+    "2109768598592106935",
+    "2109787238481678447"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-12T21:47:19Z"
+   "post_count": 4,
+   "archived_at": "2026-10-13T03:05:28Z"
   },
   {
    "id": "1bb11fd6fc",
@@ -89,9 +174,9 @@
      "desc": "画面上の要素に補足情報や操作の目印を付けて、AIに文脈を伝える仕組みとみられる"
     }
    ],
-   "score": 88,
+   "score": 84,
    "credibility": 90,
-   "heat": 61,
+   "heat": 50,
    "first_seen": "2026-10-12T18:42:27.000Z",
    "latest": "2026-10-12T18:42:27.000Z",
    "authors": [
@@ -119,7 +204,7 @@
     "2109716341490106869"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T21:47:19Z"
+   "archived_at": "2026-10-13T03:05:28Z"
   },
   {
    "id": "64eaacf6a8",
@@ -141,9 +226,9 @@
      "desc": "同じ関心を持つ人が集まって交流する勉強会や集まり"
     }
    ],
-   "score": 83,
+   "score": 79,
    "credibility": 100,
-   "heat": 32,
+   "heat": 23,
    "first_seen": "2026-10-12T17:57:59.000Z",
    "latest": "2026-10-12T17:57:59.000Z",
    "authors": [
@@ -177,7 +262,7 @@
     "2109705153591029854"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T21:47:19Z"
+   "archived_at": "2026-10-13T03:05:28Z"
   },
   {
    "id": "be3bb5556c",
@@ -203,9 +288,9 @@
      "desc": "問い合わせへの回答など顧客対応に特化したAIモデル"
     }
    ],
-   "score": 79,
+   "score": 75,
    "credibility": 90,
-   "heat": 37,
+   "heat": 28,
    "first_seen": "2026-10-12T18:27:04.000Z",
    "latest": "2026-10-12T18:27:04.000Z",
    "authors": [
@@ -233,7 +318,7 @@
     "2109712471254761741"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T21:47:19Z"
+   "archived_at": "2026-10-13T03:05:28Z"
   },
   {
    "id": "6a1c4644e6",
@@ -255,9 +340,9 @@
      "desc": "国の安全保障や情報分析に関わる業務を担当する社内の部門とみられる"
     }
    ],
-   "score": 69,
+   "score": 67,
    "credibility": 90,
-   "heat": 13,
+   "heat": 8,
    "first_seen": "2026-10-12T17:50:42.000Z",
    "latest": "2026-10-12T17:50:42.000Z",
    "authors": [
@@ -285,7 +370,7 @@
     "2109703320965448120"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T21:47:19Z"
+   "archived_at": "2026-10-13T03:05:28Z"
   },
   {
    "id": "7a664a4bae",
@@ -311,9 +396,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 85,
+   "score": 81,
    "credibility": 85,
-   "heat": 59,
+   "heat": 51,
    "first_seen": "2026-10-12T16:49:27.000Z",
    "latest": "2026-10-12T16:49:27.000Z",
    "authors": [
@@ -341,7 +426,69 @@
     "2109687906751086628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-12T21:47:19Z"
+   "archived_at": "2026-10-13T03:05:28Z"
+  },
+  {
+   "id": "9c570fa7be",
+   "verdict": "promising",
+   "title": "Microsoft、第3世代AIチップ「Maia 300」を2027年に投入へ",
+   "summary": "ITmedia NEWSは、Microsoftが第3世代AIチップ「Maia 300」を2027年に投入すると伝えた。見出しによると、GPU比で電力効率が4割向上し、同社の自社サービスの主力推論基盤になるとされる。投稿は見出しとリンクのみで、詳細は記事で確認する必要がある。",
+   "points": [
+    "推論基盤とは、学習済みのAIを使って質問への回答などを行う処理の仕組みのこと",
+    "「電力効率4割向上」は見出しの数値で、比較条件（対象GPUや測定方法）は本投稿からは不明",
+    "AIチップの性能向上は、クラウドのAI利用料金や電力消費に影響しうる。実機投入の時期は計画段階とみられる"
+   ],
+   "terms": [
+    {
+     "term": "AIチップ",
+     "desc": "AIの計算処理に特化して作られた半導体のこと。"
+    },
+    {
+     "term": "推論（inference）",
+     "desc": "学習済みのAIが入力に対して答えを出す処理のこと。"
+    },
+    {
+     "term": "GPU",
+     "desc": "画像処理などで使われる並列計算向けの半導体で、AIの計算にも広く使われる。"
+    }
+   ],
+   "score": 65,
+   "credibility": 78,
+   "heat": 32,
+   "first_seen": "2026-10-13T00:30:09.000Z",
+   "latest": "2026-10-13T00:30:09.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事見出し",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002200/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2109803845887111576",
+    "username": "itmedia_news",
+    "text": "Microsoft、第3世代AIチップ「Maia 300」を2027年に投入　GPU比で電力効率4割向上、自社サービスの主力推論基盤に\nhttps://t.co/MJSZT4ToUL",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109803845887111576"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T03:05:28Z"
   }
  ]
 }

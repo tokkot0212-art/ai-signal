@@ -2,64 +2,6 @@
  "date": "2026-10-13",
  "items": [
   {
-   "id": "0ba593c9d3",
-   "verdict": "confirmed",
-   "title": "AnthropicがClaudeへの蒸留攻撃を抑える取り組みを公表",
-   "summary": "Anthropicの公式アカウントは、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）の効果を弱める点で大きな進展があったと投稿した。投稿では、その方法を別記事で説明するとしている。具体的な手法や数値は、この投稿本文からは分からない。",
-   "points": [
-    "蒸留攻撃とは、他社AIの出力を大量に集めて自社モデルを学習させ、性能を模倣する行為とみられる（一般的な理解、投稿では定義なし）",
-    "詳細は投稿内のリンク先の公式記事で確認できる。本文だけでは対策の中身は不明",
-    "AIの無断模倣への防御策は、AI開発企業の競争力や利用規約の運用に関わるため、利用者や業界全体に影響しうる"
-   ],
-   "terms": [
-    {
-     "term": "蒸留（distillation）",
-     "desc": "大きなAIの出力を使って、別の小さめのAIを学習させる手法。模倣に使われることもある。"
-    },
-    {
-     "term": "蒸留攻撃",
-     "desc": "他社AIに大量の質問を送って回答を集め、その回答で自社AIを鍛えて性能を真似する行為とみられる。"
-    }
-   ],
-   "score": 100,
-   "credibility": 100,
-   "heat": 78,
-   "first_seen": "2026-10-12T23:58:35.000Z",
-   "latest": "2026-10-12T23:58:35.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/research/distillation-defenses",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2109795898909950247",
-    "username": "AnthropicAI",
-    "text": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
-    "text_ja": "ここ数か月で、Claudeに対する蒸留攻撃の効果を弱める点で大きな進展がありました。\n\nこの投稿では、その方法を説明します：https://t.co/uWiRSLBuOS"
-   },
-   "post_ids": [
-    "2109795898909950247"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
-  },
-  {
    "id": "187fdec08a",
    "verdict": "confirmed",
    "title": "Metaが最上位AIモデル「Muse Wonder」を発表",
@@ -83,9 +25,9 @@
      "desc": "開発者がプログラムからAIモデルを呼び出して使うための窓口のこと。"
     }
    ],
-   "score": 100,
+   "score": 98,
    "credibility": 90,
-   "heat": 54,
+   "heat": 48,
    "first_seen": "2026-10-12T17:02:20.000Z",
    "latest": "2026-10-12T23:24:10.000Z",
    "authors": [
@@ -148,7 +90,65 @@
     "2109787238481678447"
    ],
    "post_count": 4,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
+  },
+  {
+   "id": "0ba593c9d3",
+   "verdict": "confirmed",
+   "title": "AnthropicがClaudeへの蒸留攻撃を抑える取り組みを公表",
+   "summary": "Anthropicの公式アカウントは、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）の効果を弱める点で大きな進展があったと投稿した。投稿では、その方法を別記事で説明するとしている。具体的な手法や数値は、この投稿本文からは分からない。",
+   "points": [
+    "蒸留攻撃とは、他社AIの出力を大量に集めて自社モデルを学習させ、性能を模倣する行為とみられる（一般的な理解、投稿では定義なし）",
+    "詳細は投稿内のリンク先の公式記事で確認できる。本文だけでは対策の中身は不明",
+    "AIの無断模倣への防御策は、AI開発企業の競争力や利用規約の運用に関わるため、利用者や業界全体に影響しうる"
+   ],
+   "terms": [
+    {
+     "term": "蒸留（distillation）",
+     "desc": "大きなAIの出力を使って、別の小さめのAIを学習させる手法。模倣に使われることもある。"
+    },
+    {
+     "term": "蒸留攻撃",
+     "desc": "他社AIに大量の質問を送って回答を集め、その回答で自社AIを鍛えて性能を真似する行為とみられる。"
+    }
+   ],
+   "score": 96,
+   "credibility": 100,
+   "heat": 64,
+   "first_seen": "2026-10-12T23:58:35.000Z",
+   "latest": "2026-10-12T23:58:35.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/distillation-defenses",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2109795898909950247",
+    "username": "AnthropicAI",
+    "text": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
+    "text_ja": "ここ数か月で、Claudeに対する蒸留攻撃の効果を弱める点で大きな進展がありました。\n\nこの投稿では、その方法を説明します：https://t.co/uWiRSLBuOS"
+   },
+   "post_ids": [
+    "2109795898909950247"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T10:49:25Z"
   },
   {
    "id": "1bb11fd6fc",
@@ -174,9 +174,9 @@
      "desc": "画面上の要素に補足情報や操作の目印を付けて、AIに文脈を伝える仕組みとみられる"
     }
    ],
-   "score": 84,
+   "score": 81,
    "credibility": 90,
-   "heat": 50,
+   "heat": 43,
    "first_seen": "2026-10-12T18:42:27.000Z",
    "latest": "2026-10-12T18:42:27.000Z",
    "authors": [
@@ -204,7 +204,7 @@
     "2109716341490106869"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
   },
   {
    "id": "64eaacf6a8",
@@ -226,9 +226,9 @@
      "desc": "同じ関心を持つ人が集まって交流する勉強会や集まり"
     }
    ],
-   "score": 79,
+   "score": 77,
    "credibility": 100,
-   "heat": 23,
+   "heat": 17,
    "first_seen": "2026-10-12T17:57:59.000Z",
    "latest": "2026-10-12T17:57:59.000Z",
    "authors": [
@@ -262,7 +262,7 @@
     "2109705153591029854"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
   },
   {
    "id": "be3bb5556c",
@@ -288,9 +288,9 @@
      "desc": "問い合わせへの回答など顧客対応に特化したAIモデル"
     }
    ],
-   "score": 75,
+   "score": 72,
    "credibility": 90,
-   "heat": 28,
+   "heat": 21,
    "first_seen": "2026-10-12T18:27:04.000Z",
    "latest": "2026-10-12T18:27:04.000Z",
    "authors": [
@@ -318,7 +318,7 @@
     "2109712471254761741"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
   },
   {
    "id": "6a1c4644e6",
@@ -340,9 +340,9 @@
      "desc": "国の安全保障や情報分析に関わる業務を担当する社内の部門とみられる"
     }
    ],
-   "score": 67,
+   "score": 66,
    "credibility": 90,
-   "heat": 8,
+   "heat": 5,
    "first_seen": "2026-10-12T17:50:42.000Z",
    "latest": "2026-10-12T17:50:42.000Z",
    "authors": [
@@ -370,7 +370,7 @@
     "2109703320965448120"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
   },
   {
    "id": "7a664a4bae",
@@ -396,9 +396,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 81,
+   "score": 79,
    "credibility": 85,
-   "heat": 51,
+   "heat": 45,
    "first_seen": "2026-10-12T16:49:27.000Z",
    "latest": "2026-10-12T16:49:27.000Z",
    "authors": [
@@ -426,7 +426,176 @@
     "2109687906751086628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
+  },
+  {
+   "id": "33dfa97f70",
+   "verdict": "promising",
+   "title": "国産AI「Sarashina」の無料試用サイトとAPIが公開",
+   "summary": "ITmedia NEWSは、ソフトバンク子会社が国産AI「Sarashina」を無料で試せるWebサイトを公開したと報じた。6つのAIモデルを呼び出せるAPIも提供されるという。",
+   "points": [
+    "国内企業の大規模言語モデルを、登録の手間を抑えて試せる入口が増えた点が新しい。",
+    "開発者はAPIを通じて自社サービスに組み込める可能性があり、国産AIの選択肢を検討する企業に関係する。",
+    "無料期間や利用条件、対応する精度・性能は投稿では分からない。実際に確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士がAIなどの機能を呼び出すための窓口のこと。"
+    },
+    {
+     "term": "大規模言語モデル（LLM）",
+     "desc": "大量の文章で学習し、文章の生成や要約などを行うAIの基盤モデル。"
+    }
+   ],
+   "score": 72,
+   "credibility": 78,
+   "heat": 50,
+   "first_seen": "2026-10-13T09:25:09.000Z",
+   "latest": "2026-10-13T09:25:09.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002224/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2109938481384604128",
+    "username": "itmedia_news",
+    "text": "国産AI「Sarashina」が無料で試せるWebサイト、ソフトバンク子会社が公開　6つのAIモデルが呼び出せるAPIも\nhttps://t.co/5EC48DVvcU",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109938481384604128"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T10:49:25Z"
+  },
+  {
+   "id": "21a548a5f6",
+   "verdict": "promising",
+   "title": "AI生成の実在しない判例を書籍に掲載、回収・絶版に",
+   "summary": "ITmedia NEWSは、AIが出力した実在しない判例が書籍に掲載され、書籍が回収・絶版になったと報じた。琉球大学の教授が謝罪し、「研究者としてあるまじき失態」と述べたという。",
+   "points": [
+    "生成AIの誤情報（いわゆるハルシネーション）が出版物にまで及んだ事例である。",
+    "研究者や執筆者がAIの出力を検証せずに使うリスクを示し、出版・学術分野に関係する。",
+    "どの書籍か、どの程度の範囲で回収されたかなどの詳細は投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "ハルシネーション",
+     "desc": "AIがもっともらしいが事実でない内容を生成してしまう現象のこと。"
+    },
+    {
+     "term": "絶版",
+     "desc": "出版社が書籍の販売や増刷を止めること。"
+    }
+   ],
+   "score": 68,
+   "credibility": 78,
+   "heat": 41,
+   "first_seen": "2026-10-13T07:40:08.000Z",
+   "latest": "2026-10-13T07:40:08.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002213/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2109912052215304580",
+    "username": "itmedia_news",
+    "text": "AIが出力した「実在しない判例」を書籍に掲載→回収・絶版へ　琉球大教授が謝罪「研究者としてあるまじき失態」\nhttps://t.co/S6QAj9MlS2",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109912052215304580"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T10:49:25Z"
+  },
+  {
+   "id": "44d0ca5907",
+   "verdict": "promising",
+   "title": "SpaceXAIがXのユーザー名を「SpaceXSI」に変更",
+   "summary": "ITmedia NEWSは、SpaceXAIがXのユーザー名を「SpaceXSI」に変更したと報じた。見出しによると、「AI呼称をやめる」と宣言してから1週間ほどで変更された。",
+   "points": [
+    "社名や組織名の表記変更は、AI企業としての位置づけに関する方針変更とみられるが、理由は投稿からは不明。",
+    "名称変更の背景や今後の事業方針は、投稿からは分からないため、続報の確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "ユーザー名（ハンドル）",
+     "desc": "SNSでアカウントを識別するための表示名・ID。"
+    }
+   ],
+   "score": 62,
+   "credibility": 78,
+   "heat": 26,
+   "first_seen": "2026-10-13T04:20:07.000Z",
+   "latest": "2026-10-13T04:20:07.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002209/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2109861717916479826",
+    "username": "itmedia_news",
+    "text": "SpaceXAI、Xのユーザー名を「SpaceXSI」に変更　“AI呼称やめる”宣言から1週間ほどで\nhttps://t.co/mh7fvieznX",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109861717916479826"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-13T10:49:25Z"
   },
   {
    "id": "9c570fa7be",
@@ -452,9 +621,9 @@
      "desc": "画像処理などで使われる並列計算向けの半導体で、AIの計算にも広く使われる。"
     }
    ],
-   "score": 65,
+   "score": 59,
    "credibility": 78,
-   "heat": 32,
+   "heat": 18,
    "first_seen": "2026-10-13T00:30:09.000Z",
    "latest": "2026-10-13T00:30:09.000Z",
    "authors": [
@@ -488,7 +657,7 @@
     "2109803845887111576"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T03:05:28Z"
+   "archived_at": "2026-10-13T10:49:25Z"
   }
  ]
 }

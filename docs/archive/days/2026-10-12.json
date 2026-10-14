@@ -2,39 +2,120 @@
  "date": "2026-10-12",
  "items": [
   {
-   "id": "2849801aaa",
+   "id": "b5cf4ed585",
    "verdict": "confirmed",
-   "title": "Google、新AIモデル「Gemini 4 Argon」を提供開始",
-   "summary": "Google DeepMindは、新AIモデル「Gemini 4 Argon」の提供を開始したと発表した。Google DeepMind共同創設者のDemis Hassabis氏は、Google Ultra・Proの加入者や、SearchなどでArgonが使えるようになったと投稿している。ITmedia NEWSも、推論の継続力強化や一部ベンチマークでのトップ獲得を伝えている。",
+   "title": "Google DeepMindが新モデル「Gemini 4 Argon」を世界で提供開始",
+   "summary": "Google DeepMindの公式アカウントは、新モデル「Gemini 4 Argon」が世界的に利用可能になったと投稿した。投稿では、コーディング、企業向けワークフロー、サイバー防御などの難しい課題に対応するモデルだと説明されている。同アカウントは、量子計算や核融合、タンパク質設計などの科学分野での活用例も紹介した。",
    "points": [
-    "新しい点: 推論を長く続ける力の強化がうたわれている（ITmedia報道の要約）。",
-    "影響: 提供対象はUltra・Proの加入者や一部サービスで、無料利用者はすぐには使えない可能性がある。",
-    "注意: 「一部ベンチでトップ」の具体的な評価条件や比較対象は、投稿からは確認できない。"
+    "公式発表では、コーディング・企業業務・サイバー防御が対象分野として挙げられている",
+    "デモとして、動画を見て学習したAIがロボットにコーンホールを練習させた例が紹介されている（成功数などの詳細は投稿内の記述に限られる）",
+    "Wharton大学のEthan Mollick教授は事前検証で、総合的に前世代より大きく進歩し、創造的な文章に強みがあるが、複雑なマルチエージェント作業では遅れがあると述べている（個人の感想）"
    ],
    "terms": [
     {
-     "term": "推論",
-     "desc": "AIが問題を考えて答えを導く処理のこと。"
+     "term": "マルチエージェント",
+     "desc": "複数のAIが役割を分担して協力しながら作業する仕組み"
     },
     {
-     "term": "Ultra / Pro",
-     "desc": "Googleの有料AIサブスクリプションの上位・標準プラン名。"
-    },
-    {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ問題で比べるための共通のテスト。"
+     "term": "蒸留（distillation）",
+     "desc": "大きなAIの出力を使って小さなAIを学習させる手法"
     }
    ],
    "score": 100,
+   "credibility": 90,
+   "heat": 66,
+   "first_seen": "2026-10-12T09:06:26.000Z",
+   "latest": "2026-10-14T17:25:56.000Z",
+   "authors": [
+    "GoogleDeepMind",
+    "emollick",
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
+     "former": ""
+    },
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式投稿・教授の使用感",
+   "links": [
+    {
+     "url": "https://formwork-city.netlify.app/Fable",
+     "domain": "formwork-city.netlify.app",
+     "primary": false
+    },
+    {
+     "url": "https://brut-city.netlify.app/",
+     "domain": "brut-city.netlify.app",
+     "primary": false
+    },
+    {
+     "url": "https://rainbow-panda-689e6b.netlify.app/",
+     "domain": "rainbow-panda-689e6b.netlify.app",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2110421861435879476",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon is already unlocking new scientific breakthroughs in quantum computing, nuclear fusion, protein design and beyond. 🧵",
+    "text_ja": "Gemini 4 Argonは、量子コンピューティング、核融合、タンパク質設計などの分野で、すでに新たな科学的ブレークスルーを生み出している。🧵"
+   },
+   "post_ids": [
+    "2110421861435879476",
+    "2110039274922131792",
+    "2110078384617464201",
+    "2110060618258497764",
+    "2110052331702124894",
+    "2110336113705660609"
+   ],
+   "post_count": 7,
+   "archived_at": "2026-10-14T18:04:44Z"
+  },
+  {
+   "id": "dae085cd9f",
+   "verdict": "confirmed",
+   "title": "Gemini 4 Argonがアプリ・検索・Antigravityで順次提供開始",
+   "summary": "Google DeepMind共同創設者・会長のDemis Hassabis氏は、Gemini 4 Argonがナレッジワークやコーディングに優れると述べ、同氏が依頼して作られた3Dのチェスゲームの例を紹介した。同氏によると、Argonは本日からGoogle UltraおよびProの加入者にGeminiアプリと検索で、Ultra加入者にはAntigravityで提供される。詳細はブログに掲載されているという。",
+   "points": [
+    "提供対象はGoogle UltraとProの加入者で、無料利用者向けの提供は本投稿では触れられていない",
+    "Hassabis氏の投稿ではチェスゲームの例が挙げられており、物理理解や3Dモデリング能力への評価が述べられている",
+    "「ナレッジワーク」「ゲーム制作」など評価は本人の感想に近く、客観的なベンチマーク結果は本投稿からは確認できない"
+   ],
+   "terms": [
+    {
+     "term": "Antigravity",
+     "desc": "Googleが提供するAI支援のソフトウェア開発関連の環境（本投稿では提供対象として言及）"
+    },
+    {
+     "term": "Ultra / Pro",
+     "desc": "Googleの有料AIサブスクリプションの上位・標準プラン"
+    }
+   ],
+   "score": 95,
    "credibility": 88,
-   "heat": 57,
+   "heat": 55,
    "first_seen": "2026-10-12T09:06:26.000Z",
    "latest": "2026-10-14T12:41:35.000Z",
    "authors": [
     "demishassabis",
     "huggingface",
-    "emollick",
-    "itmedia_news",
     "shi3z"
    ],
    "author_labels": [
@@ -51,18 +132,6 @@
      "former": ""
     },
     {
-     "username": "emollick",
-     "label": "Wharton教授",
-     "type": "researcher",
-     "former": ""
-    },
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    },
-    {
      "username": "shi3z",
      "label": "ギリア株式会社ファウンダー・顧問",
      "type": "practitioner",
@@ -71,7 +140,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Google公式ブログ・公式投稿",
+   "evidence_note": "Google公式投稿・公式ブログ案内",
    "links": [
     {
      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
@@ -81,11 +150,6 @@
     {
      "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
      "domain": "youtube.com",
-     "primary": false
-    },
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002265/",
-     "domain": "itmedia.co.jp",
      "primary": false
     }
    ],
@@ -98,14 +162,11 @@
    "post_ids": [
     "2110041008100843835",
     "2110350304613114226",
-    "2110060618258497764",
-    "2110336113705660609",
     "2110052931110318464",
-    "2110052331702124894",
     "2109571381906284639"
    ],
-   "post_count": 7,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "post_count": 4,
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "1f3cb2843c",
@@ -131,9 +192,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 87,
+   "score": 86,
    "credibility": 100,
-   "heat": 47,
+   "heat": 46,
    "first_seen": "2026-10-12T13:11:37.000Z",
    "latest": "2026-10-12T13:11:37.000Z",
    "authors": [
@@ -167,7 +228,7 @@
     "2109633085658808515"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "1dc788cf78",
@@ -239,7 +300,7 @@
     "2109385006603006435"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "6617355ddf",
@@ -263,7 +324,7 @@
    ],
    "score": 55,
    "credibility": 78,
-   "heat": 8,
+   "heat": 7,
    "first_seen": "2026-10-12T00:05:05.000Z",
    "latest": "2026-10-12T00:05:05.000Z",
    "authors": [
@@ -297,7 +358,7 @@
     "2109435150128087331"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "69e3a9d851",
@@ -325,7 +386,7 @@
    ],
    "score": 59,
    "credibility": 75,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-12T03:52:14.000Z",
    "latest": "2026-10-12T03:52:14.000Z",
    "authors": [
@@ -353,7 +414,7 @@
     "2109492310874677489"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "e66fb57c71",
@@ -416,7 +477,7 @@
     "2109556947112652832"
    ],
    "post_count": 4,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "dd3f575fb1",
@@ -472,7 +533,7 @@
     "2109541326458954235"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "06a5ceafa4",
@@ -535,7 +596,7 @@
     "2109425107299131847"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   },
   {
    "id": "6aef08f589",
@@ -591,7 +652,7 @@
     "2109513745907261551"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T13:51:13Z"
+   "archived_at": "2026-10-14T18:04:44Z"
   }
  ]
 }

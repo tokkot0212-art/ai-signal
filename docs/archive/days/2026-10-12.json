@@ -27,7 +27,7 @@
    ],
    "score": 100,
    "credibility": 90,
-   "heat": 80,
+   "heat": 71,
    "first_seen": "2026-10-12T09:06:26.000Z",
    "latest": "2026-10-13T18:41:04.000Z",
    "authors": [
@@ -90,95 +90,15 @@
    },
    "post_ids": [
     "2110039274922131792",
-    "2110078384617464201",
     "2110041008100843835",
+    "2110078384617464201",
     "2110060618258497764",
     "2110052931110318464",
     "2110052331702124894",
     "2109571381906284639"
    ],
    "post_count": 7,
-   "archived_at": "2026-10-13T19:54:17Z"
-  },
-  {
-   "id": "d96371c2f5",
-   "verdict": "confirmed",
-   "title": "Sakana AI、自己改善の新手法「MASS」を発表",
-   "summary": "Sakana AI公式は、「Multi-Agent Self-Supervision（MASS）」という新手法を紹介した。1つの共有モデルが仮想的な専門家チームとして課題を解く仕組みで、チームの集合知から学ぶことで、モデルが自分の死角を強めてしまう問題を避けることを狙うとしている。詳細はブログと論文に掲載されている。",
-   "points": [
-    "人間の専門家が評価しにくい研究課題に対し、AI自身が評価・改善する方向性が示されている",
-    "同じモデル同士のループでは誤りを強化する恐れがあり、それを避けるための工夫が課題とされている",
-    "性能の数値や効果の大きさは投稿からは未確認"
-   ],
-   "terms": [
-    {
-     "term": "再帰的自己改善",
-     "desc": "AIが自分自身の性能を繰り返し高めていく仕組みのこと"
-    },
-    {
-     "term": "自己教師あり学習",
-     "desc": "人手の正解ラベルを使わず、モデル自身が学習の目標を作って学ぶ方法"
-    },
-    {
-     "term": "集合知",
-     "desc": "多くの主体の知恵や判断を組み合わせて得られる知恵のこと"
-    }
-   ],
-   "score": 90,
-   "credibility": 100,
-   "heat": 38,
-   "first_seen": "2026-10-11T20:45:50.000Z",
-   "latest": "2026-10-13T17:18:15.000Z",
-   "authors": [
-    "SakanaAILabs",
-    "_akhaliq"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "_akhaliq",
-     "label": "AI論文紹介アカウント",
-     "type": "commentator",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式ブログ・arXiv論文",
-   "links": [
-    {
-     "url": "https://pub.sakana.ai/mass/",
-     "domain": "pub.sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://arxiv.org/abs/2610.12176",
-     "domain": "arxiv.org",
-     "primary": true
-    },
-    {
-     "url": "https://github.com/SakanaAI/mass",
-     "domain": "github.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2109385006603006435",
-    "username": "SakanaAILabs",
-    "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/LkQe5k7jOW\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The model itself may be the best available optimizer and evaluator. The challenge is obtaining useful self-supervision within that homogeneous loop, where a model risks reinforcing its own blind spots rather than correcting",
-    "text_ja": "Multi-Agent Self-Supervision（MASS）を紹介します：集合知による再帰的な自己改善\n\nブログ: https://t.co/LkQe5k7jOW\n\nAIシステムがますますオープンエンドな研究課題に取り組むようになると、人間の専門家は結果を評価し、次の進歩を導くことが難しくなるかもしれません。モデル自身が利用可能な最良の最適化器であり評価器である可能性もあります。課題は、そのような均質なループの中で有用な自己教師信号を得ることです。モデルは自分の盲点を修正するのではなく、むしろ強化してしまう危険があります。\n\n私たちは、モデルが自分のチームの集合知から学べるかどうかを問いました。\n\nMulti-Agent Self-Supervision（MASS）を紹介します。1つの共有モデルが、仮想的なサブエージェントのチームを通じてタスクを解き、より良いマルチエージェントのワークフローを探索し、そのうえで自身の判断を使って最良のものを選び出します。\n\n最良のチームの実行結果で学習させることで、チームの集合的な経験を共有モデルに蒸留し、自己教師信号を提供します。\n\n27BのオープンウェイトモデルでFor合成的なオープンエンド研究タスクに対して2サイクルを実行しました。2サイクル目の後、出力トークンあたりのスコアは、4つの研究ベンチマーク全体で基礎モデルの1.2〜1.6倍のレベルに達しました。\n\n主な結果は3つです。\n\nまず、MASSは役割の生成を可能にします"
-   },
-   "post_ids": [
-    "2109385006603006435",
-    "2110057543305396244"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "archived_at": "2026-10-14T01:17:53Z"
   },
   {
    "id": "1f3cb2843c",
@@ -204,9 +124,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 89,
+   "score": 88,
    "credibility": 100,
-   "heat": 52,
+   "heat": 50,
    "first_seen": "2026-10-12T13:11:37.000Z",
    "latest": "2026-10-12T13:11:37.000Z",
    "authors": [
@@ -240,7 +160,79 @@
     "2109633085658808515"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "archived_at": "2026-10-14T01:17:53Z"
+  },
+  {
+   "id": "1dc788cf78",
+   "verdict": "confirmed",
+   "title": "Sakana AIが自己改善型AI手法「MASS」を発表",
+   "summary": "Sakana AIの公式アカウントが、「Multi-Agent Self-Supervision（MASS）」という手法を発表し、公式ブログを案内した。1つの共有モデルが仮想の専門家チームとして課題を解く仕組みで、モデル自身が自分の見落としを補正することを目指すとしている。",
+   "points": [
+    "人間の専門家が結果を評価しにくい、より自由度の高い研究課題に対応する狙いがあるとされる",
+    "同じモデル同士のループでは自分の盲点を強化してしまう恐れがあり、それを複数の“チーム”の知見で補う点が新しいとされる",
+    "投稿に示された範囲では性能の数値や検証結果は不明。詳細は公式ブログや論文で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "再帰的自己改善",
+     "desc": "AIが自分自身の性能や仕組みを繰り返し改良していく考え方。"
+    },
+    {
+     "term": "マルチエージェント",
+     "desc": "複数のAIが役割を分担して協力し、一つの課題に取り組む仕組みのこと。"
+    },
+    {
+     "term": "自己教師あり学習",
+     "desc": "正解データを人が用意せず、AI自身が出力を検査・改善して学ぶ方法。"
+    }
+   ],
+   "score": 85,
+   "credibility": 100,
+   "heat": 37,
+   "first_seen": "2026-10-11T20:45:50.000Z",
+   "latest": "2026-10-11T20:45:50.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式ブログ",
+   "links": [
+    {
+     "url": "https://pub.sakana.ai/mass/",
+     "domain": "pub.sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.12176",
+     "domain": "arxiv.org",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/SakanaAI/mass",
+     "domain": "github.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2109385006603006435",
+    "username": "SakanaAILabs",
+    "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/LkQe5k7jOW\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The model itself may be the best available optimizer and evaluator. The challenge is obtaining useful self-supervision within that homogeneous loop, where a model risks reinforcing its own blind spots rather than correcting",
+    "text_ja": "Multi-Agent Self-Supervision（MASS）を紹介します：集合知による再帰的自己改善\n\nブログ: https://t.co/LkQe5k7jOW\n\nAIシステムがますます自由度の高い研究課題に取り組むにつれ、人間の専門家は結果の評価や次の進め方の指示に苦労するかもしれません。モデル自身が利用可能な最良の最適化・評価手段になりうるのです。課題は、均質なループの中で有用な自己教師あり学習を得ることです。モデルは自分の盲点を修正するのではなく、強化してしまうおそれがあります。\n\n私たちは、モデルが自分のチームの集合知から学べるかを問いました。\n\nMulti-Agent Self-Supervision（MASS）を紹介します。1つの共有モデルが、仮想の専門家チームを通じて課題を解きます。"
+   },
+   "post_ids": [
+    "2109385006603006435"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-14T01:17:53Z"
   },
   {
    "id": "6617355ddf",
@@ -262,9 +254,9 @@
      "desc": "問題がある状態を正し、改めることを指す。"
     }
    ],
-   "score": 56,
+   "score": 55,
    "credibility": 78,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-10-12T00:05:05.000Z",
    "latest": "2026-10-12T00:05:05.000Z",
    "authors": [
@@ -298,7 +290,7 @@
     "2109435150128087331"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "archived_at": "2026-10-14T01:17:53Z"
   },
   {
    "id": "69e3a9d851",
@@ -326,7 +318,7 @@
    ],
    "score": 60,
    "credibility": 75,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-10-12T03:52:14.000Z",
    "latest": "2026-10-12T03:52:14.000Z",
    "authors": [
@@ -354,7 +346,7 @@
     "2109492310874677489"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "archived_at": "2026-10-14T01:17:53Z"
   },
   {
    "id": "dd3f575fb1",
@@ -382,7 +374,7 @@
    ],
    "score": 56,
    "credibility": 70,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-12T07:07:00.000Z",
    "latest": "2026-10-12T07:07:00.000Z",
    "authors": [
@@ -410,35 +402,35 @@
     "2109541326458954235"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "archived_at": "2026-10-14T01:17:53Z"
   },
   {
-   "id": "d086287790",
+   "id": "e66fb57c71",
    "verdict": "promising",
-   "title": "Google ColabでQwen3.8系などのモデルを動かす手順を紹介",
-   "summary": "プログラマーのnpaka氏は、Google Colab上でQwen3.8-27BやMiniMax H3などのモデルを用意し、ローカルのPiやCodexから利用する手順をnote記事で紹介した。投稿では、Qwen3.8-27Bのセットアップに10分、ブロック崩しゲームの作成に22.6秒かかったという結果も書かれている。",
+   "title": "Google ColabでMiniMax H3を使いCodexから動画生成",
+   "summary": "プログラマーのnpaka氏が、Google ColabのMiniMax H3をCodexから利用する方法を記事で紹介した。投稿によると、セットアップは約14分で完了し、960×544・10秒の動画生成に約6分32秒かかったという。",
    "points": [
-    "Colabなどのクラウド環境のGPUを使い、手元のツールからモデルを呼び出す使い方の一例。",
-    "個人開発者にとっては、高性能モデルを試す敷居が下がる可能性がある。",
-    "投稿の時間はnpaka氏の環境での結果で、他の環境で再現するかは未確認。"
+    "Codexから動画生成を呼び出せることを本人が確認したと報告されている",
+    "動画生成に数分かかるという実測値があり、実用時の速度感の目安になる",
+    "測定は1回の試行とみられ、画質や生成内容の品質は投稿からは判断できない"
    ],
    "terms": [
     {
+     "term": "Codex",
+     "desc": "プログラミングを支援するAIサービス・ツールの名称（ここではコードを書くAIの呼び出し元）。"
+    },
+    {
+     "term": "MiniMax",
+     "desc": "中国のAI企業MiniMaxが開発している大規模AIモデルのシリーズ名。"
+    },
+    {
      "term": "Google Colab",
-     "desc": "Googleが提供するブラウザ上で使えるプログラム実行環境。無料でGPUも使える場合がある。"
-    },
-    {
-     "term": "Qwen3.8-27B",
-     "desc": "中国Alibaba系の大規模言語モデルの一つとみられるが、投稿からは詳細未確認。"
-    },
-    {
-     "term": "ローカル",
-     "desc": "クラウドではなく、自分の手元のパソコンや機器で動かすこと。"
+     "desc": "Googleが提供する、ブラウザ上で動かせるクラウド型のプログラム実行環境。"
     }
    ],
-   "score": 56,
+   "score": 55,
    "credibility": 73,
-   "heat": 16,
+   "heat": 14,
    "first_seen": "2026-10-11T23:25:11.000Z",
    "latest": "2026-10-12T08:34:18.000Z",
    "authors": [
@@ -454,94 +446,26 @@
    ],
    "evidence": "hands_on_test",
    "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人のセットアップ検証記事",
+   "evidence_note": "本人が動かした計測記録",
    "links": [
-    {
-     "url": "https://note.com/npaka/n/n7e46a3c2752d?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    },
     {
      "url": "https://note.com/npaka/n/n9b3870211b8d?sub_rt=share_pw",
      "domain": "note.com",
      "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/npaka123/status/2109484959610331259",
+    "url": "https://x.com/npaka123/status/2109563295627940349",
     "username": "npaka123",
-    "text": "Google Colab の Strata+Qwen3.8-Flash-Next をローカルのPiで利用する方法｜npaka @npaka123 https://t.co/3YhiDlJgeJ",
+    "text": "Google Colabの MiniMax H3 をCodexから利用する方法｜npaka @npaka123 https://t.co/p8OKucXNPy",
     "text_ja": null
    },
    "post_ids": [
-    "2109484959610331259",
     "2109563295627940349",
-    "2109438820295016581",
-    "2109425107299131847"
-   ],
-   "post_count": 4,
-   "archived_at": "2026-10-13T19:54:17Z"
-  },
-  {
-   "id": "a30188a219",
-   "verdict": "promising",
-   "title": "Google ColabでMiniMax H3を動かし動画生成を確認",
-   "summary": "プログラマーのnpaka氏は、Google Colab上でのMiniMax H3のセットアップが約14分で完了し、Codexから動画を生成できたと投稿した。投稿によると、960×544・10秒の動画生成に約6分32秒かかったという。",
-   "points": [
-    "テキストだけでなく動画生成モデルも、個人がクラウド環境から呼び出せる例として注目される。",
-    "生成時間の数値は投稿者の環境での一回の結果で、品質や再現性は書かれていない。",
-    "投稿には「約14秒」と「約14分」の表記が混在しており、セットアップ時間は文脈から見て約14分とみられる（未確認）。"
-   ],
-   "terms": [
-    {
-     "term": "MiniMax H3",
-     "desc": "中国MiniMax社などが開発したとされるAIモデル。投稿では動画生成に使われた。詳細は未確認。"
-    },
-    {
-     "term": "Codex",
-     "desc": "AIがプログラムの作成や修正を支援するツール。投稿ではモデルの呼び出し元として使われた。"
-    },
-    {
-     "term": "セットアップ",
-     "desc": "ソフトウェアやモデルを使える状態にするための初期設定や導入作業のこと。"
-    }
-   ],
-   "score": 54,
-   "credibility": 70,
-   "heat": 16,
-   "first_seen": "2026-10-12T08:09:04.000Z",
-   "latest": "2026-10-12T08:09:04.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の動作検証投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/npaka123/status/2109556947112652832",
-    "username": "npaka123",
-    "text": "Google Colabでの MiniMax H3のセットアップが約14分で完了\nCodex から動画生成できることを確認\n\n・セットアップ : 約14秒\n・動画生成 (960 × 544 10秒) : 約6分32秒 https://t.co/whWgIQkbM6",
-    "text_ja": null
-   },
-   "post_ids": [
     "2109556947112652832"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "post_count": 4,
+   "archived_at": "2026-10-14T01:17:53Z"
   },
   {
    "id": "6aef08f589",
@@ -597,7 +521,7 @@
     "2109513745907261551"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-13T19:54:17Z"
+   "archived_at": "2026-10-14T01:17:53Z"
   }
  ]
 }

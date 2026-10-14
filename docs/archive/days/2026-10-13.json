@@ -2,32 +2,33 @@
  "date": "2026-10-13",
  "items": [
   {
-   "id": "81d5948fed",
+   "id": "cd9605bfd8",
    "verdict": "confirmed",
-   "title": "Anthropic、Claudeへの蒸留攻撃の対策が進展したと発表",
-   "summary": "Anthropicは公式アカウントで、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）を抑える取り組みが進んだと投稿した。詳しい方法は同社の投稿ページで説明されている。研究者のNathan Lambert氏は、同社が規制当局への支援を求めて大きく発信していたことに触れつつ、APIの安全性に関する同社の主張と矛盾するとの見方を示した。",
+   "title": "Anthropic、Claudeへの蒸留攻撃の対策進展を発表",
+   "summary": "Anthropic公式アカウントは、ここ数か月でClaudeに対する蒸留攻撃（distillation attacks）の効果を下げる取り組みが進んだと投稿した。詳細は同社の投稿記事で説明されるとしている。Wharton教授のEthan Mollick氏は、2段階認証の設定やAIによる詐欺の低コスト化に触れる投稿をした。Trillium Labsの創設者Nathan Lambert氏は、同社が規制面での支援を求めていたことに触れ、会話の仕切り直しになることを期待すると述べた。",
    "points": [
-    "蒸留攻撃とは、他社のAIの出力を大量に集めて自社モデルに真似させる手法で、無断利用の懸念がある。",
-    "Lambert氏の批判は個人の見解で、同社の対策内容の詳細は公式投稿のリンク先で確認する必要がある。",
-    "API経由で有害な振る舞いが学習されるリスクが議論の焦点で、AI提供事業者の防御策に関心がある人に影響しうる。"
+    "蒸留攻撃は、他社モデルの出力を大量に集めて別のモデルを学習させる手法とみられ、対策の詳細は公式記事で確認する必要がある",
+    "Lambert氏はAPIの安全性にも言及しており、提供側の防御策をめぐる議論の一つとみられる",
+    "各社の安全対策や規制議論に関わる話題で、利用者にとっては直接の変更点は投稿からは読み取れない"
    ],
    "terms": [
     {
      "term": "蒸留（distillation）",
-     "desc": "大きなAIの出力を集めて、小さなAIに性能を真似させる技術。無断利用に使われることもある。"
+     "desc": "大きなAIモデルの出力を使って、小さなモデルなどを学習させる手法。"
     },
     {
-     "term": "APIの安全性",
-     "desc": "外部から呼び出せる窓口を通じて、悪用や情報漏えいが起きないようにすること。"
+     "term": "蒸留攻撃",
+     "desc": "他社AIの出力を大量に取得し、性能や振る舞いを不正にコピーしようとする行為とみられる。"
     }
    ],
-   "score": 97,
+   "score": 100,
    "credibility": 100,
-   "heat": 55,
-   "first_seen": "2026-10-12T23:58:35.000Z",
+   "heat": 52,
+   "first_seen": "2026-10-12T16:31:24.000Z",
    "latest": "2026-10-13T13:38:14.000Z",
    "authors": [
     "AnthropicAI",
+    "emollick",
     "natolambert"
    ],
    "author_labels": [
@@ -35,6 +36,12 @@
      "username": "AnthropicAI",
      "label": "Anthropic公式",
      "type": "official",
+     "former": ""
+    },
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
      "former": ""
     },
     {
@@ -46,7 +53,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式投稿",
+   "evidence_note": "Anthropic公式投稿・詳細記事リンク",
    "links": [
     {
      "url": "https://www.anthropic.com/research/distillation-defenses",
@@ -62,10 +69,11 @@
    },
    "post_ids": [
     "2109795898909950247",
+    "2109683365045739888",
     "2110002173732077632"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "post_count": 3,
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "187fdec08a",
@@ -93,7 +101,7 @@
    ],
    "score": 95,
    "credibility": 90,
-   "heat": 41,
+   "heat": 39,
    "first_seen": "2026-10-12T17:02:20.000Z",
    "latest": "2026-10-12T23:24:10.000Z",
    "authors": [
@@ -156,59 +164,7 @@
     "2109787238481678447"
    ],
    "post_count": 4,
-   "archived_at": "2026-10-14T01:17:53Z"
-  },
-  {
-   "id": "7b9c544275",
-   "verdict": "confirmed",
-   "title": "Mistral、AI衛星コンステレーションへの参加を発表",
-   "summary": "Mistral AIは公式アカウントで、OrbitWorks・LoftOrbitalとNVIDIAが進める「AI衛星コンステレーション（多数の衛星による網）」に参加すると発表した。投稿には「Mistralのモデルが軌道上に上がる」という趣旨が書かれている。投稿からは打ち上げ時期や具体的な機能は読み取れない。",
-   "points": [
-    "AIモデルを宇宙空間で動かす構想の一つで、地上以外でのAI利用の広がりを示す話題とみられる。",
-    "具体的な衛星数・打ち上げ時期・提供サービスは投稿からは未確認。",
-    "企業の参加表明の段階とみられ、実際の運用開始までは今後の情報を待つ必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "コンステレーション",
-     "desc": "多数の人工衛星が連携して一つの網のように動く仕組みのこと。"
-    },
-    {
-     "term": "軌道上",
-     "desc": "地球の周りを回る衛星などが存在する宇宙空間のこと。"
-    }
-   ],
-   "score": 79,
-   "credibility": 85,
-   "heat": 45,
-   "first_seen": "2026-10-13T13:25:20.000Z",
-   "latest": "2026-10-13T13:25:20.000Z",
-   "authors": [
-    "MistralAI"
-   ],
-   "author_labels": [
-    {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Mistral公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/MistralAI/status/2109998925037859091",
-    "username": "MistralAI",
-    "text": "Look up! Mistral models are in orbit 🌍. \n\nProud to join @orbitworksspace and @LoftOrbital's first-of-its-kind AI satellite constellation with @NVIDIAAIInfra.",
-    "text_ja": "見上げてください。Mistralのモデルが軌道上に！🌍\n\n@orbitworksspace と @LoftOrbital による、画期的なAI衛星コンステレーションに @NVIDIAAIInfra と共に参加できることを誇りに思います。"
-   },
-   "post_ids": [
-    "2109998925037859091"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "1bb11fd6fc",
@@ -236,7 +192,7 @@
    ],
    "score": 78,
    "credibility": 90,
-   "heat": 36,
+   "heat": 34,
    "first_seen": "2026-10-12T18:42:27.000Z",
    "latest": "2026-10-12T18:42:27.000Z",
    "authors": [
@@ -264,55 +220,59 @@
     "2109716341490106869"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
-   "id": "0b4f8b090e",
+   "id": "7b9c544275",
    "verdict": "confirmed",
-   "title": "NVIDIA、GTC Berlinに向けた取り組みを告知",
-   "summary": "NVIDIA公式AIアカウントが、バルセロナでの様子を示す画像付きで、「NVIDIA GTC Berlin」に向けた取り組みが始まったと投稿した。投稿には開催日や内容の詳細は含まれていない。",
+   "title": "Mistral、AI衛星コンステレーションへの参加を発表",
+   "summary": "Mistral AIは公式アカウントで、OrbitWorks・LoftOrbitalとNVIDIAが進める「AI衛星コンステレーション（多数の衛星による網）」に参加すると発表した。投稿には「Mistralのモデルが軌道上に上がる」という趣旨が書かれている。投稿からは打ち上げ時期や具体的な機能は読み取れない。",
    "points": [
-    "GTCはNVIDIAの主要な技術イベントで、ベルリン開催は今後の発表の場になるとみられる。",
-    "投稿は告知の段階で、具体的な発表内容や日程は未確認。",
-    "イベントの詳細は公式サイトなどで確認が必要。"
+    "AIモデルを宇宙空間で動かす構想の一つで、地上以外でのAI利用の広がりを示す話題とみられる。",
+    "具体的な衛星数・打ち上げ時期・提供サービスは投稿からは未確認。",
+    "企業の参加表明の段階とみられ、実際の運用開始までは今後の情報を待つ必要がある。"
    ],
    "terms": [
     {
-     "term": "GTC",
-     "desc": "NVIDIAが毎年開く技術会議（GPU Technology Conference）のこと。"
+     "term": "コンステレーション",
+     "desc": "多数の人工衛星が連携して一つの網のように動く仕組みのこと。"
+    },
+    {
+     "term": "軌道上",
+     "desc": "地球の周りを回る衛星などが存在する宇宙空間のこと。"
     }
    ],
-   "score": 76,
-   "credibility": 90,
-   "heat": 29,
-   "first_seen": "2026-10-13T13:41:33.000Z",
-   "latest": "2026-10-13T13:41:33.000Z",
+   "score": 77,
+   "credibility": 85,
+   "heat": 40,
+   "first_seen": "2026-10-13T13:25:20.000Z",
+   "latest": "2026-10-13T13:25:20.000Z",
    "authors": [
-    "NVIDIAAI"
+    "MistralAI"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
+   "evidence_note": "Mistral公式アカウントの投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110003005911101714",
-    "username": "NVIDIAAI",
-    "text": "Barcelona showed up ready to build 🦞.\n\nThe road to #NVIDIAGTC Berlin is officially underway. https://t.co/SumnDGk4WE",
-    "text_ja": "バルセロナは、やる気満々で🦞を作り上げる準備ができていました。\n\n#NVIDIAGTC ベルリンへの道のりがいよいよ始まりました。 https://t.co/SumnDGk4WE"
+    "url": "https://x.com/MistralAI/status/2109998925037859091",
+    "username": "MistralAI",
+    "text": "Look up! Mistral models are in orbit 🌍. \n\nProud to join @orbitworksspace and @LoftOrbital's first-of-its-kind AI satellite constellation with @NVIDIAAIInfra.",
+    "text_ja": "見上げてください。Mistralのモデルが軌道上に！🌍\n\n@orbitworksspace と @LoftOrbital による、画期的なAI衛星コンステレーションに @NVIDIAAIInfra と共に参加できることを誇りに思います。"
    },
    "post_ids": [
-    "2110003005911101714"
+    "2109998925037859091"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "64eaacf6a8",
@@ -334,9 +294,9 @@
      "desc": "同じ関心を持つ人が集まって交流する勉強会や集まり"
     }
    ],
-   "score": 75,
+   "score": 74,
    "credibility": 100,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-12T17:57:59.000Z",
    "latest": "2026-10-12T17:57:59.000Z",
    "authors": [
@@ -370,7 +330,55 @@
     "2109705153591029854"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "0b4f8b090e",
+   "verdict": "confirmed",
+   "title": "NVIDIA、GTC Berlinに向けた取り組みを告知",
+   "summary": "NVIDIA公式AIアカウントが、バルセロナでの様子を示す画像付きで、「NVIDIA GTC Berlin」に向けた取り組みが始まったと投稿した。投稿には開催日や内容の詳細は含まれていない。",
+   "points": [
+    "GTCはNVIDIAの主要な技術イベントで、ベルリン開催は今後の発表の場になるとみられる。",
+    "投稿は告知の段階で、具体的な発表内容や日程は未確認。",
+    "イベントの詳細は公式サイトなどで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "GTC",
+     "desc": "NVIDIAが毎年開く技術会議（GPU Technology Conference）のこと。"
+    }
+   ],
+   "score": 74,
+   "credibility": 90,
+   "heat": 24,
+   "first_seen": "2026-10-13T13:41:33.000Z",
+   "latest": "2026-10-13T13:41:33.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110003005911101714",
+    "username": "NVIDIAAI",
+    "text": "Barcelona showed up ready to build 🦞.\n\nThe road to #NVIDIAGTC Berlin is officially underway. https://t.co/SumnDGk4WE",
+    "text_ja": "バルセロナは、やる気満々で🦞を作り上げる準備ができていました。\n\n#NVIDIAGTC ベルリンへの道のりがいよいよ始まりました。 https://t.co/SumnDGk4WE"
+   },
+   "post_ids": [
+    "2110003005911101714"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "be3bb5556c",
@@ -398,7 +406,7 @@
    ],
    "score": 70,
    "credibility": 90,
-   "heat": 16,
+   "heat": 14,
    "first_seen": "2026-10-12T18:27:04.000Z",
    "latest": "2026-10-12T18:27:04.000Z",
    "authors": [
@@ -426,7 +434,7 @@
     "2109712471254761741"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "6a1c4644e6",
@@ -450,7 +458,7 @@
    ],
    "score": 65,
    "credibility": 90,
-   "heat": 3,
+   "heat": 2,
    "first_seen": "2026-10-12T17:50:42.000Z",
    "latest": "2026-10-12T17:50:42.000Z",
    "authors": [
@@ -478,7 +486,7 @@
     "2109703320965448120"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "7a664a4bae",
@@ -504,9 +512,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 85,
-   "heat": 39,
+   "heat": 37,
    "first_seen": "2026-10-12T16:49:27.000Z",
    "latest": "2026-10-12T16:49:27.000Z",
    "authors": [
@@ -534,7 +542,7 @@
     "2109687906751086628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "bdf4b76ccc",
@@ -556,9 +564,9 @@
      "desc": "ニュースの現場で撮影された写真のこと。"
     }
    ],
-   "score": 74,
+   "score": 71,
    "credibility": 78,
-   "heat": 55,
+   "heat": 49,
    "first_seen": "2026-10-13T13:50:09.000Z",
    "latest": "2026-10-13T13:50:09.000Z",
    "authors": [
@@ -592,7 +600,7 @@
     "2110005170826629187"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "33dfa97f70",
@@ -614,9 +622,9 @@
      "desc": "大量の文章で学習し、文章の生成や要約などを行うAIの基盤モデル。"
     }
    ],
-   "score": 62,
+   "score": 60,
    "credibility": 78,
-   "heat": 25,
+   "heat": 21,
    "first_seen": "2026-10-13T09:25:09.000Z",
    "latest": "2026-10-13T09:25:09.000Z",
    "authors": [
@@ -650,7 +658,7 @@
     "2109938481384604128"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "21a548a5f6",
@@ -672,9 +680,9 @@
      "desc": "出版社が書籍の販売や増刷を止めること。"
     }
    ],
-   "score": 61,
+   "score": 60,
    "credibility": 78,
-   "heat": 24,
+   "heat": 20,
    "first_seen": "2026-10-13T07:40:08.000Z",
    "latest": "2026-10-13T07:40:08.000Z",
    "authors": [
@@ -708,7 +716,7 @@
     "2109912052215304580"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "44d0ca5907",
@@ -725,9 +733,9 @@
      "desc": "SNSでアカウントを識別するための表示名・ID。"
     }
    ],
-   "score": 58,
+   "score": 57,
    "credibility": 78,
-   "heat": 15,
+   "heat": 13,
    "first_seen": "2026-10-13T04:20:07.000Z",
    "latest": "2026-10-13T04:20:07.000Z",
    "authors": [
@@ -761,7 +769,7 @@
     "2109861717916479826"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "9c570fa7be",
@@ -787,9 +795,9 @@
      "desc": "画像処理などで使われる並列計算向けの半導体で、AIの計算にも広く使われる。"
     }
    ],
-   "score": 56,
+   "score": 55,
    "credibility": 78,
-   "heat": 11,
+   "heat": 9,
    "first_seen": "2026-10-13T00:30:09.000Z",
    "latest": "2026-10-13T00:30:09.000Z",
    "authors": [
@@ -823,7 +831,7 @@
     "2109803845887111576"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   }
  ]
 }

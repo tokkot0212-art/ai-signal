@@ -27,7 +27,7 @@
    ],
    "score": 100,
    "credibility": 100,
-   "heat": 84,
+   "heat": 77,
    "first_seen": "2026-10-13T16:36:41.000Z",
    "latest": "2026-10-13T16:36:41.000Z",
    "authors": [
@@ -61,7 +61,187 @@
     "2110047081414987957"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "b8260d51a9",
+   "verdict": "confirmed",
+   "title": "AnthropicがシンガポールにオフィスとAI安全などでMOUを締結",
+   "summary": "Anthropic公式アカウントは、シンガポールに新しいオフィスを開設したと発表した。同社によると、アジア太平洋地域では5拠点目となる。あわせてシンガポール政府とAIの安全性と責任ある活用に関するMOU（覚書）を締結したとしている。",
+   "points": [
+    "アジア太平洋地域での拠点拡大を示す動きで、現地企業や政府との連携が進む可能性がある",
+    "MOUは覚書であり、具体的な内容や拘束力は投稿からは分からない",
+    "開設時期や体制などの詳細は、投稿に含まれるリンク先で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "MOU（覚書）",
+     "desc": "正式な契約の前段階で、協力の方向性を示す文書。法的拘束力は内容によって異なる。"
+    }
+   ],
+   "score": 96,
+   "credibility": 100,
+   "heat": 64,
+   "first_seen": "2026-10-14T08:40:45.000Z",
+   "latest": "2026-10-14T08:40:45.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式投稿",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/singapore-office-opening",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110289695888511368",
+    "username": "AnthropicAI",
+    "text": "We’ve opened an office in Singapore—our fifth in the Asia-Pacific region. We’ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
+    "text_ja": "シンガポールにオフィスを開設しました。アジア太平洋地域では5拠点目になります。また、AIの安全性と責任ある活用に関して、シンガポール政府との間で覚書（MOU）を締結しました。\n\n新しいオフィスの詳細はこちら: https://t.co/125mBgHLkM"
+   },
+   "post_ids": [
+    "2110289695888511368"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "53b8b9c75f",
+   "verdict": "confirmed",
+   "title": "Qwen3.8-Flash-NextがNvidia GPUで高速推論の結果",
+   "summary": "Alibaba公式のQwenアカウントは、推論の高速化に取り組むlightseekorg（TokenSpeed）の結果を祝福し、Qwen3.8-Flash-NextがNvidia GPUで1ユーザーあたり685出力トークン/秒に達したと投稿した。別の投稿では、ギリア株式会社ファウンダーの shi3z 氏が、古いA6000マシンでQwen3.8-Flash-Next（IQ3_S）を試し、108トークン/秒、32Kトークンのprefillが2768トークン/秒だったと報告した。",
+   "points": [
+    "685トークン/秒は公式側が示した数値で、測定条件（モデル設定・バッチなど）は投稿からは分からない",
+    "shi3z氏の数値は個人環境での結果で、量子化版（IQ3_S）を使った測定である点に注意が必要",
+    "トークン/秒は応答の速さの目安だが、品質や実運用での体感とは別の指標"
+   ],
+   "terms": [
+    {
+     "term": "トークン/秒",
+     "desc": "AIがテキストを生成する速さを示す単位。大きいほど速い。"
+    },
+    {
+     "term": "prefill",
+     "desc": "入力文を読み込んで処理する段階。長い入力ほど時間がかかる。"
+    },
+    {
+     "term": "量子化（IQ3_S）",
+     "desc": "モデルの数値精度を下げて、少ないメモリで動くようにする技術。"
+    }
+   ],
+   "score": 86,
+   "credibility": 90,
+   "heat": 52,
+   "first_seen": "2026-10-14T03:43:40.000Z",
+   "latest": "2026-10-14T07:28:00.000Z",
+   "authors": [
+    "Alibaba_Qwen",
+    "shi3z"
+   ],
+   "author_labels": [
+    {
+     "username": "Alibaba_Qwen",
+     "label": "Qwen（Alibaba）公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "shi3z",
+     "label": "ギリア株式会社ファウンダー・顧問",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "shi3z氏の実機テスト結果",
+   "links": [],
+   "post": {
+    "url": "https://x.com/Alibaba_Qwen/status/2110214931559899630",
+    "username": "Alibaba_Qwen",
+    "text": "Congrats to @lightseekorg on the impressive TokenSpeed results! 🚀 Great to see Qwen3.8-Flash-Next reaching 685 output tokens/s per user on Nvida GPUs. Excited to see the community unlock more of Qwen’s inference potential! https://t.co/yudaS4VgBW",
+    "text_ja": "@lightseekorg の TokenSpeed の素晴らしい結果、おめでとうございます！🚀 Nvida GPU上で Qwen3.8-Flash-Next がユーザーあたり 685 output tokens/s に到達しているのは素晴らしいですね。コミュニティによって Qwen の推論性能がさらに引き出されていくのが楽しみです！ https://t.co/yudaS4VgBW"
+   },
+   "post_ids": [
+    "2110214931559899630",
+    "2110271388246565186"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "1dbb3aadf3",
+   "verdict": "confirmed",
+   "title": "Google DeepMindとGovTechがシンガポールの詐欺検知でGemma活用",
+   "summary": "Google DeepMind公式アカウントは、シンガポールでは報告された犯罪の半数以上で高度なソーシャルエンジニアリングが使われていると述べた。そのうえで、シンガポール政府のGovTechと共同で、オープンモデルGemmaを使った端末内（on-device）の詐欺検知を構築していると発表した。現地の詐欺手口で微調整することで、個人情報を守りながらリアルタイムで脅威を識別するとしている。",
+   "points": [
+    "端末内で処理する方式のため、個人データを外部に送らずに検知できる点が特徴とされる",
+    "「半数以上」の統計の出典は投稿からは確認できない",
+    "実際の精度や提供時期は投稿からは不明で、今後の公表を待つ必要がある"
+   ],
+   "terms": [
+    {
+     "term": "ソーシャルエンジニアリング",
+     "desc": "人の心理や信頼につけこんで、パスワードや金銭をだまし取る手口。"
+    },
+    {
+     "term": "Gemma",
+     "desc": "Googleが公開しているオープンなAIモデル。誰でも利用・改変できる。"
+    },
+    {
+     "term": "オンデバイス（on-device）",
+     "desc": "クラウドではなく、スマホやPCなどの手元の機器上でAIを動かす方式。"
+    }
+   ],
+   "score": 85,
+   "credibility": 93,
+   "heat": 48,
+   "first_seen": "2026-10-14T02:05:00.000Z",
+   "latest": "2026-10-14T02:05:00.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式投稿",
+   "links": [
+    {
+     "url": "https://goo.gle/4ygVkJa",
+     "domain": "goo.gle",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2110190101707858039",
+    "username": "GoogleDeepMind",
+    "text": "Over half of reported crimes in Singapore use sophisticated social engineering.\n\nWith @GovTechSG, we’re building on-device fraud detection using our open model Gemma.\n\nBy fine-tuning it on local scam tactics, it identifies threats in real time without compromising personal privacy → https://t.co/VdCio2nrHC",
+    "text_ja": "シンガポールで報告される犯罪の半数以上が、巧妙なソーシャルエンジニアリングを用いたものです。\n\n@GovTechSG と協力し、当社のオープンモデル Gemma を活用したオンデバイスの詐欺検知システムを開発しています。\n\n現地の詐欺手口でファインチューニングすることで、個人のプライバシーを損なうことなく、リアルタイムで脅威を識別します → https://t.co/VdCio2nrHC"
+   },
+   "post_ids": [
+    "2110190101707858039"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "f945ab27d9",
@@ -83,9 +263,9 @@
      "desc": "現時点で最も高性能とされる最先端のAIモデルのこと"
     }
    ],
-   "score": 87,
+   "score": 84,
    "credibility": 90,
-   "heat": 57,
+   "heat": 51,
    "first_seen": "2026-10-13T16:07:59.000Z",
    "latest": "2026-10-13T16:07:59.000Z",
    "authors": [
@@ -113,7 +293,55 @@
     "2110039860077527293"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "48b23121d1",
+   "verdict": "confirmed",
+   "title": "NVIDIA、欧州の都市でAIエージェントを運用事例として紹介",
+   "summary": "NVIDIA公式AIアカウントは、欧州の都市がAIエージェントを使い、公共建物のエネルギー利用や保守管理、都市サービスの改善に取り組んでいると紹介した。具体的な都市名や導入規模は投稿文には書かれておらず、リンク先で確認する形になっている。",
+   "points": [
+    "AIエージェントは、人に代わって複数の作業を自律的に進めるAIの仕組みを指す",
+    "公共分野での活用例で、導入効果の数値は投稿からは確認できない",
+    "NVIDIAの製品を用いた事例かどうかは、リンク先の記事で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "目的に向けて、判断やツール操作を自律的に行うAIのこと。"
+    }
+   ],
+   "score": 78,
+   "credibility": 90,
+   "heat": 35,
+   "first_seen": "2026-10-14T06:25:56.000Z",
+   "latest": "2026-10-14T06:25:56.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110255766762569810",
+    "username": "NVIDIAAI",
+    "text": "European cities are using AI agents to support everyday operations, from managing energy use and maintenance in public buildings to improving services across the city. https://t.co/OWLlwYhBEE",
+    "text_ja": "ヨーロッパの都市では、公共施設のエネルギー使用や保守管理から都市サービスの向上まで、日常の業務を支えるためにAIエージェントの活用が進んでいます。 https://t.co/OWLlwYhBEE"
+   },
+   "post_ids": [
+    "2110255766762569810"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "0812258b57",
@@ -139,9 +367,9 @@
      "desc": "ロボットが試行や映像などから動作を覚えていく技術"
     }
    ],
-   "score": 80,
+   "score": 77,
    "credibility": 90,
-   "heat": 40,
+   "heat": 32,
    "first_seen": "2026-10-13T19:03:06.000Z",
    "latest": "2026-10-13T19:03:06.000Z",
    "authors": [
@@ -169,7 +397,7 @@
     "2110083927620591769"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "4c72489d2f",
@@ -195,9 +423,9 @@
      "desc": "音声で人と会話し、質問への回答や作業をこなすAIのこと。"
     }
    ],
-   "score": 75,
+   "score": 73,
    "credibility": 90,
-   "heat": 28,
+   "heat": 22,
    "first_seen": "2026-10-13T17:00:15.000Z",
    "latest": "2026-10-13T17:00:15.000Z",
    "authors": [
@@ -225,7 +453,121 @@
     "2110053012903518630"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "c90df8df0a",
+   "verdict": "promising",
+   "title": "AIにゲームを自律的に改善させる際はテスト用スクリプトが有効とする解説",
+   "summary": "AI論文紹介メディア「AIDB」が、AIで作ったゲームをAIにテストプレイさせて改善する方法を紹介した。画面を見せて一手ずつ考えさせるより、プレイ用スクリプトを書かせて何十回も実行させる方が有効な場合が多いとしている。記事では、人間が遊べる水準まで仕上げるフレームワーク全体を整理するという。",
+   "points": [
+    "ゲームの時間は思考中も進むため、一手ずつ考えさせる方式は不利になりやすいという実務上の工夫",
+    "AIに自作ゲームを試させる自動テストは、開発の手間を減らす可能性がある",
+    "「有効な場合が多い」の根拠となる検証データは投稿では示されておらず、記事本文の確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "スクリプト",
+     "desc": "決まった手順を自動で実行するためのプログラムのこと。"
+    },
+    {
+     "term": "フレームワーク",
+     "desc": "開発を効率よく進めるための枠組みや仕組みの集まり。"
+    }
+   ],
+   "score": 70,
+   "credibility": 78,
+   "heat": 43,
+   "first_seen": "2026-10-14T03:11:16.000Z",
+   "latest": "2026-10-14T03:11:16.000Z",
+   "authors": [
+    "ai_database"
+   ],
+   "author_labels": [
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の制作・検証の報告",
+   "links": [
+    {
+     "url": "https://ai-data-base.com/archives/133560",
+     "domain": "ai-data-base.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/ai_database/status/2110206778470514845",
+    "username": "ai_database",
+    "text": "AIで作ったゲームをAIにテストプレイさせて自律的にゲームを改善させていきたい時、AIには「プレイ用のスクリプト」を書かせて、それで何十回もプレイさせるのが有効な場合が多いようです。\n（画面を見せて一手ずつ考えさせると、考えている間にゲームの時間が進んでしまうため）\nhttps://t.co/Iddk5WTauD\n本記事では、AIで作ったゲームを「人間が遊べる出来」まで仕上げるフレームワーク全体について整理していきます。",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110206778470514845"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "2fd1c33ea6",
+   "verdict": "promising",
+   "title": "中古のGPUと大容量メモリで大規模AIを手元で動かした検証報告",
+   "summary": "ギリア株式会社ファウンダーのshi3z氏が、中古で購入した5060Ti（8GB）を使い、Strataで64GB RAMと256GB SSDの環境で推論を行ったと投稿した。結果は42.3tok/sで、十分実用的だと述べている。使ったモデルの詳細は投稿からは分からない。",
+   "points": [
+    "高価なサーバーを使わず、個人向けの機材で実用的な速度が出たという実例",
+    "tok/s（1秒あたりに生成されるトークン数）の数値が示されており、本人の実測とみられる",
+    "使用したモデル名や条件の詳細が投稿にないため、再現には追加情報が必要"
+   ],
+   "terms": [
+    {
+     "term": "推論",
+     "desc": "学習済みのAIモデルに入力を与えて答えを出させる処理のこと。"
+    },
+    {
+     "term": "tok/s",
+     "desc": "1秒間に生成されるトークン（文字や単語の断片）の数。速さの指標。"
+    },
+    {
+     "term": "Strata",
+     "desc": "ローカルでのAI実行に関係するとみられるツールだが、投稿内に詳細はなく未確認。"
+    }
+   ],
+   "score": 66,
+   "credibility": 70,
+   "heat": 46,
+   "first_seen": "2026-10-14T06:57:26.000Z",
+   "latest": "2026-10-14T06:57:26.000Z",
+   "authors": [
+    "shi3z"
+   ],
+   "author_labels": [
+    {
+     "username": "shi3z",
+     "label": "ギリア株式会社ファウンダー・顧問",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の実機推論の数値",
+   "links": [],
+   "post": {
+    "url": "https://x.com/shi3z/status/2110263697574928536",
+    "username": "shi3z",
+    "text": "秋葉原の中古屋で買ってきた掘り出し物の5060Ti(8GB)でStrataを使って64GB RAMと256GB SSDで推論したら42.3tok/sになった。これは十分実用的に使える https://t.co/gmpTigtb8G",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110263697574928536"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-14T08:53:01Z"
   }
  ]
 }

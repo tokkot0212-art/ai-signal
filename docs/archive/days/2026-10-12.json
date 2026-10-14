@@ -27,7 +27,7 @@
    ],
    "score": 100,
    "credibility": 90,
-   "heat": 71,
+   "heat": 64,
    "first_seen": "2026-10-12T09:06:26.000Z",
    "latest": "2026-10-13T18:41:04.000Z",
    "authors": [
@@ -98,7 +98,7 @@
     "2109571381906284639"
    ],
    "post_count": 7,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "1f3cb2843c",
@@ -124,9 +124,9 @@
      "desc": "AIの性能を共通の課題で比べるための評価テスト"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 100,
-   "heat": 50,
+   "heat": 48,
    "first_seen": "2026-10-12T13:11:37.000Z",
    "latest": "2026-10-12T13:11:37.000Z",
    "authors": [
@@ -160,7 +160,7 @@
     "2109633085658808515"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "1dc788cf78",
@@ -186,9 +186,9 @@
      "desc": "正解データを人が用意せず、AI自身が出力を検査・改善して学ぶ方法。"
     }
    ],
-   "score": 85,
+   "score": 84,
    "credibility": 100,
-   "heat": 37,
+   "heat": 35,
    "first_seen": "2026-10-11T20:45:50.000Z",
    "latest": "2026-10-11T20:45:50.000Z",
    "authors": [
@@ -232,7 +232,7 @@
     "2109385006603006435"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "6617355ddf",
@@ -256,7 +256,7 @@
    ],
    "score": 55,
    "credibility": 78,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-12T00:05:05.000Z",
    "latest": "2026-10-12T00:05:05.000Z",
    "authors": [
@@ -290,7 +290,7 @@
     "2109435150128087331"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "69e3a9d851",
@@ -316,9 +316,9 @@
      "desc": "実際の人間の代わりに、模擬的な利用者像を作って試すこと"
     }
    ],
-   "score": 60,
+   "score": 59,
    "credibility": 75,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-10-12T03:52:14.000Z",
    "latest": "2026-10-12T03:52:14.000Z",
    "authors": [
@@ -346,7 +346,7 @@
     "2109492310874677489"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "dd3f575fb1",
@@ -372,9 +372,9 @@
      "desc": "同じ開発元や系統で作られた、大きさや用途の違うAIモデルの一群"
     }
    ],
-   "score": 56,
+   "score": 55,
    "credibility": 70,
-   "heat": 19,
+   "heat": 17,
    "first_seen": "2026-10-12T07:07:00.000Z",
    "latest": "2026-10-12T07:07:00.000Z",
    "authors": [
@@ -402,7 +402,7 @@
     "2109541326458954235"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "e66fb57c71",
@@ -430,7 +430,7 @@
    ],
    "score": 55,
    "credibility": 73,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-11T23:25:11.000Z",
    "latest": "2026-10-12T08:34:18.000Z",
    "authors": [
@@ -465,7 +465,70 @@
     "2109556947112652832"
    ],
    "post_count": 4,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
+  },
+  {
+   "id": "06a5ceafa4",
+   "verdict": "promising",
+   "title": "Google ColabでQwen3.8-27Bを使う方法が紹介される",
+   "summary": "プログラマーの npaka 氏が、Google Colab上のQwen3.8-27Bをローカルのエージェント環境「Pi」から利用する方法を記事で紹介した。同氏はあわせて、Colabでのセットアップに約10分かかり、ブロック崩しのコード作成に22.6秒かかったと投稿している。",
+   "points": [
+    "Colabのような無料のクラウドGPU環境で大型モデルを動かし、手元の環境から呼び出す使い方が紹介されている。",
+    "セットアップ時間や生成時間は投稿者の環境での数値で、他の環境で同じ結果が出るかは未確認。",
+    "モデル名「Qwen3.8-27B」は投稿内の表記で、公式発表の有無は本投稿からは確認できない。"
+   ],
+   "terms": [
+    {
+     "term": "Google Colab",
+     "desc": "Googleが提供するブラウザ上で使えるPython実行環境。高性能GPUを無料または低価格で使える。"
+    },
+    {
+     "term": "ローカル",
+     "desc": "自分の手元のPCや機器で動かすこと。クラウドに送らずに処理する場合に使う。"
+    },
+    {
+     "term": "27B",
+     "desc": "モデルのパラメータ数（約270億）を示す表記。数が多いほど高性能だが、動かすのに大きなメモリが必要。"
+    }
+   ],
+   "score": 53,
+   "credibility": 73,
+   "heat": 7,
+   "first_seen": "2026-10-11T23:25:11.000Z",
+   "latest": "2026-10-12T00:19:40.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の手順記事と計測結果",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/npaka123/status/2109438820295016581",
+    "username": "npaka123",
+    "text": "Google Colab の Qwen3.8-27B をローカルのPiで利用する方法｜npaka @npaka123 https://t.co/cBm6aOufAK",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2109438820295016581",
+    "2109425107299131847"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-14T08:53:01Z"
   },
   {
    "id": "6aef08f589",
@@ -493,7 +556,7 @@
    ],
    "score": 46,
    "credibility": 65,
-   "heat": 3,
+   "heat": 2,
    "first_seen": "2026-10-12T05:17:24.000Z",
    "latest": "2026-10-12T05:17:24.000Z",
    "authors": [
@@ -521,7 +584,7 @@
     "2109513745907261551"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T01:17:53Z"
+   "archived_at": "2026-10-14T08:53:01Z"
   }
  ]
 }

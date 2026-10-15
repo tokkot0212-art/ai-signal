@@ -2,51 +2,43 @@
  "date": "2026-10-12",
  "items": [
   {
-   "id": "2849801aaa",
+   "id": "c506ee5081",
    "verdict": "confirmed",
-   "title": "GoogleがGemini 4 Argonを公開、有料プラン向けに提供開始",
-   "summary": "Google DeepMindのHassabis共同創設者・会長は、新モデル「Gemini 4 Argon」が知識労働やコーディングに強いと投稿し、ウィザード風チェスゲームの作成例を紹介した。同投稿によると、Argonは本日からGoogle UltraおよびProの加入者にGeminiアプリとSearchで、Ultra加入者にはAntigravityで順次提供される。Wharton教授のEthan Mollick氏は、事前に試用した感想として従来のGeminiより大きく進歩したと述べた。",
+   "title": "Googleが新AIモデル「Gemini 4 Argon」を提供開始",
+   "summary": "Google DeepMindの公式投稿によると、Gemini 4 Argonが発表当日からGoogle UltraおよびProの加入者向けに、GeminiアプリとSearchで提供された。Ultra加入者は開発者向けのAntigravityでも利用できる。デミス・ハサビス氏は、知識労働やコーディング、3D表現の能力を示すデモとしてチェスゲームの作成例を紹介した。\n\nWharton大学のイーサン・モリック教授は、事前に試用した結果として、前世代のGeminiより大きく進歩し、OpenAIやAnthropic以外で初めて高い水準を超えたと述べた。ただし複雑なマルチエージェント作業では他社に劣るとも書いている。",
    "points": [
-    "新しさ: Gemini 4 Argonは、知識労働・コーディング・3D表現などを含む新モデル。公式ブログに詳細がある。",
-    "影響: 提供はUltra/Proの有料加入者とUltraのAntigravity利用者が中心で、無料利用者はすぐには使えない可能性がある。",
-    "注意: 性能の評価は投稿者の感想が中心で、独立した第三者による検証結果はまだ確認できない。"
+    "新しい点: Gemini 4 Argonはまず有料プラン利用者に提供され、無料利用者向けの提供は投稿では示されていない",
+    "注意点: モリック教授の評価は本人の個人的な試用に基づく感想であり、客観的なベンチマーク結果は投稿に含まれていない",
+    "未確認: 投稿に含まれる「Fable/Mythos/Astra」は他社モデルの名称とみられるが、詳細は投稿からは分からない"
    ],
    "terms": [
     {
-     "term": "Gemini 4 Argon",
-     "desc": "Googleが今回発表したAIモデルの名称（投稿の記載に基づく）。"
+     "term": "Gemini",
+     "desc": "Googleが開発している大規模言語モデル(AI)のシリーズ名"
     },
     {
-     "term": "Antigravity",
-     "desc": "Googleのコーディング支援関連サービスとみられる。詳細は未確認。"
+     "term": "マルチエージェント",
+     "desc": "複数のAIが役割を分担して協力しながら作業を進める仕組み"
     },
     {
-     "term": "サブスクリプション（Ultra/Pro）",
-     "desc": "月額課金で使える上位・標準の有料プラン。提供範囲が違う。"
+     "term": "蒸留(distillation)",
+     "desc": "大きなAIの出力を使って小さなAIを学習させる手法"
     }
    ],
-   "score": 98,
-   "credibility": 88,
-   "heat": 50,
+   "score": 96,
+   "credibility": 90,
+   "heat": 54,
    "first_seen": "2026-10-12T09:06:26.000Z",
-   "latest": "2026-10-14T12:41:35.000Z",
+   "latest": "2026-10-14T21:12:26.000Z",
    "authors": [
-    "demishassabis",
-    "huggingface",
+    "NVIDIAAI",
     "emollick",
-    "itmedia_news",
-    "shi3z"
+    "natolambert"
    ],
    "author_labels": [
     {
-     "username": "demishassabis",
-     "label": "Google DeepMind共同創設者・会長",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "huggingface",
-     "label": "Hugging Face公式",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     },
@@ -57,55 +49,47 @@
      "former": ""
     },
     {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "shi3z",
-     "label": "ギリア株式会社ファウンダー・顧問",
-     "type": "practitioner",
-     "former": ""
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Google公式ブログ・公式投稿",
+   "evidence_note": "Google DeepMind公式投稿・公式ブログ",
    "links": [
-    {
-     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-     "domain": "blog.google",
-     "primary": true
-    },
-    {
-     "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
-     "domain": "youtube.com",
-     "primary": false
-    },
     {
      "url": "https://formwork-city.netlify.app/Fable",
      "domain": "formwork-city.netlify.app",
      "primary": false
+    },
+    {
+     "url": "https://brut-city.netlify.app/",
+     "domain": "brut-city.netlify.app",
+     "primary": false
+    },
+    {
+     "url": "https://rainbow-panda-689e6b.netlify.app/",
+     "domain": "rainbow-panda-689e6b.netlify.app",
+     "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/demishassabis/status/2110041008100843835",
-    "username": "demishassabis",
-    "text": "Gemini 4 Argon is amazing for knowledge work and coding - and it’s super fun to build with! We asked it to create this wizard chess game and it's so cool to see Argon's physics understanding & 3D modelling capabilities, makes me nostalgic for Battlechess on the Amiga - fun times!\n\nArgon is rolling out today to Google Ultra and Pro subscribers in the @GeminiApp and Search, and Ultra subscribers in @antigravity! More info & full availability in the blog: https://t.co/7d3791mRNH",
-    "text_ja": "Gemini 4 Argonは知識労働とコーディングに素晴らしく、作ってみるのも本当に楽しいです！このウィザード・チェスゲームを作らせてみたところ、Argonの物理理解と3Dモデリング能力が見事に表れていて、Amigaの「Battlechess」が懐かしくなりました。楽しい時代でした！\n\nArgonは本日からGoogle UltraおよびProの加入者に@GeminiAppとSearchで、Ultraの加入者には@antigravityで順次提供されます。詳細と提供範囲はブログをご覧ください: https://t.co/7d3791mRNH"
+    "url": "https://x.com/NVIDIAAI/status/2110468004609950057",
+    "username": "NVIDIAAI",
+    "text": "So many models launching this week!\nAnd we have one of our own coming...⌛️ https://t.co/s5Z9QZ984W",
+    "text_ja": "今週は本当に多くのモデルが発表されますね！そして私たち自身のモデルも近日登場します…⌛️"
    },
    "post_ids": [
-    "2110041008100843835",
-    "2110350304613114226",
+    "2109571381906284639",
+    "2110468004609950057",
     "2110060618258497764",
-    "2110052931110318464",
     "2110052331702124894",
-    "2110336113705660609",
-    "2109571381906284639"
+    "2110478862836433119"
    ],
    "post_count": 7,
-   "archived_at": "2026-10-15T08:27:55Z"
+   "archived_at": "2026-10-15T13:32:11Z"
   },
   {
    "id": "1f3cb2843c",

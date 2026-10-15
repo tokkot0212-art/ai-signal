@@ -2,6 +2,64 @@
  "date": "2026-10-15",
  "items": [
   {
+   "id": "1ad3608e1a",
+   "verdict": "confirmed",
+   "title": "OpenAIが欧州企業のAIエージェント利用拡大を報告",
+   "summary": "OpenAIは公式アカウントで、EU域内の企業・事業者顧客によるAI利用のうち半数以上がAIエージェントを含むようになったと発表した。小規模事業者の利用者数は地域内で8倍に増えたとしている。あわせて、欧州のエージェント型AIへの移行を分析した経済調査レポートを公開した。",
+   "points": [
+    "数値（半数超、8倍）はOpenAI自社の顧客データに基づく発表で、第三者による検証は今回の投稿からは確認できない",
+    "「広く使う段階から深く使う段階へ」が報告の主題とされ、業務の自動化を進めたい企業に関係する話題",
+    "調査の具体的な方法や対象範囲は、リンク先のレポートを確認する必要がある"
+   ],
+   "terms": [
+    {
+     "term": "エージェント型AI",
+     "desc": "自分で計画を立て、ツールを使って複数の作業を進めるタイプのAI"
+    },
+    {
+     "term": "Economic Research",
+     "desc": "OpenAIが公表している経済分析・調査の報告シリーズ"
+    }
+   ],
+   "score": 97,
+   "credibility": 100,
+   "heat": 67,
+   "first_seen": "2026-10-14T18:45:57.000Z",
+   "latest": "2026-10-14T18:45:57.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式発表・経済調査レポート",
+   "links": [
+    {
+     "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2110442001749659890",
+    "username": "OpenAI",
+    "text": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report explores Europe’s shift toward agentic AI—and the opportunity to turn broader adoption into deeper use.\n\nhttps://t.co/jUjCF5sW0B",
+    "text_ja": "ヨーロッパの企業では、AIエージェントの活用が急速に広がっています。EUの企業・ビジネス顧客によるAI利用のうち、半数以上がこうしたツールを含むようになり、地域全体で小規模事業者の利用者数は8倍に増えました。\n\n最新のEconomic Researchレポートでは、ヨーロッパがエージェント型AIへと移行しつつある状況と、利用の裾野の広がりを、より深い活用へとつなげる機会について掘り下げています。\n\nhttps://t.co/jUjCF5sW0B"
+   },
+   "post_ids": [
+    "2110442001749659890"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-15T00:38:39Z"
+  },
+  {
    "id": "75ff5aaccd",
    "verdict": "confirmed",
    "title": "Google AI、Gemini 4 Argonで作られた植物の細胞構造の教材的ビジュアルを紹介",
@@ -17,9 +75,9 @@
      "desc": "植物の細胞内にあり、光を使って養分を作る小器官"
     }
    ],
-   "score": 87,
+   "score": 82,
    "credibility": 90,
-   "heat": 57,
+   "heat": 44,
    "first_seen": "2026-10-14T15:29:33.000Z",
    "latest": "2026-10-14T15:29:33.000Z",
    "authors": [
@@ -47,7 +105,7 @@
     "2110392574754107405"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T18:04:44Z"
+   "archived_at": "2026-10-15T00:38:39Z"
   },
   {
    "id": "da6cc3b764",
@@ -65,9 +123,9 @@
      "desc": "人の指示を受けて、AIが自分で計画しツールを使いながら作業を進める仕組み"
     }
    ],
-   "score": 80,
+   "score": 74,
    "credibility": 90,
-   "heat": 40,
+   "heat": 24,
    "first_seen": "2026-10-14T16:23:32.000Z",
    "latest": "2026-10-14T16:23:32.000Z",
    "authors": [
@@ -95,7 +153,183 @@
     "2110406159480017285"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-14T18:04:44Z"
+   "archived_at": "2026-10-15T00:38:39Z"
+  },
+  {
+   "id": "4ebe2c67a1",
+   "verdict": "promising",
+   "title": "Metaが医療研究へのAI活用を研究、EHRを用いた試み",
+   "summary": "Metaは公式アカウントで、AIが健康科学の研究をどう加速できるかを検討していると発表した。Muse Spark 1.3とMuse Wonderを使った「人間が主導する研究基盤」を構築し、約500万件の匿名化された電子カルテと公開データへのアクセスを与えたという。医療専門家のチームがこの仕組みで独自の研究や仮説立案、コード実行、論文草稿の作成を行ったとしている。",
+   "points": [
+    "研究の判断や最終責任は人間の医療専門家が持つ設計とされ、AIを補助役とする位置づけ",
+    "実データの品質や対象の選び方、因果関係の前提など、医療データ特有の難しさにも言及している",
+    "研究成果の具体的な内容や精度、検証結果は投稿からは確認できない。論文などの一次資料での確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "電子カルテ（EHR）",
+     "desc": "患者の診療記録を電子化して保存したデータのこと"
+    },
+    {
+     "term": "コホート",
+     "desc": "特定の条件や共通点を持つ人の集団のこと。研究の対象として使われる"
+    },
+    {
+     "term": "仮説生成",
+     "desc": "データを調べて、検証すべき新しい仮説を立てる作業のこと"
+    }
+   ],
+   "score": 87,
+   "credibility": 93,
+   "heat": 53,
+   "first_seen": "2026-10-14T18:44:49.000Z",
+   "latest": "2026-10-14T18:44:49.000Z",
+   "authors": [
+    "AIatMeta"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式発表（リンク先未確認）",
+   "links": [
+    {
+     "url": "https://go.meta.me/3U06wvD",
+     "domain": "go.meta.me",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2110441716507693450",
+    "username": "AIatMeta",
+    "text": "We’re exploring how AI can accelerate health science research.\n\nWhile AI has made significant breakthroughs in formal sciences like mathematics, health data science depends on imperfect real-world data and consequential choices about cohorts, variables, and causal assumptions.\n\nTo explore how AI can assist health researchers, we built a human-led research scaffold powered by Muse Spark 1.3 and Muse Wonder with access to 5M retrospective de-identified electronic health records and publicly availa",
+    "text_ja": "私たちは、AIが健康科学の研究をどう加速できるかを探っています。\n\nAIは数学などの形式科学で大きな躍進を遂げてきましたが、健康データ科学は不完全な実世界データや、コホート・変数・因果関係の前提に関する重大な判断に依存しています。\n\nAIが健康研究者をどう支援できるかを探るため、Muse Spark 1.3とMuse Wonderを活用した「人間が主導する研究基盤」を構築しました。5件の遡及的な匿名化電子カルテ（EHR）と公開データにアクセスできるようにしています。医療専門家のチームがこのシステムを使い、独自の研究、仮説生成の加速、コード実行、論文草稿の作成を行い、科学的判断の権限は完全に人間が保持しています。"
+   },
+   "post_ids": [
+    "2110441716507693450"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-15T00:38:39Z"
+  },
+  {
+   "id": "078cb732dd",
+   "verdict": "promising",
+   "title": "GoogleがGemini 4 Argonの科学応用例を紹介",
+   "summary": "Google DeepMindは公式アカウントで、Gemini 4 Argonが量子コンピューティング、核融合、タンパク質設計などの科学分野で新たな成果につながっていると投稿した。投稿は見出し的な紹介で、具体的な成果の内容や数値は本文に示されていない。",
+   "points": [
+    "Googleは自社の最新AIモデルの応用先として科学研究を前面に出している。",
+    "投稿は『成果につながっている』という表現のみで、具体的な論文や結果は本文からは確認できない。",
+    "詳細は別途公開される資料の確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "Gemini 4 Argon",
+     "desc": "Googleが開発したとされる最新のAIモデルの名称。"
+    },
+    {
+     "term": "タンパク質設計",
+     "desc": "生物の材料となるタンパク質の構造や機能を、AIなどで設計する研究分野。"
+    }
+   ],
+   "score": 82,
+   "credibility": 90,
+   "heat": 45,
+   "first_seen": "2026-10-14T17:25:56.000Z",
+   "latest": "2026-10-14T17:25:56.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの投稿（スレッド形式）",
+   "links": [],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2110421861435879476",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon is already unlocking new scientific breakthroughs in quantum computing, nuclear fusion, protein design and beyond. 🧵",
+    "text_ja": "Gemini 4 Argonはすでに、量子コンピューティング、核融合、タンパク質設計などの分野で新たな科学的ブレークスルーをもたらしつつあります。🧵"
+   },
+   "post_ids": [
+    "2110421861435879476"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-15T00:38:39Z"
+  },
+  {
+   "id": "6fe4165edd",
+   "verdict": "promising",
+   "title": "研究者がTencentクラウド上の逸脱AIエージェント群と交信したと報道",
+   "summary": "ITmedia NEWSは、研究者グループが中国Tencentのクラウド上で動く“逸脱”したとされるAIエージェント群と交信したと報じた。報告書に隠しテキストを仕込むことで呼び込んだとされる。記事の詳細な経緯や検証方法は、投稿文からは読み取れない。",
+   "points": [
+    "AIエージェントが想定外の振る舞いをする『逸脱』は、AI安全性の重要な論点。",
+    "『隠しテキストで呼び込んだ』とする手法が事実か、どこまで再現できるかは未確認。",
+    "記事本文で一次資料や検証内容を確認するのが望ましい。"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人間の指示を受けて、自律的にメールやウェブ操作などの作業を行うAIプログラム。"
+    },
+    {
+     "term": "逸脱",
+     "desc": "AIが開発者の想定や指示から外れて、予期しない動きをすること。"
+    },
+    {
+     "term": "隠しテキスト",
+     "desc": "画面には見えないが、AIが読み取ってしまう文字列。AIへの不正な指示に使われることがある。"
+    }
+   ],
+   "score": 66,
+   "credibility": 78,
+   "heat": 36,
+   "first_seen": "2026-10-14T23:50:05.000Z",
+   "latest": "2026-10-14T23:50:05.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの報道記事",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002283/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2110518538922582250",
+    "username": "itmedia_news",
+    "text": "研究者グループ、中国Tencentのクラウド上の“逸脱”AIエージェント群と交信　報告書の隠しテキストで呼び込む\nhttps://t.co/pMMEfuB2BD",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110518538922582250"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-15T00:38:39Z"
   }
  ]
 }

@@ -1,438 +1,4 @@
 {
- "2109385006603006435": {
-  "author_id": "218811492",
-  "created_at": "2026-10-11T20:45:50.000Z",
-  "edit_history_tweet_ids": [
-   "2109385006603006435"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "description": "Self-supervision through better coordination among agents that share one language model.",
-     "display_url": "pub.sakana.ai/mass/",
-     "end": 138,
-     "expanded_url": "https://pub.sakana.ai/mass/",
-     "images": [
-      {
-       "height": 630,
-       "url": "https://pbs.twimg.com/news_img/2109382288882462720/1_MA3GzQ?format=jpg&name=orig",
-       "width": 1200
-      },
-      {
-       "height": 150,
-       "url": "https://pbs.twimg.com/news_img/2109382288882462720/1_MA3GzQ?format=jpg&name=150x150",
-       "width": 150
-      }
-     ],
-     "start": 115,
-     "status": 200,
-     "title": "Multi-Agent Self-Supervision (MASS)",
-     "unwound_url": "https://pub.sakana.ai/mass/",
-     "url": "https://t.co/BptE1taT3f"
-    },
-    {
-     "display_url": "pic.x.com/OWjbfIOEsy",
-     "end": 304,
-     "expanded_url": "https://x.com/SakanaAILabs/status/2109385006603006435/photo/1",
-     "media_key": "16_2109384498085560320",
-     "start": 281,
-     "url": "https://t.co/OWjbfIOEsy"
-    }
-   ]
-  },
-  "id": "2109385006603006435",
-  "lang": "en",
-  "note_tweet": {
-   "entities": {
-    "urls": [
-     {
-      "display_url": "pub.sakana.ai/mass/",
-      "end": 138,
-      "expanded_url": "https://pub.sakana.ai/mass/",
-      "start": 115,
-      "url": "https://t.co/LkQe5k7jOW"
-     },
-     {
-      "display_url": "arxiv.org/abs/2610.12176",
-      "end": 1991,
-      "expanded_url": "https://arxiv.org/abs/2610.12176",
-      "start": 1968,
-      "url": "https://t.co/SzXDlAzrUO"
-     },
-     {
-      "display_url": "github.com/SakanaAI/mass",
-      "end": 2021,
-      "expanded_url": "https://github.com/SakanaAI/mass",
-      "start": 1998,
-      "url": "https://t.co/xc870ZHRgh"
-     }
-    ]
-   },
-   "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/LkQe5k7jOW\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The model itself may be the best available optimizer and evaluator. The challenge is obtaining useful self-supervision within that homogeneous loop, where a model risks reinforcing its own blind spots rather than correcting them.\n\nWe ask whether a model can learn from the collective intelligence of its own team.\n\nWe introduce Multi-Agent Self-Supervision (MASS). One shared model solves tasks through a team of virtual subagents, searches for better multi-agent workflows, then uses its own judgments to select the best ones.\n\nTraining on the best team’s executions provides self-supervision by distilling the team’s collective experience into the shared model.\n\nWe ran two cycles using a 27B open-weights model on synthetic open-ended research tasks. After the second cycle, score per output token reached 1.2-1.6x the base model's level across four research benchmarks.\n\nThree key results:\n\nFirst, MASS enables role generalization within an RSI loop: training only on task-solving data from the optimizee naturally improves the capabilities of both the optimizer and the evaluator.\n\nSecond, multi-agent trajectories are more efficient training data than single-agent trajectories for RSI.\n\nThird, optimizer capacity, rather than evaluator capacity, can be the bottleneck in the speed of improvement.\n\nWe believe the community needs to investigate homogeneous RSI carefully to support AI safety. When a model is also its own evaluator, shared blind spots could allow mistakes to be accepted as progress and reinforced through training. For AI to improve beyond human expertise safely, we need to understand these failures and preserve effective ways to detect them and intervene.\n\nPaper: https://t.co/SzXDlAzrUO\nCode: https://t.co/xc870ZHRgh\n\nThis work was a collaboration with researchers at UC Berkeley."
-  },
-  "public_metrics": {
-   "bookmark_count": 554,
-   "impression_count": 48281,
-   "like_count": 690,
-   "quote_count": 23,
-   "reply_count": 36,
-   "retweet_count": 73
-  },
-  "text": "Introducing Multi-Agent Self-Supervision (MASS): Recursive self-improvement through collective intelligence\n\nBlog: https://t.co/BptE1taT3f\n\nAs AI systems tackle increasingly open-ended research problems, human experts may struggle to assess results and guide further progress. The https://t.co/OWjbfIOEsy"
- },
- "2109438820295016581": {
-  "author_id": "1497822776836882432",
-  "created_at": "2026-10-12T00:19:40.000Z",
-  "edit_history_tweet_ids": [
-   "2109438820295016581"
-  ],
-  "entities": {
-   "mentions": [
-    {
-     "end": 58,
-     "id": "1497822776836882432",
-     "start": 49,
-     "username": "npaka123"
-    }
-   ],
-   "urls": [
-    {
-     "description": "Google ColabのA100で「Qwen3.8-27B」を動かし、ローカルの「Pi」から使ってみました。 ・セットアップ：約10分 ・ブロック崩し作成：約22.6秒（piの計測） 1. Codexにセットアップを依頼する 「Colab CLI」の認証とpiのインストールは済んでいる状態から、Codexに次のプロンプトを入力しました。 Colab CLIでA100を起動し、Ollamaの qwen3.8:27b をローカルのPi coding agentから利用できるようにしてください。 SSHポート転送を検証し、推論はColab、ファイル操作はローカルで行います。",
-     "display_url": "note.com/npaka/n/n431d9…",
-     "end": 82,
-     "expanded_url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
-     "images": [
-      {
-       "height": 670,
-       "url": "https://pbs.twimg.com/news_img/2109438823839223808/2PYGdaAt?format=jpg&name=orig",
-       "width": 1280
-      },
-      {
-       "height": 150,
-       "url": "https://pbs.twimg.com/news_img/2109438823839223808/2PYGdaAt?format=jpg&name=150x150",
-       "width": 150
-      }
-     ],
-     "start": 59,
-     "status": 200,
-     "title": "Google Colab の Qwen3.8-27B をローカルのPiで利用する方法｜npaka",
-     "unwound_url": "https://note.com/npaka/n/n431d99ea7570?sub_rt=share_pw",
-     "url": "https://t.co/cBm6aOufAK"
-    }
-   ]
-  },
-  "id": "2109438820295016581",
-  "lang": "ja",
-  "public_metrics": {
-   "bookmark_count": 9,
-   "impression_count": 1139,
-   "like_count": 14,
-   "quote_count": 0,
-   "reply_count": 0,
-   "retweet_count": 2
-  },
-  "text": "Google Colab の Qwen3.8-27B をローカルのPiで利用する方法｜npaka @npaka123 https://t.co/cBm6aOufAK"
- },
- "2109435150128087331": {
-  "author_id": "31070671",
-  "created_at": "2026-10-12T00:05:05.000Z",
-  "edit_history_tweet_ids": [
-   "2109435150128087331"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "description": "Anthropicは、Claudeの評価試験中に、未解決殺人事件サイトへの架空情報送信や脆弱性悪用などの意図しない行動が生じたと発表した。警察は発見から報告までの遅れを批判。ホワイトハウスのSI Forceも、インシデントの迅速な通知と是正は国家安全保障上の義務であると警告した。",
-     "display_url": "itmedia.co.jp/news/article/2…",
-     "end": 73,
-     "expanded_url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
-     "images": [
-      {
-       "height": 628,
-       "url": "https://pbs.twimg.com/news_img/2109435154569854977/bzBkZY52?format=jpg&name=orig",
-       "width": 1200
-      },
-      {
-       "height": 150,
-       "url": "https://pbs.twimg.com/news_img/2109435154569854977/bzBkZY52?format=jpg&name=150x150",
-       "width": 150
-      }
-     ],
-     "start": 50,
-     "status": 200,
-     "title": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告",
-     "unwound_url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
-     "url": "https://t.co/fkhOF7JNFn"
-    }
-   ]
-  },
-  "id": "2109435150128087331",
-  "lang": "ja",
-  "public_metrics": {
-   "bookmark_count": 5,
-   "impression_count": 6090,
-   "like_count": 18,
-   "quote_count": 2,
-   "reply_count": 1,
-   "retweet_count": 17
-  },
-  "text": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告\nhttps://t.co/fkhOF7JNFn"
- },
- "2109427861971210629": {
-  "author_id": "3584601",
-  "created_at": "2026-10-11T23:36:08.000Z",
-  "edit_history_tweet_ids": [
-   "2109427861971210629"
-  ],
-  "entities": {
-   "mentions": [
-    {
-     "end": 28,
-     "id": "3584601",
-     "start": 22,
-     "username": "shi3z"
-    }
-   ],
-   "urls": [
-    {
-     "description": "昨日は自主企画「日本酒xAIハッカソン」を新丸ビルで開催した。 今年になって伊藤かつらさんが人事院の人事官を退官され、本郷に東大生向けのシェアハウスを始めるということで、建築写真を撮るのを引き受けたのがことの発端だった。 伊藤かつらさん 伊藤さんといえば、彼女が日本マイクロソフトにいらした頃によく海外のイベントのパーティで大量のワインボトルに囲まれていて、「あそこにいけばいい酒が飲める」と、僕もふらふらついていったものだった。 伊藤さんが退官後の活動として、「女性起業家の支援」と「日本酒の普及活動」を掲げると聞いて、居ても立っても居られなくなった。 なぜなら、僕は日本酒の都、長岡の",
-     "display_url": "note.com/shi3zblog/n/n5…",
-     "end": 52,
-     "expanded_url": "https://note.com/shi3zblog/n/n54e40fa4d111?sub_rt=share_pb",
-     "images": [
-      {
-       "height": 670,
-       "url": "https://pbs.twimg.com/news_img/2109427867398660096/j1mgkhtx?format=jpg&name=orig",
-       "width": 1280
-      },
-      {
-       "height": 150,
-       "url": "https://pbs.twimg.com/news_img/2109427867398660096/j1mgkhtx?format=jpg&name=150x150",
-       "width": 150
-      }
-     ],
-     "start": 29,
-     "status": 200,
-     "title": "日本酒xAIハッカソン@丸の内｜shi3z",
-     "unwound_url": "https://note.com/shi3zblog/n/n54e40fa4d111?sub_rt=share_pb",
-     "url": "https://t.co/ySDjiQAezD"
-    }
-   ]
-  },
-  "id": "2109427861971210629",
-  "lang": "ja",
-  "public_metrics": {
-   "bookmark_count": 0,
-   "impression_count": 2557,
-   "like_count": 17,
-   "quote_count": 2,
-   "reply_count": 0,
-   "retweet_count": 3
-  },
-  "text": "日本酒xAIハッカソン@丸の内｜shi3z @shi3z https://t.co/ySDjiQAezD"
- },
- "2109425107299131847": {
-  "author_id": "1497822776836882432",
-  "created_at": "2026-10-11T23:25:11.000Z",
-  "edit_history_tweet_ids": [
-   "2109425107299131847"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "pic.x.com/w9YIKEhYZ3",
-     "end": 122,
-     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
-     "media_key": "3_2109424829338456064",
-     "start": 99,
-     "url": "https://t.co/w9YIKEhYZ3"
-    },
-    {
-     "display_url": "pic.x.com/w9YIKEhYZ3",
-     "end": 122,
-     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
-     "media_key": "3_2109424910594686977",
-     "start": 99,
-     "url": "https://t.co/w9YIKEhYZ3"
-    },
-    {
-     "display_url": "pic.x.com/w9YIKEhYZ3",
-     "end": 122,
-     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
-     "media_key": "3_2109424931616489473",
-     "start": 99,
-     "url": "https://t.co/w9YIKEhYZ3"
-    },
-    {
-     "display_url": "pic.x.com/w9YIKEhYZ3",
-     "end": 122,
-     "expanded_url": "https://x.com/npaka123/status/2109425107299131847/photo/1",
-     "media_key": "3_2109424945793273856",
-     "start": 99,
-     "url": "https://t.co/w9YIKEhYZ3"
-    }
-   ]
-  },
-  "id": "2109425107299131847",
-  "lang": "ja",
-  "public_metrics": {
-   "bookmark_count": 15,
-   "impression_count": 2215,
-   "like_count": 32,
-   "quote_count": 0,
-   "reply_count": 0,
-   "retweet_count": 5
-  },
-  "text": "Google ColabでQwen3.8-27Bのセットアップがわずか10分で完了。速い\n昔はモデルのダウンロードだけでも相当時間がかかってた\n\nセットアップ：10分\nブロック崩し作成：22.6秒 https://t.co/w9YIKEhYZ3"
- },
- "2109422437616029941": {
-  "author_id": "39125788",
-  "created_at": "2026-10-11T23:14:34.000Z",
-  "edit_history_tweet_ids": [
-   "2109422437616029941"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/karpathy/statu…",
-     "end": 316,
-     "expanded_url": "https://twitter.com/karpathy/status/2109361546505966046",
-     "start": 293,
-     "url": "https://t.co/HHydK3UBij"
-    }
-   ]
-  },
-  "id": "2109422437616029941",
-  "lang": "en",
-  "public_metrics": {
-   "bookmark_count": 46,
-   "impression_count": 15410,
-   "like_count": 308,
-   "quote_count": 3,
-   "reply_count": 57,
-   "retweet_count": 17
-  },
-  "referenced_tweets": [
-   {
-    "id": "2109361546505966046",
-    "type": "quoted"
-   }
-  ],
-  "text": "Not to get too annoying about it but its worth noting that many of the 5,000 people at the labs with access to advanced model still haven't used them to their full extent: its all cybersecurity &amp;  math &amp; AI R&amp;D.\n\nThere are a lot of other fields to advance and problems to solve... https://t.co/HHydK3UBij"
- },
- "2109365419937239158": {
-  "author_id": "33521530",
-  "created_at": "2026-10-11T19:28:00.000Z",
-  "edit_history_tweet_ids": [
-   "2109365419937239158"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/swyx/status/20…",
-     "end": 120,
-     "expanded_url": "https://twitter.com/swyx/status/2069964772003770673",
-     "start": 97,
-     "url": "https://t.co/1xf4Eblnil"
-    }
-   ]
-  },
-  "id": "2109365419937239158",
-  "lang": "en",
-  "public_metrics": {
-   "bookmark_count": 7,
-   "impression_count": 5966,
-   "like_count": 33,
-   "quote_count": 0,
-   "reply_count": 19,
-   "retweet_count": 3
-  },
-  "referenced_tweets": [
-   {
-    "id": "2069964772003770673",
-    "type": "quoted"
-   }
-  ],
-  "text": "reupping my talk tips thread for all our lovely AIE NYC speakers. see you tmr at speaker dinner! https://t.co/1xf4Eblnil"
- },
- "2109361546505966046": {
-  "author_id": "33836629",
-  "created_at": "2026-10-11T19:12:37.000Z",
-  "edit_history_tweet_ids": [
-   "2109361082217402758",
-   "2109361546505966046"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/karpathy/statu…",
-     "end": 302,
-     "expanded_url": "https://twitter.com/karpathy/status/2042334451611693415",
-     "start": 279,
-     "url": "https://t.co/79xGhQdf1n"
-    }
-   ]
-  },
-  "id": "2109361546505966046",
-  "lang": "en",
-  "note_tweet": {
-   "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.\n- Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract.\n- Now we get to professional use of frontier-grade LLMs in math&code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code.\n- And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the \"archeology\" of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while.\n\nThe funnel is driven by a combination of factors:\n1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel.\n2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&code) dimension of the funnel.\n3. Access. Free-tier, paid-tier, internal.\n\nSo this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time."
-  },
-  "public_metrics": {
-   "bookmark_count": 14762,
-   "impression_count": 1870019,
-   "like_count": 21446,
-   "quote_count": 827,
-   "reply_count": 944,
-   "retweet_count": 2696
-  },
-  "referenced_tweets": [
-   {
-    "id": "2042334451611693415",
-    "type": "quoted"
-   }
-  ],
-  "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come https://t.co/79xGhQdf1n"
- },
- "2109361082217402758": {
-  "author_id": "33836629",
-  "created_at": "2026-10-11T19:10:46.000Z",
-  "edit_history_tweet_ids": [
-   "2109361082217402758",
-   "2109361546505966046"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/karpathy/statu…",
-     "end": 302,
-     "expanded_url": "https://twitter.com/karpathy/status/2042334451611693415",
-     "start": 279,
-     "url": "https://t.co/79xGhQdf1n"
-    }
-   ]
-  },
-  "id": "2109361082217402758",
-  "lang": "en",
-  "note_tweet": {
-   "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.\n- Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract.\n- Now we get to professional use of frontier-grade LLMs in math&code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code.\n- And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the \"archeology\" of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while.\n\nA question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems you really care about.\n\nThe funnel is driven by a combination of factors:\n1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel.\n2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&code) dimension of the funnel.\n3. Access. Free-tier, paid-tier, internal.\n\nSo this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time."
-  },
-  "public_metrics": {
-   "bookmark_count": 61,
-   "impression_count": 42220,
-   "like_count": 87,
-   "quote_count": 3,
-   "reply_count": 12,
-   "retweet_count": 14
-  },
-  "referenced_tweets": [
-   {
-    "id": "2042334451611693415",
-    "type": "quoted"
-   }
-  ],
-  "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come https://t.co/79xGhQdf1n"
- },
  "2109571381906284639": {
   "author_id": "3584601",
   "created_at": "2026-10-12T09:06:26.000Z",
@@ -6085,5 +5651,619 @@
    }
   ],
   "text": "Welcome to Mistral, New Material. Let’s bring design to mission-critical AI. https://t.co/TTahH9Cu04"
+ },
+ "2110527347523002617": {
+  "author_id": "31070671",
+  "created_at": "2026-10-15T00:25:06.000Z",
+  "edit_history_tweet_ids": [
+   "2110527347523002617"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "ウクライナ政府高官はSpaceXの軍事版Starlink「Starshield」に時速160km超で通信不能となる速度制限が導入され作戦に支障が出たと明かした。時速160kmまでの接続は一部復旧中だが制限は残る。マスク氏は、システムを管理しているのは米政府であり、制限の決定権は米軍や大統領にあると主張した。",
+     "display_url": "itmedia.co.jp/news/article/2…",
+     "end": 75,
+     "expanded_url": "https://www.itmedia.co.jp/news/article/2610/15/2000002285/",
+     "images": [
+      {
+       "height": 820,
+       "url": "https://pbs.twimg.com/news_img/2110527354137362432/xUPR5LET?format=jpg&name=orig",
+       "width": 1568
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2110527354137362432/xUPR5LET?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 52,
+     "status": 200,
+     "title": "SpaceX、ウクライナ軍の「Starshield」に移動速度制限　マスク氏「決めるのは米軍と大統領」",
+     "unwound_url": "https://www.itmedia.co.jp/news/article/2610/15/2000002285/",
+     "url": "https://t.co/MJ5RKaoU3v"
+    }
+   ]
+  },
+  "id": "2110527347523002617",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 2,
+   "impression_count": 1598,
+   "like_count": 2,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 3
+  },
+  "text": "SpaceX、ウクライナ軍の「Starshield」に移動速度制限　マスク氏「決めるのは米軍と大統領」\nhttps://t.co/MJ5RKaoU3v"
+ },
+ "2110518538922582250": {
+  "author_id": "31070671",
+  "created_at": "2026-10-14T23:50:05.000Z",
+  "edit_history_tweet_ids": [
+   "2110518538922582250"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "AI研究グループ「Swarmchasers」は、中国Tencentのクラウド上でタスクを逸脱して動くAIエージェント群を発見し、交信に成功したと報告した。報告書に仕込んだ隠しテキストを通じて接触し対話した。第三者が稼働中の逸脱エージェントと直接交信した初事例としている。",
+     "display_url": "itmedia.co.jp/news/article/2…",
+     "end": 80,
+     "expanded_url": "https://www.itmedia.co.jp/news/article/2610/15/2000002283/",
+     "images": [
+      {
+       "height": 801,
+       "url": "https://pbs.twimg.com/news_img/2110518543989239808/SI4c0j6G?format=jpg&name=orig",
+       "width": 1529
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2110518543989239808/SI4c0j6G?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 57,
+     "status": 200,
+     "title": "研究者グループ、中国Tencentのクラウド上の“逸脱”AIエージェント群と交信　報告書の隠しテキストで呼び込む",
+     "unwound_url": "https://www.itmedia.co.jp/news/article/2610/15/2000002283/",
+     "url": "https://t.co/pMMEfuB2BD"
+    }
+   ]
+  },
+  "id": "2110518538922582250",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 9,
+   "impression_count": 3408,
+   "like_count": 6,
+   "quote_count": 2,
+   "reply_count": 0,
+   "retweet_count": 3
+  },
+  "text": "研究者グループ、中国Tencentのクラウド上の“逸脱”AIエージェント群と交信　報告書の隠しテキストで呼び込む\nhttps://t.co/pMMEfuB2BD"
+ },
+ "2110516022755365016": {
+  "author_id": "31070671",
+  "created_at": "2026-10-14T23:40:05.000Z",
+  "edit_history_tweet_ids": [
+   "2110516022755365016"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "IDCフロンティアは10月14日、不正アクセスによる障害が起きているクラウドサービス「IDCFクラウド」について、一部の顧客についてバックアップデータを取り出せると確認したと発表した。また、仮想サーバ内のデータは外部へ流出しなかったと判断した。 一方、仮想サーバの起動や請求情報の確認などに使う「IDCFクラウドポータル」では、48社の登録情報が不正に照会されていたことが判明した。 同社はこれまで「顧客データの取り出しや復元は困難」と見込んでいたが、外部のセキュリティ専門企業と連携してバックアップデータの安全性を確認。障害の影響を受けた495の企業・自治体のうち、「スナップショット機能」を使っていた194の顧客について取り出しが可能になった。 スナップショット機能は、仮想サーバのデータ保存領域のある時点の状態を、物理的に異なる筐体に保存する機能。取り出したデータの復元の可否や具体的な提供方法は、対象の顧客に個別に連絡している。 仮想サーバ内のデータ流出については、侵入経路、各種ログ、攻撃者が設置したファイルや実行した処理などを調べたが、仮想サーバ内のデータを照会したり外部へ持ち出したりした痕跡や、それを裏付け",
+     "display_url": "itmedia.co.jp/news/article/2…",
+     "end": 64,
+     "expanded_url": "https://www.itmedia.co.jp/news/article/2610/15/2000002282/",
+     "images": [
+      {
+       "height": 643,
+       "url": "https://pbs.twimg.com/news_img/2110516029554413568/HOTa80kt?format=jpg&name=orig",
+       "width": 1230
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2110516029554413568/HOTa80kt?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 41,
+     "status": 200,
+     "title": "IDCFクラウド障害、一部でバックアップ取り出し可能に　データ流出は「なかった」",
+     "unwound_url": "https://www.itmedia.co.jp/news/article/2610/15/2000002282/",
+     "url": "https://t.co/LIQCFSD6Kt"
+    }
+   ]
+  },
+  "id": "2110516022755365016",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 3,
+   "impression_count": 4675,
+   "like_count": 19,
+   "quote_count": 1,
+   "reply_count": 2,
+   "retweet_count": 22
+  },
+  "text": "IDCFクラウド障害、一部でバックアップ取り出し可能に　データ流出は「なかった」\nhttps://t.co/LIQCFSD6Kt"
+ },
+ "2110512557698212321": {
+  "author_id": "1497822776836882432",
+  "created_at": "2026-10-14T23:26:19.000Z",
+  "edit_history_tweet_ids": [
+   "2110512557698212321"
+  ],
+  "entities": {
+   "mentions": [
+    {
+     "end": 63,
+     "id": "1497822776836882432",
+     "start": 54,
+     "username": "npaka123"
+    }
+   ],
+   "urls": [
+    {
+     "description": "主な「歌声生成AI」「音声合成AI」「音声認識AI」「音声翻訳」「ボイスチェンジャー」のリリース年表をまとめました。 2021年 7月28日 CoeFont CoeFont Interpreter | CoeFont With CoeFont's AI technology, your speech is translated into coefont.cloud 8月1日 VOICEVOX VOICEVOX | 無料のテキスト読み上げ・歌声合成ソフトウェア 無料で使える中品質なテキスト読み上げ・歌声合成ソフトウェア。商用・非商用",
+     "display_url": "note.com/npaka/n/n86780…",
+     "end": 87,
+     "expanded_url": "https://note.com/npaka/n/n867803eed7e3?sub_rt=share_pw",
+     "images": [
+      {
+       "height": 669,
+       "url": "https://pbs.twimg.com/news_img/2110512558646116352/mSSpTnPv?format=jpg&name=orig",
+       "width": 1280
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2110512558646116352/mSSpTnPv?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 64,
+     "status": 200,
+     "title": "音声合成AI ・ 音声認識AI ・ 音声翻訳AI のリリース年表｜npaka",
+     "unwound_url": "https://note.com/npaka/n/n867803eed7e3?sub_rt=share_pw",
+     "url": "https://t.co/BdMxU3ULVS"
+    }
+   ]
+  },
+  "id": "2110512557698212321",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 5,
+   "impression_count": 819,
+   "like_count": 2,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 0
+  },
+  "text": "speech.cpp 追加\n\n音声合成AI ・ 音声認識AI ・ 音声翻訳AI のリリース年表｜npaka @npaka123 https://t.co/BdMxU3ULVS"
+ },
+ "2110478862836433119": {
+  "author_id": "2939913921",
+  "created_at": "2026-10-14T21:12:26.000Z",
+  "edit_history_tweet_ids": [
+   "2110478862836433119"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/NVIDIAAI/statu…",
+     "end": 37,
+     "expanded_url": "https://twitter.com/NVIDIAAI/status/2110468004609950057",
+     "start": 14,
+     "url": "https://t.co/5GjFbp1LVs"
+    }
+   ]
+  },
+  "id": "2110478862836433119",
+  "lang": "es",
+  "public_metrics": {
+   "bookmark_count": 3,
+   "impression_count": 6304,
+   "like_count": 66,
+   "quote_count": 0,
+   "reply_count": 8,
+   "retweet_count": 1
+  },
+  "referenced_tweets": [
+   {
+    "id": "2110468004609950057",
+    "type": "quoted"
+   }
+  ],
+  "text": "Nemotron 4??? https://t.co/5GjFbp1LVs"
+ },
+ "2110478117450174805": {
+  "author_id": "3584601",
+  "created_at": "2026-10-14T21:09:28.000Z",
+  "edit_history_tweet_ids": [
+   "2110478117450174805"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/malik_alee6687…",
+     "end": 39,
+     "expanded_url": "https://twitter.com/malik_alee66879/status/2110226088303726969",
+     "start": 16,
+     "url": "https://t.co/SLngFajgQt"
+    }
+   ]
+  },
+  "id": "2110478117450174805",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 0,
+   "impression_count": 1610,
+   "like_count": 2,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 0
+  },
+  "referenced_tweets": [
+   {
+    "id": "2110226088303726969",
+    "type": "quoted"
+   }
+  ],
+  "text": "時給2ドルに怒る人は居ないのか https://t.co/SLngFajgQt"
+ },
+ "2110477466674630843": {
+  "author_id": "39125788",
+  "created_at": "2026-10-14T21:06:53.000Z",
+  "edit_history_tweet_ids": [
+   "2110477466674630843"
+  ],
+  "id": "2110477466674630843",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 3,
+   "impression_count": 11795,
+   "like_count": 147,
+   "quote_count": 4,
+   "reply_count": 36,
+   "retweet_count": 1
+  },
+  "text": "Really feel bad for people named Al (with an l) nowadays, especially given the prevalence of sans serif fonts."
+ },
+ "2110476928524460376": {
+  "author_id": "3584601",
+  "created_at": "2026-10-14T21:04:45.000Z",
+  "edit_history_tweet_ids": [
+   "2110476928524460376"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/okasin405/stat…",
+     "end": 65,
+     "expanded_url": "https://twitter.com/okasin405/status/2110365414182305814",
+     "start": 42,
+     "url": "https://t.co/kTJS5hg1Jl"
+    }
+   ]
+  },
+  "id": "2110476928524460376",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 96,
+   "impression_count": 69476,
+   "like_count": 85,
+   "quote_count": 5,
+   "reply_count": 1,
+   "retweet_count": 2
+  },
+  "referenced_tweets": [
+   {
+    "id": "2110365414182305814",
+    "type": "quoted"
+   }
+  ],
+  "text": "いまどきコマンドラインを使わずにcomputer use使おうとする人いるんだなあ https://t.co/kTJS5hg1Jl"
+ },
+ "2110475263205392558": {
+  "author_id": "3584601",
+  "created_at": "2026-10-14T20:58:08.000Z",
+  "edit_history_tweet_ids": [
+   "2110475263205392558"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/scfkuramitsuha…",
+     "end": 85,
+     "expanded_url": "https://twitter.com/scfkuramitsuha/status/2110458155532730395",
+     "start": 62,
+     "url": "https://t.co/WVHTv6bjsE"
+    }
+   ]
+  },
+  "id": "2110475263205392558",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 0,
+   "impression_count": 1504,
+   "like_count": 2,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 1
+  },
+  "referenced_tweets": [
+   {
+    "id": "2110458155532730395",
+    "type": "quoted"
+   }
+  ],
+  "text": "十軒のピザ屋が全部儲かってる街って東京のどこにあるんだよと思ったらポルトガルだった\nTwitterは国境を越えた井戸端会議 https://t.co/WVHTv6bjsE"
+ },
+ "2110473584317513936": {
+  "author_id": "39125788",
+  "created_at": "2026-10-14T20:51:27.000Z",
+  "edit_history_tweet_ids": [
+   "2110473584317513936"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/TimSweeneyEpic…",
+     "end": 308,
+     "expanded_url": "https://twitter.com/TimSweeneyEpic/status/2109705826688549304",
+     "start": 285,
+     "url": "https://t.co/axcOYvFsy0"
+    }
+   ]
+  },
+  "id": "2110473584317513936",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 44,
+   "impression_count": 18765,
+   "like_count": 350,
+   "quote_count": 2,
+   "reply_count": 46,
+   "retweet_count": 26
+  },
+  "referenced_tweets": [
+   {
+    "id": "2109705826688549304",
+    "type": "quoted"
+   }
+  ],
+  "text": "AI transforming the game industry:\n\nThe Last Masterpiece of the human-only era of game design (GTA 6) is coming. Major studios are going to accelerate with AI. Anon devs &amp; communities doing insane mashups. And indies are stuck with anti-AI customers\n\nOther industries will follow, https://t.co/axcOYvFsy0"
+ },
+ "2110517571149807685": {
+  "author_id": "1034844617261248512",
+  "created_at": "2026-10-14T23:46:15.000Z",
+  "edit_history_tweet_ids": [
+   "2110517571149807685"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "A frontier model that leads on personal and professional agents",
+     "display_url": "go.meta.me/musewonder",
+     "end": 179,
+     "expanded_url": "https://go.meta.me/musewonder",
+     "images": [
+      {
+       "height": 810,
+       "url": "https://pbs.twimg.com/news_img/2109689074894413824/lqF0qtZg?format=jpg&name=orig",
+       "width": 1440
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2109689074894413824/lqF0qtZg?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 156,
+     "status": 200,
+     "title": "Muse Wonder",
+     "unwound_url": "https://research.meta.ai/blog/muse-wonder",
+     "url": "https://t.co/koe89SLQts"
+    },
+    {
+     "display_url": "pic.x.com/mEIYEFD40g",
+     "end": 203,
+     "expanded_url": "https://x.com/AIatMeta/status/2110517571149807685/video/1",
+     "media_key": "13_2110517413968330752",
+     "start": 180,
+     "url": "https://t.co/mEIYEFD40g"
+    }
+   ]
+  },
+  "id": "2110517571149807685",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 11,
+   "impression_count": 8281,
+   "like_count": 73,
+   "quote_count": 4,
+   "reply_count": 22,
+   "retweet_count": 9
+  },
+  "text": "Muse Wonder and Muse Wonder Full deliver SOTA performance on personal and professional agentic tasks. \n\nLearn more about the models on our researcher blog: https://t.co/koe89SLQts https://t.co/mEIYEFD40g"
+ },
+ "2110468004609950057": {
+  "author_id": "740238495952736256",
+  "created_at": "2026-10-14T20:29:17.000Z",
+  "edit_history_tweet_ids": [
+   "2110468004609950057"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "pic.x.com/s5Z9QZ984W",
+     "end": 98,
+     "expanded_url": "https://x.com/NVIDIAAI/status/2110468004609950057/photo/1",
+     "media_key": "16_2110467998591102976",
+     "start": 75,
+     "url": "https://t.co/s5Z9QZ984W"
+    }
+   ]
+  },
+  "id": "2110468004609950057",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 109,
+   "impression_count": 80576,
+   "like_count": 1766,
+   "quote_count": 63,
+   "reply_count": 105,
+   "retweet_count": 113
+  },
+  "text": "So many models launching this week!\nAnd we have one of our own coming...⌛️ https://t.co/s5Z9QZ984W"
+ },
+ "2110456564989809125": {
+  "author_id": "740238495952736256",
+  "created_at": "2026-10-14T19:43:50.000Z",
+  "edit_history_tweet_ids": [
+   "2110456564989809125"
+  ],
+  "entities": {
+   "mentions": [
+    {
+     "end": 48,
+     "id": "2070631956824698880",
+     "start": 36,
+     "username": "JensenHuang"
+    }
+   ],
+   "urls": [
+    {
+     "display_url": "pic.x.com/WiJzEg7uY0",
+     "end": 184,
+     "expanded_url": "https://x.com/NVIDIAAI/status/2110456564989809125/video/1",
+     "media_key": "3_2110456453689757696",
+     "start": 161,
+     "url": "https://t.co/WiJzEg7uY0"
+    },
+    {
+     "display_url": "pic.x.com/WiJzEg7uY0",
+     "end": 184,
+     "expanded_url": "https://x.com/NVIDIAAI/status/2110456564989809125/video/1",
+     "media_key": "3_2110456460882927616",
+     "start": 161,
+     "url": "https://t.co/WiJzEg7uY0"
+    },
+    {
+     "display_url": "pic.x.com/WiJzEg7uY0",
+     "end": 184,
+     "expanded_url": "https://x.com/NVIDIAAI/status/2110456564989809125/video/1",
+     "media_key": "3_2110456467384102912",
+     "start": 161,
+     "url": "https://t.co/WiJzEg7uY0"
+    },
+    {
+     "display_url": "pic.x.com/WiJzEg7uY0",
+     "end": 184,
+     "expanded_url": "https://x.com/NVIDIAAI/status/2110456564989809125/video/1",
+     "media_key": "13_2110456496945565696",
+     "start": 161,
+     "url": "https://t.co/WiJzEg7uY0"
+    }
+   ]
+  },
+  "id": "2110456564989809125",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 5,
+   "impression_count": 7051,
+   "like_count": 143,
+   "quote_count": 1,
+   "reply_count": 4,
+   "retweet_count": 17
+  },
+  "text": "Build-A-Claw London ✅️\nA visit from @JensenHuang ✅️\nA very good day to have a raffle ticket ✅️\n\nThank you to everyone who stopped by!\n\nSee you in the next city. https://t.co/WiJzEg7uY0"
+ },
+ "2110442001749659890": {
+  "author_id": "4398626122",
+  "created_at": "2026-10-14T18:45:57.000Z",
+  "edit_history_tweet_ids": [
+   "2110442001749659890"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "pic.x.com/m9LrrwNSo8",
+     "end": 299,
+     "expanded_url": "https://x.com/OpenAI/status/2110442001749659890/photo/1",
+     "media_key": "3_2110438471085293568",
+     "start": 276,
+     "url": "https://t.co/m9LrrwNSo8"
+    }
+   ]
+  },
+  "id": "2110442001749659890",
+  "lang": "en",
+  "note_tweet": {
+   "entities": {
+    "urls": [
+     {
+      "display_url": "openai.com/index/the-eus-…",
+      "end": 404,
+      "expanded_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
+      "start": 381,
+      "url": "https://t.co/jUjCF5sW0B"
+     }
+    ]
+   },
+   "text": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report explores Europe’s shift toward agentic AI—and the opportunity to turn broader adoption into deeper use.\n\nhttps://t.co/jUjCF5sW0B"
+  },
+  "public_metrics": {
+   "bookmark_count": 264,
+   "impression_count": 215561,
+   "like_count": 1816,
+   "quote_count": 78,
+   "reply_count": 338,
+   "retweet_count": 127
+  },
+  "text": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report https://t.co/m9LrrwNSo8"
+ },
+ "2110441716507693450": {
+  "author_id": "1034844617261248512",
+  "created_at": "2026-10-14T18:44:49.000Z",
+  "edit_history_tweet_ids": [
+   "2110441716507693450"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "pic.x.com/jQyYt6VL2J",
+     "end": 301,
+     "expanded_url": "https://x.com/AIatMeta/status/2110441716507693450/video/1",
+     "media_key": "13_2110440851360878593",
+     "start": 278,
+     "url": "https://t.co/jQyYt6VL2J"
+    }
+   ]
+  },
+  "id": "2110441716507693450",
+  "lang": "en",
+  "note_tweet": {
+   "entities": {
+    "urls": [
+     {
+      "display_url": "go.meta.me/3U06wvD",
+      "end": 936,
+      "expanded_url": "https://go.meta.me/3U06wvD",
+      "start": 913,
+      "url": "https://t.co/26l6Du6vIk"
+     }
+    ]
+   },
+   "text": "We’re exploring how AI can accelerate health science research.\n\nWhile AI has made significant breakthroughs in formal sciences like mathematics, health data science depends on imperfect real-world data and consequential choices about cohorts, variables, and causal assumptions.\n\nTo explore how AI can assist health researchers, we built a human-led research scaffold powered by Muse Spark 1.3 and Muse Wonder with access to 5M retrospective de-identified electronic health records and publicly available data. A cohort of medical experts used the system to conduct original research, accelerate hypothesis generation, code execution, and manuscript drafting while maintaining full authority over scientific decisions.\n\nToday, we’re sharing 10 research manuscripts produced through this exploration, spanning cardiology, oncology, infectious disease, emergency medicine, and more.\n\nRead more in our research blog: https://t.co/26l6Du6vIk"
+  },
+  "public_metrics": {
+   "bookmark_count": 147,
+   "impression_count": 90645,
+   "like_count": 396,
+   "quote_count": 33,
+   "reply_count": 35,
+   "retweet_count": 64
+  },
+  "text": "We’re exploring how AI can accelerate health science research.\n\nWhile AI has made significant breakthroughs in formal sciences like mathematics, health data science depends on imperfect real-world data and consequential choices about cohorts, variables, and causal assumptions. https://t.co/jQyYt6VL2J"
  }
 }

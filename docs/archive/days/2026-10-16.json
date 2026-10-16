@@ -2,6 +2,204 @@
  "date": "2026-10-16",
  "items": [
   {
+   "id": "7466ea5cdb",
+   "verdict": "confirmed",
+   "title": "NVIDIAが画像生成モデル「FLUX 3 Image Klein」の対応を発表",
+   "summary": "NVIDIA公式AIアカウントは、画像生成AI「FLUX 3 Image Klein」（5.6Bパラメータ）について、NVIDIA GB200 NVL72で学習され、RTX GPUで動作すると投稿した。NVFP4版も公開されたと案内している。日本の開発者npaka123氏は、画像・動画生成AIのリリース年表に「FLUX 3 Image Klein」と「Krea 3」を追加したと投稿している。",
+   "points": [
+    "新しい点は、学習にNVIDIAの大型システムを使い、一般的なRTX GPUで動作する点。手元のPCで動かせる可能性を示す。",
+    "NVFP4は数値を小さく表現する形式とみられ、動作の軽さに関係するとみられる（投稿に性能数値はなし）。",
+    "FLUXの開発元はBlack Forest Labsとみられ、NVIDIAは謝辞を述べている。実際の画質や速度は投稿からは判断できない。"
+   ],
+   "terms": [
+    {
+     "term": "RTX GPU",
+     "desc": "NVIDIAのグラフィックス（GPU）製品群。ゲーミングPCなどにも搭載される。"
+    },
+    {
+     "term": "NVFP4",
+     "desc": "AIの計算を軽くするための数値形式の一つ。メモリや計算量を減らす狙いがあるとみられる。"
+    },
+    {
+     "term": "パラメータ（5.6B）",
+     "desc": "モデル内部の調整数値の総数。5.6Bは約56億個を指す。"
+    }
+   ],
+   "score": 97,
+   "credibility": 100,
+   "heat": 55,
+   "first_seen": "2026-10-15T21:51:01.000Z",
+   "latest": "2026-10-15T23:38:49.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/tree/main/variants/nvfp4",
+     "domain": "huggingface.co",
+     "primary": true
+    },
+    {
+     "url": "https://note.com/npaka/n/ndb5f2491e4a6?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110878089916121333",
+    "username": "NVIDIAAI",
+    "text": "Can’t stop, won’t stop. The open models keep dropping\n\nFLUX 3 Image Klein 5.6B was trained on NVIDIA GB200 NVL72 and can run on an RTX GPU.\n\nBig 🙌 to the @bfl_ai team. There's also an NVFP4 variant: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7",
+    "text_ja": "止まらない、止められない。オープンモデルが次々と登場している。\n\nFLUX 3 Image Klein 5.6Bは NVIDIA GB200 NVL72 で学習され、RTX GPUで動作する。\n\n@bfl_ai チームに大きな拍手 🙌 NVFP4版もあるよ: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7"
+   },
+   "post_ids": [
+    "2110878089916121333",
+    "2110858798663643530",
+    "2110850961715696089"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
+   "id": "5295647543",
+   "verdict": "confirmed",
+   "title": "NVIDIAが画像・動画理解も扱う「Nemotron 3.5 Super VL」を発表",
+   "summary": "NVIDIA公式AIアカウントは、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。推論とツール利用に加え、テキスト・画像・文書・動画の理解を組み合わせ、長時間動くAIエージェント向けとしている。仕様は総パラメータ120B、うち有効12Bとされる。日本の開発者npaka123氏は、ローカルLLMのリリース年表に「Muse Spark Open」「Nemotron 3.5 Super VL」「Nemotron 3.5 Bolt 74B-A9B」「Bonsai 2」などを追加したと投稿している。",
+   "points": [
+    "新しい点は、文章だけでなく画像・文書・動画も理解し、ツールを使いながら長い作業を続けるエージェント用途を狙っていること。",
+    "120Bのうち12Bだけが動く構成（MoE型とみられる）。大きなモデルを比較的少ない計算量で動かす設計とみられる。",
+    "性能比較や公開先は投稿からは確認できない。ベンチマーク結果は公式資料での確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "エージェント（AIエージェント）",
+     "desc": "目標に向けて、自分で計画し道具を使いながら複数の作業を進めるAIのこと。"
+    },
+    {
+     "term": "ツール利用",
+     "desc": "AIが検索や計算、外部ソフトなどの道具を呼び出して作業すること。"
+    },
+    {
+     "term": "MoE（専門家の混合）",
+     "desc": "複数の専門家ブロックのうち、一部だけを動かして計算量を抑える構造。"
+    }
+   ],
+   "score": 96,
+   "credibility": 90,
+   "heat": 67,
+   "first_seen": "2026-10-15T15:09:11.000Z",
+   "latest": "2026-10-15T21:46:36.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n1d99253ae2cf?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+    "username": "NVIDIAAI",
+    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
+    "text_ja": "NVIDIA Nemotron 3.5 Super VL を紹介します\n\n新しいオープンモデルで、推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせ、長時間動作するAIエージェント向けに設計されています。\n\n総パラメータ数120B、アクティブパラメータ12B 🧵 https://t.co/BcbED05qSG"
+   },
+   "post_ids": [
+    "2110749836450713896",
+    "2110849847607836739"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
+   "id": "87ce596b06",
+   "verdict": "confirmed",
+   "title": "OpenAIが生命科学向け「GPT-Rosalind」の学術向けプランを発表",
+   "summary": "OpenAI公式アカウントは、生命科学向けAI「GPT-Rosalind」の利用を学術研究向けに広げると発表した。新たに「Rosalind Academic Plan」を用意し、米国の大学に所属する対象の研究室には後援（スポンサード）による利用を提供するとしている。生物学の理解や仮説の検討、次に行う実験の判断などに役立てる狙いが示されている。",
+   "points": [
+    "新しい点は、研究室向けの専用プランと、対象となる米国大学の研究室への後援付き利用が用意されたこと。",
+    "対象は米国の大学の研究室とされ、日本の研究者が利用できるかは投稿からは分からない。",
+    "AIが実際に研究成果や医療にどれだけ貢献するかは未知数。投稿も「影響には数年かかる」としている。"
+   ],
+   "terms": [
+    {
+     "term": "GPT-Rosalind",
+     "desc": "OpenAIの生命科学・生物学分野向けに提供されるAIとみられる（投稿から詳細は不明）。"
+    },
+    {
+     "term": "後援（スポンサード）アクセス",
+     "desc": "スポンサー（資金提供者）が費用を負担し、対象者が無料または割安で使える仕組み。"
+    }
+   ],
+   "score": 92,
+   "credibility": 90,
+   "heat": 71,
+   "first_seen": "2026-10-15T21:15:00.000Z",
+   "latest": "2026-10-15T21:15:00.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2110841898076418336",
+    "username": "OpenAI",
+    "text": "We're expanding access to GPT-Rosalind for academic research.\n\nThe new Rosalind Academic Plan helps scientific labs bring AI into the work of understanding biology, exploring ideas, and deciding what to test next—with sponsored access for eligible labs at U.S. universities.\n\nAcademic research starts with questions whose impact may take years to impact human health.",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110841898076418336"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
    "id": "09e2adae1b",
    "verdict": "confirmed",
    "title": "AnthropicがMETRを含む第三者評価機関との協力を発表",
@@ -21,9 +219,9 @@
      "desc": "開発企業とは独立した外部機関が、AIの安全性や性能を検査すること。"
     }
    ],
-   "score": 100,
+   "score": 91,
    "credibility": 100,
-   "heat": 75,
+   "heat": 53,
    "first_seen": "2026-10-15T17:27:34.000Z",
    "latest": "2026-10-15T17:27:34.000Z",
    "authors": [
@@ -57,33 +255,192 @@
     "2110784662071398807"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
-   "id": "9720880a0c",
+   "id": "0e004fa107",
    "verdict": "confirmed",
-   "title": "NVIDIAが新オープンモデル「Nemotron 3.5 Super VL」を発表",
-   "summary": "NVIDIAの公式AIアカウントは、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。推論とツール利用に加え、テキスト・画像・文書・動画の理解を組み合わせ、長時間動くAIエージェント向けとしている。総パラメータは120B、うち12Bが稼働する仕様が示された。",
+   "title": "AnthropicがSimons Foundationと数学研究へ500万ドルを拠出",
+   "summary": "Anthropic公式アカウントは、AIを数学研究や科学全般でどう使うかを支援するため、500万ドル相当の資金・計算資源・Claudeへのアクセスを提供すると発表した。運営はSimons Foundationが担い、コミュニティ主導でワークショップ、会議、専門家による講義などを支援するとしている。",
    "points": [
-    "長時間動くAIエージェントは、複数の作業を自動で続けて行うAIを指す。",
-    "総パラメータ120B・稼働12Bは、一部だけを使って動かす設計（MoE方式とみられる）を示す可能性がある。",
-    "性能の比較データは投稿に含まれていない。"
+    "新しい点は、数学コミュニティへの資金・計算資源・Claude提供を、外部財団と組んで行うこと。",
+    "研究者にとっては、AIを使った数学研究の機会が広がる可能性がある。ただし具体的な公募条件は投稿からは不明。",
+    "「500万ドル」の内訳（資金・計算資源・アクセスの割合）は投稿に明記されていない。"
    ],
    "terms": [
     {
-     "term": "オープンモデル",
-     "desc": "重みなどが公開され、誰でも利用・改変できるAIモデル。"
+     "term": "Simons Foundation",
+     "desc": "数学・基礎科学への支援で知られる米国の非営利財団。"
     },
     {
-     "term": "マルチモーダル",
-     "desc": "テキスト・画像・音声・動画など複数種類の情報を扱えるAIの性質。"
+     "term": "計算資源（コンピュート）",
+     "desc": "AIの学習や計算に使う処理能力のこと。"
     }
    ],
-   "score": 96,
+   "score": 91,
    "credibility": 90,
-   "heat": 81,
-   "first_seen": "2026-10-15T15:09:11.000Z",
-   "latest": "2026-10-15T15:09:11.000Z",
+   "heat": 67,
+   "first_seen": "2026-10-15T21:31:45.000Z",
+   "latest": "2026-10-15T21:31:45.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110846112152105136",
+    "username": "AnthropicAI",
+    "text": "Working out how best to use AI in mathematics research—and in science more generally—will take time, effort, and resources. We’re eager to support mathematicians as they drive scientific progress and define the future of their field.\n\nWe’ve committed $5 million of funding, compute, and Claude access to help the math community navigate the massive changes that AI brings. We’re partnering with @SimonsFdn, who will manage the award through a community-driven approach, supporting workshops, conferen",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110846112152105136"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
+   "id": "d9767b8952",
+   "verdict": "confirmed",
+   "title": "Meta「Omnilingual ASR」がTIME誌の2026年ベスト発明に選出",
+   "summary": "Metaは公式アカウントで、同社の音声認識モデル「Meta Omnilingual Automatic Speech Recognition（ASR）」がTIME誌の「2026年のベスト発明」の一つに選ばれたと発表した。同モデル群は1,600以上の言語の音声認識に対応し、そのうち500の低リソース言語は、これまでどのASRシステムも対応していなかったとしている。",
+   "points": [
+    "多くの音声認識はインターネット上で資料の多い言語に限られており、本件はより多様な言語に対応する点が特徴とされる。",
+    "低リソース言語の音声を文字にできるようになれば、少数言語話者の情報アクセスや記録保存に役立つ可能性がある。",
+    "TIMEの選出は編集部の評価であり、性能の客観的な比較結果ではない。実際の認識精度は言語ごとに確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "ASR（自動音声認識）",
+     "desc": "人の話し声を自動的に文字に変換する技術。"
+    },
+    {
+     "term": "低リソース言語",
+     "desc": "インターネット上のデータや研究が少なく、AIの学習材料が乏しい言語のこと。"
+    }
+   ],
+   "score": 89,
+   "credibility": 93,
+   "heat": 57,
+   "first_seen": "2026-10-15T22:30:57.000Z",
+   "latest": "2026-10-15T22:32:35.000Z",
+   "authors": [
+    "AIatMeta"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://time.com/collection/best-inventions/2026/meta-omnilingual-asr/",
+     "domain": "time.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2110861420321759269",
+    "username": "AIatMeta",
+    "text": "We’re proud to share that Meta Omnilingual Automatic Speech Recognition (ASR) has been named one of @TIME’s Best Inventions of 2026!\n\nMeta Omnilingual ASR is a suite of models providing ASR capabilities for over 1,600 languages, including 500 low-coverage languages never before served by any ASR system.\n\nWhile most ASR systems focus on a limited set of languages that are well-represented on the internet, this release marked a major step toward building a truly universal transcription system.\n\nLe",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110861420321759269",
+    "2110861010496315632"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
+   "id": "c841955662",
+   "verdict": "confirmed",
+   "title": "OpenAI、Codexでハードウェア作品を共有できるサイトを公開",
+   "summary": "OpenAIの開発者向け公式アカウントは、コミュニティのハードウェア作品を探索したり、自分の作品を共有したりできるサイトを公開したと投稿した。Codexを使って「何でも作れる」ことを示す狙いとみられる。投稿には公開サイトへのリンクのみで、詳細な機能や規模は示されていない。",
+   "points": [
+    "AIコーディングツールを使い、ハードウェア作品まで作る事例を集める場として位置づけられている。",
+    "ソフトウェア開発者だけでなく、電子工作などを行う人にも関係する可能性がある。",
+    "投稿からは対象範囲や利用条件は分からない。詳細はサイトで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのAIがプログラムを書いたり修正したりするツール。"
+    },
+    {
+     "term": "ハードウェアプロジェクト",
+     "desc": "電子回路や機械など、実体のある製品・装置を作る取り組みのこと。"
+    }
+   ],
+   "score": 89,
+   "credibility": 90,
+   "heat": 62,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-15T22:08:31.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
+    "username": "OpenAIDevs",
+    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110855363616763922"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
+   "id": "131c40eede",
+   "verdict": "confirmed",
+   "title": "NVIDIAのNemoClaw、TIME誌の2026年ベスト発明に選出",
+   "summary": "NVIDIAのAI公式アカウントは、同社の「NemoClaw」がTIME誌の「2026年のベスト発明」に選ばれたと発表した。投稿では、より安全なAIエージェントを開発する取り組みに関わったチームへの謝意も示している。",
+   "points": [
+    "安全なAIエージェントの構築を支援する取り組みとして紹介されている。",
+    "選出はTIME誌の編集部による評価で、性能や安全性を客観的に検証したものではない。",
+    "NemoClawの具体的な機能や提供状況は、投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人に代わって目標に向けて自律的に作業するAIのこと。"
+    }
+   ],
+   "score": 82,
+   "credibility": 93,
+   "heat": 41,
+   "first_seen": "2026-10-15T22:06:23.000Z",
+   "latest": "2026-10-15T22:06:23.000Z",
    "authors": [
     "NVIDIAAI"
    ],
@@ -98,18 +455,80 @@
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
    "evidence_note": "NVIDIA公式アカウントの発表",
-   "links": [],
+   "links": [
+    {
+     "url": "https://time.com/collection/best-inventions/2026/nvidia-nemoclaw/",
+     "domain": "time.com",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+    "url": "https://x.com/NVIDIAAI/status/2110854828469686328",
     "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
-    "text_ja": "NVIDIA Nemotron 3.5 Super VL を紹介します\n\n新しいオープンモデルで、推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせ、長時間動作するAIエージェント向けに設計されています。\n\n総パラメータ数120B、アクティブパラメータ12B 🧵 https://t.co/BcbED05qSG"
+    "text": "NemoClaw was just named one of TIME’s Best Inventions of 2026! 🦞\n\nSo proud of the team and shoutout to everyone building safer AI agents with us.\n\nBlurb on @TIME: https://t.co/EY5S9htCn5 https://t.co/G3vo2N3RPP https://t.co/pfujQ9Rjcs",
+    "text_ja": null
    },
    "post_ids": [
-    "2110749836450713896"
+    "2110854828469686328"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
+  },
+  {
+   "id": "f14c799367",
+   "verdict": "promising",
+   "title": "ハーネス付きの高性能モデルで既存の難しいベンチマークが役目を終えつつある",
+   "summary": "Wharton校のEthan Mollick教授は、ツール連携などの「ハーネス」と高性能モデルの組み合わせにより、METR Long Tasks、GDPval、ARC-AGI-3といった難易度の高いベンチマークが意味を失いつつあると投稿した。長時間の作業、正確な数式を含む文書作成、新規パズルの解決が可能になったことを理由に挙げている。",
+   "points": [
+    "長時間の作業や文書作成など、評価指標が実態に追いつかなくなったことが話題になっている",
+    "ベンチマークが『使い切られた』ことで、新しい評価方法の必要性が高まるとみられる",
+    "教授個人の感想で、各ベンチマークの最新結果や数値の根拠は投稿に示されていない"
+   ],
+   "terms": [
+    {
+     "term": "ハーネス",
+     "desc": "AIモデルに道具や手順を組み合わせて動かす仕組みのこと"
+    },
+    {
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ問題で比べるための共通テスト"
+    },
+    {
+     "term": "ARC-AGI-3",
+     "desc": "新しいパズルを解く能力を測るとされるAIの評価テスト"
+    }
+   ],
+   "score": 70,
+   "credibility": 70,
+   "heat": 49,
+   "first_seen": "2026-10-15T23:29:55.000Z",
+   "latest": "2026-10-15T23:29:55.000Z",
+   "authors": [
+    "emollick"
+   ],
+   "author_labels": [
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
+     "former": ""
+    }
+   ],
+   "evidence": "official_evaluation",
+   "evidence_label": "公式評価",
+   "evidence_note": "METRの評価の紹介",
+   "links": [],
+   "post": {
+    "url": "https://x.com/emollick/status/2110875851600633956",
+    "username": "emollick",
+    "text": "Harnesses + smart models = the end of the last famous hard benchmarks.\n\nModels can now work for extremely long times (bye, METR Long Tasks), they can output professional documents with correct math (so long, GDPval) and they can solve complex novel puzzles (farewell, ARC-AGI-3). https://t.co/WSd5e0IfKi",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110875851600633956"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-16T00:31:05Z"
   }
  ]
 }

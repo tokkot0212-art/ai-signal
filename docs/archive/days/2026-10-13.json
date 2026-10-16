@@ -2,111 +2,6 @@
  "date": "2026-10-13",
  "items": [
   {
-   "id": "c093697c85",
-   "verdict": "confirmed",
-   "title": "Metaが open-weight モデル「Muse Spark Open」を公開",
-   "summary": "Metaは公式アカウントで、米国製として最も高性能なopen-weightモデル「Muse Spark Open」を公開したと発表した。投稿によると、816Bの総パラメータ（うち42Bが稼働）、100万トークンの文脈長、テキスト・画像・動画・音声を扱えるマルチモーダル対応をうたっている。あわせて、同社の「Muse Wonder」および「Muse Wonder Full」の性能も紹介された。",
-   "points": [
-    "open-weightは重みが公開され、誰でもダウンロードして利用・改変できるモデル形式。",
-    "総パラメータ816B・稼働42Bは、全体は巨大だが1回の処理で動く部分は一部という意味（MoE方式とみられる）。",
-    "性能の数値や比較の詳細は投稿に示されておらず、第三者による検証は今後の確認事項。"
-   ],
-   "terms": [
-    {
-     "term": "open-weight",
-     "desc": "学習済みの重みが公開され、誰でも手元で動かせるAIモデルの形式。"
-    },
-    {
-     "term": "パラメータ",
-     "desc": "AIモデルの内部にある調整可能な数値の総数。規模の目安になる。"
-    },
-    {
-     "term": "コンテキストウィンドウ",
-     "desc": "AIが一度に読み取って扱える文章量。100万トークンは長文を一度に扱えることを示す。"
-    }
-   ],
-   "score": 100,
-   "credibility": 93,
-   "heat": 88,
-   "first_seen": "2026-10-12T18:34:00.000Z",
-   "latest": "2026-10-15T17:25:17.000Z",
-   "authors": [
-    "AIatMeta",
-    "natolambert",
-    "itmedia_news",
-    "emollick",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "AIatMeta",
-     "label": "Meta公式アカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "natolambert",
-     "label": "Trillium Labs創設者・オープンモデル",
-     "type": "researcher",
-     "former": "元Ai2 Olmo共同リード"
-    },
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "emollick",
-     "label": "Wharton教授",
-     "type": "researcher",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Meta公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://research.meta.ai/blog/muse-wonder",
-     "domain": "research.meta.ai",
-     "primary": false
-    },
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002197/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/nfe5f74b3e07c?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AIatMeta/status/2110779754274292212",
-    "username": "AIatMeta",
-    "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
-    "text_ja": "本日、Muse Spark Openを公開します。米国のopen-weightモデルとして現時点で最も高性能です。\n\nコーディングやエージェント的な作業向けに作られており、長時間のタスク、複雑なソフトウェア開発、多段階の推論に優れています。\n\n主な仕様:\n→ 総パラメータ816B／稼働パラメータ42B\n→ 100万トークンのコンテキストウィンドウ\n→ テキスト、画像、動画、音声をネイティブに扱うマルチモーダル対応"
-   },
-   "post_ids": [
-    "2110779754274292212",
-    "2110517571149807685",
-    "2110784087745253671",
-    "2109768598592106935",
-    "2109714218014667039",
-    "2109787238481678447"
-   ],
-   "post_count": 6,
-   "archived_at": "2026-10-15T17:49:10Z"
-  },
-  {
    "id": "e2095d0c4c",
    "verdict": "confirmed",
    "title": "Anthropic、蒸留攻撃への対策を進めたと発表",
@@ -184,6 +79,80 @@
    ],
    "post_count": 3,
    "archived_at": "2026-10-15T17:49:10Z"
+  },
+  {
+   "id": "22948fd2ce",
+   "verdict": "confirmed",
+   "title": "Metaが公開重み型モデル「Muse Spark Open」を発表",
+   "summary": "Metaは公式アカウントで、オープンウェイト（重みを公開する形式）のAIモデル「Muse Spark Open」を公開したと発表した。投稿によると、コーディングやエージェント的作業向けで、総パラメータ816B（有効42B）、コンテキスト1Mトークン、テキスト・画像・動画・音声に対応するとされる。あわせて「Muse Wonder」「Muse Wonder Full」についても、個人・業務向けエージェント課題で高い性能を示すとし、研究者向けブログで詳細を案内している。",
+   "points": [
+    "新しい点は、米国製のオープンウェイトモデルとして高性能を掲げたこと。コーディングや長時間の多段階作業が強みとされる。",
+    "パラメータ816B・有効42Bは、全体は大きいが一度に動く部分は小さい構成（MoE型とみられる）。自社で動かすには大きな計算資源が必要とみられる。",
+    "「最も高性能」という主張は投稿の自己申告。ベンチマーク名や比較対象は投稿からは確認できず、ブログでの確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイト",
+     "desc": "AIモデルの学習済みパラメータ（重み）を公開し、誰でもダウンロードして使えるモデルのこと。"
+    },
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルの内部にある調整可能な数値。多いほど大規模なモデルとされる。"
+    },
+    {
+     "term": "コンテキストウィンドウ",
+     "desc": "AIが一度に読み書きできる文章の長さ。1Mトークンは非常に長い文書を扱えることを示す。"
+    }
+   ],
+   "score": 97,
+   "credibility": 93,
+   "heat": 66,
+   "first_seen": "2026-10-12T18:34:00.000Z",
+   "latest": "2026-10-15T17:25:17.000Z",
+   "authors": [
+    "AIatMeta",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://research.meta.ai/blog/muse-wonder",
+     "domain": "research.meta.ai",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2110779754274292212",
+    "username": "AIatMeta",
+    "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
+    "text_ja": "本日、Muse Spark Openを公開します。米国のopen-weightモデルとして現時点で最も高性能です。\n\nコーディングやエージェント的な作業向けに作られており、長時間のタスク、複雑なソフトウェア開発、多段階の推論に優れています。\n\n主な仕様:\n→ 総パラメータ816B／稼働パラメータ42B\n→ 100万トークンのコンテキストウィンドウ\n→ テキスト、画像、動画、音声をネイティブに扱うマルチモーダル対応"
+   },
+   "post_ids": [
+    "2109768598592106935",
+    "2109714218014667039",
+    "2109787238481678447",
+    "2110779754274292212",
+    "2110517571149807685",
+    "2110784087745253671"
+   ],
+   "post_count": 6,
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "3296cf31fc",
@@ -375,9 +344,9 @@
      "desc": "地球の周りを回る衛星などが存在する宇宙空間のこと。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 85,
-   "heat": 30,
+   "heat": 28,
    "first_seen": "2026-10-13T13:25:20.000Z",
    "latest": "2026-10-13T13:25:20.000Z",
    "authors": [
@@ -405,7 +374,7 @@
     "2109998925037859091"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "0b4f8b090e",
@@ -425,7 +394,7 @@
    ],
    "score": 70,
    "credibility": 90,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-10-13T13:41:33.000Z",
    "latest": "2026-10-13T13:41:33.000Z",
    "authors": [
@@ -453,7 +422,7 @@
     "2110003005911101714"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "be3bb5556c",
@@ -641,7 +610,7 @@
    ],
    "score": 67,
    "credibility": 78,
-   "heat": 38,
+   "heat": 37,
    "first_seen": "2026-10-13T13:50:09.000Z",
    "latest": "2026-10-13T13:50:09.000Z",
    "authors": [
@@ -675,7 +644,7 @@
     "2110005170826629187"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "33dfa97f70",
@@ -699,7 +668,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-13T09:25:09.000Z",
    "latest": "2026-10-13T09:25:09.000Z",
    "authors": [
@@ -733,7 +702,7 @@
     "2109938481384604128"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "21a548a5f6",
@@ -757,7 +726,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-13T07:40:08.000Z",
    "latest": "2026-10-13T07:40:08.000Z",
    "authors": [
@@ -791,7 +760,7 @@
     "2109912052215304580"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "44d0ca5907",
@@ -810,7 +779,7 @@
    ],
    "score": 55,
    "credibility": 78,
-   "heat": 8,
+   "heat": 7,
    "first_seen": "2026-10-13T04:20:07.000Z",
    "latest": "2026-10-13T04:20:07.000Z",
    "authors": [
@@ -844,7 +813,7 @@
     "2109861717916479826"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-15T17:49:10Z"
+   "archived_at": "2026-10-16T00:31:05Z"
   },
   {
    "id": "9c570fa7be",

@@ -25,9 +25,9 @@
      "desc": "人の指示を受けて自律的に作業を進めるAIのこと"
     }
    ],
-   "score": 96,
+   "score": 95,
    "credibility": 100,
-   "heat": 64,
+   "heat": 62,
    "first_seen": "2026-10-13T16:36:41.000Z",
    "latest": "2026-10-13T16:36:41.000Z",
    "authors": [
@@ -61,35 +61,42 @@
     "2110047081414987957"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
-   "id": "c6fcfd5593",
+   "id": "f6a7055fd3",
    "verdict": "confirmed",
-   "title": "Google DeepMind、「Gemini 4 Argon」を世界で提供開始",
-   "summary": "Google DeepMindは公式アカウントで、新モデル「Gemini 4 Argon」が世界的に利用可能になったと発表した。同社は、コーディング、企業向け業務、サイバー防御など幅広い分野で最先端の性能を備えると説明している。投稿には具体的な性能数値は示されていない。",
+   "title": "Googleの「Gemini 4 Argon」、ロボット学習や3Dモデル作成の事例を公開",
+   "summary": "Google DeepMindは、新モデル「Gemini 4 Argon」が動画を見るだけでヒューマノイドロボットに投げ玉遊びを学習させた事例を投稿した。投稿によると、ロボットは7回連続で投げ入れに成功したという。別の投稿では、プログラマーのnpaka123氏が同モデルとAntigravityを使い、Blenderで3Dモデルを作る試用結果を紹介している。",
    "points": [
-    "コーディング・企業業務・サイバー防御の3分野が挙げられており、対象範囲の広さが特徴とみられる。",
-    "企業のIT部門や開発者にとって、業務支援AIの選択肢が増える点が関係しそう。",
-    "投稿では性能指標や料金、利用条件が示されていないため、実際の能力は公式資料や第三者評価で確認が必要。"
+    "動画を見るだけでロボットが動作を学んだという点が特徴とされるが、学習の詳細や再現条件は投稿からは分からない。",
+    "試用例は開発元の選んだデモと、個人の試用結果が混在している。性能の一般的な傾向を示すには、より多くの検証が必要。",
+    "Antigravityは投稿中に名前のみ登場する開発環境とみられるが、詳細は未確認。"
    ],
    "terms": [
     {
-     "term": "フロンティア性能",
-     "desc": "その時点で世界最高水準にある、最先端のAIの性能のこと。"
+     "term": "ヒューマノイド",
+     "desc": "人間に近い形をしたロボット。"
     },
     {
-     "term": "サイバー防御",
-     "desc": "サイバー攻撃を検知・防ぐための仕組みや対策のこと。"
+     "term": "Blender",
+     "desc": "無料で使える3DCG（3次元モデル）制作ソフト。"
+    },
+    {
+     "term": "Antigravity",
+     "desc": "投稿に登場する開発環境の名前。詳細は投稿からは分からない。"
     }
    ],
-   "score": 84,
+   "score": 91,
    "credibility": 90,
-   "heat": 51,
-   "first_seen": "2026-10-13T16:05:40.000Z",
-   "latest": "2026-10-13T16:05:40.000Z",
+   "heat": 40,
+   "first_seen": "2026-10-13T16:57:33.000Z",
+   "latest": "2026-10-16T07:06:56.000Z",
    "authors": [
-    "GoogleDeepMind"
+    "GoogleDeepMind",
+    "ai_database",
+    "npaka123",
+    "emollick"
    ],
    "author_labels": [
     {
@@ -97,23 +104,220 @@
      "label": "Google DeepMind公式アカウント",
      "type": "official",
      "former": ""
+    },
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    },
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "公式デモと個人の試用結果",
+   "links": [
+    {
+     "url": "https://formwork-city.netlify.app/Fable",
+     "domain": "formwork-city.netlify.app",
+     "primary": false
+    },
+    {
+     "url": "https://brut-city.netlify.app/",
+     "domain": "brut-city.netlify.app",
+     "primary": false
+    },
+    {
+     "url": "https://rainbow-panda-689e6b.netlify.app/",
+     "domain": "rainbow-panda-689e6b.netlify.app",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2110078384617464201",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon taught a robot to play cornhole just by watching a video.\n\nIt mapped the physics, coded its own simulation, and taught @Apptronik's Apollo humanoid to sink 7 throws in a row. https://t.co/JIyoKnVc4q",
+    "text_ja": "Gemini 4 Argonは、動画を見るだけでロボットに投げ玉（コーンホール）を教えました。\n\n物理法則を把握し、自分でシミュレーションを書き、@Apptronik の Apollo ヒューマノイドに7回連続で投げ入れさせました。"
+   },
+   "post_ids": [
+    "2110078384617464201",
+    "2110421861435879476",
+    "2110957608182108298",
+    "2110990860192219385",
+    "2110987470737485952",
+    "2110052331702124894",
+    "2110988138046960008",
+    "2110957045252022393"
+   ],
+   "post_count": 8,
+   "archived_at": "2026-10-16T08:20:41Z"
+  },
+  {
+   "id": "536c1eff2c",
+   "verdict": "confirmed",
+   "title": "Gemini 4 Argonが一般公開、Ultra・Proの加入者向けに展開",
+   "summary": "Google DeepMindのハサビス共同創設者・会長は、Gemini 4 Argonがナレッジワークやコーディングに優れると述べ、ウィザードのチェスゲームを作らせた例を紹介した。また同氏は、Argonが本日からGoogle UltraとProの加入者向けにGeminiアプリや検索で、Ultra加入者向けにAntigravityで展開されると投稿した。Hugging Faceは投復号化の高速化手法をテーマにしたライブ配信を告知している。",
+   "points": [
+    "投機的デコーディング（speculative decoding）は、小さなモデルで先読みして高速化する手法とされ、解説のライブ配信が告知されている。",
+    "提供対象はプランごとに異なるため、自分が使えるかは公式ブログで確認が必要。",
+    "チェスゲームの例は開発者本人の発言で、どの程度の品質かは投稿だけでは判断できない。"
+   ],
+   "terms": [
+    {
+     "term": "Google Ultra / Pro",
+     "desc": "Googleの有料AIサービスの契約プラン名。"
+    },
+    {
+     "term": "投機的デコーディング",
+     "desc": "小さなモデルで次の語を先読みし、AIの応答を速くする手法とされる。"
+    },
+    {
+     "term": "Hugging Face",
+     "desc": "AIモデルやデータを共有・公開するプラットフォーム。"
+    }
+   ],
+   "score": 86,
+   "credibility": 88,
+   "heat": 45,
+   "first_seen": "2026-10-13T16:12:33.000Z",
+   "latest": "2026-10-14T12:41:35.000Z",
+   "authors": [
+    "demishassabis",
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "demishassabis",
+     "label": "Google DeepMind共同創設者・会長",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式アカウントの発表",
-   "links": [],
+   "evidence_note": "公式発表（公式ブログへの案内）",
+   "links": [
+    {
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+     "domain": "blog.google",
+     "primary": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
+     "domain": "youtube.com",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2110039274922131792",
-    "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon is now globally available.\n\nBuilt to solve your hardest problems from start to finish, the model brings frontier capabilities across coding, enterprise workflows, and cyber defense. https://t.co/N8tOQjwk0x",
-    "text_ja": "Gemini 4 Argonが世界で利用可能になりました。\n\n最も難しい課題を最初から最後まで解決するために作られたこのモデルは、コーディング、企業ワークフロー、サイバー防御にわたる最先端の能力を備えています。 https://t.co/N8tOQjwk0x"
+    "url": "https://x.com/demishassabis/status/2110041008100843835",
+    "username": "demishassabis",
+    "text": "Gemini 4 Argon is amazing for knowledge work and coding - and it’s super fun to build with! We asked it to create this wizard chess game and it's so cool to see Argon's physics understanding & 3D modelling capabilities, makes me nostalgic for Battlechess on the Amiga - fun times!\n\nArgon is rolling out today to Google Ultra and Pro subscribers in the @GeminiApp and Search, and Ultra subscribers in @antigravity! More info & full availability in the blog: https://t.co/7d3791mRNH",
+    "text_ja": "Gemini 4 Argonはナレッジワークやコーディングで素晴らしく、構築するのもとても楽しいです！ウィザードのチェスゲームを作らせてみたところ、Argonの物理理解と3Dモデリング能力がよく分かり、Amigaの『Battlechess』を思い出します。楽しい時代でした！\n\nArgonは本日から、Google UltraおよびProの加入者向けに@GeminiAppと検索で、Ultraの加入者向けに@antigravityで順次提供されます。詳細と利用可能範囲はブログをご覧ください：https://t.co/7d3791mRNH"
    },
    "post_ids": [
-    "2110039274922131792"
+    "2110041008100843835",
+    "2110350304613114226",
+    "2110052931110318464"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "post_count": 3,
+   "archived_at": "2026-10-16T08:20:41Z"
+  },
+  {
+   "id": "dbd109ce4f",
+   "verdict": "confirmed",
+   "title": "Anthropicが新しいフェローシップの応募を開始、デジハリ大がClaudeを全学導入",
+   "summary": "Anthropicの公式アカウントは、2027年1月から4か月間同社で働く2種類のフェローシップ（STEM分野と概念的推論分野）の応募を開始したと発表した。応募締切は10月28日とされる。また、ITmedia NEWSは、デジタルハリウッド大学がClaudeを全学に導入すると伝えている。",
+   "points": [
+    "フェローシップは、研究者や専門家を一定期間受け入れる制度で、今回は「Claudeにうまく推論させる」ことが目的とされる。",
+    "応募の詳しい条件は投稿内のリンク先で確認が必要。",
+    "大学の全学導入は、AIを教育・研究に組み込む動きの一例だが、利用範囲や料金などの詳細は記事を確認する必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "フェローシップ",
+     "desc": "研究者などを一定期間受け入れ、共同で研究や業務に取り組ませる制度。"
+    },
+    {
+     "term": "Claude",
+     "desc": "Anthropic社が開発しているAIアシスタント。"
+    },
+    {
+     "term": "STEM",
+     "desc": "科学・技術・工学・数学の総称。"
+    }
+   ],
+   "score": 86,
+   "credibility": 93,
+   "heat": 39,
+   "first_seen": "2026-10-14T10:45:12.000Z",
+   "latest": "2026-10-15T13:14:22.000Z",
+   "authors": [
+    "AnthropicAI",
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式発表とITmedia記事",
+   "links": [
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5447080008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    },
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5452403008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    },
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002278/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110720940665372825",
+    "username": "AnthropicAI",
+    "text": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason well about some of the hardest problems in those fields.\n\nFor more information, see the descriptions below. The application deadline is October 28.\n\nConceptual Reasoning Fellows: https://t.co/kTaBPqttbK\n\nSTEM Fellows: htt",
+    "text_ja": "Anthropicの2つの新しいフェローシップの応募が開始されました。\n\nSTEMフェロー（科学・工学）と概念的推論フェロー（哲学、認知科学、経済学、政策、法律）は、2027年1月から4か月間Anthropicで勤務し、それぞれの分野の難問についてClaudeがうまく推論できるようにする取り組みに参加します。\n\n詳細は以下の説明をご覧ください。応募締切は10月28日です。\n\n概念的推論フェロー：https://t.co/kTaBPqttbK\n\nSTEMフェロー：https://t.co/KkD5ruJkjq"
+   },
+   "post_ids": [
+    "2110720940665372825",
+    "2110321016614670629"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "519b6fab0c",
@@ -131,9 +335,9 @@
      "desc": "AIが会話内容を記憶し、次回以降の会話に活かす仕組み"
     }
    ],
-   "score": 81,
+   "score": 80,
    "credibility": 100,
-   "heat": 28,
+   "heat": 26,
    "first_seen": "2026-10-14T14:44:54.000Z",
    "latest": "2026-10-14T14:45:55.000Z",
    "authors": [
@@ -173,7 +377,7 @@
     "2110381339098874321"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "b8260d51a9",
@@ -191,9 +395,9 @@
      "desc": "正式な契約の前段階で、協力の方向性を示す文書。法的拘束力は内容によって異なる。"
     }
    ],
-   "score": 80,
+   "score": 79,
    "credibility": 100,
-   "heat": 25,
+   "heat": 23,
    "first_seen": "2026-10-14T08:40:45.000Z",
    "latest": "2026-10-14T08:40:45.000Z",
    "authors": [
@@ -227,7 +431,7 @@
     "2110289695888511368"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "f945ab27d9",
@@ -249,9 +453,9 @@
      "desc": "現時点で最も高性能とされる最先端のAIモデルのこと"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 38,
+   "heat": 36,
    "first_seen": "2026-10-13T16:07:59.000Z",
    "latest": "2026-10-13T16:07:59.000Z",
    "authors": [
@@ -279,59 +483,7 @@
     "2110039860077527293"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
-  },
-  {
-   "id": "15a4dbc79d",
-   "verdict": "confirmed",
-   "title": "Gemini 4 Argonがロボットにコーンホールを学習させた",
-   "summary": "Google DeepMindの公式アカウントは、Gemini 4 Argonが動画を見るだけでロボットにコーンホール(袋投げゲーム)を学ばせたと投稿した。投稿によると、物理法則を整理し、自らシミュレーションを組み、Apptronik社のヒューマノイド「Apollo」が7投連続で成功したとしている。",
-   "points": [
-    "動画を見るだけで物理を把握し、シミュレーションまで自動で作った点が新しいとされる",
-    "実機のヒューマノイドでの成功が示されており、ロボット分野の応用例として注目される",
-    "投稿は公式のデモ紹介で、再現性や条件の詳細は投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "ヒューマノイド",
-     "desc": "人間に近い形をした二足歩行などのロボット"
-    },
-    {
-     "term": "シミュレーション",
-     "desc": "コンピュータ上で物理現象を再現して試すこと"
-    }
-   ],
-   "score": 77,
-   "credibility": 90,
-   "heat": 32,
-   "first_seen": "2026-10-13T18:41:04.000Z",
-   "latest": "2026-10-13T18:41:04.000Z",
-   "authors": [
-    "GoogleDeepMind"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "DeepMind公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2110078384617464201",
-    "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon taught a robot to play cornhole just by watching a video.\n\nIt mapped the physics, coded its own simulation, and taught @Apptronik's Apollo humanoid to sink 7 throws in a row. https://t.co/JIyoKnVc4q",
-    "text_ja": "Gemini 4 Argonは、動画を見るだけでロボットにコーンホールを遊ばせることを学習させました。\n\n物理法則を把握し、自分でシミュレーションをコーディングし、@Apptronikのヒューマノイド「Apollo」に7投連続で袋を入れさせました。 https://t.co/JIyoKnVc4q"
-   },
-   "post_ids": [
-    "2110078384617464201"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "1dbb3aadf3",
@@ -357,9 +509,9 @@
      "desc": "クラウドではなく、スマホやPCなどの手元の機器上でAIを動かす方式。"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 93,
-   "heat": 28,
+   "heat": 26,
    "first_seen": "2026-10-14T02:05:00.000Z",
    "latest": "2026-10-14T02:05:00.000Z",
    "authors": [
@@ -393,7 +545,7 @@
     "2110190101707858039"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "fd31a4ecc8",
@@ -419,9 +571,9 @@
      "desc": "AIの計算によく使われる画像処理用の半導体（グラフィックス計算装置）。"
     }
    ],
-   "score": 76,
+   "score": 75,
    "credibility": 90,
-   "heat": 29,
+   "heat": 27,
    "first_seen": "2026-10-14T03:43:40.000Z",
    "latest": "2026-10-14T03:43:40.000Z",
    "authors": [
@@ -449,7 +601,7 @@
     "2110214931559899630"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "2a29c5b68e",
@@ -469,7 +621,7 @@
    ],
    "score": 75,
    "credibility": 85,
-   "heat": 36,
+   "heat": 34,
    "first_seen": "2026-10-14T14:30:30.000Z",
    "latest": "2026-10-14T14:30:30.000Z",
    "authors": [
@@ -497,7 +649,7 @@
     "2110377713525796942"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "0812258b57",
@@ -523,9 +675,9 @@
      "desc": "ロボットが試行や映像などから動作を覚えていく技術"
     }
    ],
-   "score": 72,
+   "score": 71,
    "credibility": 90,
-   "heat": 19,
+   "heat": 17,
    "first_seen": "2026-10-13T19:03:06.000Z",
    "latest": "2026-10-13T19:03:06.000Z",
    "authors": [
@@ -553,7 +705,7 @@
     "2110083927620591769"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "4c72489d2f",
@@ -581,7 +733,7 @@
    ],
    "score": 68,
    "credibility": 90,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-10-13T17:00:15.000Z",
    "latest": "2026-10-13T17:00:15.000Z",
    "authors": [
@@ -609,7 +761,7 @@
     "2110053012903518630"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "48b23121d1",
@@ -627,9 +779,9 @@
      "desc": "目的に向けて、判断やツール操作を自律的に行うAIのこと。"
     }
    ],
-   "score": 68,
+   "score": 67,
    "credibility": 90,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-14T06:25:56.000Z",
    "latest": "2026-10-14T06:25:56.000Z",
    "authors": [
@@ -657,7 +809,7 @@
     "2110255766762569810"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "c90df8df0a",
@@ -679,9 +831,9 @@
      "desc": "開発を効率よく進めるための枠組みや仕組みの集まり。"
     }
    ],
-   "score": 62,
+   "score": 61,
    "credibility": 78,
-   "heat": 22,
+   "heat": 20,
    "first_seen": "2026-10-14T03:11:16.000Z",
    "latest": "2026-10-14T03:11:16.000Z",
    "authors": [
@@ -715,65 +867,7 @@
     "2110206778470514845"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
-  },
-  {
-   "id": "978e4eadde",
-   "verdict": "promising",
-   "title": "デジハリ大、Claudeを全学導入へ",
-   "summary": "ITmedia NEWSは、デジタルハリウッド大学がAIアシスタント「Claude」を全学に導入すると報じた。記事の見出しによると、国内初として利用回数を気にせず使える形になるという。",
-   "points": [
-    "新しい点: 国内の大学で、全学的に回数制限を気にせず使える形の導入が初めてとされている。",
-    "影響: 学生や教職員のAI活用の仕方や、大学のAI導入方針に関係する。",
-    "注意: 導入の対象範囲、費用、開始時期などは見出しからは確認できない。元の発表を確認する必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "全学導入",
-     "desc": "大学の全員（学生・教職員）が使えるように一斉に導入すること。"
-    },
-    {
-     "term": "Claude",
-     "desc": "Anthropic社が開発したAIアシスタント。"
-    }
-   ],
-   "score": 59,
-   "credibility": 78,
-   "heat": 18,
-   "first_seen": "2026-10-14T10:45:12.000Z",
-   "latest": "2026-10-14T10:45:12.000Z",
-   "authors": [
-    "itmedia_news"
-   ],
-   "author_labels": [
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWS記事（見出しのみ確認）",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002278/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/itmedia_news/status/2110321016614670629",
-    "username": "itmedia_news",
-    "text": "デジハリ大、「Claude」を全学導入へ──国内初、“回数気にせず”使い放題に\nhttps://t.co/zBo1trkAj9",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110321016614670629"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "c1ef3dad92",
@@ -799,9 +893,9 @@
      "desc": "学校の事務や運営に関する業務全般（成績処理、文書作成など）。"
     }
    ],
-   "score": 59,
+   "score": 58,
    "credibility": 78,
-   "heat": 18,
+   "heat": 16,
    "first_seen": "2026-10-14T09:40:10.000Z",
    "latest": "2026-10-14T09:40:10.000Z",
    "authors": [
@@ -835,17 +929,17 @@
     "2110304646783009241"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
-   "id": "2fd1c33ea6",
+   "id": "2df72a6cd1",
    "verdict": "promising",
-   "title": "中古のGPUと大容量メモリで大規模AIを手元で動かした検証報告",
-   "summary": "ギリア株式会社ファウンダーのshi3z氏が、中古で購入した5060Ti（8GB）を使い、Strataで64GB RAMと256GB SSDの環境で推論を行ったと投稿した。結果は42.3tok/sで、十分実用的だと述べている。使ったモデルの詳細は投稿からは分からない。",
+   "title": "中古GPUとPCでローカルAIの推論速度を測定",
+   "summary": "ファウンダー・顧問のshi3z氏が、秋葉原で買った中古のGeForce 5060Ti(8GB)で、Strataを使い64GB RAM・256GB SSD環境で推論したところ42.3tok/sだったと投稿した。別の投稿では、古いA6000マシンでQwen3.8-Flash-Next IQ3_Sを使い、108tok/s、32Kトークンのprefillで2768tok/sだったと述べている。",
    "points": [
-    "高価なサーバーを使わず、個人向けの機材で実用的な速度が出たという実例",
-    "tok/s（1秒あたりに生成されるトークン数）の数値が示されており、本人の実測とみられる",
-    "使用したモデル名や条件の詳細が投稿にないため、再現には追加情報が必要"
+    "tok/s（トークン毎秒）は、AIが1秒間に文字の単位を何個生成できるかを示す速さの目安。",
+    "古いPCや中古GPUでも、ローカルでAIを動かせる水準に達したという実地報告。",
+    "測定条件や再現性の詳細は投稿からは不明で、ベンチマークとしての厳密さは未確認。"
    ],
    "terms": [
     {
@@ -854,18 +948,18 @@
     },
     {
      "term": "tok/s",
-     "desc": "1秒間に生成されるトークン（文字や単語の断片）の数。速さの指標。"
+     "desc": "1秒あたりに処理・生成できるトークン数で、AIの速さを示す指標。"
     },
     {
-     "term": "Strata",
-     "desc": "ローカルでのAI実行に関係するとみられるツールだが、投稿内に詳細はなく未確認。"
+     "term": "量子化（IQ3_S）",
+     "desc": "モデルの数値の精度を下げて軽くし、少ないメモリで動かせるようにする技術。"
     }
    ],
    "score": 54,
    "credibility": 70,
-   "heat": 16,
+   "heat": 14,
    "first_seen": "2026-10-14T06:57:26.000Z",
-   "latest": "2026-10-14T06:57:26.000Z",
+   "latest": "2026-10-14T07:28:00.000Z",
    "authors": [
     "shi3z"
    ],
@@ -879,7 +973,7 @@
    ],
    "evidence": "hands_on_test",
    "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の実機推論の数値",
+   "evidence_note": "本人の実測値（投稿内）",
    "links": [],
    "post": {
     "url": "https://x.com/shi3z/status/2110263697574928536",
@@ -888,10 +982,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2110263697574928536"
+    "2110263697574928536",
+    "2110271388246565186"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "post_count": 2,
+   "archived_at": "2026-10-16T08:20:41Z"
   },
   {
    "id": "6832bfaa0b",
@@ -947,108 +1042,7 @@
     "2110073543387996431"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
-  },
-  {
-   "id": "3b43ece9f2",
-   "verdict": "promising",
-   "title": "古いGPUマシンで新しいローカルLLMを動かした個人の検証報告",
-   "summary": "ギリア株式会社ファウンダー・顧問のshi3z氏が、眠っていたA6000マシンで「Strata」というテストを行ったと投稿した。投稿によると、Qwen3.8-Flash-Next（IQ3_S）で108 tok/s、32Kトークンのprefillで2768 tok/sの数値が出たという。同氏は「かなり使える」と評価し、古いマシンが再び使えるようになったと述べている。",
-   "points": [
-    "tok/sは1秒あたりに処理・生成されるトークン数で、AIの処理速度の目安になる",
-    "prefillは入力文を読み込む段階の速度で、長い文書の扱いやすさに関わる",
-    "実機の数値だが、テスト条件の詳細は投稿からは不明で、他環境での再現性は未確認"
-   ],
-   "terms": [
-    {
-     "term": "トークン",
-     "desc": "AIが文章を処理する際の最小単位で、単語や文字の断片にあたる。"
-    },
-    {
-     "term": "prefill",
-     "desc": "AIが入力文を読み込む段階のこと。この速度が速いと長文の処理が早くなる。"
-    },
-    {
-     "term": "A6000",
-     "desc": "NVIDIA製のプロ向けGPU（画像処理装置）の一つ。AIの計算に使われる。"
-    }
-   ],
-   "score": 44,
-   "credibility": 70,
-   "heat": 5,
-   "first_seen": "2026-10-14T07:28:00.000Z",
-   "latest": "2026-10-14T07:28:00.000Z",
-   "authors": [
-    "shi3z"
-   ],
-   "author_labels": [
-    {
-     "username": "shi3z",
-     "label": "ギリア株式会社ファウンダー・顧問",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の実機測定（数値あり）",
-   "links": [],
-   "post": {
-    "url": "https://x.com/shi3z/status/2110271388246565186",
-    "username": "shi3z",
-    "text": "眠っていたA6000マシンでStrataテスト\nQwen3.8-Flash-Next IQ3_Sが108tok/sで32Kトークンのprefillが2768tok/s かなり使える。次々と古いポンコツマシンが黄泉がえって行く! 知ってたぜ俺はこういう日が来ることをずっと前から! ゴッドマーズ! https://t.co/bAadLYy8vQ",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110271388246565186"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
-  },
-  {
-   "id": "2a6568d793",
-   "verdict": "promising",
-   "title": "同人誌『Claude Code暗号解読決戦』が大幅パワーアップして、商業誌になりました😀",
-   "summary": null,
-   "points": [],
-   "terms": [],
-   "score": 38,
-   "credibility": 53,
-   "heat": 16,
-   "first_seen": "2026-10-14T11:00:07.000Z",
-   "latest": "2026-10-14T11:00:07.000Z",
-   "authors": [
-    "ipusiron"
-   ],
-   "author_labels": [
-    {
-     "username": "ipusiron",
-     "label": "著者・セキュリティ関連書籍執筆者",
-     "type": "individual",
-     "former": ""
-    }
-   ],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "links": [
-    {
-     "url": "https://akademeia.info/?page_id=50528",
-     "domain": "akademeia.info",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/ipusiron/status/2110324770034332099",
-    "username": "ipusiron",
-    "text": "同人誌『Claude Code暗号解読決戦』が大幅パワーアップして、商業誌になりました😀\n新刊『生成AI時代の暗号技術入門 AIエージェントで挑む古典暗号の自動解析』、10/16発売です。\nページ数は約1.7倍、図版は約2.3倍、古典暗号の解説は1章から5章に増量。\nhttps://t.co/lpUO10n0JA #生成AI暗号解読 https://t.co/Az9oFnEns3",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110324770034332099"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T00:31:05Z"
+   "archived_at": "2026-10-16T08:20:41Z"
   }
  ]
 }

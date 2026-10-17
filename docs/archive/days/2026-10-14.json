@@ -2,88 +2,6 @@
  "date": "2026-10-14",
  "items": [
   {
-   "id": "006f619225",
-   "verdict": "confirmed",
-   "title": "GoogleがGemini 4 Argonでマイクラのドラゴン撃破を発表",
-   "summary": "Google DeepMindは、Gemini 4 Argonの4体のエージェントがマインクラフトを白紙の状態から27時間で攻略し、エンダードラゴンを倒したと公式アカウントで発表した。投稿によると、エージェントは人間の介入なしにコードとテキストのみで2,783のプログラムを書き、チャットで分担し、メモを共有しながらエラーを修正したという。国内の論文紹介メディアAIDBもこの結果を紹介し、費用はAPI定価で約520ドルだったと伝えている。",
-   "points": [
-    "新しい点: 長時間にわたる複数エージェントの協調作業を、ゲームという環境で具体的な数値付きで示したこと",
-    "注意点: 投稿は公式発表だが、詳細な技術論文やデータは投稿内では確認できない。ゲームでの成功が実務のコーディング能力にどこまで直結するかは未確認",
-    "Google DeepMindは科学分野（量子計算・核融合・タンパク質設計など）への応用も挙げているが、投稿では具体的な成果は示されていない"
-   ],
-   "terms": [
-    {
-     "term": "エージェント",
-     "desc": "目標に向けて自分で計画し、道具を使って行動するAIのこと"
-    },
-    {
-     "term": "サンドボックス",
-     "desc": "外部に影響が出ないよう隔離された安全な実験用の環境"
-    },
-    {
-     "term": "APIの定価",
-     "desc": "AIサービスを外部から呼び出す際の公開料金。実際の請求額とは異なる場合がある"
-    }
-   ],
-   "score": 95,
-   "credibility": 90,
-   "heat": 52,
-   "first_seen": "2026-10-13T18:41:04.000Z",
-   "latest": "2026-10-16T16:11:50.000Z",
-   "authors": [
-    "GoogleDeepMind",
-    "ai_database",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "ai_database",
-     "label": "AI論文紹介メディア「AIDB」運営",
-     "type": "commentator",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "DeepMind公式X投稿・AIDB紹介",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
-    "username": "GoogleDeepMind",
-    "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours.\n\nOperating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓\nhttps://t.co/uyIhDOQXGT",
-    "text_ja": "Gemini 4 Argonの4体のエージェントが、ゼロからマインクラフトを27時間でクリアしました。\n\nコードとテキストだけを使うサンドボックス環境で動作し、2,783本のプログラムを書き、チャットで作業を分担し、メモを共有し、エラーを一緒に修正しました。人間の助けは一切ありません ↓\nhttps://t.co/uyIhDOQXGT"
-   },
-   "post_ids": [
-    "2110078384617464201",
-    "2111127991401247033",
-    "2110421861435879476",
-    "2110957608182108298",
-    "2110990860192219385",
-    "2110957045252022393",
-    "2110988138046960008"
-   ],
-   "post_count": 6,
-   "archived_at": "2026-10-17T00:37:26Z"
-  },
-  {
    "id": "58ab98f1c0",
    "verdict": "confirmed",
    "title": "Anthropic、社内向けのソース管理システムを自作と発表",
@@ -146,6 +64,72 @@
    "archived_at": "2026-10-16T13:20:35Z"
   },
   {
+   "id": "3bdf935109",
+   "verdict": "confirmed",
+   "title": "Gemini 4 Argonのエージェント4体がMinecraftをクリア",
+   "summary": "Google DeepMindは、Gemini 4 Argonの4体のエージェントが、コードとテキストだけを使うサンドボックス環境でMinecraftを人間の手助けなしに27時間で攻略したと発表した。エージェントは2,783個のプログラムを書き、チャットで仕事を分担し、メモを共有し、互いのエラーを修正したとされる。投稿には詳細記事へのリンクがある。",
+   "points": [
+    "新しい点: 複数のAIエージェントが協力し、長時間の複雑なゲーム課題を完遂したとされる",
+    "重要性: 長い作業を分担して進める能力は、コーディングエージェントなど実務用途にも関係するとみられる",
+    "注意点: ゲーム環境での成果で、実業務にそのまま当てはまるかは未確認。詳細な条件は元記事で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "エージェント",
+     "desc": "AIが目標に向けて自分で計画し、行動を繰り返す仕組みのこと。"
+    },
+    {
+     "term": "サンドボックス",
+     "desc": "外部に影響が出ないよう隔離された実験用の環境のこと。"
+    },
+    {
+     "term": "エンダードラゴン",
+     "desc": "Minecraftの最後のボスモンスター。"
+    }
+   ],
+   "score": 87,
+   "credibility": 90,
+   "heat": 45,
+   "first_seen": "2026-10-13T18:41:04.000Z",
+   "latest": "2026-10-16T16:11:50.000Z",
+   "authors": [
+    "GoogleDeepMind",
+    "ai_database"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
+    "username": "GoogleDeepMind",
+    "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours.\n\nOperating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓\nhttps://t.co/uyIhDOQXGT",
+    "text_ja": "Gemini 4 Argonの4体のエージェントが、ゼロからマインクラフトを27時間でクリアしました。\n\nコードとテキストだけを使うサンドボックス環境で動作し、2,783本のプログラムを書き、チャットで作業を分担し、メモを共有し、エラーを一緒に修正しました。人間の助けは一切ありません ↓\nhttps://t.co/uyIhDOQXGT"
+   },
+   "post_ids": [
+    "2110078384617464201",
+    "2111127991401247033",
+    "2110957608182108298",
+    "2110957045252022393"
+   ],
+   "post_count": 6,
+   "archived_at": "2026-10-17T07:55:49Z"
+  },
+  {
    "id": "c6fcfd5593",
    "verdict": "confirmed",
    "title": "Google DeepMind、Gemini 4 Argonの世界提供を発表",
@@ -200,133 +184,6 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-16T13:20:35Z"
-  },
-  {
-   "id": "519b6fab0c",
-   "verdict": "confirmed",
-   "title": "Sakana Chatに、会話で蓄積したメモリーを確認できる新機能「My Fish」を追加",
-   "summary": "Sakana AI公式アカウントは、Sakana Chatに新機能を追加したと発表した。新機能「My Fish」では、Chatが覚えている内容を一覧で確認でき、履歴はタイムラインで、メモリー同士のつながりはマップで表示される。同社は、Sakana Chatがユーザーについて学んだことを見られるようにしたと説明している。",
-   "points": [
-    "新しいのは、AIが会話から覚えた情報（メモリー）を利用者が見られる点で、一覧・タイムライン・マップの3形式が挙げられている",
-    "AIが何を記憶しているかを確認できることは、プライバシーや設定の透明性の観点で意味がある（一般的な背景）",
-    "投稿からは、メモリーの削除や編集ができるかは確認できない"
-   ],
-   "terms": [
-    {
-     "term": "メモリー機能",
-     "desc": "AIが会話内容を記憶し、次回以降の会話に活かす仕組み"
-    }
-   ],
-   "score": 79,
-   "credibility": 100,
-   "heat": 23,
-   "first_seen": "2026-10-14T14:44:54.000Z",
-   "latest": "2026-10-14T14:45:55.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式投稿",
-   "links": [
-    {
-     "url": "https://sakana.ai/my-fish/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://chat.sakana.ai/",
-     "domain": "chat.sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2110381595257626943",
-    "username": "SakanaAILabs",
-    "text": "Sakana Chatに新機能を追加。会話で育ったメモリーが、見えるようになりました。\n\nhttps://t.co/Qg6OOiVK7T\n\n新機能「My Fish」で、覚えていることを一覧に。履歴をタイムラインに。メモリー同士のつながりをマップに。Sakana Chatがあなたについて学んだことを、見てみてください。\n\nTry Chat: https://t.co/stLdPSzzNF 🐟",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110381595257626943",
-    "2110381339098874321"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T00:37:26Z"
-  },
-  {
-   "id": "85f5d98b2b",
-   "verdict": "confirmed",
-   "title": "Anthropic、STEMとConceptual Reasoningの2種のフェローシップ応募を開始",
-   "summary": "Anthropicの公式アカウントは、2つの新しいフェローシップの応募を開始したと投稿した。STEM Fellows（科学・工学）とConceptual Reasoning Fellows（哲学・認知科学・経済学・政策・法律）が、2027年1月から4か月間Anthropicに在籍し、Claudeが難しい課題で適切に推論できるよう取り組む。応募締め切りは10月28日。",
-   "points": [
-    "対象分野が理系と人文・社会系の両方にまたがっており、Claudeの推論能力の向上を幅広い分野から考える狙いとみられる",
-    "応募の詳細や条件は投稿に記載のリンク先で確認する必要がある",
-    "在籍期間は4か月と短期で、参加者がどのような成果を残すかは今後の情報待ち"
-   ],
-   "terms": [
-    {
-     "term": "フェローシップ",
-     "desc": "研究者などを一定期間受け入れる研究員制度のこと"
-    },
-    {
-     "term": "推論（reasoning）",
-     "desc": "情報をもとに筋道立てて考え、結論を導く力のこと"
-    },
-    {
-     "term": "Claude",
-     "desc": "Anthropicが開発するAIモデルの名称"
-    }
-   ],
-   "score": 79,
-   "credibility": 93,
-   "heat": 33,
-   "first_seen": "2026-10-14T10:45:12.000Z",
-   "latest": "2026-10-15T13:14:22.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式の募集告知",
-   "links": [
-    {
-     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5447080008",
-     "domain": "job-boards.greenhouse.io",
-     "primary": false
-    },
-    {
-     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5452403008",
-     "domain": "job-boards.greenhouse.io",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2110720940665372825",
-    "username": "AnthropicAI",
-    "text": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason well about some of the hardest problems in those fields.\n\nFor more information, see the descriptions below. The application deadline is October 28.\n\nConceptual Reasoning Fellows: https://t.co/kTaBPqttbK\n\nSTEM Fellows: htt",
-    "text_ja": "Anthropicの2つの新しいフェローシップの応募が開始されました。\n\nSTEMフェロー（科学・工学）と概念的推論フェロー（哲学、認知科学、経済学、政策、法律）は、2027年1月から4か月間Anthropicで勤務し、それぞれの分野の難問についてClaudeがうまく推論できるようにする取り組みに参加します。\n\n詳細は以下の説明をご覧ください。応募締切は10月28日です。\n\n概念的推論フェロー：https://t.co/kTaBPqttbK\n\nSTEMフェロー：https://t.co/KkD5ruJkjq"
-   },
-   "post_ids": [
-    "2110720940665372825"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "f945ab27d9",
@@ -398,7 +255,7 @@
    ],
    "score": 78,
    "credibility": 100,
-   "heat": 21,
+   "heat": 20,
    "first_seen": "2026-10-14T08:40:45.000Z",
    "latest": "2026-10-14T08:40:45.000Z",
    "authors": [
@@ -432,7 +289,134 @@
     "2110289695888511368"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
+  },
+  {
+   "id": "519b6fab0c",
+   "verdict": "confirmed",
+   "title": "Sakana Chatに、会話で蓄積したメモリーを確認できる新機能「My Fish」を追加",
+   "summary": "Sakana AI公式アカウントは、Sakana Chatに新機能を追加したと発表した。新機能「My Fish」では、Chatが覚えている内容を一覧で確認でき、履歴はタイムラインで、メモリー同士のつながりはマップで表示される。同社は、Sakana Chatがユーザーについて学んだことを見られるようにしたと説明している。",
+   "points": [
+    "新しいのは、AIが会話から覚えた情報（メモリー）を利用者が見られる点で、一覧・タイムライン・マップの3形式が挙げられている",
+    "AIが何を記憶しているかを確認できることは、プライバシーや設定の透明性の観点で意味がある（一般的な背景）",
+    "投稿からは、メモリーの削除や編集ができるかは確認できない"
+   ],
+   "terms": [
+    {
+     "term": "メモリー機能",
+     "desc": "AIが会話内容を記憶し、次回以降の会話に活かす仕組み"
+    }
+   ],
+   "score": 78,
+   "credibility": 100,
+   "heat": 21,
+   "first_seen": "2026-10-14T14:44:54.000Z",
+   "latest": "2026-10-14T14:45:55.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式投稿",
+   "links": [
+    {
+     "url": "https://sakana.ai/my-fish/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://chat.sakana.ai/",
+     "domain": "chat.sakana.ai",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2110381595257626943",
+    "username": "SakanaAILabs",
+    "text": "Sakana Chatに新機能を追加。会話で育ったメモリーが、見えるようになりました。\n\nhttps://t.co/Qg6OOiVK7T\n\n新機能「My Fish」で、覚えていることを一覧に。履歴をタイムラインに。メモリー同士のつながりをマップに。Sakana Chatがあなたについて学んだことを、見てみてください。\n\nTry Chat: https://t.co/stLdPSzzNF 🐟",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110381595257626943",
+    "2110381339098874321"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T07:55:49Z"
+  },
+  {
+   "id": "85f5d98b2b",
+   "verdict": "confirmed",
+   "title": "Anthropic、STEMとConceptual Reasoningの2種のフェローシップ応募を開始",
+   "summary": "Anthropicの公式アカウントは、2つの新しいフェローシップの応募を開始したと投稿した。STEM Fellows（科学・工学）とConceptual Reasoning Fellows（哲学・認知科学・経済学・政策・法律）が、2027年1月から4か月間Anthropicに在籍し、Claudeが難しい課題で適切に推論できるよう取り組む。応募締め切りは10月28日。",
+   "points": [
+    "対象分野が理系と人文・社会系の両方にまたがっており、Claudeの推論能力の向上を幅広い分野から考える狙いとみられる",
+    "応募の詳細や条件は投稿に記載のリンク先で確認する必要がある",
+    "在籍期間は4か月と短期で、参加者がどのような成果を残すかは今後の情報待ち"
+   ],
+   "terms": [
+    {
+     "term": "フェローシップ",
+     "desc": "研究者などを一定期間受け入れる研究員制度のこと"
+    },
+    {
+     "term": "推論（reasoning）",
+     "desc": "情報をもとに筋道立てて考え、結論を導く力のこと"
+    },
+    {
+     "term": "Claude",
+     "desc": "Anthropicが開発するAIモデルの名称"
+    }
+   ],
+   "score": 78,
+   "credibility": 93,
+   "heat": 31,
+   "first_seen": "2026-10-14T10:45:12.000Z",
+   "latest": "2026-10-15T13:14:22.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式の募集告知",
+   "links": [
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5447080008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    },
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5452403008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110720940665372825",
+    "username": "AnthropicAI",
+    "text": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason well about some of the hardest problems in those fields.\n\nFor more information, see the descriptions below. The application deadline is October 28.\n\nConceptual Reasoning Fellows: https://t.co/kTaBPqttbK\n\nSTEM Fellows: htt",
+    "text_ja": "Anthropicの2つの新しいフェローシップの応募が開始されました。\n\nSTEMフェロー（科学・工学）と概念的推論フェロー（哲学、認知科学、経済学、政策、法律）は、2027年1月から4か月間Anthropicで勤務し、それぞれの分野の難問についてClaudeがうまく推論できるようにする取り組みに参加します。\n\n詳細は以下の説明をご覧ください。応募締切は10月28日です。\n\n概念的推論フェロー：https://t.co/kTaBPqttbK\n\nSTEMフェロー：https://t.co/KkD5ruJkjq"
+   },
+   "post_ids": [
+    "2110720940665372825"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "53b8b9c75f",
@@ -561,6 +545,143 @@
    "archived_at": "2026-10-17T00:37:26Z"
   },
   {
+   "id": "a7b50d6567",
+   "verdict": "confirmed",
+   "title": "Google、新AIモデル「Gemini 4 Argon」の一般提供を開始",
+   "summary": "Google DeepMindは、Gemini 4 Argonが量子コンピューティング、核融合、タンパク質設計などの科学分野で新たな成果につながっていると投稿した。ITmediaは、GoogleがGemini 4 Argonの一般提供を開始し、推論の継続力を強化したこと、一部のベンチマークでトップになったことを伝えた。",
+   "points": [
+    "一般提供の開始は、誰でも利用できるようになったことを意味し、実務への影響が見込まれる",
+    "「一部ベンチでトップ」とされるが、どのベンチマークかや比較条件は記事の範囲では未確認",
+    "科学分野での成果は投稿で触れられているものの、具体的な論文や数値は示されていない"
+   ],
+   "terms": [
+    {
+     "term": "一般提供（GA）",
+     "desc": "開発段階を終え、一般の利用者や企業が誰でも使える状態にすること。"
+    },
+    {
+     "term": "推論",
+     "desc": "AIが入力を受けて答えを導き出す処理のこと。"
+    },
+    {
+     "term": "タンパク質設計",
+     "desc": "目的の働きを持つタンパク質の構造や配列をAIなどで考える研究分野。"
+    }
+   ],
+   "score": 73,
+   "credibility": 90,
+   "heat": 22,
+   "first_seen": "2026-10-14T11:45:12.000Z",
+   "latest": "2026-10-14T17:25:56.000Z",
+   "authors": [
+    "GoogleDeepMind",
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmediaの報道、Google DeepMind公式投稿",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002265/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2110421861435879476",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon is already unlocking new scientific breakthroughs in quantum computing, nuclear fusion, protein design and beyond. 🧵",
+    "text_ja": "Gemini 4 Argon はすでに、量子コンピューティング、核融合、タンパク質設計などの分野で新たな科学的ブレークスルーを生み出しています。🧵"
+   },
+   "post_ids": [
+    "2110421861435879476",
+    "2110336113705660609"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T07:55:49Z"
+  },
+  {
+   "id": "cacd98ed7b",
+   "verdict": "confirmed",
+   "title": "Hugging Faceが生配信の告知を2件投稿",
+   "summary": "Hugging Face公式アカウントが、ローカルLLMを高速化する投機的デコーディング（speculative decoding）に関するライブ配信の告知を投稿した。別の投稿では、Reflection チームが『Beam』をどう作ったかを話す生配信の告知も行われた。どちらも配信のリンクを案内する内容。",
+   "points": [
+    "投機的デコーディングは、小さなモデルで候補を先読みして大きなモデルの生成を速める手法とされる",
+    "生配信はYouTube上で行われる。配信内容の詳細は投稿からは分からない",
+    "告知段階のため、速度向上の具体的な数値はこの投稿からは確認できない"
+   ],
+   "terms": [
+    {
+     "term": "投機的デコーディング",
+     "desc": "小型モデルが次の文字候補を先に出し、大型モデルがまとめて確認して文章生成を速める手法。"
+    },
+    {
+     "term": "ローカルLLM",
+     "desc": "クラウドではなく自分のPCや手元の機器で動かす大規模言語モデル。"
+    }
+   ],
+   "score": 73,
+   "credibility": 88,
+   "heat": 14,
+   "first_seen": "2026-10-14T12:41:35.000Z",
+   "latest": "2026-10-17T01:12:13.000Z",
+   "authors": [
+    "huggingface",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Hugging Face公式の配信告知",
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
+     "domain": "youtube.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/huggingface/status/2110350304613114226",
+    "username": "huggingface",
+    "text": "Learn about how to get multipliers in local LLM speed-ups using speculative decoding in this livestream with @mervenoyann, @MaartenGr and @_EldarKurtic \n\nhttps://t.co/tFexgaLcT5 https://t.co/Pad59uMr8J",
+    "text_ja": "このライブ配信で、投機的デコーディングを使ってローカルLLMを高速化する方法を学びましょう。出演は @mervenoyann、@MaartenGr、@_EldarKurtic です。\n\nhttps://t.co/tFexgaLcT5 https://t.co/Pad59uMr8J"
+   },
+   "post_ids": [
+    "2110350304613114226",
+    "2111083685961445625",
+    "2111263980992049392"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-17T07:55:49Z"
+  },
+  {
    "id": "2a29c5b68e",
    "verdict": "confirmed",
    "title": "Mistral AIが新しいブランドのコンセプトを「Mistral, New Material」として発表",
@@ -578,7 +699,7 @@
    ],
    "score": 73,
    "credibility": 85,
-   "heat": 30,
+   "heat": 29,
    "first_seen": "2026-10-14T14:30:30.000Z",
    "latest": "2026-10-14T14:30:30.000Z",
    "authors": [
@@ -606,7 +727,7 @@
     "2110377713525796942"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "0812258b57",
@@ -769,65 +890,6 @@
    "archived_at": "2026-10-17T00:37:26Z"
   },
   {
-   "id": "fed1589919",
-   "verdict": "confirmed",
-   "title": "Hugging Faceが投機的デコーディングとBeamに関するライブ配信を告知",
-   "summary": "Hugging Face公式アカウントが、投機的デコーディング（speculative decoding）によりローカルLLMを高速化する方法を解説するライブ配信を告知した。また、Reflectionチームが「Beam」をどう作ったかを話すライブ配信も告知された。",
-   "points": [
-    "投機的デコーディングとは、小さなモデルで先に候補を出し、大きなモデルでまとめて確認して処理を速くする手法とみられる。",
-    "告知はイベントの案内であり、速度向上の具体的な数値はこの投稿からは分からない。",
-    "ライブ配信の内容は後から見返せる可能性があるが、詳細は配信ページで確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "投機的デコーディング",
-     "desc": "小さなモデルで次の単語候補を先読みし、大きなモデルでまとめて確認することで文章生成を速くする方法。"
-    },
-    {
-     "term": "ローカルLLM",
-     "desc": "クラウドではなく自分のPCや手元の機器で動かす大規模言語モデル。"
-    }
-   ],
-   "score": 67,
-   "credibility": 88,
-   "heat": 11,
-   "first_seen": "2026-10-14T12:41:35.000Z",
-   "latest": "2026-10-16T13:15:47.000Z",
-   "authors": [
-    "huggingface"
-   ],
-   "author_labels": [
-    {
-     "username": "huggingface",
-     "label": "Hugging Face公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式のライブ配信告知",
-   "links": [
-    {
-     "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
-     "domain": "youtube.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/huggingface/status/2110350304613114226",
-    "username": "huggingface",
-    "text": "Learn about how to get multipliers in local LLM speed-ups using speculative decoding in this livestream with @mervenoyann, @MaartenGr and @_EldarKurtic \n\nhttps://t.co/tFexgaLcT5 https://t.co/Pad59uMr8J",
-    "text_ja": "@mervenoyann、@MaartenGr、@_EldarKurtic によるこのライブ配信で、投機的デコーディングを使ってローカルLLMを高速化する方法を学べます。\n\nhttps://t.co/tFexgaLcT5"
-   },
-   "post_ids": [
-    "2110350304613114226",
-    "2111083685961445625"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T00:37:26Z"
-  },
-  {
    "id": "c90df8df0a",
    "verdict": "promising",
    "title": "AIにゲームを自律的に改善させる際はテスト用スクリプトが有効とする解説",
@@ -907,7 +969,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-14T10:45:12.000Z",
    "latest": "2026-10-14T10:45:12.000Z",
    "authors": [
@@ -941,7 +1003,7 @@
     "2110321016614670629"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "c1ef3dad92",
@@ -969,7 +1031,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-14T09:40:10.000Z",
    "latest": "2026-10-14T09:40:10.000Z",
    "authors": [
@@ -1003,69 +1065,7 @@
     "2110304646783009241"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
-  },
-  {
-   "id": "79bb866800",
-   "verdict": "promising",
-   "title": "GoogleがGemini 4 Argonの一般提供を開始",
-   "summary": "ITmedia NEWSは、Googleが新AIモデル「Gemini 4 Argon」の一般提供を開始したと伝えた。推論の継続力を強化し、一部のベンチマークでトップになったとしている。投稿は記事の見出しと要約で、ベンチマークの具体的な数値や対象は投稿には含まれない。",
-   "points": [
-    "「一般提供」は、限られた利用者向けの提供から誰でも使える段階に移ったことを指す",
-    "「推論の継続力」は長い思考や複数ステップの作業を途切れず続ける力を指すとみられる(未確認)",
-    "どのベンチマークで何位だったかは記事本文で確認が必要で、性能の評価は一部に限られる可能性がある"
-   ],
-   "terms": [
-    {
-     "term": "一般提供",
-     "desc": "開発段階を終え、誰もが利用できる形でサービスを公開すること"
-    },
-    {
-     "term": "推論",
-     "desc": "AIが入力に対して答えや判断を導き出す処理のこと"
-    },
-    {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ問題で測り比べるための共通の試験"
-    }
-   ],
-   "score": 55,
-   "credibility": 78,
-   "heat": 7,
-   "first_seen": "2026-10-14T11:45:12.000Z",
-   "latest": "2026-10-14T11:45:12.000Z",
-   "authors": [
-    "itmedia_news"
-   ],
-   "author_labels": [
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002265/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/itmedia_news/status/2110336113705660609",
-    "username": "itmedia_news",
-    "text": "Google、待望の新AIモデル「Gemini 4 Argon」一般提供を開始　推論の継続力を強化　一部ベンチでトップに\nhttps://t.co/1HpIERBQAx",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110336113705660609"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "2fd1c33ea6",

@@ -2,34 +2,98 @@
  "date": "2026-10-16",
  "items": [
   {
-   "id": "5e32851c1e",
+   "id": "c7bdc6b558",
    "verdict": "confirmed",
-   "title": "ReflectionAIが初の重み公開モデル「Beam 1.0」を公開",
-   "summary": "NVIDIA公式アカウントは、ReflectionAIが初めてのオープンウェイトモデルを公開したことを祝う投稿をした。投稿によると、このモデルは501BパラメータのMoEモデルで、NVIDIA GB300 NVL72上で学習され、Blackwell Ultra上で1GPUあたり70K tokens/秒超を初日から出せるとされる。Hugging Faceには「Beam 1.0 NVFP4」チェックポイントが公開されたという。",
+   "title": "Meta、オープン重みモデル「Muse Spark Open」を公開",
+   "summary": "Metaは、Muse Spark Openを公開し、同社によれば米国産のオープンウェイトモデルとして最も高性能だとしている。コーディングやエージェント的な作業向けに作られ、総パラメータ816B・アクティブ42B、コンテキスト窓100万トークン、テキスト・画像・動画・音声をネイティブに扱うと説明されている。投稿者のnatolambert氏は、ブログ記事を書く予定だと述べた。",
    "points": [
-    "新しい点: 初の公開モデルがパラメータ数501Bの大規模MoEとして公開された点。",
-    "注意点: 性能数値はNVIDIAの投稿に基づくもので、第三者による評価は投稿からは確認できない。",
-    "用語補足: NVFP4は低精度の数値形式で、速度向上やメモリ節約に使われるとみられる。"
+    "新しい点: 同社によれば米国製オープンモデルで最も高性能とされ、コーディング用途に特化している",
+    "重要性: 公開モデルのため、開発者が手元で動かしたり改良したりできる選択肢が増える",
+    "注意点: 「最も高性能」は同社の主張で、第三者による比較結果は投稿では示されていない"
    ],
    "terms": [
     {
      "term": "オープンウェイトモデル",
-     "desc": "学習済みの重みデータが公開され、誰でもダウンロードして使えるAIモデルのこと。"
+     "desc": "学習済みの重み（パラメータ）が公開され、ダウンロードして使えるAIモデルのこと。"
     },
     {
-     "term": "MoE",
-     "desc": "多数の専門家部品を持ち、入力ごとに一部だけを動かす効率的なAIの構造のこと。"
+     "term": "コンテキスト窓",
+     "desc": "AIが一度に読み取って考慮できる文章の長さ。トークン単位で測る。"
     },
     {
-     "term": "Blackwell Ultra",
-     "desc": "NVIDIAのAI計算用GPUの世代名のこと。"
+     "term": "トークン",
+     "desc": "AIが文章を扱う最小単位。単語や文字の断片にあたる。"
+    }
+   ],
+   "score": 88,
+   "credibility": 90,
+   "heat": 48,
+   "first_seen": "2026-10-15T17:08:04.000Z",
+   "latest": "2026-10-15T17:25:17.000Z",
+   "authors": [
+    "AIatMeta",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式アカウントの発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2110779754274292212",
+    "username": "AIatMeta",
+    "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
+    "text_ja": "本日、Muse Spark Openを公開します。米国のオープンウェイトモデルとして、これまでで最も高性能です。\n\nコーディングやエージェント的な作業向けに作られ、長い時間を要するタスク、複雑なソフトウェア開発、多段階の推論に優れています。\n\n主な仕様：\n→ 総パラメータ816B／動作時42B\n→ 100万トークンのコンテキストウィンドウ\n→ テキスト、画像、動画、音声をネイティブに扱うマルチモーダル"
+   },
+   "post_ids": [
+    "2110779754274292212",
+    "2110784087745253671"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T07:55:49Z"
+  },
+  {
+   "id": "c522f80195",
+   "verdict": "confirmed",
+   "title": "ReflectionAI、初のオープン重みモデル「Beam 1.0」を公開",
+   "summary": "NVIDIAの公式アカウントは、ReflectionAIが初めてのオープンウェイトモデルを公開したと紹介した。対象は501BのMoEモデル「Beam 1.0」で、NVIDIA GB300 NVL72で学習され、Blackwell Ultra上で公開初日から1GPUあたり毎秒70K以上のトークンを出せるとしている。また、NVIDIAはMetaのMuseチームの公開モデルも祝福する投稿をしている。",
+   "points": [
+    "新しい点: ReflectionAIにとって初のオープンウェイトモデルで、NVFP4版のチェックポイントがHugging Faceで公開された",
+    "重要性: NVIDIAの最新GPU上での処理速度が示されており、推論基盤の性能を示す事例となる",
+    "注意点: 速度の数値はNVIDIAの発表によるもので、第三者による再現確認は未確認"
+   ],
+   "terms": [
+    {
+     "term": "MoE（混合エキスパート）",
+     "desc": "複数の専門家モジュールを持ち、入力ごとに一部だけを使う仕組みのモデル構造。"
+    },
+    {
+     "term": "NVFP4",
+     "desc": "NVIDIAのGPUで使える、計算を軽くするための低精度な数値形式。"
+    },
+    {
+     "term": "チェックポイント",
+     "desc": "学習の途中または完了時点でのモデルの重みを保存したデータのこと。"
     }
    ],
    "score": 87,
    "credibility": 100,
    "heat": 43,
    "first_seen": "2026-10-16T13:39:40.000Z",
-   "latest": "2026-10-16T13:39:40.000Z",
+   "latest": "2026-10-16T21:46:49.000Z",
    "authors": [
     "NVIDIAAI"
    ],
@@ -43,7 +107,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式投稿とHugging Face公開",
+   "evidence_note": "NVIDIA公式発表（HF公開リンク付き）",
    "links": [
     {
      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
@@ -58,66 +122,64 @@
     "text_ja": "Beamを歓迎しましょう！\n\nReflectionAIが初のオープンウェイトモデルを公開したことを祝します。\n\n501BのMoEモデルはNVIDIA GB300 NVL72で学習され、公開初日からBlackwell Ultra上で、そのままの状態でGPUあたり70K tokens/sec以上を実現しています。\n\n🤗 Beam 1.0 NVFP4チェックポイントはこちら（@huggingface）: https://t.co/KIKYiobZmL"
    },
    "post_ids": [
-    "2111089696025858212"
+    "2111089696025858212",
+    "2111212292520194104"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "post_count": 2,
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
-   "id": "9720880a0c",
+   "id": "a7666cb1df",
    "verdict": "confirmed",
-   "title": "NVIDIAが新しいオープンモデルNemotron 3.5 Super VLを発表",
-   "summary": "NVIDIAは公式アカウントで、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。投稿によると、推論とツール利用に加え、テキスト・画像・文書・動画の理解に対応し、長時間動くAIエージェント向けだという。総パラメータは120B、うち12Bが稼働するとしている。",
+   "title": "OpenAI、社内でCodexを保守作業に使う事例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントが、同社エンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけ、保守の残作業を進めている方法を紹介した。もう1件は、コミュニティのハードウェア作品を探して共有できるサイトを作ったことを伝える投稿。",
    "points": [
-    "新しい点: 推論・ツール利用と複数種類の入力（画像・文書・動画）理解を一つのモデルにまとめたこと",
-    "注意点: 投稿は仕様の紹介のみで、性能の比較データや公開条件は投稿内では確認できない",
-    "総パラメータ120B・稼働12Bは、大規模だが一部だけが動く構成（いわゆるMoE）とみられる"
+    "社内利用の紹介で、Codexが実際の開発現場でどう使われているかを示す事例",
+    "投稿には具体的な成果や数値は書かれていないため、効果の大きさは分からない",
+    "ハードウェア作品の共有サイトは投稿にURLがあるのみで、詳細は未確認"
    ],
    "terms": [
     {
-     "term": "推論（reasoning）",
-     "desc": "段階を踏んで考えて答えを導くAIの能力"
+     "term": "Codex",
+     "desc": "OpenAIが提供するプログラミングを支援するAIエージェント。コードの作成や修正を行う。"
     },
     {
-     "term": "ツール利用",
-     "desc": "AIが検索や計算などの外部機能を呼び出して作業すること"
-    },
-    {
-     "term": "パラメータ（稼働）",
-     "desc": "AIの内部の数値の数。稼働分は1回の処理で実際に使われる部分を指す"
+     "term": "保守（メンテナンス）",
+     "desc": "既存のソフトウェアを修正・改善し、動き続けるよう管理する作業。"
     }
    ],
-   "score": 86,
+   "score": 87,
    "credibility": 90,
-   "heat": 54,
-   "first_seen": "2026-10-15T15:09:11.000Z",
-   "latest": "2026-10-15T15:09:11.000Z",
+   "heat": 58,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-16T21:50:00.000Z",
    "authors": [
-    "NVIDIAAI"
+    "OpenAIDevs"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式X投稿",
+   "evidence_note": "OpenAI公式の投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
-    "text_ja": "NVIDIA Nemotron 3.5 Super VL を紹介します\n\n新しいオープンモデルで、推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせ、長時間動作するAIエージェント向けに設計されています。\n\n総パラメータ数120B、アクティブパラメータ12B 🧵 https://t.co/BcbED05qSG"
+    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
+    "username": "OpenAIDevs",
+    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
+    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
    },
    "post_ids": [
-    "2110749836450713896"
+    "2111213093577691337",
+    "2110855363616763922"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "post_count": 2,
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "09e2adae1b",
@@ -139,9 +201,9 @@
      "desc": "開発企業とは独立した外部機関が、AIの安全性や性能を検査すること。"
     }
    ],
-   "score": 85,
+   "score": 84,
    "credibility": 100,
-   "heat": 38,
+   "heat": 35,
    "first_seen": "2026-10-15T17:27:34.000Z",
    "latest": "2026-10-15T17:27:34.000Z",
    "authors": [
@@ -175,7 +237,7 @@
     "2110784662071398807"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "87ce596b06",
@@ -197,9 +259,9 @@
      "desc": "スポンサー（資金提供者）が費用を負担し、対象者が無料または割安で使える仕組み。"
     }
    ],
-   "score": 83,
+   "score": 82,
    "credibility": 90,
-   "heat": 48,
+   "heat": 46,
    "first_seen": "2026-10-15T21:15:00.000Z",
    "latest": "2026-10-15T21:15:00.000Z",
    "authors": [
@@ -227,7 +289,7 @@
     "2110841898076418336"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "0e004fa107",
@@ -249,9 +311,9 @@
      "desc": "AIの学習や計算に使う処理能力のこと。"
     }
    ],
-   "score": 82,
+   "score": 80,
    "credibility": 90,
-   "heat": 44,
+   "heat": 41,
    "first_seen": "2026-10-15T21:31:45.000Z",
    "latest": "2026-10-15T21:31:45.000Z",
    "authors": [
@@ -279,7 +341,7 @@
     "2110846112152105136"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "72a21beacd",
@@ -301,9 +363,9 @@
      "desc": "新しい薬を見つけて開発する過程のこと"
     }
    ],
-   "score": 81,
+   "score": 79,
    "credibility": 93,
-   "heat": 38,
+   "heat": 34,
    "first_seen": "2026-10-16T10:15:04.000Z",
    "latest": "2026-10-16T10:15:04.000Z",
    "authors": [
@@ -337,7 +399,7 @@
     "2111038207240388770"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "df58d0f4ce",
@@ -365,7 +427,7 @@
    ],
    "score": 78,
    "credibility": 100,
-   "heat": 21,
+   "heat": 19,
    "first_seen": "2026-10-15T21:51:01.000Z",
    "latest": "2026-10-15T23:38:49.000Z",
    "authors": [
@@ -399,59 +461,7 @@
     "2110878089916121333"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-17T00:37:26Z"
-  },
-  {
-   "id": "c841955662",
-   "verdict": "confirmed",
-   "title": "OpenAI、Codexでハードウェア作品を共有できるサイトを公開",
-   "summary": "OpenAIの開発者向け公式アカウントは、コミュニティのハードウェア作品を探索したり、自分の作品を共有したりできるサイトを公開したと投稿した。Codexを使って「何でも作れる」ことを示す狙いとみられる。投稿には公開サイトへのリンクのみで、詳細な機能や規模は示されていない。",
-   "points": [
-    "AIコーディングツールを使い、ハードウェア作品まで作る事例を集める場として位置づけられている。",
-    "ソフトウェア開発者だけでなく、電子工作などを行う人にも関係する可能性がある。",
-    "投稿からは対象範囲や利用条件は分からない。詳細はサイトで確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIのAIがプログラムを書いたり修正したりするツール。"
-    },
-    {
-     "term": "ハードウェアプロジェクト",
-     "desc": "電子回路や機械など、実体のある製品・装置を作る取り組みのこと。"
-    }
-   ],
-   "score": 78,
-   "credibility": 90,
-   "heat": 36,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-15T22:08:31.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
-    "username": "OpenAIDevs",
-    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
-    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
-   },
-   "post_ids": [
-    "2110855363616763922"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "d9767b8952",
@@ -475,7 +485,7 @@
    ],
    "score": 77,
    "credibility": 93,
-   "heat": 29,
+   "heat": 27,
    "first_seen": "2026-10-15T22:30:57.000Z",
    "latest": "2026-10-15T22:32:35.000Z",
    "authors": [
@@ -510,7 +520,7 @@
     "2110861010496315632"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "131c40eede",
@@ -528,9 +538,9 @@
      "desc": "人に代わって目標に向けて自律的に作業するAIのこと。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 93,
-   "heat": 17,
+   "heat": 15,
    "first_seen": "2026-10-15T22:06:23.000Z",
    "latest": "2026-10-15T22:06:23.000Z",
    "authors": [
@@ -564,7 +574,7 @@
     "2110854828469686328"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "2e49e18055",
@@ -590,9 +600,9 @@
      "desc": "システムインテグレーター。企業向けにシステムの設計・導入・構築を行う事業者。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 100,
-   "heat": 7,
+   "heat": 5,
    "first_seen": "2026-10-16T04:15:58.000Z",
    "latest": "2026-10-16T04:15:58.000Z",
    "authors": [
@@ -636,7 +646,7 @@
     "2110947838976766263"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "203c28601c",
@@ -658,9 +668,9 @@
      "desc": "インターネット上でリアルタイムに行う動画中継"
     }
    ],
-   "score": 73,
+   "score": 71,
    "credibility": 85,
-   "heat": 29,
+   "heat": 24,
    "first_seen": "2026-10-16T14:00:32.000Z",
    "latest": "2026-10-16T14:00:32.000Z",
    "authors": [
@@ -688,7 +698,7 @@
     "2111094948133216735"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "f14c799367",
@@ -716,7 +726,7 @@
    ],
    "score": 56,
    "credibility": 70,
-   "heat": 16,
+   "heat": 14,
    "first_seen": "2026-10-15T23:29:55.000Z",
    "latest": "2026-10-15T23:29:55.000Z",
    "authors": [
@@ -744,7 +754,7 @@
     "2110875851600633956"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   },
   {
    "id": "e519fc16d9",
@@ -764,7 +774,7 @@
    ],
    "score": 53,
    "credibility": 78,
-   "heat": 3,
+   "heat": 2,
    "first_seen": "2026-10-16T07:55:09.000Z",
    "latest": "2026-10-16T07:55:09.000Z",
    "authors": [
@@ -798,59 +808,7 @@
     "2111002997195174272"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
-  },
-  {
-   "id": "cad0710d7d",
-   "verdict": "promising",
-   "title": "Gemini 4 ArgonをBlenderの3Dモデル作成で試用",
-   "summary": "プログラマーのnpaka氏は、Gemini 4 ArgonとAntigravityを使い、添付画像を参考にBlenderで3Dモデルを作成する試用を行ったと投稿した。投稿には完成した3Dモデルの画像が添付されている。結果の品質や作業時間などの詳細は投稿に書かれていない。",
-   "points": [
-    "画像を見て3Dモデルを作るのは、AIの画像理解と3Dソフトの操作を組み合わせた作業とされる",
-    "投稿では1回の試用結果のみで、再現性や他の作業での性能は分からない",
-    "AIが専門ソフトを操作して成果物を作る例として、今後の使い方の参考になりそう"
-   ],
-   "terms": [
-    {
-     "term": "Blender",
-     "desc": "無料で使える3DCG(3次元の映像・モデル)作成ソフト"
-    },
-    {
-     "term": "Antigravity",
-     "desc": "Googleが提供する開発用のAI関連ツールとみられる(未確認)"
-    }
-   ],
-   "score": 52,
-   "credibility": 70,
-   "heat": 11,
-   "first_seen": "2026-10-16T06:53:27.000Z",
-   "latest": "2026-10-16T06:53:27.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の試用と完成画像",
-   "links": [],
-   "post": {
-    "url": "https://x.com/npaka123/status/2110987470737485952",
-    "username": "npaka123",
-    "text": "Gemini 4 Argon x Antigravity をおためし中\n\nプロンプト:\n添付画像を参考にBlenderで3Dモデルを作成して\n\n←完成　添付画像→ https://t.co/wH6HWI8rQd",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110987470737485952"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T00:37:26Z"
+   "archived_at": "2026-10-17T07:55:49Z"
   }
  ]
 }

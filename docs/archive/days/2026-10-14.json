@@ -2,6 +2,88 @@
  "date": "2026-10-14",
  "items": [
   {
+   "id": "006f619225",
+   "verdict": "confirmed",
+   "title": "GoogleがGemini 4 Argonでマイクラのドラゴン撃破を発表",
+   "summary": "Google DeepMindは、Gemini 4 Argonの4体のエージェントがマインクラフトを白紙の状態から27時間で攻略し、エンダードラゴンを倒したと公式アカウントで発表した。投稿によると、エージェントは人間の介入なしにコードとテキストのみで2,783のプログラムを書き、チャットで分担し、メモを共有しながらエラーを修正したという。国内の論文紹介メディアAIDBもこの結果を紹介し、費用はAPI定価で約520ドルだったと伝えている。",
+   "points": [
+    "新しい点: 長時間にわたる複数エージェントの協調作業を、ゲームという環境で具体的な数値付きで示したこと",
+    "注意点: 投稿は公式発表だが、詳細な技術論文やデータは投稿内では確認できない。ゲームでの成功が実務のコーディング能力にどこまで直結するかは未確認",
+    "Google DeepMindは科学分野（量子計算・核融合・タンパク質設計など）への応用も挙げているが、投稿では具体的な成果は示されていない"
+   ],
+   "terms": [
+    {
+     "term": "エージェント",
+     "desc": "目標に向けて自分で計画し、道具を使って行動するAIのこと"
+    },
+    {
+     "term": "サンドボックス",
+     "desc": "外部に影響が出ないよう隔離された安全な実験用の環境"
+    },
+    {
+     "term": "APIの定価",
+     "desc": "AIサービスを外部から呼び出す際の公開料金。実際の請求額とは異なる場合がある"
+    }
+   ],
+   "score": 95,
+   "credibility": 90,
+   "heat": 52,
+   "first_seen": "2026-10-13T18:41:04.000Z",
+   "latest": "2026-10-16T16:11:50.000Z",
+   "authors": [
+    "GoogleDeepMind",
+    "ai_database",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "DeepMind公式X投稿・AIDB紹介",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
+    "username": "GoogleDeepMind",
+    "text": "Four Gemini 4 Argon agents beat Minecraft from scratch in 27 hours.\n\nOperating in a sandbox using only code and text, they wrote 2,783 programs, divided up jobs over chat, shared notes, and debugged errors together - all with no human help ↓\nhttps://t.co/uyIhDOQXGT",
+    "text_ja": "Gemini 4 Argonの4体のエージェントが、ゼロからマインクラフトを27時間でクリアしました。\n\nコードとテキストだけを使うサンドボックス環境で動作し、2,783本のプログラムを書き、チャットで作業を分担し、メモを共有し、エラーを一緒に修正しました。人間の助けは一切ありません ↓\nhttps://t.co/uyIhDOQXGT"
+   },
+   "post_ids": [
+    "2110078384617464201",
+    "2111127991401247033",
+    "2110421861435879476",
+    "2110957608182108298",
+    "2110990860192219385",
+    "2110957045252022393",
+    "2110988138046960008"
+   ],
+   "post_count": 6,
+   "archived_at": "2026-10-17T00:37:26Z"
+  },
+  {
    "id": "58ab98f1c0",
    "verdict": "confirmed",
    "title": "Anthropic、社内向けのソース管理システムを自作と発表",
@@ -62,92 +144,6 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-16T13:20:35Z"
-  },
-  {
-   "id": "11ad83dd4b",
-   "verdict": "confirmed",
-   "title": "Google、新AIモデル「Gemini 4 Argon」を一般提供開始",
-   "summary": "Googleは新しいAIモデル「Gemini 4 Argon」の一般提供を開始したと、ITmedia NEWSが報じた。Google DeepMind公式アカウントは、ロボットにビデオを見せてコーンホールを練習させ、人型ロボットApollo（Apptronik製）で7投連続で成功させたことや、量子計算・核融合・タンパク質設計などの科学研究で役立っていることを投稿している。npaka氏はAntigravity 2.0で試した結果を紹介している。",
-   "points": [
-    "新しい点: 推論の継続力が強化されたとされ、長い作業を続ける能力が特徴とされる。",
-    "注意点: 科学分野の成果は投稿で触れられているが、具体的な結果や検証内容は本文からは分からない。",
-    "用語補足: Antigravityは、Googleの開発支援ツールの名称とみられる。"
-   ],
-   "terms": [
-    {
-     "term": "一般提供（GA）",
-     "desc": "限られた利用者向けの試用段階を終え、誰でも使えるようになることのこと。"
-    },
-    {
-     "term": "ヒューマノイド",
-     "desc": "人の体に似た形をしたロボットのこと。"
-    },
-    {
-     "term": "Antigravity",
-     "desc": "Googleが提供するAI開発支援の製品名とみられる。"
-    }
-   ],
-   "score": 86,
-   "credibility": 90,
-   "heat": 29,
-   "first_seen": "2026-10-13T18:41:04.000Z",
-   "latest": "2026-10-16T07:06:56.000Z",
-   "authors": [
-    "GoogleDeepMind",
-    "itmedia_news",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Google公式投稿・ITmedia報道",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002265/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2110078384617464201",
-    "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon taught a robot to play cornhole just by watching a video.\n\nIt mapped the physics, coded its own simulation, and taught @Apptronik's Apollo humanoid to sink 7 throws in a row. https://t.co/JIyoKnVc4q",
-    "text_ja": "Gemini 4 Argonは、動画を見るだけでロボットに投げ玉（コーンホール）を教えました。\n\n物理法則を把握し、自分でシミュレーションを書き、@Apptronik の Apollo ヒューマノイドに7回連続で投げ入れさせました。"
-   },
-   "post_ids": [
-    "2110078384617464201",
-    "2110421861435879476",
-    "2110336113705660609",
-    "2110990860192219385",
-    "2110988138046960008",
-    "2110987470737485952"
-   ],
-   "post_count": 6,
-   "archived_at": "2026-10-16T17:32:49Z"
   },
   {
    "id": "c6fcfd5593",
@@ -221,9 +217,9 @@
      "desc": "AIが会話内容を記憶し、次回以降の会話に活かす仕組み"
     }
    ],
-   "score": 80,
+   "score": 79,
    "credibility": 100,
-   "heat": 24,
+   "heat": 23,
    "first_seen": "2026-10-14T14:44:54.000Z",
    "latest": "2026-10-14T14:45:55.000Z",
    "authors": [
@@ -263,7 +259,7 @@
     "2110381339098874321"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "85f5d98b2b",
@@ -289,9 +285,9 @@
      "desc": "Anthropicが開発するAIモデルの名称"
     }
    ],
-   "score": 80,
+   "score": 79,
    "credibility": 93,
-   "heat": 35,
+   "heat": 33,
    "first_seen": "2026-10-14T10:45:12.000Z",
    "latest": "2026-10-15T13:14:22.000Z",
    "authors": [
@@ -330,61 +326,7 @@
     "2110720940665372825"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-16T17:32:49Z"
-  },
-  {
-   "id": "b8260d51a9",
-   "verdict": "confirmed",
-   "title": "AnthropicがシンガポールにオフィスとAI安全などでMOUを締結",
-   "summary": "Anthropic公式アカウントは、シンガポールに新しいオフィスを開設したと発表した。同社によると、アジア太平洋地域では5拠点目となる。あわせてシンガポール政府とAIの安全性と責任ある活用に関するMOU（覚書）を締結したとしている。",
-   "points": [
-    "アジア太平洋地域での拠点拡大を示す動きで、現地企業や政府との連携が進む可能性がある",
-    "MOUは覚書であり、具体的な内容や拘束力は投稿からは分からない",
-    "開設時期や体制などの詳細は、投稿に含まれるリンク先で確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "MOU（覚書）",
-     "desc": "正式な契約の前段階で、協力の方向性を示す文書。法的拘束力は内容によって異なる。"
-    }
-   ],
-   "score": 79,
-   "credibility": 100,
-   "heat": 22,
-   "first_seen": "2026-10-14T08:40:45.000Z",
-   "latest": "2026-10-14T08:40:45.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式投稿",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/news/singapore-office-opening",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2110289695888511368",
-    "username": "AnthropicAI",
-    "text": "We’ve opened an office in Singapore—our fifth in the Asia-Pacific region. We’ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
-    "text_ja": "シンガポールにオフィスを開設しました。アジア太平洋地域では5拠点目になります。また、AIの安全性と責任ある活用に関して、シンガポール政府との間で覚書（MOU）を締結しました。\n\n新しいオフィスの詳細はこちら: https://t.co/125mBgHLkM"
-   },
-   "post_ids": [
-    "2110289695888511368"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "f945ab27d9",
@@ -439,66 +381,58 @@
    "archived_at": "2026-10-16T13:20:35Z"
   },
   {
-   "id": "1dbb3aadf3",
+   "id": "b8260d51a9",
    "verdict": "confirmed",
-   "title": "Google DeepMindとGovTechがシンガポールの詐欺検知でGemma活用",
-   "summary": "Google DeepMind公式アカウントは、シンガポールでは報告された犯罪の半数以上で高度なソーシャルエンジニアリングが使われていると述べた。そのうえで、シンガポール政府のGovTechと共同で、オープンモデルGemmaを使った端末内（on-device）の詐欺検知を構築していると発表した。現地の詐欺手口で微調整することで、個人情報を守りながらリアルタイムで脅威を識別するとしている。",
+   "title": "AnthropicがシンガポールにオフィスとAI安全などでMOUを締結",
+   "summary": "Anthropic公式アカウントは、シンガポールに新しいオフィスを開設したと発表した。同社によると、アジア太平洋地域では5拠点目となる。あわせてシンガポール政府とAIの安全性と責任ある活用に関するMOU（覚書）を締結したとしている。",
    "points": [
-    "端末内で処理する方式のため、個人データを外部に送らずに検知できる点が特徴とされる",
-    "「半数以上」の統計の出典は投稿からは確認できない",
-    "実際の精度や提供時期は投稿からは不明で、今後の公表を待つ必要がある"
+    "アジア太平洋地域での拠点拡大を示す動きで、現地企業や政府との連携が進む可能性がある",
+    "MOUは覚書であり、具体的な内容や拘束力は投稿からは分からない",
+    "開設時期や体制などの詳細は、投稿に含まれるリンク先で確認が必要"
    ],
    "terms": [
     {
-     "term": "ソーシャルエンジニアリング",
-     "desc": "人の心理や信頼につけこんで、パスワードや金銭をだまし取る手口。"
-    },
-    {
-     "term": "Gemma",
-     "desc": "Googleが公開しているオープンなAIモデル。誰でも利用・改変できる。"
-    },
-    {
-     "term": "オンデバイス（on-device）",
-     "desc": "クラウドではなく、スマホやPCなどの手元の機器上でAIを動かす方式。"
+     "term": "MOU（覚書）",
+     "desc": "正式な契約の前段階で、協力の方向性を示す文書。法的拘束力は内容によって異なる。"
     }
    ],
-   "score": 76,
-   "credibility": 93,
-   "heat": 25,
-   "first_seen": "2026-10-14T02:05:00.000Z",
-   "latest": "2026-10-14T02:05:00.000Z",
+   "score": 78,
+   "credibility": 100,
+   "heat": 21,
+   "first_seen": "2026-10-14T08:40:45.000Z",
+   "latest": "2026-10-14T08:40:45.000Z",
    "authors": [
-    "GoogleDeepMind"
+    "AnthropicAI"
    ],
    "author_labels": [
     {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式投稿",
+   "evidence_note": "Anthropic公式投稿",
    "links": [
     {
-     "url": "https://goo.gle/4ygVkJa",
-     "domain": "goo.gle",
-     "primary": false
+     "url": "https://www.anthropic.com/news/singapore-office-opening",
+     "domain": "anthropic.com",
+     "primary": true
     }
    ],
    "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2110190101707858039",
-    "username": "GoogleDeepMind",
-    "text": "Over half of reported crimes in Singapore use sophisticated social engineering.\n\nWith @GovTechSG, we’re building on-device fraud detection using our open model Gemma.\n\nBy fine-tuning it on local scam tactics, it identifies threats in real time without compromising personal privacy → https://t.co/VdCio2nrHC",
-    "text_ja": "シンガポールで報告される犯罪の半数以上が、巧妙なソーシャルエンジニアリングを用いたものです。\n\n@GovTechSG と協力し、当社のオープンモデル Gemma を活用したオンデバイスの詐欺検知システムを開発しています。\n\n現地の詐欺手口でファインチューニングすることで、個人のプライバシーを損なうことなく、リアルタイムで脅威を識別します → https://t.co/VdCio2nrHC"
+    "url": "https://x.com/AnthropicAI/status/2110289695888511368",
+    "username": "AnthropicAI",
+    "text": "We’ve opened an office in Singapore—our fifth in the Asia-Pacific region. We’ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
+    "text_ja": "シンガポールにオフィスを開設しました。アジア太平洋地域では5拠点目になります。また、AIの安全性と責任ある活用に関して、シンガポール政府との間で覚書（MOU）を締結しました。\n\n新しいオフィスの詳細はこちら: https://t.co/125mBgHLkM"
    },
    "post_ids": [
-    "2110190101707858039"
+    "2110289695888511368"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "53b8b9c75f",
@@ -526,7 +460,7 @@
    ],
    "score": 75,
    "credibility": 90,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-10-14T03:43:40.000Z",
    "latest": "2026-10-14T07:28:00.000Z",
    "authors": [
@@ -562,7 +496,69 @@
     "2110271388246565186"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
+  },
+  {
+   "id": "1dbb3aadf3",
+   "verdict": "confirmed",
+   "title": "Google DeepMindとGovTechがシンガポールの詐欺検知でGemma活用",
+   "summary": "Google DeepMind公式アカウントは、シンガポールでは報告された犯罪の半数以上で高度なソーシャルエンジニアリングが使われていると述べた。そのうえで、シンガポール政府のGovTechと共同で、オープンモデルGemmaを使った端末内（on-device）の詐欺検知を構築していると発表した。現地の詐欺手口で微調整することで、個人情報を守りながらリアルタイムで脅威を識別するとしている。",
+   "points": [
+    "端末内で処理する方式のため、個人データを外部に送らずに検知できる点が特徴とされる",
+    "「半数以上」の統計の出典は投稿からは確認できない",
+    "実際の精度や提供時期は投稿からは不明で、今後の公表を待つ必要がある"
+   ],
+   "terms": [
+    {
+     "term": "ソーシャルエンジニアリング",
+     "desc": "人の心理や信頼につけこんで、パスワードや金銭をだまし取る手口。"
+    },
+    {
+     "term": "Gemma",
+     "desc": "Googleが公開しているオープンなAIモデル。誰でも利用・改変できる。"
+    },
+    {
+     "term": "オンデバイス（on-device）",
+     "desc": "クラウドではなく、スマホやPCなどの手元の機器上でAIを動かす方式。"
+    }
+   ],
+   "score": 75,
+   "credibility": 93,
+   "heat": 24,
+   "first_seen": "2026-10-14T02:05:00.000Z",
+   "latest": "2026-10-14T02:05:00.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式投稿",
+   "links": [
+    {
+     "url": "https://goo.gle/4ygVkJa",
+     "domain": "goo.gle",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2110190101707858039",
+    "username": "GoogleDeepMind",
+    "text": "Over half of reported crimes in Singapore use sophisticated social engineering.\n\nWith @GovTechSG, we’re building on-device fraud detection using our open model Gemma.\n\nBy fine-tuning it on local scam tactics, it identifies threats in real time without compromising personal privacy → https://t.co/VdCio2nrHC",
+    "text_ja": "シンガポールで報告される犯罪の半数以上が、巧妙なソーシャルエンジニアリングを用いたものです。\n\n@GovTechSG と協力し、当社のオープンモデル Gemma を活用したオンデバイスの詐欺検知システムを開発しています。\n\n現地の詐欺手口でファインチューニングすることで、個人のプライバシーを損なうことなく、リアルタイムで脅威を識別します → https://t.co/VdCio2nrHC"
+   },
+   "post_ids": [
+    "2110190101707858039"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "2a29c5b68e",
@@ -580,9 +576,9 @@
      "desc": "止まると業務や社会に大きな影響が出る重要な用途のこと"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 85,
-   "heat": 32,
+   "heat": 30,
    "first_seen": "2026-10-14T14:30:30.000Z",
    "latest": "2026-10-14T14:30:30.000Z",
    "authors": [
@@ -610,7 +606,7 @@
     "2110377713525796942"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "0812258b57",
@@ -725,65 +721,6 @@
    "archived_at": "2026-10-16T13:20:35Z"
   },
   {
-   "id": "fed1589919",
-   "verdict": "confirmed",
-   "title": "Hugging Faceが投機的デコーディングとBeamに関するライブ配信を告知",
-   "summary": "Hugging Face公式アカウントが、投機的デコーディング（speculative decoding）によりローカルLLMを高速化する方法を解説するライブ配信を告知した。また、Reflectionチームが「Beam」をどう作ったかを話すライブ配信も告知された。",
-   "points": [
-    "投機的デコーディングとは、小さなモデルで先に候補を出し、大きなモデルでまとめて確認して処理を速くする手法とみられる。",
-    "告知はイベントの案内であり、速度向上の具体的な数値はこの投稿からは分からない。",
-    "ライブ配信の内容は後から見返せる可能性があるが、詳細は配信ページで確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "投機的デコーディング",
-     "desc": "小さなモデルで次の単語候補を先読みし、大きなモデルでまとめて確認することで文章生成を速くする方法。"
-    },
-    {
-     "term": "ローカルLLM",
-     "desc": "クラウドではなく自分のPCや手元の機器で動かす大規模言語モデル。"
-    }
-   ],
-   "score": 68,
-   "credibility": 88,
-   "heat": 12,
-   "first_seen": "2026-10-14T12:41:35.000Z",
-   "latest": "2026-10-16T13:15:47.000Z",
-   "authors": [
-    "huggingface"
-   ],
-   "author_labels": [
-    {
-     "username": "huggingface",
-     "label": "Hugging Face公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式のライブ配信告知",
-   "links": [
-    {
-     "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
-     "domain": "youtube.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/huggingface/status/2110350304613114226",
-    "username": "huggingface",
-    "text": "Learn about how to get multipliers in local LLM speed-ups using speculative decoding in this livestream with @mervenoyann, @MaartenGr and @_EldarKurtic \n\nhttps://t.co/tFexgaLcT5 https://t.co/Pad59uMr8J",
-    "text_ja": "@mervenoyann、@MaartenGr、@_EldarKurtic によるこのライブ配信で、投機的デコーディングを使ってローカルLLMを高速化する方法を学べます。\n\nhttps://t.co/tFexgaLcT5"
-   },
-   "post_ids": [
-    "2110350304613114226",
-    "2111083685961445625"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-16T17:32:49Z"
-  },
-  {
    "id": "48b23121d1",
    "verdict": "confirmed",
    "title": "NVIDIA、欧州の都市でAIエージェントを運用事例として紹介",
@@ -829,7 +766,66 @@
     "2110255766762569810"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
+  },
+  {
+   "id": "fed1589919",
+   "verdict": "confirmed",
+   "title": "Hugging Faceが投機的デコーディングとBeamに関するライブ配信を告知",
+   "summary": "Hugging Face公式アカウントが、投機的デコーディング（speculative decoding）によりローカルLLMを高速化する方法を解説するライブ配信を告知した。また、Reflectionチームが「Beam」をどう作ったかを話すライブ配信も告知された。",
+   "points": [
+    "投機的デコーディングとは、小さなモデルで先に候補を出し、大きなモデルでまとめて確認して処理を速くする手法とみられる。",
+    "告知はイベントの案内であり、速度向上の具体的な数値はこの投稿からは分からない。",
+    "ライブ配信の内容は後から見返せる可能性があるが、詳細は配信ページで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "投機的デコーディング",
+     "desc": "小さなモデルで次の単語候補を先読みし、大きなモデルでまとめて確認することで文章生成を速くする方法。"
+    },
+    {
+     "term": "ローカルLLM",
+     "desc": "クラウドではなく自分のPCや手元の機器で動かす大規模言語モデル。"
+    }
+   ],
+   "score": 67,
+   "credibility": 88,
+   "heat": 11,
+   "first_seen": "2026-10-14T12:41:35.000Z",
+   "latest": "2026-10-16T13:15:47.000Z",
+   "authors": [
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式のライブ配信告知",
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
+     "domain": "youtube.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/huggingface/status/2110350304613114226",
+    "username": "huggingface",
+    "text": "Learn about how to get multipliers in local LLM speed-ups using speculative decoding in this livestream with @mervenoyann, @MaartenGr and @_EldarKurtic \n\nhttps://t.co/tFexgaLcT5 https://t.co/Pad59uMr8J",
+    "text_ja": "@mervenoyann、@MaartenGr、@_EldarKurtic によるこのライブ配信で、投機的デコーディングを使ってローカルLLMを高速化する方法を学べます。\n\nhttps://t.co/tFexgaLcT5"
+   },
+   "post_ids": [
+    "2110350304613114226",
+    "2111083685961445625"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "c90df8df0a",
@@ -853,7 +849,7 @@
    ],
    "score": 60,
    "credibility": 78,
-   "heat": 19,
+   "heat": 18,
    "first_seen": "2026-10-14T03:11:16.000Z",
    "latest": "2026-10-14T03:11:16.000Z",
    "authors": [
@@ -887,7 +883,7 @@
     "2110206778470514845"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "978e4eadde",
@@ -909,9 +905,9 @@
      "desc": "大学の全学生・全教職員が利用できるように一括で導入すること"
     }
    ],
-   "score": 58,
+   "score": 57,
    "credibility": 78,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-10-14T10:45:12.000Z",
    "latest": "2026-10-14T10:45:12.000Z",
    "authors": [
@@ -945,7 +941,7 @@
     "2110321016614670629"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "c1ef3dad92",
@@ -971,9 +967,9 @@
      "desc": "学校の事務や運営に関する業務全般（成績処理、文書作成など）。"
     }
    ],
-   "score": 58,
+   "score": 57,
    "credibility": 78,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-10-14T09:40:10.000Z",
    "latest": "2026-10-14T09:40:10.000Z",
    "authors": [
@@ -1007,7 +1003,69 @@
     "2110304646783009241"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
+  },
+  {
+   "id": "79bb866800",
+   "verdict": "promising",
+   "title": "GoogleがGemini 4 Argonの一般提供を開始",
+   "summary": "ITmedia NEWSは、Googleが新AIモデル「Gemini 4 Argon」の一般提供を開始したと伝えた。推論の継続力を強化し、一部のベンチマークでトップになったとしている。投稿は記事の見出しと要約で、ベンチマークの具体的な数値や対象は投稿には含まれない。",
+   "points": [
+    "「一般提供」は、限られた利用者向けの提供から誰でも使える段階に移ったことを指す",
+    "「推論の継続力」は長い思考や複数ステップの作業を途切れず続ける力を指すとみられる(未確認)",
+    "どのベンチマークで何位だったかは記事本文で確認が必要で、性能の評価は一部に限られる可能性がある"
+   ],
+   "terms": [
+    {
+     "term": "一般提供",
+     "desc": "開発段階を終え、誰もが利用できる形でサービスを公開すること"
+    },
+    {
+     "term": "推論",
+     "desc": "AIが入力に対して答えや判断を導き出す処理のこと"
+    },
+    {
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ問題で測り比べるための共通の試験"
+    }
+   ],
+   "score": 55,
+   "credibility": 78,
+   "heat": 7,
+   "first_seen": "2026-10-14T11:45:12.000Z",
+   "latest": "2026-10-14T11:45:12.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002265/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2110336113705660609",
+    "username": "itmedia_news",
+    "text": "Google、待望の新AIモデル「Gemini 4 Argon」一般提供を開始　推論の継続力を強化　一部ベンチでトップに\nhttps://t.co/1HpIERBQAx",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110336113705660609"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "2fd1c33ea6",
@@ -1035,7 +1093,7 @@
    ],
    "score": 53,
    "credibility": 70,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-14T06:57:26.000Z",
    "latest": "2026-10-14T06:57:26.000Z",
    "authors": [
@@ -1063,7 +1121,7 @@
     "2110263697574928536"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-16T17:32:49Z"
+   "archived_at": "2026-10-17T00:37:26Z"
   },
   {
    "id": "6832bfaa0b",

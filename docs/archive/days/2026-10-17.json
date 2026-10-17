@@ -2,62 +2,60 @@
  "date": "2026-10-17",
  "items": [
   {
-   "id": "77d5a3e216",
+   "id": "bbe43ddca2",
    "verdict": "confirmed",
-   "title": "Anthropic、Claudeで量子回路の設計効率化を発表",
-   "summary": "Anthropicは、STEM Fellowsプログラムの成果として、Claude Mythos 5が平易な指示から量子回路を設計し、既存の最良の公開回路を上回るものを作れたと発表した。改善幅は場合によって桁違い（10倍以上）とされる。投稿では、回路効率の向上が化学や材料科学への量子コンピューティング応用を早める可能性があると述べている。",
+   "title": "DeepSeekがV4.1-Flash-1017を公開",
+   "summary": "DeepSeekは公式アカウントで「DeepSeek-V4.1-Flash-1017」の公開を発表した。前版より性能が高く、タスクが速く終わり、出力も短くなったと説明している。Webサイト・アプリ・APIで利用可能になったとされる。",
    "points": [
-    "新しい点: AIが量子回路の設計そのものを行い、既存の公開回路より効率の良いものを出したとされる",
-    "重要性: 回路が効率化されると必要な計算資源が減り、量子計算の実用化が近づくとみられる",
-    "注意点: 具体的な回路の内容や評価条件は投稿では示されておらず、詳細は公式記事で確認が必要"
+    "前版と比べて性能向上と処理の効率化をうたっており、コストを増やさずに改善したという位置づけ",
+    "DeepSeek Harness v0.2.1-rc.1以降へのアップグレードが推奨されている",
+    "性能の具体的な数値（ベンチマーク結果）は投稿内に示されておらず、詳細は未確認"
    ],
    "terms": [
     {
-     "term": "量子回路",
-     "desc": "量子コンピュータで計算を行う手順を組んだ回路のようなもの。"
+     "term": "Pareto improvement",
+     "desc": "ある指標を良くしても他の指標が悪化しない改善のこと。"
     },
     {
-     "term": "STEM Fellowsプログラム",
-     "desc": "Anthropicが科学・工学分野の研究者を支援する取り組みとみられる。（未確認の詳細）"
+     "term": "API",
+     "desc": "外部のソフトからAIモデルを呼び出すための窓口。"
+    },
+    {
+     "term": "DeepSeek Harness",
+     "desc": "DeepSeekが提供するとみられる開発用ツール（投稿からの推測を含む）。"
     }
    ],
-   "score": 97,
-   "credibility": 100,
-   "heat": 67,
-   "first_seen": "2026-10-16T17:47:58.000Z",
-   "latest": "2026-10-16T17:47:58.000Z",
+   "score": 100,
+   "credibility": 85,
+   "heat": 97,
+   "first_seen": "2026-10-17T08:35:54.000Z",
+   "latest": "2026-10-17T08:35:54.000Z",
    "authors": [
-    "AnthropicAI"
+    "deepseek_ai"
    ],
    "author_labels": [
     {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
+     "username": "deepseek_ai",
+     "label": "DeepSeek（AI企業の公式アカウント）",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式発表（ブログ）",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
+   "evidence_note": "DeepSeek公式X投稿",
+   "links": [],
    "post": {
-    "url": "https://x.com/AnthropicAI/status/2111152183240511640",
-    "username": "AnthropicAI",
-    "text": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\n\nGiven plain-language instructions, Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more.\n\nMore efficient circuits reduce the resources needed by quantum algorithms, which could bring quantum computing applications in chemistry and materials science within reach sooner.\n\nRead more: https://t.co/QCvoJLDmBo",
-    "text_ja": "STEM Fellowsプログラムからの新しい成果：Claudeで、より効率的な量子回路を設計。\n\n平易な言葉での指示を与えたところ、Claude Mythos 5は、既存の最良の公開回路を上回る量子回路を設計した。場合によっては桁違い、あるいはそれ以上の改善となった。\n\nより効率的な回路は量子アルゴリズムに必要な資源を減らすため、化学や材料科学における量子コンピューティングの応用を、より早く実現できる可能性がある。\n\n詳細はこちら: https://t.co/QCvoJLDmBo"
+    "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+    "username": "deepseek_ai",
+    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
+    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場しました！\n\n前バージョンと比べてベンチマーク性能が向上し、タスクの完了も速く、出力も短くなりました。性能とコストの両面でパレート改善を実現しています。Webサイト、アプリ、APIですでに利用可能です。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddy などに最適化されています。新モデルで最良の体験を得るには、DeepSeek Harness v0.2.1-rc.1 以降にアップグレードしてください。\n\n1/4"
    },
    "post_ids": [
-    "2111152183240511640"
+    "2111375640717033777"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T07:55:49Z"
+   "archived_at": "2026-10-17T12:15:44Z"
   },
   {
    "id": "b3227e3444",
@@ -79,9 +77,9 @@
      "desc": "ChatGPTに外部サービスや機能を追加する拡張機能のこと。"
     }
    ],
-   "score": 94,
+   "score": 93,
    "credibility": 90,
-   "heat": 75,
+   "heat": 72,
    "first_seen": "2026-10-16T20:00:22.000Z",
    "latest": "2026-10-16T20:27:13.000Z",
    "authors": [
@@ -110,7 +108,7 @@
     "2111185504746213705"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T07:55:49Z"
+   "archived_at": "2026-10-17T12:15:44Z"
   },
   {
    "id": "75fa35c614",
@@ -132,9 +130,9 @@
      "desc": "Codexでの作業の単位となる会話・タスクの履歴。"
     }
    ],
-   "score": 86,
+   "score": 84,
    "credibility": 90,
-   "heat": 55,
+   "heat": 51,
    "first_seen": "2026-10-16T21:43:19.000Z",
    "latest": "2026-10-16T21:43:19.000Z",
    "authors": [
@@ -162,7 +160,59 @@
     "2111211411766399288"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T07:55:49Z"
+   "archived_at": "2026-10-17T12:15:44Z"
+  },
+  {
+   "id": "9244ef7fb8",
+   "verdict": "confirmed",
+   "title": "NVIDIAがMuseチームのオープンウェイトモデル公開を祝福",
+   "summary": "NVIDIA公式AIアカウントは、@alexandr_wang氏とMuseチームによるオープンウェイトモデルの公開を祝う投稿をした。投稿には祝意のみが書かれており、モデルの名称や性能、公開日などの詳細は含まれていない。",
+   "points": [
+    "投稿だけでは対象モデルの中身や性能は分からず、リンク先の確認が必要",
+    "「オープンウェイト」は学習済みの重みを公開する形式で、利用条件はモデルごとに異なる",
+    "公式アカウントによる祝意投稿のため、詳細はMuse側の発表で確認するのがよい"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイト",
+     "desc": "学習済みのAIモデルの重み（数値データ）を公開する形式。利用条件はモデルごとに異なる。"
+    },
+    {
+     "term": "ポストトレーニング",
+     "desc": "基礎学習の後に、用途に合わせて追加で行う調整の工程。"
+    }
+   ],
+   "score": 80,
+   "credibility": 90,
+   "heat": 39,
+   "first_seen": "2026-10-16T21:46:49.000Z",
+   "latest": "2026-10-16T21:46:49.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2111212292520194104",
+    "username": "NVIDIAAI",
+    "text": "Congrats @alexandr_wang  and @Muse team on releasing such an epic open weights model! https://t.co/7JH7PXOnAz",
+    "text_ja": "@alexandr_wang さんと @Muse チームによる素晴らしいオープンウェイトモデルの公開、おめでとうございます！ https://t.co/7JH7PXOnAz"
+   },
+   "post_ids": [
+    "2111212292520194104"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-17T12:15:44Z"
   },
   {
    "id": "0edce25f8d",
@@ -188,9 +238,9 @@
      "desc": "AIに与える指示文のこと。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 37,
+   "heat": 34,
    "first_seen": "2026-10-16T17:08:32.000Z",
    "latest": "2026-10-16T17:08:32.000Z",
    "authors": [
@@ -218,75 +268,7 @@
     "2111142258867335430"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T07:55:49Z"
-  },
-  {
-   "id": "0be8fdf207",
-   "verdict": "confirmed",
-   "title": "Sakana AIがマーケティング職4件の採用を公開",
-   "summary": "Sakana AIの公式アカウントが、新設のマーケティングチームで募集する4つのポジション（Enterprise Marketing Manager、Marketing Operations Manager、Product Marketing Manager、Developer Marketing Manager）を公開した。投稿によると、各ポジションは各領域で最初の専任メンバーとなり、Sakana Chatなどのプロダクトと API を日本と世界の企業・開発者・官公庁に届ける役割を担う。",
-   "points": [
-    "新設のマーケティングチームで、プロダクトチーム・GTMチームと並走する体制とされている",
-    "採用ページの詳細は投稿に記載の各URLで確認できる",
-    "求人情報のため、AI技術の新発表ではない点に注意"
-   ],
-   "terms": [
-    {
-     "term": "GTM",
-     "desc": "Go-To-Market。製品を市場に届けて売るための戦略・活動の総称。"
-    },
-    {
-     "term": "API",
-     "desc": "外部のソフトウェアから機能を呼び出すための接点。開発者がAIを組み込む際に使う。"
-    }
-   ],
-   "score": 77,
-   "credibility": 100,
-   "heat": 18,
-   "first_seen": "2026-10-16T23:30:00.000Z",
-   "latest": "2026-10-16T23:30:00.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式の採用告知",
-   "links": [
-    {
-     "url": "https://sakana.ai/careers/enterprise-marketing-manager/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://sakana.ai/careers/marketing-operations-manager/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://sakana.ai/careers/product-marketing-manager/",
-     "domain": "sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2111238258210517336",
-    "username": "SakanaAILabs",
-    "text": "【採用情報】マーケティングチームの新しいポジションを4つ公開しました🐟️\n\nEnterprise Marketing Manager\nhttps://t.co/5FlYVyC5GB\n\nMarketing Operations Manager\nhttps://t.co/a3LN8kFVdx\n\nProduct Marketing Manager\nhttps://t.co/PKO5ifOK8V\n\nDeveloper Marketing Manager\nhttps://t.co/O1ao5ViTgV\n\nマーケティングチームは新設の組織で、プロダクトチームおよびGTMチームと並走します。今回募集する4つのポジションは、いずれも各領域で最初の専任メンバーです。Sakana Chat・Sakana Marlin・Sakana Fugu・Sakana Namazu・APIを日本と世界の企業・開発者・官公庁に届ける役割を担っていただきます。\n\n詳細は上記の採用ページからご確認ください🐡",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2111238258210517336"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T07:55:49Z"
+   "archived_at": "2026-10-17T12:15:44Z"
   },
   {
    "id": "7b7e9df5fd",
@@ -312,9 +294,9 @@
      "desc": "複数のAIエージェントが互いに関わり合いながら動く仕組みのこと。"
     }
    ],
-   "score": 74,
+   "score": 71,
    "credibility": 75,
-   "heat": 57,
+   "heat": 50,
    "first_seen": "2026-10-17T03:24:09.000Z",
    "latest": "2026-10-17T03:24:09.000Z",
    "authors": [
@@ -342,7 +324,7 @@
     "2111297183571943445"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T07:55:49Z"
+   "archived_at": "2026-10-17T12:15:44Z"
   }
  ]
 }

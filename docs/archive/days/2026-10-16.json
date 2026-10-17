@@ -2,118 +2,91 @@
  "date": "2026-10-16",
  "items": [
   {
-   "id": "b35026ff00",
+   "id": "21414dcfb3",
    "verdict": "confirmed",
-   "title": "OpenAIがCodexを社内の保守作業に使う方法を紹介",
-   "summary": "OpenAIの開発者向け公式アカウントは、同社のエンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を減らしている方法を紹介した。詳しい内容は投稿に添えられたリンク先にあるとみられる。",
+   "title": "DeepSeekが新モデル「V4.1-Flash-1017」を公開",
+   "summary": "DeepSeek公式アカウントが、新モデル「DeepSeek-V4.1-Flash-1017」の提供開始を発表した。公式によると、前版よりベンチマーク性能が高く、タスクの完了が速く、出力が短くなり、性能とコストの両面で改善したとされる。ウェブサイト、アプリ、APIで利用可能になったという。",
    "points": [
-    "AIのコーディング支援を、新機能開発だけでなく既存コードの保守にも使う事例として参考になる",
-    "投稿本文には具体的な成果の数値は書かれておらず、効果の大きさは未確認",
-    "リンク先の詳細を読まないと、どの程度の作業を任せているかは判断できない"
+    "前版より性能・速度が上がり、出力も短くなったと公式は説明している。性能の数値は投稿に示されていない",
+    "DeepSeek Harness v0.2.1-rc.1以上へのアップデートが推奨されている",
+    "npaka氏は同モデルでBlenderによる3Dモデル作成を試す様子を投稿しており、実際の動作例の一つとなっている"
    ],
    "terms": [
     {
-     "term": "Codex",
-     "desc": "OpenAIのコード作成・修正を支援するAIエージェント。"
+     "term": "API",
+     "desc": "外部のプログラムからAIモデルの機能を呼び出すための窓口"
     },
     {
-     "term": "コードベース",
-     "desc": "ソフトウェアのプログラムを構成する全体のコードの集まり。"
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ問題で比べるための共通のテスト"
     },
     {
-     "term": "保守（メンテナンス）",
-     "desc": "既存のシステムの不具合修正や改善を継続して行う作業。"
+     "term": "Pareto improvement",
+     "desc": "性能を落とさず、コストなどを改善すること（パレート改善）"
     }
    ],
-   "score": 86,
-   "credibility": 90,
-   "heat": 54,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-16T21:50:00.000Z",
+   "score": 100,
+   "credibility": 85,
+   "heat": 88,
+   "first_seen": "2026-10-15T21:46:36.000Z",
+   "latest": "2026-10-17T13:58:53.000Z",
    "authors": [
-    "OpenAIDevs"
+    "deepseek_ai",
+    "natolambert",
+    "npaka123"
    ],
    "author_labels": [
     {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
+     "username": "deepseek_ai",
+     "label": "DeepSeek（AI企業の公式アカウント）",
      "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式X投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
-    "username": "OpenAIDevs",
-    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
-    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
-   },
-   "post_ids": [
-    "2111213093577691337"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
-  },
-  {
-   "id": "09e2adae1b",
-   "verdict": "confirmed",
-   "title": "AnthropicがMETRを含む第三者評価機関との協力を発表",
-   "summary": "Anthropicは公式アカウントで、安全対策を評価機関に評価してもらう取り組みを進めていると発表した。複数の組織と協議中で、そのうちMETRのチームには社員に近いアクセス権を与えたという。第三者評価との協力の進め方は、同社のブログ記事で説明されている。",
-   "points": [
-    "「社員に近いアクセス権」は、外部チームに通常より深い内部情報や検証環境を見せることを指すとみられるが、具体的な範囲は投稿からは不明。",
-    "第三者評価は、開発企業の自己評価だけでは見落としがちな問題を外部が確かめる仕組みとして注目されている。",
-    "評価の結果や内容は投稿に含まれておらず、今後の報告を待つ必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "METR",
-     "desc": "AIの能力や危険性を外部から評価する非営利の研究機関。"
-    },
-    {
-     "term": "第三者評価",
-     "desc": "開発企業とは独立した外部機関が、AIの安全性や性能を検査すること。"
-    }
-   ],
-   "score": 84,
-   "credibility": 100,
-   "heat": 34,
-   "first_seen": "2026-10-15T17:27:34.000Z",
-   "latest": "2026-10-15T17:27:34.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
+   "evidence_note": "DeepSeek公式アカウントの投稿",
    "links": [
     {
-     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-     "domain": "anthropic.com",
-     "primary": true
+     "url": "https://note.com/npaka/n/nebbfa829304b?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n1d99253ae2cf?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
-    "username": "AnthropicAI",
-    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
-    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
+    "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+    "username": "deepseek_ai",
+    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
+    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場！\n\n前バージョンより、ベンチマーク性能が高く、タスクの完了が速く、出力も短くなりました。性能とコストの両面で改善（パレート改善）しています。現在、当社のウェブサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddyなどに最適化されています。新モデルで最良の体験をするには、DeepSeek Harness v0.2.1-rc.1以降にアップグレードしてください。\n\n1/4"
    },
    "post_ids": [
-    "2110784662071398807"
+    "2111375640717033777",
+    "2111440910257099072",
+    "2111456922293694485",
+    "2111454710498766979",
+    "2111436480585564358",
+    "2110849847607836739",
+    "2111456711882232065"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "post_count": 7,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "5e32851c1e",
@@ -141,7 +114,7 @@
    ],
    "score": 84,
    "credibility": 100,
-   "heat": 35,
+   "heat": 34,
    "first_seen": "2026-10-16T13:39:40.000Z",
    "latest": "2026-10-16T13:39:40.000Z",
    "authors": [
@@ -175,7 +148,63 @@
     "2111089696025858212"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
+  },
+  {
+   "id": "b35026ff00",
+   "verdict": "confirmed",
+   "title": "OpenAIがCodexを社内の保守作業に使う方法を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントは、同社のエンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を減らしている方法を紹介した。詳しい内容は投稿に添えられたリンク先にあるとみられる。",
+   "points": [
+    "AIのコーディング支援を、新機能開発だけでなく既存コードの保守にも使う事例として参考になる",
+    "投稿本文には具体的な成果の数値は書かれておらず、効果の大きさは未確認",
+    "リンク先の詳細を読まないと、どの程度の作業を任せているかは判断できない"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのコード作成・修正を支援するAIエージェント。"
+    },
+    {
+     "term": "コードベース",
+     "desc": "ソフトウェアのプログラムを構成する全体のコードの集まり。"
+    },
+    {
+     "term": "保守（メンテナンス）",
+     "desc": "既存のシステムの不具合修正や改善を継続して行う作業。"
+    }
+   ],
+   "score": 84,
+   "credibility": 90,
+   "heat": 51,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-16T21:50:00.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式X投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
+    "username": "OpenAIDevs",
+    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
+    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
+   },
+   "post_ids": [
+    "2111213093577691337"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "29128a45bc",
@@ -232,7 +261,65 @@
     "2111216377935831403"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
+  },
+  {
+   "id": "09e2adae1b",
+   "verdict": "confirmed",
+   "title": "AnthropicがMETRを含む第三者評価機関との協力を発表",
+   "summary": "Anthropicは公式アカウントで、安全対策を評価機関に評価してもらう取り組みを進めていると発表した。複数の組織と協議中で、そのうちMETRのチームには社員に近いアクセス権を与えたという。第三者評価との協力の進め方は、同社のブログ記事で説明されている。",
+   "points": [
+    "「社員に近いアクセス権」は、外部チームに通常より深い内部情報や検証環境を見せることを指すとみられるが、具体的な範囲は投稿からは不明。",
+    "第三者評価は、開発企業の自己評価だけでは見落としがちな問題を外部が確かめる仕組みとして注目されている。",
+    "評価の結果や内容は投稿に含まれておらず、今後の報告を待つ必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "METR",
+     "desc": "AIの能力や危険性を外部から評価する非営利の研究機関。"
+    },
+    {
+     "term": "第三者評価",
+     "desc": "開発企業とは独立した外部機関が、AIの安全性や性能を検査すること。"
+    }
+   ],
+   "score": 83,
+   "credibility": 100,
+   "heat": 33,
+   "first_seen": "2026-10-15T17:27:34.000Z",
+   "latest": "2026-10-15T17:27:34.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+    "username": "AnthropicAI",
+    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
+    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
+   },
+   "post_ids": [
+    "2110784662071398807"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "87ce596b06",
@@ -254,9 +341,9 @@
      "desc": "スポンサー（資金提供者）が費用を負担し、対象者が無料または割安で使える仕組み。"
     }
    ],
-   "score": 82,
+   "score": 81,
    "credibility": 90,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-10-15T21:15:00.000Z",
    "latest": "2026-10-15T21:15:00.000Z",
    "authors": [
@@ -284,83 +371,7 @@
     "2110841898076418336"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
-  },
-  {
-   "id": "7466ea5cdb",
-   "verdict": "confirmed",
-   "title": "FLUX 3 Image Klein 5.6Bのオープンモデルが公開",
-   "summary": "NVIDIA公式AIアカウントは、画像生成モデル「FLUX 3 Image Klein 5.6B」について、NVIDIA GB200 NVL72で学習され、RTX GPUで動作すると投稿した。NVFP4版も用意されているという。プログラマーのnpaka123氏は、この投稿を画像・動画生成AIのリリース年表に追加したと紹介している。",
-   "points": [
-    "RTX GPUで動くとされ、個人の手元のPCでも使える可能性がある（動作条件の詳細は投稿に記載なし）",
-    "NVFP4は低精度の数値形式で、軽量化に使われるとみられる（未確認）",
-    "年表への追加は時系列の整理であり、性能評価そのものではない点に注意"
-   ],
-   "terms": [
-    {
-     "term": "NVFP4",
-     "desc": "NVIDIAが提唱する4ビットの低精度数値形式。モデルを軽くし高速化するために使われる。"
-    },
-    {
-     "term": "GB200 NVL72",
-     "desc": "NVIDIAのAI学習・推論向けの大型サーバーシステム。多数のGPUを一体で動かす。"
-    },
-    {
-     "term": "RTX GPU",
-     "desc": "NVIDIAのゲーミング・個人向けGPU。個人PCでもAIを動かせる機種がある。"
-    }
-   ],
-   "score": 82,
-   "credibility": 100,
-   "heat": 18,
-   "first_seen": "2026-10-15T21:51:01.000Z",
-   "latest": "2026-10-15T23:38:49.000Z",
-   "authors": [
-    "NVIDIAAI",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表投稿",
-   "links": [
-    {
-     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/tree/main/variants/nvfp4",
-     "domain": "huggingface.co",
-     "primary": true
-    },
-    {
-     "url": "https://note.com/npaka/n/ndb5f2491e4a6?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110878089916121333",
-    "username": "NVIDIAAI",
-    "text": "Can’t stop, won’t stop. The open models keep dropping\n\nFLUX 3 Image Klein 5.6B was trained on NVIDIA GB200 NVL72 and can run on an RTX GPU.\n\nBig 🙌 to the @bfl_ai team. There's also an NVFP4 variant: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7",
-    "text_ja": "オープンモデルが次々と公開されています。\n\nFLUX 3 Image Klein 5.6Bは NVIDIA GB200 NVL72 で学習され、RTX GPUで動作します。\n\n@bfl_ai チームにも大きな拍手を。NVFP4版もあります: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7"
-   },
-   "post_ids": [
-    "2110878089916121333",
-    "2110858798663643530",
-    "2110850961715696089"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "0e004fa107",
@@ -384,7 +395,7 @@
    ],
    "score": 80,
    "credibility": 90,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-10-15T21:31:45.000Z",
    "latest": "2026-10-15T21:31:45.000Z",
    "authors": [
@@ -412,7 +423,7 @@
     "2110846112152105136"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "72a21beacd",
@@ -434,9 +445,9 @@
      "desc": "新しい薬を見つけて開発する過程のこと"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 93,
-   "heat": 32,
+   "heat": 30,
    "first_seen": "2026-10-16T10:15:04.000Z",
    "latest": "2026-10-16T10:15:04.000Z",
    "authors": [
@@ -470,59 +481,69 @@
     "2111038207240388770"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
-   "id": "c841955662",
+   "id": "df58d0f4ce",
    "verdict": "confirmed",
-   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
-   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "title": "NVIDIA、FLUX 3 Image Klein 5.6Bの公開を紹介",
+   "summary": "NVIDIAの公式AIアカウントは、Black Forest Labs（bfl_ai）の画像生成モデル「FLUX 3 Image Klein 5.6B」を紹介した。投稿によると、このモデルはNVIDIA GB200 NVL72で学習され、RTX GPUで動作する。NVFP4版もあるとされ、Hugging Faceのリンクが示されている。",
    "points": [
-    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
-    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
-    "機能の詳細や対象範囲はリンク先で確認が必要"
+    "RTX GPUで動くため、個人のPCでも試せる可能性がある（動作環境の詳細は要確認）",
+    "NVFP4は低精度の数値形式で、軽量化につながるとみられるが、性能への影響は未確認",
+    "学習に使われたGB200 NVL72はNVIDIAの大型AIサーバー（一般利用は想定されにくい）"
    ],
    "terms": [
     {
-     "term": "Codex",
-     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
+     "term": "NVFP4",
+     "desc": "AIの計算を少ないビット数で行う数値形式。モデルを軽く速く動かすために使われる。"
     },
     {
-     "term": "ハードウェアプロジェクト",
-     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
+     "term": "GB200 NVL72",
+     "desc": "NVIDIAの大型AI学習・推論用サーバー。多数のGPUを一体化したもの。"
+    },
+    {
+     "term": "オープンモデル",
+     "desc": "重み（学習済みデータ）が公開され、誰でもダウンロードして使えるAIモデルのこと。"
     }
    ],
    "score": 77,
-   "credibility": 90,
-   "heat": 32,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-15T22:08:31.000Z",
+   "credibility": 100,
+   "heat": 17,
+   "first_seen": "2026-10-15T21:51:01.000Z",
+   "latest": "2026-10-15T23:38:49.000Z",
    "authors": [
-    "OpenAIDevs"
+    "NVIDIAAI"
    ],
    "author_labels": [
     {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式開発者アカウントの投稿",
-   "links": [],
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/tree/main/variants/nvfp4",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
    "post": {
-    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
-    "username": "OpenAIDevs",
-    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
-    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
+    "url": "https://x.com/NVIDIAAI/status/2110878089916121333",
+    "username": "NVIDIAAI",
+    "text": "Can’t stop, won’t stop. The open models keep dropping\n\nFLUX 3 Image Klein 5.6B was trained on NVIDIA GB200 NVL72 and can run on an RTX GPU.\n\nBig 🙌 to the @bfl_ai team. There's also an NVFP4 variant: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7",
+    "text_ja": "オープンモデルが次々と公開されています。\n\nFLUX 3 Image Klein 5.6Bは NVIDIA GB200 NVL72 で学習され、RTX GPUで動作します。\n\n@bfl_ai チームにも大きな拍手を。NVFP4版もあります: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7"
    },
    "post_ids": [
-    "2110855363616763922"
+    "2110878089916121333"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "post_count": 3,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "d9767b8952",
@@ -546,7 +567,7 @@
    ],
    "score": 76,
    "credibility": 93,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-10-15T22:30:57.000Z",
    "latest": "2026-10-15T22:32:35.000Z",
    "authors": [
@@ -581,7 +602,59 @@
     "2110861010496315632"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
+  },
+  {
+   "id": "c841955662",
+   "verdict": "confirmed",
+   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
+   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "points": [
+    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
+    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
+    "機能の詳細や対象範囲はリンク先で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
+    },
+    {
+     "term": "ハードウェアプロジェクト",
+     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
+    }
+   ],
+   "score": 76,
+   "credibility": 90,
+   "heat": 31,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-15T22:08:31.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式開発者アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
+    "username": "OpenAIDevs",
+    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
+    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
+   },
+   "post_ids": [
+    "2110855363616763922"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "e60497e5c5",
@@ -607,9 +680,9 @@
      "desc": "システムインテグレーター。企業向けにシステムの設計・導入・構築を請け負う会社のこと"
     }
    ],
-   "score": 76,
+   "score": 75,
    "credibility": 100,
-   "heat": 15,
+   "heat": 13,
    "first_seen": "2026-10-16T04:15:58.000Z",
    "latest": "2026-10-16T23:30:00.000Z",
    "authors": [
@@ -654,7 +727,7 @@
     "2110947838976766263"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "131c40eede",
@@ -708,7 +781,7 @@
     "2110854828469686328"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "203c28601c",
@@ -730,9 +803,9 @@
      "desc": "インターネット上でリアルタイムに行う動画中継"
     }
    ],
-   "score": 70,
+   "score": 69,
    "credibility": 85,
-   "heat": 22,
+   "heat": 20,
    "first_seen": "2026-10-16T14:00:32.000Z",
    "latest": "2026-10-16T14:00:32.000Z",
    "authors": [
@@ -760,7 +833,7 @@
     "2111094948133216735"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "f14c799367",
@@ -816,7 +889,7 @@
     "2110875851600633956"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "e519fc16d9",
@@ -870,7 +943,7 @@
     "2111002997195174272"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   }
  ]
 }

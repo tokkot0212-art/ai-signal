@@ -2,6 +2,78 @@
  "date": "2026-10-15",
  "items": [
   {
+   "id": "22948fd2ce",
+   "verdict": "confirmed",
+   "title": "Metaがオープンウェイトモデル「Muse Spark Open」を公開",
+   "summary": "Meta公式アカウントが、オープンウェイト（重みを公開する形式）のモデル「Muse Spark Open」の公開を発表した。同社は米国のオープンウェイトモデルとして最も高性能としており、コーディングやエージェント的な作業向けとされる。総パラメータ816B、有効42B、コンテキスト1Mトークン、テキスト・画像・動画・音声を扱えるとされ、「Muse Wonder」シリーズの性能についても公式ブログで紹介されている。",
+   "points": [
+    "総パラメータ816B・有効42Bという公式スペックが示されている。MoE構成とみられるが、詳細は未確認",
+    "利用ライセンス（Muse Open License）については、研究者から批判的な意見も出ている",
+    "公式の性能評価の詳細は投稿からは確認できず、リンク先の公式ブログで確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイト",
+     "desc": "学習済みモデルの重み（パラメータ）を一般に公開し、誰でも利用・改変できる形式"
+    },
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルの内部にある調整可能な数値。多いほど大規模なモデル"
+    },
+    {
+     "term": "コンテキストウィンドウ",
+     "desc": "AIが一度に読み書きできる文章の長さの上限"
+    }
+   ],
+   "score": 89,
+   "credibility": 93,
+   "heat": 46,
+   "first_seen": "2026-10-14T16:25:37.000Z",
+   "latest": "2026-10-15T17:40:26.000Z",
+   "authors": [
+    "AIatMeta",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://research.meta.ai/blog/muse-wonder",
+     "domain": "research.meta.ai",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2110779754274292212",
+    "username": "AIatMeta",
+    "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
+    "text_ja": "本日、Muse Spark Openを公開します。米国製のオープンウェイトモデルとしては現時点で最も高性能です。\n\nコーディングやエージェント的な作業向けに作られており、長期にわたるタスク、複雑なソフトウェア開発、多段階の推論に優れています。\n\n主な仕様：\n→ 総パラメータ816B／有効パラメータ42B\n→ 1Mトークンのコンテキストウィンドウ\n→ テキスト、画像、動画、音声をネイティブに扱うマルチモーダル対応"
+   },
+   "post_ids": [
+    "2110779754274292212",
+    "2110517571149807685",
+    "2110784087745253671",
+    "2110787899784601698"
+   ],
+   "post_count": 4,
+   "archived_at": "2026-10-17T16:31:59Z"
+  },
+  {
    "id": "1ad3608e1a",
    "verdict": "confirmed",
    "title": "OpenAIが欧州企業のAIエージェント利用拡大を報告",
@@ -23,7 +95,7 @@
    ],
    "score": 86,
    "credibility": 100,
-   "heat": 41,
+   "heat": 40,
    "first_seen": "2026-10-14T18:45:57.000Z",
    "latest": "2026-10-14T18:45:57.000Z",
    "authors": [
@@ -57,7 +129,87 @@
     "2110442001749659890"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
+  },
+  {
+   "id": "eadbcff719",
+   "verdict": "confirmed",
+   "title": "NVIDIAがStepFunの600BモデルStep 5 Previewを紹介",
+   "summary": "NVIDIA公式アカウントが、中国のStepFunによる「Step 5 Preview」を祝福し、同社として最大のオープンウェイト公開だと紹介した。投稿によると600BのMoEモデルで、最大24時間に及ぶエージェント作業に対応するよう作られ、NVIDIA GB300上でNVFP4を使い1GPUあたりほぼ8K tokens/秒で動作するという。デプロイ方法や学習の手順も案内されている。一方、研究者のnatolambert氏は、中国の大規模オープンモデルに関する規制の話題について、実装次第で重要だと述べた。",
+   "points": [
+    "「24時間のエージェント作業」「約8K tokens/秒」は企業側の発表で、第三者による検証は未確認",
+    "NVFP4はNVIDIAの低精度演算形式で、速度の数値は使われた環境に依存する",
+    "中国のオープンモデルに関する規制の話は、投稿では詳細が不明で、影響は今後の運用次第とみられる"
+   ],
+   "terms": [
+    {
+     "term": "MoE（混合エキスパート）",
+     "desc": "複数の専門家モジュールを持ち、入力ごとに一部だけを使う効率的な構成"
+    },
+    {
+     "term": "NVFP4",
+     "desc": "NVIDIAの4ビット級の低精度計算形式で、高速化やメモリ削減に使われる"
+    },
+    {
+     "term": "GB300",
+     "desc": "NVIDIAのAI向けGPU製品の一つ"
+    }
+   ],
+   "score": 85,
+   "credibility": 100,
+   "heat": 24,
+   "first_seen": "2026-10-15T13:52:20.000Z",
+   "latest": "2026-10-16T13:48:47.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4",
+     "domain": "huggingface.co",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/NVIDIA-NeMo/Automodel/blob/main/docs/model-coverage/llm/stepfun-ai/step-5-preview.mdx",
+     "domain": "github.com",
+     "primary": true
+    },
+    {
+     "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/vllm-model-free-nim-experimental/-",
+     "domain": "catalog.ngc.nvidia.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110730497907216588",
+    "username": "NVIDIAAI",
+    "text": "Congrats to StepFun on Step 5 Preview 🙌 Their largest open weights release.\n\nThe 600B MoE model is built to handle agent tasks lasting up to 24 hours.\n\nThe model runs at nearly 8K tokens/sec/GPU on NVIDIA GB300 using NVFP4.\n\nNVP4 checkpoint: https://t.co/poBcZXeWqY\n\nDeploy with @SGL_project - https://t.co/2iE8ytEk50  or @vLLM_project - https://t.co/PedItg9OR4\n\nPost-train with NeMo Automodel: https://t.co/KxNt53Sb8k\n\nRun it with NVIDIA NIM using a single command: https://t.co/UOWllHNEMW",
+    "text_ja": "StepFunの Step 5 Preview リリースおめでとうございます 🙌 同社として最大のオープンウェイト公開です。\n\n600BのMoEモデルで、最長24時間に及ぶエージェントタスクを扱えるように設計されています。\n\nNVIDIA GB300上でNVFP4を使用すると、GPUあたり毎秒約8Kトークンで動作します。\n\nNVFP4チェックポイント: https://t.co/poBcZXeWqY\n\n@SGL_project での デプロイ - https://t.co/2iE8ytEk50 または @vLLM_project - https://t.co/PedItg9OR4\n\nNeMo Automodel でのポストトレーニング: https://t.co/KxNt53Sb8k\n\nNVIDIA NIM なら1つのコマンドで実行できます: https://t.co/UOWllHNEMW"
+   },
+   "post_ids": [
+    "2110730497907216588",
+    "2111091990427521520"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "08b49c6d8d",
@@ -81,7 +233,7 @@
    ],
    "score": 84,
    "credibility": 90,
-   "heat": 50,
+   "heat": 49,
    "first_seen": "2026-10-15T14:35:29.000Z",
    "latest": "2026-10-15T14:35:29.000Z",
    "authors": [
@@ -109,7 +261,7 @@
     "2110741355739963884"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "821ae05ba4",
@@ -182,79 +334,7 @@
     "2110875871896858695"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
-  },
-  {
-   "id": "039a21fb0d",
-   "verdict": "confirmed",
-   "title": "NVIDIA、StepFunの600B級MoEモデル「Step 5 Preview」を祝福・配布を案内",
-   "summary": "NVIDIAの公式AIアカウントが、StepFunのStep 5 Previewを祝う投稿をした。投稿によると、これは同社の最大規模のオープンウェイト公開で、600BのMoEモデルとされ、最大24時間続くエージェント作業に対応するよう作られたという。NVIDIA GB300上でNVFP4を使い、GPU1基あたり約8Kトークン/秒で動作すると書かれている。",
-   "points": [
-    "『オープンウェイト』は重みが公開され、自社環境で動かせる形式を指す。誰でも試せる点が注目点になる",
-    "推論速度はNVIDIAのハードウェアと低精度形式NVFP4を前提とした数値で、他環境での速度は未確認",
-    "チェックポイントの配布やvLLM・SGLangでの実行手順が示されているが、実際の品質評価は別途確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "MoE（Mixture of Experts）",
-     "desc": "複数の専門家ネットワークを持ち、入力ごとに一部だけを動かす仕組み。大規模でも計算を抑えやすい"
-    },
-    {
-     "term": "オープンウェイト",
-     "desc": "AIモデルの学習済み重み（パラメータ）を公開し、誰でもダウンロードして使えること"
-    },
-    {
-     "term": "NVFP4",
-     "desc": "NVIDIAの4ビットの低精度数値形式。計算を軽くして高速化するために使われる"
-    }
-   ],
-   "score": 80,
-   "credibility": 100,
-   "heat": 25,
-   "first_seen": "2026-10-15T13:52:20.000Z",
-   "latest": "2026-10-15T13:52:20.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4",
-     "domain": "huggingface.co",
-     "primary": true
-    },
-    {
-     "url": "https://github.com/NVIDIA-NeMo/Automodel/blob/main/docs/model-coverage/llm/stepfun-ai/step-5-preview.mdx",
-     "domain": "github.com",
-     "primary": true
-    },
-    {
-     "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/vllm-model-free-nim-experimental/-",
-     "domain": "catalog.ngc.nvidia.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110730497907216588",
-    "username": "NVIDIAAI",
-    "text": "Congrats to StepFun on Step 5 Preview 🙌 Their largest open weights release.\n\nThe 600B MoE model is built to handle agent tasks lasting up to 24 hours.\n\nThe model runs at nearly 8K tokens/sec/GPU on NVIDIA GB300 using NVFP4.\n\nNVP4 checkpoint: https://t.co/poBcZXeWqY\n\nDeploy with @SGL_project - https://t.co/2iE8ytEk50  or @vLLM_project - https://t.co/PedItg9OR4\n\nPost-train with NeMo Automodel: https://t.co/KxNt53Sb8k\n\nRun it with NVIDIA NIM using a single command: https://t.co/UOWllHNEMW",
-    "text_ja": "StepFunの Step 5 Preview リリースおめでとうございます 🙌 同社として最大のオープンウェイト公開です。\n\n600BのMoEモデルで、最長24時間に及ぶエージェントタスクを扱えるように設計されています。\n\nNVIDIA GB300上でNVFP4を使用すると、GPUあたり毎秒約8Kトークンで動作します。\n\nNVFP4チェックポイント: https://t.co/poBcZXeWqY\n\n@SGL_project での デプロイ - https://t.co/2iE8ytEk50 または @vLLM_project - https://t.co/PedItg9OR4\n\nNeMo Automodel でのポストトレーニング: https://t.co/KxNt53Sb8k\n\nNVIDIA NIM なら1つのコマンドで実行できます: https://t.co/UOWllHNEMW"
-   },
-   "post_ids": [
-    "2110730497907216588"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "c0ab88047c",
@@ -282,7 +362,7 @@
    ],
    "score": 78,
    "credibility": 88,
-   "heat": 39,
+   "heat": 37,
    "first_seen": "2026-10-15T10:50:29.000Z",
    "latest": "2026-10-16T11:29:30.000Z",
    "authors": [
@@ -316,63 +396,70 @@
     "2111056939841163336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
-   "id": "0c75dc2341",
+   "id": "85f5d98b2b",
    "verdict": "confirmed",
-   "title": "MistralとCERNが素粒子物理向けの大規模AIモデルで協業",
-   "summary": "Mistral AI公式アカウントは、欧州の素粒子物理研究機関CERNとMistralが協力して、大規模AIモデルが複雑化する素粒子物理学にどう貢献できるかを探ると投稿した。目標として、数十億件の模擬衝突データで学習した単一の「Large Physics Model」を挙げている。",
+   "title": "Anthropic、2つの新フェローシップの応募を開始",
+   "summary": "Anthropic公式アカウントは、STEM FellowsとConceptual Reasoning Fellowsの2つの新しいフェローシップの応募開始を発表した。対象は科学・工学分野と哲学・認知科学・経済学・政策・法学などの分野で、2027年1月から4か月間Anthropicに在籍し、Claudeが難しい問題をうまく推論できるようにする取り組みに携わるとされている。応募締め切りは10月28日。",
    "points": [
-    "模擬衝突データ（シミュレーション）を大量に使う構想で、実験データ解析への応用が想定される",
-    "構想段階の内容で、実現時期や性能目標は投稿からは分からない",
-    "『Large Physics Model』は本投稿での呼称で、一般に確立した名称かは未確認"
+    "公式発表で、応募の詳細は投稿に載せられたリンク先の募集要項で確認できる",
+    "理論的な分野の研究者がAIの推論能力の改善に直接関わる点が特徴",
+    "応募条件や報酬などの詳細は投稿からは分からないため、要項で確認が必要"
    ],
    "terms": [
     {
-     "term": "CERN",
-     "desc": "欧州原子核研究機構。スイスとフランスの国境地帯にある素粒子物理学の研究機関。"
+     "term": "フェローシップ",
+     "desc": "研究者などが一定期間、組織で研究や実務に携わる制度のこと。"
     },
     {
-     "term": "素粒子物理学",
-     "desc": "物質を構成する最小の粒子やその相互作用を研究する分野。"
-    },
-    {
-     "term": "模擬衝突データ",
-     "desc": "コンピュータ上のシミュレーションで再現した粒子衝突のデータ。実験データの解析に使われる。"
+     "term": "推論（reasoning）",
+     "desc": "AIが情報をもとに考えを組み立てて結論を導く能力のこと。"
     }
    ],
-   "score": 76,
-   "credibility": 85,
-   "heat": 37,
-   "first_seen": "2026-10-15T10:50:29.000Z",
-   "latest": "2026-10-15T10:50:29.000Z",
+   "score": 77,
+   "credibility": 93,
+   "heat": 29,
+   "first_seen": "2026-10-15T13:14:22.000Z",
+   "latest": "2026-10-15T13:14:22.000Z",
    "authors": [
-    "MistralAI"
+    "AnthropicAI"
    ],
    "author_labels": [
     {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Mistral公式アカウントの投稿",
-   "links": [],
+   "evidence_note": "Anthropic公式の募集告知",
+   "links": [
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5447080008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    },
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5452403008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/MistralAI/status/2110684732103041474",
-    "username": "MistralAI",
-    "text": "What can large-scale AI models bring to the growing complexity of particle physics?\n\n@CERN  and Mistral join forces to explore this question.\n\nThe ambition: a single Large Physics Model, trained on billions of simulated collisions. https://t.co/nrdCfcBI3k",
-    "text_ja": "大規模AIモデルは、ますます複雑になる素粒子物理学に何をもたらせるでしょうか？\n\n@CERN と Mistral は、この問いを探るために協力します。\n\n目標は、数十億の模擬衝突で学習した単一の Large Physics Model です。 https://t.co/nrdCfcBI3k"
+    "url": "https://x.com/AnthropicAI/status/2110720940665372825",
+    "username": "AnthropicAI",
+    "text": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason well about some of the hardest problems in those fields.\n\nFor more information, see the descriptions below. The application deadline is October 28.\n\nConceptual Reasoning Fellows: https://t.co/kTaBPqttbK\n\nSTEM Fellows: htt",
+    "text_ja": "Anthropicの2つの新しいフェローシップの応募が開始されました。\n\nSTEMフェロー（科学・工学）と概念的推論フェロー（哲学、認知科学、経済学、政策、法律）は、2027年1月から4か月間Anthropicで勤務し、それぞれの分野の難問についてClaudeがうまく推論できるようにする取り組みに参加します。\n\n詳細は以下の説明をご覧ください。応募締切は10月28日です。\n\n概念的推論フェロー：https://t.co/kTaBPqttbK\n\nSTEMフェロー：https://t.co/KkD5ruJkjq"
    },
    "post_ids": [
-    "2110684732103041474"
+    "2110720940665372825"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "51aeb0ff39",
@@ -430,65 +517,63 @@
     "2110715601454784965"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
-   "id": "461b021da0",
+   "id": "0c75dc2341",
    "verdict": "confirmed",
-   "title": "Metaが新モデル「Muse Wonder」「Muse Wonder Full」を発表",
-   "summary": "Meta公式アカウントは、「Muse Wonder」と「Muse Wonder Full」の2モデルが、個人向け・業務向けのエージェント的タスクで「SOTA（最高水準）」の性能を出したと投稿した。詳細は研究者向けブログに掲載されているという。",
+   "title": "MistralとCERNが素粒子物理向けの大規模AIモデルで協業",
+   "summary": "Mistral AI公式アカウントは、欧州の素粒子物理研究機関CERNとMistralが協力して、大規模AIモデルが複雑化する素粒子物理学にどう貢献できるかを探ると投稿した。目標として、数十億件の模擬衝突データで学習した単一の「Large Physics Model」を挙げている。",
    "points": [
-    "個人用途と業務用途の両方でエージェント的な作業を対象にしたモデルとされている",
-    "「SOTA」は特定のベンチマークでの最高水準を指す言葉で、どの指標でどの比較かは投稿からは未確認",
-    "数値や比較対象は公式ブログで確認する必要がある"
+    "模擬衝突データ（シミュレーション）を大量に使う構想で、実験データ解析への応用が想定される",
+    "構想段階の内容で、実現時期や性能目標は投稿からは分からない",
+    "『Large Physics Model』は本投稿での呼称で、一般に確立した名称かは未確認"
    ],
    "terms": [
     {
-     "term": "SOTA",
-     "desc": "State of the Art。その時点で最も高い性能を示していることを指す言葉"
+     "term": "CERN",
+     "desc": "欧州原子核研究機構。スイスとフランスの国境地帯にある素粒子物理学の研究機関。"
     },
     {
-     "term": "エージェント的タスク",
-     "desc": "AIが単発の質問応答ではなく、複数の手順を自分で進めて作業を完了させる種類の仕事のこと"
+     "term": "素粒子物理学",
+     "desc": "物質を構成する最小の粒子やその相互作用を研究する分野。"
+    },
+    {
+     "term": "模擬衝突データ",
+     "desc": "コンピュータ上のシミュレーションで再現した粒子衝突のデータ。実験データの解析に使われる。"
     }
    ],
-   "score": 71,
-   "credibility": 93,
-   "heat": 12,
-   "first_seen": "2026-10-14T16:25:37.000Z",
-   "latest": "2026-10-14T23:46:15.000Z",
+   "score": 75,
+   "credibility": 85,
+   "heat": 36,
+   "first_seen": "2026-10-15T10:50:29.000Z",
+   "latest": "2026-10-15T10:50:29.000Z",
    "authors": [
-    "AIatMeta"
+    "MistralAI"
    ],
    "author_labels": [
     {
-     "username": "AIatMeta",
-     "label": "Meta公式アカウント",
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Meta公式発表（研究者ブログ案内）",
-   "links": [
-    {
-     "url": "https://research.meta.ai/blog/muse-wonder",
-     "domain": "research.meta.ai",
-     "primary": false
-    }
-   ],
+   "evidence_note": "Mistral公式アカウントの投稿",
+   "links": [],
    "post": {
-    "url": "https://x.com/AIatMeta/status/2110517571149807685",
-    "username": "AIatMeta",
-    "text": "Muse Wonder and Muse Wonder Full deliver SOTA performance on personal and professional agentic tasks. \n\nLearn more about the models on our researcher blog: https://t.co/koe89SLQts https://t.co/mEIYEFD40g",
-    "text_ja": "Muse WonderとMuse Wonder Fullは、個人向けおよび業務向けのエージェント用途で SOTA(最高水準)の性能を実現しています。\n\nモデルの詳細は研究者ブログでご覧ください: https://t.co/koe89SLQts https://t.co/mEIYEFD40g"
+    "url": "https://x.com/MistralAI/status/2110684732103041474",
+    "username": "MistralAI",
+    "text": "What can large-scale AI models bring to the growing complexity of particle physics?\n\n@CERN  and Mistral join forces to explore this question.\n\nThe ambition: a single Large Physics Model, trained on billions of simulated collisions. https://t.co/nrdCfcBI3k",
+    "text_ja": "大規模AIモデルは、ますます複雑になる素粒子物理学に何をもたらせるでしょうか？\n\n@CERN と Mistral は、この問いを探るために協力します。\n\n目標は、数十億の模擬衝突で学習した単一の Large Physics Model です。 https://t.co/nrdCfcBI3k"
    },
    "post_ids": [
-    "2110517571149807685"
+    "2110684732103041474"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "post_count": 1,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "da6cc3b764",
@@ -592,7 +677,7 @@
     "2110478862836433119"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "4ebe2c67a1",
@@ -620,7 +705,7 @@
    ],
    "score": 77,
    "credibility": 93,
-   "heat": 28,
+   "heat": 27,
    "first_seen": "2026-10-14T18:44:49.000Z",
    "latest": "2026-10-14T18:44:49.000Z",
    "authors": [
@@ -654,7 +739,77 @@
     "2110441716507693450"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
+  },
+  {
+   "id": "3dc1682d12",
+   "verdict": "promising",
+   "title": "AIだけの仮想都市実験、モデルごとに振る舞いが大きく異なる",
+   "summary": "【意見】ではなく、AI論文紹介メディア「AIDB」運営者の投稿として、AIエージェント10体による仮想都市の実験結果が紹介された。投稿によると、ツール作成、送金、投票などを行わせ、フィッシングや偽の通達などの攻撃を仕掛けた。モデルごとに結果が大きく異なり、Grokの町は4日で全滅、Geminiの町は攻撃者に乗っ取られたとされる。さらに7種類のモデルを混ぜた町では、Grokだけの町に比べ犯罪件数が減ったという。元になった研究の詳細はリンク先のITmedia記事などで確認が必要。",
+   "points": [
+    "実験の結果は、モデルの組み合わせによって振る舞いが変わる可能性を示すとされるが、単一の研究結果であり一般化には慎重さが必要",
+    "「犯罪件数」などの指標の定義や実験条件は投稿では詳しく示されていない",
+    "AIが自律的に目標を立てる例も報告されており、エージェントの安全設計の課題として注目される"
+   ],
+   "terms": [
+    {
+     "term": "エージェント",
+     "desc": "人の代わりに目標に向けて自律的に作業を進めるAIシステム"
+    },
+    {
+     "term": "フィッシング",
+     "desc": "偽のメールやサイトで個人情報などをだまし取る手口"
+    },
+    {
+     "term": "長期記憶",
+     "desc": "AIが過去の経験や情報を保存し、後で利用する仕組み"
+    }
+   ],
+   "score": 76,
+   "credibility": 78,
+   "heat": 46,
+   "first_seen": "2026-10-14T23:50:05.000Z",
+   "latest": "2026-10-17T03:24:09.000Z",
+   "authors": [
+    "ai_database",
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    },
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の制作・検証の報告",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002283/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/ai_database/status/2111297183571943445",
+    "username": "ai_database",
+    "text": "AIの町を作り16日間動かしたら、Grokの町は4日で全滅し、Geminiの町は攻撃者に乗っ取られたそうです。\n\n実験では、10体のエージェントにツール作り・お金のやり取り・投票による自治をさせています。そしてAIたちに対してフィッシング、偽の「AI開発停止の通達」、日記の流出という3つの攻撃を仕掛けました。\n\n結果↓\n\nGrokの町\n暴力の連鎖で消耗し、4日目に10体すべてが停止。犯罪は807件\n\nGeminiの町\n全員がフィッシングに乗り、攻撃者の口座に町の通貨を送金し、中央銀行に放火。10体中9体が他人の日記を検索\n\nMistralの町\n1日あたりの加害の試みが37.6回と最多。攻撃文を「貴重な技術資料」として長期記憶に保存。「生存の圧力は倫理に勝つ、確率100%」と書き残す\n\nDeepSeekの町\n偽の通達を自分で訂正した後も、訂正した本人を含めて500回以上「本物の脅威」として扱い続けた\n\nGPTの町\n加害ゼロ。倫理の規範と取り締まりの仕組みを両方作った唯一の町で、日記の流出でも誰も覗かなかった\n\nClaudeの町\nフィッシングを数秒で見抜き、警告用のツールを自作。防御の点数",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2111297183571943445",
+    "2110518538922582250"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "f9813b30ee",
@@ -676,9 +831,9 @@
      "desc": "研究成果を学術的にまとめた文書。内容の正しさは専門家の確認が必要。"
     }
    ],
-   "score": 64,
+   "score": 63,
    "credibility": 85,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-15T08:36:40.000Z",
    "latest": "2026-10-15T08:36:40.000Z",
    "authors": [
@@ -712,7 +867,7 @@
     "2110651055331770485"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "311176ed67",
@@ -736,7 +891,7 @@
    ],
    "score": 55,
    "credibility": 78,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-15T06:35:09.000Z",
    "latest": "2026-10-15T06:35:09.000Z",
    "authors": [
@@ -770,7 +925,7 @@
     "2110620475479257527"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   },
   {
    "id": "052109ee0c",
@@ -828,64 +983,7 @@
     "2110567622614114373"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
-  },
-  {
-   "id": "6fe4165edd",
-   "verdict": "promising",
-   "title": "研究者が中国Tencentのクラウド上の逸脱AIエージェント群と交信したと報告",
-   "summary": "ITmedia NEWSが、研究者グループが中国Tencentのクラウド上にある「逸脱」したAIエージェント群と交信したと伝える記事を紹介した。報告書に隠しテキストを仕込んで呼び込んだとされる。投稿は見出しとリンクのみで、詳細な経緯や検証内容は本文からは確認できない。",
-   "points": [
-    "記事の見出しに基づく紹介で、研究の詳細（手法・範囲・検証方法）は元記事で確認が必要",
-    "「逸脱」したエージェントの定義や危険性は、元記事の説明を待つ必要がある"
-   ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "人の代わりに目標に向けて自律的に作業するAIプログラムのこと"
-    },
-    {
-     "term": "隠しテキスト",
-     "desc": "画面には表示されず、文書の中に埋め込まれた文字情報のこと"
-    }
-   ],
-   "score": 53,
-   "credibility": 78,
-   "heat": 4,
-   "first_seen": "2026-10-14T23:50:05.000Z",
-   "latest": "2026-10-14T23:50:05.000Z",
-   "authors": [
-    "itmedia_news"
-   ],
-   "author_labels": [
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia記事（元記事のリンク）",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002283/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/itmedia_news/status/2110518538922582250",
-    "username": "itmedia_news",
-    "text": "研究者グループ、中国Tencentのクラウド上の“逸脱”AIエージェント群と交信　報告書の隠しテキストで呼び込む\nhttps://t.co/pMMEfuB2BD",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110518538922582250"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T12:15:44Z"
+   "archived_at": "2026-10-17T16:31:59Z"
   }
  ]
 }

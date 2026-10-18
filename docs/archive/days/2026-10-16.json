@@ -27,7 +27,7 @@
    ],
    "score": 100,
    "credibility": 85,
-   "heat": 76,
+   "heat": 74,
    "first_seen": "2026-10-15T21:46:36.000Z",
    "latest": "2026-10-17T20:16:03.000Z",
    "authors": [
@@ -87,126 +87,7 @@
     "2111456711882232065"
    ],
    "post_count": 8,
-   "archived_at": "2026-10-18T08:11:23Z"
-  },
-  {
-   "id": "29128a45bc",
-   "verdict": "confirmed",
-   "title": "NVIDIAがNemotron 3.5 Super VLを公開",
-   "summary": "NVIDIA公式AIアカウントは、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。投稿によると、テキスト・画像・文書・動画を理解し、推論やツール利用も行えるモデルで、長時間動くAIエージェント向けとされる。総パラメータは120B、うち12Bが動作時に使われるとしている。",
-   "points": [
-    "テキストに加え画像・文書・動画を扱える点が特徴で、長く動くAIエージェントの用途を想定している",
-    "総パラメータ120B・有効12Bという構成は、大きなモデルでも一部だけを使って動かす方式とみられる（未確認）",
-    "公式投稿では性能の数値や比較結果は示されておらず、実際の性能は今後の評価を待つ必要がある"
-   ],
-   "terms": [
-    {
-     "term": "パラメータ",
-     "desc": "AIモデルの中にある調整可能な数値の総数。大きいほど複雑な処理ができる傾向がある。"
-    },
-    {
-     "term": "アクティブパラメータ",
-     "desc": "1回の処理で実際に使われるパラメータの数。全体より小さく抑えて高速化する仕組みに使われる。"
-    },
-    {
-     "term": "エージェント",
-     "desc": "人の指示を受けて、複数の作業を自律的に計画し実行するAIシステムのこと。"
-    }
-   ],
-   "score": 83,
-   "credibility": 90,
-   "heat": 47,
-   "first_seen": "2026-10-15T15:09:11.000Z",
-   "latest": "2026-10-16T22:03:03.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
-    "text_ja": "NVIDIA Nemotron 3.5 Super VLを紹介します。\n\n推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせた新しいオープンモデルで、長時間動くAIエージェント向けです。\n\n総パラメータ120B、アクティブ12B 🧵 https://t.co/BcbED05qSG"
-   },
-   "post_ids": [
-    "2110749836450713896",
-    "2111216377935831403"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T08:11:23Z"
-  },
-  {
-   "id": "5e32851c1e",
-   "verdict": "confirmed",
-   "title": "ReflectionAIが501BのMoEモデル「Beam 1.0」を公開",
-   "summary": "NVIDIA公式AIアカウントは、ReflectionAIが初のオープンウェイトモデルを公開したことを祝福した。モデルは501BのMoEモデルで、NVIDIA GB300 NVL72で学習され、Blackwell Ultra上で1GPUあたり70K tokens/秒以上を出したとしている。Hugging Faceには「Beam 1.0 NVFP4」のチェックポイントが公開された。",
-   "points": [
-    "MoEは全体の一部だけを使って計算する方式で、大規模モデルの効率化に使われる",
-    "NVFP4は低精度形式で、速度向上やメモリ削減に役立つ（一般的な説明）",
-    "70K tokens/秒/GPUは主張値で、測定条件や第三者の検証は未確認"
-   ],
-   "terms": [
-    {
-     "term": "MoE（Mixture of Experts）",
-     "desc": "複数の専門家モジュールのうち必要な一部だけを動かす仕組みのモデル構造。"
-    },
-    {
-     "term": "チェックポイント",
-     "desc": "学習途中や完成時点でモデルの重みを保存したデータ。"
-    },
-    {
-     "term": "Blackwell Ultra",
-     "desc": "NVIDIAの最新世代のGPU（画像処理半導体）の一つ。"
-    }
-   ],
-   "score": 82,
-   "credibility": 100,
-   "heat": 29,
-   "first_seen": "2026-10-16T13:39:40.000Z",
-   "latest": "2026-10-16T13:39:40.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式X投稿（HF公開へのリンク付き）",
-   "links": [
-    {
-     "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2111089696025858212",
-    "username": "NVIDIAAI",
-    "text": "Welcome Beam! \n\nCongrats to @ReflectionAI on launching their first open-weight model.\n\nThe 501B MoE model was trained on NVIDIA GB300 NVL72 and delivers over 70K tokens/sec/GPU on Blackwell Ultra out of the box on day 0.\n\n🤗 Beam 1.0 NVFP4 checkpoint on @huggingface: https://t.co/KIKYiobZmL",
-    "text_ja": "Beamを歓迎しましょう！\n\nReflectionAIが初のオープンウェイトモデルを公開したことを祝します。\n\n501BのMoEモデルはNVIDIA GB300 NVL72で学習され、公開初日からBlackwell Ultra上で、そのままの状態でGPUあたり70K tokens/sec以上を実現しています。\n\n🤗 Beam 1.0 NVFP4チェックポイントはこちら（@huggingface）: https://t.co/KIKYiobZmL"
-   },
-   "post_ids": [
-    "2111089696025858212"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "a21a5f31a2",
@@ -266,6 +147,235 @@
    "archived_at": "2026-10-18T08:11:23Z"
   },
   {
+   "id": "09e2adae1b",
+   "verdict": "confirmed",
+   "title": "Anthropic、第三者評価機関METRに社内の安全性評価へのアクセスを提供",
+   "summary": "Anthropicの公式アカウントは、安全性の実践を外部の評価機関に評価してもらうことを約束しており、複数の組織と協議中だと述べた。すでに@METR_Evalsのチームに社員に近いアクセスを与えたという。第三者評価との協力方法を説明する記事へのリンクも示している。",
+   "points": [
+    "外部の評価機関が内部に近い形でAIの安全性を検証できるようになる点は、安全対策の透明性に関わる。",
+    "どの範囲のアクセスで、どのような結果が公表されるかは投稿からは分からない。",
+    "METRは独立のAI評価機関として知られるが、今回の評価結果はまだ公表されていない。"
+   ],
+   "terms": [
+    {
+     "term": "METR",
+     "desc": "AIの能力や危険性を独立に評価する非営利の研究機関。"
+    },
+    {
+     "term": "安全性評価",
+     "desc": "AIが危険な振る舞いをしないかなどを事前に調べる検証作業。"
+    }
+   ],
+   "score": 82,
+   "credibility": 100,
+   "heat": 30,
+   "first_seen": "2026-10-15T17:27:34.000Z",
+   "latest": "2026-10-15T17:27:34.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+    "username": "AnthropicAI",
+    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
+    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
+   },
+   "post_ids": [
+    "2110784662071398807"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T12:39:41Z"
+  },
+  {
+   "id": "29128a45bc",
+   "verdict": "confirmed",
+   "title": "NVIDIAがNemotron 3.5 Super VLを公開",
+   "summary": "NVIDIA公式AIアカウントは、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。投稿によると、テキスト・画像・文書・動画を理解し、推論やツール利用も行えるモデルで、長時間動くAIエージェント向けとされる。総パラメータは120B、うち12Bが動作時に使われるとしている。",
+   "points": [
+    "テキストに加え画像・文書・動画を扱える点が特徴で、長く動くAIエージェントの用途を想定している",
+    "総パラメータ120B・有効12Bという構成は、大きなモデルでも一部だけを使って動かす方式とみられる（未確認）",
+    "公式投稿では性能の数値や比較結果は示されておらず、実際の性能は今後の評価を待つ必要がある"
+   ],
+   "terms": [
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルの中にある調整可能な数値の総数。大きいほど複雑な処理ができる傾向がある。"
+    },
+    {
+     "term": "アクティブパラメータ",
+     "desc": "1回の処理で実際に使われるパラメータの数。全体より小さく抑えて高速化する仕組みに使われる。"
+    },
+    {
+     "term": "エージェント",
+     "desc": "人の指示を受けて、複数の作業を自律的に計画し実行するAIシステムのこと。"
+    }
+   ],
+   "score": 82,
+   "credibility": 90,
+   "heat": 46,
+   "first_seen": "2026-10-15T15:09:11.000Z",
+   "latest": "2026-10-16T22:03:03.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの発表投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+    "username": "NVIDIAAI",
+    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
+    "text_ja": "NVIDIA Nemotron 3.5 Super VLを紹介します。\n\n推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせた新しいオープンモデルで、長時間動くAIエージェント向けです。\n\n総パラメータ120B、アクティブ12B 🧵 https://t.co/BcbED05qSG"
+   },
+   "post_ids": [
+    "2110749836450713896",
+    "2111216377935831403"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T12:39:41Z"
+  },
+  {
+   "id": "5e32851c1e",
+   "verdict": "confirmed",
+   "title": "ReflectionAIが501BのMoEモデル「Beam 1.0」を公開",
+   "summary": "NVIDIA公式AIアカウントは、ReflectionAIが初のオープンウェイトモデルを公開したことを祝福した。モデルは501BのMoEモデルで、NVIDIA GB300 NVL72で学習され、Blackwell Ultra上で1GPUあたり70K tokens/秒以上を出したとしている。Hugging Faceには「Beam 1.0 NVFP4」のチェックポイントが公開された。",
+   "points": [
+    "MoEは全体の一部だけを使って計算する方式で、大規模モデルの効率化に使われる",
+    "NVFP4は低精度形式で、速度向上やメモリ削減に役立つ（一般的な説明）",
+    "70K tokens/秒/GPUは主張値で、測定条件や第三者の検証は未確認"
+   ],
+   "terms": [
+    {
+     "term": "MoE（Mixture of Experts）",
+     "desc": "複数の専門家モジュールのうち必要な一部だけを動かす仕組みのモデル構造。"
+    },
+    {
+     "term": "チェックポイント",
+     "desc": "学習途中や完成時点でモデルの重みを保存したデータ。"
+    },
+    {
+     "term": "Blackwell Ultra",
+     "desc": "NVIDIAの最新世代のGPU（画像処理半導体）の一つ。"
+    }
+   ],
+   "score": 81,
+   "credibility": 100,
+   "heat": 28,
+   "first_seen": "2026-10-16T13:39:40.000Z",
+   "latest": "2026-10-16T13:39:40.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式X投稿（HF公開へのリンク付き）",
+   "links": [
+    {
+     "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2111089696025858212",
+    "username": "NVIDIAAI",
+    "text": "Welcome Beam! \n\nCongrats to @ReflectionAI on launching their first open-weight model.\n\nThe 501B MoE model was trained on NVIDIA GB300 NVL72 and delivers over 70K tokens/sec/GPU on Blackwell Ultra out of the box on day 0.\n\n🤗 Beam 1.0 NVFP4 checkpoint on @huggingface: https://t.co/KIKYiobZmL",
+    "text_ja": "Beamを歓迎しましょう！\n\nReflectionAIが初のオープンウェイトモデルを公開したことを祝します。\n\n501BのMoEモデルはNVIDIA GB300 NVL72で学習され、公開初日からBlackwell Ultra上で、そのままの状態でGPUあたり70K tokens/sec以上を実現しています。\n\n🤗 Beam 1.0 NVFP4チェックポイントはこちら（@huggingface）: https://t.co/KIKYiobZmL"
+   },
+   "post_ids": [
+    "2111089696025858212"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T12:39:41Z"
+  },
+  {
+   "id": "87ce596b06",
+   "verdict": "confirmed",
+   "title": "OpenAI、GPT-Rosalindの学術研究向けアクセスを拡大",
+   "summary": "OpenAIの公式アカウントが、生命科学向けとされるGPT-Rosalindについて、新しい「Rosalind Academic Plan」により学術研究向けのアクセスを拡大すると発表した。投稿によると、対象は米国の大学にある適格な研究室で、スポンサー付きのアクセスが提供される。",
+   "points": [
+    "新しい点は、大学の研究室が無償または支援付きでAIを使えるプランが用意されたこと。",
+    "生物学の理解や次に試す実験の選定に使われる想定だが、具体的な成果は投稿では示されていない。",
+    "対象は米国の大学の適格な研究室とされ、他地域での提供や条件の詳細は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "GPT-Rosalind",
+     "desc": "OpenAIの生命科学研究向けとされるAIモデル。投稿からは詳細不明。"
+    },
+    {
+     "term": "スポンサー付きアクセス",
+     "desc": "提供元が費用を負担して利用できるようにする仕組みとみられる。"
+    }
+   ],
+   "score": 80,
+   "credibility": 90,
+   "heat": 39,
+   "first_seen": "2026-10-15T21:15:00.000Z",
+   "latest": "2026-10-15T21:15:00.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式アカウントの発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2110841898076418336",
+    "username": "OpenAI",
+    "text": "We're expanding access to GPT-Rosalind for academic research.\n\nThe new Rosalind Academic Plan helps scientific labs bring AI into the work of understanding biology, exploring ideas, and deciding what to test next—with sponsored access for eligible labs at U.S. universities.\n\nAcademic research starts with questions whose impact may take years to impact human health.",
+    "text_ja": "GPT-Rosalindの学術研究向けアクセスを拡大します。\n\n新しい「Rosalind Academic Plan」は、科学研究室が生物学の理解、アイデアの探索、次に何を検証すべきかの判断にAIを取り入れる手助けをするものです。米国の大学に所属する対象の研究室には、スポンサー付きのアクセスを提供します。\n\n学術研究は、その影響が人類の健康に及ぶまで何年もかかるかもしれない問いから始まります。"
+   },
+   "post_ids": [
+    "2110841898076418336"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T12:39:41Z"
+  },
+  {
    "id": "0e004fa107",
    "verdict": "confirmed",
    "title": "AnthropicがSimons Foundationと数学研究へ500万ドルを拠出",
@@ -287,7 +397,7 @@
    ],
    "score": 78,
    "credibility": 90,
-   "heat": 36,
+   "heat": 35,
    "first_seen": "2026-10-15T21:31:45.000Z",
    "latest": "2026-10-15T21:31:45.000Z",
    "authors": [
@@ -315,69 +425,7 @@
     "2110846112152105136"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
-  },
-  {
-   "id": "df58d0f4ce",
-   "verdict": "confirmed",
-   "title": "NVIDIA、FLUX 3 Image Klein 5.6Bの公開を紹介",
-   "summary": "NVIDIAの公式AIアカウントは、Black Forest Labs（bfl_ai）の画像生成モデル「FLUX 3 Image Klein 5.6B」を紹介した。投稿によると、このモデルはNVIDIA GB200 NVL72で学習され、RTX GPUで動作する。NVFP4版もあるとされ、Hugging Faceのリンクが示されている。",
-   "points": [
-    "RTX GPUで動くため、個人のPCでも試せる可能性がある（動作環境の詳細は要確認）",
-    "NVFP4は低精度の数値形式で、軽量化につながるとみられるが、性能への影響は未確認",
-    "学習に使われたGB200 NVL72はNVIDIAの大型AIサーバー（一般利用は想定されにくい）"
-   ],
-   "terms": [
-    {
-     "term": "NVFP4",
-     "desc": "AIの計算を少ないビット数で行う数値形式。モデルを軽く速く動かすために使われる。"
-    },
-    {
-     "term": "GB200 NVL72",
-     "desc": "NVIDIAの大型AI学習・推論用サーバー。多数のGPUを一体化したもの。"
-    },
-    {
-     "term": "オープンモデル",
-     "desc": "重み（学習済みデータ）が公開され、誰でもダウンロードして使えるAIモデルのこと。"
-    }
-   ],
-   "score": 76,
-   "credibility": 100,
-   "heat": 14,
-   "first_seen": "2026-10-15T21:51:01.000Z",
-   "latest": "2026-10-15T23:38:49.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/tree/main/variants/nvfp4",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110878089916121333",
-    "username": "NVIDIAAI",
-    "text": "Can’t stop, won’t stop. The open models keep dropping\n\nFLUX 3 Image Klein 5.6B was trained on NVIDIA GB200 NVL72 and can run on an RTX GPU.\n\nBig 🙌 to the @bfl_ai team. There's also an NVFP4 variant: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7",
-    "text_ja": "オープンモデルが次々と公開されています。\n\nFLUX 3 Image Klein 5.6Bは NVIDIA GB200 NVL72 で学習され、RTX GPUで動作します。\n\n@bfl_ai チームにも大きな拍手を。NVFP4版もあります: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7"
-   },
-   "post_ids": [
-    "2110878089916121333"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "72a21beacd",
@@ -401,7 +449,7 @@
    ],
    "score": 76,
    "credibility": 93,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-10-16T10:15:04.000Z",
    "latest": "2026-10-16T10:15:04.000Z",
    "authors": [
@@ -435,7 +483,121 @@
     "2111038207240388770"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
+  },
+  {
+   "id": "df58d0f4ce",
+   "verdict": "confirmed",
+   "title": "NVIDIA、FLUX 3 Image Klein 5.6Bの公開を紹介",
+   "summary": "NVIDIAの公式AIアカウントは、Black Forest Labs（bfl_ai）の画像生成モデル「FLUX 3 Image Klein 5.6B」を紹介した。投稿によると、このモデルはNVIDIA GB200 NVL72で学習され、RTX GPUで動作する。NVFP4版もあるとされ、Hugging Faceのリンクが示されている。",
+   "points": [
+    "RTX GPUで動くため、個人のPCでも試せる可能性がある（動作環境の詳細は要確認）",
+    "NVFP4は低精度の数値形式で、軽量化につながるとみられるが、性能への影響は未確認",
+    "学習に使われたGB200 NVL72はNVIDIAの大型AIサーバー（一般利用は想定されにくい）"
+   ],
+   "terms": [
+    {
+     "term": "NVFP4",
+     "desc": "AIの計算を少ないビット数で行う数値形式。モデルを軽く速く動かすために使われる。"
+    },
+    {
+     "term": "GB200 NVL72",
+     "desc": "NVIDIAの大型AI学習・推論用サーバー。多数のGPUを一体化したもの。"
+    },
+    {
+     "term": "オープンモデル",
+     "desc": "重み（学習済みデータ）が公開され、誰でもダウンロードして使えるAIモデルのこと。"
+    }
+   ],
+   "score": 75,
+   "credibility": 100,
+   "heat": 13,
+   "first_seen": "2026-10-15T21:51:01.000Z",
+   "latest": "2026-10-15T23:38:49.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/tree/main/variants/nvfp4",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110878089916121333",
+    "username": "NVIDIAAI",
+    "text": "Can’t stop, won’t stop. The open models keep dropping\n\nFLUX 3 Image Klein 5.6B was trained on NVIDIA GB200 NVL72 and can run on an RTX GPU.\n\nBig 🙌 to the @bfl_ai team. There's also an NVFP4 variant: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7",
+    "text_ja": "オープンモデルが次々と公開されています。\n\nFLUX 3 Image Klein 5.6Bは NVIDIA GB200 NVL72 で学習され、RTX GPUで動作します。\n\n@bfl_ai チームにも大きな拍手を。NVFP4版もあります: https://t.co/7rlalk7Otf https://t.co/zf1f7e4kJ7"
+   },
+   "post_ids": [
+    "2110878089916121333"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-18T12:39:41Z"
+  },
+  {
+   "id": "c841955662",
+   "verdict": "confirmed",
+   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
+   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "points": [
+    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
+    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
+    "機能の詳細や対象範囲はリンク先で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
+    },
+    {
+     "term": "ハードウェアプロジェクト",
+     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
+    }
+   ],
+   "score": 75,
+   "credibility": 90,
+   "heat": 27,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-15T22:08:31.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式開発者アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
+    "username": "OpenAIDevs",
+    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
+    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
+   },
+   "post_ids": [
+    "2110855363616763922"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "d9767b8952",
@@ -457,9 +619,9 @@
      "desc": "インターネット上のデータや研究が少なく、AIの学習材料が乏しい言語のこと。"
     }
    ],
-   "score": 75,
+   "score": 74,
    "credibility": 93,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-10-15T22:30:57.000Z",
    "latest": "2026-10-15T22:32:35.000Z",
    "authors": [
@@ -494,59 +656,7 @@
     "2110861010496315632"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T08:11:23Z"
-  },
-  {
-   "id": "c841955662",
-   "verdict": "confirmed",
-   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
-   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
-   "points": [
-    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
-    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
-    "機能の詳細や対象範囲はリンク先で確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
-    },
-    {
-     "term": "ハードウェアプロジェクト",
-     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
-    }
-   ],
-   "score": 75,
-   "credibility": 90,
-   "heat": 28,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-15T22:08:31.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式開発者アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
-    "username": "OpenAIDevs",
-    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
-    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
-   },
-   "post_ids": [
-    "2110855363616763922"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "0be8fdf207",
@@ -614,69 +724,7 @@
     "2111238258210517336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T08:11:23Z"
-  },
-  {
-   "id": "09e2adae1b",
-   "verdict": "confirmed",
-   "title": "Anthropic、外部評価機関METRに社員並みのアクセスを提供",
-   "summary": "Anthropic公式アカウントは、安全性の実践を外部の評価機関に確認してもらう方針に基づき、METRの評価チームに社員に近いアクセス権を与えたと発表した。同社は複数の組織と協議中とし、第三者評価機関との連携方法を別投稿の記事で説明している。Wharton教授のErhan Mollick氏は、AIの難しいベンチマークがほぼ役目を終えつつあるとの感想を投稿した。",
-   "points": [
-    "外部の評価機関が内部に近い環境で評価できるようになると、AI企業の安全対策の検証が進む可能性がある。",
-    "Mollick氏の投稿は、長時間タスク・文書作成・新しいパズルの各ベンチマークが『限界に近い』という見方を示した感想で、根拠となる数値は投稿内にない。",
-    "評価の具体的な結果や、どの範囲までアクセスが与えられたかは投稿からは分からない。"
-   ],
-   "terms": [
-    {
-     "term": "METR",
-     "desc": "AIの能力や安全性を評価する独立した研究機関。"
-    },
-    {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ条件で比べるための共通のテストや課題集。"
-    },
-    {
-     "term": "ハーネス",
-     "desc": "AIモデルを実際のツールや作業手順に組み込み、長い作業を実行させる仕組みのこと。"
-    }
-   ],
-   "score": 72,
-   "credibility": 100,
-   "heat": 30,
-   "first_seen": "2026-10-15T17:27:34.000Z",
-   "latest": "2026-10-15T17:27:34.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
-    "username": "AnthropicAI",
-    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
-    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
-   },
-   "post_ids": [
-    "2110784662071398807"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "2e49e18055",
@@ -747,7 +795,7 @@
     "2110947838976766263"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "131c40eede",
@@ -801,7 +849,7 @@
     "2110854828469686328"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "203c28601c",
@@ -825,7 +873,7 @@
    ],
    "score": 67,
    "credibility": 85,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-10-16T14:00:32.000Z",
    "latest": "2026-10-16T14:00:32.000Z",
    "authors": [
@@ -853,7 +901,7 @@
     "2111094948133216735"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   },
   {
    "id": "e519fc16d9",
@@ -907,7 +955,7 @@
     "2111002997195174272"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T08:11:23Z"
+   "archived_at": "2026-10-18T12:39:41Z"
   }
  ]
 }

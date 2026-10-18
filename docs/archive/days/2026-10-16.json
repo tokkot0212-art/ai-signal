@@ -5,34 +5,35 @@
    "id": "21414dcfb3",
    "verdict": "confirmed",
    "title": "DeepSeekが新モデル「V4.1-Flash-1017」を公開",
-   "summary": "DeepSeek公式アカウントが、新モデル「DeepSeek-V4.1-Flash-1017」の提供開始を発表した。公式によると、前版よりベンチマーク性能が高く、タスクの完了が速く、出力が短くなり、性能とコストの両面で改善したとされる。ウェブサイト、アプリ、APIで利用可能になったという。",
+   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」を公開し、旧版より性能が向上し、タスク完了が速く、出力が短くなったと発表した。Webサイト・アプリ・APIで利用可能になったとしている。国内の実務者は、旧版と同じアーキテクチャだとして既存の推論環境で動くと見込んだり、Blenderで3Dモデル作成を試したりしている。",
    "points": [
-    "前版より性能・速度が上がり、出力も短くなったと公式は説明している。性能の数値は投稿に示されていない",
-    "DeepSeek Harness v0.2.1-rc.1以上へのアップデートが推奨されている",
-    "npaka氏は同モデルでBlenderによる3Dモデル作成を試す様子を投稿しており、実際の動作例の一つとなっている"
+    "公式発表は「性能向上とコスト面での改善（Pareto improvement）」を掲げている。ベンチマーク数値は投稿中に示されていない。",
+    "旧版と同じアーキテクチャとの見方もあり、既存環境への導入が比較的容易かもしれないが、これは投稿者の見立てである。",
+    "海外の研究者は、オープンウェイトモデルの中で競争力があるか注目しているが、性能比較はまだ検証されていない。"
    ],
    "terms": [
     {
-     "term": "API",
-     "desc": "外部のプログラムからAIモデルの機能を呼び出すための窓口"
+     "term": "オープンウェイトモデル",
+     "desc": "重み（学習済みパラメータ）が公開され、誰でもダウンロードして使えるAIモデル。"
     },
     {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ問題で比べるための共通のテスト"
+     "term": "推論エンジン",
+     "desc": "学習済みAIモデルに入力を与えて答えを出させる実行基盤のソフトウェア。"
     },
     {
      "term": "Pareto improvement",
-     "desc": "性能を落とさず、コストなどを改善すること（パレート改善）"
+     "desc": "ある指標を改善しつつ、他の指標を悪化させないこと。性能とコストの両立を指す。"
     }
    ],
    "score": 100,
    "credibility": 85,
-   "heat": 88,
+   "heat": 81,
    "first_seen": "2026-10-15T21:46:36.000Z",
-   "latest": "2026-10-17T13:58:53.000Z",
+   "latest": "2026-10-17T20:16:03.000Z",
    "authors": [
     "deepseek_ai",
     "natolambert",
+    "shi3z",
     "npaka123"
    ],
    "author_labels": [
@@ -49,6 +50,12 @@
      "former": "元Ai2 Olmo共同リード"
     },
     {
+     "username": "shi3z",
+     "label": "ギリア株式会社ファウンダー・顧問",
+     "type": "practitioner",
+     "former": ""
+    },
+    {
      "username": "npaka123",
      "label": "プログラマー・技術書著者",
      "type": "practitioner",
@@ -57,7 +64,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "DeepSeek公式アカウントの投稿",
+   "evidence_note": "DeepSeek公式アカウントの発表",
    "links": [
     {
      "url": "https://note.com/npaka/n/nebbfa829304b?sub_rt=share_pw",
@@ -79,14 +86,198 @@
    "post_ids": [
     "2111375640717033777",
     "2111440910257099072",
+    "2111551837916766583",
     "2111456922293694485",
     "2111454710498766979",
     "2111436480585564358",
     "2110849847607836739",
     "2111456711882232065"
    ],
-   "post_count": 7,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "post_count": 8,
+   "archived_at": "2026-10-18T00:06:54Z"
+  },
+  {
+   "id": "cf6fccff8c",
+   "verdict": "confirmed",
+   "title": "Anthropic、外部評価機関METRに社員並みのアクセスを提供",
+   "summary": "Anthropic公式アカウントは、安全性の実践を外部の評価機関に確認してもらう方針に基づき、METRの評価チームに社員に近いアクセス権を与えたと発表した。同社は複数の組織と協議中とし、第三者評価機関との連携方法を別投稿の記事で説明している。Wharton教授のErhan Mollick氏は、AIの難しいベンチマークがほぼ役目を終えつつあるとの感想を投稿した。",
+   "points": [
+    "外部の評価機関が内部に近い環境で評価できるようになると、AI企業の安全対策の検証が進む可能性がある。",
+    "Mollick氏の投稿は、長時間タスク・文書作成・新しいパズルの各ベンチマークが『限界に近い』という見方を示した感想で、根拠となる数値は投稿内にない。",
+    "評価の具体的な結果や、どの範囲までアクセスが与えられたかは投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "METR",
+     "desc": "AIの能力や安全性を評価する独立した研究機関。"
+    },
+    {
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ条件で比べるための共通のテストや課題集。"
+    },
+    {
+     "term": "ハーネス",
+     "desc": "AIモデルを実際のツールや作業手順に組み込み、長い作業を実行させる仕組みのこと。"
+    }
+   ],
+   "score": 88,
+   "credibility": 100,
+   "heat": 32,
+   "first_seen": "2026-10-15T17:27:34.000Z",
+   "latest": "2026-10-15T23:29:55.000Z",
+   "authors": [
+    "AnthropicAI",
+    "emollick"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+    "username": "AnthropicAI",
+    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
+    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
+   },
+   "post_ids": [
+    "2110784662071398807",
+    "2110875851600633956"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T00:06:54Z"
+  },
+  {
+   "id": "b35026ff00",
+   "verdict": "confirmed",
+   "title": "OpenAIがCodexを社内の保守作業に使う方法を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントは、同社のエンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を減らしている方法を紹介した。詳しい内容は投稿に添えられたリンク先にあるとみられる。",
+   "points": [
+    "AIのコーディング支援を、新機能開発だけでなく既存コードの保守にも使う事例として参考になる",
+    "投稿本文には具体的な成果の数値は書かれておらず、効果の大きさは未確認",
+    "リンク先の詳細を読まないと、どの程度の作業を任せているかは判断できない"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのコード作成・修正を支援するAIエージェント。"
+    },
+    {
+     "term": "コードベース",
+     "desc": "ソフトウェアのプログラムを構成する全体のコードの集まり。"
+    },
+    {
+     "term": "保守（メンテナンス）",
+     "desc": "既存のシステムの不具合修正や改善を継続して行う作業。"
+    }
+   ],
+   "score": 83,
+   "credibility": 90,
+   "heat": 48,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-16T21:50:00.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式X投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
+    "username": "OpenAIDevs",
+    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
+    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
+   },
+   "post_ids": [
+    "2111213093577691337"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T00:06:54Z"
+  },
+  {
+   "id": "29128a45bc",
+   "verdict": "confirmed",
+   "title": "NVIDIAがNemotron 3.5 Super VLを公開",
+   "summary": "NVIDIA公式AIアカウントは、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。投稿によると、テキスト・画像・文書・動画を理解し、推論やツール利用も行えるモデルで、長時間動くAIエージェント向けとされる。総パラメータは120B、うち12Bが動作時に使われるとしている。",
+   "points": [
+    "テキストに加え画像・文書・動画を扱える点が特徴で、長く動くAIエージェントの用途を想定している",
+    "総パラメータ120B・有効12Bという構成は、大きなモデルでも一部だけを使って動かす方式とみられる（未確認）",
+    "公式投稿では性能の数値や比較結果は示されておらず、実際の性能は今後の評価を待つ必要がある"
+   ],
+   "terms": [
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルの中にある調整可能な数値の総数。大きいほど複雑な処理ができる傾向がある。"
+    },
+    {
+     "term": "アクティブパラメータ",
+     "desc": "1回の処理で実際に使われるパラメータの数。全体より小さく抑えて高速化する仕組みに使われる。"
+    },
+    {
+     "term": "エージェント",
+     "desc": "人の指示を受けて、複数の作業を自律的に計画し実行するAIシステムのこと。"
+    }
+   ],
+   "score": 83,
+   "credibility": 90,
+   "heat": 48,
+   "first_seen": "2026-10-15T15:09:11.000Z",
+   "latest": "2026-10-16T22:03:03.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの発表投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+    "username": "NVIDIAAI",
+    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
+    "text_ja": "NVIDIA Nemotron 3.5 Super VLを紹介します。\n\n推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせた新しいオープンモデルで、長時間動くAIエージェント向けです。\n\n総パラメータ120B、アクティブ12B 🧵 https://t.co/BcbED05qSG"
+   },
+   "post_ids": [
+    "2110749836450713896",
+    "2111216377935831403"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "5e32851c1e",
@@ -112,9 +303,9 @@
      "desc": "NVIDIAの最新世代のGPU（画像処理半導体）の一つ。"
     }
    ],
-   "score": 84,
+   "score": 82,
    "credibility": 100,
-   "heat": 34,
+   "heat": 31,
    "first_seen": "2026-10-16T13:39:40.000Z",
    "latest": "2026-10-16T13:39:40.000Z",
    "authors": [
@@ -148,178 +339,7 @@
     "2111089696025858212"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T16:31:59Z"
-  },
-  {
-   "id": "b35026ff00",
-   "verdict": "confirmed",
-   "title": "OpenAIがCodexを社内の保守作業に使う方法を紹介",
-   "summary": "OpenAIの開発者向け公式アカウントは、同社のエンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を減らしている方法を紹介した。詳しい内容は投稿に添えられたリンク先にあるとみられる。",
-   "points": [
-    "AIのコーディング支援を、新機能開発だけでなく既存コードの保守にも使う事例として参考になる",
-    "投稿本文には具体的な成果の数値は書かれておらず、効果の大きさは未確認",
-    "リンク先の詳細を読まないと、どの程度の作業を任せているかは判断できない"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIのコード作成・修正を支援するAIエージェント。"
-    },
-    {
-     "term": "コードベース",
-     "desc": "ソフトウェアのプログラムを構成する全体のコードの集まり。"
-    },
-    {
-     "term": "保守（メンテナンス）",
-     "desc": "既存のシステムの不具合修正や改善を継続して行う作業。"
-    }
-   ],
-   "score": 84,
-   "credibility": 90,
-   "heat": 51,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-16T21:50:00.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式X投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
-    "username": "OpenAIDevs",
-    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
-    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
-   },
-   "post_ids": [
-    "2111213093577691337"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T16:31:59Z"
-  },
-  {
-   "id": "29128a45bc",
-   "verdict": "confirmed",
-   "title": "NVIDIAがNemotron 3.5 Super VLを公開",
-   "summary": "NVIDIA公式AIアカウントは、新しいオープンモデル「Nemotron 3.5 Super VL」を発表した。投稿によると、テキスト・画像・文書・動画を理解し、推論やツール利用も行えるモデルで、長時間動くAIエージェント向けとされる。総パラメータは120B、うち12Bが動作時に使われるとしている。",
-   "points": [
-    "テキストに加え画像・文書・動画を扱える点が特徴で、長く動くAIエージェントの用途を想定している",
-    "総パラメータ120B・有効12Bという構成は、大きなモデルでも一部だけを使って動かす方式とみられる（未確認）",
-    "公式投稿では性能の数値や比較結果は示されておらず、実際の性能は今後の評価を待つ必要がある"
-   ],
-   "terms": [
-    {
-     "term": "パラメータ",
-     "desc": "AIモデルの中にある調整可能な数値の総数。大きいほど複雑な処理ができる傾向がある。"
-    },
-    {
-     "term": "アクティブパラメータ",
-     "desc": "1回の処理で実際に使われるパラメータの数。全体より小さく抑えて高速化する仕組みに使われる。"
-    },
-    {
-     "term": "エージェント",
-     "desc": "人の指示を受けて、複数の作業を自律的に計画し実行するAIシステムのこと。"
-    }
-   ],
-   "score": 84,
-   "credibility": 90,
-   "heat": 50,
-   "first_seen": "2026-10-15T15:09:11.000Z",
-   "latest": "2026-10-16T22:03:03.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵 https://t.co/BcbED05qSG",
-    "text_ja": "NVIDIA Nemotron 3.5 Super VLを紹介します。\n\n推論とツール利用に加えて、テキスト・画像・文書・動画の理解を組み合わせた新しいオープンモデルで、長時間動くAIエージェント向けです。\n\n総パラメータ120B、アクティブ12B 🧵 https://t.co/BcbED05qSG"
-   },
-   "post_ids": [
-    "2110749836450713896",
-    "2111216377935831403"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-17T16:31:59Z"
-  },
-  {
-   "id": "09e2adae1b",
-   "verdict": "confirmed",
-   "title": "AnthropicがMETRを含む第三者評価機関との協力を発表",
-   "summary": "Anthropicは公式アカウントで、安全対策を評価機関に評価してもらう取り組みを進めていると発表した。複数の組織と協議中で、そのうちMETRのチームには社員に近いアクセス権を与えたという。第三者評価との協力の進め方は、同社のブログ記事で説明されている。",
-   "points": [
-    "「社員に近いアクセス権」は、外部チームに通常より深い内部情報や検証環境を見せることを指すとみられるが、具体的な範囲は投稿からは不明。",
-    "第三者評価は、開発企業の自己評価だけでは見落としがちな問題を外部が確かめる仕組みとして注目されている。",
-    "評価の結果や内容は投稿に含まれておらず、今後の報告を待つ必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "METR",
-     "desc": "AIの能力や危険性を外部から評価する非営利の研究機関。"
-    },
-    {
-     "term": "第三者評価",
-     "desc": "開発企業とは独立した外部機関が、AIの安全性や性能を検査すること。"
-    }
-   ],
-   "score": 83,
-   "credibility": 100,
-   "heat": 33,
-   "first_seen": "2026-10-15T17:27:34.000Z",
-   "latest": "2026-10-15T17:27:34.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
-    "username": "AnthropicAI",
-    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
-    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
-   },
-   "post_ids": [
-    "2110784662071398807"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "87ce596b06",
@@ -343,7 +363,7 @@
    ],
    "score": 81,
    "credibility": 90,
-   "heat": 43,
+   "heat": 42,
    "first_seen": "2026-10-15T21:15:00.000Z",
    "latest": "2026-10-15T21:15:00.000Z",
    "authors": [
@@ -371,7 +391,7 @@
     "2110841898076418336"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "0e004fa107",
@@ -393,9 +413,9 @@
      "desc": "AIの学習や計算に使う処理能力のこと。"
     }
    ],
-   "score": 80,
+   "score": 79,
    "credibility": 90,
-   "heat": 39,
+   "heat": 37,
    "first_seen": "2026-10-15T21:31:45.000Z",
    "latest": "2026-10-15T21:31:45.000Z",
    "authors": [
@@ -423,7 +443,7 @@
     "2110846112152105136"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "72a21beacd",
@@ -445,9 +465,9 @@
      "desc": "新しい薬を見つけて開発する過程のこと"
     }
    ],
-   "score": 78,
+   "score": 77,
    "credibility": 93,
-   "heat": 30,
+   "heat": 28,
    "first_seen": "2026-10-16T10:15:04.000Z",
    "latest": "2026-10-16T10:15:04.000Z",
    "authors": [
@@ -481,7 +501,7 @@
     "2111038207240388770"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "df58d0f4ce",
@@ -507,9 +527,9 @@
      "desc": "重み（学習済みデータ）が公開され、誰でもダウンロードして使えるAIモデルのこと。"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 100,
-   "heat": 17,
+   "heat": 15,
    "first_seen": "2026-10-15T21:51:01.000Z",
    "latest": "2026-10-15T23:38:49.000Z",
    "authors": [
@@ -543,7 +563,59 @@
     "2110878089916121333"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
+  },
+  {
+   "id": "c841955662",
+   "verdict": "confirmed",
+   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
+   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "points": [
+    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
+    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
+    "機能の詳細や対象範囲はリンク先で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
+    },
+    {
+     "term": "ハードウェアプロジェクト",
+     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
+    }
+   ],
+   "score": 76,
+   "credibility": 90,
+   "heat": 30,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-15T22:08:31.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式開発者アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
+    "username": "OpenAIDevs",
+    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
+    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
+   },
+   "post_ids": [
+    "2110855363616763922"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "d9767b8952",
@@ -565,9 +637,9 @@
      "desc": "インターネット上のデータや研究が少なく、AIの学習材料が乏しい言語のこと。"
     }
    ],
-   "score": 76,
+   "score": 75,
    "credibility": 93,
-   "heat": 25,
+   "heat": 23,
    "first_seen": "2026-10-15T22:30:57.000Z",
    "latest": "2026-10-15T22:32:35.000Z",
    "authors": [
@@ -602,87 +674,31 @@
     "2110861010496315632"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
-   "id": "c841955662",
+   "id": "0be8fdf207",
    "verdict": "confirmed",
-   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
-   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "title": "Sakana AIがマーケティング分野の採用4件を公開",
+   "summary": "Sakana AI公式アカウントは、新設のマーケティングチームで4つの専任ポジションの募集を開始したと投稿した。募集職種はEnterprise Marketing Manager、Marketing Operations Manager、Product Marketing Manager、Developer Marketing Managerの4つ。投稿によると、Sakana Chat、Sakana Marlin、Sakana Fugu、Sakana Namazu、APIを日本と世界の企業・開発者・官公庁に届ける役割を担うという。",
    "points": [
-    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
-    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
-    "機能の詳細や対象範囲はリンク先で確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
-    },
-    {
-     "term": "ハードウェアプロジェクト",
-     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
-    }
-   ],
-   "score": 76,
-   "credibility": 90,
-   "heat": 31,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-15T22:08:31.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式開発者アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
-    "username": "OpenAIDevs",
-    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
-    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
-   },
-   "post_ids": [
-    "2110855363616763922"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
-  },
-  {
-   "id": "e60497e5c5",
-   "verdict": "confirmed",
-   "title": "Sakana AIがマーケティング・GTM部門の採用募集を開始",
-   "summary": "Sakana AI公式アカウントは、新設のマーケティングチームで4つのポジションを募集したと投稿した。あわせて、GTMチームでもPartner Alliances Manager（ISV・SI）とCustomer Success Managerの3ポジションを募集したと投稿した。いずれも各領域で最初の専任メンバーを採用する内容である。",
-   "points": [
-    "新設チームの初期メンバー募集で、Sakana Chat・Marlin・Fugu・Namazuなど自社製品の国内外への展開を担う役割とされている",
-    "募集内容から、同社が製品を企業・開発者・官公庁に届ける体制づくりを進めていることが読み取れる",
-    "給与・勤務地・採用人数の詳細は投稿に記載がなく、採用ページで確認が必要"
+    "新設のマーケティングチームによる最初の専任採用で、同社の販売・普及体制の拡充を示す動きと読める。",
+    "対象製品としてSakana ChatやAPIなどが挙げられており、企業・開発者・官公庁への展開を狙っている。",
+    "募集の詳細は採用ページ（投稿内リンク）に依存しており、本文からは条件などは分からない。"
    ],
    "terms": [
     {
      "term": "GTM",
-     "desc": "Go-To-Market。製品を市場に届けるための販売・提携・顧客支援などの一連の活動のこと"
+     "desc": "Go-To-Marketの略で、製品を市場に届けるための販売・普及の取り組み全般を指す。"
     },
     {
-     "term": "ISV",
-     "desc": "独立系ソフトウェアベンダー。自社製品をソフトとして販売する企業のこと"
-    },
-    {
-     "term": "SI（SIer）",
-     "desc": "システムインテグレーター。企業向けにシステムの設計・導入・構築を請け負う会社のこと"
+     "term": "API",
+     "desc": "ほかのソフトウェアからAIの機能を呼び出して使うための窓口のこと。"
     }
    ],
-   "score": 75,
+   "score": 74,
    "credibility": 100,
-   "heat": 13,
+   "heat": 10,
    "first_seen": "2026-10-16T04:15:58.000Z",
    "latest": "2026-10-16T23:30:00.000Z",
    "authors": [
@@ -698,7 +714,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "公式採用告知（X投稿）",
+   "evidence_note": "Sakana AI公式アカウントの採用告知",
    "links": [
     {
      "url": "https://sakana.ai/careers/enterprise-marketing-manager/",
@@ -723,11 +739,81 @@
     "text_ja": null
    },
    "post_ids": [
-    "2111238258210517336",
-    "2110947838976766263"
+    "2111238258210517336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
+  },
+  {
+   "id": "2e49e18055",
+   "verdict": "confirmed",
+   "title": "Sakana AIがGTMチームの採用3職種を募集開始",
+   "summary": "Sakana AI公式アカウントが、GTM（営業・提携・顧客成功）チームで新たに3つのポジションを募集すると投稿した。募集職種はPartner Alliances Manager（ISV・SI）とCustomer Success Managerで、いずれもチーム初の専任メンバーとなる。",
+   "points": [
+    "チーム初の専任ポジションで、仕組みをゼロから作る役割とされている",
+    "日本発のAIプロダクトを海外顧客に届ける体制づくりが狙いと読める"
+   ],
+   "terms": [
+    {
+     "term": "GTM",
+     "desc": "Go-To-Market。製品を市場に届けるための営業・提携・販売の一連の活動のこと"
+    },
+    {
+     "term": "ISV",
+     "desc": "独立系ソフトウェアベンダー。他社製品と連携して自社製品を販売する企業"
+    },
+    {
+     "term": "SI",
+     "desc": "システムインテグレーター。企業のシステム構築や導入を請け負う事業者"
+    }
+   ],
+   "score": 72,
+   "credibility": 100,
+   "heat": 4,
+   "first_seen": "2026-10-16T04:15:58.000Z",
+   "latest": "2026-10-16T04:15:58.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業の公式採用告知",
+   "links": [
+    {
+     "url": "https://sakana.ai/careers/partner-alliances-manager-isv/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://sakana.ai/careers/partner-alliances-manager-si/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://sakana.ai/careers/customer-success-manager/",
+     "domain": "sakana.ai",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2110947838976766263",
+    "username": "SakanaAILabs",
+    "text": "【採用情報】GTMチームで新たに3つのポジションをオープンしました🐟\n\nPartner Alliances Manager ISV：https://t.co/5Eg2z3iWcs\nPartner Alliances Manager SI：https://t.co/Qr4UsKKN41\nCustomer Success Manager：https://t.co/DpZKWroJYK\n\n・ISV：パートナー製品とのAPI連携、共同販売、マーケット プレイス展開\n・SI：SIer、コンサルティングファームとの協業体制づくり、パートナーのイネーブルメント・認定、共同ソリューション開発\n・CS：成果に基づくサクセスプランの合意、活用定着の推進、営業と連携した更新／拡大の管理\n\nいずれもチーム初の専任メンバーとして、仕組みをゼロから作るポジションです。日本発のAIプロダクトを世界のお客さまに届ける仕組みづくりに関心をお持ちの方、ぜひご応募ください🚀",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110947838976766263"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "131c40eede",
@@ -747,7 +833,7 @@
    ],
    "score": 71,
    "credibility": 93,
-   "heat": 14,
+   "heat": 12,
    "first_seen": "2026-10-15T22:06:23.000Z",
    "latest": "2026-10-15T22:06:23.000Z",
    "authors": [
@@ -781,7 +867,7 @@
     "2110854828469686328"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "203c28601c",
@@ -803,9 +889,9 @@
      "desc": "インターネット上でリアルタイムに行う動画中継"
     }
    ],
-   "score": 69,
+   "score": 68,
    "credibility": 85,
-   "heat": 20,
+   "heat": 18,
    "first_seen": "2026-10-16T14:00:32.000Z",
    "latest": "2026-10-16T14:00:32.000Z",
    "authors": [
@@ -833,63 +919,71 @@
     "2111094948133216735"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
-   "id": "f14c799367",
+   "id": "b90a20a669",
    "verdict": "promising",
-   "title": "ハーネス付きの高性能モデルで既存の難しいベンチマークが役目を終えつつある",
-   "summary": "Wharton校のEthan Mollick教授は、ツール連携などの「ハーネス」と高性能モデルの組み合わせにより、METR Long Tasks、GDPval、ARC-AGI-3といった難易度の高いベンチマークが意味を失いつつあると投稿した。長時間の作業、正確な数式を含む文書作成、新規パズルの解決が可能になったことを理由に挙げている。",
+   "title": "Gemini 4 ArgonをAntigravity上でBlender作成に試す",
+   "summary": "プログラマーでライターのnpaka氏が、Google Antigravity 2.0でGemini 4 Argonを試していると投稿した。投稿では、添付画像を参考にBlenderで3Dモデルを作らせ、完成後に3Dモデルの良さを表現する動画を生成させるプロンプトが示されている。投稿に記載された結果は画像と動画のリンクのみで、性能の評価数値は示されていない。",
    "points": [
-    "長時間の作業や文書作成など、評価指標が実態に追いつかなくなったことが話題になっている",
-    "ベンチマークが『使い切られた』ことで、新しい評価方法の必要性が高まるとみられる",
-    "教授個人の感想で、各ベンチマークの最新結果や数値の根拠は投稿に示されていない"
+    "新しいのは、AIエージェント環境からBlenderという3Dソフトを操作させる試みの一例である点とみられる",
+    "Gemini 4 Argonは投稿時点で公式発表や一般公開の詳細が確認できず、利用条件は未確認",
+    "個人の試用例のため、再現性や精度は一般的な評価とは別に見る必要がある"
    ],
    "terms": [
     {
-     "term": "ハーネス",
-     "desc": "AIモデルに道具や手順を組み合わせて動かす仕組みのこと"
+     "term": "Antigravity",
+     "desc": "Googleの開発者向けAIエージェント型開発環境とみられる。投稿からは詳細は未確認"
     },
     {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ問題で比べるための共通テスト"
+     "term": "Blender",
+     "desc": "無料で使える3DCGの作成・編集ソフト"
     },
     {
-     "term": "ARC-AGI-3",
-     "desc": "新しいパズルを解く能力を測るとされるAIの評価テスト"
+     "term": "Gemini 4 Argon",
+     "desc": "投稿で試用されているGoogleのAIモデルの名称。公式情報は本投稿からは未確認"
     }
    ],
-   "score": 55,
-   "credibility": 70,
-   "heat": 13,
-   "first_seen": "2026-10-15T23:29:55.000Z",
-   "latest": "2026-10-15T23:29:55.000Z",
+   "score": 53,
+   "credibility": 73,
+   "heat": 8,
+   "first_seen": "2026-10-16T06:53:27.000Z",
+   "latest": "2026-10-16T07:06:56.000Z",
    "authors": [
-    "emollick"
+    "npaka123"
    ],
    "author_labels": [
     {
-     "username": "emollick",
-     "label": "Wharton教授",
-     "type": "researcher",
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
      "former": ""
     }
    ],
-   "evidence": "official_evaluation",
-   "evidence_label": "公式評価",
-   "evidence_note": "METRの評価の紹介",
-   "links": [],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "投稿者による試用の画像・動画",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/emollick/status/2110875851600633956",
-    "username": "emollick",
-    "text": "Harnesses + smart models = the end of the last famous hard benchmarks.\n\nModels can now work for extremely long times (bye, METR Long Tasks), they can output professional documents with correct math (so long, GDPval) and they can solve complex novel puzzles (farewell, ARC-AGI-3). https://t.co/WSd5e0IfKi",
-    "text_ja": "ハーネス＋賢いモデル＝有名な難しいベンチマークの終わり。\n\nモデルは非常に長時間作業を続けられるようになり（さらば METR Long Tasks）、正しい数式を含む専門的な文書を出力でき（GDPval、ありがとう）、複雑な新しいパズルも解けるようになりました（ARC-AGI-3、さようなら）。 https://t.co/WSd5e0IfKi"
+    "url": "https://x.com/npaka123/status/2110988138046960008",
+    "username": "npaka123",
+    "text": "Google Antigravity 2.0 で Gemini 4 Argon を試す｜npaka @npaka123 https://t.co/vAsa5G0ZZb",
+    "text_ja": null
    },
    "post_ids": [
-    "2110875851600633956"
+    "2110988138046960008",
+    "2110990860192219385",
+    "2110987470737485952"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "post_count": 3,
+   "archived_at": "2026-10-18T00:06:54Z"
   },
   {
    "id": "e519fc16d9",
@@ -907,9 +1001,9 @@
      "desc": "パソコンで日本語などの文字を入力するための変換ソフトのこと。"
     }
    ],
-   "score": 53,
+   "score": 52,
    "credibility": 78,
-   "heat": 2,
+   "heat": 1,
    "first_seen": "2026-10-16T07:55:09.000Z",
    "latest": "2026-10-16T07:55:09.000Z",
    "authors": [
@@ -943,7 +1037,7 @@
     "2111002997195174272"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-17T16:31:59Z"
+   "archived_at": "2026-10-18T00:06:54Z"
   }
  ]
 }

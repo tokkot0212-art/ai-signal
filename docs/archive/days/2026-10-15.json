@@ -2,153 +2,6 @@
  "date": "2026-10-15",
  "items": [
   {
-   "id": "de25c179eb",
-   "verdict": "confirmed",
-   "title": "Metaが米国製の大型オープンウェイトモデル「Muse Spark Open」を公開",
-   "summary": "Meta公式アカウントは、オープンウェイトモデル「Muse Spark Open」を公開したと発表した。総パラメータ数816B、推論時に使われるパラメータ42B、コンテキストウィンドウ100万トークン、テキスト・画像・動画・音声に対応すると説明した。Trillium Labs創設者のNathan Lambert氏は、Metaの取り組みが米国のオープンモデル競争の状況に関係すると投稿しているが、根拠となる数値は示していない。",
-   "points": [
-    "オープンウェイトのため、重みを入手すれば自社環境で動かせる可能性がある。ただし実際の利用条件は投稿では確認できない。",
-    "総パラメータ816B・有効42Bは、大規模なMoE型構造を示すとみられるが、必要な計算資源は未確認。",
-    "『米国製で最も高性能』との主張は、Meta自身の表現であり、第三者の比較結果は投稿内に示されていない。"
-   ],
-   "terms": [
-    {
-     "term": "オープンウェイトモデル",
-     "desc": "学習済みの重みが公開され、誰でもダウンロードして利用・改変できるAIモデル。"
-    },
-    {
-     "term": "パラメータ",
-     "desc": "AIモデルが学習で調整する数値の量。多いほど表現力が高い傾向があるが、計算量も増える。"
-    },
-    {
-     "term": "コンテキストウィンドウ",
-     "desc": "AIが一度に扱える文章や情報の量。100万トークンは大量の資料を一度に読めることを指す。"
-    }
-   ],
-   "score": 87,
-   "credibility": 90,
-   "heat": 44,
-   "first_seen": "2026-10-14T16:25:37.000Z",
-   "latest": "2026-10-17T14:15:29.000Z",
-   "authors": [
-    "AIatMeta",
-    "natolambert"
-   ],
-   "author_labels": [
-    {
-     "username": "AIatMeta",
-     "label": "Meta公式アカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "natolambert",
-     "label": "Trillium Labs創設者・オープンモデル",
-     "type": "researcher",
-     "former": "元Ai2 Olmo共同リード"
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Meta公式アカウントの発表",
-   "links": [],
-   "post": {
-    "url": "https://x.com/AIatMeta/status/2110779754274292212",
-    "username": "AIatMeta",
-    "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
-    "text_ja": "本日、Muse Spark Openを公開します。米国製のオープンウェイトモデルとしては現時点で最も高性能です。\n\nコーディングやエージェント的な作業向けに作られており、長期にわたるタスク、複雑なソフトウェア開発、多段階の推論に優れています。\n\n主な仕様：\n→ 総パラメータ816B／有効パラメータ42B\n→ 1Mトークンのコンテキストウィンドウ\n→ テキスト、画像、動画、音声をネイティブに扱うマルチモーダル対応"
-   },
-   "post_ids": [
-    "2110517571149807685",
-    "2110779754274292212",
-    "2111461099140772137",
-    "2110784087745253671"
-   ],
-   "post_count": 4,
-   "archived_at": "2026-10-18T00:06:54Z"
-  },
-  {
-   "id": "76363d15e2",
-   "verdict": "confirmed",
-   "title": "Sakana AI、人間と共同で研究を進める「The Agentic Scientist」を公開",
-   "summary": "Sakana AI公式アカウントは、研究を自動化する「The AI Scientist」の第3フェーズとして「The Agentic Scientist」を公開したと発表した。既製のコーディングエージェントを組み合わせ、課題設定から論文執筆までを進める足場（scaffold）で、結果の条件を実験前に定め、論文の主張と実験データを対応づける設計だとしている。同社の研究者がこの仕組みを使った誤差拡散学習法の研究が、国際会議ALIFE 2026の口頭発表に採択されたと述べている。",
-   "points": [
-    "AIが研究を進める際、スコアが上がっても理由が説明されない問題を、主張と実験の対応づけで解決しようとする点が新しいとされる。",
-    "人間がどこを確認すればよいかを明確にする設計は、研究の検証可能性を高める可能性がある。ただし効果の度合いは投稿からは分からない。",
-    "過去のAI Scientistは2026年3月にNature掲載と記載されている。ただし、Natureの論文内容や今回の仕組みの有効性は本投稿だけでは確認できない。"
-   ],
-   "terms": [
-    {
-     "term": "コーディングエージェント",
-     "desc": "プログラムの作成や修正を、AIが自律的に進めるツール。Codex、Claude Codeなどが例。"
-    },
-    {
-     "term": "足場（scaffold）",
-     "desc": "AIを組み合わせて作業手順を進めるための枠組みや仕組みのこと。"
-    },
-    {
-     "term": "誤差拡散学習法（ED法）",
-     "desc": "ニューラルネットワークの学習方法の一つとされる。詳細は投稿に記載なし（未確認）。"
-    }
-   ],
-   "score": 87,
-   "credibility": 100,
-   "heat": 30,
-   "first_seen": "2026-10-15T14:25:07.000Z",
-   "latest": "2026-10-16T08:54:42.000Z",
-   "authors": [
-    "SakanaAILabs",
-    "_akhaliq"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "_akhaliq",
-     "label": "AI論文紹介アカウント",
-     "type": "commentator",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式のブログ・論文リンク",
-   "links": [
-    {
-     "url": "https://pub.sakana.ai/agentic-scientist/",
-     "domain": "pub.sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://github.com/SakanaAI/AI-Scientist-v3",
-     "domain": "github.com",
-     "primary": true
-    },
-    {
-     "url": "https://arxiv.org/abs/2610.18933",
-     "domain": "arxiv.org",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2110738746304061491",
-    "username": "SakanaAILabs",
-    "text": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery\n\nBlog: https://t.co/7aVDvZd6m2\nGitHub: https://t.co/JCCBMvu2P1\narXiv: https://t.co/4bV76tAByj\n\nSince 2024, we’ve used The AI Scientist as a way to test how far AI alone can take scientific research, from v1 to v2 to the paper published in Nature earlier this year. The Agentic Scientist is the next step in that line of work, built for the era of coding agents.\n\nCoding agents such as Codex and Claude Code no",
-    "text_ja": "The Agentic Scientist：自動化された科学的（共同）発見のためのコーディングエージェントのオーケストレーション\n\nブログ：https://t.co/7aVDvZd6m2\nGitHub：https://t.co/JCCBMvu2P1\narXiv：https://t.co/4bV76tAByj\n\n2024年以降、The AI Scientistを通じて、AIだけで科学研究をどこまで進められるかを試してきました。v1からv2、そして今年Natureに掲載された論文までです。The Agentic Scientistは、コーディングエージェントの時代のための、その次のステップです。\n\nCodexやClaude Codeなどのコーディングエージェントは、長いソフトウェア作業を自力で行えるようになりました。しかし研究課題を渡すと、強力なハイパーパラメータ最適化ツールのようになりがちで、科学者としては働きにくい。スコアは上がっても、アイデアは狭いままです。"
-   },
-   "post_ids": [
-    "2110738746304061491",
-    "2110875871896858695",
-    "2111017984462602438"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-18T00:06:54Z"
-  },
-  {
    "id": "1ad3608e1a",
    "verdict": "confirmed",
    "title": "OpenAIが欧州企業のAIエージェント利用拡大を報告",
@@ -207,30 +60,30 @@
    "archived_at": "2026-10-17T16:31:59Z"
   },
   {
-   "id": "08b49c6d8d",
+   "id": "b34f6f6392",
    "verdict": "confirmed",
-   "title": "OpenAI、数学研究支援に500万ドルを拠出",
-   "summary": "OpenAIは公式アカウントで、Simons Foundationの新たな取り組みに500万ドルを拠出すると発表した。この資金は、数学者がAIによる成果を検証し理解して発展させることを支援するもので、ワークショップや会議、特別プログラムに使われる。OpenAIはSimons Foundation支援の研究者にモデルと計算資源も提供するとしている。",
+   "title": "OpenAI、数学コミュニティ支援で500万ドルを拠出",
+   "summary": "OpenAIは、Simons Foundationが新たに立ち上げる数学者向けの取り組みに500万ドルを拠出すると発表した。資金はSimons Foundationが管理・配分し、ワークショップや会議、特別プログラムに使われる。あわせて、同財団が支援する研究者にモデルと計算資源を提供するとしている。",
    "points": [
-    "AIが出した数学的成果を、人間が検証し理解することを目指す点が特徴。",
-    "資金はSimons Foundationが管理・配分する。OpenAIは資金提供とモデル・計算資源の提供を行う。",
-    "投稿で言及された「最近発表した成果」の中身は、この投稿だけでは確認できない。"
+    "AIが生み出した成果を数学者が検証・理解し、次の研究に生かすための支援とされる",
+    "AI企業が学術コミュニティに直接資金と計算資源を提供する形の一例",
+    "資金の具体的な配分先や成果の評価方法は投稿からは分からない"
    ],
    "terms": [
     {
      "term": "Simons Foundation",
-     "desc": "数学・基礎科学の研究を支援する米国の非営利財団。"
+     "desc": "数学・基礎科学を支援する米国の非営利財団。"
     },
     {
      "term": "計算資源",
-     "desc": "AIの学習や研究に必要なコンピュータの処理能力。"
+     "desc": "AIの学習や計算に使うコンピュータの処理能力のこと。"
     }
    ],
-   "score": 83,
+   "score": 82,
    "credibility": 90,
-   "heat": 48,
+   "heat": 46,
    "first_seen": "2026-10-15T14:35:29.000Z",
-   "latest": "2026-10-15T14:35:29.000Z",
+   "latest": "2026-10-15T21:15:00.000Z",
    "authors": [
     "OpenAI"
    ],
@@ -250,13 +103,94 @@
     "url": "https://x.com/OpenAI/status/2110741355739963884",
     "username": "OpenAI",
     "text": "We want to support the mathematics community in turning progress in AI into deeper human understanding and new discoveries. To support that goal, we are contributing $5 million to a new Simons Foundation initiative to help mathematicians examine, understand, and build on results produced by AI, including the results we recently published.\n\nThe funding, managed and awarded by the @SimonsFdn will support workshops, conferences, and special programs. We will also provide access to our models and co",
-    "text_ja": "AIの進歩を、数学コミュニティのより深い人間的理解と新たな発見につなげることを支援したいと考えています。その目標を後押しするため、私たちは最近発表した成果を含め、AIが生み出した結果を数学者が検証・理解し、発展させることを支援するSimons Foundationの新しい取り組みに500万ドルを拠点します。\n\n資金は@SimonsFdnが管理・授与し、ワークショップ、会議、特別プログラムを支援します。また、Simons Foundationが支援する研究者に対して、私たちのモデルと計算リソースへのアクセスも提供します。"
+    "text_ja": "私たちは、AIの進歩を人類のより深い理解と新たな発見へとつなげるため、数学コミュニティを支援したいと考えています。その目標を後押しするため、Simons Foundationが新たに立ち上げるイニシアチブに500万ドルを拠出します。これは、数学者がAIによる成果（最近公表した成果を含む）を検証、理解し、そこから発展させることを支援するものです。\n\n資金は@SimonsFdnが管理・配分し、ワークショップ、会議、特別プログラムを支えます。また、Simons Foundationが支援する研究者に対して、当社のモデルと計算資源へのアクセスも提供します。"
    },
    "post_ids": [
-    "2110741355739963884"
+    "2110741355739963884",
+    "2110841898076418336"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "post_count": 2,
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
+   "id": "85f3eadb50",
+   "verdict": "confirmed",
+   "title": "Metaが米国製の大型オープンウェイトモデル「Muse Spark Open」を公開",
+   "summary": "Meta公式アカウントは、オープンウェイトモデル「Muse Spark Open」を公開したと発表した。総パラメータ数816B、推論時に使われるパラメータ42B、コンテキストウィンドウ100万トークン、テキスト・画像・動画・音声に対応すると説明した。Trillium Labs創設者のNathan Lambert氏は、Metaの取り組みが米国のオープンモデル競争の状況に関係すると投稿しているが、根拠となる数値は示していない。",
+   "points": [
+    "オープンウェイトのため、重みを入手すれば自社環境で動かせる可能性がある。ただし実際の利用条件は投稿では確認できない。",
+    "総パラメータ816B・有効42Bは、大規模なMoE型構造を示すとみられるが、必要な計算資源は未確認。",
+    "『米国製で最も高性能』との主張は、Meta自身の表現であり、第三者の比較結果は投稿内に示されていない。"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイトモデル",
+     "desc": "学習済みの重みが公開され、誰でもダウンロードして利用・改変できるAIモデル。"
+    },
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルが学習で調整する数値の量。多いほど表現力が高い傾向があるが、計算量も増える。"
+    },
+    {
+     "term": "コンテキストウィンドウ",
+     "desc": "AIが一度に扱える文章や情報の量。100万トークンは大量の資料を一度に読めることを指す。"
+    }
+   ],
+   "score": 81,
+   "credibility": 90,
+   "heat": 43,
+   "first_seen": "2026-10-14T16:25:37.000Z",
+   "latest": "2026-10-17T12:37:40.000Z",
+   "authors": [
+    "AIatMeta",
+    "npaka123",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n1d99253ae2cf?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2110779754274292212",
+    "username": "AIatMeta",
+    "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
+    "text_ja": "本日、Muse Spark Openを公開します。米国製のオープンウェイトモデルとしては現時点で最も高性能です。\n\nコーディングやエージェント的な作業向けに作られており、長期にわたるタスク、複雑なソフトウェア開発、多段階の推論に優れています。\n\n主な仕様：\n→ 総パラメータ816B／有効パラメータ42B\n→ 1Mトークンのコンテキストウィンドウ\n→ テキスト、画像、動画、音声をネイティブに扱うマルチモーダル対応"
+   },
+   "post_ids": [
+    "2110517571149807685",
+    "2110779754274292212",
+    "2110849847607836739",
+    "2111436480585564358",
+    "2110784087745253671"
+   ],
+   "post_count": 4,
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "039a21fb0d",
@@ -284,7 +218,7 @@
    ],
    "score": 79,
    "credibility": 100,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-10-15T13:52:20.000Z",
    "latest": "2026-10-15T13:52:20.000Z",
    "authors": [
@@ -328,17 +262,80 @@
     "2110730497907216588"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
-   "id": "981ba53bab",
+   "id": "85f5d98b2b",
    "verdict": "confirmed",
-   "title": "Mistral Large 4が物理・天文の評価で好成績、CERNと大規模物理モデルで協業",
-   "summary": "Mistral AI公式アカウントは、Mistral Large 4がUlamの非公開ベンチマーク「STEMBench」で工学と天文学の分野で高い成績を示したと投稿した。別の投稿では、CERNとMistralが素粒子物理の複雑化に大規模AIモデルで対応できるかを共同で検討すると発表し、数十億件の模擬衝突データで学習する単一の『Large Physics Model』を目指すとしている。",
+   "title": "Anthropic、STEM分野と概念推論分野の新フェローを募集",
+   "summary": "Anthropicは、2つの新しいフェローシップの応募受付を開始したと発表した。STEM分野（科学・工学）と、哲学・認知科学・経済学・政策・法学などを対象とする概念推論分野のフェローが、2027年1月から4か月間Anthropicに在籍し、Claudeがこれらの分野の難問をうまく推論できるよう取り組むという。応募締め切りは10月28日。",
    "points": [
-    "AIモデルの理数系能力の比較に使われるベンチマークで評価された点が注目される。",
-    "CERNとの取り組みは、科学分野で大規模AIを使う動きの一例。ただし実用化の時期や成果は投稿では示されていない。",
-    "『非公開ベンチマーク』のため、スコアの詳細や比較条件は外部から確認しにくい。"
+    "AI研究に専門分野の研究者を招き、Claudeの推論力を高める試みとされる",
+    "応募締め切りは10月28日で、勤務期間は2027年1月からの4か月間",
+    "報酬や応募条件の詳細は、投稿に示された各リンク先で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "フェローシップ",
+     "desc": "研究者などを一定期間受け入れ、研究や実務に取り組んでもらう制度。"
+    },
+    {
+     "term": "Claude",
+     "desc": "Anthropicが開発しているAIアシスタント（大規模言語モデル）。"
+    }
+   ],
+   "score": 76,
+   "credibility": 93,
+   "heat": 26,
+   "first_seen": "2026-10-15T13:14:22.000Z",
+   "latest": "2026-10-15T13:14:22.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5447080008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    },
+    {
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5452403008",
+     "domain": "job-boards.greenhouse.io",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110720940665372825",
+    "username": "AnthropicAI",
+    "text": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason well about some of the hardest problems in those fields.\n\nFor more information, see the descriptions below. The application deadline is October 28.\n\nConceptual Reasoning Fellows: https://t.co/kTaBPqttbK\n\nSTEM Fellows: htt",
+    "text_ja": "Anthropicの2つの新しいフェローシップへの応募受付が始まりました。\n\nSTEM Fellows（科学・工学）とConceptual Reasoning Fellows（哲学、認知科学、経済学、政策、法学）は、2027年1月から4か月間Anthropicで過ごし、Claudeがそれらの分野の最も難しい問題をうまく推論できるよう取り組みます。\n\n詳細は以下の説明をご覧ください。応募締切は10月28日です。\n\nConceptual Reasoning Fellows：https://t.co/kTaBPqttbK\n\nSTEM Fellows：https://t.co/KkD5ruJkjq"
+   },
+   "post_ids": [
+    "2110720940665372825"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
+   "id": "c0ab88047c",
+   "verdict": "confirmed",
+   "title": "Mistral Large 4、独自のSTEMベンチマークで高評価と発表",
+   "summary": "Mistral AIの公式アカウントが、同社のMistral Large 4が、Ulamの非公開ベンチマーク「STEMBench」で工学と天文学の分野で好成績を収めたと投稿した。投稿はベンチマークの結果ページへのリンクを添えている。スコアの具体的な数値は本文には書かれていない。",
+   "points": [
+    "科学・工学系の問題でのモデル性能を測る指標として注目される分野の一つ",
+    "ベンチマークが非公開のため、結果の再現や他モデルとの公平な比較は外部からは難しい",
+    "具体的なスコアや比較対象は、リンク先を見ないと分からない"
    ],
    "terms": [
     {
@@ -346,17 +343,13 @@
      "desc": "AIの性能を同じ問題で比べるための共通のテストのこと。"
     },
     {
-     "term": "CERN",
-     "desc": "スイスにある欧州の素粒子物理学研究機関。"
-    },
-    {
-     "term": "模擬衝突データ",
-     "desc": "粒子加速器での衝突を計算機で再現して作ったデータのこと。"
+     "term": "非公開ベンチマーク",
+     "desc": "問題内容を公開せず、評価の公平性を保つために使われるテスト。"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 88,
-   "heat": 35,
+   "heat": 33,
    "first_seen": "2026-10-15T10:50:29.000Z",
    "latest": "2026-10-16T11:29:30.000Z",
    "authors": [
@@ -387,11 +380,10 @@
     "text_ja": "「ちょっと賢いChonk」は、ロケット科学にも強いようです。\n\nMistral Large 4が、Ulamの非公開ベンチマーク STEMBench で工学と天文学の分野で好成績を収めました: https://t.co/OW3reppzWN https://t.co/3BbnbEuYvP"
    },
    "post_ids": [
-    "2111056939841163336",
-    "2110684732103041474"
+    "2111056939841163336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "51aeb0ff39",
@@ -413,9 +405,9 @@
      "desc": "Googleが開発したAI生成コンテンツへの電子透かし技術"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 93,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-15T12:53:09.000Z",
    "latest": "2026-10-15T12:53:09.000Z",
    "authors": [
@@ -449,7 +441,80 @@
     "2110715601454784965"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
+   "id": "821ae05ba4",
+   "verdict": "confirmed",
+   "title": "Sakana AI、人間と共同で研究を進める「The Agentic Scientist」を公開",
+   "summary": "Sakana AI公式アカウントは、研究を自動化する「The AI Scientist」の第3フェーズとして「The Agentic Scientist」を公開したと発表した。既製のコーディングエージェントを組み合わせ、課題設定から論文執筆までを進める足場（scaffold）で、結果の条件を実験前に定め、論文の主張と実験データを対応づける設計だとしている。同社の研究者がこの仕組みを使った誤差拡散学習法の研究が、国際会議ALIFE 2026の口頭発表に採択されたと述べている。",
+   "points": [
+    "AIが研究を進める際、スコアが上がっても理由が説明されない問題を、主張と実験の対応づけで解決しようとする点が新しいとされる。",
+    "人間がどこを確認すればよいかを明確にする設計は、研究の検証可能性を高める可能性がある。ただし効果の度合いは投稿からは分からない。",
+    "過去のAI Scientistは2026年3月にNature掲載と記載されている。ただし、Natureの論文内容や今回の仕組みの有効性は本投稿だけでは確認できない。"
+   ],
+   "terms": [
+    {
+     "term": "コーディングエージェント",
+     "desc": "プログラムの作成や修正を、AIが自律的に進めるツール。Codex、Claude Codeなどが例。"
+    },
+    {
+     "term": "足場（scaffold）",
+     "desc": "AIを組み合わせて作業手順を進めるための枠組みや仕組みのこと。"
+    },
+    {
+     "term": "誤差拡散学習法（ED法）",
+     "desc": "ニューラルネットワークの学習方法の一つとされる。詳細は投稿に記載なし（未確認）。"
+    }
+   ],
+   "score": 72,
+   "credibility": 100,
+   "heat": 29,
+   "first_seen": "2026-10-15T14:25:07.000Z",
+   "latest": "2026-10-15T23:30:00.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式のブログ・論文リンク",
+   "links": [
+    {
+     "url": "https://pub.sakana.ai/agentic-scientist/",
+     "domain": "pub.sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/SakanaAI/AI-Scientist-v3",
+     "domain": "github.com",
+     "primary": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.18933",
+     "domain": "arxiv.org",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2110738746304061491",
+    "username": "SakanaAILabs",
+    "text": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery\n\nBlog: https://t.co/7aVDvZd6m2\nGitHub: https://t.co/JCCBMvu2P1\narXiv: https://t.co/4bV76tAByj\n\nSince 2024, we’ve used The AI Scientist as a way to test how far AI alone can take scientific research, from v1 to v2 to the paper published in Nature earlier this year. The Agentic Scientist is the next step in that line of work, built for the era of coding agents.\n\nCoding agents such as Codex and Claude Code no",
+    "text_ja": "The Agentic Scientist：自動化された科学的（共同）発見のためのコーディングエージェントのオーケストレーション\n\nブログ：https://t.co/7aVDvZd6m2\nGitHub：https://t.co/JCCBMvu2P1\narXiv：https://t.co/4bV76tAByj\n\n2024年以降、The AI Scientistを通じて、AIだけで科学研究をどこまで進められるかを試してきました。v1からv2、そして今年Natureに掲載された論文までです。The Agentic Scientistは、コーディングエージェントの時代のための、その次のステップです。\n\nCodexやClaude Codeなどのコーディングエージェントは、長いソフトウェア作業を自力で行えるようになりました。しかし研究課題を渡すと、強力なハイパーパラメータ最適化ツールのようになりがちで、科学者としては働きにくい。スコアは上がっても、アイデアは狭いままです。"
+   },
+   "post_ids": [
+    "2110738746304061491",
+    "2110875871896858695"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "da6cc3b764",
@@ -618,6 +683,130 @@
    "archived_at": "2026-10-17T16:31:59Z"
   },
   {
+   "id": "0c75dc2341",
+   "verdict": "promising",
+   "title": "MistralとCERNが素粒子物理向け大規模AIで協業を発表",
+   "summary": "Mistral AIの公式アカウントは、欧州の素粒子物理研究機関CERNとMistralが共同で大規模AIモデルの可能性を探ると投稿した。目標として、数十億件のシミュレーションされた衝突データで学習させる「単一の大規模物理モデル（Large Physics Model）」を挙げている。",
+   "points": [
+    "素粒子実験は膨大なデータを扱うため、大規模AIを使ったデータ解析への応用が期待されている。",
+    "投稿は構想と目標を示すのみで、具体的な期間・成果物・公開の有無は本文では確認できない。",
+    "「Large Physics Model」の詳細（規模、公開形態など）は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "素粒子物理学",
+     "desc": "物質を作る最小単位の粒子とその法則を研究する物理学分野。"
+    },
+    {
+     "term": "シミュレーションデータ",
+     "desc": "コンピュータ上で物理現象を再現して作ったデータ。実験データの代わりに使われることがある。"
+    }
+   ],
+   "score": 75,
+   "credibility": 85,
+   "heat": 34,
+   "first_seen": "2026-10-15T10:50:29.000Z",
+   "latest": "2026-10-15T10:50:29.000Z",
+   "authors": [
+    "MistralAI"
+   ],
+   "author_labels": [
+    {
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Mistral公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/MistralAI/status/2110684732103041474",
+    "username": "MistralAI",
+    "text": "What can large-scale AI models bring to the growing complexity of particle physics?\n\n@CERN  and Mistral join forces to explore this question.\n\nThe ambition: a single Large Physics Model, trained on billions of simulated collisions. https://t.co/nrdCfcBI3k",
+    "text_ja": "大規模AIモデルは、ますます複雑化する素粒子物理学に何をもたらせるのか？\n\n@CERN と Mistral は、この問いを探るために協力します。\n\n目標は、数十億件のシミュレーションされた衝突で学習させた、単一の「大規模物理モデル（Large Physics Model）」です。"
+   },
+   "post_ids": [
+    "2110684732103041474"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
+   "id": "d81592fa9a",
+   "verdict": "promising",
+   "title": "Google、Antigravity上でGemini 4 Argonによる3D制作デモを公開",
+   "summary": "Google AI公式アカウントが、GoogleDeepMindのGeokenAIによるデモ動画を紹介した。Gemini 4 Argonが、Antigravity上で仮想の建築者として、多層の塔（パゴダ）状の空間を自律的に作る様子を示したとされる。別途、プログラマーのnpaka123が、Antigravity 2.0でGemini 4 ArgonとBlenderを使い3Dモデルを作る試用の様子を投稿している。",
+   "points": [
+    "AIが3Dモデル作成などの制作作業を自律的に進める例として注目される",
+    "個人の試用は画像を参考にBlenderでモデルを作る指示を出したもので、完成度の詳細は投稿では示されていない",
+    "デモ動画は公式の演出の可能性があり、実際の精度や再現性は別途確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Gemini 4 Argon",
+     "desc": "Googleのモデル名として投稿に登場する、Geminiシリーズの製品名（詳細は未確認）。"
+    },
+    {
+     "term": "Antigravity",
+     "desc": "Googleが提供する開発・制作向けのツールとして投稿に登場（詳細は未確認）。"
+    },
+    {
+     "term": "Blender",
+     "desc": "無料で使える3DCGの作成ソフト。"
+    }
+   ],
+   "score": 72,
+   "credibility": 90,
+   "heat": 18,
+   "first_seen": "2026-10-15T14:49:00.000Z",
+   "latest": "2026-10-16T07:06:56.000Z",
+   "authors": [
+    "GoogleAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleAI",
+     "label": "Google AI公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "個人の試用投稿（手順のみ）",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleAI/status/2110744759111213217",
+    "username": "GoogleAI",
+    "text": "See a fully-explorable 3D world build itself in minutes ⛩️\n\nWatch @GoogleDeepMind's @GeokenAI explain how Gemini 4 Argon acts as a virtual builder in @antigravity to autonomously create a stunning, multi-tiered pagoda sanctuary. https://t.co/J5ImtMfpbj",
+    "text_ja": "完全に探索可能な3Dの世界が数分で自ら組み上がる様子をご覧ください⛩️\n\n@GoogleDeepMindの@GeokenAIが、Gemini 4 Argonが@antigravityで仮想の建築者として動き、多層のパゴダ（塔）状の聖域を自律的に作り上げる様子を解説しています。"
+   },
+   "post_ids": [
+    "2110744759111213217",
+    "2110988138046960008",
+    "2110990860192219385",
+    "2110987470737485952"
+   ],
+   "post_count": 4,
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
    "id": "7b7e9df5fd",
    "verdict": "promising",
    "title": "AIエージェント同士の仮想社会実験、モデルごとに挙動が大きく違う",
@@ -641,9 +830,9 @@
      "desc": "複数のAIエージェントが互いにやり取りしながら動く仕組みのこと"
     }
    ],
-   "score": 67,
+   "score": 66,
    "credibility": 75,
-   "heat": 41,
+   "heat": 38,
    "first_seen": "2026-10-14T23:50:05.000Z",
    "latest": "2026-10-17T03:24:09.000Z",
    "authors": [
@@ -672,7 +861,7 @@
     "2111297183571943445"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "f9813b30ee",
@@ -730,7 +919,7 @@
     "2110651055331770485"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "311176ed67",
@@ -847,6 +1036,64 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-18T00:06:54Z"
+  },
+  {
+   "id": "a4a9791158",
+   "verdict": "promising",
+   "title": "Anthropicが投資家に蒸留による収益影響を説明と報道",
+   "summary": "Datasette・Djangoの共同作成者Simon Willisonは、FTの記事を引用し、AnthropicがWednesdayに投資家へ、蒸留が収益の5〜7%を占めたと伝えたと紹介した。そのうえで、Q2の収益が115億ドルだと仮定すると、他社がAnthropicのモデルを蒸留するのに5億ドル超を使ったことになると計算している。",
+   "points": [
+    "「蒸留」とは大型モデルの出力を使って別のモデルを学習させる手法で、無断利用が問題になることがある。",
+    "数値は報道（FT）の引用に基づくもので、Anthropicの公式発表の確認は投稿からはできない。",
+    "「Q2の収益115億ドル」は投稿者の仮定であり、「true, and」と条件付きで書かれている点に注意。"
+   ],
+   "terms": [
+    {
+     "term": "蒸留（distillation）",
+     "desc": "大きなAIモデルの出力を使い、小さなモデルなどに知識を移す学習手法。"
+    },
+    {
+     "term": "収益の内訳",
+     "desc": "企業の売上のうち、どの要因がどれだけ占めるかを示す情報。"
+    }
+   ],
+   "score": 52,
+   "credibility": 73,
+   "heat": 7,
+   "first_seen": "2026-10-15T13:16:39.000Z",
+   "latest": "2026-10-15T13:16:39.000Z",
+   "authors": [
+    "simonw"
+   ],
+   "author_labels": [
+    {
+     "username": "simonw",
+     "label": "Datasette・Django共同作成者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "FTの報道の引用",
+   "links": [
+    {
+     "url": "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1",
+     "domain": "ft.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/simonw/status/2110721515130089787",
+    "username": "simonw",
+    "text": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\"\n\nIf true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!\nhttps://t.co/szd2oJxtrv https://t.co/MfcztRwOnV",
+    "text_ja": "「Anthropicは水曜日に投資家に対し、蒸留が収益の5％から7％を占めたと伝えた」\n\n仮にそれが事実で、第2四半期の収益が115億ドルだとすれば、他の研究所がAnthropicのモデルを蒸留するために5億ドル超を費やしたことになります！"
+   },
+   "post_ids": [
+    "2110721515130089787"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T08:11:23Z"
   }
  ]
 }

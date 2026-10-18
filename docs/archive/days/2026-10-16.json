@@ -2,39 +2,39 @@
  "date": "2026-10-16",
  "items": [
   {
-   "id": "21414dcfb3",
+   "id": "bcc7b5a907",
    "verdict": "confirmed",
    "title": "DeepSeekが新モデル「V4.1-Flash-1017」を公開",
-   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」を公開し、旧版より性能が向上し、タスク完了が速く、出力が短くなったと発表した。Webサイト・アプリ・APIで利用可能になったとしている。国内の実務者は、旧版と同じアーキテクチャだとして既存の推論環境で動くと見込んだり、Blenderで3Dモデル作成を試したりしている。",
+   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」を公開したと投稿した。旧版より性能が高く、処理が速く、出力が短くなり、性能とコストの両面で改善したと説明している。Webサイト・アプリ・APIで利用可能とされ、DeepSeek Harness等での利用も案内されている。",
    "points": [
-    "公式発表は「性能向上とコスト面での改善（Pareto improvement）」を掲げている。ベンチマーク数値は投稿中に示されていない。",
-    "旧版と同じアーキテクチャとの見方もあり、既存環境への導入が比較的容易かもしれないが、これは投稿者の見立てである。",
-    "海外の研究者は、オープンウェイトモデルの中で競争力があるか注目しているが、性能比較はまだ検証されていない。"
+    "公式発表で、性能向上と出力の短縮を同時に掲げている点が特徴。",
+    "DeepSeek Harness v0.2.1-rc.1以降へのアップデートが推奨されている。",
+    "ベンチマークの具体的な数値は投稿内に示されていないため、性能差の大きさは未確認。"
    ],
    "terms": [
     {
-     "term": "オープンウェイトモデル",
-     "desc": "重み（学習済みパラメータ）が公開され、誰でもダウンロードして使えるAIモデル。"
+     "term": "API",
+     "desc": "外部のプログラムからAIモデルを呼び出すための窓口のこと。"
     },
     {
-     "term": "推論エンジン",
-     "desc": "学習済みAIモデルに入力を与えて答えを出させる実行基盤のソフトウェア。"
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ問題で比べるための共通テストのこと。"
     },
     {
      "term": "Pareto improvement",
-     "desc": "ある指標を改善しつつ、他の指標を悪化させないこと。性能とコストの両立を指す。"
+     "desc": "ある指標を悪化させずに別の指標を改善すること（パレート改善）。"
     }
    ],
    "score": 100,
    "credibility": 85,
-   "heat": 81,
+   "heat": 76,
    "first_seen": "2026-10-15T21:46:36.000Z",
    "latest": "2026-10-17T20:16:03.000Z",
    "authors": [
     "deepseek_ai",
     "natolambert",
-    "shi3z",
-    "npaka123"
+    "npaka123",
+    "shi3z"
    ],
    "author_labels": [
     {
@@ -50,29 +50,24 @@
      "former": "元Ai2 Olmo共同リード"
     },
     {
-     "username": "shi3z",
-     "label": "ギリア株式会社ファウンダー・顧問",
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
      "type": "practitioner",
      "former": ""
     },
     {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
+     "username": "shi3z",
+     "label": "ギリア株式会社ファウンダー・顧問",
      "type": "practitioner",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "DeepSeek公式アカウントの発表",
+   "evidence_note": "DeepSeek公式アカウントの投稿",
    "links": [
     {
      "url": "https://note.com/npaka/n/nebbfa829304b?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n1d99253ae2cf?sub_rt=share_pw",
      "domain": "note.com",
      "primary": false
     }
@@ -81,146 +76,18 @@
     "url": "https://x.com/deepseek_ai/status/2111375640717033777",
     "username": "deepseek_ai",
     "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
-    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場！\n\n前バージョンより、ベンチマーク性能が高く、タスクの完了が速く、出力も短くなりました。性能とコストの両面で改善（パレート改善）しています。現在、当社のウェブサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddyなどに最適化されています。新モデルで最良の体験をするには、DeepSeek Harness v0.2.1-rc.1以降にアップグレードしてください。\n\n1/4"
+    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場しました！\n\n旧版と比べてベンチマーク性能が向上し、タスクの完了が速くなり、出力も短くなりました。性能とコストの両面で改善（パレート改善）しています。現在、当社のウェブサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddyなどに最適化されています。新モデルで最良の体験を得るには、DeepSeek Harness v0.2.1-rc.1以降にアップグレードしてください。\n\n1/4"
    },
    "post_ids": [
     "2111375640717033777",
     "2111440910257099072",
-    "2111551837916766583",
     "2111456922293694485",
     "2111454710498766979",
-    "2111436480585564358",
-    "2110849847607836739",
+    "2111551837916766583",
     "2111456711882232065"
    ],
    "post_count": 8,
-   "archived_at": "2026-10-18T00:06:54Z"
-  },
-  {
-   "id": "cf6fccff8c",
-   "verdict": "confirmed",
-   "title": "Anthropic、外部評価機関METRに社員並みのアクセスを提供",
-   "summary": "Anthropic公式アカウントは、安全性の実践を外部の評価機関に確認してもらう方針に基づき、METRの評価チームに社員に近いアクセス権を与えたと発表した。同社は複数の組織と協議中とし、第三者評価機関との連携方法を別投稿の記事で説明している。Wharton教授のErhan Mollick氏は、AIの難しいベンチマークがほぼ役目を終えつつあるとの感想を投稿した。",
-   "points": [
-    "外部の評価機関が内部に近い環境で評価できるようになると、AI企業の安全対策の検証が進む可能性がある。",
-    "Mollick氏の投稿は、長時間タスク・文書作成・新しいパズルの各ベンチマークが『限界に近い』という見方を示した感想で、根拠となる数値は投稿内にない。",
-    "評価の具体的な結果や、どの範囲までアクセスが与えられたかは投稿からは分からない。"
-   ],
-   "terms": [
-    {
-     "term": "METR",
-     "desc": "AIの能力や安全性を評価する独立した研究機関。"
-    },
-    {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ条件で比べるための共通のテストや課題集。"
-    },
-    {
-     "term": "ハーネス",
-     "desc": "AIモデルを実際のツールや作業手順に組み込み、長い作業を実行させる仕組みのこと。"
-    }
-   ],
-   "score": 88,
-   "credibility": 100,
-   "heat": 32,
-   "first_seen": "2026-10-15T17:27:34.000Z",
-   "latest": "2026-10-15T23:29:55.000Z",
-   "authors": [
-    "AnthropicAI",
-    "emollick"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "emollick",
-     "label": "Wharton教授",
-     "type": "researcher",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
-    "username": "AnthropicAI",
-    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
-    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
-   },
-   "post_ids": [
-    "2110784662071398807",
-    "2110875851600633956"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
-  },
-  {
-   "id": "b35026ff00",
-   "verdict": "confirmed",
-   "title": "OpenAIがCodexを社内の保守作業に使う方法を紹介",
-   "summary": "OpenAIの開発者向け公式アカウントは、同社のエンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を減らしている方法を紹介した。詳しい内容は投稿に添えられたリンク先にあるとみられる。",
-   "points": [
-    "AIのコーディング支援を、新機能開発だけでなく既存コードの保守にも使う事例として参考になる",
-    "投稿本文には具体的な成果の数値は書かれておらず、効果の大きさは未確認",
-    "リンク先の詳細を読まないと、どの程度の作業を任せているかは判断できない"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIのコード作成・修正を支援するAIエージェント。"
-    },
-    {
-     "term": "コードベース",
-     "desc": "ソフトウェアのプログラムを構成する全体のコードの集まり。"
-    },
-    {
-     "term": "保守（メンテナンス）",
-     "desc": "既存のシステムの不具合修正や改善を継続して行う作業。"
-    }
-   ],
-   "score": 83,
-   "credibility": 90,
-   "heat": 48,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-16T21:50:00.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式X投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
-    "username": "OpenAIDevs",
-    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
-    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
-   },
-   "post_ids": [
-    "2111213093577691337"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "29128a45bc",
@@ -248,7 +115,7 @@
    ],
    "score": 83,
    "credibility": 90,
-   "heat": 48,
+   "heat": 47,
    "first_seen": "2026-10-15T15:09:11.000Z",
    "latest": "2026-10-16T22:03:03.000Z",
    "authors": [
@@ -277,7 +144,7 @@
     "2111216377935831403"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "5e32851c1e",
@@ -305,7 +172,7 @@
    ],
    "score": 82,
    "credibility": 100,
-   "heat": 31,
+   "heat": 29,
    "first_seen": "2026-10-16T13:39:40.000Z",
    "latest": "2026-10-16T13:39:40.000Z",
    "authors": [
@@ -339,59 +206,64 @@
     "2111089696025858212"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
-   "id": "87ce596b06",
+   "id": "a21a5f31a2",
    "verdict": "confirmed",
-   "title": "OpenAIが生命科学向け「GPT-Rosalind」の学術向けプランを発表",
-   "summary": "OpenAI公式アカウントは、生命科学向けAI「GPT-Rosalind」の利用を学術研究向けに広げると発表した。新たに「Rosalind Academic Plan」を用意し、米国の大学に所属する対象の研究室には後援（スポンサード）による利用を提供するとしている。生物学の理解や仮説の検討、次に行う実験の判断などに役立てる狙いが示されている。",
+   "title": "OpenAIのエンジニアがCodexを社内の保守作業に使う例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントが、同社エンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけて保守作業の遅れを解消している様子を紹介した。もう一件の投稿では、エンジニアのAliが深夜3時の障害対応で、「dot」と呼ばれる仕組みを使い、調査とCodexのスレッド作成を任せ、スマートフォンのChatGPTアプリから作業を指示したと紹介している。",
    "points": [
-    "新しい点は、研究室向けの専用プランと、対象となる米国大学の研究室への後援付き利用が用意されたこと。",
-    "対象は米国の大学の研究室とされ、日本の研究者が利用できるかは投稿からは分からない。",
-    "AIが実際に研究成果や医療にどれだけ貢献するかは未知数。投稿も「影響には数年かかる」としている。"
+    "AIコーディングツールを社内の保守・障害対応に使う具体例として参考になる",
+    "スマートフォンから作業の続きを指示できる点が、運用の働き方に関係する",
+    "「dot」の仕組みの詳細や効果の定量的な数値は投稿からは分からない"
    ],
    "terms": [
     {
-     "term": "GPT-Rosalind",
-     "desc": "OpenAIの生命科学・生物学分野向けに提供されるAIとみられる（投稿から詳細は不明）。"
+     "term": "Codex",
+     "desc": "OpenAIのAIコーディング支援ツール。コードの読解・修正を補助する。"
     },
     {
-     "term": "後援（スポンサード）アクセス",
-     "desc": "スポンサー（資金提供者）が費用を負担し、対象者が無料または割安で使える仕組み。"
+     "term": "保守作業（メンテナンス）",
+     "desc": "既存のソフトウェアの不具合修正や改善を継続して行う作業。"
+    },
+    {
+     "term": "オンコール",
+     "desc": "障害発生時に呼び出されて対応する当番のこと。"
     }
    ],
-   "score": 81,
+   "score": 82,
    "credibility": 90,
-   "heat": 42,
-   "first_seen": "2026-10-15T21:15:00.000Z",
-   "latest": "2026-10-15T21:15:00.000Z",
+   "heat": 45,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-16T21:50:00.000Z",
    "authors": [
-    "OpenAI"
+    "OpenAIDevs"
    ],
    "author_labels": [
     {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの発表",
+   "evidence_note": "OpenAI公式アカウントの紹介投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/OpenAI/status/2110841898076418336",
-    "username": "OpenAI",
-    "text": "We're expanding access to GPT-Rosalind for academic research.\n\nThe new Rosalind Academic Plan helps scientific labs bring AI into the work of understanding biology, exploring ideas, and deciding what to test next—with sponsored access for eligible labs at U.S. universities.\n\nAcademic research starts with questions whose impact may take years to impact human health.",
-    "text_ja": "GPT-Rosalind の学術研究向けの提供を拡大します。\n\n新しい「Rosalind Academic Plan」は、科学研究室が生物学の理解、アイデアの検討、次に何を検証すべきかの判断にAIを取り入れるのを支援するものです。米国の大学に所属する対象の研究室には、スポンサー付きでアクセスを提供します。\n\n学術研究は、その成果が人類の健康に影響するまでに何年もかかるかもしれない問いから始まります。"
+    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
+    "username": "OpenAIDevs",
+    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
+    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
    },
    "post_ids": [
-    "2110841898076418336"
+    "2111213093577691337",
+    "2111211411766399288"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "post_count": 2,
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "0e004fa107",
@@ -413,9 +285,9 @@
      "desc": "AIの学習や計算に使う処理能力のこと。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 37,
+   "heat": 36,
    "first_seen": "2026-10-15T21:31:45.000Z",
    "latest": "2026-10-15T21:31:45.000Z",
    "authors": [
@@ -443,65 +315,7 @@
     "2110846112152105136"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
-  },
-  {
-   "id": "72a21beacd",
-   "verdict": "confirmed",
-   "title": "Google DeepMind、疾患の検出・治療支援に向けたAI取り組みを紹介",
-   "summary": "Google DeepMindの公式アカウントは、世界中の科学者と協力し、AIモデルやツールを使って病気の検出・治療・予防を支援していると投稿した。投稿では、希少な遺伝子変異の特定や創薬の加速といった例が挙げられ、詳細はリンク先で紹介されている。具体的な成果の数値は投稿本文には示されていない。",
-   "points": [
-    "研究段階の成果が実際の医療にどう届くかは、今回の投稿からは判断できない",
-    "希少な遺伝子変異の特定や創薬の加速は、AIが研究の一部を支える例として注目される",
-    "医療分野のAI利用では、臨床での有効性や安全性の確認が重要になる"
-   ],
-   "terms": [
-    {
-     "term": "遺伝子変異",
-     "desc": "DNAの配列が変わること。病気の原因になることがある"
-    },
-    {
-     "term": "創薬",
-     "desc": "新しい薬を見つけて開発する過程のこと"
-    }
-   ],
-   "score": 77,
-   "credibility": 93,
-   "heat": 28,
-   "first_seen": "2026-10-16T10:15:04.000Z",
-   "latest": "2026-10-16T10:15:04.000Z",
-   "authors": [
-    "GoogleDeepMind"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式の取り組み紹介",
-   "links": [
-    {
-     "url": "https://goo.gle/4i48Cmr",
-     "domain": "goo.gle",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2111038207240388770",
-    "username": "GoogleDeepMind",
-    "text": "Together with scientists around the world, our models and tools are helping make disease more detectable, treatable, and preventable. 🧬\n\nFrom pinpointing rare genetic variants to speeding up drug discovery, here’s how we’re helping turn lab breakthroughs into real-world care → https://t.co/sM5G0CLcKJ",
-    "text_ja": "世界中の科学者とともに、私たちのモデルとツールは病気をより発見しやすく、治療しやすく、予防しやすくする手助けをしています。🧬\n\n希少な遺伝子変異の特定から創薬のスピードアップまで、研究室での成果を実際の医療に結びつける取り組みをご覧ください → https://t.co/sM5G0CLcKJ"
-   },
-   "post_ids": [
-    "2111038207240388770"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "df58d0f4ce",
@@ -529,7 +343,7 @@
    ],
    "score": 76,
    "credibility": 100,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-10-15T21:51:01.000Z",
    "latest": "2026-10-15T23:38:49.000Z",
    "authors": [
@@ -563,59 +377,65 @@
     "2110878089916121333"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
-   "id": "c841955662",
+   "id": "72a21beacd",
    "verdict": "confirmed",
-   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
-   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "title": "Google DeepMind、疾患の検出・治療支援に向けたAI取り組みを紹介",
+   "summary": "Google DeepMindの公式アカウントは、世界中の科学者と協力し、AIモデルやツールを使って病気の検出・治療・予防を支援していると投稿した。投稿では、希少な遺伝子変異の特定や創薬の加速といった例が挙げられ、詳細はリンク先で紹介されている。具体的な成果の数値は投稿本文には示されていない。",
    "points": [
-    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
-    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
-    "機能の詳細や対象範囲はリンク先で確認が必要"
+    "研究段階の成果が実際の医療にどう届くかは、今回の投稿からは判断できない",
+    "希少な遺伝子変異の特定や創薬の加速は、AIが研究の一部を支える例として注目される",
+    "医療分野のAI利用では、臨床での有効性や安全性の確認が重要になる"
    ],
    "terms": [
     {
-     "term": "Codex",
-     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
+     "term": "遺伝子変異",
+     "desc": "DNAの配列が変わること。病気の原因になることがある"
     },
     {
-     "term": "ハードウェアプロジェクト",
-     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
+     "term": "創薬",
+     "desc": "新しい薬を見つけて開発する過程のこと"
     }
    ],
    "score": 76,
-   "credibility": 90,
-   "heat": 30,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-15T22:08:31.000Z",
+   "credibility": 93,
+   "heat": 26,
+   "first_seen": "2026-10-16T10:15:04.000Z",
+   "latest": "2026-10-16T10:15:04.000Z",
    "authors": [
-    "OpenAIDevs"
+    "GoogleDeepMind"
    ],
    "author_labels": [
     {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式開発者アカウントの投稿",
-   "links": [],
+   "evidence_note": "Google DeepMind公式の取り組み紹介",
+   "links": [
+    {
+     "url": "https://goo.gle/4i48Cmr",
+     "domain": "goo.gle",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
-    "username": "OpenAIDevs",
-    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
-    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
+    "url": "https://x.com/GoogleDeepMind/status/2111038207240388770",
+    "username": "GoogleDeepMind",
+    "text": "Together with scientists around the world, our models and tools are helping make disease more detectable, treatable, and preventable. 🧬\n\nFrom pinpointing rare genetic variants to speeding up drug discovery, here’s how we’re helping turn lab breakthroughs into real-world care → https://t.co/sM5G0CLcKJ",
+    "text_ja": "世界中の科学者とともに、私たちのモデルとツールは病気をより発見しやすく、治療しやすく、予防しやすくする手助けをしています。🧬\n\n希少な遺伝子変異の特定から創薬のスピードアップまで、研究室での成果を実際の医療に結びつける取り組みをご覧ください → https://t.co/sM5G0CLcKJ"
    },
    "post_ids": [
-    "2110855363616763922"
+    "2111038207240388770"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "d9767b8952",
@@ -639,7 +459,7 @@
    ],
    "score": 75,
    "credibility": 93,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-10-15T22:30:57.000Z",
    "latest": "2026-10-15T22:32:35.000Z",
    "authors": [
@@ -674,7 +494,59 @@
     "2110861010496315632"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
+   "id": "c841955662",
+   "verdict": "confirmed",
+   "title": "OpenAIがCodexで作るハードウェアプロジェクトの共有サイトを公開",
+   "summary": "OpenAI開発者向け公式アカウントは、Codexを使ってハードウェア関連のプロジェクトを作れるとし、コミュニティのプロジェクトを閲覧・共有できるサイトを公開したと投稿した。サイトの詳細な機能や公開日は投稿には書かれていない。",
+   "points": [
+    "AIのコード生成を使い、ハードウェア（電子工作など）の制作に取り組む動きを支援する狙いとみられる（未確認）",
+    "ユーザーがプロジェクトを投稿できる形式のため、作品の品質や安全性は利用者ごとに差がありうる",
+    "機能の詳細や対象範囲はリンク先で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIが開発するプログラミング支援AI。指示文からコードを書いたり修正したりできる。"
+    },
+    {
+     "term": "ハードウェアプロジェクト",
+     "desc": "電子回路や機械など、物理的な機器を作る制作活動のこと。"
+    }
+   ],
+   "score": 75,
+   "credibility": 90,
+   "heat": 28,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-15T22:08:31.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式開発者アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2110855363616763922",
+    "username": "OpenAIDevs",
+    "text": "You can just build things with Codex\n\nWe built a site for you to explore hardware projects from the community and share your own. https://t.co/zJQX1hXn2N",
+    "text_ja": "Codexを使えば、ものづくりがすぐに始められます。\n\nコミュニティのハードウェアプロジェクトを見て回ったり、自分の作品を共有したりできるサイトを作りました。 https://t.co/zJQX1hXn2N"
+   },
+   "post_ids": [
+    "2110855363616763922"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "0be8fdf207",
@@ -696,9 +568,9 @@
      "desc": "ほかのソフトウェアからAIの機能を呼び出して使うための窓口のこと。"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 100,
-   "heat": 10,
+   "heat": 8,
    "first_seen": "2026-10-16T04:15:58.000Z",
    "latest": "2026-10-16T23:30:00.000Z",
    "authors": [
@@ -742,7 +614,69 @@
     "2111238258210517336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
+  },
+  {
+   "id": "09e2adae1b",
+   "verdict": "confirmed",
+   "title": "Anthropic、外部評価機関METRに社員並みのアクセスを提供",
+   "summary": "Anthropic公式アカウントは、安全性の実践を外部の評価機関に確認してもらう方針に基づき、METRの評価チームに社員に近いアクセス権を与えたと発表した。同社は複数の組織と協議中とし、第三者評価機関との連携方法を別投稿の記事で説明している。Wharton教授のErhan Mollick氏は、AIの難しいベンチマークがほぼ役目を終えつつあるとの感想を投稿した。",
+   "points": [
+    "外部の評価機関が内部に近い環境で評価できるようになると、AI企業の安全対策の検証が進む可能性がある。",
+    "Mollick氏の投稿は、長時間タスク・文書作成・新しいパズルの各ベンチマークが『限界に近い』という見方を示した感想で、根拠となる数値は投稿内にない。",
+    "評価の具体的な結果や、どの範囲までアクセスが与えられたかは投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "METR",
+     "desc": "AIの能力や安全性を評価する独立した研究機関。"
+    },
+    {
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ条件で比べるための共通のテストや課題集。"
+    },
+    {
+     "term": "ハーネス",
+     "desc": "AIモデルを実際のツールや作業手順に組み込み、長い作業を実行させる仕組みのこと。"
+    }
+   ],
+   "score": 72,
+   "credibility": 100,
+   "heat": 30,
+   "first_seen": "2026-10-15T17:27:34.000Z",
+   "latest": "2026-10-15T17:27:34.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+    "username": "AnthropicAI",
+    "text": "We’ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
+    "text_ja": "私たちは、安全対策の実践を第三者の評価者に評価してもらうことを約束しています。複数の組織と協議を進めており、現在は@METR_Evalsのチームに従業員に近いアクセス権を提供しています。\n\nこの投稿では、第三者評価者との協力の進め方を説明しています: https://t.co/8CLQnMVg4X"
+   },
+   "post_ids": [
+    "2110784662071398807"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "2e49e18055",
@@ -767,9 +701,9 @@
      "desc": "システムインテグレーター。企業のシステム構築や導入を請け負う事業者"
     }
    ],
-   "score": 72,
+   "score": 71,
    "credibility": 100,
-   "heat": 4,
+   "heat": 3,
    "first_seen": "2026-10-16T04:15:58.000Z",
    "latest": "2026-10-16T04:15:58.000Z",
    "authors": [
@@ -813,7 +747,7 @@
     "2110947838976766263"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "131c40eede",
@@ -831,9 +765,9 @@
      "desc": "人に代わって目標に向けて自律的に作業するAIのこと。"
     }
    ],
-   "score": 71,
+   "score": 70,
    "credibility": 93,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-15T22:06:23.000Z",
    "latest": "2026-10-15T22:06:23.000Z",
    "authors": [
@@ -867,7 +801,7 @@
     "2110854828469686328"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "203c28601c",
@@ -889,9 +823,9 @@
      "desc": "インターネット上でリアルタイムに行う動画中継"
     }
    ],
-   "score": 68,
+   "score": 67,
    "credibility": 85,
-   "heat": 18,
+   "heat": 16,
    "first_seen": "2026-10-16T14:00:32.000Z",
    "latest": "2026-10-16T14:00:32.000Z",
    "authors": [
@@ -919,71 +853,7 @@
     "2111094948133216735"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
-  },
-  {
-   "id": "b90a20a669",
-   "verdict": "promising",
-   "title": "Gemini 4 ArgonをAntigravity上でBlender作成に試す",
-   "summary": "プログラマーでライターのnpaka氏が、Google Antigravity 2.0でGemini 4 Argonを試していると投稿した。投稿では、添付画像を参考にBlenderで3Dモデルを作らせ、完成後に3Dモデルの良さを表現する動画を生成させるプロンプトが示されている。投稿に記載された結果は画像と動画のリンクのみで、性能の評価数値は示されていない。",
-   "points": [
-    "新しいのは、AIエージェント環境からBlenderという3Dソフトを操作させる試みの一例である点とみられる",
-    "Gemini 4 Argonは投稿時点で公式発表や一般公開の詳細が確認できず、利用条件は未確認",
-    "個人の試用例のため、再現性や精度は一般的な評価とは別に見る必要がある"
-   ],
-   "terms": [
-    {
-     "term": "Antigravity",
-     "desc": "Googleの開発者向けAIエージェント型開発環境とみられる。投稿からは詳細は未確認"
-    },
-    {
-     "term": "Blender",
-     "desc": "無料で使える3DCGの作成・編集ソフト"
-    },
-    {
-     "term": "Gemini 4 Argon",
-     "desc": "投稿で試用されているGoogleのAIモデルの名称。公式情報は本投稿からは未確認"
-    }
-   ],
-   "score": 53,
-   "credibility": 73,
-   "heat": 8,
-   "first_seen": "2026-10-16T06:53:27.000Z",
-   "latest": "2026-10-16T07:06:56.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "投稿者による試用の画像・動画",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/npaka123/status/2110988138046960008",
-    "username": "npaka123",
-    "text": "Google Antigravity 2.0 で Gemini 4 Argon を試す｜npaka @npaka123 https://t.co/vAsa5G0ZZb",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110988138046960008",
-    "2110990860192219385",
-    "2110987470737485952"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "e519fc16d9",
@@ -1037,7 +907,7 @@
     "2111002997195174272"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T00:06:54Z"
+   "archived_at": "2026-10-18T08:11:23Z"
   }
  ]
 }

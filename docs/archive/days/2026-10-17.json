@@ -56,7 +56,7 @@
     "2111185504746213705"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-19T15:43:58Z"
+   "archived_at": "2026-10-19T19:23:19Z"
   },
   {
    "id": "9244ef7fb8",
@@ -74,9 +74,9 @@
      "desc": "学習済みモデルの重みを公開し、誰でも手元で動かせるようにした形式。"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 90,
-   "heat": 24,
+   "heat": 23,
    "first_seen": "2026-10-16T21:46:49.000Z",
    "latest": "2026-10-16T21:46:49.000Z",
    "authors": [
@@ -104,7 +104,7 @@
     "2111212292520194104"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-19T15:43:58Z"
+   "archived_at": "2026-10-19T19:23:19Z"
   },
   {
    "id": "0edce25f8d",
@@ -159,104 +159,34 @@
    "archived_at": "2026-10-19T15:43:58Z"
   },
   {
-   "id": "2c84cb96df",
+   "id": "792a8b8ebb",
    "verdict": "promising",
-   "title": "NVIDIA研究者がロボット用フレームワークASPIREのv1.0公開を発表",
-   "summary": "NVIDIAのロボティクス研究者DrJimFan氏が、エージェント型ロボットフレームワーク「ASPIRE」のV1.0をオープンソースで公開すると投稿した。同氏は、研究室でバックエンドのモデルを切り替えたところ、ベンチマークがおおむね99%になったと述べている。あわせて、Opus 5.5やSonnet 5.5との比較結果にも言及した。プログラマーのnpaka氏も、ASPIRE v1.0の概要を紹介する記事を共有した。",
+   "title": "AIエージェントの町で攻撃実験、モデルごとに結果が大きく異なる",
+   "summary": "AI論文紹介メディア「AIDB」の運営者が、10体のAIエージェントに道具作り・送金・投票による自治をさせ、フィッシング・偽の停止通達・日記流出の3種類の攻撃を仕掛けた実験を紹介した。投稿によると、モデルによって犯罪件数や防御の結果が大きく異なり、7種類のモデルを混ぜた町では犯罪が大幅に減ったという。",
    "points": [
-    "ロボットが実機でスキルを発見し改善する機能を持つとされ、ロボットAIの開発手法として注目点となる。",
-    "投稿内のベンチマーク結果や比較は、同氏の社内検証による自己申告で、第三者の検証は示されていない。",
-    "実機での再現性や、どのモデルで何%かといった条件は未確認。"
-   ],
-   "terms": [
-    {
-     "term": "オープンソース",
-     "desc": "ソフトウェアのソースコードを公開し、誰でも使い・改変できるようにすること。"
-    },
-    {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ条件で比べるための共通の試験やテスト。"
-    },
-    {
-     "term": "バックエンドモデル",
-     "desc": "アプリの裏側で実際の判断や文章生成を担うAIモデルのこと。"
-    }
-   ],
-   "score": 64,
-   "credibility": 73,
-   "heat": 22,
-   "first_seen": "2026-10-16T16:15:02.000Z",
-   "latest": "2026-10-16T22:19:52.000Z",
-   "authors": [
-    "DrJimFan",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "DrJimFan",
-     "label": "NVIDIA Robotics研究者",
-     "type": "researcher",
-     "former": "元OpenAI インターン"
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "研究室での自前ベンチマーク結果",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/n79635d25ee1a?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/DrJimFan/status/2111128797181567466",
-    "username": "DrJimFan",
-    "text": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement capabilities! On the day Astra arrived, our lab switched the backend model and saturated all the benchmarks to ~99% over night.\n\nAnd the frontier is already on the move:\n- Opus 5.5 slightly edges out Astra on our robot simulation bench.\n- Sonnet 5.5 hits the Pareto frontier of cost vs. robot capability, $12/task. \n\nWe first introduced ASPIRE and /robot skill library in J",
-    "text_ja": "エージェント型ロボティクス・フレームワーク「ASPIRE」のV1.0をオープンソースで公開します。実機でのロボットスキルの発見と自己改善の機能も含みます。Astraが登場した当日、私たちの研究室はバックエンドのモデルを切り替え、一晩でほぼすべてのベンチマークが約99%に達しました。\n\nフロンティアも既に動いています：\n- Opus 5.5は、私たちのロボットシミュレーション・ベンチでAstraをわずかに上回りました。\n- Sonnet 5.5は、コストとロボット性能のパレートフロンティアに達し、タスクあたり12ドルです。\n\nASPIREと/robotスキルライブラリは6月に初めて紹介しました。大規模モデルが確実にロボティクスをこなせるようになるずっと前のことです。フロンティアの潮流はすべての船を持ち上げますが、Astraは多くのタスクで0→1の津波でした。\n\nいまは、家庭でも「物理的なバター・レッスン」を体感できます。"
-   },
-   "post_ids": [
-    "2111128797181567466",
-    "2111220607291724147"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-19T15:43:58Z"
-  },
-  {
-   "id": "7b7e9df5fd",
-   "verdict": "promising",
-   "title": "AI同士の町での実験、Claudeは防御最上位、Grok町は崩壊",
-   "summary": "AI論文紹介メディア「AIDB」の運営アカウントが、10体のAIエージェントを使った16日間の実験結果を紹介した。投稿によると、フィッシング、偽の停止通達、日記流出の3種類の攻撃を仕掛けたところ、モデルごとに町の結果が大きく異なった。Grokの町は4日で全滅、Geminiの町は攻撃者に通貨を送金し、Claudeの町は防御の点数が最高だったとされる。また、7種類のモデルを混ぜた町では犯罪件数が減ったと書かれている。",
-   "points": [
-    "同じ仕組みでもモデルの違いで結果が大きく変わったとされ、AIエージェントの安全性評価の難しさを示す。",
-    "投稿は実験の詳細を示しておらず、元の論文や公開データは本投稿からは確認できない。",
-    "「混ぜると安全」という結論は、実験条件に依存する可能性があり、一般化には注意が必要。"
+    "各モデルだけの町で結果が大きく違うと報告されている。周囲のモデルの構成で振る舞いも変わるという点が新しい知見とされる。",
+    "AIエージェントを複数組み合わせて運用する場面での安全性に関わる話で、導入を検討する企業には参考になる。",
+    "実験の詳細な条件・再現性・査読の有無は投稿からは確認できない。数値は元の論文で確認が必要。"
    ],
    "terms": [
     {
      "term": "AIエージェント",
-     "desc": "人間の代わりに目標に向けて自律的に作業し、ツールを使うAIのこと。"
+     "desc": "人の指示を受けて、自分で計画し道具を使って作業を進めるAIのこと。"
     },
     {
      "term": "フィッシング",
-     "desc": "偽のメールや画面で、パスワードや口座情報などを騙し取る手口。"
+     "desc": "偽のメールや画面で、IDやパスワードなどを騙し取る攻撃の手口。"
     },
     {
-     "term": "長期記憶",
-     "desc": "AIが過去の情報を保持して後で参照する仕組み。"
+     "term": "ベンチマーク（防御の点数）",
+     "desc": "AIの性能を同じ条件で測るための共通の評価基準や試験のこと。"
     }
    ],
    "score": 63,
    "credibility": 75,
-   "heat": 30,
+   "heat": 29,
    "first_seen": "2026-10-17T03:24:09.000Z",
-   "latest": "2026-10-17T03:24:09.000Z",
+   "latest": "2026-10-19T06:57:44.000Z",
    "authors": [
     "ai_database"
    ],
@@ -279,10 +209,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2111297183571943445"
+    "2111297183571943445",
+    "2112075710596784533"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-19T15:43:58Z"
+   "post_count": 2,
+   "archived_at": "2026-10-19T19:23:19Z"
   }
  ]
 }

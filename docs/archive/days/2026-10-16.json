@@ -27,7 +27,7 @@
    ],
    "score": 100,
    "credibility": 85,
-   "heat": 67,
+   "heat": 66,
    "first_seen": "2026-10-15T21:46:36.000Z",
    "latest": "2026-10-19T03:23:31.000Z",
    "authors": [
@@ -106,7 +106,7 @@
     "2112021800293114027"
    ],
    "post_count": 8,
-   "archived_at": "2026-10-19T15:43:58Z"
+   "archived_at": "2026-10-19T19:23:19Z"
   },
   {
    "id": "77d5a3e216",
@@ -170,63 +170,6 @@
    ],
    "post_count": 2,
    "archived_at": "2026-10-19T15:43:58Z"
-  },
-  {
-   "id": "a21a5f31a2",
-   "verdict": "confirmed",
-   "title": "OpenAIのエンジニアがCodexを社内の保守作業に使う例を紹介",
-   "summary": "OpenAIの開発者向け公式アカウントが、同社エンジニアがCodexを使ってコードベースを調べ、対応が必要な箇所を見つけて保守作業の遅れを解消している様子を紹介した。もう一件の投稿では、エンジニアのAliが深夜3時の障害対応で、「dot」と呼ばれる仕組みを使い、調査とCodexのスレッド作成を任せ、スマートフォンのChatGPTアプリから作業を指示したと紹介している。",
-   "points": [
-    "AIコーディングツールを社内の保守・障害対応に使う具体例として参考になる",
-    "スマートフォンから作業の続きを指示できる点が、運用の働き方に関係する",
-    "「dot」の仕組みの詳細や効果の定量的な数値は投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIのAIコーディング支援ツール。コードの読解・修正を補助する。"
-    },
-    {
-     "term": "保守作業（メンテナンス）",
-     "desc": "既存のソフトウェアの不具合修正や改善を継続して行う作業。"
-    },
-    {
-     "term": "オンコール",
-     "desc": "障害発生時に呼び出されて対応する当番のこと。"
-    }
-   ],
-   "score": 82,
-   "credibility": 90,
-   "heat": 45,
-   "first_seen": "2026-10-15T22:08:31.000Z",
-   "latest": "2026-10-16T21:50:00.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの紹介投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
-    "username": "OpenAIDevs",
-    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
-    "text_ja": "OpenAIのエンジニアが Codex をどのように使って、コードベースを調べ、対応が必要な箇所を見つけ、保守の未対応作業を少しずつ片付けているかはこちら: https://t.co/BKKX7VbEXi"
-   },
-   "post_ids": [
-    "2111213093577691337",
-    "2111211411766399288"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T08:11:23Z"
   },
   {
    "id": "87ce596b06",
@@ -341,6 +284,59 @@
    ],
    "post_count": 2,
    "archived_at": "2026-10-19T09:07:48Z"
+  },
+  {
+   "id": "a21a5f31a2",
+   "verdict": "confirmed",
+   "title": "OpenAIが社内でのCodex活用事例を2件紹介",
+   "summary": "OpenAIの開発者向け公式アカウントが、同社エンジニアがCodexを使ってコードベースを調査し保守作業を進める方法を紹介した。別の投稿では、エンジニアのAliがオンコール障害の対応で3時にdotを使い、Codexのスレッドを作ってスマートフォンのChatGPTアプリから作業を進めたと紹介された。",
+   "points": [
+    "社内利用の事例紹介で、性能の数値や比較データは投稿に示されていない",
+    "「dot」「Codex」など社内ツールの具体的な仕様は投稿からは分からない",
+    "自社製品の宣伝的な側面があるため、効果は独立した検証で確かめる必要がある"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのコード作業を支援するAIエージェント。コードの読み書きや修正を行う。"
+    },
+    {
+     "term": "オンコール",
+     "desc": "システム障害時に担当者が待機して対応する勤務体制のこと。"
+    }
+   ],
+   "score": 79,
+   "credibility": 90,
+   "heat": 37,
+   "first_seen": "2026-10-15T22:08:31.000Z",
+   "latest": "2026-10-16T21:50:00.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2111213093577691337",
+    "username": "OpenAIDevs",
+    "text": "Here’s how our engineers use Codex at OpenAI to dig through our codebase, find what needs attention, and chip away at the maintenance backlog: https://t.co/BKKX7VbEXi",
+    "text_ja": "OpenAIのエンジニアが、Codexを使ってコードベースを掘り下げ、対応が必要な箇所を見つけ、保守の作業残り（バックログ）を少しずつ片付けている方法をご紹介します。"
+   },
+   "post_ids": [
+    "2111213093577691337",
+    "2111211411766399288"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-19T19:23:19Z"
   },
   {
    "id": "0e004fa107",
@@ -738,7 +734,7 @@
     "2111216377935831403"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-19T15:43:58Z"
+   "archived_at": "2026-10-19T19:23:19Z"
   },
   {
    "id": "0be8fdf207",
@@ -807,7 +803,7 @@
     "2111238258210517336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-19T15:43:58Z"
+   "archived_at": "2026-10-19T19:23:19Z"
   },
   {
    "id": "131c40eede",

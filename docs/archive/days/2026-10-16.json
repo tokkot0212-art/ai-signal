@@ -4,37 +4,38 @@
   {
    "id": "dc23554216",
    "verdict": "confirmed",
-   "title": "DeepSeekがV4.1-Flash-1017を公開",
-   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」の提供開始を発表した。前版と比べてベンチマーク性能が高く、タスクの完了が速く、出力も短いとし、性能とコストの両面で改善したと説明している。Webサイト・アプリ・APIで利用でき、専用のDeepSeek Harness v0.2.1-rc.1以降への更新も案内されている。一方、海外のオープンモデル研究者は、ベンチマークの改善幅が大きいという見方や、モデル名の付け方への戸惑いを示している。",
+   "title": "DeepSeekが新モデル「V4.1-Flash-1017」を公開",
+   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」を公開したと投稿した。前版と比べてベンチマーク性能が向上し、タスク完了が速く、出力が短くなったとしている。自社サイト・アプリ・APIで利用可能になったと案内されている。",
    "points": [
-    "「Pareto improvement」は、性能を落とさずにコストも下げたことを指す表現で、単純な性能向上より前向きな意味合い",
-    "ベンチマーク結果は同社の発表にとどまり、独立した第三者評価は投稿からは確認できない",
-    "新モデルの性能はGLM系など他社の開発中・公開モデルとの比較が話題だが、具体的な数値は投稿内にない"
+    "前版より性能とコストの両面で改善したと公式は説明しており、同じ価格帯でより良い結果が得られる可能性がある",
+    "DeepSeek Harness v0.2.1-rc.1以降へのアップグレードが推奨されている（開発者向け）",
+    "性能向上の具体的な数値は投稿に示されておらず、第三者による検証結果は未確認"
    ],
    "terms": [
     {
-     "term": "Flash",
-     "desc": "処理速度や低コストを重視した軽量寄りのモデル系列を示す名称とみられる"
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ問題で測って比べる共通のテストのこと"
+    },
+    {
+     "term": "API",
+     "desc": "外部のソフトがAIの機能を呼び出すための窓口のこと"
     },
     {
      "term": "Pareto improvement",
-     "desc": "ある指標を悪化させずに別の指標を改善すること。ここでは性能を保ちつつコストを下げたという意味"
-    },
-    {
-     "term": "オープンウェイト",
-     "desc": "学習済みモデルの重みを公開し、誰でもダウンロードして使えるモデルのこと"
+     "desc": "ある面を良くしても他の面が悪化しない改善のこと（パレート改善）"
     }
    ],
    "score": 100,
    "credibility": 85,
-   "heat": 69,
+   "heat": 67,
    "first_seen": "2026-10-15T21:46:36.000Z",
-   "latest": "2026-10-17T20:16:03.000Z",
+   "latest": "2026-10-19T03:23:31.000Z",
    "authors": [
     "deepseek_ai",
     "natolambert",
     "npaka123",
-    "shi3z"
+    "shi3z",
+    "tomor_eng"
    ],
    "author_labels": [
     {
@@ -60,11 +61,17 @@
      "label": "ギリア株式会社ファウンダー・顧問",
      "type": "practitioner",
      "former": ""
+    },
+    {
+     "username": "tomor_eng",
+     "label": "フリーランスエンジニア（AI開発）",
+     "type": "practitioner",
+     "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "DeepSeek公式アカウントの発表",
+   "evidence_note": "DeepSeek公式アカウントの投稿",
    "links": [
     {
      "url": "https://note.com/npaka/n/nebbfa829304b?sub_rt=share_pw",
@@ -75,13 +82,18 @@
      "url": "https://note.com/npaka/n/n1d99253ae2cf?sub_rt=share_pw",
      "domain": "note.com",
      "primary": false
+    },
+    {
+     "url": "https://japan.cnet.com/article/35253695/",
+     "domain": "japan.cnet.com",
+     "primary": false
     }
    ],
    "post": {
     "url": "https://x.com/deepseek_ai/status/2111375640717033777",
     "username": "deepseek_ai",
     "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
-    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場しました！\n\n前バージョンと比べてベンチマーク性能が向上し、タスクの完了が速く、出力も短くなりました。性能とコストの両面で改善された「パレート改善」です。現在、当社のWebサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddy などに最適化されています。新モデルで最良の体験を得るには、DeepSeek Harness v0.2.1-rc.1 以降にアップグレードしてください。\n\n1/4"
+    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場しました！\n\n前バージョンより、ベンチマーク性能が高く、タスクの完了が速く、出力が短くなりました。性能とコストの両面で改善（パレート改善）です。現在、当社のウェブサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddyなどに最適化されています。新モデルで最良の体験を得るには、DeepSeek Harness v0.2.1-rc.1以降にアップグレードしてください。\n\n1/4"
    },
    "post_ids": [
     "2111375640717033777",
@@ -90,10 +102,11 @@
     "2111436480585564358",
     "2111456711882232065",
     "2111454710498766979",
-    "2111551837916766583"
+    "2111551837916766583",
+    "2112021800293114027"
    ],
    "post_count": 8,
-   "archived_at": "2026-10-19T09:07:48Z"
+   "archived_at": "2026-10-19T15:43:58Z"
   },
   {
    "id": "77d5a3e216",
@@ -121,7 +134,7 @@
    ],
    "score": 90,
    "credibility": 100,
-   "heat": 51,
+   "heat": 50,
    "first_seen": "2026-10-15T17:27:34.000Z",
    "latest": "2026-10-16T17:47:58.000Z",
    "authors": [
@@ -156,7 +169,7 @@
     "2111152183240511640"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-19T09:07:48Z"
+   "archived_at": "2026-10-19T15:43:58Z"
   },
   {
    "id": "a21a5f31a2",
@@ -407,7 +420,7 @@
    ],
    "score": 76,
    "credibility": 90,
-   "heat": 30,
+   "heat": 29,
    "first_seen": "2026-10-16T04:52:33.000Z",
    "latest": "2026-10-16T16:11:50.000Z",
    "authors": [
@@ -437,7 +450,7 @@
     "2111127991401247033"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-19T09:07:48Z"
+   "archived_at": "2026-10-19T15:43:58Z"
   },
   {
    "id": "df58d0f4ce",
@@ -696,7 +709,7 @@
    ],
    "score": 73,
    "credibility": 90,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-10-15T15:09:11.000Z",
    "latest": "2026-10-16T22:03:03.000Z",
    "authors": [
@@ -725,7 +738,7 @@
     "2111216377935831403"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-19T09:07:48Z"
+   "archived_at": "2026-10-19T15:43:58Z"
   },
   {
    "id": "0be8fdf207",
@@ -794,7 +807,7 @@
     "2111238258210517336"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-19T09:07:48Z"
+   "archived_at": "2026-10-19T15:43:58Z"
   },
   {
    "id": "131c40eede",

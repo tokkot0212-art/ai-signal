@@ -2,32 +2,32 @@
  "date": "2026-10-16",
  "items": [
   {
-   "id": "bcc7b5a907",
+   "id": "dc23554216",
    "verdict": "confirmed",
-   "title": "DeepSeekが新モデル「V4.1-Flash-1017」を公開",
-   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」を公開したと投稿した。旧版より性能が高く、処理が速く、出力が短くなり、性能とコストの両面で改善したと説明している。Webサイト・アプリ・APIで利用可能とされ、DeepSeek Harness等での利用も案内されている。",
+   "title": "DeepSeekがV4.1-Flash-1017を公開",
+   "summary": "DeepSeek公式アカウントは、新モデル「DeepSeek-V4.1-Flash-1017」の提供開始を発表した。前版と比べてベンチマーク性能が高く、タスクの完了が速く、出力も短いとし、性能とコストの両面で改善したと説明している。Webサイト・アプリ・APIで利用でき、専用のDeepSeek Harness v0.2.1-rc.1以降への更新も案内されている。一方、海外のオープンモデル研究者は、ベンチマークの改善幅が大きいという見方や、モデル名の付け方への戸惑いを示している。",
    "points": [
-    "公式発表で、性能向上と出力の短縮を同時に掲げている点が特徴。",
-    "DeepSeek Harness v0.2.1-rc.1以降へのアップデートが推奨されている。",
-    "ベンチマークの具体的な数値は投稿内に示されていないため、性能差の大きさは未確認。"
+    "「Pareto improvement」は、性能を落とさずにコストも下げたことを指す表現で、単純な性能向上より前向きな意味合い",
+    "ベンチマーク結果は同社の発表にとどまり、独立した第三者評価は投稿からは確認できない",
+    "新モデルの性能はGLM系など他社の開発中・公開モデルとの比較が話題だが、具体的な数値は投稿内にない"
    ],
    "terms": [
     {
-     "term": "API",
-     "desc": "外部のプログラムからAIモデルを呼び出すための窓口のこと。"
-    },
-    {
-     "term": "ベンチマーク",
-     "desc": "AIの性能を同じ問題で比べるための共通テストのこと。"
+     "term": "Flash",
+     "desc": "処理速度や低コストを重視した軽量寄りのモデル系列を示す名称とみられる"
     },
     {
      "term": "Pareto improvement",
-     "desc": "ある指標を悪化させずに別の指標を改善すること（パレート改善）。"
+     "desc": "ある指標を悪化させずに別の指標を改善すること。ここでは性能を保ちつつコストを下げたという意味"
+    },
+    {
+     "term": "オープンウェイト",
+     "desc": "学習済みモデルの重みを公開し、誰でもダウンロードして使えるモデルのこと"
     }
    ],
    "score": 100,
    "credibility": 85,
-   "heat": 73,
+   "heat": 71,
    "first_seen": "2026-10-15T21:46:36.000Z",
    "latest": "2026-10-17T20:16:03.000Z",
    "authors": [
@@ -64,10 +64,15 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "DeepSeek公式アカウントの投稿",
+   "evidence_note": "DeepSeek公式アカウントの発表",
    "links": [
     {
      "url": "https://note.com/npaka/n/nebbfa829304b?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n1d99253ae2cf?sub_rt=share_pw",
      "domain": "note.com",
      "primary": false
     }
@@ -76,46 +81,47 @@
     "url": "https://x.com/deepseek_ai/status/2111375640717033777",
     "username": "deepseek_ai",
     "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
-    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場しました！\n\n旧版と比べてベンチマーク性能が向上し、タスクの完了が速くなり、出力も短くなりました。性能とコストの両面で改善（パレート改善）しています。現在、当社のウェブサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddyなどに最適化されています。新モデルで最良の体験を得るには、DeepSeek Harness v0.2.1-rc.1以降にアップグレードしてください。\n\n1/4"
+    "text_ja": "🚀 DeepSeek-V4.1-Flash-1017 が登場しました！\n\n前バージョンと比べてベンチマーク性能が向上し、タスクの完了が速く、出力も短くなりました。性能とコストの両面で改善された「パレート改善」です。現在、当社のWebサイト、アプリ、APIで利用できます。\n\n🛠️ @DeepSeekHarness、Tencent CodeBuddy、WorkBuddy などに最適化されています。新モデルで最良の体験を得るには、DeepSeek Harness v0.2.1-rc.1 以降にアップグレードしてください。\n\n1/4"
    },
    "post_ids": [
     "2111375640717033777",
     "2111440910257099072",
     "2111456922293694485",
-    "2111454710498766979",
+    "2111436480585564358",
     "2111456711882232065",
+    "2111454710498766979",
     "2111551837916766583"
    ],
    "post_count": 8,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
-   "id": "9b6e172f55",
+   "id": "77d5a3e216",
    "verdict": "confirmed",
-   "title": "AnthropicがSTEM研究と第三者評価の取り組みを発表",
-   "summary": "Anthropicは公式アカウントで、STEMフェローシング・プログラムの成果として、Claude Mythos 5が平易な指示から量子回路を設計し、既存の公開回路を上回ったと発表した。同社は別の投稿で、第三者評価機関との協力を進めており、METRに従業員に近いアクセス権を与えたと述べ、その取り組みを説明する記事へのリンクを示した。",
+   "title": "AnthropicがClaudeで量子回路の効率化を報告",
+   "summary": "Anthropic公式アカウントは、同社のSTEM Fellows Programによる研究「Claudeで量子回路を設計する」を紹介した。自然言語の指示を与えると、Claude Mythos 5が既存の公開済み最良回路を上回る回路を設計し、場合によっては桁違いに改善することがあったという。効率の良い回路は量子アルゴリズムに必要な資源を減らし、化学や材料科学への応用を早める可能性があるとしている。",
    "points": [
-    "量子回路を効率化できれば、量子アルゴリズムに必要な計算資源が減り、化学や材料科学への応用が早まる可能性があるとされる。",
-    "「既存の回路を上回った」の度合いや検証方法は投稿からは詳しく分からないため、元記事で確認が必要。",
-    "第三者評価は、AI企業の安全対策を外部がチェックする仕組みで、評価の独立性や深さが今後の焦点になる。"
+    "量子回路は量子計算の基本的な手順の組み立てで、少ない資源で動かせるほど実用化に近づく",
+    "「桁違い」などの改善幅は投稿の主張で、詳細な条件や検証方法は元記事を確認する必要がある",
+    "化学・材料科学への応用は将来の可能性で、今すぐ実用化できるという意味ではない"
    ],
    "terms": [
     {
      "term": "量子回路",
-     "desc": "量子コンピュータで計算を行うための手順や処理の組み立て。"
+     "desc": "量子コンピュータで計算を行うための一連の操作の組み立て"
     },
     {
-     "term": "第三者評価（サードパーティ評価）",
-     "desc": "AI企業とは独立した外部機関が、安全性などを検査する仕組み。"
+     "term": "STEM Fellows Program",
+     "desc": "科学・技術分野の研究者を支援するAnthropicの取り組みとみられる（詳細は未確認）"
     },
     {
-     "term": "METR",
-     "desc": "AIの能力や危険性を評価する独立系の研究組織。"
+     "term": "Claude Mythos 5",
+     "desc": "Anthropicが提供するAIモデルの名称。投稿に記載されたモデル名"
     }
    ],
-   "score": 92,
+   "score": 91,
    "credibility": 100,
-   "heat": 54,
+   "heat": 53,
    "first_seen": "2026-10-15T17:27:34.000Z",
    "latest": "2026-10-16T17:47:58.000Z",
    "authors": [
@@ -131,15 +137,10 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式の発表投稿",
+   "evidence_note": "Anthropic公式の研究紹介",
    "links": [
     {
      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-     "domain": "anthropic.com",
-     "primary": true
-    },
-    {
-     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
      "domain": "anthropic.com",
      "primary": true
     }
@@ -151,11 +152,11 @@
     "text_ja": "STEMフェローシング・プログラムからの新しい成果：Claudeでより効率的な量子回路を設計。\n\n平易な言葉での指示を与えると、Claude Mythos 5は既存の公開された最良の回路を上回る量子回路を設計しました。改善幅は桁違い（一桁以上）になることもあります。\n\nより効率的な回路は量子アルゴリズムに必要な資源を減らし、化学や材料科学における量子コンピューティングの応用を早めに実現できる可能性があります。\n\n続きを読む: https://t.co/QCvoJLDmBo"
    },
    "post_ids": [
-    "2111152183240511640",
-    "2110784662071398807"
+    "2110784662071398807",
+    "2111152183240511640"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
    "id": "a21a5f31a2",
@@ -240,7 +241,7 @@
    ],
    "score": 82,
    "credibility": 90,
-   "heat": 33,
+   "heat": 32,
    "first_seen": "2026-10-16T04:52:33.000Z",
    "latest": "2026-10-16T16:11:50.000Z",
    "authors": [
@@ -277,69 +278,7 @@
     "2110957045252022393"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-18T16:37:41Z"
-  },
-  {
-   "id": "5e32851c1e",
-   "verdict": "confirmed",
-   "title": "ReflectionAIが501BのMoEモデル「Beam 1.0」を公開",
-   "summary": "NVIDIA公式AIアカウントは、ReflectionAIが初のオープンウェイトモデルを公開したことを祝福した。モデルは501BのMoEモデルで、NVIDIA GB300 NVL72で学習され、Blackwell Ultra上で1GPUあたり70K tokens/秒以上を出したとしている。Hugging Faceには「Beam 1.0 NVFP4」のチェックポイントが公開された。",
-   "points": [
-    "MoEは全体の一部だけを使って計算する方式で、大規模モデルの効率化に使われる",
-    "NVFP4は低精度形式で、速度向上やメモリ削減に役立つ（一般的な説明）",
-    "70K tokens/秒/GPUは主張値で、測定条件や第三者の検証は未確認"
-   ],
-   "terms": [
-    {
-     "term": "MoE（Mixture of Experts）",
-     "desc": "複数の専門家モジュールのうち必要な一部だけを動かす仕組みのモデル構造。"
-    },
-    {
-     "term": "チェックポイント",
-     "desc": "学習途中や完成時点でモデルの重みを保存したデータ。"
-    },
-    {
-     "term": "Blackwell Ultra",
-     "desc": "NVIDIAの最新世代のGPU（画像処理半導体）の一つ。"
-    }
-   ],
-   "score": 81,
-   "credibility": 100,
-   "heat": 27,
-   "first_seen": "2026-10-16T13:39:40.000Z",
-   "latest": "2026-10-16T13:39:40.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式X投稿（HF公開へのリンク付き）",
-   "links": [
-    {
-     "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2111089696025858212",
-    "username": "NVIDIAAI",
-    "text": "Welcome Beam! \n\nCongrats to @ReflectionAI on launching their first open-weight model.\n\nThe 501B MoE model was trained on NVIDIA GB300 NVL72 and delivers over 70K tokens/sec/GPU on Blackwell Ultra out of the box on day 0.\n\n🤗 Beam 1.0 NVFP4 checkpoint on @huggingface: https://t.co/KIKYiobZmL",
-    "text_ja": "Beamを歓迎しましょう！\n\nReflectionAIが初のオープンウェイトモデルを公開したことを祝します。\n\n501BのMoEモデルはNVIDIA GB300 NVL72で学習され、公開初日からBlackwell Ultra上で、そのままの状態でGPUあたり70K tokens/sec以上を実現しています。\n\n🤗 Beam 1.0 NVFP4チェックポイントはこちら（@huggingface）: https://t.co/KIKYiobZmL"
-   },
-   "post_ids": [
-    "2111089696025858212"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
    "id": "87ce596b06",
@@ -392,6 +331,68 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-18T16:37:41Z"
+  },
+  {
+   "id": "5e32851c1e",
+   "verdict": "confirmed",
+   "title": "ReflectionAIが501BのMoEモデル「Beam 1.0」を公開",
+   "summary": "NVIDIA公式AIアカウントは、ReflectionAIが初のオープンウェイトモデルを公開したことを祝福した。モデルは501BのMoEモデルで、NVIDIA GB300 NVL72で学習され、Blackwell Ultra上で1GPUあたり70K tokens/秒以上を出したとしている。Hugging Faceには「Beam 1.0 NVFP4」のチェックポイントが公開された。",
+   "points": [
+    "MoEは全体の一部だけを使って計算する方式で、大規模モデルの効率化に使われる",
+    "NVFP4は低精度形式で、速度向上やメモリ削減に役立つ（一般的な説明）",
+    "70K tokens/秒/GPUは主張値で、測定条件や第三者の検証は未確認"
+   ],
+   "terms": [
+    {
+     "term": "MoE（Mixture of Experts）",
+     "desc": "複数の専門家モジュールのうち必要な一部だけを動かす仕組みのモデル構造。"
+    },
+    {
+     "term": "チェックポイント",
+     "desc": "学習途中や完成時点でモデルの重みを保存したデータ。"
+    },
+    {
+     "term": "Blackwell Ultra",
+     "desc": "NVIDIAの最新世代のGPU（画像処理半導体）の一つ。"
+    }
+   ],
+   "score": 80,
+   "credibility": 100,
+   "heat": 26,
+   "first_seen": "2026-10-16T13:39:40.000Z",
+   "latest": "2026-10-16T13:39:40.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式X投稿（HF公開へのリンク付き）",
+   "links": [
+    {
+     "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2111089696025858212",
+    "username": "NVIDIAAI",
+    "text": "Welcome Beam! \n\nCongrats to @ReflectionAI on launching their first open-weight model.\n\nThe 501B MoE model was trained on NVIDIA GB300 NVL72 and delivers over 70K tokens/sec/GPU on Blackwell Ultra out of the box on day 0.\n\n🤗 Beam 1.0 NVFP4 checkpoint on @huggingface: https://t.co/KIKYiobZmL",
+    "text_ja": "Beamを歓迎しましょう！\n\nReflectionAIが初のオープンウェイトモデルを公開したことを祝します。\n\n501BのMoEモデルはNVIDIA GB300 NVL72で学習され、公開初日からBlackwell Ultra上で、そのままの状態でGPUあたり70K tokens/sec以上を実現しています。\n\n🤗 Beam 1.0 NVFP4チェックポイントはこちら（@huggingface）: https://t.co/KIKYiobZmL"
+   },
+   "post_ids": [
+    "2111089696025858212"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
    "id": "0e004fa107",
@@ -581,7 +582,7 @@
    ],
    "score": 75,
    "credibility": 93,
-   "heat": 24,
+   "heat": 23,
    "first_seen": "2026-10-16T10:15:04.000Z",
    "latest": "2026-10-16T10:15:04.000Z",
    "authors": [
@@ -615,7 +616,7 @@
     "2111038207240388770"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
    "id": "d9767b8952",
@@ -702,7 +703,7 @@
    ],
    "score": 74,
    "credibility": 90,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-10-15T15:09:11.000Z",
    "latest": "2026-10-16T22:03:03.000Z",
    "authors": [
@@ -731,31 +732,31 @@
     "2111216377935831403"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
-   "id": "0be8fdf207",
+   "id": "e60497e5c5",
    "verdict": "confirmed",
-   "title": "Sakana AIがマーケティング分野の採用4件を公開",
-   "summary": "Sakana AI公式アカウントは、新設のマーケティングチームで4つの専任ポジションの募集を開始したと投稿した。募集職種はEnterprise Marketing Manager、Marketing Operations Manager、Product Marketing Manager、Developer Marketing Managerの4つ。投稿によると、Sakana Chat、Sakana Marlin、Sakana Fugu、Sakana Namazu、APIを日本と世界の企業・開発者・官公庁に届ける役割を担うという。",
+   "title": "Sakana AIがマーケティング・GTM担当の採用を拡大",
+   "summary": "Sakana AI公式アカウントが、マーケティングチームの新規ポジション4件と、GTMチームの新規ポジション3件の募集を公開した。マーケティングチームは新設で、各領域で最初の専任メンバーを募集している。対象は Sakana Chat、Sakana Marlin、Sakana Fugu、Sakana Namazu、APIなどの普及を担う役割とされる。",
    "points": [
-    "新設のマーケティングチームによる最初の専任採用で、同社の販売・普及体制の拡充を示す動きと読める。",
-    "対象製品としてSakana ChatやAPIなどが挙げられており、企業・開発者・官公庁への展開を狙っている。",
-    "募集の詳細は採用ページ（投稿内リンク）に依存しており、本文からは条件などは分からない。"
+    "製品を日本と世界の企業や官公庁へ届ける体制を強化する動きとみられる",
+    "GTM(Go-To-Market)は、製品を市場に届ける営業・提携・顧客支援の一連の活動を指す",
+    "採用ページの詳細な条件や勤務地は本投稿からは確認できない"
    ],
    "terms": [
     {
      "term": "GTM",
-     "desc": "Go-To-Marketの略で、製品を市場に届けるための販売・普及の取り組み全般を指す。"
+     "desc": "Go-To-Marketの略。製品を市場に届けるための営業・提携・販促などの活動の総称。"
     },
     {
      "term": "API",
-     "desc": "ほかのソフトウェアからAIの機能を呼び出して使うための窓口のこと。"
+     "desc": "ソフトウェア同士が機能をやり取りするための仕組み。AIモデルを他のアプリから使う際に使われる。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 100,
-   "heat": 7,
+   "heat": 6,
    "first_seen": "2026-10-16T04:15:58.000Z",
    "latest": "2026-10-16T23:30:00.000Z",
    "authors": [
@@ -771,7 +772,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式アカウントの採用告知",
+   "evidence_note": "Sakana AI公式の採用告知",
    "links": [
     {
      "url": "https://sakana.ai/careers/enterprise-marketing-manager/",
@@ -796,81 +797,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2111238258210517336"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-18T16:37:41Z"
-  },
-  {
-   "id": "2e49e18055",
-   "verdict": "confirmed",
-   "title": "Sakana AIがGTMチームの採用3職種を募集開始",
-   "summary": "Sakana AI公式アカウントが、GTM（営業・提携・顧客成功）チームで新たに3つのポジションを募集すると投稿した。募集職種はPartner Alliances Manager（ISV・SI）とCustomer Success Managerで、いずれもチーム初の専任メンバーとなる。",
-   "points": [
-    "チーム初の専任ポジションで、仕組みをゼロから作る役割とされている",
-    "日本発のAIプロダクトを海外顧客に届ける体制づくりが狙いと読める"
-   ],
-   "terms": [
-    {
-     "term": "GTM",
-     "desc": "Go-To-Market。製品を市場に届けるための営業・提携・販売の一連の活動のこと"
-    },
-    {
-     "term": "ISV",
-     "desc": "独立系ソフトウェアベンダー。他社製品と連携して自社製品を販売する企業"
-    },
-    {
-     "term": "SI",
-     "desc": "システムインテグレーター。企業のシステム構築や導入を請け負う事業者"
-    }
-   ],
-   "score": 71,
-   "credibility": 100,
-   "heat": 3,
-   "first_seen": "2026-10-16T04:15:58.000Z",
-   "latest": "2026-10-16T04:15:58.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業の公式採用告知",
-   "links": [
-    {
-     "url": "https://sakana.ai/careers/partner-alliances-manager-isv/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://sakana.ai/careers/partner-alliances-manager-si/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://sakana.ai/careers/customer-success-manager/",
-     "domain": "sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2110947838976766263",
-    "username": "SakanaAILabs",
-    "text": "【採用情報】GTMチームで新たに3つのポジションをオープンしました🐟\n\nPartner Alliances Manager ISV：https://t.co/5Eg2z3iWcs\nPartner Alliances Manager SI：https://t.co/Qr4UsKKN41\nCustomer Success Manager：https://t.co/DpZKWroJYK\n\n・ISV：パートナー製品とのAPI連携、共同販売、マーケット プレイス展開\n・SI：SIer、コンサルティングファームとの協業体制づくり、パートナーのイネーブルメント・認定、共同ソリューション開発\n・CS：成果に基づくサクセスプランの合意、活用定着の推進、営業と連携した更新／拡大の管理\n\nいずれもチーム初の専任メンバーとして、仕組みをゼロから作るポジションです。日本発のAIプロダクトを世界のお客さまに届ける仕組みづくりに関心をお持ちの方、ぜひご応募ください🚀",
-    "text_ja": null
-   },
-   "post_ids": [
+    "2111238258210517336",
     "2110947838976766263"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "post_count": 2,
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
    "id": "131c40eede",
@@ -948,7 +879,7 @@
    ],
    "score": 67,
    "credibility": 85,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-10-16T14:00:32.000Z",
    "latest": "2026-10-16T14:00:32.000Z",
    "authors": [
@@ -976,71 +907,7 @@
     "2111094948133216735"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T16:37:41Z"
-  },
-  {
-   "id": "b90a20a669",
-   "verdict": "promising",
-   "title": "プログラマーがGemini 4 Argonでの3Dモデル作成を試す",
-   "summary": "プログラマーの npaka 氏が、Google Antigravity 2.0 上で Gemini 4 Argon を使ってみたことを投稿した。投稿では、添付画像を参考に Blender で3Dモデルを作成するよう指示し、完成後にその良さを伝える動画を生成させる様子が示されている。",
-   "points": [
-    "Antigravity 上で画像を見ながら Blender の3Dモデル作成まで任せる使い方の一例。",
-    "動画生成まで一連で指示できるかが見どころだが、出力の品質や再現性は投稿からは分からない。",
-    "性能の一般的な評価や公式発表の内容は、この投稿だけでは確認できない。"
-   ],
-   "terms": [
-    {
-     "term": "Blender",
-     "desc": "無料で使える3DCG（3次元の映像・モデル）作成ソフト。"
-    },
-    {
-     "term": "Antigravity",
-     "desc": "Google が提供する AI 支援の開発環境とみられる。投稿からは詳細不明。"
-    },
-    {
-     "term": "Gemini",
-     "desc": "Google の生成AIモデルのシリーズ名。"
-    }
-   ],
-   "score": 53,
-   "credibility": 73,
-   "heat": 7,
-   "first_seen": "2026-10-16T06:53:27.000Z",
-   "latest": "2026-10-16T07:06:56.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人が試した投稿（画像・プロンプト付き）",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/npaka123/status/2110988138046960008",
-    "username": "npaka123",
-    "text": "Google Antigravity 2.0 で Gemini 4 Argon を試す｜npaka @npaka123 https://t.co/vAsa5G0ZZb",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2110988138046960008",
-    "2110990860192219385",
-    "2110987470737485952"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
   },
   {
    "id": "e519fc16d9",
@@ -1094,7 +961,71 @@
     "2111002997195174272"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-18T16:37:41Z"
+   "archived_at": "2026-10-19T00:16:42Z"
+  },
+  {
+   "id": "b90a20a669",
+   "verdict": "promising",
+   "title": "プログラマーがGemini 4 Argonでの3Dモデル作成を試す",
+   "summary": "プログラマーの npaka 氏が、Google Antigravity 2.0 上で Gemini 4 Argon を使ってみたことを投稿した。投稿では、添付画像を参考に Blender で3Dモデルを作成するよう指示し、完成後にその良さを伝える動画を生成させる様子が示されている。",
+   "points": [
+    "Antigravity 上で画像を見ながら Blender の3Dモデル作成まで任せる使い方の一例。",
+    "動画生成まで一連で指示できるかが見どころだが、出力の品質や再現性は投稿からは分からない。",
+    "性能の一般的な評価や公式発表の内容は、この投稿だけでは確認できない。"
+   ],
+   "terms": [
+    {
+     "term": "Blender",
+     "desc": "無料で使える3DCG（3次元の映像・モデル）作成ソフト。"
+    },
+    {
+     "term": "Antigravity",
+     "desc": "Google が提供する AI 支援の開発環境とみられる。投稿からは詳細不明。"
+    },
+    {
+     "term": "Gemini",
+     "desc": "Google の生成AIモデルのシリーズ名。"
+    }
+   ],
+   "score": 52,
+   "credibility": 73,
+   "heat": 6,
+   "first_seen": "2026-10-16T06:53:27.000Z",
+   "latest": "2026-10-16T07:06:56.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人が試した投稿（画像・プロンプト付き）",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/na83ac01c6cce?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/npaka123/status/2110988138046960008",
+    "username": "npaka123",
+    "text": "Google Antigravity 2.0 で Gemini 4 Argon を試す｜npaka @npaka123 https://t.co/vAsa5G0ZZb",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2110988138046960008",
+    "2110990860192219385",
+    "2110987470737485952"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-19T00:16:42Z"
   }
  ]
 }

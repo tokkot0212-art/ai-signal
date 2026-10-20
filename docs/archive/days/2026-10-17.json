@@ -2,6 +2,82 @@
  "date": "2026-10-17",
  "items": [
   {
+   "id": "15c5f4bef3",
+   "verdict": "confirmed",
+   "title": "Meta、新モデル「Muse」の学習基盤と、30Bオープンモデル「Muse Glimmer」の技術報告を公開",
+   "summary": "Metaの公式アカウントは、大規模GPUクラスタ「Prometheus」（オハイオ州）で基盤モデル「Muse」（Muse Wonderを含む）を学習したと投稿し、学習の安定性に関する数値を示した。また、同社は30Bパラメータのオープンウェイトモデル「Muse Glimmer」の技術報告書を公開し、単一のコンシューマー向けGPUで4bit精度で動作し、同規模のオープンモデルでツール利用や多段階計画に強いと述べた。さらに、研究者のnatolambert氏は、Metaの発表を受けて米国のオープンモデルの現状や競争の見通しについて感想を投稿した。",
+   "points": [
+    "学習中断までの平均時間など、大規模学習の安定性に関する数値が示された点が技術的に注目される",
+    "個人や小規模チームでも手元のPCで大型級モデルを動かせる方向性は、開発者にとって利用の選択肢が広がることを意味しうる",
+    "「同規模で優位」の比較条件や第三者による検証結果は投稿からは確認できない"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイトモデル",
+     "desc": "学習済みの重み（パラメータ）が公開され、誰でもダウンロードして使えるAIモデル。"
+    },
+    {
+     "term": "GPUクラスタ",
+     "desc": "多数のGPU（画像処理向け計算装置）を連携させ、大規模なAI学習を行う計算基盤。"
+    },
+    {
+     "term": "4bit量子化",
+     "desc": "モデルの数値の精度を下げて容量と計算負荷を減らす技術。性能はやや落ちることがある。"
+    }
+   ],
+   "score": 96,
+   "credibility": 93,
+   "heat": 63,
+   "first_seen": "2026-10-17T14:15:29.000Z",
+   "latest": "2026-10-19T19:33:10.000Z",
+   "authors": [
+    "AIatMeta",
+    "natolambert"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式投稿・技術報告書",
+   "links": [
+    {
+     "url": "https://go.meta.me/4yXXApZ",
+     "domain": "go.meta.me",
+     "primary": false
+    },
+    {
+     "url": "https://go.meta.me/4Bcvxol",
+     "domain": "go.meta.me",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2112245968750145561",
+    "username": "AIatMeta",
+    "text": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\n\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We engineered Prometheus for resilience at scale, achieving 85%+ goodput on pretraining, 90%+ on reinforcement learning and ~47K GPU hours mean time between interruptions during Muse Wonder training.\n\nTake a look at the tech powering Prometheus: ",
+    "text_ja": "私たちはMuseの基盤モデル（Muse Wonderを含む）を、ニューアルバニー（オハイオ州）にあるギガワット級のスーパークラスタ「Prometheus」で学習させました。\n\n数十万基のGPUからなるスーパークラスタでは、わずか1台の性能が低いホストでも学習全体を遅らせる可能性があります。私たちはPrometheusを大規模環境での耐障害性を重視して設計し、Muse Wonderの学習中に、事前学習で85%以上、強化学習で90%以上のグッドプット（有効な計算の割合）と、約47K GPU時間の平均中断間隔を達成しました。\n\nPrometheusを支える技術はこちら：https://t.co/WSFODnGRST"
+   },
+   "post_ids": [
+    "2112245968750145561",
+    "2112265822274302066",
+    "2111461099140772137"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-20T08:43:54Z"
+  },
+  {
    "id": "b3227e3444",
    "verdict": "confirmed",
    "title": "OpenAI、ChatGPTのPro向けに複数エージェントの並列処理を追加",

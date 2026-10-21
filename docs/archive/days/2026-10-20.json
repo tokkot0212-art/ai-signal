@@ -2,76 +2,6 @@
  "date": "2026-10-20",
  "items": [
   {
-   "id": "b7742a971e",
-   "verdict": "confirmed",
-   "title": "DeepSeekが推論フレームワーク「DeepInfer」をOSS公開",
-   "summary": "DeepSeekの公式アカウントは、自社の推論フレームワーク「DeepInfer」をオープンソースとして公開したと投稿した。同社は、DeepSeek-V4.1-Flashの運用に使っている本番環境のスタックを共有し、コミュニティの計算コストや電力消費の削減を狙うとしている。米国の研究者Nathan Lambert氏は、政府機関でDeepSeekの利用が禁止されたタイミングとの対比に言及する投稿をしている。",
-   "points": [
-    "推論フレームワークは、学習済みAIモデルを実際に動かして回答を返すためのソフトウェア基盤。公開されると他社や研究者が同じ仕組みを使える。",
-    "公式投稿は「計算コストと電力の削減」を目的に挙げている。実際の性能差は、公開されたコードやリンク先の資料で確認が必要。",
-    "Lambert氏の投稿は米政府による利用禁止に触れた感想で、禁止措置の詳細や影響はこの投稿からは確認できない。"
-   ],
-   "terms": [
-    {
-     "term": "推論フレームワーク",
-     "desc": "学習済みAIモデルを実際に動かし、回答を生成するためのソフトウェアの仕組み。"
-    },
-    {
-     "term": "オープンソース",
-     "desc": "ソフトウェアのソースコードを誰でも閲覧・利用・改変できる形で公開すること。"
-    },
-    {
-     "term": "本番環境（プロダクション）",
-     "desc": "実際のサービスとして運用している環境のこと。試験環境と区別される。"
-    }
-   ],
-   "score": 100,
-   "credibility": 100,
-   "heat": 83,
-   "first_seen": "2026-10-20T09:30:19.000Z",
-   "latest": "2026-10-20T11:43:06.000Z",
-   "authors": [
-    "deepseek_ai",
-    "natolambert"
-   ],
-   "author_labels": [
-    {
-     "username": "deepseek_ai",
-     "label": "DeepSeek（AI企業の公式アカウント）",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "natolambert",
-     "label": "Trillium Labs創設者・オープンモデル",
-     "type": "researcher",
-     "former": "元Ai2 Olmo共同リード"
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "DeepSeek公式の発表投稿",
-   "links": [
-    {
-     "url": "http://github.com/deepseek-ai/DeepInfer",
-     "domain": "github.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/deepseek_ai/status/2112476496283775135",
-    "username": "deepseek_ai",
-    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!\n\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more affordable.\n\n🔗 https://t.co/JGAik1kgk0\n\n1/4",
-    "text_ja": "🚀 社内の推論フレームワーク「DeepInfer」を紹介します。現在はすべてオープンソースで公開されています！\n\nDeepSeek-V4.1-Flashを大規模に、高いスループットと低いレイテンシで動かしています。コミュニティが計算コストを下げ、エネルギー使用量を減らし、AIをより手頃な価格にできるよう、本番環境のスタックを共有します。\n\n🔗 https://t.co/JGAik1kgk0\n\n1/4"
-   },
-   "post_ids": [
-    "2112476496283775135",
-    "2112509913847210471"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-21T00:42:12Z"
-  },
-  {
    "id": "ad869b7aa0",
    "verdict": "confirmed",
    "title": "OpenAI、COBOLなど古い言語のソフト開発・移行能力の強化を発表",
@@ -95,9 +25,9 @@
      "desc": "古いシステムを新しい技術環境へ移し替えること。"
     }
    ],
-   "score": 96,
+   "score": 94,
    "credibility": 100,
-   "heat": 64,
+   "heat": 61,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-19T22:30:05.000Z",
    "authors": [
@@ -131,69 +61,77 @@
     "2112310345863930168"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
-   "id": "b2e5b7ce98",
+   "id": "6435536c1c",
    "verdict": "confirmed",
-   "title": "Metaが30B級オープンモデル「Muse Glimmer」の技術報告を公開",
-   "summary": "Meta公式アカウントは、エージェント的なタスク向けに作られた30Bのオープンウェイトモデル「Muse Glimmer」の技術報告書を公開したと投稿した。投稿によると、4bit精度で一般向けGPU1基を備えたMacまたはPCで実用的な速度で動き、同規模のオープンモデルと比べてツール利用と多段階の計画で優れているとしている。アーキテクチャ、蒸留の手法、量子化などはリンク先で説明されている。",
+   "title": "OpenAIのCodexを使った事例紹介と、Codex Securityによるアプリ脆弱性チェック",
+   "summary": "OpenAIの開発者向け公式アカウントは、Codexで何を作っているかを紹介する投稿を行い、リンク先で事例を示した。プログラマーのnpaka氏は、Codex Securityを使ってiOS・Androidアプリの脆弱性をチェックする方法を紹介する記事をリンクとともに投稿した。",
    "points": [
-    "オープンウェイトは、モデルの重み（パラメータ）が公開され、手元で動かせる形式を指す。ソースコードの公開とは異なる点に注意。",
-    "4bit量子化は、モデルを小さく軽くする技術で、個人のPCでも動かしやすくなる。ただし精度低下の程度は報告書での確認が必要。",
-    "「同規模で優位」という比較はMeta自身の報告によるもので、第三者の独立評価は現時点で投稿からは確認できない。"
+    "Codexは開発者がAIにコードの作成や確認を任せる仕組みで、利用例の広がりが読み取れる。",
+    "Codex Securityはセキュリティ上の弱点を探す用途で、アプリ開発者にとって関心が高い。",
+    "npaka氏の記事は手順の紹介とみられるが、本文の詳細は投稿からは確認できない。"
    ],
    "terms": [
     {
-     "term": "オープンウェイトモデル",
-     "desc": "学習済みの重みが公開され、ダウンロードして自分の環境で動かせるAIモデル。"
+     "term": "Codex",
+     "desc": "OpenAIが提供する、プログラムのコードを書いたり確認したりするAIツール。"
     },
     {
-     "term": "量子化（4bit）",
-     "desc": "数値の精度を落としてモデルを軽くし、少ない計算資源で動くようにする技術。"
+     "term": "脆弱性",
+     "desc": "ソフトウェアに含まれるセキュリティ上の弱点のこと。悪用されると被害につながることがある。"
     },
     {
-     "term": "蒸留",
-     "desc": "大きな高性能モデルの知識を、小さなモデルに学ばせて性能を引き継がせる手法。"
+     "term": "Codex Security",
+     "desc": "Codexを使ってセキュリティ上の問題を調べる用途とみられる機能名。詳細は投稿からは未確認。"
     }
    ],
-   "score": 85,
-   "credibility": 93,
-   "heat": 47,
-   "first_seen": "2026-10-19T19:33:10.000Z",
-   "latest": "2026-10-19T19:33:10.000Z",
+   "score": 87,
+   "credibility": 90,
+   "heat": 44,
+   "first_seen": "2026-10-19T17:09:19.000Z",
+   "latest": "2026-10-21T08:20:56.000Z",
    "authors": [
-    "AIatMeta"
+    "OpenAIDevs",
+    "npaka123"
    ],
    "author_labels": [
     {
-     "username": "AIatMeta",
-     "label": "Meta公式アカウント",
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
      "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Meta公式の技術報告書",
+   "evidence_note": "OpenAI公式の事例紹介投稿",
    "links": [
     {
-     "url": "https://go.meta.me/4Bcvxol",
-     "domain": "go.meta.me",
+     "url": "https://note.com/npaka/n/ne130d9f5c091?sub_rt=share_pw",
+     "domain": "note.com",
      "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/AIatMeta/status/2112265822274302066",
-    "username": "AIatMeta",
-    "text": "Today we published a technical report on Muse Glimmer, our 30B open-weight model built for agentic tasks on consumer hardware.\n\nIt runs at practical speeds on a Mac or PC with a single consumer GPU at 4-bit precision, and leads comparably-sized open models on tool use and multi-step planning.\n\nRead about the model architecture, distillation recipe, quantization and more: https://t.co/H7n9qeDhxn",
-    "text_ja": "本日、Muse Glimmerに関する技術報告書を公開しました。Muse Glimmerは、エージェント的なタスク向けに設計された30Bのオープンウェイトモデルで、コンシューマー向けハードウェア上で動作します。\n\n4bit精度であれば、単一のコンシューマー向けGPUを搭載したMacまたはPCで実用的な速度で動作し、同程度の規模のオープンモデルと比べて、ツール利用や多段階の計画で優れています。\n\nモデルアーキテクチャ、蒸留の手法、量子化などについてはこちら：https://t.co/H7n9qeDhxn"
+    "url": "https://x.com/OpenAIDevs/status/2112242739198959913",
+    "username": "OpenAIDevs",
+    "text": "Here’s what we’re cooking with Codex:\n\nhttps://t.co/EHSalmUTN0",
+    "text_ja": "Codexで私たちが作っているものはこちら：\n\nhttps://t.co/EHSalmUTN0"
    },
    "post_ids": [
-    "2112265822274302066"
+    "2112242739198959913",
+    "2112821425447010627"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "post_count": 3,
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "49fcbfeabf",
@@ -219,9 +157,9 @@
      "desc": "生物の進化のように、候補を生成・選抜・改良を繰り返して良い解を探す方法。"
     }
    ],
-   "score": 85,
+   "score": 83,
    "credibility": 100,
-   "heat": 37,
+   "heat": 32,
    "first_seen": "2026-10-20T11:31:58.000Z",
    "latest": "2026-10-20T11:31:58.000Z",
    "authors": [
@@ -265,57 +203,7 @@
     "2112507110290502109"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
-  },
-  {
-   "id": "509b12226d",
-   "verdict": "confirmed",
-   "title": "OpenAIがCodexでの開発事例をコミュニティから紹介",
-   "summary": "OpenAI開発者向け公式アカウントは、Codexで何を作っているかを問いかけたうえで、「Codexで作っているもの」を紹介する投稿を3件行った。投稿はリンクで事例を示す形で、具体的な作品の内容は投稿本文からは分からない。",
-   "points": [
-    "Codexのユーザー事例を共有することで、利用イメージを広げる狙いとみられる",
-    "紹介されている事例の中身はリンク先を見ないと分からない",
-    "事例紹介は宣伝的な側面もあるため、性能や効果は別途確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIが提供するコード生成・開発支援のAIツール。"
-    }
-   ],
-   "score": 84,
-   "credibility": 90,
-   "heat": 49,
-   "first_seen": "2026-10-19T17:09:19.000Z",
-   "latest": "2026-10-19T19:48:30.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントの事例紹介投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2112229620758265938",
-    "username": "OpenAIDevs",
-    "text": "What have you been cooking with Codex?",
-    "text_ja": "Codexを使って、みなさんは何を作ってきましたか？"
-   },
-   "post_ids": [
-    "2112229620758265938",
-    "2112242739198959913",
-    "2112269679154585624"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "4e096db129",
@@ -337,9 +225,9 @@
      "desc": "企業・組織向けに提供する大口の導入案件のこと。"
     }
    ],
-   "score": 75,
+   "score": 74,
    "credibility": 100,
-   "heat": 13,
+   "heat": 10,
    "first_seen": "2026-10-20T03:57:23.000Z",
    "latest": "2026-10-20T03:57:23.000Z",
    "authors": [
@@ -373,7 +261,7 @@
     "2112392712637100095"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "70105ab0f4",
@@ -395,9 +283,9 @@
      "desc": "NVIDIAのGPUで計算処理を行うための開発環境・仕組み。"
     }
    ],
-   "score": 71,
+   "score": 70,
    "credibility": 90,
-   "heat": 18,
+   "heat": 15,
    "first_seen": "2026-10-20T07:56:29.000Z",
    "latest": "2026-10-20T07:56:29.000Z",
    "authors": [
@@ -425,7 +313,7 @@
     "2112452885338288577"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "31217c6fc4",
@@ -446,9 +334,9 @@
      "desc": "クラウドではなく自分のパソコンや手元の機器でAIを動かすこと。"
     }
    ],
-   "score": 71,
+   "score": 70,
    "credibility": 85,
-   "heat": 24,
+   "heat": 22,
    "first_seen": "2026-10-19T16:10:15.000Z",
    "latest": "2026-10-19T16:10:15.000Z",
    "authors": [
@@ -476,7 +364,7 @@
     "2112214753980612886"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "e6ef99b10b",
@@ -502,9 +390,9 @@
      "desc": "光を波長ごとに分けたもの。原子の種類によって固有のパターンが出る。"
     }
    ],
-   "score": 86,
+   "score": 84,
    "credibility": 90,
-   "heat": 56,
+   "heat": 50,
    "first_seen": "2026-10-20T14:53:53.000Z",
    "latest": "2026-10-20T14:53:53.000Z",
    "authors": [
@@ -532,7 +420,54 @@
     "2112557925264752930"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
+  },
+  {
+   "id": "61d4a9552a",
+   "verdict": "promising",
+   "title": "OpenAIがCodexのコミュニティ事例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントが、コミュニティがCodexで作ったプロジェクトを紹介する投稿を行った。投稿にはリンクがあるが、本文中に具体的な内容の説明はない。",
+   "points": [
+    "利用者の作品を公式が紹介する形で、Codexの活用例が広がっている様子がうかがえる。",
+    "リンク先の内容は投稿本文からは確認できないため、詳細は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIが提供する、プログラムのコードを書いたり確認したりするAIツール。"
+    }
+   ],
+   "score": 80,
+   "credibility": 90,
+   "heat": 39,
+   "first_seen": "2026-10-19T19:48:30.000Z",
+   "latest": "2026-10-19T19:48:30.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の紹介投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112269679154585624",
+    "username": "OpenAIDevs",
+    "text": "Cool projects our community is cooking with Codex: https://t.co/ELMZpMHmFL",
+    "text_ja": "コミュニティの皆さんがCodexで作っているおもしろいプロジェクトです： https://t.co/ELMZpMHmFL"
+   },
+   "post_ids": [
+    "2112269679154585624"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "6f39462741",
@@ -554,9 +489,9 @@
      "desc": "デジタル庁が政府職員向けに提供する生成AI利用環境の名称。"
     }
    ],
-   "score": 63,
+   "score": 61,
    "credibility": 78,
-   "heat": 28,
+   "heat": 24,
    "first_seen": "2026-10-20T07:05:10.000Z",
    "latest": "2026-10-20T07:05:10.000Z",
    "authors": [
@@ -590,7 +525,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "cd82ab275d",
@@ -612,9 +547,9 @@
      "desc": "許可なく他人のシステムやアカウントに侵入する行為。"
     }
    ],
-   "score": 61,
+   "score": 59,
    "credibility": 78,
-   "heat": 22,
+   "heat": 19,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -649,7 +584,7 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "bee6a1432d",
@@ -666,9 +601,9 @@
      "desc": "AIと文章でやり取りできるサービス。キャラクターを模したものも作られている。"
     }
    ],
-   "score": 59,
+   "score": 58,
    "credibility": 78,
-   "heat": 18,
+   "heat": 15,
    "first_seen": "2026-10-20T08:55:09.000Z",
    "latest": "2026-10-20T08:55:09.000Z",
    "authors": [
@@ -702,7 +637,7 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "248659d16d",
@@ -720,9 +655,9 @@
      "desc": "調査のために用意する、実在の利用者を装った偽のアカウントのこと。"
     }
    ],
-   "score": 58,
+   "score": 57,
    "credibility": 78,
-   "heat": 15,
+   "heat": 12,
    "first_seen": "2026-10-20T03:05:09.000Z",
    "latest": "2026-10-20T03:05:09.000Z",
    "authors": [
@@ -756,7 +691,7 @@
     "2112379567881273504"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   }
  ]
 }

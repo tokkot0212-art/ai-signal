@@ -2,6 +2,89 @@
  "date": "2026-10-19",
  "items": [
   {
+   "id": "dc84b810a6",
+   "verdict": "confirmed",
+   "title": "DeepSeekが推論基盤「DeepInfer」をオープンソースで公開",
+   "summary": "DeepSeekの公式アカウントは、自社の推論フレームワーク「DeepInfer」を全面オープンソースで公開したと投稿した。同社はこれを大規模なDeepSeek-V4.1-Flashの運用に使っており、計算コストや消費電力の削減に役立ててほしいと述べている。投稿にはGitHubへのリンクが含まれている。",
+   "points": [
+    "推論基盤（本番運用で使うソフトの仕組み）を公開したもので、モデル自体の公開とは別の話である。",
+    "コストやエネルギー消費を抑えたい開発者・企業にとって、実運用のノウハウを試せる機会になりうる。",
+    "性能の数値やライセンス条件は投稿からは確認できず、実際の効果は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "推論フレームワーク",
+     "desc": "学習済みAIを動かして回答を出すときに使うソフトウェアの土台のこと。"
+    },
+    {
+     "term": "オープンソース",
+     "desc": "ソフトウェアのソースコードを誰でも見て使えるように公開すること。"
+    },
+    {
+     "term": "スループット／レイテンシ",
+     "desc": "一度に処理できる量と、一つの応答が返るまでの待ち時間のこと。"
+    }
+   ],
+   "score": 100,
+   "credibility": 100,
+   "heat": 78,
+   "first_seen": "2026-10-19T03:23:31.000Z",
+   "latest": "2026-10-20T11:43:06.000Z",
+   "authors": [
+    "deepseek_ai",
+    "natolambert",
+    "tomor_eng"
+   ],
+   "author_labels": [
+    {
+     "username": "deepseek_ai",
+     "label": "DeepSeek（AI企業の公式アカウント）",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "natolambert",
+     "label": "Trillium Labs創設者・オープンモデル",
+     "type": "researcher",
+     "former": "元Ai2 Olmo共同リード"
+    },
+    {
+     "username": "tomor_eng",
+     "label": "フリーランスエンジニア（AI開発）",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "DeepSeek公式アカウントの発表",
+   "links": [
+    {
+     "url": "http://github.com/deepseek-ai/DeepInfer",
+     "domain": "github.com",
+     "primary": true
+    },
+    {
+     "url": "https://japan.cnet.com/article/35253695/",
+     "domain": "japan.cnet.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/deepseek_ai/status/2112476496283775135",
+    "username": "deepseek_ai",
+    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!\n\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more affordable.\n\n🔗 https://t.co/JGAik1kgk0\n\n1/4",
+    "text_ja": "🚀 社内の推論フレームワーク「DeepInfer」を紹介します。現在は完全にオープンソースです！\n\n大規模な DeepSeek-V4.1-Flash を、高スループット・低レイテンシで動かしています。コミュニティが計算コストを下げ、消費電力を減らし、AIをより手頃にできるよう、本番環境のスタックを公開します。\n\n🔗 https://t.co/JGAik1kgk0\n\n1/4"
+   },
+   "post_ids": [
+    "2112476496283775135",
+    "2112509913847210471",
+    "2112021800293114027"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-21T08:44:17Z"
+  },
+  {
    "id": "023e6d8f86",
    "verdict": "confirmed",
    "title": "AnthropicがPublic Benefit Fundへ株式の一部を寄付すると発表",
@@ -25,9 +108,9 @@
      "desc": "会社の重要な経営判断を行う役員の集まりのこと"
     }
    ],
-   "score": 95,
+   "score": 94,
    "credibility": 100,
-   "heat": 63,
+   "heat": 61,
    "first_seen": "2026-10-18T18:07:51.000Z",
    "latest": "2026-10-18T18:07:51.000Z",
    "authors": [
@@ -61,7 +144,7 @@
     "2111881963657412903"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "624578d4eb",
@@ -89,7 +172,7 @@
    ],
    "score": 71,
    "credibility": 90,
-   "heat": 18,
+   "heat": 17,
    "first_seen": "2026-10-18T16:57:51.000Z",
    "latest": "2026-10-18T16:57:51.000Z",
    "authors": [
@@ -117,7 +200,55 @@
     "2111864348717224259"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
+  },
+  {
+   "id": "2af4e6f0e5",
+   "verdict": "confirmed",
+   "title": "NVIDIAがGTC Berlin前に欧州のAI開発者を紹介",
+   "summary": "NVIDIAの公式AIアカウントが、GTC Berlinに向けた特集として「Europe’s AI Builders in the Spotlight（欧州のAI開発者に注目）」と題した記事を案内した。投稿はタイトルとリンクのみで、具体的な内容は投稿からは分からない。",
+   "points": [
+    "欧州のAI開発者や企業を紹介する広報記事とみられる",
+    "内容の詳細はリンク先でしか確認できない",
+    "イベント前の注目度を高める発信の一環と考えられる"
+   ],
+   "terms": [
+    {
+     "term": "GTC Berlin",
+     "desc": "NVIDIAが2026年にベルリンで開く技術カンファレンス（投稿内の名称）。"
+    }
+   ],
+   "score": 69,
+   "credibility": 90,
+   "heat": 12,
+   "first_seen": "2026-10-19T12:30:09.000Z",
+   "latest": "2026-10-19T12:30:09.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの記事案内",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112159364878655992",
+    "username": "NVIDIAAI",
+    "text": "Road to GTC Berlin: Europe’s AI Builders in the Spotlight https://t.co/2mcl76sSUs",
+    "text_ja": "GTCベルリンへの道：ヨーロッパのAIビルダーにスポットライト"
+   },
+   "post_ids": [
+    "2112159364878655992"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "1b056fd77a",
@@ -141,7 +272,7 @@
    ],
    "score": 63,
    "credibility": 73,
-   "heat": 29,
+   "heat": 27,
    "first_seen": "2026-10-19T12:53:23.000Z",
    "latest": "2026-10-19T12:53:23.000Z",
    "authors": [
@@ -175,65 +306,7 @@
     "2112165213202157907"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
-  },
-  {
-   "id": "3c13043d50",
-   "verdict": "promising",
-   "title": "Googleが量子計算の魔法状態生成を効率化、エラー40分の1",
-   "summary": "ITmedia NEWSが、Googleが量子コンピュータで“魔法状態”を実機で効率よく生成したと伝えた記事の見出しを投稿した。見出しによると、エラーを40分の1にしたという。投稿本文は見出しとリンクのみで、詳しい条件や原論文は本投稿からは確認できない。",
-   "points": [
-    "魔法状態は量子コンピュータで汎用的な計算を行うために必要な要素とされ、その生成精度は重要な課題とされる。",
-    "「40分の1」が何と比べた数字かは、記事本文を読まないと分からない。",
-    "実機での結果か、どの条件下かなど、一般的な注意点は記事と元論文で確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "魔法状態",
-     "desc": "量子コンピュータで一般的な計算を行うために必要とされる特殊な量子状態の名称。"
-    },
-    {
-     "term": "エラー",
-     "desc": "量子計算で生じる誤り。量子ビットは外部の影響を受けやすく、誤りの抑制が課題とされる。"
-    }
-   ],
-   "score": 58,
-   "credibility": 78,
-   "heat": 15,
-   "first_seen": "2026-10-19T02:05:08.000Z",
-   "latest": "2026-10-19T02:05:08.000Z",
-   "authors": [
-    "itmedia_news"
-   ],
-   "author_labels": [
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事見出し",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002366/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/itmedia_news/status/2112002076306014716",
-    "username": "itmedia_news",
-    "text": "Google、量子コンピュータの“魔法状態”生成を実機で効率化　エラーを40分の1に\nhttps://t.co/1lN6gPJjEU",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2112002076306014716"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "9c167cfe5b",
@@ -257,7 +330,7 @@
    ],
    "score": 58,
    "credibility": 78,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-19T02:28:09.000Z",
    "latest": "2026-10-19T02:28:09.000Z",
    "authors": [
@@ -291,7 +364,65 @@
     "2112007868526539046"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
+  },
+  {
+   "id": "3c13043d50",
+   "verdict": "promising",
+   "title": "Googleが量子計算の魔法状態生成を効率化、エラー40分の1",
+   "summary": "ITmedia NEWSが、Googleが量子コンピュータで“魔法状態”を実機で効率よく生成したと伝えた記事の見出しを投稿した。見出しによると、エラーを40分の1にしたという。投稿本文は見出しとリンクのみで、詳しい条件や原論文は本投稿からは確認できない。",
+   "points": [
+    "魔法状態は量子コンピュータで汎用的な計算を行うために必要な要素とされ、その生成精度は重要な課題とされる。",
+    "「40分の1」が何と比べた数字かは、記事本文を読まないと分からない。",
+    "実機での結果か、どの条件下かなど、一般的な注意点は記事と元論文で確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "魔法状態",
+     "desc": "量子コンピュータで一般的な計算を行うために必要とされる特殊な量子状態の名称。"
+    },
+    {
+     "term": "エラー",
+     "desc": "量子計算で生じる誤り。量子ビットは外部の影響を受けやすく、誤りの抑制が課題とされる。"
+    }
+   ],
+   "score": 57,
+   "credibility": 78,
+   "heat": 14,
+   "first_seen": "2026-10-19T02:05:08.000Z",
+   "latest": "2026-10-19T02:05:08.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事見出し",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002366/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2112002076306014716",
+    "username": "itmedia_news",
+    "text": "Google、量子コンピュータの“魔法状態”生成を実機で効率化　エラーを40分の1に\nhttps://t.co/1lN6gPJjEU",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2112002076306014716"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-21T08:44:17Z"
   },
   {
    "id": "181cf95fac",
@@ -309,9 +440,9 @@
      "desc": "人の指示を受けて、複数の作業を自分で進めるタイプのAI。"
     }
    ],
-   "score": 56,
+   "score": 55,
    "credibility": 78,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-10-18T23:05:05.000Z",
    "latest": "2026-10-18T23:05:05.000Z",
    "authors": [
@@ -345,7 +476,7 @@
     "2111956764711436718"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T00:42:12Z"
+   "archived_at": "2026-10-21T08:44:17Z"
   }
  ]
 }

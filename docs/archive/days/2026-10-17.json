@@ -2,74 +2,6 @@
  "date": "2026-10-17",
  "items": [
   {
-   "id": "3b8c6ca6b0",
-   "verdict": "confirmed",
-   "title": "MetaがAIモデルMuse向けの学習基盤と30Bオープンモデルの技術報告を公開",
-   "summary": "Meta公式アカウントは、基盤モデル「Muse」を、オハイオ州New Albanyにある大規模クラスター「Prometheus」で学習したと投稿した。あわせて、消費者向けハードウェアで動くことを目指す30Bのオープンウェイトモデル「Muse Glimmer」の技術報告を公開したとしている。",
-   "points": [
-    "学習基盤の安定性について、事前学習で85%以上、強化学習で90%以上のgoodputを達成したと公式に示されている。",
-    "Muse Glimmerは4bit精度で一般的なGPU1基でも動くとされ、手元で試せるモデルとして注目されうる。",
-    "投稿に示された数値は社内環境の自己申告であり、第三者による検証はまだ確認できない。"
-   ],
-   "terms": [
-    {
-     "term": "goodput",
-     "desc": "学習や計算の時間のうち、実際に有効な処理に使われた割合のこと。"
-    },
-    {
-     "term": "オープンウェイトモデル",
-     "desc": "学習済みの重み（パラメータ）が公開され、ダウンロードして動かせるAIモデルのこと。"
-    },
-    {
-     "term": "量子化（4bit精度）",
-     "desc": "モデルの数値の細かさを落として軽くし、少ないメモリで動くようにする技術のこと。"
-    }
-   ],
-   "score": 87,
-   "credibility": 93,
-   "heat": 52,
-   "first_seen": "2026-10-17T14:15:29.000Z",
-   "latest": "2026-10-19T19:33:10.000Z",
-   "authors": [
-    "AIatMeta"
-   ],
-   "author_labels": [
-    {
-     "username": "AIatMeta",
-     "label": "Meta公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Meta公式の技術報告・発表",
-   "links": [
-    {
-     "url": "https://go.meta.me/4yXXApZ",
-     "domain": "go.meta.me",
-     "primary": false
-    },
-    {
-     "url": "https://go.meta.me/4Bcvxol",
-     "domain": "go.meta.me",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AIatMeta/status/2112245968750145561",
-    "username": "AIatMeta",
-    "text": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\n\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We engineered Prometheus for resilience at scale, achieving 85%+ goodput on pretraining, 90%+ on reinforcement learning and ~47K GPU hours mean time between interruptions during Muse Wonder training.\n\nTake a look at the tech powering Prometheus: ",
-    "text_ja": "私たちは、Muse Wonderを含む基盤モデル「Muse」シリーズを、オハイオ州New Albanyにあるギガワット級スーパークラスタ「Prometheus」で学習しました。\n\n数十万個のGPUからなるスーパークラスタでは、1台の性能が低下したホストだけでも学習全体を遅らせる可能性があります。私たちはPrometheusを大規模で耐障害性が高いように設計し、事前学習で85%以上、強化学習で90%以上のgoodput、そしてMuse Wonderの学習中に約47,000 GPU時間の平均故障間隔を達成しました。\n\nPrometheusを支える技術はこちら: https://t.co/WSFODnGRST"
-   },
-   "post_ids": [
-    "2112245968750145561",
-    "2112265822274302066"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-10-21T08:44:17Z"
-  },
-  {
    "id": "b3227e3444",
    "verdict": "confirmed",
    "title": "OpenAI、ChatGPTのPro向けに複数エージェントの並列処理を追加",
@@ -125,6 +57,74 @@
    ],
    "post_count": 2,
    "archived_at": "2026-10-19T19:23:19Z"
+  },
+  {
+   "id": "3b8c6ca6b0",
+   "verdict": "confirmed",
+   "title": "MetaがAIモデルMuse向けの学習基盤と30Bオープンモデルの技術報告を公開",
+   "summary": "Meta公式アカウントは、基盤モデル「Muse」を、オハイオ州New Albanyにある大規模クラスター「Prometheus」で学習したと投稿した。あわせて、消費者向けハードウェアで動くことを目指す30Bのオープンウェイトモデル「Muse Glimmer」の技術報告を公開したとしている。",
+   "points": [
+    "学習基盤の安定性について、事前学習で85%以上、強化学習で90%以上のgoodputを達成したと公式に示されている。",
+    "Muse Glimmerは4bit精度で一般的なGPU1基でも動くとされ、手元で試せるモデルとして注目されうる。",
+    "投稿に示された数値は社内環境の自己申告であり、第三者による検証はまだ確認できない。"
+   ],
+   "terms": [
+    {
+     "term": "goodput",
+     "desc": "学習や計算の時間のうち、実際に有効な処理に使われた割合のこと。"
+    },
+    {
+     "term": "オープンウェイトモデル",
+     "desc": "学習済みの重み（パラメータ）が公開され、ダウンロードして動かせるAIモデルのこと。"
+    },
+    {
+     "term": "量子化（4bit精度）",
+     "desc": "モデルの数値の細かさを落として軽くし、少ないメモリで動くようにする技術のこと。"
+    }
+   ],
+   "score": 86,
+   "credibility": 93,
+   "heat": 51,
+   "first_seen": "2026-10-17T14:15:29.000Z",
+   "latest": "2026-10-19T19:33:10.000Z",
+   "authors": [
+    "AIatMeta"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式の技術報告・発表",
+   "links": [
+    {
+     "url": "https://go.meta.me/4yXXApZ",
+     "domain": "go.meta.me",
+     "primary": false
+    },
+    {
+     "url": "https://go.meta.me/4Bcvxol",
+     "domain": "go.meta.me",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2112245968750145561",
+    "username": "AIatMeta",
+    "text": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\n\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We engineered Prometheus for resilience at scale, achieving 85%+ goodput on pretraining, 90%+ on reinforcement learning and ~47K GPU hours mean time between interruptions during Muse Wonder training.\n\nTake a look at the tech powering Prometheus: ",
+    "text_ja": "私たちは、Muse Wonderを含む基盤モデル「Muse」シリーズを、オハイオ州New Albanyにあるギガワット級スーパークラスタ「Prometheus」で学習しました。\n\n数十万個のGPUからなるスーパークラスタでは、1台の性能が低下したホストだけでも学習全体を遅らせる可能性があります。私たちはPrometheusを大規模で耐障害性が高いように設計し、事前学習で85%以上、強化学習で90%以上のgoodput、そしてMuse Wonderの学習中に約47,000 GPU時間の平均故障間隔を達成しました。\n\nPrometheusを支える技術はこちら: https://t.co/WSFODnGRST"
+   },
+   "post_ids": [
+    "2112245968750145561",
+    "2112265822274302066"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-21T13:56:26Z"
   },
   {
    "id": "9244ef7fb8",

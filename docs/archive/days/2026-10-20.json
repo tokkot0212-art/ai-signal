@@ -27,7 +27,7 @@
    ],
    "score": 100,
    "credibility": 100,
-   "heat": 89,
+   "heat": 83,
    "first_seen": "2026-10-20T09:30:19.000Z",
    "latest": "2026-10-20T11:43:06.000Z",
    "authors": [
@@ -69,7 +69,7 @@
     "2112509913847210471"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "ad869b7aa0",
@@ -95,9 +95,9 @@
      "desc": "古いシステムを新しい技術環境へ移し替えること。"
     }
    ],
-   "score": 97,
+   "score": 96,
    "credibility": 100,
-   "heat": 67,
+   "heat": 64,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-19T22:30:05.000Z",
    "authors": [
@@ -131,7 +131,69 @@
     "2112310345863930168"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
+  },
+  {
+   "id": "b2e5b7ce98",
+   "verdict": "confirmed",
+   "title": "Metaが30B級オープンモデル「Muse Glimmer」の技術報告を公開",
+   "summary": "Meta公式アカウントは、エージェント的なタスク向けに作られた30Bのオープンウェイトモデル「Muse Glimmer」の技術報告書を公開したと投稿した。投稿によると、4bit精度で一般向けGPU1基を備えたMacまたはPCで実用的な速度で動き、同規模のオープンモデルと比べてツール利用と多段階の計画で優れているとしている。アーキテクチャ、蒸留の手法、量子化などはリンク先で説明されている。",
+   "points": [
+    "オープンウェイトは、モデルの重み（パラメータ）が公開され、手元で動かせる形式を指す。ソースコードの公開とは異なる点に注意。",
+    "4bit量子化は、モデルを小さく軽くする技術で、個人のPCでも動かしやすくなる。ただし精度低下の程度は報告書での確認が必要。",
+    "「同規模で優位」という比較はMeta自身の報告によるもので、第三者の独立評価は現時点で投稿からは確認できない。"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイトモデル",
+     "desc": "学習済みの重みが公開され、ダウンロードして自分の環境で動かせるAIモデル。"
+    },
+    {
+     "term": "量子化（4bit）",
+     "desc": "数値の精度を落としてモデルを軽くし、少ない計算資源で動くようにする技術。"
+    },
+    {
+     "term": "蒸留",
+     "desc": "大きな高性能モデルの知識を、小さなモデルに学ばせて性能を引き継がせる手法。"
+    }
+   ],
+   "score": 85,
+   "credibility": 93,
+   "heat": 47,
+   "first_seen": "2026-10-19T19:33:10.000Z",
+   "latest": "2026-10-19T19:33:10.000Z",
+   "authors": [
+    "AIatMeta"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式の技術報告書",
+   "links": [
+    {
+     "url": "https://go.meta.me/4Bcvxol",
+     "domain": "go.meta.me",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2112265822274302066",
+    "username": "AIatMeta",
+    "text": "Today we published a technical report on Muse Glimmer, our 30B open-weight model built for agentic tasks on consumer hardware.\n\nIt runs at practical speeds on a Mac or PC with a single consumer GPU at 4-bit precision, and leads comparably-sized open models on tool use and multi-step planning.\n\nRead about the model architecture, distillation recipe, quantization and more: https://t.co/H7n9qeDhxn",
+    "text_ja": "本日、Muse Glimmerに関する技術報告書を公開しました。Muse Glimmerは、エージェント的なタスク向けに設計された30Bのオープンウェイトモデルで、コンシューマー向けハードウェア上で動作します。\n\n4bit精度であれば、単一のコンシューマー向けGPUを搭載したMacまたはPCで実用的な速度で動作し、同程度の規模のオープンモデルと比べて、ツール利用や多段階の計画で優れています。\n\nモデルアーキテクチャ、蒸留の手法、量子化などについてはこちら：https://t.co/H7n9qeDhxn"
+   },
+   "post_ids": [
+    "2112265822274302066"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "49fcbfeabf",
@@ -157,9 +219,9 @@
      "desc": "生物の進化のように、候補を生成・選抜・改良を繰り返して良い解を探す方法。"
     }
    ],
-   "score": 88,
+   "score": 85,
    "credibility": 100,
-   "heat": 44,
+   "heat": 37,
    "first_seen": "2026-10-20T11:31:58.000Z",
    "latest": "2026-10-20T11:31:58.000Z",
    "authors": [
@@ -203,69 +265,7 @@
     "2112507110290502109"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
-  },
-  {
-   "id": "b2e5b7ce98",
-   "verdict": "confirmed",
-   "title": "Metaが30B級オープンモデル「Muse Glimmer」の技術報告を公開",
-   "summary": "Meta公式アカウントは、エージェント的なタスク向けに作られた30Bのオープンウェイトモデル「Muse Glimmer」の技術報告書を公開したと投稿した。投稿によると、4bit精度で一般向けGPU1基を備えたMacまたはPCで実用的な速度で動き、同規模のオープンモデルと比べてツール利用と多段階の計画で優れているとしている。アーキテクチャ、蒸留の手法、量子化などはリンク先で説明されている。",
-   "points": [
-    "オープンウェイトは、モデルの重み（パラメータ）が公開され、手元で動かせる形式を指す。ソースコードの公開とは異なる点に注意。",
-    "4bit量子化は、モデルを小さく軽くする技術で、個人のPCでも動かしやすくなる。ただし精度低下の程度は報告書での確認が必要。",
-    "「同規模で優位」という比較はMeta自身の報告によるもので、第三者の独立評価は現時点で投稿からは確認できない。"
-   ],
-   "terms": [
-    {
-     "term": "オープンウェイトモデル",
-     "desc": "学習済みの重みが公開され、ダウンロードして自分の環境で動かせるAIモデル。"
-    },
-    {
-     "term": "量子化（4bit）",
-     "desc": "数値の精度を落としてモデルを軽くし、少ない計算資源で動くようにする技術。"
-    },
-    {
-     "term": "蒸留",
-     "desc": "大きな高性能モデルの知識を、小さなモデルに学ばせて性能を引き継がせる手法。"
-    }
-   ],
-   "score": 86,
-   "credibility": 93,
-   "heat": 50,
-   "first_seen": "2026-10-19T19:33:10.000Z",
-   "latest": "2026-10-19T19:33:10.000Z",
-   "authors": [
-    "AIatMeta"
-   ],
-   "author_labels": [
-    {
-     "username": "AIatMeta",
-     "label": "Meta公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Meta公式の技術報告書",
-   "links": [
-    {
-     "url": "https://go.meta.me/4Bcvxol",
-     "domain": "go.meta.me",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AIatMeta/status/2112265822274302066",
-    "username": "AIatMeta",
-    "text": "Today we published a technical report on Muse Glimmer, our 30B open-weight model built for agentic tasks on consumer hardware.\n\nIt runs at practical speeds on a Mac or PC with a single consumer GPU at 4-bit precision, and leads comparably-sized open models on tool use and multi-step planning.\n\nRead about the model architecture, distillation recipe, quantization and more: https://t.co/H7n9qeDhxn",
-    "text_ja": "本日、Muse Glimmerに関する技術報告書を公開しました。Muse Glimmerは、エージェント的なタスク向けに設計された30Bのオープンウェイトモデルで、コンシューマー向けハードウェア上で動作します。\n\n4bit精度であれば、単一のコンシューマー向けGPUを搭載したMacまたはPCで実用的な速度で動作し、同程度の規模のオープンモデルと比べて、ツール利用や多段階の計画で優れています。\n\nモデルアーキテクチャ、蒸留の手法、量子化などについてはこちら：https://t.co/H7n9qeDhxn"
-   },
-   "post_ids": [
-    "2112265822274302066"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "509b12226d",
@@ -285,7 +285,7 @@
    ],
    "score": 84,
    "credibility": 90,
-   "heat": 51,
+   "heat": 49,
    "first_seen": "2026-10-19T17:09:19.000Z",
    "latest": "2026-10-19T19:48:30.000Z",
    "authors": [
@@ -315,7 +315,7 @@
     "2112269679154585624"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "4e096db129",
@@ -337,9 +337,9 @@
      "desc": "企業・組織向けに提供する大口の導入案件のこと。"
     }
    ],
-   "score": 76,
+   "score": 75,
    "credibility": 100,
-   "heat": 16,
+   "heat": 13,
    "first_seen": "2026-10-20T03:57:23.000Z",
    "latest": "2026-10-20T03:57:23.000Z",
    "authors": [
@@ -373,7 +373,7 @@
     "2112392712637100095"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "70105ab0f4",
@@ -395,9 +395,9 @@
      "desc": "NVIDIAのGPUで計算処理を行うための開発環境・仕組み。"
     }
    ],
-   "score": 73,
+   "score": 71,
    "credibility": 90,
-   "heat": 22,
+   "heat": 18,
    "first_seen": "2026-10-20T07:56:29.000Z",
    "latest": "2026-10-20T07:56:29.000Z",
    "authors": [
@@ -425,7 +425,7 @@
     "2112452885338288577"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "31217c6fc4",
@@ -448,7 +448,7 @@
    ],
    "score": 71,
    "credibility": 85,
-   "heat": 26,
+   "heat": 24,
    "first_seen": "2026-10-19T16:10:15.000Z",
    "latest": "2026-10-19T16:10:15.000Z",
    "authors": [
@@ -476,7 +476,7 @@
     "2112214753980612886"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "e6ef99b10b",
@@ -502,9 +502,9 @@
      "desc": "光を波長ごとに分けたもの。原子の種類によって固有のパターンが出る。"
     }
    ],
-   "score": 92,
+   "score": 86,
    "credibility": 90,
-   "heat": 69,
+   "heat": 56,
    "first_seen": "2026-10-20T14:53:53.000Z",
    "latest": "2026-10-20T14:53:53.000Z",
    "authors": [
@@ -532,7 +532,7 @@
     "2112557925264752930"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "6f39462741",
@@ -554,9 +554,9 @@
      "desc": "デジタル庁が政府職員向けに提供する生成AI利用環境の名称。"
     }
    ],
-   "score": 65,
+   "score": 63,
    "credibility": 78,
-   "heat": 33,
+   "heat": 28,
    "first_seen": "2026-10-20T07:05:10.000Z",
    "latest": "2026-10-20T07:05:10.000Z",
    "authors": [
@@ -590,7 +590,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "cd82ab275d",
@@ -612,9 +612,9 @@
      "desc": "許可なく他人のシステムやアカウントに侵入する行為。"
     }
    ],
-   "score": 62,
+   "score": 61,
    "credibility": 78,
-   "heat": 26,
+   "heat": 22,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -649,7 +649,7 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "bee6a1432d",
@@ -666,9 +666,9 @@
      "desc": "AIと文章でやり取りできるサービス。キャラクターを模したものも作られている。"
     }
    ],
-   "score": 61,
+   "score": 59,
    "credibility": 78,
-   "heat": 24,
+   "heat": 18,
    "first_seen": "2026-10-20T08:55:09.000Z",
    "latest": "2026-10-20T08:55:09.000Z",
    "authors": [
@@ -702,7 +702,7 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   },
   {
    "id": "248659d16d",
@@ -720,9 +720,9 @@
      "desc": "調査のために用意する、実在の利用者を装った偽のアカウントのこと。"
     }
    ],
-   "score": 59,
+   "score": 58,
    "credibility": 78,
-   "heat": 18,
+   "heat": 15,
    "first_seen": "2026-10-20T03:05:09.000Z",
    "latest": "2026-10-20T03:05:09.000Z",
    "authors": [
@@ -756,7 +756,7 @@
     "2112379567881273504"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-20T18:02:00Z"
+   "archived_at": "2026-10-21T00:42:12Z"
   }
  ]
 }

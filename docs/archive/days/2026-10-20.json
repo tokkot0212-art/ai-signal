@@ -27,7 +27,7 @@
    ],
    "score": 94,
    "credibility": 100,
-   "heat": 60,
+   "heat": 59,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-19T22:30:05.000Z",
    "authors": [
@@ -61,35 +61,150 @@
     "2112310345863930168"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
+  },
+  {
+   "id": "3b8c6ca6b0",
+   "verdict": "confirmed",
+   "title": "MetaがAIモデルMuse向けの学習基盤と30Bオープンモデルの技術報告を公開",
+   "summary": "Meta公式アカウントは、基盤モデル「Muse」を、オハイオ州New Albanyにある大規模クラスター「Prometheus」で学習したと投稿した。あわせて、消費者向けハードウェアで動くことを目指す30Bのオープンウェイトモデル「Muse Glimmer」の技術報告を公開したとしている。",
+   "points": [
+    "学習基盤の安定性について、事前学習で85%以上、強化学習で90%以上のgoodputを達成したと公式に示されている。",
+    "Muse Glimmerは4bit精度で一般的なGPU1基でも動くとされ、手元で試せるモデルとして注目されうる。",
+    "投稿に示された数値は社内環境の自己申告であり、第三者による検証はまだ確認できない。"
+   ],
+   "terms": [
+    {
+     "term": "goodput",
+     "desc": "学習や計算の時間のうち、実際に有効な処理に使われた割合のこと。"
+    },
+    {
+     "term": "オープンウェイトモデル",
+     "desc": "学習済みの重み（パラメータ）が公開され、ダウンロードして動かせるAIモデルのこと。"
+    },
+    {
+     "term": "量子化（4bit精度）",
+     "desc": "モデルの数値の細かさを落として軽くし、少ないメモリで動くようにする技術のこと。"
+    }
+   ],
+   "score": 86,
+   "credibility": 93,
+   "heat": 50,
+   "first_seen": "2026-10-19T18:14:17.000Z",
+   "latest": "2026-10-19T19:33:10.000Z",
+   "authors": [
+    "AIatMeta"
+   ],
+   "author_labels": [
+    {
+     "username": "AIatMeta",
+     "label": "Meta公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Meta公式の技術報告・発表",
+   "links": [
+    {
+     "url": "https://go.meta.me/4yXXApZ",
+     "domain": "go.meta.me",
+     "primary": false
+    },
+    {
+     "url": "https://go.meta.me/4Bcvxol",
+     "domain": "go.meta.me",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AIatMeta/status/2112245968750145561",
+    "username": "AIatMeta",
+    "text": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\n\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We engineered Prometheus for resilience at scale, achieving 85%+ goodput on pretraining, 90%+ on reinforcement learning and ~47K GPU hours mean time between interruptions during Muse Wonder training.\n\nTake a look at the tech powering Prometheus: ",
+    "text_ja": "私たちは、Muse Wonderを含む基盤モデル「Muse」シリーズを、オハイオ州New Albanyにあるギガワット級スーパークラスタ「Prometheus」で学習しました。\n\n数十万個のGPUからなるスーパークラスタでは、1台の性能が低下したホストだけでも学習全体を遅らせる可能性があります。私たちはPrometheusを大規模で耐障害性が高いように設計し、事前学習で85%以上、強化学習で90%以上のgoodput、そしてMuse Wonderの学習中に約47,000 GPU時間の平均故障間隔を達成しました。\n\nPrometheusを支える技術はこちら: https://t.co/WSFODnGRST"
+   },
+   "post_ids": [
+    "2112245968750145561",
+    "2112265822274302066"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-21T18:08:23Z"
+  },
+  {
+   "id": "a2254a0c9b",
+   "verdict": "confirmed",
+   "title": "OpenAI開発者アカウントがCodexの活用事例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントは、Codexでの活用事例をまとめたリンクを投稿した。投稿本文には具体的な内容や数値は書かれていない。",
+   "points": [
+    "リンク先の内容は本文から確認できないため、詳細は未確認。",
+    "Codexの利用例を知りたい開発者には参照先になりうる。"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIが提供するAIによるプログラミング支援ツール。"
+    }
+   ],
+   "score": 81,
+   "credibility": 90,
+   "heat": 42,
+   "first_seen": "2026-10-19T17:09:19.000Z",
+   "latest": "2026-10-19T18:01:27.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの紹介リンク",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112242739198959913",
+    "username": "OpenAIDevs",
+    "text": "Here’s what we’re cooking with Codex:\n\nhttps://t.co/EHSalmUTN0",
+    "text_ja": "Codexで私たちが作ったものはこちらです：https://t.co/EHSalmUTN0"
+   },
+   "post_ids": [
+    "2112242739198959913"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "49fcbfeabf",
    "verdict": "confirmed",
-   "title": "Sakana AIがLLM活用の推薦手法「QD-Rec」を発表",
-   "summary": "Sakana AI公式アカウントは、多様な提案を進化的に生成・選別する推薦手法「QD-Rec」を開発したと発表した。ブログ、論文、GitHubの各リンクを示している。投稿によると、企業の買収候補探索、架空の顧客プロファイルを使ったターゲティング、研究者向けの論文推薦で検証したという。",
+   "title": "Sakana AIが推薦手法「QD-Rec」を発表",
+   "summary": "Sakana AI公式アカウントは、多様な提案を進化的に生成する推薦手法「QD-Rec」を開発したと発表した。買収候補の探索、架空の顧客プロファイルを使ったターゲティング、論文推薦の3種類で検証したと説明している。ブログ、論文、GitHubへのリンクも示している。",
    "points": [
-    "新しさは、点数順に並べるだけでなく、異なる観点の提案を多様に残す点にあるとされる。Quality-Diversity（QD）という探索技術を推薦に応用している。",
-    "買収候補や顧客提案、論文選びなど、判断の材料を多角的に集めたい場面での利用が想定される。",
-    "投稿では具体的な精度比較の数値は示されていない。実用性や既存手法との差は論文で確認が必要。"
+    "従来のスコア順の推薦ではなく、質が高く多様な候補を集める「オープンエンドな推薦」として問題を捉えた点が新しい。",
+    "LLMが過去の仮説の着眼点を別の候補に応用し、似た提案は優れたものに更新する仕組みとされる。",
+    "検証の具体的な数値や他手法との比較は投稿からは確認できず、未確認。"
    ],
    "terms": [
     {
      "term": "Quality-Diversity（QD）",
-     "desc": "質の高い解を、種類の違いも保ちながら幅広く探す進化的な探索手法。"
+     "desc": "質の高さと多様性の両方を重視して解の集合を進化させる探索手法。"
+    },
+    {
+     "term": "推薦システム",
+     "desc": "利用者や状況に合わせて候補や商品などを提案する仕組み。"
     },
     {
      "term": "LLM",
-     "desc": "大量の文章で学習された大規模言語モデル。文章の生成や理解を行うAI。"
-    },
-    {
-     "term": "進化的探索",
-     "desc": "生物の進化のように、候補を生成・選抜・改良を繰り返して良い解を探す方法。"
+     "desc": "大量の文章で学習した大規模言語モデル。文章の生成や理解を行うAI。"
     }
    ],
-   "score": 83,
+   "score": 79,
    "credibility": 100,
-   "heat": 32,
+   "heat": 28,
    "first_seen": "2026-10-20T11:31:58.000Z",
    "latest": "2026-10-20T11:31:58.000Z",
    "authors": [
@@ -103,9 +218,9 @@
      "former": ""
     }
    ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式のブログ・論文",
+   "evidence": "paper_or_data",
+   "evidence_label": "論文・データ",
+   "evidence_note": "arXiv論文・公式ブログ",
    "links": [
     {
      "url": "https://sakana.ai/qd-rec/",
@@ -133,28 +248,28 @@
     "2112507110290502109"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T08:44:17Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
-   "id": "509b12226d",
+   "id": "61d4a9552a",
    "verdict": "confirmed",
-   "title": "OpenAIが開発者にCodexの活用事例を募る投稿",
-   "summary": "OpenAIの開発者向け公式アカウント（OpenAIDevs）が、Codexで何を作っているかを尋ね、コミュニティの作品を紹介する投稿を3件行いました。投稿に具体的な製品仕様や数値は含まれていません。",
+   "title": "OpenAIがCodexでコミュニティの活用事例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウント（OpenAIDevs）が、コミュニティがCodexで作っているプロジェクトを紹介すると投稿した。投稿には紹介先のリンクが添えられているが、具体的なプロジェクト内容は投稿文からは分からない。",
    "points": [
-    "Codexは、OpenAIが提供するAIによるコーディング支援の仕組みとみられる（投稿内に詳細説明なし）",
-    "今回の投稿は活用事例の紹介が中心で、新機能の発表ではない",
-    "事例の中身は投稿先のリンクを見ないと分からず、本文だけでは評価できない"
+    "Codexは、OpenAIのコード生成・支援AIとして開発者向けに提供されているとみられる（一般的背景、未確認）。",
+    "投稿は短い紹介のみで、具体的な成果物や数値は本文に含まれていない。",
+    "詳細はリンク先で確認する必要がある。"
    ],
    "terms": [
     {
      "term": "Codex",
-     "desc": "OpenAIが提供する、自然言語の指示でプログラムを書くAIコーディング支援の名称（一般的な背景知識・要確認）"
+     "desc": "OpenAIが開発したプログラミング支援のAIサービス。コードの作成や修正を手伝う。"
     }
    ],
-   "score": 82,
+   "score": 79,
    "credibility": 90,
-   "heat": 45,
-   "first_seen": "2026-10-19T17:09:19.000Z",
+   "heat": 37,
+   "first_seen": "2026-10-19T19:48:30.000Z",
    "latest": "2026-10-19T19:48:30.000Z",
    "authors": [
     "OpenAIDevs"
@@ -172,42 +287,40 @@
    "evidence_note": "OpenAI公式アカウントの投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/OpenAIDevs/status/2112229620758265938",
+    "url": "https://x.com/OpenAIDevs/status/2112269679154585624",
     "username": "OpenAIDevs",
-    "text": "What have you been cooking with Codex?",
-    "text_ja": "Codexで何を作ってきましたか？"
+    "text": "Cool projects our community is cooking with Codex: https://t.co/ELMZpMHmFL",
+    "text_ja": "コミュニティがCodexで作っている面白いプロジェクトを紹介します: https://t.co/ELMZpMHmFL"
    },
    "post_ids": [
-    "2112229620758265938",
-    "2112242739198959913",
     "2112269679154585624"
    ],
-   "post_count": 3,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "post_count": 1,
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
-   "id": "ed81774f8f",
+   "id": "5a183a4289",
    "verdict": "confirmed",
-   "title": "Sakana AIがエンジニア向けイベントのレポートと採用情報を公開",
-   "summary": "Sakana AI公式が、10月5日に開催した「Sakana AI Engineer Open House 2026」のイベントレポートを公開しました。あわせて、Product Strategy & Operationsの専任ポジションの採用情報も公開しています。",
+   "title": "Sakana AIが社内エンジニア向けイベントのレポートを公開",
+   "summary": "Sakana AIの公式アカウントが、10月5日に開催したエンジニア向けイベント「Sakana AI Engineer Open House 2026」のレポートを公開した。CEOのDavid Haが「AI主権」の構想を紹介し、5つの職種のメンバー7名が役割や働きがいを語ったという。5職種はいずれも積極採用中とされる。",
    "points": [
-    "レポートでは、CEOのDavid Haが語った「AI主権」の構想や、5職種の社員による仕事内容が紹介されている",
-    "採用情報は、プロダクト群全体を担う最初の専任ポジションの募集で、将来はチームを率いる役割が想定されている",
-    "採用関連の告知であり、技術的な成果の発表ではない"
+    "AI主権は、自国や組織がAIの基盤やデータを自前で管理する考え方として一般に使われる言葉（一般的背景）。",
+    "企業の採用広報としての色合いが強く、製品や技術の新発表ではない。",
+    "どの職種がどのような業務をしているかの詳細はレポート本文で確認できる。"
    ],
    "terms": [
     {
      "term": "AI主権",
-     "desc": "国や企業が自前でAI技術や基盤を持ち、他国への依存を減らすという考え方（投稿内の用語・詳細は未確認）"
+     "desc": "国や組織が、AIの技術・データ・計算基盤を外部に頼りすぎず自ら管理しようとする考え方。"
     },
     {
-     "term": "FDE / ARE / SWE",
-     "desc": "社内の職種の略称とみられる（正確な定義は投稿からは未確認）"
+     "term": "FDE",
+     "desc": "Forward Deployed Engineerの略。顧客の現場に入り込み、AIを実際の業務に導入する役割とみられる（未確認）。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 100,
-   "heat": 22,
+   "heat": 20,
    "first_seen": "2026-10-20T03:57:23.000Z",
    "latest": "2026-10-20T22:22:15.000Z",
    "authors": [
@@ -223,15 +336,10 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式の発表・採用ページ",
+   "evidence_note": "企業公式のイベントレポート",
    "links": [
     {
      "url": "https://sakana.ai/open-house-2026/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://sakana.ai/careers/business-role-product-strategy-operations/",
      "domain": "sakana.ai",
      "primary": true
     }
@@ -243,11 +351,120 @@
     "text_ja": null
    },
    "post_ids": [
-    "2112670760410169361",
-    "2112392712637100095"
+    "2112670760410169361"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
+  },
+  {
+   "id": "4e096db129",
+   "verdict": "confirmed",
+   "title": "Sakana AIがProduct Strategy & Operationsの採用を開始",
+   "summary": "Sakana AIの公式アカウントが、Product Strategy & Operationsのポジションの募集を公開した。プロダクト群全体を受け持つ最初の専任メンバーを募集し、Head of Productの右腕として事業計画やKPI管理、横断プロジェクトの推進、エンタープライズ案件の体制設計を担うとしている。将来はチームを率いる役割も想定されているという。",
+   "points": [
+    "プロダクトの数とエンタープライズ案件が増えており、その体制整備の一環とみられる。",
+    "求人の告知であり、製品や技術の新発表ではない。",
+    "募集の条件や勤務地などの詳細は、リンク先で確認する必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "Product Strategy & Operations",
+     "desc": "製品戦略と事業運営を担い、事業計画や市場調査、社内の横断調整を行う職種。"
+    },
+    {
+     "term": "エンタープライズ案件",
+     "desc": "大企業や官公庁など、規模の大きな法人顧客向けの取引や導入案件のこと。"
+    }
+   ],
+   "score": 74,
+   "credibility": 100,
+   "heat": 9,
+   "first_seen": "2026-10-20T03:57:23.000Z",
+   "latest": "2026-10-20T03:57:23.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の採用告知",
+   "links": [
+    {
+     "url": "https://sakana.ai/careers/business-role-product-strategy-operations/",
+     "domain": "sakana.ai",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2112392712637100095",
+    "username": "SakanaAILabs",
+    "text": "【採用情報】Product Strategy & Operationsのポジションを公開しました🐟\n\nhttps://t.co/BXhzEcKAWY\n\n今回募集するのは特定のプロダクトではなくプロダクト群全体を受け持つProduct Strategy & Operationsの最初の専任メンバーです。Head of Productのパートナーとして以下をご担当いただきます。\n\n・事業計画・KPIの管理と市場・競合調査\n・横断プロジェクトの推進\n・エンタープライズ案件のデリバリ体制設計\n\nプロダクトの数とエンタープライズ案件が増えるにつれ、将来はProduct Strategy & Operationsチームを率いていただくことを想定しています。興味を持たれた方、ぜひご応募ください🚀",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2112392712637100095"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-21T18:08:23Z"
+  },
+  {
+   "id": "05c261e79b",
+   "verdict": "confirmed",
+   "title": "NVIDIAがベルリンでGTCの基調講演を予告",
+   "summary": "NVIDIAの公式AIアカウントは、ベルリンが@NVIDIAGTCの開催地として素晴らしいと投稿し、翌日のJensen Huang氏の基調講演での発表を追うよう呼びかけた。投稿に具体的な発表内容は含まれていない。",
+   "points": [
+    "GTCはNVIDIAが主催するAI・GPU関連の大規模な開発者向けイベント",
+    "基調講演で何が発表されるかは、投稿時点では不明",
+    "講演内容は後日、公式発表で確認するのが確実"
+   ],
+   "terms": [
+    {
+     "term": "GTC",
+     "desc": "NVIDIAが毎年開く、AIや半導体技術の大規模イベント"
+    },
+    {
+     "term": "基調講演（キーノート）",
+     "desc": "イベントの冒頭に行われ、主要な発表が行われる講演"
+    }
+   ],
+   "score": 71,
+   "credibility": 90,
+   "heat": 17,
+   "first_seen": "2026-10-20T12:43:48.000Z",
+   "latest": "2026-10-20T12:43:48.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112525188273250336",
+    "username": "NVIDIAAI",
+    "text": "Berlin is an epic location for @NVIDIAGTC! \n\nFollow along for announcements from Jensen's keynote tomorrow. https://t.co/J1vzZ07wSY",
+    "text_ja": "ベルリンは@NVIDIAGTCにとって素晴らしい開催地です！明日のJensenの基調講演での発表をぜひフォローしてください。"
+   },
+   "post_ids": [
+    "2112525188273250336"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "70105ab0f4",
@@ -271,7 +488,7 @@
    ],
    "score": 69,
    "credibility": 90,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-20T07:56:29.000Z",
    "latest": "2026-10-20T07:56:29.000Z",
    "authors": [
@@ -299,7 +516,7 @@
     "2112452885338288577"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "31217c6fc4",
@@ -322,7 +539,7 @@
    ],
    "score": 69,
    "credibility": 85,
-   "heat": 21,
+   "heat": 20,
    "first_seen": "2026-10-19T16:10:15.000Z",
    "latest": "2026-10-19T16:10:15.000Z",
    "authors": [
@@ -350,7 +567,7 @@
     "2112214753980612886"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "e6ef99b10b",
@@ -376,9 +593,9 @@
      "desc": "光を波長ごとに分けたもの。原子の種類によって固有のパターンが出る。"
     }
    ],
-   "score": 83,
+   "score": 82,
    "credibility": 90,
-   "heat": 47,
+   "heat": 45,
    "first_seen": "2026-10-20T14:53:53.000Z",
    "latest": "2026-10-20T14:53:53.000Z",
    "authors": [
@@ -406,7 +623,7 @@
     "2112557925264752930"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "6f39462741",
@@ -428,9 +645,9 @@
      "desc": "デジタル庁が政府職員向けに提供する生成AI利用環境の名称。"
     }
    ],
-   "score": 61,
+   "score": 60,
    "credibility": 78,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-10-20T07:05:10.000Z",
    "latest": "2026-10-20T07:05:10.000Z",
    "authors": [
@@ -464,7 +681,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "cd82ab275d",
@@ -486,9 +703,9 @@
      "desc": "許可なく他人のシステムやアカウントに侵入する行為。"
     }
    ],
-   "score": 59,
+   "score": 58,
    "credibility": 78,
-   "heat": 17,
+   "heat": 16,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -523,7 +740,7 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "bee6a1432d",
@@ -542,7 +759,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-20T08:55:09.000Z",
    "latest": "2026-10-20T08:55:09.000Z",
    "authors": [
@@ -576,7 +793,7 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   },
   {
    "id": "248659d16d",
@@ -596,7 +813,7 @@
    ],
    "score": 56,
    "credibility": 78,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-10-20T03:05:09.000Z",
    "latest": "2026-10-20T03:05:09.000Z",
    "authors": [
@@ -630,7 +847,7 @@
     "2112379567881273504"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T13:56:26Z"
+   "archived_at": "2026-10-21T18:08:23Z"
   }
  ]
 }

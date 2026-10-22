@@ -2,32 +2,32 @@
  "date": "2026-10-20",
  "items": [
   {
-   "id": "a406a0d24f",
+   "id": "1c6363d1d9",
    "verdict": "confirmed",
-   "title": "OpenAIのモデルがGoogle CloudのModel Gardenで利用可能に",
-   "summary": "OpenAIは公式アカウントで、同社の最先端モデルとCodexのエージェント型ワークフローをGoogle CloudのModel Gardenに提供すると投稿した。企業が普段開発に使っている環境から同社の技術を使えるようにする狙いが示されている。別の投稿では、COBOL、Fortran、Visual Basicなどの低リソースプログラミング言語でのソフトウェア作成・移行能力を高めたとしている。",
+   "title": "OpenAIのモデルがGoogle Cloudで利用可能に",
+   "summary": "OpenAIは公式アカウントで、同社のフロンティアモデルとCodexのエージェント型ワークフローをGoogle CloudのModel Gardenで提供すると発表した。企業が既存の開発環境のまま同社技術を使えるようにすることが狙いとされる。",
    "points": [
-    "Model Gardenは、Google Cloud上で複数のAIモデルを選んで使うための場。複数クラウド間で利用しやすくなる点が新しい。",
-    "COBOLなどの古い言語は銀行や行政のシステムで使われており、移行支援の需要が大きいとみられる。",
-    "提供開始時期、対象地域、料金などは投稿では未確認。性能の具体的な数値も示されていない。"
+    "新しい点: OpenAIのモデルがGoogle Cloud上で利用できるようになる、という提携拡大の発表。",
+    "影響: Google Cloudを使う企業は、別の契約や環境を用意せずにOpenAIの技術を試せる可能性がある。",
+    "注意: 提供開始時期や対象地域、料金などは投稿には書かれておらず未確認。"
    ],
    "terms": [
     {
      "term": "Model Garden",
-     "desc": "Google Cloud上で、さまざまなAIモデルを探して利用できるサービス。"
+     "desc": "Google Cloud上で、さまざまなAIモデルを探して使えるサービスの一覧・提供場所。"
     },
     {
-     "term": "COBOL",
-     "desc": "銀行や行政などの古い基幹システムで長く使われてきたプログラミング言語。"
+     "term": "Codex",
+     "desc": "OpenAIのプログラミング支援AI。コードを書いたり直したりする作業を任せられる。"
     },
     {
-     "term": "レガシーシステム移行",
-     "desc": "古い技術で作られたシステムを、新しい技術へ作り替えたり移したりすること。"
+     "term": "エージェント型ワークフロー",
+     "desc": "AIが自分で複数の作業手順を判断して進める仕組みのこと。"
     }
    ],
-   "score": 98,
+   "score": 94,
    "credibility": 100,
-   "heat": 71,
+   "heat": 61,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-21T19:23:19.000Z",
    "authors": [
@@ -43,15 +43,10 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式投稿",
+   "evidence_note": "OpenAI公式X投稿",
    "links": [
     {
      "url": "https://openai.com/index/openai-models-google-cloud/",
-     "domain": "openai.com",
-     "primary": true
-    },
-    {
-     "url": "https://openai.com/index/low-resource-programming-languages/",
      "domain": "openai.com",
      "primary": true
     }
@@ -60,84 +55,75 @@
     "url": "https://x.com/OpenAI/status/2112988118471295323",
     "username": "OpenAI",
     "text": "OpenAI models are coming to Google Cloud.\n\nWe're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.\n\nhttps://t.co/gjuLVALjDm",
-    "text_ja": "OpenAIのモデルがGoogle Cloudに来ます。\n\n私たちの最先端モデルとCodexのエージェント型ワークフローを、Google CloudのModel Gardenに提供します。企業が普段の開発で使っている場所で、当社の技術を利用できるようにするためです。\n\nhttps://t.co/gjuLVALjDm"
+    "text_ja": "OpenAIのモデルがGoogle Cloudに登場します。\n\n当社のフロンティアモデルとCodexのエージェント型ワークフローを、Google CloudのModel Gardenで提供します。企業が普段の開発環境のまま当社の技術を使えるようにするためです。\n\nhttps://t.co/gjuLVALjDm"
    },
    "post_ids": [
-    "2112988118471295323",
-    "2112310345863930168"
+    "2112988118471295323"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
-   "id": "53c3e6767e",
+   "id": "ad869b7aa0",
    "verdict": "confirmed",
-   "title": "ChatGPT広告の仕組みをOpenAIが解説、米大学が広告実態を調査",
-   "summary": "OpenAIの開発者向けアカウントは、ChatGPTの広告の仕組み（LLMオーケストレーター、検索、ランキング、オークションツールの連携）を説明する記事を公開した。ITmedia NEWSは、米大学が91のおとりアカウントを使ってChatGPT広告の表示実態を調べたと伝えている。",
+   "title": "OpenAIが最新モデルでCOBOLなど古い言語の対応を強化",
+   "summary": "OpenAIは公式アカウントで、最新のモデルの進歩により、COBOL、Fortran、Visual Basicといった低リソースのプログラミング言語でのソフトウェア構築・移行能力が向上したと発表した。これらの言語は銀行や政府などの基幹システムで使われているとしている。同社は今後対応してほしい言語や業務の声を募集している。",
    "points": [
-    "新しい点: 広告を入れても回答の独立性を保つための設計を、OpenAIが公開して説明した点。",
-    "重要性: 利用者が受け取る回答に広告がどう関わるかは、ユーザーの信頼に直結する。",
-    "注意: 調査の対象や結果の詳細は、投稿だけでは判断できない。元記事と原論文での確認が必要。"
+    "新しい点: 利用例の少ない古い言語でもAIが実務レベルの支援をできつつあるという方向性。",
+    "影響: 金融機関や行政などのレガシーシステム（古い基幹システム）の刷新に役立つ可能性がある。",
+    "注意: 具体的な精度・対応範囲・提供時期は投稿に示されておらず未確認。実際の移行には人の検証が引き続き必要とみられる。"
    ],
    "terms": [
     {
-     "term": "オークション",
-     "desc": "複数の広告主が入札し、最も条件に合う広告を選ぶ仕組みのこと。"
+     "term": "COBOL",
+     "desc": "1960年代から銀行や行政などで使われてきた古いプログラミング言語。"
     },
     {
-     "term": "オーケストレーター",
-     "desc": "複数の処理や部品を調整して順番に動かす役割のこと。"
+     "term": "レガシーシステム",
+     "desc": "長年使われてきた古い基幹システムのこと。改修や置き換えが難しいことが多い。"
     },
     {
-     "term": "おとりアカウント",
-     "desc": "調査のために用意した架空の利用者アカウントのこと。"
+     "term": "低リソース言語",
+     "desc": "学習データや利用例が少なく、AIが扱いにくいプログラミング言語のこと。"
     }
    ],
-   "score": 91,
-   "credibility": 90,
-   "heat": 55,
-   "first_seen": "2026-10-20T03:05:09.000Z",
-   "latest": "2026-10-21T17:42:32.000Z",
+   "score": 92,
+   "credibility": 100,
+   "heat": 56,
+   "first_seen": "2026-10-19T22:30:05.000Z",
+   "latest": "2026-10-19T22:30:05.000Z",
    "authors": [
-    "OpenAIDevs",
-    "itmedia_news"
+    "OpenAI"
    ],
    "author_labels": [
     {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式の解説記事",
+   "evidence_note": "OpenAI公式X投稿",
    "links": [
     {
-     "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
-     "domain": "itmedia.co.jp",
-     "primary": false
+     "url": "https://openai.com/index/low-resource-programming-languages/",
+     "domain": "openai.com",
+     "primary": true
     }
    ],
    "post": {
-    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-    "username": "OpenAIDevs",
-    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent.\n\nHere’s how the LLM orchestrator, retrieval, ranking  and auction tools work together. https://t.co/oho0jXkfiQ",
-    "text_ja": null
+    "url": "https://x.com/OpenAI/status/2112310345863930168",
+    "username": "OpenAI",
+    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic.\n\nThese languages power software that banks, governments, and businesses depend on. Progress here means understanding decades of business logic and helping developers modernize those systems while preserving what works.\n\nWe’re building these capabilities around the challenges developers and enterprise customers bring us. If your ",
+    "text_ja": "最新のモデルの進歩により、COBOL、Fortran、Visual Basicのような低リソースのプログラミング言語で、ソフトウェアの構築や移行の能力が高まりました。\n\nこれらの言語は、銀行、政府、企業が頼るソフトウェアを支えています。この分野の進歩は、長年の業務ロジックを理解し、動いている部分を残しつつ開発者がシステムを近代化する手助けになることを意味します。\n\n私たちは、開発者や企業のお客様から寄せられる課題を中心にこれらの機能を開発しています。もしお客様のチームがこうしたシステムに取り組んでいるなら、次に対応すべき言語やワークフローを教えてください。\n\nhttps://t.co/2TbnkQixJ1"
    },
    "post_ids": [
-    "2112962753682198969",
-    "2112379567881273504"
+    "2112310345863930168"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "post_count": 1,
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "3b8c6ca6b0",
@@ -165,7 +151,7 @@
    ],
    "score": 85,
    "credibility": 93,
-   "heat": 48,
+   "heat": 47,
    "first_seen": "2026-10-19T18:14:17.000Z",
    "latest": "2026-10-19T19:33:10.000Z",
    "authors": [
@@ -205,7 +191,63 @@
     "2112265822274302066"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
+  },
+  {
+   "id": "0d0a86dda0",
+   "verdict": "confirmed",
+   "title": "ChatGPTの広告の仕組みをOpenAIが解説",
+   "summary": "OpenAIの開発者向け公式アカウントは、ChatGPTの広告の仕組みについて、会話の流れに応じて表示しつつ回答の独立性を保つ設計だと説明した。LLMオーケストレーター、検索（retrieval）、ランキング、オークションの各ツールがどう連携するかを紹介している。詳細は投稿内のリンク先で確認できる。",
+   "points": [
+    "新しい点: ChatGPTの広告が、回答内容とは切り離して仕組みとして設計されていることを公式に説明した点。",
+    "影響: 利用者は広告が回答の中立性にどう影響するかに関心を持つとみられ、広告主や開発者にも関係する。",
+    "注意: 投稿は要旨のみで、回答の独立性を実際にどう保証しているかは元の説明を読む必要がある。広告の提供範囲や料金は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "LLMオーケストレーター",
+     "desc": "大規模言語モデルへの指示や複数の処理の流れを調整する仕組みのこと。"
+    },
+    {
+     "term": "retrieval（検索）",
+     "desc": "AIが回答に使う情報を外部のデータベースなどから探し出す処理のこと。"
+    },
+    {
+     "term": "オークション",
+     "desc": "広告枠を複数の広告主が入札して、その枠を割り当てる仕組みのこと。"
+    }
+   ],
+   "score": 83,
+   "credibility": 90,
+   "heat": 47,
+   "first_seen": "2026-10-20T03:05:09.000Z",
+   "latest": "2026-10-21T17:42:32.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式X投稿（解説リンク付き）",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+    "username": "OpenAIDevs",
+    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent.\n\nHere’s how the LLM orchestrator, retrieval, ranking  and auction tools work together. https://t.co/oho0jXkfiQ",
+    "text_ja": "ChatGPTの広告の仕組みは、変化していく会話に応じて表示を最適化しつつ、回答が独立性を保つように設計しました。\n\nLLMオーケストレーター、検索（retrieval）、ランキング、オークションの各ツールがどのように連携するかは、こちらをご覧ください。 https://t.co/oho0jXkfiQ"
+   },
+   "post_ids": [
+    "2112962753682198969"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "a2254a0c9b",
@@ -224,7 +266,7 @@
    ],
    "score": 80,
    "credibility": 90,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-10-19T17:09:19.000Z",
    "latest": "2026-10-19T18:01:27.000Z",
    "authors": [
@@ -252,7 +294,7 @@
     "2112242739198959913"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "49fcbfeabf",
@@ -280,7 +322,7 @@
    ],
    "score": 78,
    "credibility": 100,
-   "heat": 26,
+   "heat": 24,
    "first_seen": "2026-10-20T11:31:58.000Z",
    "latest": "2026-10-20T11:31:58.000Z",
    "authors": [
@@ -324,7 +366,7 @@
     "2112507110290502109"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "61d4a9552a",
@@ -344,7 +386,7 @@
    ],
    "score": 78,
    "credibility": 90,
-   "heat": 36,
+   "heat": 34,
    "first_seen": "2026-10-19T19:48:30.000Z",
    "latest": "2026-10-19T19:48:30.000Z",
    "authors": [
@@ -372,7 +414,7 @@
     "2112269679154585624"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "ed81774f8f",
@@ -398,9 +440,9 @@
      "desc": "事業計画や市場調査、プロダクト横断の運営を担う職種。"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 100,
-   "heat": 17,
+   "heat": 15,
    "first_seen": "2026-10-20T03:57:23.000Z",
    "latest": "2026-10-20T22:22:15.000Z",
    "authors": [
@@ -440,58 +482,7 @@
     "2112392712637100095"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T00:45:54Z"
-  },
-  {
-   "id": "31217c6fc4",
-   "verdict": "confirmed",
-   "title": "Hugging Face公式がローカルAI向け高速化技法の解説を投稿",
-   "summary": "Hugging Face公式アカウントが「Local AI 202」と題し、投機的デコーディング（Speculative Decoding）による高速化を紹介する投稿を行った。投稿本文は告知とリンクのみで、具体的な内容や数値は本文からは読み取れない。",
-   "points": [
-    "投機的デコーディングは、小さな高速モデルで候補を出し、大きなモデルで一括確認して処理を速める手法とみられる（一般的な背景知識）。",
-    "ローカル環境でAIを動かす人には関係が深いが、本投稿だけでは効果の大きさは未確認。"
-   ],
-   "terms": [
-    {
-     "term": "投機的デコーディング",
-     "desc": "小さなモデルで先読みし、大きなモデルでまとめて確認して文章生成を速くする方法。"
-    },
-    {
-     "term": "ローカルAI",
-     "desc": "クラウドではなく自分のパソコンや手元の機器でAIを動かすこと。"
-    }
-   ],
-   "score": 69,
-   "credibility": 85,
-   "heat": 19,
-   "first_seen": "2026-10-19T16:10:15.000Z",
-   "latest": "2026-10-19T16:10:15.000Z",
-   "authors": [
-    "huggingface"
-   ],
-   "author_labels": [
-    {
-     "username": "huggingface",
-     "label": "Hugging Face公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントの告知投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/huggingface/status/2112214753980612886",
-    "username": "huggingface",
-    "text": "Local AI 202: Get Massive Speed-ups with Speculative Decoding https://t.co/3ywucgYbrD",
-    "text_ja": "ローカルAI 202：投機的デコーディングで大幅な高速化を実現 https://t.co/3ywucgYbrD"
-   },
-   "post_ids": [
-    "2112214753980612886"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "70105ab0f4",
@@ -515,7 +506,7 @@
    ],
    "score": 68,
    "credibility": 90,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-10-20T07:56:29.000Z",
    "latest": "2026-10-20T07:56:29.000Z",
    "authors": [
@@ -543,7 +534,58 @@
     "2112452885338288577"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
+  },
+  {
+   "id": "31217c6fc4",
+   "verdict": "confirmed",
+   "title": "Hugging Face公式がローカルAI向け高速化技法の解説を投稿",
+   "summary": "Hugging Face公式アカウントが「Local AI 202」と題し、投機的デコーディング（Speculative Decoding）による高速化を紹介する投稿を行った。投稿本文は告知とリンクのみで、具体的な内容や数値は本文からは読み取れない。",
+   "points": [
+    "投機的デコーディングは、小さな高速モデルで候補を出し、大きなモデルで一括確認して処理を速める手法とみられる（一般的な背景知識）。",
+    "ローカル環境でAIを動かす人には関係が深いが、本投稿だけでは効果の大きさは未確認。"
+   ],
+   "terms": [
+    {
+     "term": "投機的デコーディング",
+     "desc": "小さなモデルで先読みし、大きなモデルでまとめて確認して文章生成を速くする方法。"
+    },
+    {
+     "term": "ローカルAI",
+     "desc": "クラウドではなく自分のパソコンや手元の機器でAIを動かすこと。"
+    }
+   ],
+   "score": 68,
+   "credibility": 85,
+   "heat": 18,
+   "first_seen": "2026-10-19T16:10:15.000Z",
+   "latest": "2026-10-19T16:10:15.000Z",
+   "authors": [
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの告知投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/huggingface/status/2112214753980612886",
+    "username": "huggingface",
+    "text": "Local AI 202: Get Massive Speed-ups with Speculative Decoding https://t.co/3ywucgYbrD",
+    "text_ja": "ローカルAI 202：投機的デコーディングで大幅な高速化を実現 https://t.co/3ywucgYbrD"
+   },
+   "post_ids": [
+    "2112214753980612886"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "e6ef99b10b",
@@ -569,9 +611,9 @@
      "desc": "光を波長ごとに分けたもの。原子の種類によって固有のパターンが出る。"
     }
    ],
-   "score": 81,
+   "score": 80,
    "credibility": 90,
-   "heat": 43,
+   "heat": 41,
    "first_seen": "2026-10-20T14:53:53.000Z",
    "latest": "2026-10-20T14:53:53.000Z",
    "authors": [
@@ -599,7 +641,7 @@
     "2112557925264752930"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "6f39462741",
@@ -621,9 +663,9 @@
      "desc": "デジタル庁が政府職員向けに提供する生成AI利用環境の名称。"
     }
    ],
-   "score": 60,
+   "score": 59,
    "credibility": 78,
-   "heat": 20,
+   "heat": 18,
    "first_seen": "2026-10-20T07:05:10.000Z",
    "latest": "2026-10-20T07:05:10.000Z",
    "authors": [
@@ -657,7 +699,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "cd82ab275d",
@@ -679,9 +721,9 @@
      "desc": "許可なく他人のシステムやアカウントに侵入する行為。"
     }
    ],
-   "score": 58,
+   "score": 57,
    "credibility": 78,
-   "heat": 15,
+   "heat": 13,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -716,7 +758,7 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
   },
   {
    "id": "bee6a1432d",
@@ -735,7 +777,7 @@
    ],
    "score": 56,
    "credibility": 78,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-10-20T08:55:09.000Z",
    "latest": "2026-10-20T08:55:09.000Z",
    "authors": [
@@ -769,7 +811,65 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T00:45:54Z"
+   "archived_at": "2026-10-22T08:46:24Z"
+  },
+  {
+   "id": "248659d16d",
+   "verdict": "promising",
+   "title": "米大学、91のおとりアカウントでChatGPT広告の表示先を調査",
+   "summary": "ITmedia NEWSが、米国の大学の研究としてChatGPTの広告が誰にどんな内容を表示しているかを調べた記事を紹介した。調査は91のおとりアカウントを用いて行われたとされる。",
+   "points": [
+    "AIチャットサービスに広告が入る中で、利用者ごとにどんな広告が出るかを外部から調べた点が注目される",
+    "調査の詳細な結果（表示傾向や件数）は投稿からは分からず、元記事での確認が必要",
+    "広告の仕組みや対象はサービス提供者の方針で変わるため、調査時点の状況として読む必要がある"
+   ],
+   "terms": [
+    {
+     "term": "おとりアカウント",
+     "desc": "調査用に作られた仮想の利用者アカウントで、実際の利用者の代わりに動かす"
+    },
+    {
+     "term": "ChatGPT広告",
+     "desc": "ChatGPTの画面に表示される広告のこと。仕組みはサービス側の方針で変わる"
+    }
+   ],
+   "score": 55,
+   "credibility": 78,
+   "heat": 8,
+   "first_seen": "2026-10-20T03:05:09.000Z",
+   "latest": "2026-10-20T03:05:09.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事紹介",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2112379567881273504",
+    "username": "itmedia_news",
+    "text": "ChatGPT広告は誰に何を表示しているのか？　米大学が91のおとりアカウントで実態調査\nhttps://t.co/pJrNf2Ddyw",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2112379567881273504"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-22T08:46:24Z"
   }
  ]
 }

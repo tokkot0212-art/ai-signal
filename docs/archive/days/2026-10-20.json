@@ -25,9 +25,9 @@
      "desc": "OpenAIのプログラミング支援を行うAIエージェントのこと"
     }
    ],
-   "score": 94,
+   "score": 93,
    "credibility": 100,
-   "heat": 59,
+   "heat": 58,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-21T19:23:19.000Z",
    "authors": [
@@ -67,17 +67,17 @@
     "2112988118471295323"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
-   "id": "ad869b7aa0",
+   "id": "ae7b321c6a",
    "verdict": "confirmed",
-   "title": "OpenAIが最新モデルでCOBOLなど古い言語の対応を強化",
-   "summary": "OpenAIは公式アカウントで、最新のモデルの進歩により、COBOL、Fortran、Visual Basicといった低リソースのプログラミング言語でのソフトウェア構築・移行能力が向上したと発表した。これらの言語は銀行や政府などの基幹システムで使われているとしている。同社は今後対応してほしい言語や業務の声を募集している。",
+   "title": "OpenAI、古いプログラミング言語向けの能力向上と創薬研究の事例を公表",
+   "summary": "OpenAIは公式アカウントで、最新モデルがCOBOL、Fortran、Visual Basicなどの低リソース言語でのソフトウェア構築・移行能力を高めたと発表した。同社はまた、創薬研究用の「GPT-Rosalind」が、遺伝子DCTN1と神経変性疾患の関係について新たな仮説を示したとする事例を紹介した。投稿によると、この研究はperturbai_txおよびscrippsresearchと共同で行われ、多数のGPT-Rosalindエージェントが並列で作業したという。",
    "points": [
-    "新しい点: 利用例の少ない古い言語でもAIが実務レベルの支援をできつつあるという方向性。",
-    "影響: 金融機関や行政などのレガシーシステム（古い基幹システム）の刷新に役立つ可能性がある。",
-    "注意: 具体的な精度・対応範囲・提供時期は投稿に示されておらず未確認。実際の移行には人の検証が引き続き必要とみられる。"
+    "COBOLなど古い言語は銀行や行政の基幹システムで使われており、その近代化支援は企業にとって実用的な意味を持つ",
+    "GPT-Rosalindの事例は『仮説の提示』であり、実験で確かめられた治療法ではないため、結論はまだ分からない",
+    "投稿は途中の説明で、数値や論文の詳細は含まれていない。今後、査読付き論文などで確認が必要"
    ],
    "terms": [
     {
@@ -85,19 +85,19 @@
      "desc": "1960年代から銀行や行政などで使われてきた古いプログラミング言語。"
     },
     {
-     "term": "レガシーシステム",
-     "desc": "長年使われてきた古い基幹システムのこと。改修や置き換えが難しいことが多い。"
+     "term": "創薬",
+     "desc": "新しい薬を見つけて開発していく研究・開発の分野のこと。"
     },
     {
-     "term": "低リソース言語",
-     "desc": "学習データや利用例が少なく、AIが扱いにくいプログラミング言語のこと。"
+     "term": "DCTN1",
+     "desc": "神経の働きに関わるとされる遺伝子の名前で、Perry症候群と関連が指摘されている。"
     }
    ],
    "score": 92,
    "credibility": 100,
-   "heat": 55,
+   "heat": 54,
    "first_seen": "2026-10-19T22:30:05.000Z",
-   "latest": "2026-10-19T22:30:05.000Z",
+   "latest": "2026-10-21T13:32:35.000Z",
    "authors": [
     "OpenAI"
    ],
@@ -111,10 +111,15 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式X投稿",
+   "evidence_note": "OpenAI公式アカウントの投稿",
    "links": [
     {
      "url": "https://openai.com/index/low-resource-programming-languages/",
+     "domain": "openai.com",
+     "primary": true
+    },
+    {
+     "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
      "domain": "openai.com",
      "primary": true
     }
@@ -123,13 +128,66 @@
     "url": "https://x.com/OpenAI/status/2112310345863930168",
     "username": "OpenAI",
     "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic.\n\nThese languages power software that banks, governments, and businesses depend on. Progress here means understanding decades of business logic and helping developers modernize those systems while preserving what works.\n\nWe’re building these capabilities around the challenges developers and enterprise customers bring us. If your ",
-    "text_ja": "最新のモデルの進歩により、COBOL、Fortran、Visual Basicのような低リソースのプログラミング言語で、ソフトウェアの構築や移行の能力が高まりました。\n\nこれらの言語は、銀行、政府、企業が頼るソフトウェアを支えています。この分野の進歩は、長年の業務ロジックを理解し、動いている部分を残しつつ開発者がシステムを近代化する手助けになることを意味します。\n\n私たちは、開発者や企業のお客様から寄せられる課題を中心にこれらの機能を開発しています。もしお客様のチームがこうしたシステムに取り組んでいるなら、次に対応すべき言語やワークフローを教えてください。\n\nhttps://t.co/2TbnkQixJ1"
+    "text_ja": "最新のモデルの進歩により、COBOL、Fortran、Visual Basicのような低リソースのプログラミング言語でソフトウェアを構築・移行する能力が向上しました。\n\nこれらの言語は、銀行、政府、企業が依存しているソフトウェアを支えています。ここで進歩するということは、何十年分もの業務ロジックを理解し、そのうまく機能している部分を残しながら、開発者がそのシステムを近代化できるよう支援することを意味します。\n\n私たちは、開発者や企業のお客様から寄せられる課題を中心に、これらの能力を構築しています。もしお客様のチームがこれらのシステムに取り組んでいるなら、次に対応すべき言語やワークフローを教えてください。\n\nhttps://t.co/2TbnkQixJ1"
    },
    "post_ids": [
-    "2112310345863930168"
+    "2112310345863930168",
+    "2112899854569762936"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "post_count": 2,
+   "archived_at": "2026-10-22T18:03:26Z"
+  },
+  {
+   "id": "abc18257a9",
+   "verdict": "confirmed",
+   "title": "Google DeepMind、「Gemini 4 Argon」で人体の3D可視化デモを公開",
+   "summary": "Google DeepMindは公式アカウントで、Gemini 4 Argonが3つのオープンソースデータセットを組み合わせて、人体のインタラクティブな3D可視化を作成したと紹介した。投稿では、層を動かして切り替えたり、筋肉を単独で表示したり、拍動する心臓の内部にズームしたりできると説明されている。",
+   "points": [
+    "複数の公開データを組み合わせ、AIが対話的な3Dコンテンツを作った例として、教育・医療分野の利用が想定される",
+    "投稿はデモ映像の紹介のみで、精度や元データの具体名、一般公開の有無は分からない",
+    "医療用途として使うには、解剖学的な正確さの検証が必要とみられる（未確認）"
+   ],
+   "terms": [
+    {
+     "term": "オープンソースデータセット",
+     "desc": "誰でも自由に利用・改変できるよう公開されている、データの集まりのこと。"
+    },
+    {
+     "term": "3D可視化",
+     "desc": "データや物体を立体の画像として分かりやすく表示すること。"
+    }
+   ],
+   "score": 84,
+   "credibility": 90,
+   "heat": 49,
+   "first_seen": "2026-10-20T14:53:53.000Z",
+   "latest": "2026-10-21T18:30:05.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
+    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体解剖学のインタラクティブな3D可視化を作成しました。\n\n動きに合わせて各層を切り替えたり、筋肉を単独で表示したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
+   },
+   "post_ids": [
+    "2112974723659247896"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
    "id": "3b8c6ca6b0",
@@ -157,7 +215,7 @@
    ],
    "score": 84,
    "credibility": 93,
-   "heat": 46,
+   "heat": 45,
    "first_seen": "2026-10-19T18:14:17.000Z",
    "latest": "2026-10-19T19:33:10.000Z",
    "authors": [
@@ -197,33 +255,93 @@
     "2112265822274302066"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
-   "id": "98d7846e43",
+   "id": "0d0a86dda0",
    "verdict": "confirmed",
-   "title": "Gemini 4 Argonが人体の3D可視化を作成と公式発表",
-   "summary": "Google DeepMindは公式アカウントで、Gemini 4 Argonが3つのオープンソースのデータセットを組み合わせて、人体のインタラクティブな3D可視化を作ったと投稿した。投稿によると、層の切り替え、筋肉の単独表示、拍動する心臓の内部へのズームなどができるという。",
+   "title": "OpenAI、ChatGPT広告の仕組みを開発者向けに解説",
+   "summary": "OpenAIの開発者向け公式アカウントは、ChatGPTの広告の仕組みについて投稿した。投稿では、会話の流れに合わせて応答しつつ回答の独立性を保つため、LLMオーケストレーター、検索（retrieval）、ランキング、オークションのツールがどう連携するかを説明するとしている。詳細は投稿のリンク先で示されている。",
    "points": [
-    "AIモデルに、既存データを組み合わせて対話的な教育用コンテンツを作らせた例として紹介されている",
-    "動画で動きを確認できるが、データの正確さや利用条件は投稿からは読み取れない",
-    "一般の利用者がいつ使えるかは投稿に書かれていない"
+    "ChatGPTに広告を組み込む際、回答の中立性をどう保つかという点が示されており、利用者の信頼に関わる論点",
+    "『オークション』で広告枠を決める仕組みが含まれることが示されている。具体的な料金や運用条件は投稿からは不明",
+    "技術的な構成の説明にとどまり、広告がどの程度表示されるかなどは未確認"
    ],
    "terms": [
     {
-     "term": "Gemini 4 Argon",
-     "desc": "Google DeepMindが開発したとされるAIモデル名。本投稿に登場する名称。"
+     "term": "LLMオーケストレーター",
+     "desc": "複数のAI処理や検索などの部品を、順序立てて組み合わせて制御する仕組み"
     },
     {
-     "term": "オープンソースのデータセット",
-     "desc": "誰でも自由に使える形で公開されているデータの集まり。"
+     "term": "retrieval（検索）",
+     "desc": "外部のデータベースや文書から、回答に必要な情報を探し出す処理"
+    },
+    {
+     "term": "オークション",
+     "desc": "複数の広告主が入札し、最も条件の良い広告枠を決める仕組み"
     }
    ],
-   "score": 84,
+   "score": 81,
    "credibility": 90,
-   "heat": 51,
+   "heat": 42,
+   "first_seen": "2026-10-20T03:05:09.000Z",
+   "latest": "2026-10-21T17:42:32.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の技術解説投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+    "username": "OpenAIDevs",
+    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent.\n\nHere’s how the LLM orchestrator, retrieval, ranking  and auction tools work together. https://t.co/oho0jXkfiQ",
+    "text_ja": "ChatGPTの広告の仕組みは、変化していく会話に応じて表示を最適化しつつ、回答が独立性を保つように設計しました。\n\nLLMオーケストレーター、検索（retrieval）、ランキング、オークションの各ツールがどのように連携するかは、こちらをご覧ください。 https://t.co/oho0jXkfiQ"
+   },
+   "post_ids": [
+    "2112962753682198969"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-22T18:03:26Z"
+  },
+  {
+   "id": "e6ef99b10b",
+   "verdict": "confirmed",
+   "title": "Google DeepMind、Gemini 4 Argonで周期表の3D可視化を作成と紹介",
+   "summary": "Google DeepMindの公式アカウントは、『Gemini 4 Argon』が、Tom Lehrerの歌『The Elements』に同期した3D周期表を作成したと投稿した。投稿によれば、作成には開発環境『Antigravity』を使い、電子の軌道、原子データ、光のスペクトルがアニメーションで表現されているという。",
+   "points": [
+    "新しいのは、AIが音楽に同期した教育向けの3Dコンテンツを生成できる例を示した点",
+    "AIによるコード生成や対話型の作成支援の実用例として見られる可能性がある（投稿の範囲での推測）",
+    "投稿はデモの紹介であり、精度や再現性、一般提供の時期などは投稿からは不明"
+   ],
+   "terms": [
+    {
+     "term": "Antigravity",
+     "desc": "Googleが提供する、AIを使ってソフトウェアを作るための開発環境とされる（投稿では作成ツールとして記載）"
+    },
+    {
+     "term": "3D周期表",
+     "desc": "元素を周期表の配置に従って立体的に表示したもの"
+    },
+    {
+     "term": "スペクトル",
+     "desc": "光を波長ごとに分解したときのパターン。元素ごとに特徴があり、元素の識別に使われる"
+    }
+   ],
+   "score": 80,
+   "credibility": 90,
+   "heat": 39,
    "first_seen": "2026-10-20T14:53:53.000Z",
-   "latest": "2026-10-21T18:30:05.000Z",
+   "latest": "2026-10-20T14:53:53.000Z",
    "authors": [
     "GoogleDeepMind"
    ],
@@ -237,90 +355,87 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式投稿",
+   "evidence_note": "Google DeepMind公式の紹介投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+    "url": "https://x.com/GoogleDeepMind/status/2112557925264752930",
     "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
-    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体解剖学のインタラクティブな3D可視化を作成しました。\n\n動きに合わせて各層を切り替えたり、筋肉を単独で表示したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
+    "text": "Gemini 4 Argon built a 3D periodic table synced to Tom Lehrer’s song, “The Elements.”\n\nCreated in @Antigravity, it animates orbiting electrons, atomic data, and light spectra. https://t.co/7fsvsIk6Sv",
+    "text_ja": "Gemini 4 Argonが、Tom Lehrerの曲「The Elements」に同期した3D周期表を作成しました。\n\n@Antigravityで作成され、軌道を回る電子、原子データ、光のスペクトルがアニメーションで動きます。https://t.co/7fsvsIk6Sv"
    },
    "post_ids": [
-    "2112974723659247896",
     "2112557925264752930"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "post_count": 1,
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
-   "id": "53c3e6767e",
+   "id": "ecaadb59fb",
    "verdict": "confirmed",
-   "title": "OpenAIがChatGPT広告の仕組みを解説、米大学が広告の実態を調査",
-   "summary": "OpenAIの開発者向け公式アカウントは、ChatGPTの広告の仕組みについて、LLMオーケストレーター、検索（retrieval）、ランキング、オークションのツールがどう連携して、会話の流れに応じつつ回答の独立性を保つかを説明した。ITmedia NEWSは、米大学がおとりアカウント91個を使ってChatGPT広告の表示実態を調べたと報じた。",
+   "title": "Sakana AI、エンジニア向けイベントのレポートとAI主権に関する論説引用を公開",
+   "summary": "Sakana AIの公式アカウントは、10月5日に開催したエンジニア向けイベント『Sakana AI Engineer Open House 2026』のレポートを公開した。CEOのDavid Haによる『AI主権』の構想紹介や、5職種の社員による話を伝えており、5職種はいずれも積極採用中としている。あわせて、同社の菊池咲氏のコメントがJapan Timesの論説で引用されたことも紹介した。",
    "points": [
-    "OpenAIの解説は仕組みの概要を示すもので、実際の表示ルールや判定基準の詳細は記事を読まないと分からない。",
-    "おとりアカウントによる調査は、広告がどの利用者にどう見えるかを外部から確かめる試みで、広告の透明性を考える材料になる。",
-    "調査の具体的な手法や結果の数値は、元の論文や記事を確認する必要がある。"
+    "新しいのは、同社のエンジニア採用や社内の働き方を具体的に紹介した点",
+    "『AI主権』は、どこまで自前で持つかを問う『ソブリンAI』と対比される概念として紹介されている",
+    "採用情報は企業側の発信であり、待遇や職場環境の実態は投稿からは分からない"
    ],
    "terms": [
     {
-     "term": "オーケストレーター",
-     "desc": "複数の処理やAIの動きを調整し、順序立てて進める仕組みのこと"
+     "term": "AI主権",
+     "desc": "国や組織が、AIに関わる技術・データ・インフラをどこまで自分たちで保持・選択できるかという考え方"
     },
     {
-     "term": "retrieval（検索・取得）",
-     "desc": "AIが回答の材料になる情報を外部から探し出して取り出す処理"
+     "term": "ソブリンAI",
+     "desc": "国や地域が自前のデータや計算基盤でAIを運用する取り組みを指す言葉"
     },
     {
-     "term": "おとりアカウント",
-     "desc": "調査のために用意された、実際の利用者を装う架空のアカウントのこと"
+     "term": "FDE / ARE / SWE",
+     "desc": "企業内のエンジニアの職種名の略称。投稿では採用している職種として並べられている（各職務の詳細は未確認）"
     }
    ],
-   "score": 82,
-   "credibility": 90,
-   "heat": 44,
-   "first_seen": "2026-10-20T03:05:09.000Z",
-   "latest": "2026-10-21T17:42:32.000Z",
+   "score": 80,
+   "credibility": 100,
+   "heat": 24,
+   "first_seen": "2026-10-20T03:57:23.000Z",
+   "latest": "2026-10-22T08:18:51.000Z",
    "authors": [
-    "OpenAIDevs",
-    "itmedia_news"
+    "SakanaAILabs"
    ],
    "author_labels": [
     {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
      "type": "official",
      "former": ""
     }
    ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia記事（米大学の調査を紹介）",
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式のイベント報告",
    "links": [
     {
-     "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
-     "domain": "itmedia.co.jp",
+     "url": "https://sakana.ai/open-house-2026/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://www.japantimes.co.jp/commentary/2026/10/21/world/tech-sovereignty-is-fantasy/",
+     "domain": "japantimes.co.jp",
      "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-    "username": "OpenAIDevs",
-    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent.\n\nHere’s how the LLM orchestrator, retrieval, ranking  and auction tools work together. https://t.co/oho0jXkfiQ",
-    "text_ja": "ChatGPTの広告の仕組みは、変化していく会話に応じて表示を最適化しつつ、回答が独立性を保つように設計しました。\n\nLLMオーケストレーター、検索（retrieval）、ランキング、オークションの各ツールがどのように連携するかは、こちらをご覧ください。 https://t.co/oho0jXkfiQ"
+    "url": "https://x.com/SakanaAILabs/status/2112670760410169361",
+    "username": "SakanaAILabs",
+    "text": "10月5日に開催したエンジニア向け「Sakana AI Engineer Open House 2026」のイベントレポートを公開しました🐡\n\nhttps://t.co/RT8ITHjwL1\n\nCEOのDavid Haによる「AI主権」の構想紹介に始まり、ARE / FDE / SWE / Solution Engineer / Cybersecurity Engineerの5職種について、金融・防衛・Product・ Platformの各領域で働く7名のメンバーがそれぞれの役割と面白さを語りました。5職種はいずれも積極採用中です。\n\nSakana AIのエンジニアの働き方に興味のある方は、ぜひご一読ください🚀",
+    "text_ja": null
    },
    "post_ids": [
-    "2112962753682198969",
-    "2112379567881273504"
+    "2112670760410169361",
+    "2113183285941780729"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
    "id": "a2254a0c9b",
@@ -395,7 +510,7 @@
    ],
    "score": 77,
    "credibility": 100,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-10-20T11:31:58.000Z",
    "latest": "2026-10-20T11:31:58.000Z",
    "authors": [
@@ -439,7 +554,7 @@
     "2112507110290502109"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
    "id": "61d4a9552a",
@@ -487,37 +602,37 @@
     "2112269679154585624"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
-   "id": "ed81774f8f",
+   "id": "4e096db129",
    "verdict": "confirmed",
-   "title": "Sakana AIがエンジニア向けイベントのレポートと採用情報を公開",
-   "summary": "Sakana AI公式アカウントは、10月5日開催の「Sakana AI Engineer Open House 2026」のイベントレポートを公開したと投稿した。レポートでは、CEOのDavid Haが「AI主権」の構想を紹介し、5職種のメンバーが働き方を語ったとされる。同社は別投稿で、Product Strategy & Operationsの専任ポジションの募集も公開している。",
+   "title": "Sakana AI、Product Strategy & Operationsの採用を開始",
+   "summary": "Sakana AIの公式アカウントは、Product Strategy & Operationsの最初の専任メンバーを募集する採用情報を公開した。投稿によれば、事業計画やKPIの管理、市場・競合調査、横断プロジェクトの推進、エンタープライズ案件のデリバリ体制設計を担当し、将来はチームを率いることを想定しているという。",
    "points": [
-    "5職種はARE / FDE / SWE / Solution Engineer / Cybersecurity Engineerで、いずれも積極採用中と投稿にある。",
-    "Product Strategy & Operationsは特定製品ではなく製品群全体を担う役割で、将来はチームを率いることが想定されている。",
-    "企業の採用・広報発信であり、新技術や製品の発表ではない。"
+    "新しいのは、特定製品ではなく複数のプロダクト全体を見る専任ポジションを新設した点",
+    "プロダクトの数や法人案件の増加に伴う組織づくりの一環と読める（投稿の範囲での推測）",
+    "募集要件や給与などは投稿からは分からず、リンク先の確認が必要"
    ],
    "terms": [
     {
-     "term": "AI主権",
-     "desc": "国や企業が自国のデータや計算基盤を自ら持ち、AIを主体的に運用しようという考え方。"
-    },
-    {
-     "term": "FDE",
-     "desc": "Forward Deployed Engineer。顧客先に入り込み、導入や課題解決を技術面で支援するエンジニア職とみられる（投稿に定義はなく、一般的な用法での推測）。"
-    },
-    {
      "term": "Product Strategy & Operations",
-     "desc": "事業計画や市場調査、プロダクト横断の運営を担う職種。"
+     "desc": "製品全体の事業計画・KPI管理・社内横断の進行などを担う職種（一般的な意味）"
+    },
+    {
+     "term": "KPI",
+     "desc": "目標達成度を測るための重要業績評価指標。数値で管理される"
+    },
+    {
+     "term": "エンタープライズ案件",
+     "desc": "大企業や組織向けに提供する、大型の導入・契約案件のこと"
     }
    ],
-   "score": 76,
+   "score": 72,
    "credibility": 100,
-   "heat": 14,
+   "heat": 6,
    "first_seen": "2026-10-20T03:57:23.000Z",
-   "latest": "2026-10-20T22:22:15.000Z",
+   "latest": "2026-10-20T03:57:23.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -531,13 +646,8 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントの告知・レポート",
+   "evidence_note": "Sakana AI公式の採用告知",
    "links": [
-    {
-     "url": "https://sakana.ai/open-house-2026/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
     {
      "url": "https://sakana.ai/careers/business-role-product-strategy-operations/",
      "domain": "sakana.ai",
@@ -545,16 +655,66 @@
     }
    ],
    "post": {
-    "url": "https://x.com/SakanaAILabs/status/2112670760410169361",
+    "url": "https://x.com/SakanaAILabs/status/2112392712637100095",
     "username": "SakanaAILabs",
-    "text": "10月5日に開催したエンジニア向け「Sakana AI Engineer Open House 2026」のイベントレポートを公開しました🐡\n\nhttps://t.co/RT8ITHjwL1\n\nCEOのDavid Haによる「AI主権」の構想紹介に始まり、ARE / FDE / SWE / Solution Engineer / Cybersecurity Engineerの5職種について、金融・防衛・Product・ Platformの各領域で働く7名のメンバーがそれぞれの役割と面白さを語りました。5職種はいずれも積極採用中です。\n\nSakana AIのエンジニアの働き方に興味のある方は、ぜひご一読ください🚀",
+    "text": "【採用情報】Product Strategy & Operationsのポジションを公開しました🐟\n\nhttps://t.co/BXhzEcKAWY\n\n今回募集するのは特定のプロダクトではなくプロダクト群全体を受け持つProduct Strategy & Operationsの最初の専任メンバーです。Head of Productのパートナーとして以下をご担当いただきます。\n\n・事業計画・KPIの管理と市場・競合調査\n・横断プロジェクトの推進\n・エンタープライズ案件のデリバリ体制設計\n\nプロダクトの数とエンタープライズ案件が増えるにつれ、将来はProduct Strategy & Operationsチームを率いていただくことを想定しています。興味を持たれた方、ぜひご応募ください🚀",
     "text_ja": null
    },
    "post_ids": [
-    "2112670760410169361",
     "2112392712637100095"
    ],
-   "post_count": 2,
+   "post_count": 1,
+   "archived_at": "2026-10-22T18:03:26Z"
+  },
+  {
+   "id": "31217c6fc4",
+   "verdict": "confirmed",
+   "title": "Hugging Face公式がローカルAI向け高速化技法の解説を投稿",
+   "summary": "Hugging Face公式アカウントが「Local AI 202」と題し、投機的デコーディング（Speculative Decoding）による高速化を紹介する投稿を行った。投稿本文は告知とリンクのみで、具体的な内容や数値は本文からは読み取れない。",
+   "points": [
+    "投機的デコーディングは、小さな高速モデルで候補を出し、大きなモデルで一括確認して処理を速める手法とみられる（一般的な背景知識）。",
+    "ローカル環境でAIを動かす人には関係が深いが、本投稿だけでは効果の大きさは未確認。"
+   ],
+   "terms": [
+    {
+     "term": "投機的デコーディング",
+     "desc": "小さなモデルで先読みし、大きなモデルでまとめて確認して文章生成を速くする方法。"
+    },
+    {
+     "term": "ローカルAI",
+     "desc": "クラウドではなく自分のパソコンや手元の機器でAIを動かすこと。"
+    }
+   ],
+   "score": 68,
+   "credibility": 85,
+   "heat": 17,
+   "first_seen": "2026-10-19T16:10:15.000Z",
+   "latest": "2026-10-19T16:10:15.000Z",
+   "authors": [
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの告知投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/huggingface/status/2112214753980612886",
+    "username": "huggingface",
+    "text": "Local AI 202: Get Massive Speed-ups with Speculative Decoding https://t.co/3ywucgYbrD",
+    "text_ja": "ローカルAI 202：投機的デコーディングで大幅な高速化を実現 https://t.co/3ywucgYbrD"
+   },
+   "post_ids": [
+    "2112214753980612886"
+   ],
+   "post_count": 1,
    "archived_at": "2026-10-22T13:54:50Z"
   },
   {
@@ -607,58 +767,7 @@
     "2112452885338288577"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
-  },
-  {
-   "id": "31217c6fc4",
-   "verdict": "confirmed",
-   "title": "Hugging Face公式がローカルAI向け高速化技法の解説を投稿",
-   "summary": "Hugging Face公式アカウントが「Local AI 202」と題し、投機的デコーディング（Speculative Decoding）による高速化を紹介する投稿を行った。投稿本文は告知とリンクのみで、具体的な内容や数値は本文からは読み取れない。",
-   "points": [
-    "投機的デコーディングは、小さな高速モデルで候補を出し、大きなモデルで一括確認して処理を速める手法とみられる（一般的な背景知識）。",
-    "ローカル環境でAIを動かす人には関係が深いが、本投稿だけでは効果の大きさは未確認。"
-   ],
-   "terms": [
-    {
-     "term": "投機的デコーディング",
-     "desc": "小さなモデルで先読みし、大きなモデルでまとめて確認して文章生成を速くする方法。"
-    },
-    {
-     "term": "ローカルAI",
-     "desc": "クラウドではなく自分のパソコンや手元の機器でAIを動かすこと。"
-    }
-   ],
-   "score": 68,
-   "credibility": 85,
-   "heat": 17,
-   "first_seen": "2026-10-19T16:10:15.000Z",
-   "latest": "2026-10-19T16:10:15.000Z",
-   "authors": [
-    "huggingface"
-   ],
-   "author_labels": [
-    {
-     "username": "huggingface",
-     "label": "Hugging Face公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントの告知投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/huggingface/status/2112214753980612886",
-    "username": "huggingface",
-    "text": "Local AI 202: Get Massive Speed-ups with Speculative Decoding https://t.co/3ywucgYbrD",
-    "text_ja": "ローカルAI 202：投機的デコーディングで大幅な高速化を実現 https://t.co/3ywucgYbrD"
-   },
-   "post_ids": [
-    "2112214753980612886"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
    "id": "6f39462741",
@@ -716,7 +825,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
    "id": "cd82ab275d",
@@ -740,7 +849,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -775,7 +884,65 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
+  },
+  {
+   "id": "248659d16d",
+   "verdict": "promising",
+   "title": "ChatGPTの広告表示を米大学が91のおとりアカウントで調査",
+   "summary": "ITmedia NEWSは、ChatGPTの広告が誰に何を表示しているのかを調べた米大学の調査を紹介した。投稿によると、この大学は91のおとりアカウント（調査用の架空アカウント）を使って広告の実態を調べたという。投稿には調査の詳細な結果は含まれていない。",
+   "points": [
+    "調査の結果そのもの（どの属性にどんな広告が出たか）は、元記事を読まないと分からない",
+    "ユーザーの情報や会話内容に基づいて広告が出ているかどうかが、利用者にとって重要な論点になりうる",
+    "調査の規模や方法の妥当性は未確認。元の大学の論文や発表を確認することが望ましい"
+   ],
+   "terms": [
+    {
+     "term": "おとりアカウント",
+     "desc": "実際の利用者ではなく、調査のために用意した架空のアカウントのこと。"
+    },
+    {
+     "term": "ChatGPT広告",
+     "desc": "AIチャットサービスの回答画面などに表示される広告のこと。"
+    }
+   ],
+   "score": 55,
+   "credibility": 78,
+   "heat": 7,
+   "first_seen": "2026-10-20T03:05:09.000Z",
+   "latest": "2026-10-20T03:05:09.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia記事（大学調査を紹介）",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2112379567881273504",
+    "username": "itmedia_news",
+    "text": "ChatGPT広告は誰に何を表示しているのか？　米大学が91のおとりアカウントで実態調査\nhttps://t.co/pJrNf2Ddyw",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2112379567881273504"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-22T18:03:26Z"
   },
   {
    "id": "bee6a1432d",
@@ -828,7 +995,7 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T13:54:50Z"
+   "archived_at": "2026-10-22T18:03:26Z"
   }
  ]
 }

@@ -2,33 +2,103 @@
  "date": "2026-10-21",
  "items": [
   {
-   "id": "896ab71ffb",
+   "id": "7c591a2b1d",
    "verdict": "confirmed",
-   "title": "OpenAIがバイオ企業向け基盤のOrchestra Bioを買収",
-   "summary": "OpenAIは公式アカウントで、創薬チームの開発プロセスを調整するプラットフォームOrchestra Bioを買収したと発表した。今後は同社のライフサイエンス向けAI「Rosalind」と組み合わせ、業務の効率化を図るとしている。別の投稿では、GPT-Rosalindが神経変性疾患に関する仮説を示したとの事例も紹介された。",
+   "title": "AnthropicがChristopher Stubbs氏を長期利益信託に迎えると発表",
+   "summary": "Anthropicは公式アカウントで、実験物理学者でハーバード大学元理学部長のChristopher Stubbs氏が同社のLong-Term Benefit Trustに加わると発表した。投稿では、同氏が米政府に国家安全保障や軍備管理について助言してきたことも紹介されている。OpenAIのSam Altman氏も、Aleksander氏が同様の役割を引き受けたことに感謝すると投稿している。",
    "points": [
-    "新しい点: OpenAIが創薬の業務支援に特化した企業を取り込み、ライフサイエンス分野に力を入れる動き。",
-    "影響: 製薬・バイオ企業の開発プロセスが効率化され、新薬が患者に早く届く可能性があるとされる。",
-    "注意: 買収額や統合後の具体的な製品計画は投稿に含まれず未確認。GPT-Rosalindの事例も研究段階の仮説で、効果は検証が必要。"
+    "Long-Term Benefit Trustは、AI企業の長期的な利益と安全性の観点から経営を見守る役割を担う組織とみられる（詳細は未確認）。",
+    "投稿では人事の事実のみが示されており、具体的な権限や任期は確認できない。",
+    "Altman氏の投稿はAleksander氏の就任に言及しているが、人物の詳細や所属の関係は投稿だけでは判断できない。"
    ],
    "terms": [
     {
-     "term": "Rosalind",
-     "desc": "OpenAIのライフサイエンス（生命科学）研究向けAIモデル・ツール群とされる。"
+     "term": "Long-Term Benefit Trust",
+     "desc": "AI企業が長期的な利益や安全性を重視して経営判断を監督する仕組みとみられる組織"
     },
     {
-     "term": "創薬",
-     "desc": "病気の治療に使う新しい薬を見つけ、開発していく研究・事業のこと。"
+     "term": "軍備管理",
+     "desc": "兵器の開発や配備を国際的なルールで制限する取り組みのこと"
     },
     {
-     "term": "神経変性疾患",
-     "desc": "神経細胞が徐々に壊れていく病気の総称。"
+     "term": "superintelligence（超知能）",
+     "desc": "人間の知能を大きく上回るとされる仮想的なAIのこと"
     }
    ],
-   "score": 94,
+   "score": 97,
    "credibility": 100,
-   "heat": 60,
-   "first_seen": "2026-10-20T18:10:16.000Z",
+   "heat": 55,
+   "first_seen": "2026-10-20T21:10:19.000Z",
+   "latest": "2026-10-21T16:38:56.000Z",
+   "authors": [
+    "AnthropicAI",
+    "sama"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "sama",
+     "label": "OpenAI CEO",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2112946750264676743",
+    "username": "AnthropicAI",
+    "text": "Dr. Christopher Stubbs is joining our Long-Term Benefit Trust. Chris is an experimental physicist and a former Dean of Science at Harvard University. He has also advised the US government on national security and arms control.\n\nRead more: https://t.co/8RzH8UujRU",
+    "text_ja": "Christopher Stubbs博士が、当社の長期利益信託（Long-Term Benefit Trust）に加わります。Chrisは実験物理学者で、ハーバード大学の元理学部長です。また、米国政府に国家安全保障と軍備管理について助言してきました。\n\n詳しくはこちら: https://t.co/8RzH8UujRU"
+   },
+   "post_ids": [
+    "2112946750264676743",
+    "2112652656602923366"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-22T13:54:50Z"
+  },
+  {
+   "id": "ab0950efaf",
+   "verdict": "confirmed",
+   "title": "GPT-Rosalindが遺伝子とコレステロール輸送の仮説を提示と発表",
+   "summary": "OpenAI公式アカウントは、AIモデル「GPT-Rosalind」が、希少な神経変性疾患Perry症候群に関連する遺伝子DCTN1に関して、コレステロール輸送の回復が神経細胞を守る可能性という仮説を示したと紹介した。マウス脳のデータでは、この遺伝子を阻害するとコレステロール生成に関わる遺伝子の発現が増えたという。投稿はScripps ResearchやPerturbai (@perturbai_tx)と共同で、数千のGPT-Rosalindエージェントが並列に作業したことにも触れている。",
+   "points": [
+    "AIが示したのは検証すべき『仮説』であり、治療法が確認されたわけではない。",
+    "研究者が実験で確かめる段階に進むかどうかが今後の焦点となる。",
+    "数百万件規模のデータを扱ったとされるが、詳細な手法や結果の公開範囲は投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "神経変性疾患",
+     "desc": "神経細胞が徐々に壊れて、運動や認知の機能が失われていく病気の総称"
+    },
+    {
+     "term": "遺伝子発現",
+     "desc": "遺伝子の情報をもとに、細胞がタンパク質などを作る活動の度合い"
+    },
+    {
+     "term": "仮説",
+     "desc": "実験で確かめるべき、まだ証明されていない考えのこと"
+    }
+   ],
+   "score": 88,
+   "credibility": 100,
+   "heat": 44,
+   "first_seen": "2026-10-21T13:32:35.000Z",
    "latest": "2026-10-21T13:32:35.000Z",
    "authors": [
     "OpenAI"
@@ -43,13 +113,8 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式X投稿",
+   "evidence_note": "OpenAI公式アカウントの紹介投稿",
    "links": [
-    {
-     "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
-     "domain": "openai.com",
-     "primary": true
-    },
     {
      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
      "domain": "openai.com",
@@ -57,17 +122,16 @@
     }
    ],
    "post": {
-    "url": "https://x.com/OpenAI/status/2112607347688583586",
+    "url": "https://x.com/OpenAI/status/2112899854569762936",
     "username": "OpenAI",
-    "text": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development.\n\nTogether, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments reach patients sooner.\n\nWelcome @ashokaraj_ and team!\n\nhttps://t.co/vi51OhznQn",
-    "text_ja": "OpenAIは、バイオ医薬品チームによる複雑な創薬プロセスの調整を支援するプラットフォーム、Orchestra Bioを買収しました。\n\n今後は、当社のライフサイエンス研究向けAIモデルとツールであるRosalindを基に、業務を効率化し、新しい治療法をより早く患者に届けられるようにしていきます。\n\n@ashokaraj_ さんとチームの皆さん、ようこそ！\n\nhttps://t.co/vi51OhznQn"
+    "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?\n\nDCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in making cholesterol. GPT-Rosalind suggested a possible explanation: cholesterol may not be reaching where neurons need it.\n\nThat gives scientists a specific mechanism to test and, if confirmed, a direction for developing",
+    "text_ja": "GPT-Rosalindが、創薬の新たな手がかりを見つけました。コレステロール輸送を回復させることで、神経細胞の変性を防げるのでしょうか？\n\nDCTN1は、希少な神経変性疾患であるPerry症候群に関連する遺伝子です。マウスの脳データでは、この遺伝子を阻害すると、コレステロール生成に関わる遺伝子の発現が増えました。GPT-Rosalindは、コレステロールが神経細胞の必要な場所に届いていないのではないか、という考えられる説明を示しました。\n\nこれにより科学者は、検証すべき具体的な仕組みを得られ、確認されれば神経変性疾患の新しい治療法を開発する方向性にもなります。\n\n@perturbai_tx および @scrippsresearch と共同で、数千のGPT-Rosalindエージェントが並列で作業し、数百万件の..."
    },
    "post_ids": [
-    "2112607347688583586",
     "2112899854569762936"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "post_count": 1,
+   "archived_at": "2026-10-22T13:54:50Z"
   },
   {
    "id": "29ebcddc23",
@@ -93,9 +157,9 @@
      "desc": "現実世界の物理法則（重力や流体など）を理解・予測するAIの総称とみられる。"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 100,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-10-21T11:35:00.000Z",
    "latest": "2026-10-21T11:35:00.000Z",
    "authors": [
@@ -129,7 +193,7 @@
     "2112870261829603589"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "archived_at": "2026-10-22T13:54:50Z"
   },
   {
    "id": "09617b79c9",
@@ -151,9 +215,9 @@
      "desc": "進行を止める問題や依存関係があり、先に進めない作業のこと。"
     }
    ],
-   "score": 80,
+   "score": 79,
    "credibility": 90,
-   "heat": 39,
+   "heat": 38,
    "first_seen": "2026-10-20T15:24:47.000Z",
    "latest": "2026-10-20T15:24:47.000Z",
    "authors": [
@@ -181,37 +245,37 @@
     "2112565702552940794"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "archived_at": "2026-10-22T13:54:50Z"
   },
   {
-   "id": "fb6b47990d",
+   "id": "bfeb574e22",
    "verdict": "confirmed",
-   "title": "NVIDIAがAIエージェント向けのリファレンス構成を公開",
-   "summary": "NVIDIAの公式AIアカウントは、AIエージェントが大量のツール呼び出しを高速に行えるよう、計算資源と、エージェントのツールやデータへのアクセスを管理する実行時の制御機能を組み合わせた「OpenShell Reference Architecture」を紹介した。ハードウェアとソフトウェアがどう連携するかの解説へのリンクを付けている。",
+   "title": "NVIDIA、GTC Berlinで欧州向けのAI基盤・提携を発表",
+   "summary": "NVIDIA公式AIアカウントは、GTC Berlinでの複数の発表を投稿した。内容は、AIエージェントのアクセス制御を含む「OpenShell Reference Architecture」、エージェント向けの「Agent Knowledge Foundation」の追加、欧州の放送連合(EBU)やAdobeとの連携、Audi・Siemensなど欧州企業の産業利用の紹介である。",
    "points": [
-    "新しい点: エージェントの安全な実行に必要な制御を、ハードウェアと組み合わせた構成として示した点。",
-    "影響: 企業がAIエージェントを業務で大規模に動かす際の設計の参考になるとみられる。",
-    "注意: 「リファレンス構成」は設計例であり、性能や導入実績は投稿に含まれず未確認。"
+    "AIエージェントが使うツールやデータを管理する仕組みが、安全性の観点で注目点として挙げられている",
+    "欧州の放送事業者向けにデータ管理と編集の独立性を保つ取り組みが示されている",
+    "各社の導入効果や性能数値は投稿に含まれておらず、詳細は元記事での確認が必要"
    ],
    "terms": [
     {
      "term": "AIエージェント",
-     "desc": "人の指示を受けて、AIが自分で計画しツールを使いながら作業を進める仕組みのこと。"
+     "desc": "人間に代わって、ツール操作や情報収集などを自動で行うAIのこと。"
     },
     {
-     "term": "リファレンスアーキテクチャ",
-     "desc": "特定の用途でシステムを組むときの、標準的な設計の見本のこと。"
+     "term": "EBU（欧州放送連合）",
+     "desc": "ヨーロッパの公共放送などが加盟する国際的な団体。"
     },
     {
-     "term": "ツール呼び出し",
-     "desc": "AIが外部のソフトや機能（検索、計算など）を呼び出して使う動作のこと。"
+     "term": "ツールコール",
+     "desc": "AIが外部のソフトやサービスを呼び出して操作すること。"
     }
    ],
-   "score": 76,
+   "score": 75,
    "credibility": 93,
-   "heat": 26,
-   "first_seen": "2026-10-21T10:01:24.000Z",
-   "latest": "2026-10-21T10:01:24.000Z",
+   "heat": 24,
+   "first_seen": "2026-10-20T22:47:39.000Z",
+   "latest": "2026-10-21T10:52:57.000Z",
    "authors": [
     "NVIDIAAI"
    ],
@@ -225,10 +289,20 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式X投稿",
+   "evidence_note": "NVIDIA公式発表・提携の告知",
    "links": [
     {
      "url": "https://nvda.ws/4BiJBfY",
+     "domain": "nvda.ws",
+     "primary": false
+    },
+    {
+     "url": "https://nvda.ws/4BnYgGT",
+     "domain": "nvda.ws",
+     "primary": false
+    },
+    {
+     "url": "https://nvda.ws/4zJtVRh",
      "domain": "nvda.ws",
      "primary": false
     }
@@ -240,135 +314,13 @@
     "text_ja": "AIエージェントには、高速なツール呼び出しと、エージェント自身が書き換えられないセキュリティ制御が必要です。\n\nNVIDIA OpenShell リファレンスアーキテクチャは、エージェントを大規模に動かす計算能力と、ツールやデータへのアクセスを統制するランタイム制御を組み合わせたものです。\n\nハードウェアとソフトウェアがどのように連携するかはこちら: https://t.co/6Gipiy9Og5"
    },
    "post_ids": [
-    "2112846708527018339"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
-  },
-  {
-   "id": "c79a19ab89",
-   "verdict": "confirmed",
-   "title": "NVIDIA、GTC Berlinでエージェント向け新機能を発表",
-   "summary": "NVIDIA公式AIアカウントは、GTC Berlinで「NVIDIA Agent Knowledge Foundation」を「NVIDIA Agent Toolkit」に追加すると投稿した。この機能はエージェントが関連情報を見つけ、予測や次に取るべき行動の判断を助けるものと説明されている。あわせて「OpenShell」は、チームがエージェントのアクセス範囲や行動を管理できる仕組みとして紹介された。",
-   "points": [
-    "エージェントがどの業務情報を使えるかを企業側で管理する仕組みが焦点とみられる",
-    "具体的な提供時期や料金は投稿からは分からない",
-    "詳細は投稿内リンク先の公式発表で確認するのが確実"
-   ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "指示に応じて情報収集や作業を自律的に進めるAIのこと"
-    },
-    {
-     "term": "OpenShell",
-     "desc": "投稿では、エージェントの権限や行動範囲を管理する仕組みとして紹介されている"
-    }
-   ],
-   "score": 74,
-   "credibility": 93,
-   "heat": 20,
-   "first_seen": "2026-10-21T10:24:53.000Z",
-   "latest": "2026-10-21T10:24:53.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://nvda.ws/4zJtVRh",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112852615461773370",
-    "username": "NVIDIAAI",
-    "text": "AI agents need to know your business to be useful.\n\nAt GTC Berlin, we’re adding NVIDIA Agent Knowledge Foundation to NVIDIA Agent Toolkit. It helps agents find relevant information, make predictions and help people decide what to do next.\n\nOpenShell gives teams control over what agents can access and do.\n\nLearn more: https://t.co/B7Zl4wDtTi",
-    "text_ja": "AIエージェントが役に立つためには、あなたの業務を理解している必要があります。\n\nGTC Berlinで、NVIDIA Agent Toolkitに「NVIDIA Agent Knowledge Foundation」を追加します。これはエージェントが関連情報を見つけ、予測を立て、人が次に何をすべきか判断するのを助けます。\n\nOpenShellにより、チームはエージェントがアクセスしたり行ったりできることを管理できます。\n\n詳細: https://t.co/B7Zl4wDtTi"
-   },
-   "post_ids": [
-    "2112852615461773370"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
-  },
-  {
-   "id": "a69c65f33d",
-   "verdict": "confirmed",
-   "title": "NVIDIA、EBUやAdobeと提携しメディア向けAIを発表",
-   "summary": "NVIDIA公式AIアカウントは、GTC Berlinで欧州放送連合（EBU）およびAdobeとの取り組みを発表したと投稿した。EBUとは主権あるAIの標準を基に、放送局がデータ管理と編集の独立性を保ちながらAIを使えるようにする取り組みとされている。Adobeは同社のGPUを使い、テレビ・映画制作者が大量の映像から特定の場面を探す動画検索を高速化するという。",
-   "points": [
-    "放送業界がデータ主権を守りつつAIを導入する枠組みとして注目される",
-    "動画検索の速度向上の具体的な数値は投稿からは分からない",
-    "「主権あるAI」の具体的な定義や適用範囲は未確認"
-   ],
-   "terms": [
-    {
-     "term": "EBU",
-     "desc": "欧州の公共放送局が加盟する国際団体（欧州放送連合）"
-    },
-    {
-     "term": "ソブリンAI（主権AI）",
-     "desc": "国や組織が自らのデータや計算基盤を管理しながら使うAIの考え方"
-    },
-    {
-     "term": "GPU",
-     "desc": "画像処理や大量の計算を高速に行うための半導体。AIの学習・推論に多用される"
-    }
-   ],
-   "score": 73,
-   "credibility": 93,
-   "heat": 18,
-   "first_seen": "2026-10-20T22:47:39.000Z",
-   "latest": "2026-10-20T22:47:39.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "http://Frame.io",
-     "domain": "frame.io",
-     "primary": false
-    },
-    {
-     "url": "https://nvda.ws/4sheBsJ",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112677152735076822",
-    "username": "NVIDIAAI",
-    "text": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\n\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of their data and protecting editorial independence.\n\nAdobe is using our GPUs to make https://t.co/WSiBgFmjEk video search faster, helping TV and film producers find a specific scene in years of footage.\n\nRead about both announcements from GTC Ber",
-    "text_ja": "私たちは欧州放送連合（EBU）およびAdobeと協力し、メディアチームがデータの管理を保ちながら、必要な映像をより速く見つけられるよう支援しています。\n\nEBUとは、ソブリンAIの標準を基盤に構築しており、放送局が編集の独立性を守りつつ、データの管理を保ったままAIを使えるようにします。\n\nAdobeは、テレビや映画の制作者が何年分もの映像から特定のシーンを見つけやすくするため、当社のGPUを使って動画検索を高速化しています。\n\nGTC Berlinでの両発表の詳細はこちら: https://t.co/aUPaGh0dTX"
-   },
-   "post_ids": [
+    "2112846708527018339",
+    "2112859682415243776",
+    "2112852615461773370",
     "2112677152735076822"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "post_count": 4,
+   "archived_at": "2026-10-22T13:54:50Z"
   },
   {
    "id": "86733c99f2",
@@ -396,7 +348,7 @@
    ],
    "score": 72,
    "credibility": 90,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-20T17:56:38.000Z",
    "latest": "2026-10-20T17:56:38.000Z",
    "authors": [
@@ -424,7 +376,7 @@
     "2112603916076781778"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "archived_at": "2026-10-22T13:54:50Z"
   },
   {
    "id": "53d9b8b43a",
@@ -452,7 +404,7 @@
    ],
    "score": 90,
    "credibility": 100,
-   "heat": 50,
+   "heat": 49,
    "first_seen": "2026-10-20T16:18:38.000Z",
    "latest": "2026-10-20T16:18:38.000Z",
    "authors": [
@@ -486,7 +438,7 @@
     "2112579251555721573"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "archived_at": "2026-10-22T13:54:50Z"
   },
   {
    "id": "bc10b8f437",
@@ -512,9 +464,9 @@
      "desc": "外部のソフトからAIの機能を呼び出すための窓口。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 85,
-   "heat": 44,
+   "heat": 43,
    "first_seen": "2026-10-20T16:00:12.000Z",
    "latest": "2026-10-20T16:00:12.000Z",
    "authors": [
@@ -542,7 +494,7 @@
     "2112574615318876178"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T08:46:24Z"
+   "archived_at": "2026-10-22T13:54:50Z"
   }
  ]
 }

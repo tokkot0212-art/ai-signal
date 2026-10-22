@@ -2,34 +2,34 @@
  "date": "2026-10-20",
  "items": [
   {
-   "id": "ad869b7aa0",
+   "id": "a406a0d24f",
    "verdict": "confirmed",
-   "title": "OpenAI、COBOLなど古い言語のソフト開発・移行能力の強化を発表",
-   "summary": "OpenAIは公式アカウントで、最新モデルがCOBOL・Fortran・Visual Basicといった低リソース言語でのソフトウェア構築・移行能力を高めたと投稿した。あわせて、銀行や行政などで使われるこれらの言語について、対応してほしい言語や業務フローを開発者・企業顧客から募集している。",
+   "title": "OpenAIのモデルがGoogle CloudのModel Gardenで利用可能に",
+   "summary": "OpenAIは公式アカウントで、同社の最先端モデルとCodexのエージェント型ワークフローをGoogle CloudのModel Gardenに提供すると投稿した。企業が普段開発に使っている環境から同社の技術を使えるようにする狙いが示されている。別の投稿では、COBOL、Fortran、Visual Basicなどの低リソースプログラミング言語でのソフトウェア作成・移行能力を高めたとしている。",
    "points": [
-    "古い業務システムの保守・刷新（マイグレーション）に役立つ可能性がある",
-    "投稿は能力向上の方向性を述べるのみで、具体的な性能数値や評価結果は示されていない",
-    "どの程度の精度で実務に使えるかは未確認"
+    "Model Gardenは、Google Cloud上で複数のAIモデルを選んで使うための場。複数クラウド間で利用しやすくなる点が新しい。",
+    "COBOLなどの古い言語は銀行や行政のシステムで使われており、移行支援の需要が大きいとみられる。",
+    "提供開始時期、対象地域、料金などは投稿では未確認。性能の具体的な数値も示されていない。"
    ],
    "terms": [
     {
+     "term": "Model Garden",
+     "desc": "Google Cloud上で、さまざまなAIモデルを探して利用できるサービス。"
+    },
+    {
      "term": "COBOL",
-     "desc": "1960年代に生まれた古い業務用プログラミング言語。銀行や行政の基幹システムで今も使われる。"
+     "desc": "銀行や行政などの古い基幹システムで長く使われてきたプログラミング言語。"
     },
     {
-     "term": "低リソース言語",
-     "desc": "学習データや開発者が少なく、AIが得意としにくいプログラミング言語のこと。"
-    },
-    {
-     "term": "マイグレーション",
-     "desc": "古いシステムを新しい技術環境へ移し替えること。"
+     "term": "レガシーシステム移行",
+     "desc": "古い技術で作られたシステムを、新しい技術へ作り替えたり移したりすること。"
     }
    ],
-   "score": 94,
+   "score": 98,
    "credibility": 100,
-   "heat": 59,
+   "heat": 71,
    "first_seen": "2026-10-19T22:30:05.000Z",
-   "latest": "2026-10-19T22:30:05.000Z",
+   "latest": "2026-10-21T19:23:19.000Z",
    "authors": [
     "OpenAI"
    ],
@@ -43,8 +43,13 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
+   "evidence_note": "OpenAI公式投稿",
    "links": [
+    {
+     "url": "https://openai.com/index/openai-models-google-cloud/",
+     "domain": "openai.com",
+     "primary": true
+    },
     {
      "url": "https://openai.com/index/low-resource-programming-languages/",
      "domain": "openai.com",
@@ -52,16 +57,87 @@
     }
    ],
    "post": {
-    "url": "https://x.com/OpenAI/status/2112310345863930168",
+    "url": "https://x.com/OpenAI/status/2112988118471295323",
     "username": "OpenAI",
-    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic.\n\nThese languages power software that banks, governments, and businesses depend on. Progress here means understanding decades of business logic and helping developers modernize those systems while preserving what works.\n\nWe’re building these capabilities around the challenges developers and enterprise customers bring us. If your ",
-    "text_ja": "私たちの最新のモデルの進歩により、COBOL、Fortran、Visual Basicのような低リソースのプログラミング言語でのソフトウェアの構築や移行の能力が向上しています。\n\nこれらの言語は、銀行、政府、企業が依存するソフトウェアを支えています。ここでの進歩は、何十年分もの業務ロジックを理解し、動いているものを残しつつ開発者がそれらのシステムを近代化する助けになることを意味します。\n\n私たちは、開発者や企業のお客様から寄せられる課題を中心にこれらの能力を構築しています。もしチームがこれらのシステムに取り組んでいるなら、次にどの言語やワークフローに取り組むべきか教えてください。\n\nhttps://t.co/2TbnkQixJ1"
+    "text": "OpenAI models are coming to Google Cloud.\n\nWe're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.\n\nhttps://t.co/gjuLVALjDm",
+    "text_ja": "OpenAIのモデルがGoogle Cloudに来ます。\n\n私たちの最先端モデルとCodexのエージェント型ワークフローを、Google CloudのModel Gardenに提供します。企業が普段の開発で使っている場所で、当社の技術を利用できるようにするためです。\n\nhttps://t.co/gjuLVALjDm"
    },
    "post_ids": [
+    "2112988118471295323",
     "2112310345863930168"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "post_count": 2,
+   "archived_at": "2026-10-22T00:45:54Z"
+  },
+  {
+   "id": "53c3e6767e",
+   "verdict": "confirmed",
+   "title": "ChatGPT広告の仕組みをOpenAIが解説、米大学が広告実態を調査",
+   "summary": "OpenAIの開発者向けアカウントは、ChatGPTの広告の仕組み（LLMオーケストレーター、検索、ランキング、オークションツールの連携）を説明する記事を公開した。ITmedia NEWSは、米大学が91のおとりアカウントを使ってChatGPT広告の表示実態を調べたと伝えている。",
+   "points": [
+    "新しい点: 広告を入れても回答の独立性を保つための設計を、OpenAIが公開して説明した点。",
+    "重要性: 利用者が受け取る回答に広告がどう関わるかは、ユーザーの信頼に直結する。",
+    "注意: 調査の対象や結果の詳細は、投稿だけでは判断できない。元記事と原論文での確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "オークション",
+     "desc": "複数の広告主が入札し、最も条件に合う広告を選ぶ仕組みのこと。"
+    },
+    {
+     "term": "オーケストレーター",
+     "desc": "複数の処理や部品を調整して順番に動かす役割のこと。"
+    },
+    {
+     "term": "おとりアカウント",
+     "desc": "調査のために用意した架空の利用者アカウントのこと。"
+    }
+   ],
+   "score": 91,
+   "credibility": 90,
+   "heat": 55,
+   "first_seen": "2026-10-20T03:05:09.000Z",
+   "latest": "2026-10-21T17:42:32.000Z",
+   "authors": [
+    "OpenAIDevs",
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の解説記事",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+    "username": "OpenAIDevs",
+    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent.\n\nHere’s how the LLM orchestrator, retrieval, ranking  and auction tools work together. https://t.co/oho0jXkfiQ",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2112962753682198969",
+    "2112379567881273504"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "3b8c6ca6b0",
@@ -87,9 +163,9 @@
      "desc": "モデルの数値の細かさを落として軽くし、少ないメモリで動くようにする技術のこと。"
     }
    ],
-   "score": 86,
+   "score": 85,
    "credibility": 93,
-   "heat": 50,
+   "heat": 48,
    "first_seen": "2026-10-19T18:14:17.000Z",
    "latest": "2026-10-19T19:33:10.000Z",
    "authors": [
@@ -129,7 +205,7 @@
     "2112265822274302066"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "a2254a0c9b",
@@ -146,9 +222,9 @@
      "desc": "OpenAIが提供するAIによるプログラミング支援ツール。"
     }
    ],
-   "score": 81,
+   "score": 80,
    "credibility": 90,
-   "heat": 42,
+   "heat": 40,
    "first_seen": "2026-10-19T17:09:19.000Z",
    "latest": "2026-10-19T18:01:27.000Z",
    "authors": [
@@ -176,7 +252,7 @@
     "2112242739198959913"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "49fcbfeabf",
@@ -202,9 +278,9 @@
      "desc": "大量の文章で学習した大規模言語モデル。文章の生成や理解を行うAI。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 100,
-   "heat": 28,
+   "heat": 26,
    "first_seen": "2026-10-20T11:31:58.000Z",
    "latest": "2026-10-20T11:31:58.000Z",
    "authors": [
@@ -248,7 +324,7 @@
     "2112507110290502109"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "61d4a9552a",
@@ -266,9 +342,9 @@
      "desc": "OpenAIが開発したプログラミング支援のAIサービス。コードの作成や修正を手伝う。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 37,
+   "heat": 36,
    "first_seen": "2026-10-19T19:48:30.000Z",
    "latest": "2026-10-19T19:48:30.000Z",
    "authors": [
@@ -296,31 +372,35 @@
     "2112269679154585624"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
-   "id": "5a183a4289",
+   "id": "ed81774f8f",
    "verdict": "confirmed",
-   "title": "Sakana AIが社内エンジニア向けイベントのレポートを公開",
-   "summary": "Sakana AIの公式アカウントが、10月5日に開催したエンジニア向けイベント「Sakana AI Engineer Open House 2026」のレポートを公開した。CEOのDavid Haが「AI主権」の構想を紹介し、5つの職種のメンバー7名が役割や働きがいを語ったという。5職種はいずれも積極採用中とされる。",
+   "title": "Sakana AIがエンジニア向けイベントのレポートと採用情報を公開",
+   "summary": "Sakana AI公式アカウントは、10月5日開催の「Sakana AI Engineer Open House 2026」のイベントレポートを公開したと投稿した。レポートでは、CEOのDavid Haが「AI主権」の構想を紹介し、5職種のメンバーが働き方を語ったとされる。同社は別投稿で、Product Strategy & Operationsの専任ポジションの募集も公開している。",
    "points": [
-    "AI主権は、自国や組織がAIの基盤やデータを自前で管理する考え方として一般に使われる言葉（一般的背景）。",
-    "企業の採用広報としての色合いが強く、製品や技術の新発表ではない。",
-    "どの職種がどのような業務をしているかの詳細はレポート本文で確認できる。"
+    "5職種はARE / FDE / SWE / Solution Engineer / Cybersecurity Engineerで、いずれも積極採用中と投稿にある。",
+    "Product Strategy & Operationsは特定製品ではなく製品群全体を担う役割で、将来はチームを率いることが想定されている。",
+    "企業の採用・広報発信であり、新技術や製品の発表ではない。"
    ],
    "terms": [
     {
      "term": "AI主権",
-     "desc": "国や組織が、AIの技術・データ・計算基盤を外部に頼りすぎず自ら管理しようとする考え方。"
+     "desc": "国や企業が自国のデータや計算基盤を自ら持ち、AIを主体的に運用しようという考え方。"
     },
     {
      "term": "FDE",
-     "desc": "Forward Deployed Engineerの略。顧客の現場に入り込み、AIを実際の業務に導入する役割とみられる（未確認）。"
+     "desc": "Forward Deployed Engineer。顧客先に入り込み、導入や課題解決を技術面で支援するエンジニア職とみられる（投稿に定義はなく、一般的な用法での推測）。"
+    },
+    {
+     "term": "Product Strategy & Operations",
+     "desc": "事業計画や市場調査、プロダクト横断の運営を担う職種。"
     }
    ],
-   "score": 78,
+   "score": 77,
    "credibility": 100,
-   "heat": 20,
+   "heat": 17,
    "first_seen": "2026-10-20T03:57:23.000Z",
    "latest": "2026-10-20T22:22:15.000Z",
    "authors": [
@@ -336,10 +416,15 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式のイベントレポート",
+   "evidence_note": "公式アカウントの告知・レポート",
    "links": [
     {
      "url": "https://sakana.ai/open-house-2026/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://sakana.ai/careers/business-role-product-strategy-operations/",
      "domain": "sakana.ai",
      "primary": true
     }
@@ -351,172 +436,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2112670760410169361"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-21T18:08:23Z"
-  },
-  {
-   "id": "4e096db129",
-   "verdict": "confirmed",
-   "title": "Sakana AIがProduct Strategy & Operationsの採用を開始",
-   "summary": "Sakana AIの公式アカウントが、Product Strategy & Operationsのポジションの募集を公開した。プロダクト群全体を受け持つ最初の専任メンバーを募集し、Head of Productの右腕として事業計画やKPI管理、横断プロジェクトの推進、エンタープライズ案件の体制設計を担うとしている。将来はチームを率いる役割も想定されているという。",
-   "points": [
-    "プロダクトの数とエンタープライズ案件が増えており、その体制整備の一環とみられる。",
-    "求人の告知であり、製品や技術の新発表ではない。",
-    "募集の条件や勤務地などの詳細は、リンク先で確認する必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "Product Strategy & Operations",
-     "desc": "製品戦略と事業運営を担い、事業計画や市場調査、社内の横断調整を行う職種。"
-    },
-    {
-     "term": "エンタープライズ案件",
-     "desc": "大企業や官公庁など、規模の大きな法人顧客向けの取引や導入案件のこと。"
-    }
-   ],
-   "score": 74,
-   "credibility": 100,
-   "heat": 9,
-   "first_seen": "2026-10-20T03:57:23.000Z",
-   "latest": "2026-10-20T03:57:23.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式の採用告知",
-   "links": [
-    {
-     "url": "https://sakana.ai/careers/business-role-product-strategy-operations/",
-     "domain": "sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2112392712637100095",
-    "username": "SakanaAILabs",
-    "text": "【採用情報】Product Strategy & Operationsのポジションを公開しました🐟\n\nhttps://t.co/BXhzEcKAWY\n\n今回募集するのは特定のプロダクトではなくプロダクト群全体を受け持つProduct Strategy & Operationsの最初の専任メンバーです。Head of Productのパートナーとして以下をご担当いただきます。\n\n・事業計画・KPIの管理と市場・競合調査\n・横断プロジェクトの推進\n・エンタープライズ案件のデリバリ体制設計\n\nプロダクトの数とエンタープライズ案件が増えるにつれ、将来はProduct Strategy & Operationsチームを率いていただくことを想定しています。興味を持たれた方、ぜひご応募ください🚀",
-    "text_ja": null
-   },
-   "post_ids": [
+    "2112670760410169361",
     "2112392712637100095"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
-  },
-  {
-   "id": "05c261e79b",
-   "verdict": "confirmed",
-   "title": "NVIDIAがベルリンでGTCの基調講演を予告",
-   "summary": "NVIDIAの公式AIアカウントは、ベルリンが@NVIDIAGTCの開催地として素晴らしいと投稿し、翌日のJensen Huang氏の基調講演での発表を追うよう呼びかけた。投稿に具体的な発表内容は含まれていない。",
-   "points": [
-    "GTCはNVIDIAが主催するAI・GPU関連の大規模な開発者向けイベント",
-    "基調講演で何が発表されるかは、投稿時点では不明",
-    "講演内容は後日、公式発表で確認するのが確実"
-   ],
-   "terms": [
-    {
-     "term": "GTC",
-     "desc": "NVIDIAが毎年開く、AIや半導体技術の大規模イベント"
-    },
-    {
-     "term": "基調講演（キーノート）",
-     "desc": "イベントの冒頭に行われ、主要な発表が行われる講演"
-    }
-   ],
-   "score": 71,
-   "credibility": 90,
-   "heat": 17,
-   "first_seen": "2026-10-20T12:43:48.000Z",
-   "latest": "2026-10-20T12:43:48.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112525188273250336",
-    "username": "NVIDIAAI",
-    "text": "Berlin is an epic location for @NVIDIAGTC! \n\nFollow along for announcements from Jensen's keynote tomorrow. https://t.co/J1vzZ07wSY",
-    "text_ja": "ベルリンは@NVIDIAGTCにとって素晴らしい開催地です！明日のJensenの基調講演での発表をぜひフォローしてください。"
-   },
-   "post_ids": [
-    "2112525188273250336"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
-  },
-  {
-   "id": "70105ab0f4",
-   "verdict": "confirmed",
-   "title": "NVIDIA、PyTorchへの対応と開発者コミュニティへの貢献をアピール",
-   "summary": "NVIDIAの公式AIアカウントは、PyTorchに「初日から」対応してきたとし、CUDAサポートを含むダウンロード数が月5,000万超であると投稿した。あわせて、北米のPyTorch Conferenceに参加するよう呼びかけた。",
-   "points": [
-    "PyTorchは広く使われる深層学習フレームワークで、GPU対応の状況は開発者の環境選択に影響する",
-    "「月5,000万超のダウンロード」は自社による集計で、算出方法は投稿からは分からない",
-    "イベント告知を含むため、主旨は発信元の自己PRである点に注意"
-   ],
-   "terms": [
-    {
-     "term": "PyTorch",
-     "desc": "AI研究や開発で広く使われる深層学習のプログラミング基盤（フレームワーク）。"
-    },
-    {
-     "term": "CUDA",
-     "desc": "NVIDIAのGPUで計算処理を行うための開発環境・仕組み。"
-    }
-   ],
-   "score": 69,
-   "credibility": 90,
-   "heat": 12,
-   "first_seen": "2026-10-20T07:56:29.000Z",
-   "latest": "2026-10-20T07:56:29.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112452885338288577",
-    "username": "NVIDIAAI",
-    "text": "NVIDIA 💚 PyTorch since day 0.\n\nCheers to building AI together, from early research to one of the fastest-growing deep learning frameworks.\n\n50+ million monthly downloads with CUDA support.\n\nJoin us at @PyTorch Conference North America 2026 this week! https://t.co/h28YNmdyXg",
-    "text_ja": "NVIDIA 💚 PyTorch は誕生初日から。\n\n初期の研究から、最も急成長しているディープラーニングフレームワークの一つまで、AIをともに築いてきたことに乾杯。\n\nCUDAサポート付きで月間5,000万以上のダウンロード。\n\n今週開催の PyTorch Conference North America 2026 にぜひご参加ください！ https://t.co/h28YNmdyXg"
-   },
-   "post_ids": [
-    "2112452885338288577"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "post_count": 2,
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "31217c6fc4",
@@ -539,7 +463,7 @@
    ],
    "score": 69,
    "credibility": 85,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-19T16:10:15.000Z",
    "latest": "2026-10-19T16:10:15.000Z",
    "authors": [
@@ -567,7 +491,59 @@
     "2112214753980612886"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
+  },
+  {
+   "id": "70105ab0f4",
+   "verdict": "confirmed",
+   "title": "NVIDIA、PyTorchへの対応と開発者コミュニティへの貢献をアピール",
+   "summary": "NVIDIAの公式AIアカウントは、PyTorchに「初日から」対応してきたとし、CUDAサポートを含むダウンロード数が月5,000万超であると投稿した。あわせて、北米のPyTorch Conferenceに参加するよう呼びかけた。",
+   "points": [
+    "PyTorchは広く使われる深層学習フレームワークで、GPU対応の状況は開発者の環境選択に影響する",
+    "「月5,000万超のダウンロード」は自社による集計で、算出方法は投稿からは分からない",
+    "イベント告知を含むため、主旨は発信元の自己PRである点に注意"
+   ],
+   "terms": [
+    {
+     "term": "PyTorch",
+     "desc": "AI研究や開発で広く使われる深層学習のプログラミング基盤（フレームワーク）。"
+    },
+    {
+     "term": "CUDA",
+     "desc": "NVIDIAのGPUで計算処理を行うための開発環境・仕組み。"
+    }
+   ],
+   "score": 68,
+   "credibility": 90,
+   "heat": 11,
+   "first_seen": "2026-10-20T07:56:29.000Z",
+   "latest": "2026-10-20T07:56:29.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112452885338288577",
+    "username": "NVIDIAAI",
+    "text": "NVIDIA 💚 PyTorch since day 0.\n\nCheers to building AI together, from early research to one of the fastest-growing deep learning frameworks.\n\n50+ million monthly downloads with CUDA support.\n\nJoin us at @PyTorch Conference North America 2026 this week! https://t.co/h28YNmdyXg",
+    "text_ja": "NVIDIA 💚 PyTorch は誕生初日から。\n\n初期の研究から、最も急成長しているディープラーニングフレームワークの一つまで、AIをともに築いてきたことに乾杯。\n\nCUDAサポート付きで月間5,000万以上のダウンロード。\n\n今週開催の PyTorch Conference North America 2026 にぜひご参加ください！ https://t.co/h28YNmdyXg"
+   },
+   "post_ids": [
+    "2112452885338288577"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "e6ef99b10b",
@@ -593,9 +569,9 @@
      "desc": "光を波長ごとに分けたもの。原子の種類によって固有のパターンが出る。"
     }
    ],
-   "score": 82,
+   "score": 81,
    "credibility": 90,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-10-20T14:53:53.000Z",
    "latest": "2026-10-20T14:53:53.000Z",
    "authors": [
@@ -623,7 +599,7 @@
     "2112557925264752930"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "6f39462741",
@@ -647,7 +623,7 @@
    ],
    "score": 60,
    "credibility": 78,
-   "heat": 21,
+   "heat": 20,
    "first_seen": "2026-10-20T07:05:10.000Z",
    "latest": "2026-10-20T07:05:10.000Z",
    "authors": [
@@ -681,7 +657,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "cd82ab275d",
@@ -705,7 +681,7 @@
    ],
    "score": 58,
    "credibility": 78,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -740,7 +716,7 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   },
   {
    "id": "bee6a1432d",
@@ -757,9 +733,9 @@
      "desc": "AIと文章でやり取りできるサービス。キャラクターを模したものも作られている。"
     }
    ],
-   "score": 57,
+   "score": 56,
    "credibility": 78,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-20T08:55:09.000Z",
    "latest": "2026-10-20T08:55:09.000Z",
    "authors": [
@@ -793,61 +769,7 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
-  },
-  {
-   "id": "248659d16d",
-   "verdict": "promising",
-   "title": "ChatGPT広告の表示内容を米大学が91のおとりアカウントで調査",
-   "summary": "ITmedia NEWSは、米国の大学が91のおとりアカウント（調査用の偽装アカウント）を使い、ChatGPTの広告が誰に何を表示しているかを調べた報告を伝えた。投稿は見出しと記事リンクのみで、結果の詳細は本文からは確認できない。",
-   "points": [
-    "広告が利用者ごとに異なって表示されるかどうかは、AI サービスの透明性に関わる重要な論点。",
-    "利用者は、AIの回答と広告の区別や、広告の表示基準について注意を払う必要がある。",
-    "調査の手法や広告の具体的内容は記事本文での確認が必要で、本投稿では未確認。"
-   ],
-   "terms": [
-    {
-     "term": "おとりアカウント",
-     "desc": "調査のために用意する、実在の利用者を装った偽のアカウントのこと。"
-    }
-   ],
-   "score": 56,
-   "credibility": 78,
-   "heat": 10,
-   "first_seen": "2026-10-20T03:05:09.000Z",
-   "latest": "2026-10-20T03:05:09.000Z",
-   "authors": [
-    "itmedia_news"
-   ],
-   "author_labels": [
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia記事（米大学の調査）",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/itmedia_news/status/2112379567881273504",
-    "username": "itmedia_news",
-    "text": "ChatGPT広告は誰に何を表示しているのか？　米大学が91のおとりアカウントで実態調査\nhttps://t.co/pJrNf2Ddyw",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2112379567881273504"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-21T18:08:23Z"
+   "archived_at": "2026-10-22T00:45:54Z"
   }
  ]
 }

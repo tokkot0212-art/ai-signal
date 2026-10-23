@@ -2,37 +2,36 @@
  "date": "2026-10-21",
  "items": [
   {
-   "id": "8078d3f88f",
+   "id": "55c0d17444",
    "verdict": "confirmed",
-   "title": "Claude Security、コード変更に追従する再スキャン機能を公開ベータ",
-   "summary": "Anthropicの公式アカウントは、Claude Securityがリポジトリを一度接続すると深い初回スキャンを行い、その後コードの変更に合わせて再スキャンすると発表した。この機能はClaude Enterpriseで公開ベータとして提供される。日本語の投稿では、Codex Securityを使ってiOS・Androidアプリの脆弱性をチェックする方法が紹介されている。",
+   "title": "Claudeの全プランで自動モードが既定に、Claude Securityも更新",
+   "summary": "Anthropic公式Claudeアカウントは、来週から Claudeのウェブ・デスクトップ・モバイルアプリのセッションを Pro、Max、Teamプランで既定の自動モードにすると発表した。自動モードでは、各操作の承認を求めず自動チェックで危険な操作をブロックし、いつでも手動に戻せるという。あわせて、Claude Securityがコードの変更に追従して再スキャンする機能が、Claude Enterpriseで公開ベータとして提供されると発表した。",
    "points": [
-    "新しい点: 一度の接続後、コード変更に合わせて再スキャンされ、検出結果が現在のコードに近い状態に保たれるとされる",
-    "注意点: 提供対象はClaude Enterpriseの公開ベータで、一般ユーザー向けではない",
-    "日本語投稿は個人プログラマーによるCodex Securityの紹介で、Claude Securityの検証結果ではない"
+    "自動モードが既定になると、これまで一つずつ承認していた操作が自動で進むため、作業効率が上がる一方、誤った操作を見逃さないかの確認が必要になる。",
+    "「危険な操作をブロックする」自動チェックの具体的な判定基準は投稿には書かれていないため、未確認である。",
+    "Claude Securityは現在Enterpriseプランでの公開ベータであり、一般提供の時期などは投稿からは分からない。"
    ],
    "terms": [
     {
-     "term": "脆弱性",
-     "desc": "ソフトウェアに残るセキュリティ上の弱点。悪用されると不正アクセスなどにつながる。"
-    },
-    {
-     "term": "リポジトリ",
-     "desc": "ソフトウェアのコードや変更履歴をまとめて保管する場所。"
+     "term": "自動モード",
+     "desc": "AIが各操作の承認を求めず、一定のチェックのもとで作業を進める設定。"
     },
     {
      "term": "公開ベータ",
-     "desc": "正式版の前に、一部の利用者向けに広く試してもらう提供段階。"
+     "desc": "正式提供の前に、一般の利用者が試せる段階で提供される状態。"
+    },
+    {
+     "term": "リポジトリ",
+     "desc": "ソースコードや変更履歴をまとめて保管する場所。"
     }
    ],
-   "score": 91,
+   "score": 93,
    "credibility": 85,
-   "heat": 63,
+   "heat": 80,
    "first_seen": "2026-10-21T08:20:56.000Z",
-   "latest": "2026-10-21T17:40:31.000Z",
+   "latest": "2026-10-22T20:04:24.000Z",
    "authors": [
-    "claudeai",
-    "npaka123"
+    "claudeai"
    ],
    "author_labels": [
     {
@@ -40,36 +39,24 @@
      "label": "Anthropic（Claude公式アカウント）",
      "type": "official",
      "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/ne130d9f5c091?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
+   "evidence_note": "Claude公式アカウントの告知",
+   "links": [],
    "post": {
-    "url": "https://x.com/claudeai/status/2112962248218148878",
+    "url": "https://x.com/claudeai/status/2113360845409583307",
     "username": "claudeai",
-    "text": "Claude Security now keeps up with your code as it changes.\n\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\n\nIn public beta on Claude Enterprise. https://t.co/J5kPSEhWp3",
-    "text_ja": "Claude Securityがコードの変更に合わせて追従するようになりました。\n\nリポジトリを一度接続すれば、Claudeが最初に深いスキャンを行い、その後は変更が反映されるたびに再スキャンします。そのため、検出結果はコードの現在の状態に近い形で保たれます。\n\nClaude Enterpriseで公開ベータとして提供中です。 https://t.co/J5kPSEhWp3"
+    "text": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime. https://t.co/g9yvbMWH6X",
+    "text_ja": null
    },
    "post_ids": [
-    "2112962248218148878",
-    "2112821425447010627"
+    "2113360845409583307",
+    "2112962248218148878"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "f85daf49ac",
@@ -91,9 +78,9 @@
      "desc": "兵器の数や使用を国際的に制限・管理する取り決めや仕組みのこと。"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 100,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-10-20T21:10:19.000Z",
    "latest": "2026-10-21T16:38:56.000Z",
    "authors": [
@@ -127,7 +114,7 @@
     "2112946750264676743"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "29ebcddc23",
@@ -153,9 +140,9 @@
      "desc": "現実世界の物理法則（重力や流体など）を理解・予測するAIの総称とみられる。"
     }
    ],
-   "score": 86,
+   "score": 85,
    "credibility": 100,
-   "heat": 39,
+   "heat": 37,
    "first_seen": "2026-10-21T11:35:00.000Z",
    "latest": "2026-10-21T11:35:00.000Z",
    "authors": [
@@ -189,7 +176,7 @@
     "2112870261829603589"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "09617b79c9",
@@ -213,7 +200,7 @@
    ],
    "score": 78,
    "credibility": 90,
-   "heat": 35,
+   "heat": 34,
    "first_seen": "2026-10-20T15:24:47.000Z",
    "latest": "2026-10-20T15:24:47.000Z",
    "authors": [
@@ -241,7 +228,7 @@
     "2112565702552940794"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "fb6b47990d",
@@ -267,9 +254,9 @@
      "desc": "プログラムの実行中に、アクセス権などを監視・制限する仕組み。"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 93,
-   "heat": 21,
+   "heat": 19,
    "first_seen": "2026-10-21T10:01:24.000Z",
    "latest": "2026-10-21T10:01:24.000Z",
    "authors": [
@@ -303,187 +290,7 @@
     "2112846708527018339"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
-  },
-  {
-   "id": "9966d38fec",
-   "verdict": "confirmed",
-   "title": "NVIDIA、GTCベルリンで欧州産業向けの活用事例を紹介",
-   "summary": "NVIDIAの公式AIアカウントは、GTCベルリンにおける欧州の産業分野でのAI活用を紹介した。CUDA-XやOmniverse、Cosmos、Nemotronなどのライブラリ・オープンモデルを使い、Agile Robots、Audi、Dassault Systèmes、Schaeffler、Siemensなどが設計の試行や工場運営の改善に取り組んでいるとしている。",
-   "points": [
-    "Omniverseは工場や設計をデジタル上で再現(シミュレーション)するための基盤とされる",
-    "欧州メーカーでの具体的な導入事例は、詳細は投稿リンク先の発表で確認が必要",
-    "企業側の発表であり、効果の大きさは第三者による検証がまだ見えていない"
-   ],
-   "terms": [
-    {
-     "term": "GTC",
-     "desc": "NVIDIAが開催する開発者向けの大型技術イベント"
-    },
-    {
-     "term": "Omniverse",
-     "desc": "工場やロボットなどを仮想空間で再現・シミュレーションするNVIDIAの基盤"
-    },
-    {
-     "term": "Nemotron",
-     "desc": "NVIDIAが公開しているオープンなAIモデルのシリーズ"
-    }
-   ],
-   "score": 72,
-   "credibility": 93,
-   "heat": 16,
-   "first_seen": "2026-10-21T10:52:57.000Z",
-   "latest": "2026-10-21T10:52:57.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://nvda.ws/4BnYgGT",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112859682415243776",
-    "username": "NVIDIAAI",
-    "text": "Europe’s industrial future is taking shape at GTC Berlin.\n\nWith our CUDA-X and Omniverse libraries, plus Cosmos and Nemotron open models and tools, Europe’s industrial leaders are testing designs faster, simulating robots and improving factory operations.\n\nLearn how Agile Robots, @Audi, @Dassault3DS, Schaeffler and @Siemens  are putting these technologies to work: https://t.co/x7BUiGhjDi",
-    "text_ja": "ヨーロッパの産業の未来はGTCベルリンで形になりつつあります。\n\nCUDA-XとOmniverseのライブラリ、そしてCosmosとNemotronのオープンモデルやツールにより、欧州の産業のリーダー企業は設計をより速く試し、ロボットをシミュレーションし、工場の運営を改善しています。\n\nAgile Robots、@Audi、@Dassault3DS、Schaeffler、@Siemens などがこれらの技術をどのように活用しているかはこちら: https://t.co/x7BUiGhjDi"
-   },
-   "post_ids": [
-    "2112859682415243776"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
-  },
-  {
-   "id": "c79a19ab89",
-   "verdict": "confirmed",
-   "title": "NVIDIA、AIエージェント向けの新ツールをGTCベルリンで追加",
-   "summary": "NVIDIAの公式AIアカウントは、GTCベルリンにおいて「NVIDIA Agent Knowledge Foundation」を「NVIDIA Agent Toolkit」に追加すると発表した。このツールはエージェントが関連情報を見つけ、予測を行い、次に何をすべきか判断する支援をするとしている。あわせて「OpenShell」は、チームがエージェントのアクセス範囲と動作を管理できる機能だと説明している。",
-   "points": [
-    "AIエージェントが社内の情報を理解して使えるようにする点が新しい方向性とされる",
-    "どのような企業・業務で使われるかは投稿からは分からない",
-    "エージェントに与える権限の管理(OpenShell)は、安全面で重要になるとみられる"
-   ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "人の指示を受けて、AIが情報収集や作業を自律的に進める仕組み"
-    },
-    {
-     "term": "Agent Toolkit",
-     "desc": "AIエージェントを開発・運用するためのNVIDIAのツール群"
-    },
-    {
-     "term": "サンドボックス的な権限管理",
-     "desc": "AIが触れてよい情報や操作の範囲を制限する仕組み(OpenShellはこの役割とされる)"
-    }
-   ],
-   "score": 72,
-   "credibility": 93,
-   "heat": 15,
-   "first_seen": "2026-10-21T10:24:53.000Z",
-   "latest": "2026-10-21T10:24:53.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://nvda.ws/4zJtVRh",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112852615461773370",
-    "username": "NVIDIAAI",
-    "text": "AI agents need to know your business to be useful.\n\nAt GTC Berlin, we’re adding NVIDIA Agent Knowledge Foundation to NVIDIA Agent Toolkit. It helps agents find relevant information, make predictions and help people decide what to do next.\n\nOpenShell gives teams control over what agents can access and do.\n\nLearn more: https://t.co/B7Zl4wDtTi",
-    "text_ja": "AIエージェントは、役に立つために御社のビジネスを理解する必要があります。\n\nGTCベルリンで、NVIDIA Agent Toolkit に NVIDIA Agent Knowledge Foundation を追加します。これはエージェントが関連情報を見つけ、予測を行い、人々が次に何をすべきか判断する手助けをします。\n\nOpenShellにより、チームはエージェントがアクセスできる内容と実行できる操作を管理できます。\n\n詳細: https://t.co/B7Zl4wDtTi"
-   },
-   "post_ids": [
-    "2112852615461773370"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
-  },
-  {
-   "id": "86733c99f2",
-   "verdict": "confirmed",
-   "title": "OpenAI APIで12時間のプロンプトキャッシュを選択可能に",
-   "summary": "OpenAI開発者向け公式アカウントは、APIで12時間のプロンプトキャッシュを選べるようになったと発表した。投稿では、dotsのような常駐型エージェントが一日を通じて文脈を再利用する例が挙げられ、数時間空いたリクエストでも共通の指示・ツール・文脈を長く保持し、キャッシュ済み入力の低い料金を支払えるとしている。",
-   "points": [
-    "数時間おきに呼び出すエージェント型のアプリで、再送コストを抑えられる可能性がある",
-    "キャッシュ時間が長くなることで、同じ指示を毎回送る手間や料金が減るとみられる",
-    "具体的な料金差・保持条件・対象モデルは投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "プロンプトキャッシュ",
-     "desc": "毎回同じ指示や資料を送る代わりに、AI側に一時保存して再利用する仕組み。"
-    },
-    {
-     "term": "キャッシュ済み入力",
-     "desc": "保存済みの入力分として、通常より安く課金される部分のこと。"
-    },
-    {
-     "term": "常駐型エージェント",
-     "desc": "人が指示しなくても、継続的に動いて作業を進めるAIプログラムのこと。"
-    }
-   ],
-   "score": 71,
-   "credibility": 90,
-   "heat": 17,
-   "first_seen": "2026-10-20T17:56:38.000Z",
-   "latest": "2026-10-20T17:56:38.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントの機能発表",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
-    "username": "OpenAIDevs",
-    "text": "You can now choose 12-hour prompt caching in the API.\n\nPersistent agents, like dots, reuse context throughout the day. \n\nYou can keep shared instructions, tools, and context cached longer and pay the lower cached-input rate, even when requests are hours apart.",
-    "text_ja": "APIで12時間のプロンプトキャッシュを選べるようになりました。\n\ndotsのような常駐型のエージェントは、一日を通してコンテキストを再利用します。\n\n共有の指示、ツール、コンテキストをより長くキャッシュしておけるため、リクエストが数時間空いても、キャッシュ入力の低い料金で済みます。"
-   },
-   "post_ids": [
-    "2112603916076781778"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "a69c65f33d",
@@ -511,7 +318,7 @@
    ],
    "score": 71,
    "credibility": 93,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-20T22:47:39.000Z",
    "latest": "2026-10-20T22:47:39.000Z",
    "authors": [
@@ -550,7 +357,131 @@
     "2112677152735076822"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
+  },
+  {
+   "id": "083d9dc463",
+   "verdict": "confirmed",
+   "title": "NVIDIAがGTC Berlinで欧州向けのAIエージェント関連発表",
+   "summary": "NVIDIAの公式AIアカウントが、GTC Berlinで「NVIDIA Agent Knowledge Foundation」をNVIDIA Agent Toolkitに追加すると発表した。この機能はエージェントが関連情報を見つけ、予測を行い、次の行動を判断する手助けをするとされる。あわせて、Agile Robots、Audi、Dassault3DS、Schaeffler、Siemensなどの欧州企業がCUDA-XやOmniverseなどの技術を使っている事例も紹介された。",
+   "points": [
+    "AIエージェントが企業の業務情報を理解して動くための基盤として、NVIDIAが製品群を拡充する動き。",
+    "OpenShellにより、エージェントがアクセスできる範囲や実行できる操作を企業側で管理できるとされる。",
+    "欧州企業の導入事例は投稿で紹介された範囲に限られ、提供開始時期や料金などは投稿からは不明。"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受けて、情報収集や操作を自動で行うAIのこと。"
+    },
+    {
+     "term": "GTC",
+     "desc": "NVIDIAが毎年開催する技術カンファレンス。Berlinはその欧州開催回。"
+    },
+    {
+     "term": "Omniverse",
+     "desc": "NVIDIAの3Dシミュレーションや産業向けデジタルツイン用のプラットフォーム。"
+    }
+   ],
+   "score": 71,
+   "credibility": 93,
+   "heat": 14,
+   "first_seen": "2026-10-21T10:24:53.000Z",
+   "latest": "2026-10-21T10:52:57.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの発表投稿",
+   "links": [
+    {
+     "url": "https://nvda.ws/4zJtVRh",
+     "domain": "nvda.ws",
+     "primary": false
+    },
+    {
+     "url": "https://nvda.ws/4BnYgGT",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112852615461773370",
+    "username": "NVIDIAAI",
+    "text": "AI agents need to know your business to be useful.\n\nAt GTC Berlin, we’re adding NVIDIA Agent Knowledge Foundation to NVIDIA Agent Toolkit. It helps agents find relevant information, make predictions and help people decide what to do next.\n\nOpenShell gives teams control over what agents can access and do.\n\nLearn more: https://t.co/B7Zl4wDtTi",
+    "text_ja": "AIエージェントは、役に立つために御社のビジネスを理解する必要があります。\n\nGTCベルリンで、NVIDIA Agent Toolkit に NVIDIA Agent Knowledge Foundation を追加します。これはエージェントが関連情報を見つけ、予測を行い、人々が次に何をすべきか判断する手助けをします。\n\nOpenShellにより、チームはエージェントがアクセスできる内容と実行できる操作を管理できます。\n\n詳細: https://t.co/B7Zl4wDtTi"
+   },
+   "post_ids": [
+    "2112852615461773370",
+    "2112859682415243776"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-23T08:42:25Z"
+  },
+  {
+   "id": "86733c99f2",
+   "verdict": "confirmed",
+   "title": "OpenAI APIで12時間のプロンプトキャッシュを選択可能に",
+   "summary": "OpenAI開発者向け公式アカウントは、APIで12時間のプロンプトキャッシュを選べるようになったと発表した。投稿では、dotsのような常駐型エージェントが一日を通じて文脈を再利用する例が挙げられ、数時間空いたリクエストでも共通の指示・ツール・文脈を長く保持し、キャッシュ済み入力の低い料金を支払えるとしている。",
+   "points": [
+    "数時間おきに呼び出すエージェント型のアプリで、再送コストを抑えられる可能性がある",
+    "キャッシュ時間が長くなることで、同じ指示を毎回送る手間や料金が減るとみられる",
+    "具体的な料金差・保持条件・対象モデルは投稿からは分からない"
+   ],
+   "terms": [
+    {
+     "term": "プロンプトキャッシュ",
+     "desc": "毎回同じ指示や資料を送る代わりに、AI側に一時保存して再利用する仕組み。"
+    },
+    {
+     "term": "キャッシュ済み入力",
+     "desc": "保存済みの入力分として、通常より安く課金される部分のこと。"
+    },
+    {
+     "term": "常駐型エージェント",
+     "desc": "人が指示しなくても、継続的に動いて作業を進めるAIプログラムのこと。"
+    }
+   ],
+   "score": 70,
+   "credibility": 90,
+   "heat": 16,
+   "first_seen": "2026-10-20T17:56:38.000Z",
+   "latest": "2026-10-20T17:56:38.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの機能発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+    "username": "OpenAIDevs",
+    "text": "You can now choose 12-hour prompt caching in the API.\n\nPersistent agents, like dots, reuse context throughout the day. \n\nYou can keep shared instructions, tools, and context cached longer and pay the lower cached-input rate, even when requests are hours apart.",
+    "text_ja": "APIで12時間のプロンプトキャッシュを選べるようになりました。\n\ndotsのような常駐型のエージェントは、一日を通してコンテキストを再利用します。\n\n共有の指示、ツール、コンテキストをより長くキャッシュしておけるため、リクエストが数時間空いても、キャッシュ入力の低い料金で済みます。"
+   },
+   "post_ids": [
+    "2112603916076781778"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "53d9b8b43a",
@@ -576,9 +507,9 @@
      "desc": "毒を中和するために使う薬。通常は動物に毒を注射して作るため、高価で作るのに時間がかかることがある。"
     }
    ],
-   "score": 89,
+   "score": 88,
    "credibility": 100,
-   "heat": 47,
+   "heat": 45,
    "first_seen": "2026-10-20T16:18:38.000Z",
    "latest": "2026-10-20T16:18:38.000Z",
    "authors": [
@@ -612,7 +543,7 @@
     "2112579251555721573"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   },
   {
    "id": "bc10b8f437",
@@ -640,7 +571,7 @@
    ],
    "score": 77,
    "credibility": 85,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-10-20T16:00:12.000Z",
    "latest": "2026-10-20T16:00:12.000Z",
    "authors": [
@@ -668,7 +599,7 @@
     "2112574615318876178"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   }
  ]
 }

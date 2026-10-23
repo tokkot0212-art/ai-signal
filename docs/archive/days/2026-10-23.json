@@ -2,6 +2,180 @@
  "date": "2026-10-23",
  "items": [
   {
+   "id": "d8632c5aa1",
+   "verdict": "confirmed",
+   "title": "Anthropic、Claudeで100超のOSSライブラリを形式検証",
+   "summary": "Anthropicは公式ブログで、Frontier Red Teamの研究として、Claudeを使ってソフトウェアを大規模に形式検証したと発表した。投稿によると、Theorem Labsとの協業で、数週間にわたり100を超える実world のオープンソースライブラリでセキュリティ特性を証明したという。",
+   "points": [
+    "形式検証は、コードに特定のバグがないことを数学的に証明する手法で、従来は小規模なコードにしか現実的でなかった。",
+    "AIの支援により大規模な適用が可能になりつつあることが示された。ソフトウェアの安全性確保の省力化につながる可能性がある。",
+    "投稿には個々の結果の詳細は含まれていないため、どの程度の証明が成立したか、実務でどこまで使えるかは本文を確認する必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "形式検証",
+     "desc": "プログラムが仕様どおり動くことを、数学的な証明で確かめる手法。"
+    },
+    {
+     "term": "Frontier Red Team",
+     "desc": "Anthropicが最先端モデルの危険性や安全性を検証する専門チーム。"
+    },
+    {
+     "term": "オープンソースライブラリ",
+     "desc": "ソースコードが公開され、誰でも利用・改変できるソフトウェアの部品。"
+    }
+   ],
+   "score": 100,
+   "credibility": 100,
+   "heat": 77,
+   "first_seen": "2026-10-22T22:01:06.000Z",
+   "latest": "2026-10-22T22:01:06.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式ブログ",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/formal-verification",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+    "username": "AnthropicAI",
+    "text": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale.\n\nFormal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time).\n\nWith AI models, however, this is beginning to change. In collaboration with @theoremlabs, we used Claude to prove security properties in over one hundred real-world open-source libraries over the span of a few weeks.\n\nRead our research in ful",
+    "text_ja": "Frontier Red Teamブログに新しい記事を公開しました。Claudeを使って、大規模なソフトウェアを形式検証（フォーマル検証）する取り組みについてです。\n\n形式検証を使えば、コードが特定の種類のバグを含まないことを証明できます。しかしこれまでは、小規模なコードベースに限られるか、専門家による多大な時間を必要としていました。\n\nとはいえ、AIモデルの登場によって状況は変わり始めています。@theoremlabsと共同で、Claudeを使い、数週間のうちに100を超える実際のオープンソースライブラリのセキュリティ特性を証明しました。\n\n研究の全文はこちらからお読みいただけます: https://t.co/zUyx8CjBEk"
+   },
+   "post_ids": [
+    "2113390212911083894"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T08:42:25Z"
+  },
+  {
+   "id": "461411bcd5",
+   "verdict": "confirmed",
+   "title": "Google Cloud上でAnthropic管理のClaudeモデルが一般提供",
+   "summary": "Anthropic公式Claudeアカウントは、Google Cloud上の「Claude Models on Google Cloud（Anthropic managed）」が一般提供（GA）になったと発表した。投稿では、Google CloudのIAM認証情報や課金、コミットメントの消化など、Claude Platformの機能一式が使えるとしている。",
+   "points": [
+    "利用企業は既存のGoogle Cloudの認証・課金の仕組みでClaudeを使えるようになり、導入や管理が簡単になるとみられる。",
+    "「Anthropic managed」とあるため、運用主体の違い（Google側かAnthropic側か）は投稿だけでは詳細不明である。",
+    "料金や対応リージョンなどの細部は投稿からは分からないため、導入前に公式ドキュメントの確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "一般提供（GA）",
+     "desc": "試験段階を終え、誰でも正式に利用できるようになった状態。"
+    },
+    {
+     "term": "IAM",
+     "desc": "クラウド上で誰がどのサービスを使えるかを管理する認証・権限の仕組み。"
+    },
+    {
+     "term": "コミットメント",
+     "desc": "一定量の利用を約束する代わりに割引を受ける契約形態。"
+    }
+   ],
+   "score": 88,
+   "credibility": 85,
+   "heat": 68,
+   "first_seen": "2026-10-22T21:21:00.000Z",
+   "latest": "2026-10-22T21:21:00.000Z",
+   "authors": [
+    "claudeai"
+   ],
+   "author_labels": [
+    {
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Claude公式アカウントの告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/claudeai/status/2113380122468454765",
+    "username": "claudeai",
+    "text": "Claude Models on Google Cloud (Anthropic managed) is now generally available.\n\nGet the full set of Claude Platform features on Google Cloud, with Google Cloud IAM credentials, billing, and commitment retirement. https://t.co/JyRT8Y401r",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2113380122468454765"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T08:42:25Z"
+  },
+  {
+   "id": "296ec1d1ab",
+   "verdict": "confirmed",
+   "title": "OpenAI、Decisions APIを一般提供開始",
+   "summary": "OpenAIの開発者向け公式アカウントは、Decisions APIが一般提供（GA）になったと発表した。投稿によると、このAPIはテキストや画像の分類、入力の評価、次の処理の判断を、完全なモデル応答を生成せずに行えるとしている。",
+   "points": [
+    "判断だけを素早く返すため、従来の全文生成より速くコストを抑えられる可能性があるとされる。開発者にとって用途が広がる。",
+    "具体的な料金や速度の数値は投稿には書かれていないため未確認である。",
+    "「完全なモデル応答を生成しない」仕組みの詳細は、公式ドキュメントで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士が機能をやり取りするための接続の仕組み。"
+    },
+    {
+     "term": "一般提供（GA）",
+     "desc": "試験段階を終え、誰でも正式に利用できるようになった状態。"
+    },
+    {
+     "term": "モデル応答",
+     "desc": "AIモデルが入力に対して生成する文章や結果のこと。"
+    }
+   ],
+   "score": 86,
+   "credibility": 90,
+   "heat": 55,
+   "first_seen": "2026-10-22T19:07:58.000Z",
+   "latest": "2026-10-22T19:07:58.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の開発者向け告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
+    "username": "OpenAIDevs",
+    "text": "Add near real-time decisions to your workflow with the Decisions API, now generally available.\n\nBuild faster, more cost-efficient apps and agents that can classify text and images, evaluate inputs, and determine what happens next without generating a full model response. https://t.co/XxNe5Sqb2b",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2113346642787086538"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T08:42:25Z"
+  },
+  {
    "id": "252ac05067",
    "verdict": "confirmed",
    "title": "OpenAI、外部評価機関METRらと内部監視システムを共同検証",
@@ -25,9 +199,9 @@
      "desc": "開発元とは別の外部組織が、製品や安全性を客観的に評価すること。"
     }
    ],
-   "score": 88,
+   "score": 85,
    "credibility": 90,
-   "heat": 59,
+   "heat": 52,
    "first_seen": "2026-10-22T15:57:59.000Z",
    "latest": "2026-10-22T15:57:59.000Z",
    "authors": [
@@ -55,7 +229,7 @@
     "2113298833392496746"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T00:45:32Z"
+   "archived_at": "2026-10-23T08:42:25Z"
   }
  ]
 }

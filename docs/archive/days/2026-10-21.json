@@ -2,6 +2,76 @@
  "date": "2026-10-21",
  "items": [
   {
+   "id": "8078d3f88f",
+   "verdict": "confirmed",
+   "title": "Claude Security、コード変更に追従する再スキャン機能を公開ベータ",
+   "summary": "Anthropicの公式アカウントは、Claude Securityがリポジトリを一度接続すると深い初回スキャンを行い、その後コードの変更に合わせて再スキャンすると発表した。この機能はClaude Enterpriseで公開ベータとして提供される。日本語の投稿では、Codex Securityを使ってiOS・Androidアプリの脆弱性をチェックする方法が紹介されている。",
+   "points": [
+    "新しい点: 一度の接続後、コード変更に合わせて再スキャンされ、検出結果が現在のコードに近い状態に保たれるとされる",
+    "注意点: 提供対象はClaude Enterpriseの公開ベータで、一般ユーザー向けではない",
+    "日本語投稿は個人プログラマーによるCodex Securityの紹介で、Claude Securityの検証結果ではない"
+   ],
+   "terms": [
+    {
+     "term": "脆弱性",
+     "desc": "ソフトウェアに残るセキュリティ上の弱点。悪用されると不正アクセスなどにつながる。"
+    },
+    {
+     "term": "リポジトリ",
+     "desc": "ソフトウェアのコードや変更履歴をまとめて保管する場所。"
+    },
+    {
+     "term": "公開ベータ",
+     "desc": "正式版の前に、一部の利用者向けに広く試してもらう提供段階。"
+    }
+   ],
+   "score": 91,
+   "credibility": 85,
+   "heat": 63,
+   "first_seen": "2026-10-21T08:20:56.000Z",
+   "latest": "2026-10-21T17:40:31.000Z",
+   "authors": [
+    "claudeai",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/ne130d9f5c091?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/claudeai/status/2112962248218148878",
+    "username": "claudeai",
+    "text": "Claude Security now keeps up with your code as it changes.\n\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\n\nIn public beta on Claude Enterprise. https://t.co/J5kPSEhWp3",
+    "text_ja": "Claude Securityがコードの変更に合わせて追従するようになりました。\n\nリポジトリを一度接続すれば、Claudeが最初に深いスキャンを行い、その後は変更が反映されるたびに再スキャンします。そのため、検出結果はコードの現在の状態に近い形で保たれます。\n\nClaude Enterpriseで公開ベータとして提供中です。 https://t.co/J5kPSEhWp3"
+   },
+   "post_ids": [
+    "2112962248218148878",
+    "2112821425447010627"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
    "id": "f85daf49ac",
    "verdict": "confirmed",
    "title": "Anthropic、物理学者Christopher StubbsがLong-Term Benefit Trustに参加",
@@ -21,9 +91,9 @@
      "desc": "兵器の数や使用を国際的に制限・管理する取り決めや仕組みのこと。"
     }
    ],
-   "score": 89,
+   "score": 88,
    "credibility": 100,
-   "heat": 48,
+   "heat": 45,
    "first_seen": "2026-10-20T21:10:19.000Z",
    "latest": "2026-10-21T16:38:56.000Z",
    "authors": [
@@ -57,7 +127,7 @@
     "2112946750264676743"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "29ebcddc23",
@@ -85,7 +155,7 @@
    ],
    "score": 86,
    "credibility": 100,
-   "heat": 41,
+   "heat": 39,
    "first_seen": "2026-10-21T11:35:00.000Z",
    "latest": "2026-10-21T11:35:00.000Z",
    "authors": [
@@ -119,7 +189,7 @@
     "2112870261829603589"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "09617b79c9",
@@ -141,9 +211,9 @@
      "desc": "進行を止める問題や依存関係があり、先に進めない作業のこと。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 37,
+   "heat": 35,
    "first_seen": "2026-10-20T15:24:47.000Z",
    "latest": "2026-10-20T15:24:47.000Z",
    "authors": [
@@ -171,7 +241,193 @@
     "2112565702552940794"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
+   "id": "fb6b47990d",
+   "verdict": "confirmed",
+   "title": "NVIDIA、AIエージェント向けOpenShellの参照アーキテクチャを公開",
+   "summary": "NVIDIAの公式AIアカウントは、NVIDIA OpenShell Reference Architectureを紹介した。これはエージェントを大規模に動かす計算資源と、ツールやデータへのアクセスを管理する実行時の制御を組み合わせた構成だとしている。投稿は、ハードウェアとソフトウェアがどのように連携するかを示すリンクを案内している。",
+   "points": [
+    "新しい点: AIエージェントに、高速なツール呼び出しと、エージェント自身が書き換えられないセキュリティ制御を組み合わせる構成が示された",
+    "注意点: 参照アーキテクチャは設計例であり、製品の提供状況や性能値は投稿からは分からない",
+    "未確認: 実際の導入事例や効果は投稿に示されていない"
+   ],
+   "terms": [
+    {
+     "term": "参照アーキテクチャ",
+     "desc": "特定の用途に向けたシステム構成の設計例。導入時の手本として使われる。"
+    },
+    {
+     "term": "ツール呼び出し",
+     "desc": "AIが検索や計算などの外部機能を呼び出して作業すること。"
+    },
+    {
+     "term": "ランタイム制御",
+     "desc": "プログラムの実行中に、アクセス権などを監視・制限する仕組み。"
+    }
+   ],
+   "score": 74,
+   "credibility": 93,
+   "heat": 21,
+   "first_seen": "2026-10-21T10:01:24.000Z",
+   "latest": "2026-10-21T10:01:24.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://nvda.ws/4BiJBfY",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112846708527018339",
+    "username": "NVIDIAAI",
+    "text": "AI agents need fast tool calls and security controls they can’t rewrite.\n\nNVIDIA OpenShell Reference Architecture combines the compute to run agents at scale with runtime controls that govern their access to tools and data.\n\nSee how the hardware and software work together: https://t.co/6Gipiy9Og5",
+    "text_ja": "AIエージェントには高速なツール呼び出しと、書き換えられないセキュリティ制御が必要です。\n\nNVIDIA OpenShell参照アーキテクチャは、大規模にエージェントを動かす計算資源と、ツールやデータへのアクセスを管理するランタイム制御を組み合わせたものです。\n\nハードウェアとソフトウェアがどのように連携するかはこちら: https://t.co/6Gipiy9Og5"
+   },
+   "post_ids": [
+    "2112846708527018339"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
+   "id": "9966d38fec",
+   "verdict": "confirmed",
+   "title": "NVIDIA、GTCベルリンで欧州産業向けの活用事例を紹介",
+   "summary": "NVIDIAの公式AIアカウントは、GTCベルリンにおける欧州の産業分野でのAI活用を紹介した。CUDA-XやOmniverse、Cosmos、Nemotronなどのライブラリ・オープンモデルを使い、Agile Robots、Audi、Dassault Systèmes、Schaeffler、Siemensなどが設計の試行や工場運営の改善に取り組んでいるとしている。",
+   "points": [
+    "Omniverseは工場や設計をデジタル上で再現(シミュレーション)するための基盤とされる",
+    "欧州メーカーでの具体的な導入事例は、詳細は投稿リンク先の発表で確認が必要",
+    "企業側の発表であり、効果の大きさは第三者による検証がまだ見えていない"
+   ],
+   "terms": [
+    {
+     "term": "GTC",
+     "desc": "NVIDIAが開催する開発者向けの大型技術イベント"
+    },
+    {
+     "term": "Omniverse",
+     "desc": "工場やロボットなどを仮想空間で再現・シミュレーションするNVIDIAの基盤"
+    },
+    {
+     "term": "Nemotron",
+     "desc": "NVIDIAが公開しているオープンなAIモデルのシリーズ"
+    }
+   ],
+   "score": 72,
+   "credibility": 93,
+   "heat": 16,
+   "first_seen": "2026-10-21T10:52:57.000Z",
+   "latest": "2026-10-21T10:52:57.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://nvda.ws/4BnYgGT",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112859682415243776",
+    "username": "NVIDIAAI",
+    "text": "Europe’s industrial future is taking shape at GTC Berlin.\n\nWith our CUDA-X and Omniverse libraries, plus Cosmos and Nemotron open models and tools, Europe’s industrial leaders are testing designs faster, simulating robots and improving factory operations.\n\nLearn how Agile Robots, @Audi, @Dassault3DS, Schaeffler and @Siemens  are putting these technologies to work: https://t.co/x7BUiGhjDi",
+    "text_ja": "ヨーロッパの産業の未来はGTCベルリンで形になりつつあります。\n\nCUDA-XとOmniverseのライブラリ、そしてCosmosとNemotronのオープンモデルやツールにより、欧州の産業のリーダー企業は設計をより速く試し、ロボットをシミュレーションし、工場の運営を改善しています。\n\nAgile Robots、@Audi、@Dassault3DS、Schaeffler、@Siemens などがこれらの技術をどのように活用しているかはこちら: https://t.co/x7BUiGhjDi"
+   },
+   "post_ids": [
+    "2112859682415243776"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
+   "id": "c79a19ab89",
+   "verdict": "confirmed",
+   "title": "NVIDIA、AIエージェント向けの新ツールをGTCベルリンで追加",
+   "summary": "NVIDIAの公式AIアカウントは、GTCベルリンにおいて「NVIDIA Agent Knowledge Foundation」を「NVIDIA Agent Toolkit」に追加すると発表した。このツールはエージェントが関連情報を見つけ、予測を行い、次に何をすべきか判断する支援をするとしている。あわせて「OpenShell」は、チームがエージェントのアクセス範囲と動作を管理できる機能だと説明している。",
+   "points": [
+    "AIエージェントが社内の情報を理解して使えるようにする点が新しい方向性とされる",
+    "どのような企業・業務で使われるかは投稿からは分からない",
+    "エージェントに与える権限の管理(OpenShell)は、安全面で重要になるとみられる"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受けて、AIが情報収集や作業を自律的に進める仕組み"
+    },
+    {
+     "term": "Agent Toolkit",
+     "desc": "AIエージェントを開発・運用するためのNVIDIAのツール群"
+    },
+    {
+     "term": "サンドボックス的な権限管理",
+     "desc": "AIが触れてよい情報や操作の範囲を制限する仕組み(OpenShellはこの役割とされる)"
+    }
+   ],
+   "score": 72,
+   "credibility": 93,
+   "heat": 15,
+   "first_seen": "2026-10-21T10:24:53.000Z",
+   "latest": "2026-10-21T10:24:53.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://nvda.ws/4zJtVRh",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112852615461773370",
+    "username": "NVIDIAAI",
+    "text": "AI agents need to know your business to be useful.\n\nAt GTC Berlin, we’re adding NVIDIA Agent Knowledge Foundation to NVIDIA Agent Toolkit. It helps agents find relevant information, make predictions and help people decide what to do next.\n\nOpenShell gives teams control over what agents can access and do.\n\nLearn more: https://t.co/B7Zl4wDtTi",
+    "text_ja": "AIエージェントは、役に立つために御社のビジネスを理解する必要があります。\n\nGTCベルリンで、NVIDIA Agent Toolkit に NVIDIA Agent Knowledge Foundation を追加します。これはエージェントが関連情報を見つけ、予測を行い、人々が次に何をすべきか判断する手助けをします。\n\nOpenShellにより、チームはエージェントがアクセスできる内容と実行できる操作を管理できます。\n\n詳細: https://t.co/B7Zl4wDtTi"
+   },
+   "post_ids": [
+    "2112852615461773370"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "86733c99f2",
@@ -199,7 +455,7 @@
    ],
    "score": 71,
    "credibility": 90,
-   "heat": 18,
+   "heat": 17,
    "first_seen": "2026-10-20T17:56:38.000Z",
    "latest": "2026-10-20T17:56:38.000Z",
    "authors": [
@@ -227,7 +483,74 @@
     "2112603916076781778"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
+   "id": "a69c65f33d",
+   "verdict": "confirmed",
+   "title": "NVIDIA、EBUとAdobeとの取り組みをGTCベルリンで発表",
+   "summary": "NVIDIAの公式AIアカウントは、欧州放送連合(EBU)およびAdobeと協力し、メディア企業がデータを管理しながら必要な映像を素早く見つけられるよう取り組んでいると投稿した。EBUとは主権AI(ソブリンAI)の標準を基に、放送局がデータの管理と編集の独立性を守りながらAIを使えるようにする。またAdobeは、NVIDIAのGPUを使って動画検索を高速化しているとしている。",
+   "points": [
+    "ソブリンAIは、データを国内・組織内で管理しながらAIを使う考え方とされる",
+    "放送局や映像制作者にとって、大量の映像から特定のシーンを探す作業が効率化される可能性がある",
+    "速度向上などの具体的な数値は投稿からは分からず、リンク先の確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "EBU(欧州放送連合)",
+     "desc": "ヨーロッパの公共放送局などが加盟する国際的な団体"
+    },
+    {
+     "term": "ソブリンAI",
+     "desc": "国や組織が自らデータと運用の主導権を持つ形で使うAIのこと"
+    },
+    {
+     "term": "GPU",
+     "desc": "画像処理や大量の計算を高速に行うための半導体で、AIの計算に広く使われる"
+    }
+   ],
+   "score": 71,
+   "credibility": 93,
+   "heat": 14,
+   "first_seen": "2026-10-20T22:47:39.000Z",
+   "latest": "2026-10-20T22:47:39.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [
+    {
+     "url": "http://Frame.io",
+     "domain": "frame.io",
+     "primary": false
+    },
+    {
+     "url": "https://nvda.ws/4sheBsJ",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112677152735076822",
+    "username": "NVIDIAAI",
+    "text": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\n\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of their data and protecting editorial independence.\n\nAdobe is using our GPUs to make https://t.co/WSiBgFmjEk video search faster, helping TV and film producers find a specific scene in years of footage.\n\nRead about both announcements from GTC Ber",
+    "text_ja": "私たちは欧州放送連合（EBU）およびAdobeと協力し、メディアチームがデータの管理を保ちながら、必要な映像をより速く見つけられるよう支援しています。\n\nEBUとは、ソブリンAIの標準を基盤に構築しており、放送局が編集の独立性を守りつつ、データの管理を保ったままAIを使えるようにします。\n\nAdobeは、テレビや映画の制作者が何年分もの映像から特定のシーンを見つけやすくするため、当社のGPUを使って動画検索を高速化しています。\n\nGTC Berlinでの両発表の詳細はこちら: https://t.co/aUPaGh0dTX"
+   },
+   "post_ids": [
+    "2112677152735076822"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "53d9b8b43a",
@@ -255,7 +578,7 @@
    ],
    "score": 89,
    "credibility": 100,
-   "heat": 48,
+   "heat": 47,
    "first_seen": "2026-10-20T16:18:38.000Z",
    "latest": "2026-10-20T16:18:38.000Z",
    "authors": [
@@ -289,7 +612,7 @@
     "2112579251555721573"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "bc10b8f437",
@@ -315,9 +638,9 @@
      "desc": "外部のソフトからAIの機能を呼び出すための窓口。"
     }
    ],
-   "score": 78,
+   "score": 77,
    "credibility": 85,
-   "heat": 42,
+   "heat": 40,
    "first_seen": "2026-10-20T16:00:12.000Z",
    "latest": "2026-10-20T16:00:12.000Z",
    "authors": [
@@ -345,7 +668,7 @@
     "2112574615318876178"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   }
  ]
 }

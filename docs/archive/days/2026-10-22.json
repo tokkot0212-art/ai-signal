@@ -21,9 +21,9 @@
      "desc": "ソフトウェアのコードやファイルを保管・管理する場所のこと。"
     }
    ],
-   "score": 98,
+   "score": 97,
    "credibility": 100,
-   "heat": 69,
+   "heat": 67,
    "first_seen": "2026-10-21T16:35:11.000Z",
    "latest": "2026-10-21T16:35:11.000Z",
    "authors": [
@@ -57,7 +57,7 @@
     "2112945805686604033"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "b2e6f54c1b",
@@ -79,9 +79,9 @@
      "desc": "正式版の前に、限られた利用者に試用してもらう段階の公開のこと。"
     }
    ],
-   "score": 95,
+   "score": 94,
    "credibility": 85,
-   "heat": 86,
+   "heat": 83,
    "first_seen": "2026-10-21T17:40:31.000Z",
    "latest": "2026-10-21T19:09:35.000Z",
    "authors": [
@@ -109,7 +109,7 @@
     "2112984664256241837"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "b6969f3377",
@@ -131,9 +131,9 @@
      "desc": "公益目的への取り組みや成果を、企業が自ら公表する報告書。"
     }
    ],
-   "score": 91,
+   "score": 90,
    "credibility": 100,
-   "heat": 52,
+   "heat": 49,
    "first_seen": "2026-10-21T17:59:12.000Z",
    "latest": "2026-10-21T17:59:12.000Z",
    "authors": [
@@ -167,63 +167,59 @@
     "2112966949273801086"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
-   "id": "1a87eff266",
+   "id": "1f18f86f4e",
    "verdict": "confirmed",
-   "title": "Anthropic、コード変更に追従するセキュリティ機能「Claude Security」を公開",
-   "summary": "Anthropicは公式アカウントで、コードセキュリティ機能「Claude Security」が、コードの変更に合わせて継続的に再スキャンするようになったと発表した。投稿によると、リポジトリを一度接続すると、Claudeが最初に深いスキャンを行い、その後は変更が反映されるたびに再スキャンするという。現在はClaude Enterpriseでパブリックベータとして提供されている。",
+   "title": "GTCベルリンの開発者コミュニティ向けまとめ記事を公開",
+   "summary": "NVIDIAの公式AIアカウントは、「GTC Dev Community Berlin」のまとめ記事を紹介した。記事のタイトルは「From Open Models to Physical AI」で、オープンモデルからフィジカルAIまでを扱うとされる。投稿本文に具体的な発表内容は含まれていない。",
    "points": [
-    "開発中のコードが変わるたびに脆弱性の状況を更新するため、リリース前の確認作業の負担軽減につながる可能性がある",
-    "対象はClaude Enterpriseの利用者に限られ、一般ユーザーはまだ使えない",
-    "検出精度や誤検知の割合は投稿に書かれていないため、実際の効果は未確認"
+    "フィジカルAIは、ロボットなど現実世界で動くAIを指す言葉とされる",
+    "投稿だけでは具体的な発表内容は分からず、リンク先の確認が必要",
+    "NVIDIA側の公式まとめのため、一次情報に近い"
    ],
    "terms": [
     {
-     "term": "リポジトリ",
-     "desc": "ソフトウェアのコードや変更履歴を保管しておく場所のこと。"
+     "term": "フィジカルAI",
+     "desc": "ロボットや自動運転車など、現実世界の物理的な動きを伴うAIのこと"
     },
     {
-     "term": "パブリックベータ",
-     "desc": "一般の利用者が試せる、正式版の前の公開試験段階のこと。"
-    },
-    {
-     "term": "脆弱性",
-     "desc": "ソフトウェアに含まれる、攻撃や不具合につながりうる弱点のこと。"
+     "term": "オープンモデル",
+     "desc": "重みなどが公開され、誰でも利用・改変できるAIモデル"
     }
    ],
-   "score": 87,
-   "credibility": 85,
-   "heat": 66,
-   "first_seen": "2026-10-21T17:40:31.000Z",
-   "latest": "2026-10-21T17:40:31.000Z",
+   "score": 72,
+   "credibility": 90,
+   "heat": 19,
+   "first_seen": "2026-10-22T12:54:11.000Z",
+   "latest": "2026-10-22T12:54:11.000Z",
    "authors": [
-    "claudeai"
+    "NVIDIAAI"
    ],
    "author_labels": [
     {
-     "username": "claudeai",
-     "label": "Anthropic（Claude公式アカウント）",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの投稿",
+   "evidence_note": "NVIDIA公式アカウントの告知",
    "links": [],
    "post": {
-    "url": "https://x.com/claudeai/status/2112962248218148878",
-    "username": "claudeai",
-    "text": "Claude Security now keeps up with your code as it changes.\n\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\n\nIn public beta on Claude Enterprise. https://t.co/J5kPSEhWp3",
-    "text_ja": "Claude Securityが、コードの変更に合わせて追従するようになりました。\n\nリポジトリを一度接続するだけで、Claudeがまず深い初回スキャンを実行し、変更が反映されるたびに再スキャンします。そのため、検出結果は常にコードの現在の状態に近い形で保たれます。\n\nClaude Enterpriseでパブリックベータとして提供中です。https://t.co/J5kPSEhWp3"
+    "url": "https://x.com/NVIDIAAI/status/2113252578712821780",
+    "username": "NVIDIAAI",
+    "text": "GTC Dev Community Berlin Recap: From Open Models to Physical AI https://t.co/WniSXhMJM6",
+    "text_ja": "GTC Dev Community Berlin 振り返り：オープンモデルからフィジカルAIまで https://t.co/WniSXhMJM6"
    },
    "post_ids": [
-    "2112962248218148878"
+    "2113252578712821780"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "37054f9d1d",
@@ -249,9 +245,9 @@
      "desc": "数学的な手法で、プログラムが仕様どおり動くことを証明する技術"
     }
    ],
-   "score": 63,
+   "score": 61,
    "credibility": 85,
-   "heat": 14,
+   "heat": 11,
    "first_seen": "2026-10-22T04:11:00.000Z",
    "latest": "2026-10-22T04:11:00.000Z",
    "authors": [
@@ -285,7 +281,7 @@
     "2113120912337989889"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "7d2f1505af",
@@ -307,9 +303,9 @@
      "desc": "日本の宇宙航空研究開発機構。国の宇宙開発を担う機関。"
     }
    ],
-   "score": 59,
+   "score": 57,
    "credibility": 78,
-   "heat": 19,
+   "heat": 14,
    "first_seen": "2026-10-22T09:05:12.000Z",
    "latest": "2026-10-22T09:05:12.000Z",
    "authors": [
@@ -343,7 +339,7 @@
     "2113194952671084571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   }
  ]
 }

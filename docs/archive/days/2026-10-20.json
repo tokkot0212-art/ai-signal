@@ -25,9 +25,9 @@
      "desc": "OpenAIのプログラミング支援を行うAIエージェントのこと"
     }
    ],
-   "score": 93,
+   "score": 92,
    "credibility": 100,
-   "heat": 58,
+   "heat": 56,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-21T19:23:19.000Z",
    "authors": [
@@ -67,35 +67,35 @@
     "2112988118471295323"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
-   "id": "ae7b321c6a",
+   "id": "ab0950efaf",
    "verdict": "confirmed",
-   "title": "OpenAI、古いプログラミング言語向けの能力向上と創薬研究の事例を公表",
-   "summary": "OpenAIは公式アカウントで、最新モデルがCOBOL、Fortran、Visual Basicなどの低リソース言語でのソフトウェア構築・移行能力を高めたと発表した。同社はまた、創薬研究用の「GPT-Rosalind」が、遺伝子DCTN1と神経変性疾患の関係について新たな仮説を示したとする事例を紹介した。投稿によると、この研究はperturbai_txおよびscrippsresearchと共同で行われ、多数のGPT-Rosalindエージェントが並列で作業したという。",
+   "title": "OpenAI、GPT-Rosalindで神経変性疾患の新たな仮説を提示",
+   "summary": "OpenAIの公式アカウントは、GPT-Rosalindが創薬に向けた新たな手がかりとして、コレステロール輸送の回復がニューロンの変性を防げるかという仮説を見つけたと発表した。関連遺伝子はDCTN1で、珍しい神経変性疾患であるPerry症候群と関連づけられている。マウスの脳データでDCTN1を阻害すると、コレステロール生成に関わる遺伝子の発現が増えたという。投稿はperturbai_tx、Scripps Researchと連携し、多数のGPT-Rosalindエージェントが並列に作業したと述べている。",
    "points": [
-    "COBOLなど古い言語は銀行や行政の基幹システムで使われており、その近代化支援は企業にとって実用的な意味を持つ",
-    "GPT-Rosalindの事例は『仮説の提示』であり、実験で確かめられた治療法ではないため、結論はまだ分からない",
-    "投稿は途中の説明で、数値や論文の詳細は含まれていない。今後、査読付き論文などで確認が必要"
+    "新しい点: AIが遺伝子データから、コレステロールが神経細胞の必要な場所に届いていないという仮説を提示したとされる",
+    "注意点: これはあくまで検証すべき仮説であり、治療法が示されたわけではない。投稿でも「確認されれば」と条件付きで述べられている",
+    "未確認: 仮説の正しさや、実験での再現性は投稿からは判断できない"
    ],
    "terms": [
     {
-     "term": "COBOL",
-     "desc": "1960年代から銀行や行政などで使われてきた古いプログラミング言語。"
-    },
-    {
      "term": "創薬",
-     "desc": "新しい薬を見つけて開発していく研究・開発の分野のこと。"
+     "desc": "病気を治す新しい薬を見つけ、開発すること。"
     },
     {
-     "term": "DCTN1",
-     "desc": "神経の働きに関わるとされる遺伝子の名前で、Perry症候群と関連が指摘されている。"
+     "term": "神経変性疾患",
+     "desc": "神経細胞が徐々に壊れていく病気の総称。"
+    },
+    {
+     "term": "遺伝子発現",
+     "desc": "遺伝子の情報がもとになって、タンパク質などがどれだけ作られるかという働き。"
     }
    ],
-   "score": 92,
+   "score": 86,
    "credibility": 100,
-   "heat": 54,
+   "heat": 40,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-21T13:32:35.000Z",
    "authors": [
@@ -111,13 +111,8 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
+   "evidence_note": "OpenAI公式アカウントの発表",
    "links": [
-    {
-     "url": "https://openai.com/index/low-resource-programming-languages/",
-     "domain": "openai.com",
-     "primary": true
-    },
     {
      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
      "domain": "openai.com",
@@ -125,69 +120,17 @@
     }
    ],
    "post": {
-    "url": "https://x.com/OpenAI/status/2112310345863930168",
+    "url": "https://x.com/OpenAI/status/2112899854569762936",
     "username": "OpenAI",
-    "text": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic.\n\nThese languages power software that banks, governments, and businesses depend on. Progress here means understanding decades of business logic and helping developers modernize those systems while preserving what works.\n\nWe’re building these capabilities around the challenges developers and enterprise customers bring us. If your ",
-    "text_ja": "最新のモデルの進歩により、COBOL、Fortran、Visual Basicのような低リソースのプログラミング言語でソフトウェアを構築・移行する能力が向上しました。\n\nこれらの言語は、銀行、政府、企業が依存しているソフトウェアを支えています。ここで進歩するということは、何十年分もの業務ロジックを理解し、そのうまく機能している部分を残しながら、開発者がそのシステムを近代化できるよう支援することを意味します。\n\n私たちは、開発者や企業のお客様から寄せられる課題を中心に、これらの能力を構築しています。もしお客様のチームがこれらのシステムに取り組んでいるなら、次に対応すべき言語やワークフローを教えてください。\n\nhttps://t.co/2TbnkQixJ1"
+    "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?\n\nDCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in making cholesterol. GPT-Rosalind suggested a possible explanation: cholesterol may not be reaching where neurons need it.\n\nThat gives scientists a specific mechanism to test and, if confirmed, a direction for developing",
+    "text_ja": "GPT-Rosalindが創薬の新たな手がかりを見つけました：コレステロールの輸送を回復させると、ニューロンの変性を防げるのでしょうか？\n\nDCTN1は、希少な神経変性疾患であるPerry症候群に関連する遺伝子です。マウスの脳データでは、この遺伝子を阻害すると、コレステロールの生成に関わる遺伝子の発現が増えました。GPT-Rosalindは、ありうる説明として、コレステロールがニューロンの必要な場所に届いていないのかもしれないと示しました。\n\nこれにより科学者は、検証すべき具体的な仕組みを得て、確認されれば神経変性疾患の新しい治療法開発の方向性になります。\n\n@perturbai_tx および @scrippsresearch と共同で、数千のGPT-Rosalindエージェントが並列に作業し、数百万件の..."
    },
    "post_ids": [
     "2112310345863930168",
     "2112899854569762936"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
-  },
-  {
-   "id": "abc18257a9",
-   "verdict": "confirmed",
-   "title": "Google DeepMind、「Gemini 4 Argon」で人体の3D可視化デモを公開",
-   "summary": "Google DeepMindは公式アカウントで、Gemini 4 Argonが3つのオープンソースデータセットを組み合わせて、人体のインタラクティブな3D可視化を作成したと紹介した。投稿では、層を動かして切り替えたり、筋肉を単独で表示したり、拍動する心臓の内部にズームしたりできると説明されている。",
-   "points": [
-    "複数の公開データを組み合わせ、AIが対話的な3Dコンテンツを作った例として、教育・医療分野の利用が想定される",
-    "投稿はデモ映像の紹介のみで、精度や元データの具体名、一般公開の有無は分からない",
-    "医療用途として使うには、解剖学的な正確さの検証が必要とみられる（未確認）"
-   ],
-   "terms": [
-    {
-     "term": "オープンソースデータセット",
-     "desc": "誰でも自由に利用・改変できるよう公開されている、データの集まりのこと。"
-    },
-    {
-     "term": "3D可視化",
-     "desc": "データや物体を立体の画像として分かりやすく表示すること。"
-    }
-   ],
-   "score": 84,
-   "credibility": 90,
-   "heat": 49,
-   "first_seen": "2026-10-20T14:53:53.000Z",
-   "latest": "2026-10-21T18:30:05.000Z",
-   "authors": [
-    "GoogleDeepMind"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
-    "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
-    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体解剖学のインタラクティブな3D可視化を作成しました。\n\n動きに合わせて各層を切り替えたり、筋肉を単独で表示したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
-   },
-   "post_ids": [
-    "2112974723659247896"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "3b8c6ca6b0",
@@ -258,6 +201,63 @@
    "archived_at": "2026-10-22T18:03:26Z"
   },
   {
+   "id": "98d7846e43",
+   "verdict": "confirmed",
+   "title": "Google DeepMind、Gemini 4 Argonによる3D可視化の例を公開",
+   "summary": "Google DeepMindの公式アカウントは、Gemini 4 Argonが3つのオープンソースデータセットを組み合わせて、人体の対話型3Dビジュアライゼーションを作成した例を紹介した。筋肉の分離や、拍動する心臓の内部へのズームなどができるとしている。別の投稿では、Antigravityで作られた、元素周期表を歌に同期させた3D表示の例も紹介されている。",
+   "points": [
+    "新しい点: 複数のデータセットを組み合わせ、動きのある3D表示を作るデモが示された",
+    "注意点: 公式による作例の紹介であり、性能の客観的な評価や提供時期は投稿からは分からない",
+    "未確認: 作例がどの程度再現可能か、一般向けに利用できるかは不明"
+   ],
+   "terms": [
+    {
+     "term": "オープンソースデータセット",
+     "desc": "誰でも自由に使えるよう公開されたデータの集まり。"
+    },
+    {
+     "term": "3Dビジュアライゼーション",
+     "desc": "データや構造を立体的な映像として可視化すること。"
+    },
+    {
+     "term": "Antigravity",
+     "desc": "Googleの開発関連ツールとされるが、投稿では詳細は説明されていない。"
+    }
+   ],
+   "score": 83,
+   "credibility": 90,
+   "heat": 47,
+   "first_seen": "2026-10-20T14:53:53.000Z",
+   "latest": "2026-10-21T18:30:05.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
+    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体の対話型3Dビジュアライゼーションを作成しました。\n\n異なるレイヤーを動きのある形で切り替えたり、筋肉だけを分離したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
+   },
+   "post_ids": [
+    "2112974723659247896",
+    "2112557925264752930"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
    "id": "0d0a86dda0",
    "verdict": "confirmed",
    "title": "OpenAI、ChatGPT広告の仕組みを開発者向けに解説",
@@ -281,9 +281,9 @@
      "desc": "複数の広告主が入札し、最も条件の良い広告枠を決める仕組み"
     }
    ],
-   "score": 81,
+   "score": 80,
    "credibility": 90,
-   "heat": 42,
+   "heat": 39,
    "first_seen": "2026-10-20T03:05:09.000Z",
    "latest": "2026-10-21T17:42:32.000Z",
    "authors": [
@@ -311,131 +311,7 @@
     "2112962753682198969"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
-  },
-  {
-   "id": "e6ef99b10b",
-   "verdict": "confirmed",
-   "title": "Google DeepMind、Gemini 4 Argonで周期表の3D可視化を作成と紹介",
-   "summary": "Google DeepMindの公式アカウントは、『Gemini 4 Argon』が、Tom Lehrerの歌『The Elements』に同期した3D周期表を作成したと投稿した。投稿によれば、作成には開発環境『Antigravity』を使い、電子の軌道、原子データ、光のスペクトルがアニメーションで表現されているという。",
-   "points": [
-    "新しいのは、AIが音楽に同期した教育向けの3Dコンテンツを生成できる例を示した点",
-    "AIによるコード生成や対話型の作成支援の実用例として見られる可能性がある（投稿の範囲での推測）",
-    "投稿はデモの紹介であり、精度や再現性、一般提供の時期などは投稿からは不明"
-   ],
-   "terms": [
-    {
-     "term": "Antigravity",
-     "desc": "Googleが提供する、AIを使ってソフトウェアを作るための開発環境とされる（投稿では作成ツールとして記載）"
-    },
-    {
-     "term": "3D周期表",
-     "desc": "元素を周期表の配置に従って立体的に表示したもの"
-    },
-    {
-     "term": "スペクトル",
-     "desc": "光を波長ごとに分解したときのパターン。元素ごとに特徴があり、元素の識別に使われる"
-    }
-   ],
-   "score": 80,
-   "credibility": 90,
-   "heat": 39,
-   "first_seen": "2026-10-20T14:53:53.000Z",
-   "latest": "2026-10-20T14:53:53.000Z",
-   "authors": [
-    "GoogleDeepMind"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式の紹介投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2112557925264752930",
-    "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon built a 3D periodic table synced to Tom Lehrer’s song, “The Elements.”\n\nCreated in @Antigravity, it animates orbiting electrons, atomic data, and light spectra. https://t.co/7fsvsIk6Sv",
-    "text_ja": "Gemini 4 Argonが、Tom Lehrerの曲「The Elements」に同期した3D周期表を作成しました。\n\n@Antigravityで作成され、軌道を回る電子、原子データ、光のスペクトルがアニメーションで動きます。https://t.co/7fsvsIk6Sv"
-   },
-   "post_ids": [
-    "2112557925264752930"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
-  },
-  {
-   "id": "ecaadb59fb",
-   "verdict": "confirmed",
-   "title": "Sakana AI、エンジニア向けイベントのレポートとAI主権に関する論説引用を公開",
-   "summary": "Sakana AIの公式アカウントは、10月5日に開催したエンジニア向けイベント『Sakana AI Engineer Open House 2026』のレポートを公開した。CEOのDavid Haによる『AI主権』の構想紹介や、5職種の社員による話を伝えており、5職種はいずれも積極採用中としている。あわせて、同社の菊池咲氏のコメントがJapan Timesの論説で引用されたことも紹介した。",
-   "points": [
-    "新しいのは、同社のエンジニア採用や社内の働き方を具体的に紹介した点",
-    "『AI主権』は、どこまで自前で持つかを問う『ソブリンAI』と対比される概念として紹介されている",
-    "採用情報は企業側の発信であり、待遇や職場環境の実態は投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "AI主権",
-     "desc": "国や組織が、AIに関わる技術・データ・インフラをどこまで自分たちで保持・選択できるかという考え方"
-    },
-    {
-     "term": "ソブリンAI",
-     "desc": "国や地域が自前のデータや計算基盤でAIを運用する取り組みを指す言葉"
-    },
-    {
-     "term": "FDE / ARE / SWE",
-     "desc": "企業内のエンジニアの職種名の略称。投稿では採用している職種として並べられている（各職務の詳細は未確認）"
-    }
-   ],
-   "score": 80,
-   "credibility": 100,
-   "heat": 24,
-   "first_seen": "2026-10-20T03:57:23.000Z",
-   "latest": "2026-10-22T08:18:51.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式のイベント報告",
-   "links": [
-    {
-     "url": "https://sakana.ai/open-house-2026/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://www.japantimes.co.jp/commentary/2026/10/21/world/tech-sovereignty-is-fantasy/",
-     "domain": "japantimes.co.jp",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2112670760410169361",
-    "username": "SakanaAILabs",
-    "text": "10月5日に開催したエンジニア向け「Sakana AI Engineer Open House 2026」のイベントレポートを公開しました🐡\n\nhttps://t.co/RT8ITHjwL1\n\nCEOのDavid Haによる「AI主権」の構想紹介に始まり、ARE / FDE / SWE / Solution Engineer / Cybersecurity Engineerの5職種について、金融・防衛・Product・ Platformの各領域で働く7名のメンバーがそれぞれの役割と面白さを語りました。5職種はいずれも積極採用中です。\n\nSakana AIのエンジニアの働き方に興味のある方は、ぜひご一読ください🚀",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2112670760410169361",
-    "2113183285941780729"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "a2254a0c9b",
@@ -485,34 +361,34 @@
    "archived_at": "2026-10-22T13:54:50Z"
   },
   {
-   "id": "49fcbfeabf",
+   "id": "ecaadb59fb",
    "verdict": "confirmed",
-   "title": "Sakana AIが推薦手法「QD-Rec」を発表",
-   "summary": "Sakana AI公式アカウントは、多様な提案を進化的に生成する推薦手法「QD-Rec」を開発したと発表した。買収候補の探索、架空の顧客プロファイルを使ったターゲティング、論文推薦の3種類で検証したと説明している。ブログ、論文、GitHubへのリンクも示している。",
+   "title": "Sakana AI、エンジニア向けイベントのレポートとAI主権に関する論説引用を公開",
+   "summary": "Sakana AIの公式アカウントは、10月5日に開催したエンジニア向けイベント『Sakana AI Engineer Open House 2026』のレポートを公開した。CEOのDavid Haによる『AI主権』の構想紹介や、5職種の社員による話を伝えており、5職種はいずれも積極採用中としている。あわせて、同社の菊池咲氏のコメントがJapan Timesの論説で引用されたことも紹介した。",
    "points": [
-    "従来のスコア順の推薦ではなく、質が高く多様な候補を集める「オープンエンドな推薦」として問題を捉えた点が新しい。",
-    "LLMが過去の仮説の着眼点を別の候補に応用し、似た提案は優れたものに更新する仕組みとされる。",
-    "検証の具体的な数値や他手法との比較は投稿からは確認できず、未確認。"
+    "新しいのは、同社のエンジニア採用や社内の働き方を具体的に紹介した点",
+    "『AI主権』は、どこまで自前で持つかを問う『ソブリンAI』と対比される概念として紹介されている",
+    "採用情報は企業側の発信であり、待遇や職場環境の実態は投稿からは分からない"
    ],
    "terms": [
     {
-     "term": "Quality-Diversity（QD）",
-     "desc": "質の高さと多様性の両方を重視して解の集合を進化させる探索手法。"
+     "term": "AI主権",
+     "desc": "国や組織が、AIに関わる技術・データ・インフラをどこまで自分たちで保持・選択できるかという考え方"
     },
     {
-     "term": "推薦システム",
-     "desc": "利用者や状況に合わせて候補や商品などを提案する仕組み。"
+     "term": "ソブリンAI",
+     "desc": "国や地域が自前のデータや計算基盤でAIを運用する取り組みを指す言葉"
     },
     {
-     "term": "LLM",
-     "desc": "大量の文章で学習した大規模言語モデル。文章の生成や理解を行うAI。"
+     "term": "FDE / ARE / SWE",
+     "desc": "企業内のエンジニアの職種名の略称。投稿では採用している職種として並べられている（各職務の詳細は未確認）"
     }
    ],
-   "score": 77,
+   "score": 78,
    "credibility": 100,
-   "heat": 22,
-   "first_seen": "2026-10-20T11:31:58.000Z",
-   "latest": "2026-10-20T11:31:58.000Z",
+   "heat": 19,
+   "first_seen": "2026-10-20T03:57:23.000Z",
+   "latest": "2026-10-22T08:18:51.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -524,37 +400,33 @@
      "former": ""
     }
    ],
-   "evidence": "paper_or_data",
-   "evidence_label": "論文・データ",
-   "evidence_note": "arXiv論文・公式ブログ",
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式のイベント報告",
    "links": [
     {
-     "url": "https://sakana.ai/qd-rec/",
+     "url": "https://sakana.ai/open-house-2026/",
      "domain": "sakana.ai",
      "primary": true
     },
     {
-     "url": "https://arxiv.org/abs/2610.23470",
-     "domain": "arxiv.org",
-     "primary": true
-    },
-    {
-     "url": "https://github.com/SakanaAI/QD-Rec",
-     "domain": "github.com",
-     "primary": true
+     "url": "https://www.japantimes.co.jp/commentary/2026/10/21/world/tech-sovereignty-is-fantasy/",
+     "domain": "japantimes.co.jp",
+     "primary": false
     }
    ],
    "post": {
-    "url": "https://x.com/SakanaAILabs/status/2112507110290502109",
+    "url": "https://x.com/SakanaAILabs/status/2112670760410169361",
     "username": "SakanaAILabs",
-    "text": "多様な提案を進化させ、意思決定を支える推薦手法「QD-Rec」を開発\n\nブログ：https://t.co/2AV6dap8Ve \n論文：https://t.co/zg1gtm0OlK\nGitHub：https://t.co/EKNOoEIBEP\n\nどの企業を買収候補として検討するか。どの顧客に新しい製品を提案するか。膨大な論文の中から、次に何を読むか。こうした意思 決定では、候補をスコア順に並べるだけでなく、「なぜ選ぶのか」「選んだ先にどのような可能性があるのか」を、異なる観点から比較できることが重要です。\n\n一つの候補にも複数の有望な理由が考えられます。数千件、ときには1万件を超える候補それぞれについて、さまざまな仮説を生成・評価し尽くすには大きなコストがかかります。私たちは、限られた予算の中で「候補」と「仮説」の組を探索し、質が高く多様な提案を見つける問題を「オープンエンドな推薦」として捉えました。    \n\nQD-Recは、オープンエンドな探索の研究で発展してきた「Quality-Diversity（QD）」と呼ばれる進化的探索技術を、推薦に応用します。過去の評価結果をもとに次に",
+    "text": "10月5日に開催したエンジニア向け「Sakana AI Engineer Open House 2026」のイベントレポートを公開しました🐡\n\nhttps://t.co/RT8ITHjwL1\n\nCEOのDavid Haによる「AI主権」の構想紹介に始まり、ARE / FDE / SWE / Solution Engineer / Cybersecurity Engineerの5職種について、金融・防衛・Product・ Platformの各領域で働く7名のメンバーがそれぞれの役割と面白さを語りました。5職種はいずれも積極採用中です。\n\nSakana AIのエンジニアの働き方に興味のある方は、ぜひご一読ください🚀",
     "text_ja": null
    },
    "post_ids": [
-    "2112507110290502109"
+    "2112670760410169361",
+    "2113183285941780729"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "post_count": 2,
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "61d4a9552a",
@@ -603,6 +475,78 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-22T18:03:26Z"
+  },
+  {
+   "id": "49fcbfeabf",
+   "verdict": "confirmed",
+   "title": "Sakana AIが推薦手法「QD-Rec」を発表",
+   "summary": "Sakana AI公式アカウントは、多様な提案を進化的に生成する推薦手法「QD-Rec」を開発したと発表した。買収候補の探索、架空の顧客プロファイルを使ったターゲティング、論文推薦の3種類で検証したと説明している。ブログ、論文、GitHubへのリンクも示している。",
+   "points": [
+    "従来のスコア順の推薦ではなく、質が高く多様な候補を集める「オープンエンドな推薦」として問題を捉えた点が新しい。",
+    "LLMが過去の仮説の着眼点を別の候補に応用し、似た提案は優れたものに更新する仕組みとされる。",
+    "検証の具体的な数値や他手法との比較は投稿からは確認できず、未確認。"
+   ],
+   "terms": [
+    {
+     "term": "Quality-Diversity（QD）",
+     "desc": "質の高さと多様性の両方を重視して解の集合を進化させる探索手法。"
+    },
+    {
+     "term": "推薦システム",
+     "desc": "利用者や状況に合わせて候補や商品などを提案する仕組み。"
+    },
+    {
+     "term": "LLM",
+     "desc": "大量の文章で学習した大規模言語モデル。文章の生成や理解を行うAI。"
+    }
+   ],
+   "score": 76,
+   "credibility": 100,
+   "heat": 21,
+   "first_seen": "2026-10-20T11:31:58.000Z",
+   "latest": "2026-10-20T11:31:58.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "paper_or_data",
+   "evidence_label": "論文・データ",
+   "evidence_note": "arXiv論文・公式ブログ",
+   "links": [
+    {
+     "url": "https://sakana.ai/qd-rec/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://arxiv.org/abs/2610.23470",
+     "domain": "arxiv.org",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/SakanaAI/QD-Rec",
+     "domain": "github.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2112507110290502109",
+    "username": "SakanaAILabs",
+    "text": "多様な提案を進化させ、意思決定を支える推薦手法「QD-Rec」を開発\n\nブログ：https://t.co/2AV6dap8Ve \n論文：https://t.co/zg1gtm0OlK\nGitHub：https://t.co/EKNOoEIBEP\n\nどの企業を買収候補として検討するか。どの顧客に新しい製品を提案するか。膨大な論文の中から、次に何を読むか。こうした意思 決定では、候補をスコア順に並べるだけでなく、「なぜ選ぶのか」「選んだ先にどのような可能性があるのか」を、異なる観点から比較できることが重要です。\n\n一つの候補にも複数の有望な理由が考えられます。数千件、ときには1万件を超える候補それぞれについて、さまざまな仮説を生成・評価し尽くすには大きなコストがかかります。私たちは、限られた予算の中で「候補」と「仮説」の組を探索し、質が高く多様な提案を見つける問題を「オープンエンドな推薦」として捉えました。    \n\nQD-Recは、オープンエンドな探索の研究で発展してきた「Quality-Diversity（QD）」と呼ばれる進化的探索技術を、推薦に応用します。過去の評価結果をもとに次に",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2112507110290502109"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "4e096db129",
@@ -664,7 +608,7 @@
     "2112392712637100095"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "31217c6fc4",
@@ -718,6 +662,58 @@
    "archived_at": "2026-10-22T13:54:50Z"
   },
   {
+   "id": "05c261e79b",
+   "verdict": "confirmed",
+   "title": "NVIDIA、GTCベルリン基調講演の告知を投稿",
+   "summary": "NVIDIAの公式AIアカウントは、ベルリンでのGTCについて投稿し、翌日のJensen Huang氏の基調講演で発表がある予定だと告知した。Jensen Huang氏はNVIDIAの創業者兼CEOである。投稿の内容は告知にとどまり、具体的な発表内容は含まれていない。",
+   "points": [
+    "基調講演はNVIDIAの新製品や技術方針が示される場として注目されることが多い",
+    "告知のみで、具体的な発表内容は投稿からは分からない",
+    "翌日の発表内容は、別途公式発表や報道で確認する必要がある"
+   ],
+   "terms": [
+    {
+     "term": "基調講演(キーノート)",
+     "desc": "イベントの冒頭で行われる主要な発表・講演のこと"
+    },
+    {
+     "term": "GTC",
+     "desc": "NVIDIAが開催する開発者向けの大型技術イベント"
+    }
+   ],
+   "score": 68,
+   "credibility": 90,
+   "heat": 11,
+   "first_seen": "2026-10-20T12:43:48.000Z",
+   "latest": "2026-10-20T12:43:48.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112525188273250336",
+    "username": "NVIDIAAI",
+    "text": "Berlin is an epic location for @NVIDIAGTC! \n\nFollow along for announcements from Jensen's keynote tomorrow. https://t.co/J1vzZ07wSY",
+    "text_ja": "ベルリンは@NVIDIAGTCにとって素晴らしい場所です!\n\n明日のJensenの基調講演での発表にご注目ください。 https://t.co/J1vzZ07wSY"
+   },
+   "post_ids": [
+    "2112525188273250336"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-23T00:45:32Z"
+  },
+  {
    "id": "70105ab0f4",
    "verdict": "confirmed",
    "title": "NVIDIA、PyTorchへの対応と開発者コミュニティへの貢献をアピール",
@@ -737,9 +733,9 @@
      "desc": "NVIDIAのGPUで計算処理を行うための開発環境・仕組み。"
     }
    ],
-   "score": 68,
+   "score": 67,
    "credibility": 90,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-20T07:56:29.000Z",
    "latest": "2026-10-20T07:56:29.000Z",
    "authors": [
@@ -767,7 +763,7 @@
     "2112452885338288577"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "6f39462741",
@@ -789,9 +785,9 @@
      "desc": "デジタル庁が政府職員向けに提供する生成AI利用環境の名称。"
     }
    ],
-   "score": 59,
+   "score": 58,
    "credibility": 78,
-   "heat": 17,
+   "heat": 16,
    "first_seen": "2026-10-20T07:05:10.000Z",
    "latest": "2026-10-20T07:05:10.000Z",
    "authors": [
@@ -825,7 +821,7 @@
     "2112439967633059961"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "cd82ab275d",
@@ -847,9 +843,9 @@
      "desc": "許可なく他人のシステムやアカウントに侵入する行為。"
     }
    ],
-   "score": 57,
+   "score": 56,
    "credibility": 78,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-20T05:15:12.000Z",
    "latest": "2026-10-20T05:42:31.000Z",
    "authors": [
@@ -884,7 +880,7 @@
     "2112412293086773399"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "248659d16d",
@@ -942,7 +938,7 @@
     "2112379567881273504"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   },
   {
    "id": "bee6a1432d",
@@ -961,7 +957,7 @@
    ],
    "score": 55,
    "credibility": 78,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-20T08:55:09.000Z",
    "latest": "2026-10-20T08:55:09.000Z",
    "authors": [
@@ -995,7 +991,7 @@
     "2112467648198140258"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-22T18:03:26Z"
+   "archived_at": "2026-10-23T00:45:32Z"
   }
  ]
 }

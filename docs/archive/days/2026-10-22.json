@@ -23,7 +23,7 @@
    ],
    "score": 94,
    "credibility": 100,
-   "heat": 61,
+   "heat": 59,
    "first_seen": "2026-10-21T16:35:11.000Z",
    "latest": "2026-10-21T16:35:11.000Z",
    "authors": [
@@ -57,7 +57,7 @@
     "2112945805686604033"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "b6969f3377",
@@ -79,9 +79,9 @@
      "desc": "公益目的への取り組みや成果を、企業が自ら公表する報告書。"
     }
    ],
-   "score": 87,
+   "score": 86,
    "credibility": 100,
-   "heat": 43,
+   "heat": 41,
    "first_seen": "2026-10-21T17:59:12.000Z",
    "latest": "2026-10-21T17:59:12.000Z",
    "authors": [
@@ -115,37 +115,37 @@
     "2112966949273801086"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
-   "id": "ecbf34580c",
+   "id": "1a87eff266",
    "verdict": "confirmed",
-   "title": "Claude（Google Cloud版）が一般提供開始、Claude SecurityはBeta公開",
-   "summary": "Anthropic公式アカウントは、Google Cloud上のAnthropic管理型「Claude Models」が一般提供（GA）になったと発表した。あわせて、コードの変更に追従して再スキャンする「Claude Security」が、Claude Enterpriseでパブリックベータとして公開されたことも伝えた。",
+   "title": "Claude Security、リポジトリ変更に追従する機能をベータ公開",
+   "summary": "Anthropicは、Claude Securityがコードの変更に合わせて継続的に再スキャンする機能を発表した。利用者がリポジトリを一度接続すると、Claudeが初回の深いスキャンを行い、変更があるたびに再スキャンするとしている。現在はClaude Enterpriseでパブリックベータとして提供されている。",
    "points": [
-    "Google Cloud IAMの認証情報や課金で、Claudeの全機能を使えるようになったことが新しい点とされる。",
-    "Claude Securityは、リポジトリを一度接続すると変更ごとに再スキャンする仕組みで、コードの現状に即した検出を狙う。",
-    "ベータ段階のため、精度や対象言語などの詳細は投稿からは未確認。"
+    "コードが変わっても検出結果が最新の状態に近く保たれる点が新しい",
+    "対象は現時点でClaude Enterpriseの利用者に限られる",
+    "ベータ段階のため、検出精度や誤検知の水準は投稿からは判断できない"
    ],
    "terms": [
     {
-     "term": "一般提供（GA）",
-     "desc": "誰でも正式に利用できるようになった段階のこと。"
-    },
-    {
-     "term": "IAM",
-     "desc": "クラウドで誰がどの操作をできるかを管理する認証・権限の仕組み。"
+     "term": "リポジトリ",
+     "desc": "ソフトウェアのコードや変更履歴をまとめて保管する場所のこと"
     },
     {
      "term": "パブリックベータ",
-     "desc": "一般公開されているが、まだ改良途中の試験的な提供段階。"
+     "desc": "正式公開前に、一般の利用者が試せる段階で提供されること"
+    },
+    {
+     "term": "再スキャン",
+     "desc": "変更後のコードをもう一度調べ、問題がないか確認すること"
     }
    ],
-   "score": 85,
+   "score": 83,
    "credibility": 85,
-   "heat": 59,
+   "heat": 55,
    "first_seen": "2026-10-21T17:40:31.000Z",
-   "latest": "2026-10-22T21:21:00.000Z",
+   "latest": "2026-10-21T17:40:31.000Z",
    "authors": [
     "claudeai"
    ],
@@ -159,20 +159,19 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式X投稿",
+   "evidence_note": "Anthropic公式アカウントの発表",
    "links": [],
    "post": {
-    "url": "https://x.com/claudeai/status/2113380122468454765",
+    "url": "https://x.com/claudeai/status/2112962248218148878",
     "username": "claudeai",
-    "text": "Claude Models on Google Cloud (Anthropic managed) is now generally available.\n\nGet the full set of Claude Platform features on Google Cloud, with Google Cloud IAM credentials, billing, and commitment retirement. https://t.co/JyRT8Y401r",
-    "text_ja": "Google Cloud 上の Claude モデル（Anthropic マネージド）が一般提供を開始しました。\n\nGoogle Cloud の認証情報（IAM）、請求、コミットメントの消化など、Claude Platform の機能をフルセットで Google Cloud 上でご利用いただけます。 https://t.co/JyRT8Y401r"
+    "text": "Claude Security now keeps up with your code as it changes.\n\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\n\nIn public beta on Claude Enterprise. https://t.co/J5kPSEhWp3",
+    "text_ja": "Claude Securityがコードの変更に合わせて追従するようになりました。\n\nリポジトリを一度接続すれば、Claudeが最初に深いスキャンを行い、その後は変更が反映されるたびに再スキャンします。そのため、検出結果はコードの現在の状態に近い形で保たれます。\n\nClaude Enterpriseで公開ベータとして提供中です。 https://t.co/J5kPSEhWp3"
    },
    "post_ids": [
-    "2113380122468454765",
     "2112962248218148878"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "f4a671c84f",
@@ -194,9 +193,9 @@
      "desc": "自国の管理下で開発・運用されるAIのこと。自前主義の考え方を指すことが多い"
     }
    ],
-   "score": 71,
+   "score": 70,
    "credibility": 93,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-22T08:18:51.000Z",
    "latest": "2026-10-22T08:18:51.000Z",
    "authors": [
@@ -230,7 +229,7 @@
     "2113183285941780729"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "1f18f86f4e",
@@ -254,7 +253,7 @@
    ],
    "score": 68,
    "credibility": 90,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-10-22T11:25:11.000Z",
    "latest": "2026-10-22T12:54:11.000Z",
    "authors": [
@@ -282,7 +281,7 @@
     "2113252578712821780"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "37054f9d1d",
@@ -308,9 +307,9 @@
      "desc": "数学的な手法で、プログラムが仕様どおり動くことを証明する技術"
     }
    ],
-   "score": 60,
+   "score": 59,
    "credibility": 85,
-   "heat": 7,
+   "heat": 6,
    "first_seen": "2026-10-22T04:11:00.000Z",
    "latest": "2026-10-22T04:11:00.000Z",
    "authors": [
@@ -344,7 +343,7 @@
     "2113120912337989889"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "7d2f1505af",
@@ -368,7 +367,7 @@
    ],
    "score": 55,
    "credibility": 78,
-   "heat": 8,
+   "heat": 7,
    "first_seen": "2026-10-22T09:05:12.000Z",
    "latest": "2026-10-22T09:05:12.000Z",
    "authors": [
@@ -402,7 +401,7 @@
     "2113194952671084571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   }
  ]
 }

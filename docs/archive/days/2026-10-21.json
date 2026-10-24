@@ -2,34 +2,100 @@
  "date": "2026-10-21",
  "items": [
   {
-   "id": "36a9742177",
+   "id": "5d618f1aec",
    "verdict": "confirmed",
-   "title": "AnthropicがClaude Duetとautoモード既定化を発表",
-   "summary": "Anthropic公式アカウントは、AIが能動的に動くエージェントアプリ「Claude Duet」のリサーチプレビュー公開を告知した。また、次週からClaudeのWeb・デスクトップ・モバイルで、Pro・Max・Teamプランのセッションを既定で自動モード（auto mode）にすると発表した。",
+   "title": "NVIDIA、小型オープンモデルNemotron 3.5 Bolt E4Bや欧州向けモデルを発表",
+   "summary": "NVIDIA公式AIアカウントは、小型オープンモデル『Nemotron 3.5 Bolt E4B』の提供開始を投稿した。投稿によると、このモデルはジェットソン Orin Nano 8GB上でローカル動作し、ロボット『Reachy Mini』の会話をBoltが、映像認識をNVIDIA Cosmosが担当するデモも紹介されている。あわせて、GTC Berlinで発表された欧州向けの新しいオープンモデルや、Cosmosの開発ツール、Porscheなど各社の活用事例も案内されている。",
    "points": [
-    "Duetは、確認が必要な事項を知らせ、依頼されたタスクを実行し、ユーザーが離れても作業を続け、代理で行う前に確認を求めると説明されている。",
-    "autoモードでは、各操作の承認を求める代わりに自動チェックが危険な操作をブロックする。手動に戻すことも可能。",
-    "自動化の範囲が広がるため、どこまでAIに任せるかの設定や、ブロックの精度については投稿だけでは未確認。"
+    "新しい点: 小型で手元の機器上で動くオープンモデルと、物理AI（ロボット・自動運転）向けの開発ツールが同時に案内された。",
+    "なぜ重要か: 自社データを自社インフラで扱いたい企業や、ロボット開発者にとって選択肢が広がる。",
+    "注意点: 性能の数値比較は投稿にはなく、実際の精度や対応言語などは未確認。"
    ],
    "terms": [
     {
-     "term": "リサーチプレビュー",
-     "desc": "正式版の前に、限られた利用者に試してもらう段階の提供形態。"
+     "term": "オープンモデル",
+     "desc": "重みなどが公開され、誰でも自分の環境で使ったり改良したりできるAIモデル。"
     },
     {
-     "term": "autoモード",
-     "desc": "操作ごとの承認を省き、自動チェックで危険な操作だけ止める動作モード。"
+     "term": "Jetson Orin Nano",
+     "desc": "NVIDIAの小型AIコンピュータ。ロボットや組み込み機器でAIを手元で動かすのに使われる。"
+    },
+    {
+     "term": "物理AI",
+     "desc": "ロボットや自動運転車など、現実世界の物体や動きを扱うAIのこと。"
+    }
+   ],
+   "score": 92,
+   "credibility": 100,
+   "heat": 56,
+   "first_seen": "2026-10-21T10:04:50.000Z",
+   "latest": "2026-10-23T18:21:15.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/",
+     "domain": "research.nvidia.com",
+     "primary": true
+    },
+    {
+     "url": "https://nvda.ws/4iwBMvF",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2113657112408785153",
+    "username": "NVIDIAAI",
+    "text": "Available now: NVIDIA Nemotron 3.5 Bolt E4B 4GB ⚡️\n\nOur newest small open model is built for local assistants, interactive characters and robots that can carry on a conversation and use tools to get things done.\n\nWatch Reachy Mini chat and move, with Bolt handling conversation and NVIDIA Cosmos handling vision. Both models run locally on Jetson Orin Nano 8GB.\n\nLearn more: https://t.co/B8ODaWMn0O",
+    "text_ja": "提供開始：NVIDIA Nemotron 3.5 Bolt E4B 4GB ⚡️\n\n私たちの最新の小型オープンモデルは、ローカルで動くアシスタントやインタラクティブなキャラクター、会話をしながらツールを使ってタスクをこなすロボット向けに作られています。\n\nReachy Miniが会話しながら動く様子をご覧ください。会話はBoltが、視覚処理はNVIDIA Cosmosが担当しています。どちらのモデルもJetson Orin Nano 8GB上でローカル実行されています。\n\n詳細はこちら: https://t.co/B8ODaWMn0O"
+   },
+   "post_ids": [
+    "2113657112408785153",
+    "2113697272475320559",
+    "2112847569827348804",
+    "2113230179799548220"
+   ],
+   "post_count": 4,
+   "archived_at": "2026-10-24T08:17:05Z"
+  },
+  {
+   "id": "b2e6f54c1b",
+   "verdict": "confirmed",
+   "title": "Anthropic、自律的に動くAIアプリ「Claude Duet」の研究プレビューを開始",
+   "summary": "Anthropic（Claude公式アカウント）は、新しいアプリ『Claude Duet』の研究プレビューを開始したと投稿した。投稿によると、Claudeが必要な事項を知らせ、依頼されたタスクを実行し、ユーザーが離れている間も作業を続け、ユーザーの代わりに行動する前に確認を取るという。",
+   "points": [
+    "新しい点: 依頼を待つだけでなく、自分から動く『エージェント』型のアプリとして位置づけられている。",
+    "なぜ重要か: 日常業務で代行を任せたい人にとって使い方が変わる可能性がある。",
+    "注意点: 『研究プレビュー』段階のため、提供範囲や料金、安全性の詳細は投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "研究プレビュー",
+     "desc": "正式公開の前に、限られた人に試してもらう先行提供の段階のこと。"
     },
     {
      "term": "エージェント",
-     "desc": "指示を受けて自分で複数の作業を進めるAIのこと。"
+     "desc": "ユーザーの指示を受け、複数の作業を自分で計画して実行するAIのこと。"
     }
    ],
    "score": 91,
    "credibility": 85,
-   "heat": 76,
+   "heat": 75,
    "first_seen": "2026-10-21T08:20:56.000Z",
-   "latest": "2026-10-22T20:04:24.000Z",
+   "latest": "2026-10-21T19:09:35.000Z",
    "authors": [
     "claudeai"
    ],
@@ -43,20 +109,19 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式X投稿",
+   "evidence_note": "Anthropic公式アカウントの投稿",
    "links": [],
    "post": {
     "url": "https://x.com/claudeai/status/2112984664256241837",
     "username": "claudeai",
     "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf. https://t.co/kt8gAbWuX8",
-    "text_ja": "Claude Duetのリサーチプレビューを開始します。これはClaudeが能動的なエージェントとして働く新しいアプリです。\n\n注意が必要な事項を知らせ、頼まれたタスクを完了し、あなたが離れても作業を続け、代わりに行動する前に確認を取ります。"
+    "text_ja": "Claude Duetの研究プレビューを開始します。Claudeがプロアクティブなエージェントとして働く新しいアプリです。\n\n対応が必要な事項を知らせ、依頼されたタスクを完了し、あなたが離れていても作業を続け、あなたの代わりに行動する前に確認を取ります。https://t.co/kt8gAbWuX8"
    },
    "post_ids": [
-    "2112984664256241837",
-    "2113360845409583307"
+    "2112984664256241837"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "f85daf49ac",
@@ -78,9 +143,9 @@
      "desc": "兵器の数や使用を国際的に制限・管理する取り決めや仕組みのこと。"
     }
    ],
-   "score": 86,
+   "score": 85,
    "credibility": 100,
-   "heat": 39,
+   "heat": 38,
    "first_seen": "2026-10-20T21:10:19.000Z",
    "latest": "2026-10-21T16:38:56.000Z",
    "authors": [
@@ -114,7 +179,7 @@
     "2112946750264676743"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "29ebcddc23",
@@ -140,9 +205,9 @@
      "desc": "現実世界の物理法則（重力や流体など）を理解・予測するAIの総称とみられる。"
     }
    ],
-   "score": 84,
+   "score": 83,
    "credibility": 100,
-   "heat": 34,
+   "heat": 33,
    "first_seen": "2026-10-21T11:35:00.000Z",
    "latest": "2026-10-21T11:35:00.000Z",
    "authors": [
@@ -176,7 +241,70 @@
     "2112870261829603589"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
+  },
+  {
+   "id": "f6f1003ed5",
+   "verdict": "confirmed",
+   "title": "NVIDIA、GTC Berlinで欧州の産業向けAI活用を紹介",
+   "summary": "NVIDIA公式アカウントは、GTC Berlinで欧州の産業分野におけるAI活用を紹介した。CUDA-X、Omniverse、Cosmos、Nemotronなどを使い、Agile Robots、Audi、Dassault Systèmes、Schaeffler、Siemensなどが設計の試行や ロボットのシミュレーション、工場運営の改善に取り組んでいるとしている。",
+   "points": [
+    "各社の具体的な成果や数値は投稿からは確認できず、取り組み紹介の段階にとどまる",
+    "欧州の製造業でAIとシミュレーションを組み合わせる動きの一例として読める",
+    "「すべての企業がAI企業になる」という発言は、NVIDIA関係者の見解として受け止めるのが妥当"
+   ],
+   "terms": [
+    {
+     "term": "Omniverse",
+     "desc": "NVIDIAが提供する、3Dデータやシミュレーションを共有するための基盤"
+    },
+    {
+     "term": "デジタルツイン",
+     "desc": "現実の工場や製品を仮想空間に再現し、試行や検証を行う技術"
+    },
+    {
+     "term": "CUDA-X",
+     "desc": "NVIDIAのGPUを使って計算を高速化するためのソフトウェア群"
+    }
+   ],
+   "score": 78,
+   "credibility": 93,
+   "heat": 30,
+   "first_seen": "2026-10-21T10:24:53.000Z",
+   "latest": "2026-10-21T10:52:57.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの紹介投稿",
+   "links": [
+    {
+     "url": "https://nvda.ws/4BnYgGT",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2112855959609729106",
+    "username": "NVIDIAAI",
+    "text": "\"There's no question everybody will become an AI company and we're going to have a thriving AI economy here in Europe.\" https://t.co/9g3ERvRaAe",
+    "text_ja": "「誰もがAI企業になるのは間違いない。そして、ここヨーロッパでも活気あるAI経済が生まれるだろう。」 https://t.co/9g3ERvRaAe"
+   },
+   "post_ids": [
+    "2112855959609729106",
+    "2112859682415243776"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "09617b79c9",
@@ -288,68 +416,6 @@
    "archived_at": "2026-10-23T17:54:55Z"
   },
   {
-   "id": "6f9786f0fc",
-   "verdict": "confirmed",
-   "title": "NVIDIA、GTC Berlinで欧州向けのオープンモデルを発表",
-   "summary": "NVIDIAの公式AIアカウントは、欧州の各チームが自らのデータを使い、自ら管理するインフラでAIを構築できるよう、新たなオープンモデルを公開すると発表した。GTC Berlinで発表されたもので、専門AIエージェントの構築、ロボットの訓練、タンパク質設計、量子コンピューターの開発などに使えるとしている。",
-   "points": [
-    "新しい点: 欧州の開発者や企業が、データと基盤を自ら管理しながら使えるオープンモデルの提供が示された",
-    "注意点: 投稿には個々のモデルの名称や性能、ライセンス条件が書かれていないため、詳細は公式ページの確認が必要",
-    "未確認: 欧州の規制やデータ保護要件への対応範囲は投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "オープンモデル",
-     "desc": "学習済みのAIモデルを公開し、誰でも使ったり改変したりできるようにしたもの。"
-    },
-    {
-     "term": "AIエージェント",
-     "desc": "人の指示を受け、自分で手順を考えて作業を進めるAIの仕組み。"
-    },
-    {
-     "term": "タンパク質設計",
-     "desc": "目的の働きをもつタンパク質の構造や配列をAIなどで考えること。"
-    }
-   ],
-   "score": 74,
-   "credibility": 93,
-   "heat": 21,
-   "first_seen": "2026-10-21T10:04:50.000Z",
-   "latest": "2026-10-21T10:04:50.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://nvda.ws/4iwBMvF",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112847569827348804",
-    "username": "NVIDIAAI",
-    "text": "We’re releasing more open models to help teams across Europe build AI with their own data, on infrastructure they control.\n\nAnnounced at GTC Berlin, the models help developers, researchers and enterprises build specialized AI agents, train robots, design proteins and develop quantum computers.\n\nSee what’s new: https://t.co/gXbVJfRn1b",
-    "text_ja": "欧州各地のチームが、自分たちのデータを使い、自分たちで管理するインフラの上でAIを構築できるよう、さらに多くのオープンモデルを公開します。\n\nGTC Berlinで発表されたこれらのモデルは、開発者、研究者、企業が特化型AIエージェントを構築したり、ロボットを訓練したり、タンパク質を設計したり、量子コンピュータを開発したりするのに役立ちます。\n\n新しい内容はこちら: https://t.co/gXbVJfRn1b"
-   },
-   "post_ids": [
-    "2112847569827348804"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
-  },
-  {
    "id": "685004f0c3",
    "verdict": "confirmed",
    "title": "NVIDIAがエージェント向けの安全制御基盤とナレッジ基盤を発表",
@@ -373,9 +439,9 @@
      "desc": "NVIDIAが毎年開催する技術カンファレンスの名称。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 93,
-   "heat": 17,
+   "heat": 16,
    "first_seen": "2026-10-21T10:01:24.000Z",
    "latest": "2026-10-21T10:24:53.000Z",
    "authors": [
@@ -415,7 +481,7 @@
     "2112852615461773370"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "a69c65f33d",
@@ -483,68 +549,6 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-23T17:54:55Z"
-  },
-  {
-   "id": "9966d38fec",
-   "verdict": "confirmed",
-   "title": "NVIDIA、GTC Berlinで欧州産業向け技術事例を紹介",
-   "summary": "NVIDIA公式AIアカウントは、GTC Berlinにおける欧州の産業分野でのAI活用を紹介した。CUDA-XやOmniverse、Cosmos、Nemotronといったライブラリ・オープンモデルを使い、Agile Robots、Audi、Dassault Systèmes、Schaeffler、Siemensなどが設計の試行やロボットのシミュレーション、工場運営の改善に取り組んでいると投稿で述べている。詳細は投稿内リンクで案内されている。",
-   "points": [
-    "NVIDIAの公式イベントで発表された欧州企業の取り組みを紹介する投稿で、具体的な成果の数値は本文からは読み取れない。",
-    "製造・自動車・ロボティクス分野でAIやシミュレーションを使う企業にとって、導入事例を知る参考になる。",
-    "投稿は企業自身の発信のため、効果の大きさは各社の個別発表や詳細資料で確認する必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "GTC",
-     "desc": "NVIDIAが毎年開催する技術カンファレンス。新製品や技術の発表が行われる。"
-    },
-    {
-     "term": "Omniverse",
-     "desc": "NVIDIAの3D・産業向けシミュレーション基盤。工場やロボットの仮想環境を作るのに使われる。"
-    },
-    {
-     "term": "Nemotron",
-     "desc": "NVIDIAが公開しているオープンなAIモデルのシリーズ。"
-    }
-   ],
-   "score": 71,
-   "credibility": 93,
-   "heat": 12,
-   "first_seen": "2026-10-21T10:24:53.000Z",
-   "latest": "2026-10-21T10:52:57.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの投稿",
-   "links": [
-    {
-     "url": "https://nvda.ws/4BnYgGT",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2112859682415243776",
-    "username": "NVIDIAAI",
-    "text": "Europe’s industrial future is taking shape at GTC Berlin.\n\nWith our CUDA-X and Omniverse libraries, plus Cosmos and Nemotron open models and tools, Europe’s industrial leaders are testing designs faster, simulating robots and improving factory operations.\n\nLearn how Agile Robots, @Audi, @Dassault3DS, Schaeffler and @Siemens  are putting these technologies to work: https://t.co/x7BUiGhjDi",
-    "text_ja": "ヨーロッパの産業の未来はGTCベルリンで形になりつつあります。\n\nCUDA-XとOmniverseのライブラリ、そしてCosmosとNemotronのオープンモデルやツールにより、欧州の産業のリーダー企業は設計をより速く試し、ロボットをシミュレーションし、工場の運営を改善しています。\n\nAgile Robots、@Audi、@Dassault3DS、Schaeffler、@Siemens などがこれらの技術をどのように活用しているかはこちら: https://t.co/x7BUiGhjDi"
-   },
-   "post_ids": [
-    "2112859682415243776"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-24T00:51:40Z"
   },
   {
    "id": "86733c99f2",
@@ -690,7 +694,7 @@
    ],
    "score": 84,
    "credibility": 100,
-   "heat": 35,
+   "heat": 34,
    "first_seen": "2026-10-21T13:32:35.000Z",
    "latest": "2026-10-21T13:32:35.000Z",
    "authors": [
@@ -724,7 +728,7 @@
     "2112899854569762936"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   },
   {
    "id": "bc10b8f437",
@@ -832,7 +836,7 @@
     "2112823686894166510"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T00:51:40Z"
+   "archived_at": "2026-10-24T08:17:05Z"
   }
  ]
 }

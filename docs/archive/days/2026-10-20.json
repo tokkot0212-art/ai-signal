@@ -27,7 +27,7 @@
    ],
    "score": 88,
    "credibility": 100,
-   "heat": 45,
+   "heat": 44,
    "first_seen": "2026-10-19T22:30:05.000Z",
    "latest": "2026-10-21T19:23:19.000Z",
    "authors": [
@@ -63,7 +63,7 @@
     "2112988118471295323"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-24T08:17:05Z"
+   "archived_at": "2026-10-24T12:46:42Z"
   },
   {
    "id": "3b8c6ca6b0",
@@ -134,34 +134,34 @@
    "archived_at": "2026-10-22T18:03:26Z"
   },
   {
-   "id": "c863d51889",
+   "id": "46eed04701",
    "verdict": "confirmed",
-   "title": "Sakana AI、AIエージェント基盤「Sakana Aquarium」を発表",
-   "summary": "Sakana AIは、意思決定支援と実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表した。既存データをつなぎ意味づける機能、手順に沿ってAIが判断・実行する機能、アクセス権限や承認を設定し記録する統制機能を備えるとしている。同社は今後も機能を拡充し、FDEが顧客と共に構築・検証を進めるとしている。",
+   "title": "Sakana AIが業務用AIエージェント基盤「Aquarium」を発表",
+   "summary": "Sakana AIは公式アカウントで、意思決定支援と実行のためのAIエージェントプラットフォーム「Sakana Aquarium」の発表を伝えた。既存データを移し替えずに接続して意味づける仕組み、手順に沿ってAIを動かす仕組み、アクセス権限や承認の設定と行動の記録を行う統制機能の3点が説明されている。あわせて、同社の防衛部門のアナリストが大阪で開催されたGSE 2026のセッションに登壇し、防衛省との複数の契約について紹介したことも投稿された。",
    "points": [
-    "企業のデータを移し替えずに接続し、AIに業務の意味や関係を理解させる点が特徴とされる",
-    "「情報収集→AI判断→人の承認→実行」を手順として記述するだけでエージェントを動かせるとしている",
-    "AIが何を根拠に判断したかを記録する仕組みがあるが、実際の性能や導入事例は投稿では確認できない"
+    "既存データを移さず意味や関係を定義して、AIに組織の文脈を理解させる点が特徴として示されている",
+    "「AIが何を根拠に判断し何を実行したか」を記録する点は、業務利用での説明責任の観点で重要とみられる",
+    "防衛関連の契約内容や、Aquariumの実際の導入成果は投稿からは未確認"
    ],
    "terms": [
     {
-     "term": "AIエージェント",
-     "desc": "人の代わりに情報収集や判断、操作を自律的に行うAIのこと"
+     "term": "エージェント",
+     "desc": "与えられた目標に向けて、AIが自分で手順を判断し道具を使って作業を進める仕組み"
     },
     {
      "term": "Ontology（オントロジー）",
-     "desc": "データの意味や関係性を整理して定義する枠組みのこと"
+     "desc": "データの意味や関係を整理して定義したもの。AIが状況を理解する土台になる"
     },
     {
-     "term": "ガバナンス",
-     "desc": "AIの利用を人が統制し、ルールに沿って管理する仕組みのこと"
+     "term": "FDE",
+     "desc": "顧客先に入り込み、導入や検証を共に進める技術担当者とみられる（投稿内で詳細の定義なし）"
     }
    ],
    "score": 84,
    "credibility": 100,
-   "heat": 36,
+   "heat": 35,
    "first_seen": "2026-10-20T03:57:23.000Z",
-   "latest": "2026-10-23T00:59:39.000Z",
+   "latest": "2026-10-23T08:46:36.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -175,7 +175,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式の発表・ブログ",
+   "evidence_note": "Sakana AI公式ブログ・投稿",
    "links": [
     {
      "url": "https://sakana.ai/aquarium/",
@@ -186,6 +186,11 @@
      "url": "https://sakana.ai/aquarium-release",
      "domain": "sakana.ai",
      "primary": true
+    },
+    {
+     "url": "https://global-startup-expo.com/session/session021/",
+     "domain": "global-startup-expo.com",
+     "primary": false
     }
    ],
    "post": {
@@ -196,66 +201,11 @@
    },
    "post_ids": [
     "2112507110290502109",
-    "2113435148792598986"
+    "2113435148792598986",
+    "2113552660100174172"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-24T08:17:05Z"
-  },
-  {
-   "id": "abc18257a9",
-   "verdict": "confirmed",
-   "title": "Google DeepMind、Gemini 4 Argonで人体の3D可視化デモを公開",
-   "summary": "Google DeepMindの公式アカウントは、Gemini 4 Argonが3つのオープンソースデータセットを組み合わせて、人体の対話型3D可視化を作成したと投稿した。投稿では、動く層の切り替え、筋肉の単独表示、拍動する心臓の内部へのズームができるとしている。",
-   "points": [
-    "複数の公開データを組み合わせて教育用の可視化を生成した事例として紹介されている。",
-    "投稿はデモの紹介であり、精度や医療用途への適合性は示されていない。",
-    "使用したデータセットの名前や詳細、Gemini 4 Argonの一般提供時期は投稿からは分からない。"
-   ],
-   "terms": [
-    {
-     "term": "オープンソースデータセット",
-     "desc": "誰でも自由に使える形で公開された、データの集まり。"
-    },
-    {
-     "term": "Gemini",
-     "desc": "Google DeepMindが開発しているAIモデルのシリーズ名。"
-    },
-    {
-     "term": "3D可視化",
-     "desc": "データを立体的な画像や動きとして描き出すこと。"
-    }
-   ],
-   "score": 80,
-   "credibility": 90,
-   "heat": 39,
-   "first_seen": "2026-10-20T14:53:53.000Z",
-   "latest": "2026-10-21T18:30:05.000Z",
-   "authors": [
-    "GoogleDeepMind"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントのデモ紹介",
-   "links": [],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
-    "username": "GoogleDeepMind",
-    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
-    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体の対話型3Dビジュアライゼーションを作成しました。\n\n異なるレイヤーを動きのある形で切り替えたり、筋肉だけを分離したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
-   },
-   "post_ids": [
-    "2112974723659247896"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-24T08:17:05Z"
+   "archived_at": "2026-10-24T12:46:42Z"
   },
   {
    "id": "a2254a0c9b",
@@ -303,6 +253,62 @@
    ],
    "post_count": 3,
    "archived_at": "2026-10-22T13:54:50Z"
+  },
+  {
+   "id": "abc18257a9",
+   "verdict": "confirmed",
+   "title": "Google DeepMind、Gemini 4 Argonで人体の3D可視化デモを公開",
+   "summary": "Google DeepMindの公式アカウントは、Gemini 4 Argonが3つのオープンソースデータセットを組み合わせて、人体の対話型3D可視化を作成したと投稿した。投稿では、動く層の切り替え、筋肉の単独表示、拍動する心臓の内部へのズームができるとしている。",
+   "points": [
+    "複数の公開データを組み合わせて教育用の可視化を生成した事例として紹介されている。",
+    "投稿はデモの紹介であり、精度や医療用途への適合性は示されていない。",
+    "使用したデータセットの名前や詳細、Gemini 4 Argonの一般提供時期は投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "オープンソースデータセット",
+     "desc": "誰でも自由に使える形で公開された、データの集まり。"
+    },
+    {
+     "term": "Gemini",
+     "desc": "Google DeepMindが開発しているAIモデルのシリーズ名。"
+    },
+    {
+     "term": "3D可視化",
+     "desc": "データを立体的な画像や動きとして描き出すこと。"
+    }
+   ],
+   "score": 79,
+   "credibility": 90,
+   "heat": 38,
+   "first_seen": "2026-10-20T14:53:53.000Z",
+   "latest": "2026-10-21T18:30:05.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントのデモ紹介",
+   "links": [],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
+    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体の対話型3Dビジュアライゼーションを作成しました。\n\n異なるレイヤーを動きのある形で切り替えたり、筋肉だけを分離したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
+   },
+   "post_ids": [
+    "2112974723659247896"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-24T12:46:42Z"
   },
   {
    "id": "e6ef99b10b",
@@ -432,9 +438,9 @@
      "desc": "複数の広告主が入札し、最も条件の良い広告枠を決める仕組み"
     }
    ],
-   "score": 77,
+   "score": 76,
    "credibility": 90,
-   "heat": 32,
+   "heat": 31,
    "first_seen": "2026-10-20T03:05:09.000Z",
    "latest": "2026-10-21T17:42:32.000Z",
    "authors": [
@@ -462,7 +468,7 @@
     "2112962753682198969"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T08:17:05Z"
+   "archived_at": "2026-10-24T12:46:42Z"
   },
   {
    "id": "4e096db129",

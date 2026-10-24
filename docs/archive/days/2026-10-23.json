@@ -25,9 +25,9 @@
      "desc": "ソースコードが公開され、誰でも利用・改変できるソフトウェアの部品。"
     }
    ],
-   "score": 98,
+   "score": 97,
    "credibility": 100,
-   "heat": 71,
+   "heat": 67,
    "first_seen": "2026-10-22T22:01:06.000Z",
    "latest": "2026-10-22T22:01:06.000Z",
    "authors": [
@@ -61,119 +61,7 @@
     "2113390212911083894"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T17:54:55Z"
-  },
-  {
-   "id": "461411bcd5",
-   "verdict": "confirmed",
-   "title": "Google CloudでClaudeマネージド版が一般提供開始",
-   "summary": "Anthropicの公式アカウントは、Google Cloud上で提供される「Claude Models on Google Cloud（Anthropic managed）」が一般提供（GA）になったと発表した。Google CloudのIAM認証情報や請求、コミットメントの消化といった機能を含め、Claude Platformの全機能を利用できるとしている。",
-   "points": [
-    "新しい点: Google Cloudの認証・課金の仕組みでClaudeを使えるようになる",
-    "注意点: 対象地域や料金の詳細は投稿に記載がなく未確認",
-    "なぜ重要か: Google Cloudを使う企業が既存の契約や管理体制のまま導入しやすくなる"
-   ],
-   "terms": [
-    {
-     "term": "一般提供（GA）",
-     "desc": "誰でも正式に契約・利用できる状態になること"
-    },
-    {
-     "term": "IAM",
-     "desc": "クラウド上で誰が何を使えるかを管理する権限の仕組み"
-    },
-    {
-     "term": "コミットメント",
-     "desc": "一定期間に一定額以上の利用を約束する契約形態"
-    }
-   ],
-   "score": 86,
-   "credibility": 85,
-   "heat": 62,
-   "first_seen": "2026-10-22T21:21:00.000Z",
-   "latest": "2026-10-22T21:21:00.000Z",
-   "authors": [
-    "claudeai"
-   ],
-   "author_labels": [
-    {
-     "username": "claudeai",
-     "label": "Anthropic（Claude公式アカウント）",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
-   "links": [],
-   "post": {
-    "url": "https://x.com/claudeai/status/2113380122468454765",
-    "username": "claudeai",
-    "text": "Claude Models on Google Cloud (Anthropic managed) is now generally available.\n\nGet the full set of Claude Platform features on Google Cloud, with Google Cloud IAM credentials, billing, and commitment retirement. https://t.co/JyRT8Y401r",
-    "text_ja": "Google Cloud 上の Claude モデル（Anthropic マネージド）が一般提供を開始しました。\n\nGoogle Cloud の認証情報（IAM）、請求、コミットメントの消化など、Claude Platform の機能をフルセットで Google Cloud 上でご利用いただけます。 https://t.co/JyRT8Y401r"
-   },
-   "post_ids": [
-    "2113380122468454765"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-23T17:54:55Z"
-  },
-  {
-   "id": "296ec1d1ab",
-   "verdict": "confirmed",
-   "title": "OpenAI、Decisions APIを一般提供開始",
-   "summary": "OpenAIの開発者向け公式アカウントは、Decisions APIが一般提供（GA）になったと発表した。投稿によると、このAPIはテキストや画像の分類、入力の評価、次の処理の判断を、完全なモデル応答を生成せずに行えるとしている。",
-   "points": [
-    "判断だけを素早く返すため、従来の全文生成より速くコストを抑えられる可能性があるとされる。開発者にとって用途が広がる。",
-    "具体的な料金や速度の数値は投稿には書かれていないため未確認である。",
-    "「完全なモデル応答を生成しない」仕組みの詳細は、公式ドキュメントで確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "API",
-     "desc": "ソフトウェア同士が機能をやり取りするための接続の仕組み。"
-    },
-    {
-     "term": "一般提供（GA）",
-     "desc": "試験段階を終え、誰でも正式に利用できるようになった状態。"
-    },
-    {
-     "term": "モデル応答",
-     "desc": "AIモデルが入力に対して生成する文章や結果のこと。"
-    }
-   ],
-   "score": 84,
-   "credibility": 90,
-   "heat": 49,
-   "first_seen": "2026-10-22T19:07:58.000Z",
-   "latest": "2026-10-22T19:07:58.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式の開発者向け告知",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
-    "username": "OpenAIDevs",
-    "text": "Add near real-time decisions to your workflow with the Decisions API, now generally available.\n\nBuild faster, more cost-efficient apps and agents that can classify text and images, evaluate inputs, and determine what happens next without generating a full model response. https://t.co/XxNe5Sqb2b",
-    "text_ja": "Decisions API が一般提供開始となりました。ワークフローにほぼリアルタイムの判断を組み込めます。\n\nフルのモデル応答を生成せずに、テキストや画像の分類、入力の評価、次に何をするかの判断ができる、より速くコスト効率の高いアプリやエージェントを構築できます。 https://t.co/XxNe5Sqb2b"
-   },
-   "post_ids": [
-    "2113346642787086538"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-23T17:54:55Z"
+   "archived_at": "2026-10-24T00:51:40Z"
   },
   {
    "id": "252ac05067",
@@ -199,9 +87,9 @@
      "desc": "開発元とは別の外部組織が、製品や安全性を客観的に評価すること。"
     }
    ],
-   "score": 83,
+   "score": 82,
    "credibility": 90,
-   "heat": 47,
+   "heat": 44,
    "first_seen": "2026-10-22T15:57:59.000Z",
    "latest": "2026-10-22T15:57:59.000Z",
    "authors": [
@@ -229,7 +117,63 @@
     "2113298833392496746"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T17:54:55Z"
+   "archived_at": "2026-10-24T00:51:40Z"
+  },
+  {
+   "id": "296ec1d1ab",
+   "verdict": "confirmed",
+   "title": "OpenAI、Decisions APIを一般提供開始",
+   "summary": "OpenAIの開発者向け公式アカウントは、Decisions APIが一般提供（GA）になったと発表した。投稿によると、このAPIはテキストや画像の分類、入力の評価、次の処理の判断を、完全なモデル応答を生成せずに行えるとしている。",
+   "points": [
+    "判断だけを素早く返すため、従来の全文生成より速くコストを抑えられる可能性があるとされる。開発者にとって用途が広がる。",
+    "具体的な料金や速度の数値は投稿には書かれていないため未確認である。",
+    "「完全なモデル応答を生成しない」仕組みの詳細は、公式ドキュメントで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士が機能をやり取りするための接続の仕組み。"
+    },
+    {
+     "term": "一般提供（GA）",
+     "desc": "試験段階を終え、誰でも正式に利用できるようになった状態。"
+    },
+    {
+     "term": "モデル応答",
+     "desc": "AIモデルが入力に対して生成する文章や結果のこと。"
+    }
+   ],
+   "score": 82,
+   "credibility": 90,
+   "heat": 46,
+   "first_seen": "2026-10-22T19:07:58.000Z",
+   "latest": "2026-10-22T19:07:58.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の開発者向け告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
+    "username": "OpenAIDevs",
+    "text": "Add near real-time decisions to your workflow with the Decisions API, now generally available.\n\nBuild faster, more cost-efficient apps and agents that can classify text and images, evaluate inputs, and determine what happens next without generating a full model response. https://t.co/XxNe5Sqb2b",
+    "text_ja": "Decisions API が一般提供開始となりました。ワークフローにほぼリアルタイムの判断を組み込めます。\n\nフルのモデル応答を生成せずに、テキストや画像の分類、入力の評価、次に何をするかの判断ができる、より速くコスト効率の高いアプリやエージェントを構築できます。 https://t.co/XxNe5Sqb2b"
+   },
+   "post_ids": [
+    "2113346642787086538"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-24T00:51:40Z"
   },
   {
    "id": "db9866403f",
@@ -251,9 +195,9 @@
      "desc": "氏名や連絡先など、特定の個人を識別できる情報。"
     }
    ],
-   "score": 69,
+   "score": 65,
    "credibility": 78,
-   "heat": 44,
+   "heat": 34,
    "first_seen": "2026-10-23T12:55:11.000Z",
    "latest": "2026-10-23T12:55:11.000Z",
    "authors": [
@@ -287,7 +231,7 @@
     "2113615217775239488"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-23T17:54:55Z"
+   "archived_at": "2026-10-24T00:51:40Z"
   }
  ]
 }

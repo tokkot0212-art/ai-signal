@@ -60,6 +60,68 @@
    "archived_at": "2026-10-24T12:46:42Z"
   },
   {
+   "id": "1c6363d1d9",
+   "verdict": "confirmed",
+   "title": "OpenAIのモデルがGoogle Cloudで利用可能に",
+   "summary": "OpenAI公式アカウントは、同社のフロンティアモデルとCodexのエージェント型ワークフローを、Google CloudのModel Gardenで提供すると発表した。企業が既に開発に使っている環境で同社の技術を使えるようにするのが狙いとされる。",
+   "points": [
+    "これまでOpenAIのモデルは主にOpenAI自身の環境で提供されていたため、クラウド選択の幅が広がる点が新しい。",
+    "企業のIT部門にとっては、既存のGoogle Cloud契約の中でOpenAIの技術を利用できる可能性がある。",
+    "提供開始時期や料金、対象モデルの詳細は投稿からは未確認。"
+   ],
+   "terms": [
+    {
+     "term": "フロンティアモデル",
+     "desc": "現時点で最も高性能とされる大規模AIモデルのこと。"
+    },
+    {
+     "term": "Model Garden",
+     "desc": "Google Cloud上で各社のAIモデルを選んで使えるサービス群。"
+    },
+    {
+     "term": "Codex",
+     "desc": "OpenAIのプログラミング支援AIの名称。"
+    }
+   ],
+   "score": 87,
+   "credibility": 100,
+   "heat": 43,
+   "first_seen": "2026-10-21T19:23:19.000Z",
+   "latest": "2026-10-21T19:23:19.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式X投稿",
+   "links": [
+    {
+     "url": "https://openai.com/index/openai-models-google-cloud/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2112988118471295323",
+    "username": "OpenAI",
+    "text": "OpenAI models are coming to Google Cloud.\n\nWe're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.\n\nhttps://t.co/gjuLVALjDm",
+    "text_ja": "OpenAIのモデルがGoogle Cloudに来ます。\n\n当社のフロンティアモデルとCodexのエージェント型ワークフローを、Google CloudのModel Gardenに提供し、企業がすでに開発している場所で当社の技術を使えるようにします。\n\nhttps://t.co/gjuLVALjDm"
+   },
+   "post_ids": [
+    "2112988118471295323"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-24T16:43:48Z"
+  },
+  {
    "id": "b6969f3377",
    "verdict": "confirmed",
    "title": "AnthropicがPublic Benefit Reportを公表",
@@ -81,7 +143,7 @@
    ],
    "score": 86,
    "credibility": 100,
-   "heat": 41,
+   "heat": 40,
    "first_seen": "2026-10-21T17:59:12.000Z",
    "latest": "2026-10-21T17:59:12.000Z",
    "authors": [
@@ -115,7 +177,7 @@
     "2112966949273801086"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T12:46:42Z"
+   "archived_at": "2026-10-24T16:43:48Z"
   },
   {
    "id": "1a87eff266",
@@ -143,7 +205,7 @@
    ],
    "score": 83,
    "credibility": 85,
-   "heat": 55,
+   "heat": 54,
    "first_seen": "2026-10-21T17:40:31.000Z",
    "latest": "2026-10-21T17:40:31.000Z",
    "authors": [
@@ -171,33 +233,93 @@
     "2112962248218148878"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T12:46:42Z"
+   "archived_at": "2026-10-24T16:43:48Z"
   },
   {
-   "id": "f4a671c84f",
+   "id": "0d0a86dda0",
    "verdict": "confirmed",
-   "title": "Sakana AIの社員コメントがJapan Timesの論説に引用",
-   "summary": "Sakana AI公式アカウントは、同社防衛部門PMの菊池咲氏のコメントがJapan Timesの論説で引用されたと投稿した。論説はAI主権について、どこまで自前で持つかより「何を手放さずにおくか」が問いだと論じ、重要なのは所有ではなく選択肢だと指摘しているという。",
+   "title": "OpenAI、ChatGPT広告の仕組みを開発者向けに解説",
+   "summary": "OpenAIの開発者向け公式アカウントは、ChatGPTの広告の仕組みについて投稿した。投稿では、会話の流れに合わせて応答しつつ回答の独立性を保つため、LLMオーケストレーター、検索（retrieval）、ランキング、オークションのツールがどう連携するかを説明するとしている。詳細は投稿のリンク先で示されている。",
    "points": [
-    "ソブリンAI（自国で基盤を持つ考え方）と対比し、AI主権を「選択肢の確保」として捉える視点が示されている",
-    "どの国も単独ではAIを完結できないという前提に立つ議論で、政策や調達を考える人に関係しうる",
-    "論説の全文は投稿に示されておらず、具体的な政策提言の内容は未確認"
+    "ChatGPTに広告を組み込む際、回答の中立性をどう保つかという点が示されており、利用者の信頼に関わる論点",
+    "『オークション』で広告枠を決める仕組みが含まれることが示されている。具体的な料金や運用条件は投稿からは不明",
+    "技術的な構成の説明にとどまり、広告がどの程度表示されるかなどは未確認"
    ],
    "terms": [
     {
-     "term": "AI主権",
-     "desc": "国や組織が、AIの技術・データ・運用を他国に依存しすぎず判断できる能力のこと"
+     "term": "LLMオーケストレーター",
+     "desc": "複数のAI処理や検索などの部品を、順序立てて組み合わせて制御する仕組み"
     },
     {
-     "term": "ソブリンAI",
-     "desc": "自国の管理下で開発・運用されるAIのこと。自前主義の考え方を指すことが多い"
+     "term": "retrieval（検索）",
+     "desc": "外部のデータベースや文書から、回答に必要な情報を探し出す処理"
+    },
+    {
+     "term": "オークション",
+     "desc": "複数の広告主が入札し、最も条件の良い広告枠を決める仕組み"
     }
    ],
-   "score": 70,
+   "score": 76,
+   "credibility": 90,
+   "heat": 31,
+   "first_seen": "2026-10-21T17:42:32.000Z",
+   "latest": "2026-10-21T17:42:32.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の技術解説投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2112962753682198969",
+    "username": "OpenAIDevs",
+    "text": "We built ChatGPT’s ad stack to respond to an evolving conversation, while ensuring answers stay independent.\n\nHere’s how the LLM orchestrator, retrieval, ranking  and auction tools work together. https://t.co/oho0jXkfiQ",
+    "text_ja": "ChatGPTの広告の仕組みは、変化していく会話に応じて表示を最適化しつつ、回答が独立性を保つように設計しました。\n\nLLMオーケストレーター、検索（retrieval）、ランキング、オークションの各ツールがどのように連携するかは、こちらをご覧ください。 https://t.co/oho0jXkfiQ"
+   },
+   "post_ids": [
+    "2112962753682198969"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-24T16:43:48Z"
+  },
+  {
+   "id": "0bca5c133e",
+   "verdict": "confirmed",
+   "title": "Sakana AIの石井氏、GSE 2026で防衛AIの役割を講演",
+   "summary": "Sakana AI公式アカウントは、防衛部門の国際政治アナリスト石井順也が大阪で開催された「GSE 2026」のデュアルユースセッションに登壇したと投稿した。講演では同社の強みや実績、防衛AIを現場に届ける際の課題などを話したという。投稿では、防衛省とすでに複数の契約を結んでいることも述べられている。",
+   "points": [
+    "新しい点: 防衛省との複数契約があると公式に言及された",
+    "重要性: 防衛・安全保障分野でのAI活用の動きとして関係する",
+    "注意点: 契約の具体的な内容や金額は投稿に示されておらず未確認"
+   ],
+   "terms": [
+    {
+     "term": "デュアルユース",
+     "desc": "民生用と軍事・防衛用の両方に使える技術のこと"
+    },
+    {
+     "term": "AI主権（ソブリンAI）",
+     "desc": "国が自国のデータや技術を自らの管理下に置こうとする考え方"
+    },
+    {
+     "term": "GSE",
+     "desc": "投稿で言及されたイベント名。詳細は未確認"
+    }
+   ],
+   "score": 71,
    "credibility": 93,
-   "heat": 10,
+   "heat": 14,
    "first_seen": "2026-10-22T08:18:51.000Z",
-   "latest": "2026-10-22T08:18:51.000Z",
+   "latest": "2026-10-23T08:46:36.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -211,8 +333,13 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの告知（記事リンク付き）",
+   "evidence_note": "Sakana AI公式アカウントの投稿",
    "links": [
+    {
+     "url": "https://global-startup-expo.com/session/session021/",
+     "domain": "global-startup-expo.com",
+     "primary": false
+    },
     {
      "url": "https://www.japantimes.co.jp/commentary/2026/10/21/world/tech-sovereignty-is-fantasy/",
      "domain": "japantimes.co.jp",
@@ -220,16 +347,17 @@
     }
    ],
    "post": {
-    "url": "https://x.com/SakanaAILabs/status/2113183285941780729",
+    "url": "https://x.com/SakanaAILabs/status/2113552660100174172",
     "username": "SakanaAILabs",
-    "text": "【AI主権をめぐる問いは、「どんな選択肢と能力を保持すべきか」から始まる】\n\nSakana AI 菊池咲(防衛部門PM)のコメントが、Japan Timesの論説で引用されました。「どこまで自前で持つか」を問うソブリンAIに対し、AI主権が問うのは、何を手放さずにおくか。どの国も単独では完結できない世界で、重要 なのは所有ではなく選択肢だと指摘しています。\n\n記事はこちら\nhttps://t.co/SFdDLMpQvU",
+    "text": "日本発のAIラボが、防衛・安全保障で果たせる役割とは\n\nSakana AI防衛部門の国際政治アナリスト、石井順也が、大阪で開催された「GSE 2026」のデュアルユースセッションに登壇しました。\n\n元外交官の石井から、Sakana AIの強みと実績、これからの取り組み、そして防衛AIを現場に届ける上での課題に ついてお話ししました。\n\nSakana AIには、世界トップクラスのエンジニアと、官庁や防衛の現場を知る専門家が一緒にいます。防衛省とはすでに複数の契約を締結しており、その具体的な内容を紹介しました。今後も防衛・インテリジェンス分野でのAI活用を進めるとともに、オーケストレーション技術を通じてAI主権の確保にも貢献したいと考えています。\n\nhttps://t.co/giYpYOUH80",
     "text_ja": null
    },
    "post_ids": [
+    "2113552660100174172",
     "2113183285941780729"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T12:46:42Z"
+   "post_count": 2,
+   "archived_at": "2026-10-24T16:43:48Z"
   },
   {
    "id": "1f18f86f4e",
@@ -281,7 +409,63 @@
     "2113252578712821780"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T12:46:42Z"
+   "archived_at": "2026-10-24T16:43:48Z"
+  },
+  {
+   "id": "abc18257a9",
+   "verdict": "promising",
+   "title": "Google DeepMind、Gemini 4 Argonで人体の3D可視化デモを公開",
+   "summary": "Google DeepMindの公式アカウントは、Gemini 4 Argonが3つのオープンソースデータセットを組み合わせて、人体の対話型3D可視化を作成したと投稿した。投稿では、動く層の切り替え、筋肉の単独表示、拍動する心臓の内部へのズームができるとしている。",
+   "points": [
+    "複数の公開データを組み合わせて教育用の可視化を生成した事例として紹介されている。",
+    "投稿はデモの紹介であり、精度や医療用途への適合性は示されていない。",
+    "使用したデータセットの名前や詳細、Gemini 4 Argonの一般提供時期は投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "オープンソースデータセット",
+     "desc": "誰でも自由に使える形で公開された、データの集まり。"
+    },
+    {
+     "term": "Gemini",
+     "desc": "Google DeepMindが開発しているAIモデルのシリーズ名。"
+    },
+    {
+     "term": "3D可視化",
+     "desc": "データを立体的な画像や動きとして描き出すこと。"
+    }
+   ],
+   "score": 79,
+   "credibility": 90,
+   "heat": 38,
+   "first_seen": "2026-10-21T18:30:05.000Z",
+   "latest": "2026-10-21T18:30:05.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントのデモ紹介",
+   "links": [],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+    "username": "GoogleDeepMind",
+    "text": "Gemini 4 Argon combined three open-source datasets to build an interactive 3D visualization of human anatomy.\n\nToggle different layers in motion, isolate muscles, or zoom inside a beating heart. https://t.co/60nfQ0QVkl",
+    "text_ja": "Gemini 4 Argonは、3つのオープンソースデータセットを組み合わせて、人体の対話型3Dビジュアライゼーションを作成しました。\n\n異なるレイヤーを動きのある形で切り替えたり、筋肉だけを分離したり、拍動する心臓の内部にズームしたりできます。 https://t.co/60nfQ0QVkl"
+   },
+   "post_ids": [
+    "2112974723659247896"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-24T16:43:48Z"
   },
   {
    "id": "37054f9d1d",
@@ -309,7 +493,7 @@
    ],
    "score": 59,
    "credibility": 85,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-10-22T04:11:00.000Z",
    "latest": "2026-10-22T04:11:00.000Z",
    "authors": [
@@ -343,7 +527,7 @@
     "2113120912337989889"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T12:46:42Z"
+   "archived_at": "2026-10-24T16:43:48Z"
   },
   {
    "id": "7d2f1505af",
@@ -401,7 +585,7 @@
     "2113194952671084571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T12:46:42Z"
+   "archived_at": "2026-10-24T16:43:48Z"
   }
  ]
 }

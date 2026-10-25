@@ -236,34 +236,34 @@
    "archived_at": "2026-10-24T16:43:48Z"
   },
   {
-   "id": "c863d51889",
+   "id": "46eed04701",
    "verdict": "confirmed",
-   "title": "Sakana AI、AIエージェント基盤「Sakana Aquarium」を発表",
-   "summary": "Sakana AIの公式アカウントは、意思決定支援と実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表した。投稿によると、既存のデータを移し替えずにつなぎ意味づける機能、手順に沿ってAIを動かす機能、アクセス権限・承認・動作の記録による統制機能を備えるという。今後は機能を拡充し、FDEが顧客と構築・検証を進めるとしている。",
+   "title": "Sakana AI、エージェント基盤「Aquarium」発表と防衛分野の取り組みを紹介",
+   "summary": "Sakana AIは公式アカウントで、意思決定支援・実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表した。組織のデータを移し替えずにつなぎ、手順に沿ってAIエージェントを動かし、権限設定や実行記録も行えると説明している。あわせて、同社の防衛部門の分析官が大阪で開催された「GSE 2026」のセッションに登壇し、防衛省との複数の契約について紹介したと投稿している。",
    "points": [
-    "データを移さず既存システムにつなぐ設計は、導入の手間を減らす狙いとみられる",
-    "「情報収集→AI判断→人の承認→実行」を流れとして記述できる点が、業務への組み込みの実態を示す",
-    "性能や導入事例、価格などは投稿に無く未確認。詳細はブログで確認が必要"
+    "新しいのは、データの意味づけ・ワークフロー・承認と記録（ガバナンス）を一つの基盤にまとめた点とされる",
+    "企業が社内データで実務のAIを動かす際の、導入の手間を減らす狙いとみられる（推測）",
+    "性能や導入実績などの客観的な数値は投稿に示されておらず、実際の効果は未確認"
    ],
    "terms": [
     {
      "term": "AIエージェント",
-     "desc": "人の指示を受けて、情報収集や判断、操作などを自律的に進めるAIの仕組み。"
+     "desc": "人の指示を受けて、複数の作業を自律的に計画・実行するAIのこと"
     },
     {
      "term": "Ontology（オントロジー）",
-     "desc": "データの意味や関係性を整理して定義する枠組み。AIが状況を理解するために使う。"
+     "desc": "データの意味や関係を整理して定義する仕組み。AIが状況を理解するための土台"
     },
     {
      "term": "FDE",
-     "desc": "Forward Deployed Engineerの略。顧客先に入り込み、導入や構築を支援する技術者とみられる（未確認）。"
+     "desc": "Forward Deployed Engineer。顧客の現場に入り込んで導入を支援する技術者の役割"
     }
    ],
    "score": 82,
    "credibility": 100,
-   "heat": 30,
+   "heat": 29,
    "first_seen": "2026-10-22T08:18:51.000Z",
-   "latest": "2026-10-23T00:59:39.000Z",
+   "latest": "2026-10-23T08:46:36.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -277,7 +277,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式の製品発表",
+   "evidence_note": "Sakana AI公式の発表・投稿",
    "links": [
     {
      "url": "https://sakana.ai/aquarium/",
@@ -288,6 +288,11 @@
      "url": "https://sakana.ai/aquarium-release",
      "domain": "sakana.ai",
      "primary": true
+    },
+    {
+     "url": "https://global-startup-expo.com/session/session021/",
+     "domain": "global-startup-expo.com",
+     "primary": false
     }
    ],
    "post": {
@@ -298,10 +303,11 @@
    },
    "post_ids": [
     "2113183285941780729",
-    "2113435148792598986"
+    "2113435148792598986",
+    "2113552660100174172"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-25T08:35:08Z"
+   "archived_at": "2026-10-25T13:14:39Z"
   },
   {
    "id": "0d0a86dda0",
@@ -360,62 +366,6 @@
    "archived_at": "2026-10-24T16:43:48Z"
   },
   {
-   "id": "14b924c7a6",
-   "verdict": "confirmed",
-   "title": "NVIDIA、ロボットや自動運転向けの「Cosmos」ツールを追加",
-   "summary": "NVIDIAの公式AIアカウントは、新しいNVIDIA Cosmosツールを追加したと発表した。投稿によると、開発者が学習データの生成、ワールドモデルの訓練、展開前の検証を行えるようにするもので、Porsche、Mercedes-Benz、Siemensなどの企業による利用例も紹介している。",
-   "points": [
-    "物理世界で動くAI（ロボット・自動運転など）の開発で、実機を使う前に仮想環境で試す流れを支える道具とみられる",
-    "利用例として挙がった企業は、投稿では具体的な成果を示していないため、効果は未確認",
-    "ワールドモデルは現実世界の動きを予測するAIのこと。性能や対応範囲は投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "Physical AI（フィジカルAI）",
-     "desc": "ロボットや自動運転車など、現実世界の物体を動かしたり認識したりするAI。"
-    },
-    {
-     "term": "ワールドモデル",
-     "desc": "現実世界の動きや物理法則を内部で予測できるAIモデル。"
-    },
-    {
-     "term": "合成データ",
-     "desc": "実際に収集せず、コンピュータで人工的に生成した学習用データ。"
-    }
-   ],
-   "score": 72,
-   "credibility": 90,
-   "heat": 19,
-   "first_seen": "2026-10-22T11:25:11.000Z",
-   "latest": "2026-10-23T18:21:15.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2113697272475320559",
-    "username": "NVIDIAAI",
-    "text": "From autonomous vehicles to smarter factories, companies are putting physical AI to work.\n\nWe’ve added new NVIDIA Cosmos tools to help developers generate training data, train world models and test them before deployment.\n\nSee how @Porsche, @MercedesBenz, @encord_team, @Siemens, @fogsphere, and @ltx_io are using Cosmos across robotics, autonomous driving and factory operations 👇",
-    "text_ja": "自動運転車からスマートファクトリーまで、企業はフィジカルAIを実用化し始めています。\n\n開発者が学習データの生成、ワールドモデルの学習、そして導入前のテストを行えるよう、新しいNVIDIA Cosmosツールを追加しました。\n\n@Porsche、@MercedesBenz、@encord_team、@Siemens、@fogsphere、@ltx_io がロボティクス、自動運転、工場運営の分野でCosmosをどのように活用しているかをご覧ください 👇"
-   },
-   "post_ids": [
-    "2113697272475320559"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-25T08:35:08Z"
-  },
-  {
    "id": "bfbd59d9f7",
    "verdict": "confirmed",
    "title": "NVIDIA、GTC Berlinの開発者向けイベントを振り返る",
@@ -467,6 +417,62 @@
    ],
    "post_count": 2,
    "archived_at": "2026-10-25T08:35:08Z"
+  },
+  {
+   "id": "14b924c7a6",
+   "verdict": "confirmed",
+   "title": "NVIDIA、ロボットや自動運転向けの「Cosmos」ツールを追加",
+   "summary": "NVIDIAの公式AIアカウントは、新しいNVIDIA Cosmosツールを追加したと発表した。投稿によると、開発者が学習データの生成、ワールドモデルの訓練、展開前の検証を行えるようにするもので、Porsche、Mercedes-Benz、Siemensなどの企業による利用例も紹介している。",
+   "points": [
+    "物理世界で動くAI（ロボット・自動運転など）の開発で、実機を使う前に仮想環境で試す流れを支える道具とみられる",
+    "利用例として挙がった企業は、投稿では具体的な成果を示していないため、効果は未確認",
+    "ワールドモデルは現実世界の動きを予測するAIのこと。性能や対応範囲は投稿からは分からない"
+   ],
+   "terms": [
+    {
+     "term": "Physical AI（フィジカルAI）",
+     "desc": "ロボットや自動運転車など、現実世界の物体を動かしたり認識したりするAI。"
+    },
+    {
+     "term": "ワールドモデル",
+     "desc": "現実世界の動きや物理法則を内部で予測できるAIモデル。"
+    },
+    {
+     "term": "合成データ",
+     "desc": "実際に収集せず、コンピュータで人工的に生成した学習用データ。"
+    }
+   ],
+   "score": 71,
+   "credibility": 90,
+   "heat": 18,
+   "first_seen": "2026-10-22T11:25:11.000Z",
+   "latest": "2026-10-23T18:21:15.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2113697272475320559",
+    "username": "NVIDIAAI",
+    "text": "From autonomous vehicles to smarter factories, companies are putting physical AI to work.\n\nWe’ve added new NVIDIA Cosmos tools to help developers generate training data, train world models and test them before deployment.\n\nSee how @Porsche, @MercedesBenz, @encord_team, @Siemens, @fogsphere, and @ltx_io are using Cosmos across robotics, autonomous driving and factory operations 👇",
+    "text_ja": "自動運転車からスマートファクトリーまで、企業はフィジカルAIを実用化し始めています。\n\n開発者が学習データの生成、ワールドモデルの学習、そして導入前のテストを行えるよう、新しいNVIDIA Cosmosツールを追加しました。\n\n@Porsche、@MercedesBenz、@encord_team、@Siemens、@fogsphere、@ltx_io がロボティクス、自動運転、工場運営の分野でCosmosをどのように活用しているかをご覧ください 👇"
+   },
+   "post_ids": [
+    "2113697272475320559"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-25T13:14:39Z"
   },
   {
    "id": "abc18257a9",

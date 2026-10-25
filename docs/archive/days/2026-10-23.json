@@ -25,9 +25,9 @@
      "desc": "AIがハッキングや脆弱性の発見など、サイバー攻撃に関わる作業をどれだけできるかという能力。"
     }
    ],
-   "score": 99,
+   "score": 97,
    "credibility": 100,
-   "heat": 59,
+   "heat": 56,
    "first_seen": "2026-10-23T13:40:38.000Z",
    "latest": "2026-10-23T22:30:07.000Z",
    "authors": [
@@ -74,7 +74,7 @@
     "2113759903131238845"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
    "id": "d8632c5aa1",
@@ -102,7 +102,7 @@
    ],
    "score": 94,
    "credibility": 100,
-   "heat": 60,
+   "heat": 59,
    "first_seen": "2026-10-22T22:01:06.000Z",
    "latest": "2026-10-22T22:01:06.000Z",
    "authors": [
@@ -136,32 +136,88 @@
     "2113390212911083894"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
-   "id": "e631aa7891",
+   "id": "5201b72634",
    "verdict": "confirmed",
-   "title": "Claude、Pro・Max・Teamで自動モードを既定に",
-   "summary": "Anthropic公式アカウントは、Claudeのweb・デスクトップ・モバイルアプリで、Pro・Max・Teamプランのセッションが来週から既定で自動モードになると発表した。自動モードでは、各ステップごとの承認を求めず、自動チェックが危険な操作をブロックするとしている。ユーザーはいつでも手動に戻せると説明されている。",
+   "title": "Claude、Pro・Max・Team向けセッションで自動モードを既定に",
+   "summary": "Anthropicの公式アカウントは、Claudeのweb・デスクトップ・モバイルアプリのセッションを、Pro・Max・Teamプランで来週から自動モードを既定にすると発表した。自動モードでは、各ステップの承認を求める代わりに、自動チェックが危険な操作をブロックする。手動に戻すことも随時可能とされている。",
    "points": [
-    "承認の手間が減る一方、自動チェックが危険な操作を止める仕組みに任せる形になる。",
-    "手動に戻せるため、従来の操作スタイルを続けることもできる。",
-    "自動チェックがどの程度の操作を止めるかは投稿では分からない。詳細は公式資料で確認が必要。"
+    "従来の「一手ごとに承認」から、自動チェックに任せる運用への変更で、利用者の操作の手間が減るとみられる",
+    "危険な操作を止める仕組みの具体的な判定基準は投稿では示されていないため、未確認",
+    "不安な場合は設定から手動モードへ戻せる点を押さえておくと安心"
    ],
    "terms": [
     {
      "term": "自動モード",
-     "desc": "AIが各操作の承認を都度求めず、自動で作業を進める設定。"
+     "desc": "AIが各操作を都度確認せず進め、危険そうな操作だけ自動で止める動作モード。"
     },
     {
-     "term": "Claude",
-     "desc": "Anthropicが開発した対話型AIアシスタント。"
+     "term": "セッション",
+     "desc": "AIと一連のやり取りを行う一つの作業単位・会話の区切り。"
     }
    ],
-   "score": 87,
+   "score": 86,
    "credibility": 85,
-   "heat": 64,
+   "heat": 63,
    "first_seen": "2026-10-22T20:04:24.000Z",
+   "latest": "2026-10-22T20:04:24.000Z",
+   "authors": [
+    "claudeai"
+   ],
+   "author_labels": [
+    {
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [],
+   "post": {
+    "url": "https://x.com/claudeai/status/2113360845409583307",
+    "username": "claudeai",
+    "text": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime. https://t.co/g9yvbMWH6X",
+    "text_ja": "来週から、Claudeのweb・デスクトップ・モバイルアプリでのセッションが、Pro・Max・Teamプランで既定で自動モードになります。\n\n各ステップごとに承認を求める代わりに、自動チェックが危険な操作をブロックします。いつでも手動に戻せます。 https://t.co/g9yvbMWH6X"
+   },
+   "post_ids": [
+    "2113360845409583307"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-25T08:35:08Z"
+  },
+  {
+   "id": "461411bcd5",
+   "verdict": "confirmed",
+   "title": "Google Cloudで「Claude Models」が一般提供開始",
+   "summary": "Anthropicの公式アカウントは、Google Cloud上の「Claude Models（Anthropic managed）」が一般提供（GA）になったと発表した。投稿によると、Google CloudのIAM認証情報や請求、コミットメントの消化などを含め、Claude Platformの機能一式を利用できるという。",
+   "points": [
+    "Google Cloudの既存の認証・請求の仕組みでClaudeを使えるため、企業の社内導入が進めやすくなる",
+    "一般提供になったことで、試験段階から本格運用向けに位置づけが変わったと読める",
+    "料金や提供地域の詳細は投稿に無く未確認"
+   ],
+   "terms": [
+    {
+     "term": "一般提供（GA）",
+     "desc": "試験的な提供段階を終え、誰でも正式に利用できる状態になったこと。"
+    },
+    {
+     "term": "IAM",
+     "desc": "クラウド上で誰が何を使えるかを管理する認証・権限の仕組み。"
+    },
+    {
+     "term": "コミットメント",
+     "desc": "一定期間の利用量をあらかじめ約束して割引を受ける契約の仕組み。"
+    }
+   ],
+   "score": 81,
+   "credibility": 85,
+   "heat": 51,
+   "first_seen": "2026-10-22T21:21:00.000Z",
    "latest": "2026-10-22T21:21:00.000Z",
    "authors": [
     "claudeai"
@@ -176,76 +232,19 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式X投稿",
+   "evidence_note": "Anthropic公式アカウントの発表",
    "links": [],
    "post": {
-    "url": "https://x.com/claudeai/status/2113360845409583307",
+    "url": "https://x.com/claudeai/status/2113380122468454765",
     "username": "claudeai",
-    "text": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime. https://t.co/g9yvbMWH6X",
-    "text_ja": "来週から、Claudeのweb・デスクトップ・モバイルアプリでのセッションが、Pro・Max・Teamプランで既定で自動モードになります。\n\n各ステップごとに承認を求める代わりに、自動チェックが危険な操作をブロックします。いつでも手動に戻せます。 https://t.co/g9yvbMWH6X"
+    "text": "Claude Models on Google Cloud (Anthropic managed) is now generally available.\n\nGet the full set of Claude Platform features on Google Cloud, with Google Cloud IAM credentials, billing, and commitment retirement. https://t.co/JyRT8Y401r",
+    "text_ja": "Claude Models on Google Cloud（Anthropic管理型）が一般提供（GA）されました。\n\nGoogle CloudのIAM認証情報、課金、コミットメントの管理を使いながら、Claude Platformの全機能をGoogle Cloudで利用できます。 https://t.co/JyRT8Y401r"
    },
    "post_ids": [
-    "2113360845409583307",
     "2113380122468454765"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-25T00:24:11Z"
-  },
-  {
-   "id": "252ac05067",
-   "verdict": "confirmed",
-   "title": "OpenAI、外部評価機関METRらと内部監視システムを共同検証",
-   "summary": "OpenAIは公式アカウントで、今夏に自社の内部監視システムの評価をMETRとRedwood Researchに依頼したと発表した。投稿によると、両機関は3週間にわたりインフラへの深いアクセスを得て検証を行い、その結果が安全対策の強化に役立ったという。",
-   "points": [
-    "外部の第三者機関が自社の内部システムに深く入って評価した点が特徴で、AI安全対策の透明性に関わる",
-    "投稿では具体的な検出結果や数値は示されておらず、どの安全対策がどう変わったかは未確認",
-    "今後もMETRなど第三者評価機関との共同研究を続ける方針が示されている"
-   ],
-   "terms": [
-    {
-     "term": "METR",
-     "desc": "AIの能力や危険性を独立して評価する非営利の研究機関。"
-    },
-    {
-     "term": "内部監視システム",
-     "desc": "AIが不適切な動きをしていないかを、社内で監視する仕組みのこと。"
-    },
-    {
-     "term": "第三者評価",
-     "desc": "開発元とは別の外部組織が、製品や安全性を客観的に評価すること。"
-    }
-   ],
-   "score": 80,
-   "credibility": 90,
-   "heat": 39,
-   "first_seen": "2026-10-22T15:57:59.000Z",
-   "latest": "2026-10-22T15:57:59.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAI/status/2113298833392496746",
-    "username": "OpenAI",
-    "text": "This summer, we invited METR and Redwood Research to pilot an embedded evaluation of our internal monitoring system, providing deep access to our infrastructure over three weeks. \n\nTheir findings helped strengthen safeguards as we expanded the system and will help shape future research collaborations with METR and other third party evaluators.",
-    "text_ja": "今年の夏、METRとRedwood Researchを招き、当社の社内モニタリングシステムに対する組み込み型評価を試行していただきました。3週間にわたり、当社のインフラへ深くアクセスしていただく形です。\n\nその調査結果は、システムを拡張する際の安全対策の強化に役立ちました。今後のMETRやその他の第三者評価機関との共同研究の方向性を考えるうえでも、役立つものになると考えています。"
-   },
-   "post_ids": [
-    "2113298833392496746"
-   ],
    "post_count": 1,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
    "id": "296ec1d1ab",
@@ -273,7 +272,7 @@
    ],
    "score": 80,
    "credibility": 90,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-10-22T19:07:58.000Z",
    "latest": "2026-10-22T19:07:58.000Z",
    "authors": [
@@ -301,7 +300,125 @@
     "2113346642787086538"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
+  },
+  {
+   "id": "252ac05067",
+   "verdict": "confirmed",
+   "title": "OpenAI、外部評価機関METRらと内部監視システムを共同検証",
+   "summary": "OpenAIは公式アカウントで、今夏に自社の内部監視システムの評価をMETRとRedwood Researchに依頼したと発表した。投稿によると、両機関は3週間にわたりインフラへの深いアクセスを得て検証を行い、その結果が安全対策の強化に役立ったという。",
+   "points": [
+    "外部の第三者機関が自社の内部システムに深く入って評価した点が特徴で、AI安全対策の透明性に関わる",
+    "投稿では具体的な検出結果や数値は示されておらず、どの安全対策がどう変わったかは未確認",
+    "今後もMETRなど第三者評価機関との共同研究を続ける方針が示されている"
+   ],
+   "terms": [
+    {
+     "term": "METR",
+     "desc": "AIの能力や危険性を独立して評価する非営利の研究機関。"
+    },
+    {
+     "term": "内部監視システム",
+     "desc": "AIが不適切な動きをしていないかを、社内で監視する仕組みのこと。"
+    },
+    {
+     "term": "第三者評価",
+     "desc": "開発元とは別の外部組織が、製品や安全性を客観的に評価すること。"
+    }
+   ],
+   "score": 79,
+   "credibility": 90,
+   "heat": 37,
+   "first_seen": "2026-10-22T15:57:59.000Z",
+   "latest": "2026-10-22T15:57:59.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2113298833392496746",
+    "username": "OpenAI",
+    "text": "This summer, we invited METR and Redwood Research to pilot an embedded evaluation of our internal monitoring system, providing deep access to our infrastructure over three weeks. \n\nTheir findings helped strengthen safeguards as we expanded the system and will help shape future research collaborations with METR and other third party evaluators.",
+    "text_ja": "今年の夏、METRとRedwood Researchを招き、当社の社内モニタリングシステムに対する組み込み型評価を試行していただきました。3週間にわたり、当社のインフラへ深くアクセスしていただく形です。\n\nその調査結果は、システムを拡張する際の安全対策の強化に役立ちました。今後のMETRやその他の第三者評価機関との共同研究の方向性を考えるうえでも、役立つものになると考えています。"
+   },
+   "post_ids": [
+    "2113298833392496746"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-25T08:35:08Z"
+  },
+  {
+   "id": "e43c3024b7",
+   "verdict": "confirmed",
+   "title": "Sakana AIが防衛AIの役割をセッションで説明",
+   "summary": "Sakana AIの公式アカウントは、大阪で開催された「GSE 2026」のデュアルユースセッションに、防衛部門の国際政治アナリスト石井順也が登壇したと投稿した。石井は、Sakana AIの強みと実績、今後の取り組み、防衛AIを現場に届ける際の課題について話したとしている。投稿では、防衛省とすでに複数の契約を締結していることも紹介されている。",
+   "points": [
+    "防衛省との契約が複数あるとの説明があり、防衛分野でのAI活用が進みつつあることがうかがえる",
+    "「オーケストレーション技術」を通じてAI主権の確保に貢献したいとしている。具体的な中身は投稿からは分からない",
+    "契約の詳細や金額は投稿に書かれていないため、公式発表や報道で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "デュアルユース",
+     "desc": "民生と軍事・安全保障の両方に使える技術や製品のこと"
+    },
+    {
+     "term": "オーケストレーション技術",
+     "desc": "複数のAIモデルや処理を組み合わせて全体を制御する仕組みとみられる（未確認）"
+    },
+    {
+     "term": "AI主権",
+     "desc": "国が自国のAIを自ら開発・管理し、海外への依存を抑えるという考え方"
+    }
+   ],
+   "score": 70,
+   "credibility": 93,
+   "heat": 11,
+   "first_seen": "2026-10-23T08:46:36.000Z",
+   "latest": "2026-10-23T08:46:36.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Sakana AI公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://global-startup-expo.com/session/session021/",
+     "domain": "global-startup-expo.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2113552660100174172",
+    "username": "SakanaAILabs",
+    "text": "日本発のAIラボが、防衛・安全保障で果たせる役割とは\n\nSakana AI防衛部門の国際政治アナリスト、石井順也が、大阪で開催された「GSE 2026」のデュアルユースセッションに登壇しました。\n\n元外交官の石井から、Sakana AIの強みと実績、これからの取り組み、そして防衛AIを現場に届ける上での課題に ついてお話ししました。\n\nSakana AIには、世界トップクラスのエンジニアと、官庁や防衛の現場を知る専門家が一緒にいます。防衛省とはすでに複数の契約を締結しており、その具体的な内容を紹介しました。今後も防衛・インテリジェンス分野でのAI活用を進めるとともに、オーケストレーション技術を通じてAI主権の確保にも貢献したいと考えています。\n\nhttps://t.co/giYpYOUH80",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2113552660100174172"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
    "id": "79fe0ebabe",
@@ -327,9 +444,9 @@
      "desc": "中世ヨーロッパの建築様式で、尖塔やステンドグラスが特徴。"
     }
    ],
-   "score": 83,
+   "score": 82,
    "credibility": 90,
-   "heat": 48,
+   "heat": 46,
    "first_seen": "2026-10-23T14:57:21.000Z",
    "latest": "2026-10-23T14:57:21.000Z",
    "authors": [
@@ -357,7 +474,7 @@
     "2113645959762575623"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
    "id": "d92b0a735c",
@@ -379,9 +496,9 @@
      "desc": "氏名や連絡先など、特定の個人を識別できる情報。"
     }
    ],
-   "score": 61,
+   "score": 60,
    "credibility": 78,
-   "heat": 23,
+   "heat": 21,
    "first_seen": "2026-10-23T12:55:11.000Z",
    "latest": "2026-10-24T22:00:15.000Z",
    "authors": [
@@ -433,7 +550,7 @@
     "2114114775097725234"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   }
  ]
 }

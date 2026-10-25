@@ -236,34 +236,34 @@
    "archived_at": "2026-10-24T16:43:48Z"
   },
   {
-   "id": "e57ac6c3be",
+   "id": "c863d51889",
    "verdict": "confirmed",
-   "title": "Sakana AI、AIエージェント基盤「Aquarium」を発表",
-   "summary": "Sakana AIは公式ブログとXで、意思決定支援と実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表した。組織のデータをつなぎ意味づける機能、手順に沿ってAIエージェントを動かす機能、アクセス権限や承認、動作記録による統制機能を備えるとしている。同社は防衛分野の取り組みについても、GSE 2026のセッションや日本の論説での引用を通じて紹介している。",
+   "title": "Sakana AI、AIエージェント基盤「Sakana Aquarium」を発表",
+   "summary": "Sakana AIの公式アカウントは、意思決定支援と実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表した。投稿によると、既存のデータを移し替えずにつなぎ意味づける機能、手順に沿ってAIを動かす機能、アクセス権限・承認・動作の記録による統制機能を備えるという。今後は機能を拡充し、FDEが顧客と構築・検証を進めるとしている。",
    "points": [
-    "データを移し替えずに接続し、意味や関係を定義する点が特徴として挙げられている。",
-    "承認や記録の機能により、AIの判断根拠を事後に検証できると説明されている。",
-    "実際の導入事例や性能、価格は投稿からは分からない。"
+    "データを移さず既存システムにつなぐ設計は、導入の手間を減らす狙いとみられる",
+    "「情報収集→AI判断→人の承認→実行」を流れとして記述できる点が、業務への組み込みの実態を示す",
+    "性能や導入事例、価格などは投稿に無く未確認。詳細はブログで確認が必要"
    ],
    "terms": [
     {
      "term": "AIエージェント",
-     "desc": "指示を受けて、情報収集や判断、作業の実行を自律的に進めるAIのこと。"
+     "desc": "人の指示を受けて、情報収集や判断、操作などを自律的に進めるAIの仕組み。"
     },
     {
-     "term": "オントロジー（Ontology）",
-     "desc": "データの意味や関係性を整理して定義する枠組み。"
+     "term": "Ontology（オントロジー）",
+     "desc": "データの意味や関係性を整理して定義する枠組み。AIが状況を理解するために使う。"
     },
     {
-     "term": "ソブリンAI",
-     "desc": "国や組織が自前でAIを持ち、データや技術を自律的に管理するという考え方。"
+     "term": "FDE",
+     "desc": "Forward Deployed Engineerの略。顧客先に入り込み、導入や構築を支援する技術者とみられる（未確認）。"
     }
    ],
-   "score": 83,
+   "score": 82,
    "credibility": 100,
-   "heat": 32,
+   "heat": 30,
    "first_seen": "2026-10-22T08:18:51.000Z",
-   "latest": "2026-10-23T08:46:36.000Z",
+   "latest": "2026-10-23T00:59:39.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -277,7 +277,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式ブログ・告知",
+   "evidence_note": "Sakana AI公式の製品発表",
    "links": [
     {
      "url": "https://sakana.ai/aquarium/",
@@ -288,11 +288,6 @@
      "url": "https://sakana.ai/aquarium-release",
      "domain": "sakana.ai",
      "primary": true
-    },
-    {
-     "url": "https://global-startup-expo.com/session/session021/",
-     "domain": "global-startup-expo.com",
-     "primary": false
     }
    ],
    "post": {
@@ -302,12 +297,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2113435148792598986",
-    "2113552660100174172",
-    "2113183285941780729"
+    "2113183285941780729",
+    "2113435148792598986"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
    "id": "0d0a86dda0",
@@ -366,32 +360,32 @@
    "archived_at": "2026-10-24T16:43:48Z"
   },
   {
-   "id": "49f4745be2",
+   "id": "14b924c7a6",
    "verdict": "confirmed",
-   "title": "NVIDIA、Cosmosに学習データ生成などの新ツールを追加",
-   "summary": "NVIDIA公式AIアカウントは、自動運転や工場などで使う「フィジカルAI」向けに、Cosmosの新ツールを追加したと投稿した。新ツールは開発者が学習データを生成し、世界モデルを学習させ、展開前にテストするのに使えるとしている。Porsche、Mercedes-Benz、Siemensなど複数の企業がCosmosを利用している例も挙げられている。",
+   "title": "NVIDIA、ロボットや自動運転向けの「Cosmos」ツールを追加",
+   "summary": "NVIDIAの公式AIアカウントは、新しいNVIDIA Cosmosツールを追加したと発表した。投稿によると、開発者が学習データの生成、ワールドモデルの訓練、展開前の検証を行えるようにするもので、Porsche、Mercedes-Benz、Siemensなどの企業による利用例も紹介している。",
    "points": [
-    "フィジカルAIとは、ロボットや自動運転車など現実世界で動くAIを指す。",
-    "学習データ生成と事前テストを一体で行えることが新しい点とされている。",
-    "利用企業の具体的な成果や効果は投稿では示されていない。"
+    "物理世界で動くAI（ロボット・自動運転など）の開発で、実機を使う前に仮想環境で試す流れを支える道具とみられる",
+    "利用例として挙がった企業は、投稿では具体的な成果を示していないため、効果は未確認",
+    "ワールドモデルは現実世界の動きを予測するAIのこと。性能や対応範囲は投稿からは分からない"
    ],
    "terms": [
     {
-     "term": "フィジカルAI",
-     "desc": "ロボットや自動運転車など、現実の物理世界で動作するAIのこと。"
+     "term": "Physical AI（フィジカルAI）",
+     "desc": "ロボットや自動運転車など、現実世界の物体を動かしたり認識したりするAI。"
     },
     {
-     "term": "世界モデル",
-     "desc": "現実世界の状態や変化をAIが内部でシミュレーションできるようにしたモデル。"
+     "term": "ワールドモデル",
+     "desc": "現実世界の動きや物理法則を内部で予測できるAIモデル。"
     },
     {
-     "term": "Cosmos",
-     "desc": "NVIDIAが提供する、フィジカルAIの開発を支援するツール群。"
+     "term": "合成データ",
+     "desc": "実際に収集せず、コンピュータで人工的に生成した学習用データ。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 90,
-   "heat": 22,
+   "heat": 19,
    "first_seen": "2026-10-22T11:25:11.000Z",
    "latest": "2026-10-23T18:21:15.000Z",
    "authors": [
@@ -407,7 +401,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式X投稿",
+   "evidence_note": "NVIDIA公式アカウントの発表",
    "links": [],
    "post": {
     "url": "https://x.com/NVIDIAAI/status/2113697272475320559",
@@ -416,35 +410,34 @@
     "text_ja": "自動運転車からスマートファクトリーまで、企業はフィジカルAIを実用化し始めています。\n\n開発者が学習データの生成、ワールドモデルの学習、そして導入前のテストを行えるよう、新しいNVIDIA Cosmosツールを追加しました。\n\n@Porsche、@MercedesBenz、@encord_team、@Siemens、@fogsphere、@ltx_io がロボティクス、自動運転、工場運営の分野でCosmosをどのように活用しているかをご覧ください 👇"
    },
    "post_ids": [
-    "2113697272475320559",
-    "2113230179799548220"
+    "2113697272475320559"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
-   "id": "1f18f86f4e",
+   "id": "bfbd59d9f7",
    "verdict": "confirmed",
-   "title": "NVIDIA、GTC Dev Community Berlinの概要を公開",
-   "summary": "NVIDIAの公式AIアカウントが、GTC Dev Community Berlinのレビュー記事「From Open Models to Physical AI」を紹介した。投稿はイベントの振り返り記事へのリンクで、開催日や登壇内容の詳細は投稿文には含まれていない。",
+   "title": "NVIDIA、GTC Berlinの開発者向けイベントを振り返る",
+   "summary": "NVIDIAの公式AIアカウントは、GTC Berlinでのブースの様子と、GTC Dev Community Berlinのイベント振り返り記事を投稿した。振り返りのテーマは「オープンモデルからフィジカルAIまで」とされている。",
    "points": [
-    "GTCはNVIDIAの開発者向けイベントで、オープンモデルやフィジカルAI（ロボットなど物理世界で動くAI）がテーマとされる",
-    "公式の振り返りのため、発表内容の確認元として信頼性は高い",
-    "記事本文の具体的な内容は投稿からは未確認"
+    "イベントの概要を知るための告知・振り返りで、新しい技術発表の中身は投稿からは読み取れない",
+    "詳細な内容は振り返り記事の本文で確認が必要",
+    "開発者向けの情報収集の入口として見ると役立つ"
    ],
    "terms": [
     {
-     "term": "フィジカルAI",
-     "desc": "ロボットなど現実の物体を動かすことを目的としたAI"
+     "term": "GTC",
+     "desc": "NVIDIAが年数回開く技術カンファレンス。AIやGPUの最新動向が発表される。"
     },
     {
-     "term": "GTC",
-     "desc": "NVIDIAが毎年開催する開発者向けの技術カンファレンス"
+     "term": "オープンモデル",
+     "desc": "学習済みの重みなどが公開され、誰でも利用・改変できるAIモデル。"
     }
    ],
-   "score": 67,
+   "score": 72,
    "credibility": 90,
-   "heat": 7,
+   "heat": 20,
    "first_seen": "2026-10-22T11:25:11.000Z",
    "latest": "2026-10-22T12:54:11.000Z",
    "authors": [
@@ -460,19 +453,20 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの振り返り記事",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2113252578712821780",
+    "url": "https://x.com/NVIDIAAI/status/2113230179799548220",
     "username": "NVIDIAAI",
-    "text": "GTC Dev Community Berlin Recap: From Open Models to Physical AI https://t.co/WniSXhMJM6",
-    "text_ja": "GTC Dev Community Berlin 振り返り：オープンモデルからフィジカルAIまで https://t.co/WniSXhMJM6"
+    "text": "A little NVIDIA booth bling at GTC Berlin 💎💎💎 https://t.co/SP1PZfsdwQ",
+    "text_ja": "GTC BerlinでNVIDIAのブースに小さなきらめきを添えました 💎💎💎"
    },
    "post_ids": [
+    "2113230179799548220",
     "2113252578712821780"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   },
   {
    "id": "abc18257a9",
@@ -648,7 +642,7 @@
     "2113194952671084571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-25T00:24:11Z"
+   "archived_at": "2026-10-25T08:35:08Z"
   }
  ]
 }

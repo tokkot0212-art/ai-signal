@@ -27,7 +27,7 @@
    ],
    "score": 99,
    "credibility": 100,
-   "heat": 61,
+   "heat": 59,
    "first_seen": "2026-10-23T13:40:38.000Z",
    "latest": "2026-10-23T22:30:07.000Z",
    "authors": [
@@ -74,7 +74,7 @@
     "2113759903131238845"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-24T16:43:48Z"
+   "archived_at": "2026-10-25T00:24:11Z"
   },
   {
    "id": "d8632c5aa1",
@@ -100,9 +100,9 @@
      "desc": "ソースコードが公開され、誰でも利用・改変できるソフトウェアの部品。"
     }
    ],
-   "score": 95,
+   "score": 94,
    "credibility": 100,
-   "heat": 62,
+   "heat": 60,
    "first_seen": "2026-10-22T22:01:06.000Z",
    "latest": "2026-10-22T22:01:06.000Z",
    "authors": [
@@ -136,155 +136,32 @@
     "2113390212911083894"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
+   "archived_at": "2026-10-25T00:24:11Z"
   },
   {
-   "id": "5201b72634",
+   "id": "e631aa7891",
    "verdict": "confirmed",
-   "title": "Anthropic、Claudeのセッションを既定で自動モードにする予定を発表",
-   "summary": "Claude公式アカウントは、Claudeのウェブ・デスクトップ・モバイルアプリのセッションを、Pro・Max・Teamプランで既定の『自動モード』で動かすと投稿した。投稿によると、各ステップごとの承認を求める代わりに、自動チェックが危険な行動をブロックする。また、いつでも手動に戻せるとしている。",
+   "title": "Claude、Pro・Max・Teamで自動モードを既定に",
+   "summary": "Anthropic公式アカウントは、Claudeのweb・デスクトップ・モバイルアプリで、Pro・Max・Teamプランのセッションが来週から既定で自動モードになると発表した。自動モードでは、各ステップごとの承認を求めず、自動チェックが危険な操作をブロックするとしている。ユーザーはいつでも手動に戻せると説明されている。",
    "points": [
-    "新しい点: 操作ごとの承認を省き、自動チェックで危険な行動を止める方式が標準になる。",
-    "なぜ重要か: 利便性は上がる一方、チェックの仕組みを信頼できるかが利用者の判断材料になる。",
-    "注意点: 『来週から』の開始時期は投稿時点の予定。どのような行動が『危険』と判定されるかは未確認。"
+    "承認の手間が減る一方、自動チェックが危険な操作を止める仕組みに任せる形になる。",
+    "手動に戻せるため、従来の操作スタイルを続けることもできる。",
+    "自動チェックがどの程度の操作を止めるかは投稿では分からない。詳細は公式資料で確認が必要。"
    ],
    "terms": [
     {
      "term": "自動モード",
-     "desc": "AIが行う操作ごとに人が承認しなくてもよく、自動の安全チェックを挟んで進める動作方式。"
+     "desc": "AIが各操作の承認を都度求めず、自動で作業を進める設定。"
     },
     {
-     "term": "Pro・Max・Teamプラン",
-     "desc": "Claudeの有料契約プランの名称。"
+     "term": "Claude",
+     "desc": "Anthropicが開発した対話型AIアシスタント。"
     }
    ],
    "score": 87,
    "credibility": 85,
-   "heat": 66,
+   "heat": 64,
    "first_seen": "2026-10-22T20:04:24.000Z",
-   "latest": "2026-10-22T20:04:24.000Z",
-   "authors": [
-    "claudeai"
-   ],
-   "author_labels": [
-    {
-     "username": "claudeai",
-     "label": "Anthropic（Claude公式アカウント）",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Claude公式アカウントの投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/claudeai/status/2113360845409583307",
-    "username": "claudeai",
-    "text": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime. https://t.co/g9yvbMWH6X",
-    "text_ja": "来週から、Claudeのウェブ版、デスクトップアプリ、モバイルアプリのセッションが、Pro、Max、Teamプランで既定で自動モードで動作します。\n\n各ステップの承認を求める代わりに、自動チェックが危険な操作をブロックします。いつでも手動に戻せます。"
-   },
-   "post_ids": [
-    "2113360845409583307"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
-  },
-  {
-   "id": "c863d51889",
-   "verdict": "confirmed",
-   "title": "Sakana AI、AIエージェント基盤「Sakana Aquarium」を発表",
-   "summary": "Sakana AIは公式アカウントとブログで、意思決定支援と実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表した。既存データを移し替えずにつなぎ意味づける機能、ワークフローに沿ってAIエージェントを動かす機能、アクセス権限や承認、判断の記録などの統制機能を備えるという。今後は機能拡充とともに、FDEが顧客と構築・検証を進めるとしている。",
-   "points": [
-    "新しい点: データの意味づけ、手順に沿ったエージェント実行、人による統制・記録を一つの基盤にまとめた点",
-    "重要性: 企業でAIを業務判断や実行に組み込む際の土台として関係する",
-    "注意点: 実際の性能や導入事例の数値は投稿に示されておらず、詳細はブログで確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "目的に向けて自律的に情報収集や判断・操作を行うAIプログラム"
-    },
-    {
-     "term": "オントロジー（Ontology）",
-     "desc": "データの意味や関係性を整理して定義する枠組み"
-    },
-    {
-     "term": "FDE",
-     "desc": "顧客先に入り込み技術を実装支援する技術担当者（投稿では社内職種の略称とみられる）"
-    }
-   ],
-   "score": 84,
-   "credibility": 100,
-   "heat": 34,
-   "first_seen": "2026-10-23T00:59:39.000Z",
-   "latest": "2026-10-23T00:59:39.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式の発表とブログ",
-   "links": [
-    {
-     "url": "https://sakana.ai/aquarium/",
-     "domain": "sakana.ai",
-     "primary": true
-    },
-    {
-     "url": "https://sakana.ai/aquarium-release",
-     "domain": "sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2113435148792598986",
-    "username": "SakanaAILabs",
-    "text": "意思決定支援・実行のためのAIエージェントプラットフォーム「Sakana Aquarium」を発表\n\nhttps://t.co/ZITxgmsV2T\n\nAquariumは、Sakana AIがこれまでのAI実装の現場で繰り返し直面してきた課題から生まれたプラットフォームです。\n\nAIによる意思決定支援を実務につなげるには、モデルの性能だけでなく 、AIが組織のデータの意味や関係、判断の前提となるルールを理解している必要があります。これまでは、そのためのデータ接続や用語・判断基準の整理、手順の設計を案件ごとに一から行ってきました。Aquariumは、この土台を共通の基盤として整え、その上でAIエージェントによる判断と実行までを支えます。\n\n① データをつなぎ、意味づける（Ontology）\n テーブルや文書など既存のデータを移し替えずにつなぎ、それぞれの意味や関係を定義します。AIはこれをもとに状況を理解します。\n\n② 手順に沿ってAIが動く（Managed Agents）\n 「情報の収集 → AIによる判断 → 人の承認 → 実行」といった流れをワークフローとして記述するだけで、AIエ",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2113435148792598986"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
-  },
-  {
-   "id": "461411bcd5",
-   "verdict": "confirmed",
-   "title": "Google Cloud上のClaudeモデルが一般提供開始",
-   "summary": "Anthropicは、Google Cloud上で提供するAnthropic管理型の「Claude Models on Google Cloud」が一般提供（GA）になったと発表した。Google CloudのIAM認証情報や課金、コミットメントの仕組みを使って、Claude Platformの機能一式を利用できるとしている。",
-   "points": [
-    "Google Cloudの認証・課金の仕組みでClaudeを使えるため、既存の契約や管理体制に組み込みやすい",
-    "一般提供になったことで、正式な利用が想定される段階に入ったと読める",
-    "料金や対応地域などの詳細は投稿からは分からない"
-   ],
-   "terms": [
-    {
-     "term": "一般提供（GA）",
-     "desc": "試験段階を終え、誰でも正式に使える状態になったこと"
-    },
-    {
-     "term": "IAM",
-     "desc": "誰がどのクラウドサービスを使えるかを管理する認証・権限の仕組み"
-    },
-    {
-     "term": "コミットメント",
-     "desc": "一定期間の利用量を約束する代わりに割引などを受ける契約形態"
-    }
-   ],
-   "score": 83,
-   "credibility": 85,
-   "heat": 54,
-   "first_seen": "2026-10-22T21:21:00.000Z",
    "latest": "2026-10-22T21:21:00.000Z",
    "authors": [
     "claudeai"
@@ -299,75 +176,20 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
+   "evidence_note": "Anthropic公式X投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/claudeai/status/2113380122468454765",
+    "url": "https://x.com/claudeai/status/2113360845409583307",
     "username": "claudeai",
-    "text": "Claude Models on Google Cloud (Anthropic managed) is now generally available.\n\nGet the full set of Claude Platform features on Google Cloud, with Google Cloud IAM credentials, billing, and commitment retirement. https://t.co/JyRT8Y401r",
-    "text_ja": "Google Cloud 上の Claude モデル（Anthropic マネージド）が一般提供を開始しました。\n\nGoogle Cloud の認証情報（IAM）、請求、コミットメントの消化など、Claude Platform の機能をフルセットで Google Cloud 上でご利用いただけます。 https://t.co/JyRT8Y401r"
+    "text": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime. https://t.co/g9yvbMWH6X",
+    "text_ja": "来週から、Claudeのweb・デスクトップ・モバイルアプリでのセッションが、Pro・Max・Teamプランで既定で自動モードになります。\n\n各ステップごとに承認を求める代わりに、自動チェックが危険な操作をブロックします。いつでも手動に戻せます。 https://t.co/g9yvbMWH6X"
    },
    "post_ids": [
+    "2113360845409583307",
     "2113380122468454765"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
-  },
-  {
-   "id": "296ec1d1ab",
-   "verdict": "confirmed",
-   "title": "OpenAI、Decisions APIを一般提供開始",
-   "summary": "OpenAIの開発者向け公式アカウントは、Decisions APIが一般提供（GA）になったと発表した。投稿によると、このAPIはテキストや画像の分類、入力の評価、次の処理の判断を、完全なモデル応答を生成せずに行えるとしている。",
-   "points": [
-    "判断だけを素早く返すため、従来の全文生成より速くコストを抑えられる可能性があるとされる。開発者にとって用途が広がる。",
-    "具体的な料金や速度の数値は投稿には書かれていないため未確認である。",
-    "「完全なモデル応答を生成しない」仕組みの詳細は、公式ドキュメントで確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "API",
-     "desc": "ソフトウェア同士が機能をやり取りするための接続の仕組み。"
-    },
-    {
-     "term": "一般提供（GA）",
-     "desc": "試験段階を終え、誰でも正式に利用できるようになった状態。"
-    },
-    {
-     "term": "モデル応答",
-     "desc": "AIモデルが入力に対して生成する文章や結果のこと。"
-    }
-   ],
-   "score": 81,
-   "credibility": 90,
-   "heat": 42,
-   "first_seen": "2026-10-22T19:07:58.000Z",
-   "latest": "2026-10-22T19:07:58.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式の開発者向け告知",
-   "links": [],
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
-    "username": "OpenAIDevs",
-    "text": "Add near real-time decisions to your workflow with the Decisions API, now generally available.\n\nBuild faster, more cost-efficient apps and agents that can classify text and images, evaluate inputs, and determine what happens next without generating a full model response. https://t.co/XxNe5Sqb2b",
-    "text_ja": "Decisions API が一般提供開始となりました。ワークフローにほぼリアルタイムの判断を組み込めます。\n\nフルのモデル応答を生成せずに、テキストや画像の分類、入力の評価、次に何をするかの判断ができる、より速くコスト効率の高いアプリやエージェントを構築できます。 https://t.co/XxNe5Sqb2b"
-   },
-   "post_ids": [
-    "2113346642787086538"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
+   "post_count": 2,
+   "archived_at": "2026-10-25T00:24:11Z"
   },
   {
    "id": "252ac05067",
@@ -395,7 +217,7 @@
    ],
    "score": 80,
    "credibility": 90,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-10-22T15:57:59.000Z",
    "latest": "2026-10-22T15:57:59.000Z",
    "authors": [
@@ -423,7 +245,63 @@
     "2113298833392496746"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
+   "archived_at": "2026-10-25T00:24:11Z"
+  },
+  {
+   "id": "296ec1d1ab",
+   "verdict": "confirmed",
+   "title": "OpenAI、Decisions APIを一般提供開始",
+   "summary": "OpenAIの開発者向け公式アカウントは、Decisions APIが一般提供（GA）になったと発表した。投稿によると、このAPIはテキストや画像の分類、入力の評価、次の処理の判断を、完全なモデル応答を生成せずに行えるとしている。",
+   "points": [
+    "判断だけを素早く返すため、従来の全文生成より速くコストを抑えられる可能性があるとされる。開発者にとって用途が広がる。",
+    "具体的な料金や速度の数値は投稿には書かれていないため未確認である。",
+    "「完全なモデル応答を生成しない」仕組みの詳細は、公式ドキュメントで確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士が機能をやり取りするための接続の仕組み。"
+    },
+    {
+     "term": "一般提供（GA）",
+     "desc": "試験段階を終え、誰でも正式に利用できるようになった状態。"
+    },
+    {
+     "term": "モデル応答",
+     "desc": "AIモデルが入力に対して生成する文章や結果のこと。"
+    }
+   ],
+   "score": 80,
+   "credibility": 90,
+   "heat": 40,
+   "first_seen": "2026-10-22T19:07:58.000Z",
+   "latest": "2026-10-22T19:07:58.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の開発者向け告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
+    "username": "OpenAIDevs",
+    "text": "Add near real-time decisions to your workflow with the Decisions API, now generally available.\n\nBuild faster, more cost-efficient apps and agents that can classify text and images, evaluate inputs, and determine what happens next without generating a full model response. https://t.co/XxNe5Sqb2b",
+    "text_ja": "Decisions API が一般提供開始となりました。ワークフローにほぼリアルタイムの判断を組み込めます。\n\nフルのモデル応答を生成せずに、テキストや画像の分類、入力の評価、次に何をするかの判断ができる、より速くコスト効率の高いアプリやエージェントを構築できます。 https://t.co/XxNe5Sqb2b"
+   },
+   "post_ids": [
+    "2113346642787086538"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-25T00:24:11Z"
   },
   {
    "id": "79fe0ebabe",
@@ -449,9 +327,9 @@
      "desc": "中世ヨーロッパの建築様式で、尖塔やステンドグラスが特徴。"
     }
    ],
-   "score": 84,
+   "score": 83,
    "credibility": 90,
-   "heat": 51,
+   "heat": 48,
    "first_seen": "2026-10-23T14:57:21.000Z",
    "latest": "2026-10-23T14:57:21.000Z",
    "authors": [
@@ -479,35 +357,36 @@
     "2113645959762575623"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
+   "archived_at": "2026-10-25T00:24:11Z"
   },
   {
-   "id": "db9866403f",
+   "id": "d92b0a735c",
    "verdict": "promising",
-   "title": "パナソニックHD子会社、禁止中の生成AIに従業員情報を入力",
-   "summary": "ITmedia NEWS公式は、パナソニックホールディングスの子会社が、使用禁止とされていた生成AIに約33万人分の従業員の個人情報をアップロードしていたと伝える記事を紹介した。投稿は見出しとリンクのみで、詳しい経緯や対応は本文を読む必要がある。",
+   "title": "パナソニックHD子会社、禁止中の生成AIに個人情報を入力",
+   "summary": "ITmedia NEWSは、パナソニックホールディングスの子会社が、使用が禁止されていた生成AIに従業員約33万人分の個人情報をアップロードしたと報じた。投稿は記事の見出しとリンクのみで、詳細は記事本文で確認する必要がある。個人のまとめ投稿では、同じ記事を含む生成AIニュースの一覧が紹介されている。",
    "points": [
-    "社内ルールで禁止されたAIへの個人情報入力は、情報漏えいリスクとして企業の注目を集めやすい。",
-    "従業員が多くの個人情報を扱う企業では、生成AIの利用ルールと監視体制の見直しが求められる可能性がある。",
-    "どの生成AIか、いつ発覚したか、どのような対応をとったかは投稿からは分からない。"
+    "社内ルールに反する利用が、どの程度の期間・範囲で行われたかは投稿からは分からない。",
+    "個人情報の大量入力は、企業の情報管理や社内規程の運用に関わる論点とされる。",
+    "子会社の対応や再発防止策は、元記事や公式発表で確認が必要。"
    ],
    "terms": [
     {
      "term": "生成AI",
-     "desc": "文章や画像などを新しく作り出せるAIの総称。"
+     "desc": "文章や画像などを新たに作り出せるAIのこと。ChatGPTなどが代表例。"
     },
     {
      "term": "個人情報",
      "desc": "氏名や連絡先など、特定の個人を識別できる情報。"
     }
    ],
-   "score": 62,
+   "score": 61,
    "credibility": 78,
-   "heat": 26,
+   "heat": 23,
    "first_seen": "2026-10-23T12:55:11.000Z",
-   "latest": "2026-10-23T12:55:11.000Z",
+   "latest": "2026-10-24T22:00:15.000Z",
    "authors": [
-    "itmedia_news"
+    "itmedia_news",
+    "junya108"
    ],
    "author_labels": [
     {
@@ -515,15 +394,31 @@
      "label": "ITmedia NEWS公式",
      "type": "official",
      "former": ""
+    },
+    {
+     "username": "junya108",
+     "label": "個人（所属はハッシュタグのみ、肩書き不明）",
+     "type": "individual",
+     "former": ""
     }
    ],
    "evidence": "reporting",
    "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事（見出し紹介）",
+   "evidence_note": "ITmedia NEWSの記事見出し",
    "links": [
+    {
+     "url": "https://arxiv.org/abs/2610.29162",
+     "domain": "arxiv.org",
+     "primary": true
+    },
     {
      "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002562/",
      "domain": "itmedia.co.jp",
+     "primary": false
+    },
+    {
+     "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+     "domain": "techcrunch.com",
      "primary": false
     }
    ],
@@ -534,10 +429,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2113615217775239488"
+    "2113615217775239488",
+    "2114114775097725234"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-24T16:43:48Z"
+   "post_count": 2,
+   "archived_at": "2026-10-25T00:24:11Z"
   }
  ]
 }

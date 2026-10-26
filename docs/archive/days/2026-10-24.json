@@ -25,9 +25,9 @@
      "desc": "外部の攻撃者が対象機器上で任意のプログラムを動かせてしまう脆弱性"
     }
    ],
-   "score": 96,
+   "score": 95,
    "credibility": 100,
-   "heat": 64,
+   "heat": 63,
    "first_seen": "2026-10-23T17:19:55.000Z",
    "latest": "2026-10-23T22:55:45.000Z",
    "authors": [
@@ -67,7 +67,7 @@
     "2113766354386084338"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-25T17:06:46Z"
+   "archived_at": "2026-10-26T00:30:09Z"
   },
   {
    "id": "0eab9255f1",
@@ -93,9 +93,9 @@
      "desc": "ロボットや自動運転向けの映像・世界モデルを扱うNVIDIAのAI基盤"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 100,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-10-23T15:41:40.000Z",
    "latest": "2026-10-23T15:41:40.000Z",
    "authors": [
@@ -129,7 +129,7 @@
     "2113657112408785153"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-25T17:06:46Z"
+   "archived_at": "2026-10-26T00:30:09Z"
   },
   {
    "id": "af58ac21cc",
@@ -157,7 +157,7 @@
    ],
    "score": 59,
    "credibility": 75,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-24T02:57:31.000Z",
    "latest": "2026-10-24T03:12:19.000Z",
    "authors": [
@@ -188,7 +188,68 @@
     "2113827195336683791"
    ],
    "post_count": 4,
-   "archived_at": "2026-10-25T17:06:46Z"
+   "archived_at": "2026-10-26T00:30:09Z"
+  },
+  {
+   "id": "a64d13e5c5",
+   "verdict": "promising",
+   "title": "DeepSeek の検索API・Fetch APIを試した記事が公開",
+   "summary": "プログラマーの npaka 氏が、DeepSeek の Search API と Fetch API を試した内容を note に記事として公開したと投稿している。投稿はローカルLLMでWeb検索を使う方法をテーマにしている。投稿本文と記事の見出しから分かるのはここまでで、具体的な手順や結果は投稿文からは確認できない。",
+   "points": [
+    "ローカルLLMにWeb検索を組み合わせる際の、検索APIと本文取得APIの使い分けが記事の主題とみられる（未確認）",
+    "DeepSeekの公式発表そのものではなく、個人の検証記事である点に注意"
+   ],
+   "terms": [
+    {
+     "term": "Search API",
+     "desc": "プログラムからWeb検索結果を取得するための仕組み"
+    },
+    {
+     "term": "Fetch API",
+     "desc": "指定したWebページの本文などを取得するための仕組み"
+    },
+    {
+     "term": "ローカルLLM",
+     "desc": "自分のPCなど手元の環境で動かす大規模言語モデル"
+    }
+   ],
+   "score": 51,
+   "credibility": 73,
+   "heat": 2,
+   "first_seen": "2026-10-24T11:44:28.000Z",
+   "latest": "2026-10-24T11:44:28.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "note の個人記事（試用記録）",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/naf55184a3734?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/npaka123/status/2113959806625276170",
+    "username": "npaka123",
+    "text": "DeepSeek Search API・Fetch APIを試す - ローカルLLMで使えるWeb検索｜npaka @npaka123 https://t.co/Z5CdAtm5g5",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2113959806625276170"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-26T00:30:09Z"
   }
  ]
 }

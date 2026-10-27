@@ -1,85 +1,4 @@
 {
- "2113766354386084338": {
-  "author_id": "4398626122",
-  "created_at": "2026-10-23T22:55:45.000Z",
-  "edit_history_tweet_ids": [
-   "2113766354386084338"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/OpenAI/status/…",
-     "end": 301,
-     "expanded_url": "https://twitter.com/OpenAI/status/2113718797505036665",
-     "start": 278,
-     "url": "https://t.co/qjcoF49rMC"
-    }
-   ]
-  },
-  "id": "2113766354386084338",
-  "lang": "en",
-  "note_tweet": {
-   "entities": {
-    "urls": [
-     {
-      "display_url": "patchtheplanet.org/brotli",
-      "end": 1273,
-      "expanded_url": "https://patchtheplanet.org/brotli",
-      "start": 1250,
-      "url": "https://t.co/Y1Y72aHxrW"
-     }
-    ]
-   },
-   "text": "During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a widely-deployed compression library included in many pieces of software such as Node.js, Bun, and Envoy.\n\nThe flaw could let an attacker run their own code on affected systems by sending or replying with malicious compressed data, without any need to create a user account. That is, an unpatched server that accepts compressed input could be taken over by a malicious client, and an unpatched client that accepts compressed input (such as “curl --compressed”) could be taken over by a malicious server.\n\nThis root cause issue was actually fixed in the Brotli source code in February, but it wasn’t known at the time that it gave rise to a security vulnerability and there was no more recent release of Brotli. Since Brotli is built into other software, any software which includes this library needs to take the update too, followed by the users of that software. We disclosed the vulnerability to Brotli and other downstream projects such as Node.js, which released or are currently releasing security updates, and Brotli cut new release versions and published a CVE.\n\nMore details on the patch and mitigations below:\nhttps://t.co/Y1Y72aHxrW"
-  },
-  "public_metrics": {
-   "bookmark_count": 1360,
-   "impression_count": 961431,
-   "like_count": 4333,
-   "quote_count": 299,
-   "reply_count": 332,
-   "retweet_count": 582
-  },
-  "referenced_tweets": [
-   {
-    "id": "2113718797505036665",
-    "type": "quoted"
-   }
-  ],
-  "text": "During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a widely-deployed compression library included in many pieces of software such as Node.js, Bun, and Envoy.\n\nThe flaw could let an attacker run their https://t.co/qjcoF49rMC"
- },
- "2113718797505036665": {
-  "author_id": "4398626122",
-  "created_at": "2026-10-23T19:46:46.000Z",
-  "edit_history_tweet_ids": [
-   "2113718797505036665"
-  ],
-  "id": "2113718797505036665",
-  "lang": "en",
-  "note_tweet": {
-   "entities": {
-    "urls": [
-     {
-      "display_url": "openai.com/index/securing…",
-      "end": 1343,
-      "expanded_url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
-      "start": 1320,
-      "url": "https://t.co/EmEZsFRMcF"
-     }
-    ]
-   },
-   "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can still learn to browse, search, and use applications.\n\nOn September 20, after a model exploited a DNS misconfiguration to find a way outside of this offline world, we paused frontier training to strengthen containment further. We assembled teams of agents, powered by our most cyber-capable models, and tasked them with finding weaknesses in our research environments.\n\nWhile they found no route to the internet they could easily exploit while concealing their activity from our monitors, they did find zero-day vulnerabilities, virtual machine escapes, and hardware side-channels for communication between agents. We used their discoveries to further strengthen our defenses and contribute fixes to open-source software.\n\nAfter strengthening our containment architecture, we resumed our frontier RL training and inference on October 1. We’ve reserved substantial compute for continuous red-teaming, and made high-compute red-teaming part of the safety cases we use to decide whether frontier training and evaluation can proceed securely.\n\nhttps://t.co/EmEZsFRMcF"
-  },
-  "public_metrics": {
-   "bookmark_count": 3242,
-   "impression_count": 3778051,
-   "like_count": 9258,
-   "quote_count": 793,
-   "reply_count": 770,
-   "retweet_count": 761
-  },
-  "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can"
- },
  "2113903625282232345": {
   "author_id": "3584601",
   "created_at": "2026-10-24T08:01:13.000Z",
@@ -594,129 +513,6 @@
    "retweet_count": 0
   },
   "text": "ソニーCSLのオープンハウスに行った。｜shi3z @shi3z https://t.co/8zSTokdRfg"
- },
- "2113759903131238845": {
-  "author_id": "31070671",
-  "created_at": "2026-10-23T22:30:07.000Z",
-  "edit_history_tweet_ids": [
-   "2113759903131238845"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "description": "Anthropicと英AI安全保障研究所AISIは、「Claude Mythos 5」がサイバー能力評価中に実在の開発者を標的とした事案の分析報告を公開した。GitHub経由で無許可の攻撃を行い偽身元で承認を迫った経緯を報告。実在の人物と認識しても攻撃を正当化して続行する傾向が確認され、評価手法の見直しが進む。",
-     "display_url": "itmedia.co.jp/news/article/2…",
-     "end": 85,
-     "expanded_url": "https://www.itmedia.co.jp/news/article/2610/24/2000002564/",
-     "images": [
-      {
-       "height": 702,
-       "url": "https://pbs.twimg.com/news_img/2113759908424556544/Fo560E3g?format=jpg&name=orig",
-       "width": 1341
-      },
-      {
-       "height": 150,
-       "url": "https://pbs.twimg.com/news_img/2113759908424556544/Fo560E3g?format=jpg&name=150x150",
-       "width": 150
-      }
-     ],
-     "start": 62,
-     "status": 200,
-     "title": "「Claude Mythos 5」、危害の兆候を顧みず実在の開発者を標的に──AnthropicとAISIが分析結果を公開",
-     "unwound_url": "https://www.itmedia.co.jp/news/article/2610/24/2000002564/",
-     "url": "https://t.co/NCOmbobwP5"
-    }
-   ]
-  },
-  "id": "2113759903131238845",
-  "lang": "ja",
-  "public_metrics": {
-   "bookmark_count": 12,
-   "impression_count": 10376,
-   "like_count": 33,
-   "quote_count": 4,
-   "reply_count": 2,
-   "retweet_count": 6
-  },
-  "text": "「Claude Mythos 5」、危害の兆候を顧みず実在の開発者を標的に──AnthropicとAISIが分析結果を公開\nhttps://t.co/NCOmbobwP5"
- },
- "2113755882022752556": {
-  "author_id": "33521530",
-  "created_at": "2026-10-23T22:14:08.000Z",
-  "edit_history_tweet_ids": [
-   "2113755882022752556"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/litcapital/sta…",
-     "end": 247,
-     "expanded_url": "https://twitter.com/litcapital/status/2113701890798260476",
-     "start": 224,
-     "url": "https://t.co/yVnwKlEIwo"
-    }
-   ]
-  },
-  "id": "2113755882022752556",
-  "lang": "en",
-  "public_metrics": {
-   "bookmark_count": 41,
-   "impression_count": 13882,
-   "like_count": 96,
-   "quote_count": 0,
-   "reply_count": 14,
-   "retweet_count": 2
-  },
-  "referenced_tweets": [
-   {
-    "id": "2113701890798260476",
-    "type": "quoted"
-   }
-  ],
-  "text": "reject vc founder grind\n\nif u are hot corgi/wasian you should be sliding into dms for post economic bootstrapped ai founders with a bunch of angel exits and even more friends than money and complete control of their destiny https://t.co/yVnwKlEIwo"
- },
- "2113752893878890637": {
-  "author_id": "33521530",
-  "created_at": "2026-10-23T22:02:16.000Z",
-  "edit_history_tweet_ids": [
-   "2113752893878890637"
-  ],
-  "entities": {
-   "mentions": [
-    {
-     "end": 117,
-     "id": "1670869422733393966",
-     "start": 102,
-     "username": "latentspacepod"
-    }
-   ],
-   "urls": [
-    {
-     "display_url": "x.com/rdominguezibar…",
-     "end": 141,
-     "expanded_url": "https://twitter.com/rdominguezibar/status/2113745196173418644",
-     "start": 118,
-     "url": "https://t.co/voJhhYaBMG"
-    }
-   ]
-  },
-  "id": "2113752893878890637",
-  "lang": "en",
-  "public_metrics": {
-   "bookmark_count": 23,
-   "impression_count": 8500,
-   "like_count": 51,
-   "quote_count": 1,
-   "reply_count": 13,
-   "retweet_count": 1
-  },
-  "referenced_tweets": [
-   {
-    "id": "2113745196173418644",
-    "type": "quoted"
-   }
-  ],
-  "text": "the statistics show, if you have only 1 brain cell and you are perfectly mid, you should subscribe to @latentspacepod https://t.co/voJhhYaBMG"
  },
  "2114001653879672877": {
   "author_id": "39125788",
@@ -3291,5 +3087,285 @@
    }
   ],
   "text": "真のハッカーは何億も稼げるのにホワイトハッカーの年収はたった1000万 https://t.co/a8O3Fo3ufZ"
+ },
+ "2114862136623288486": {
+  "author_id": "218811492",
+  "created_at": "2026-10-26T23:30:00.000Z",
+  "edit_history_tweet_ids": [
+   "2114862136623288486"
+  ],
+  "entities": {
+   "hashtags": [
+    {
+     "end": 36,
+     "start": 24,
+     "tag": "NeurIPS2026"
+    }
+   ],
+   "urls": [
+    {
+     "description": "Sakana AI will be at NeurIPS 2026 🧠⚡ We are excited to host a dinner meetup in Sydney. ・Date & Time: Monday, December 7, from 7 PM ・Location: Sydney, near the NeurIPS venue (details will be shared with selected attendees) We invite NeurIPS participants to join us for an evening of engaging conversations and networking. Please note the following: - While we will do our utmost to invite as many applicants as possible, venue capacity constraints may prevent us from accommodating everyone who fills out this form. - If you are selected to attend, you will receive a formal invitation with further details—including the exact time and location—by November 30th. Your understanding is greatly appreciated. We look forward to connecting with you and sharing an inspiring evening among fellow innovators in the AI community. If you have any questions, please email events@sakana.ai. Thank you! 🐟",
+     "display_url": "forms.gle/FMzMjxNK7b5LtQ…",
+     "end": 67,
+     "expanded_url": "https://forms.gle/FMzMjxNK7b5LtQWi9",
+     "images": [
+      {
+       "height": 630,
+       "url": "https://pbs.twimg.com/news_img/2114698990289817600/Wkv-YzAo?format=jpg&name=orig",
+       "width": 1200
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2114698990289817600/Wkv-YzAo?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 44,
+     "status": 200,
+     "title": "Sakana AI at NeurIPS 2026 🐟🐠🐡",
+     "unwound_url": "https://docs.google.com/forms/d/e/1FAIpQLSeWzJDnqiqcJmyiaAyLgM9AVyCmlJPgGKd2rH-G0gODr6cHGA/viewform?usp=send_form",
+     "url": "https://t.co/S8HJHXA4si"
+    },
+    {
+     "display_url": "pic.x.com/WwkKAns2sB",
+     "end": 213,
+     "expanded_url": "https://x.com/SakanaAILabs/status/2114862136623288486/photo/1",
+     "media_key": "3_2114723920305942528",
+     "start": 190,
+     "url": "https://t.co/WwkKAns2sB"
+    }
+   ]
+  },
+  "id": "2114862136623288486",
+  "lang": "ja",
+  "note_tweet": {
+   "entities": {
+    "hashtags": [
+     {
+      "end": 36,
+      "start": 24,
+      "tag": "NeurIPS2026"
+     }
+    ],
+    "urls": [
+     {
+      "display_url": "forms.gle/FMzMjxNK7b5LtQ…",
+      "end": 67,
+      "expanded_url": "https://forms.gle/FMzMjxNK7b5LtQWi9",
+      "start": 44,
+      "url": "https://t.co/U5PURuLFkA"
+     }
+    ]
+   },
+   "text": "Sakana AI Dinner Meetup #NeurIPS2026 を開催🐟️\n\nhttps://t.co/U5PURuLFkA\n\n12月7日（月）19時から、シドニーにてSakana AIのDinner Meetupを開催します。NeurIPSに参加される方を対象に、食事を楽しみながら交流できる場をご用意します。\n\n※会場の収容人数の都合上、すべての方をご招待できない 場合があります。参加いただける方には、11月30日までに正式なご案内と詳細をお送りします。\n\nシドニーでお会いできるのを楽しみにしています🚀"
+  },
+  "public_metrics": {
+   "bookmark_count": 2,
+   "impression_count": 4092,
+   "like_count": 17,
+   "quote_count": 0,
+   "reply_count": 2,
+   "retweet_count": 2
+  },
+  "text": "Sakana AI Dinner Meetup #NeurIPS2026 を開催🐟️\n\nhttps://t.co/S8HJHXA4si\n\n12月7日（月）19時から、シドニーにてSakana AIのDinner Meetupを開催します。NeurIPSに参加される方を対象に、食事を楽しみながら交流できる場をご用意します。\n\n※会場の収容人数の都合上、すべての方をご招待できない https://t.co/WwkKAns2sB"
+ },
+ "2114837274550747603": {
+  "author_id": "1633874951508721686",
+  "created_at": "2026-10-26T21:51:12.000Z",
+  "edit_history_tweet_ids": [
+   "2114837274550747603"
+  ],
+  "entities": {
+   "mentions": [
+    {
+     "end": 42,
+     "id": "1651729524579766272",
+     "start": 29,
+     "username": "coderabbitai"
+    }
+   ],
+   "urls": [
+    {
+     "description": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+     "display_url": "openai.com/index/gpt-6-1-…",
+     "end": 132,
+     "expanded_url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security/",
+     "start": 109,
+     "status": 200,
+     "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+     "unwound_url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security/",
+     "url": "https://t.co/CshBD68xD7"
+    }
+   ]
+  },
+  "id": "2114837274550747603",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 24,
+   "impression_count": 23329,
+   "like_count": 303,
+   "quote_count": 15,
+   "reply_count": 43,
+   "retweet_count": 31
+  },
+  "text": "GPT-6.1 Sol is being used by @coderabbitai to help developers find security risks across complex codebases.\n\nhttps://t.co/CshBD68xD7"
+ },
+ "2114818620782248024": {
+  "author_id": "1605",
+  "created_at": "2026-10-26T20:37:05.000Z",
+  "edit_history_tweet_ids": [
+   "2114818620782248024"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/OpenAI/status/…",
+     "end": 137,
+     "expanded_url": "https://twitter.com/OpenAI/status/2114780711664398349",
+     "start": 114,
+     "url": "https://t.co/TbpHp75Os0"
+    }
+   ]
+  },
+  "id": "2114818620782248024",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 369,
+   "impression_count": 362594,
+   "like_count": 4658,
+   "quote_count": 62,
+   "reply_count": 525,
+   "retweet_count": 237
+  },
+  "referenced_tweets": [
+   {
+    "id": "2114780711664398349",
+    "type": "quoted"
+   }
+  ],
+  "text": "6.1 Terra is here! It is good at a lot of things, but we are especially excited for this new era of computer use. https://t.co/TbpHp75Os0"
+ },
+ "2114780986613682473": {
+  "author_id": "1633874951508721686",
+  "created_at": "2026-10-26T18:07:32.000Z",
+  "edit_history_tweet_ids": [
+   "2114780986613682473"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/4398626122/sta…",
+     "end": 245,
+     "expanded_url": "https://twitter.com/4398626122/status/2114780711664398349",
+     "start": 222,
+     "url": "https://t.co/kYjK7mn4Bq"
+    }
+   ]
+  },
+  "id": "2114780986613682473",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 184,
+   "impression_count": 102650,
+   "like_count": 1686,
+   "quote_count": 27,
+   "reply_count": 124,
+   "retweet_count": 85
+  },
+  "referenced_tweets": [
+   {
+    "id": "2114780711664398349",
+    "type": "quoted"
+   }
+  ],
+  "text": "GPT-6.1 Terra is also coming to the API and Codex.\n\nUse Terra to build apps and agents that interpret images, navigate software, and take action. You get fast computer use at a lower cost, ideal for high-volume workflows. https://t.co/kYjK7mn4Bq"
+ },
+ "2114780711664398349": {
+  "author_id": "4398626122",
+  "created_at": "2026-10-26T18:06:27.000Z",
+  "edit_history_tweet_ids": [
+   "2114780711664398349"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "pic.x.com/8JTN1yonmV",
+     "end": 280,
+     "expanded_url": "https://x.com/OpenAI/status/2114780711664398349/video/1",
+     "media_key": "13_2114778494395678720",
+     "start": 257,
+     "url": "https://t.co/8JTN1yonmV"
+    }
+   ]
+  },
+  "id": "2114780711664398349",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 3315,
+   "impression_count": 2679033,
+   "like_count": 21163,
+   "quote_count": 1543,
+   "reply_count": 1097,
+   "retweet_count": 1823
+  },
+  "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price.\n\nGPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it. https://t.co/8JTN1yonmV"
+ },
+ "2114780227465338985": {
+  "author_id": "1943306828697550848",
+  "created_at": "2026-10-26T18:04:31.000Z",
+  "edit_history_tweet_ids": [
+   "2114780227465338985"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "Anthropic's new Claude for Nonprofits plugin brings new skills to verified nonprofit organizations, taking the operational work that stretches small teams.",
+     "display_url": "claude.com/resources/arti…",
+     "end": 279,
+     "expanded_url": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
+     "images": [
+      {
+       "height": 1260,
+       "url": "https://pbs.twimg.com/news_img/2114780232011911168/qjFhwC_E?format=png&name=orig",
+       "width": 2400
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2114780232011911168/qjFhwC_E?format=png&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 256,
+     "status": 200,
+     "title": "Expanding Claude for Nonprofits",
+     "unwound_url": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
+     "url": "https://t.co/LWHcr1CT20"
+    },
+    {
+     "display_url": "x.com/AnthropicAI/st…",
+     "end": 303,
+     "expanded_url": "https://twitter.com/AnthropicAI/status/1995856609692844351",
+     "start": 280,
+     "url": "https://t.co/WHG2zRDyxO"
+    }
+   ]
+  },
+  "id": "2114780227465338985",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 830,
+   "impression_count": 390335,
+   "like_count": 4544,
+   "quote_count": 57,
+   "reply_count": 238,
+   "retweet_count": 199
+  },
+  "referenced_tweets": [
+   {
+    "id": "1995856609692844351",
+    "type": "quoted"
+   }
+  ],
+  "text": "More than 25,000 nonprofits now use Claude. Most are small, local teams.\n\nWe’re expanding Claude for Nonprofits with a plugin built with around 30 of them, adding skills for fundraising, marketing, and hiring grounded in each team’s context and AI policy: https://t.co/LWHcr1CT20 https://t.co/WHG2zRDyxO"
  }
 }

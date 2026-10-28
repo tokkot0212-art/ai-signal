@@ -2,85 +2,6 @@
  "date": "2026-10-27",
  "items": [
   {
-   "id": "295d2b9a24",
-   "verdict": "confirmed",
-   "title": "OpenAIがGPT-6.1 TerraとSolを発表・提供開始",
-   "summary": "OpenAIは、画面の理解や複数アプリでの操作を得意とする新モデル「GPT-6.1 Terra」を発表した。Terraは低価格で高速なコンピューター操作を目指すとされ、APIやCodexでも提供予定と投稿されている。また、GPT-6.1 Solはセキュリティリスク発見のためにCodeRabbitに利用されていると紹介された。",
-   "points": [
-    "新しさ: 画面を見て理解し、アプリ間で操作する「コンピューター操作」が前面に出ている。",
-    "影響: 低コストで大量処理するワークフローを作る開発者や企業に関係する。",
-    "注意: 性能や価格の具体的な数値は投稿内になく、一般向け提供の範囲は未確認。"
-   ],
-   "terms": [
-    {
-     "term": "コンピューター操作（Computer use）",
-     "desc": "AIが画面を見て、マウスやキーボードのように操作を行う機能のこと。"
-    },
-    {
-     "term": "API",
-     "desc": "外部のソフトやサービスからAIモデルを呼び出すための接口のこと。"
-    },
-    {
-     "term": "Codex",
-     "desc": "OpenAIのプログラミング支援向けのAIサービス・製品名。"
-    }
-   ],
-   "score": 100,
-   "credibility": 100,
-   "heat": 78,
-   "first_seen": "2026-10-26T18:06:27.000Z",
-   "latest": "2026-10-26T21:51:12.000Z",
-   "authors": [
-    "OpenAI",
-    "OpenAIDevs",
-    "sama"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "sama",
-     "label": "OpenAI CEO",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式投稿",
-   "links": [
-    {
-     "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/OpenAI/status/2114780711664398349",
-    "username": "OpenAI",
-    "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price.\n\nGPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it. https://t.co/8JTN1yonmV",
-    "text_ja": "GPT-6.1 Terra：より低価格で、高速かつ高性能なコンピュータ操作を実現します。\n\nGPT-6.1 Terraは画面上の内容を理解し、複数のアプリをまたいで操作を実行し、自然な文章を書くことができます。効率性も備えているため、仕事の一日を通して、より多くの作業を任せられる高性能なモデルです。 https://t.co/8JTN1yonmV"
-   },
-   "post_ids": [
-    "2114780711664398349",
-    "2114837274550747603",
-    "2114780986613682473",
-    "2114818620782248024"
-   ],
-   "post_count": 4,
-   "archived_at": "2026-10-27T18:46:31Z"
-  },
-  {
    "id": "89f781ecbc",
    "verdict": "confirmed",
    "title": "Anthropic、非営利団体向けClaude機能を拡充",
@@ -100,9 +21,9 @@
      "desc": "営利を目的とせず、社会貢献などの活動を行う団体。"
     }
    ],
-   "score": 87,
+   "score": 86,
    "credibility": 88,
-   "heat": 60,
+   "heat": 57,
    "first_seen": "2026-10-26T18:04:31.000Z",
    "latest": "2026-10-26T18:04:31.000Z",
    "authors": [
@@ -136,7 +57,65 @@
     "2114780227465338985"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-27T18:46:31Z"
+   "archived_at": "2026-10-28T01:29:43Z"
+  },
+  {
+   "id": "1edf2ebe75",
+   "verdict": "confirmed",
+   "title": "OpenAI「GPT-6.1 Sol」、セキュリティ検査で利用例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントは、「GPT-6.1 Sol」がCodeRabbit社により、複雑なコードベースでセキュリティリスクを見つけるために使われていると紹介した。投稿には詳細な数値や結果は含まれておらず、リンク先で詳細が示されているとみられる。",
+   "points": [
+    "AIが大規模なプログラムのセキュリティ上の問題を探す用途で実際に使われている例として示された。",
+    "検出精度や誤検知率などの数値は、投稿文からは確認できない。",
+    "導入企業側の発表であり、効果の大きさは独立した検証を待つ必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "コードベース",
+     "desc": "ソフトウェアを構成するプログラムのファイル群全体のこと。"
+    },
+    {
+     "term": "セキュリティリスク",
+     "desc": "プログラムの弱点などから情報漏えいや不正利用が起きる危険性のこと。"
+    }
+   ],
+   "score": 82,
+   "credibility": 100,
+   "heat": 31,
+   "first_seen": "2026-10-26T18:06:27.000Z",
+   "latest": "2026-10-26T21:51:12.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の利用事例紹介",
+   "links": [
+    {
+     "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2114837274550747603",
+    "username": "OpenAIDevs",
+    "text": "GPT-6.1 Sol is being used by @coderabbitai to help developers find security risks across complex codebases.\n\nhttps://t.co/CshBD68xD7",
+    "text_ja": "GPT-6.1 Solは、@coderabbitai に採用され、開発者が複雑なコードベース全体でセキュリティリスクを見つけるのに役立てられています。\n\nhttps://t.co/CshBD68xD7"
+   },
+   "post_ids": [
+    "2114837274550747603"
+   ],
+   "post_count": 4,
+   "archived_at": "2026-10-28T01:29:43Z"
   },
   {
    "id": "5a4211b5b3",
@@ -162,9 +141,9 @@
      "desc": "特定の作業や場面のために作られた個別のAI"
     }
    ],
-   "score": 64,
+   "score": 62,
    "credibility": 70,
-   "heat": 41,
+   "heat": 36,
    "first_seen": "2026-10-27T04:57:18.000Z",
    "latest": "2026-10-27T04:58:25.000Z",
    "authors": [
@@ -193,7 +172,7 @@
     "2114944507242574006"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-27T18:46:31Z"
+   "archived_at": "2026-10-28T01:29:43Z"
   },
   {
    "id": "6decf54932",
@@ -211,9 +190,9 @@
      "desc": "裁判や法律に基づく対応を取ること"
     }
    ],
-   "score": 58,
+   "score": 56,
    "credibility": 78,
-   "heat": 15,
+   "heat": 11,
    "first_seen": "2026-10-27T09:00:20.000Z",
    "latest": "2026-10-27T09:00:20.000Z",
    "authors": [
@@ -247,7 +226,7 @@
     "2115005666805023156"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-27T18:46:31Z"
+   "archived_at": "2026-10-28T01:29:43Z"
   }
  ]
 }

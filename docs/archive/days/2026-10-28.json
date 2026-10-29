@@ -2,6 +2,82 @@
  "date": "2026-10-28",
  "items": [
   {
+   "id": "e6337b7a6d",
+   "verdict": "confirmed",
+   "title": "NVIDIAとMistralが新しい公開AIモデルを発表",
+   "summary": "NVIDIA公式アカウントは、音声認識モデル「Nemotron 3.5 Transcribe」を紹介し、40言語の文字起こし・話者識別・翻訳などを1つのモデルで扱えると説明した。同じくNVIDIA公式は、Mistral AI公式が新モデル「Le Chonk」の重みを公開したことに祝意を示し、NVFP4形式での当日対応と分散推論の最適化を案内した。",
+   "points": [
+    "Mistral Le Chonkは重みがHugging Faceで公開され、誰でもダウンロードして自社環境で動かせるとされる（投稿による）",
+    "NVIDIAのモデルは約30Bパラメータのうち約4Bが動作するMoE方式で、軽さと性能の両立を狙った設計とみられる",
+    "「1T（1兆）パラメータ」「MoE」など性能の数字は各社の自己申告であり、第三者の検証はこれからとみられる"
+   ],
+   "terms": [
+    {
+     "term": "MoE（Mixture of Experts）",
+     "desc": "複数の専門家モデルを持ち、入力ごとに一部だけ動かす方式。計算量を抑えられる。"
+    },
+    {
+     "term": "オープンウェイト",
+     "desc": "学習済みモデルの重みが公開され、誰でもダウンロードして使えること。"
+    },
+    {
+     "term": "NVFP4",
+     "desc": "NVIDIAのGPU向けの低精度数値形式。計算を速く、メモリを少なく済ませるための技術。"
+    }
+   ],
+   "score": 100,
+   "credibility": 100,
+   "heat": 70,
+   "first_seen": "2026-10-27T17:00:11.000Z",
+   "latest": "2026-10-29T14:46:44.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "MistralAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA・Mistral公式アカウント投稿",
+   "links": [
+    {
+     "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+     "domain": "huggingface.co",
+     "primary": true
+    },
+    {
+     "url": "https://docs.nvidia.com/dynamo/recipes/mistral-large-4",
+     "domain": "docs.nvidia.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
+    "username": "NVIDIAAI",
+    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
+    "text_ja": "NVIDIA Nemotron 3.5 Transcribeのご紹介 🎙️\n\nオープンウェイト、プロンプト指定可能な30B MoEモデル（約4Bのアクティブパラメータ）で、40言語の文字起こし、話者識別、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめました。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
+   },
+   "post_ids": [
+    "2115462300241141882",
+    "2115811242556137820",
+    "2115817617911157099"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-10-29T19:01:51Z"
+  },
+  {
    "id": "6170438680",
    "verdict": "confirmed",
    "title": "Anthropic、製薬企業6社と共同研究しClaudeの創薬支援を報告",
@@ -23,7 +99,7 @@
    ],
    "score": 95,
    "credibility": 100,
-   "heat": 63,
+   "heat": 62,
    "first_seen": "2026-10-27T20:27:48.000Z",
    "latest": "2026-10-27T20:27:48.000Z",
    "authors": [
@@ -57,64 +133,7 @@
     "2115178675050307942"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-29T15:18:04Z"
-  },
-  {
-   "id": "7114ad0a87",
-   "verdict": "confirmed",
-   "title": "NVIDIAがNemotron 3.5 Transcribeを発表",
-   "summary": "NVIDIAは公式アカウントで、新しい音声認識モデル「Nemotron 3.5 Transcribe」を紹介した。投稿によれば、約300億パラメータのMoE型で、有効パラメータは約40億、40言語の文字起こし、話者の識別、翻訳、音声理解を一つのモデルで行えるとしている。同社は同時に「Nemotron for Europe」に関する記事へのリンクも共有した。",
-   "points": [
-    "「オープンウェイト」かつ「プロンプトで指示できる」点が特徴で、用途に合わせて挙動を調整しやすいとみられる。",
-    "誰が話したかを識別する機能は、会議録など複数人の会話の整理に役立つ可能性がある。ただし精度は投稿内で数値が示されていないため未確認。",
-    "欧州向けの取り組みとされるが、投稿の本文からは詳細が分からない。"
-   ],
-   "terms": [
-    {
-     "term": "パラメータ",
-     "desc": "AIモデルの内部にある調整可能な数値。多いほど複雑な処理ができる傾向がある。"
-    },
-    {
-     "term": "MoE（Mixture of Experts）",
-     "desc": "複数の専門家ネットワークを持ち、入力ごとに一部だけを動かす仕組み。"
-    },
-    {
-     "term": "話者識別（スピーカー・ダイアライゼーション）",
-     "desc": "音声の中で『誰がいつ話したか』を区別する技術。"
-    }
-   ],
-   "score": 91,
-   "credibility": 90,
-   "heat": 67,
-   "first_seen": "2026-10-27T17:00:11.000Z",
-   "latest": "2026-10-28T15:14:50.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業の公式アカウント投稿",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
-    "text_ja": "NVIDIA Nemotron 3.5 Transcribeを紹介します 🎙️\n\nオープンウェイトで、プロンプトで指示できる約30BのMoEモデルです（有効パラメータは約4B）。40言語の文字起こし、話者の識別、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめています。\n\n複数人が同時に話しているときでも、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
-   },
-   "post_ids": [
-    "2115462300241141882",
-    "2115126425019896307"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
    "id": "9ce8aa9398",
@@ -136,9 +155,9 @@
      "desc": "操作にほとんど遅れなく、即座に結果が反映される様子のこと。"
     }
    ],
-   "score": 89,
+   "score": 88,
    "credibility": 90,
-   "heat": 62,
+   "heat": 61,
    "first_seen": "2026-10-27T16:10:55.000Z",
    "latest": "2026-10-27T16:10:55.000Z",
    "authors": [
@@ -166,7 +185,7 @@
     "2115114028338962672"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
    "id": "ed14ceed78",
@@ -190,7 +209,7 @@
    ],
    "score": 88,
    "credibility": 100,
-   "heat": 45,
+   "heat": 44,
    "first_seen": "2026-10-27T22:20:23.000Z",
    "latest": "2026-10-27T22:20:23.000Z",
    "authors": [
@@ -224,7 +243,7 @@
     "2115207004293853358"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
    "id": "31b33236dc",
@@ -250,9 +269,9 @@
      "desc": "環境の雰囲気を表す背景音のこと。"
     }
    ],
-   "score": 80,
+   "score": 79,
    "credibility": 90,
-   "heat": 39,
+   "heat": 38,
    "first_seen": "2026-10-27T16:13:18.000Z",
    "latest": "2026-10-27T16:13:18.000Z",
    "authors": [
@@ -280,7 +299,7 @@
     "2115114625985368299"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
    "id": "394c6db86a",
@@ -308,7 +327,7 @@
    ],
    "score": 73,
    "credibility": 93,
-   "heat": 18,
+   "heat": 17,
    "first_seen": "2026-10-27T19:47:43.000Z",
    "latest": "2026-10-27T19:47:43.000Z",
    "authors": [
@@ -342,35 +361,72 @@
     "2115168584351805628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
-   "id": "03037b41f0",
+   "id": "8024815cb9",
    "verdict": "confirmed",
-   "title": "Microsoft、画像生成AI「MAI-Image-2.6」を一般提供",
-   "summary": "Microsoft AIは、画像生成モデル「MAI-Image-2.6」と「MAI-Image-2.6-Flash」がMicrosoft Foundryで一般提供（GA）されたと発表した。また、「MAI Image 2.7 Preview」が画像編集のArenaリーダーボードで3位になり、2.6から45ポイント上昇したと投稿している。",
+   "title": "NVIDIA、Nemotronを地域向けに追加学習する手順を公開",
+   "summary": "NVIDIA公式AIアカウントは、同社のオープンモデルNemotronを地域の用語や方針、トーンに合わせて調整する方法を紹介した。合成データとLoRAを使った事後学習（post-training）の5つの手順を解説するブログを案内し、欧州向けの事後学習に関するページも共有している。",
    "points": [
-    "新しさ: 画像生成モデルが一般提供に入り、企業が本格利用できる段階になった。",
-    "影響: Foundryを使う開発者や企業が、画質・速度・価格を比べて選べるようになる。",
-    "注意: ランキングはArenaの評価に基づく値で、順位の意味や測定条件は投稿内では詳しく分からない。"
+    "新しいのは、Nemotronを地域ごとの言葉や方針に合わせて調整する具体的な手順が示された点である",
+    "LoRAは大きなモデル全体を再学習せずに一部だけを追加学習する手法で、比較的少ない計算資源で調整できるとされる（一般的な背景知識）",
+    "投稿から性能や効果の数値は分からないため、実際にどの程度有効かは公式ブログで確認が必要である"
    ],
-   "terms": [
+   "terms": [],
+   "score": 72,
+   "credibility": 93,
+   "heat": 15,
+   "first_seen": "2026-10-27T16:20:42.000Z",
+   "latest": "2026-10-27T17:00:11.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
     {
-     "term": "一般提供（GA）",
-     "desc": "試験段階を終え、誰でも正式に利用できるようになること。"
-    },
-    {
-     "term": "Microsoft Foundry",
-     "desc": "Microsoftが提供する、AIモデルを開発・利用するためのサービス基盤。"
-    },
-    {
-     "term": "リーダーボード",
-     "desc": "AIモデルの性能を比べるために順位を並べた一覧表のこと。"
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
     }
    ],
-   "score": 73,
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式技術ブログ",
+   "links": [
+    {
+     "url": "https://nvda.ws/4zeRBxd",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115116486671176161",
+    "username": "NVIDIAAI",
+    "text": "Build AI agents that speak the language and understand the local context.\n\nHere's 5 steps to learn how to post-train NVIDIA Nemotron with synthetic data and LoRA to adapt its responses for regional terminology, policies and tone.\n\nFollow the step-by-step tech blog: https://t.co/5TddqdSxib",
+    "text_ja": "地域の言葉や文脈を理解するAIエージェントを構築しましょう。\n\nNVIDIA Nemotronを、合成データとLoRAを使って事後学習し、地域特有の用語、方針、トーンに合わせて応答を調整する5つの手順をご紹介します。\n\n ステップバイステップの技術ブログをご覧ください: https://t.co/5TddqdSxib"
+   },
+   "post_ids": [
+    "2115116486671176161",
+    "2115126425019896307"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-29T19:01:51Z"
+  },
+  {
+   "id": "fe34faca71",
+   "verdict": "confirmed",
+   "title": "Microsoftの画像生成モデルMAI-Image-2.6が一般提供開始",
+   "summary": "Microsoft AI公式アカウントは、画像生成モデルのMAI-Image-2.6とMAI-Image-2.6-FlashがMicrosoft Foundryで一般提供（GA）になったと発表した。同社は、顧客から品質・速度・価格性能で好評を得ていると述べ、Microsoft Playgroundでも試せると案内している。",
+   "points": [
+    "新しいのは、開発者や企業がMicrosoft Foundry上でこの画像モデルを正式に利用できるようになった点である",
+    "「GA（一般提供）」は、試験段階を終え誰でも利用できる状態になったことを指す",
+    "品質や速度の評価は同社と顧客の評価によるもので、独立した数値比較は本投稿からは確認できない"
+   ],
+   "terms": [],
+   "score": 71,
    "credibility": 93,
-   "heat": 18,
+   "heat": 13,
    "first_seen": "2026-10-27T15:26:57.000Z",
    "latest": "2026-10-27T15:42:56.000Z",
    "authors": [
@@ -386,7 +442,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Microsoft AI公式発表",
+   "evidence_note": "Microsoft公式発表",
    "links": [
     {
      "url": "https://msft.it/6012aL90M",
@@ -406,73 +462,53 @@
     "text_ja": "MAI-Image-2.6 と MAI-Image-2.6-Flash が Microsoft Foundry で一般提供（GA）開始されました！\n\n当社の最も優れた画像モデルは、品質、速度、価格性能の面でお客様から高い評価をいただいており、今回ついに GA となります。\n\nチームの素晴らしい仕事です。ぜひ使って何か作ってみてください！\n\n詳しくはこちら: https://t.co/V5QQKqhMFv\n\n今すぐ Microsoft Playground で試せます: https://t.co/x9sYWLxKn8"
    },
    "post_ids": [
-    "2115106982730342888",
-    "2115102961957499069"
+    "2115106982730342888"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
-   "id": "67a7e3e878",
+   "id": "6be231ff2f",
    "verdict": "confirmed",
-   "title": "NVIDIA、Nemotronを地域向けに調整する手順を公開",
-   "summary": "NVIDIA公式AIアカウントが、同社のNemotronを合成データとLoRAを使って追加学習（post-train）し、地域特有の用語・ポリシー・口調に合わせる方法を5つのステップで紹介した。詳細は同社の技術ブログにまとめられている。",
+   "title": "MAI Image 2.7 Previewが画像編集ランキングで3位",
+   "summary": "Microsoft AI公式アカウントは、MAI Image 2.7 Previewが画像編集のリーダーボード（arena）で3位になったと投稿した。同社はこれを企業別で2位、GPT-Image-2より上位としており、2.6からの上昇幅は45ポイントだと述べている。",
    "points": [
-    "LoRAは大規模モデル本体を変えず、小さな追加部分だけを学習させる軽量な手法とされる（一般的な背景知識）",
-    "地域の言葉や規程に合わせたAIエージェントを作りたい企業開発者にとって参考になりそう",
-    "投稿は手順の紹介のみで、実際の効果を示す数値や検証結果は本文からは確認できない"
+    "新しいのは、画像編集の比較ランキングで自社モデルが上位に入ったという点である",
+    "リーダーボードはユーザーの投票などで順位が決まる仕組みとみられるが、投稿では詳細な方法は示されていない",
+    "プレビュー版の順位であり、正式版や別の評価では結果が変わる可能性がある"
    ],
-   "terms": [
-    {
-     "term": "Nemotron",
-     "desc": "NVIDIAが開発する大規模言語モデルのシリーズ名。"
-    },
-    {
-     "term": "post-training（追加学習）",
-     "desc": "公開済みの基本モデルに追加のデータで学習させ、用途や性格を調整すること。"
-    },
-    {
-     "term": "LoRA",
-     "desc": "モデル全体を再学習せず、小さな追加パラメータだけを学習させて効率よく調整する手法。"
-    }
-   ],
-   "score": 72,
-   "credibility": 93,
-   "heat": 15,
-   "first_seen": "2026-10-27T16:20:42.000Z",
-   "latest": "2026-10-27T16:20:42.000Z",
+   "terms": [],
+   "score": 69,
+   "credibility": 90,
+   "heat": 17,
+   "first_seen": "2026-10-27T15:26:57.000Z",
+   "latest": "2026-10-27T15:26:57.000Z",
    "authors": [
-    "NVIDIAAI"
+    "MicrosoftAI"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
+     "username": "MicrosoftAI",
+     "label": "Microsoft AI（企業公式）",
      "type": "official",
      "former": ""
     }
    ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式ブログへの案内",
-   "links": [
-    {
-     "url": "https://nvda.ws/4zeRBxd",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
+   "evidence": "official_evaluation",
+   "evidence_label": "公式評価",
+   "evidence_note": "arenaの公開ランキングを開発元が紹介",
+   "links": [],
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115116486671176161",
-    "username": "NVIDIAAI",
-    "text": "Build AI agents that speak the language and understand the local context.\n\nHere's 5 steps to learn how to post-train NVIDIA Nemotron with synthetic data and LoRA to adapt its responses for regional terminology, policies and tone.\n\nFollow the step-by-step tech blog: https://t.co/5TddqdSxib",
-    "text_ja": "言語を理解し、地域の文脈を把握するAIエージェントを作りましょう。\n\n合成データとLoRAを使ってNVIDIA Nemotronを後学習させ、地域特有の用語、ポリシー、口調に応答を合わせる方法を5つのステップで学べます。\n\nステップごとに解説した技術ブログをご覧ください: https://t.co/5TddqdSxib"
+    "url": "https://x.com/MicrosoftAI/status/2115102961957499069",
+    "username": "MicrosoftAI",
+    "text": "MAI-Image keeps climbing! \n\nMAI Image 2.7 Preview is now #3 on @arena's image editing leaderboard. #2 by lab and ahead of GPT-Image-2. That's a +45 point jump from 2.6. https://t.co/52ArJMjRBS",
+    "text_ja": "MAI-Image が順位を上げ続けています！\n\nMAI Image 2.7 Preview が @arena の画像編集リーダーボードで第3位にランクインしました。ラボ別では第2位で、GPT-Image-2 も上回っています。2.6 からは +45 ポイントの上昇です。 https://t.co/52ArJMjRBS"
    },
    "post_ids": [
-    "2115116486671176161"
+    "2115102961957499069"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "post_count": 1,
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
    "id": "9f70dc7ba0",
@@ -496,7 +532,7 @@
    ],
    "score": 66,
    "credibility": 83,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-10-28T05:30:01.000Z",
    "latest": "2026-10-28T05:30:01.000Z",
    "authors": [
@@ -530,7 +566,7 @@
     "2115315124906905928"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   },
   {
    "id": "c47fd1799c",
@@ -556,9 +592,9 @@
      "desc": "文字情報だけを入力として扱えるAIのこと。画像は直接見られない。"
     }
    ],
-   "score": 64,
+   "score": 63,
    "credibility": 75,
-   "heat": 27,
+   "heat": 25,
    "first_seen": "2026-10-28T12:34:05.000Z",
    "latest": "2026-10-28T12:35:07.000Z",
    "authors": [
@@ -587,7 +623,7 @@
     "2115421845247938616"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-29T15:18:04Z"
+   "archived_at": "2026-10-29T19:01:51Z"
   }
  ]
 }

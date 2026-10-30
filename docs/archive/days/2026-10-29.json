@@ -2,60 +2,54 @@
  "date": "2026-10-29",
  "items": [
   {
-   "id": "c1b407df67",
+   "id": "e8813d8c51",
    "verdict": "confirmed",
-   "title": "Claude for Legal に契約書レビュー等の既製テンプレートを追加",
-   "summary": "Anthropicの公式Claudeアカウントは、「Claude for Legal」に契約書レビュー、規制動向の調査、引用確認などの既製のartifactギャラリーを追加したと投稿した。内蔵の例から始め、自社の文書やコネクタを加えて社内の誰とでも共有できると説明している。",
+   "title": "NVIDIA、音声認識・検索向けのオープンモデルを発表",
+   "summary": "NVIDIAは、オープンウェイトの音声認識モデル「Nemotron 3.5 Transcribe」を発表した。40言語の文字起こし、話者の識別、翻訳などを1つのモデルで行えるとしており、約4Bのアクティブパラメータを持つ30B MoEモデルと紹介している。あわせて「Nemotron Retriever」について、別のオープン検索基盤と比較する取り組みを公開したと投稿している。",
    "points": [
-    "新しいのは、法務向けの既製artifactを選んで使える点と、社内で共有できる点。",
-    "法務担当者が定型作業を素早く始められるため、業務効率に影響しうる。",
-    "精度や、扱える文書の範囲・情報管理の条件は投稿からは未確認。"
+    "「アクティブパラメータ」とは、1回の処理で実際に計算に使われるパラメータ数のこと。総数より小さく、動作の軽さに関係する。",
+    "検索（retrieval）の比較では、精度だけでなくトークン使用量も示されている。AIエージェントの処理コストに関わる観点。",
+    "比較結果の具体的な数値や第三者による検証は、投稿からは確認できていない。"
    ],
-   "terms": [
-    {
-     "term": "artifact",
-     "desc": "Claudeの画面上で作られる、文書やアプリなどの成果物のこと。"
-    },
-    {
-     "term": "コネクタ",
-     "desc": "AIが外部のサービスやデータに接続するための連携機能のこと。"
-    },
-    {
-     "term": "引用確認(cite check)",
-     "desc": "文書中の引用元や参照が正しいかを確かめる作業のこと。"
-    }
-   ],
-   "score": 91,
-   "credibility": 85,
-   "heat": 75,
-   "first_seen": "2026-10-28T15:34:16.000Z",
-   "latest": "2026-10-28T15:34:16.000Z",
+   "terms": [],
+   "score": 94,
+   "credibility": 100,
+   "heat": 60,
+   "first_seen": "2026-10-28T15:14:50.000Z",
+   "latest": "2026-10-30T00:23:51.000Z",
    "authors": [
-    "claudeai"
+    "NVIDIAAI"
    ],
    "author_labels": [
     {
-     "username": "claudeai",
-     "label": "Anthropic（Claude公式アカウント）",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Claude公式アカウントの機能告知",
-   "links": [],
+   "evidence_note": "NVIDIA公式の製品発表投稿",
+   "links": [
+    {
+     "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
    "post": {
-    "url": "https://x.com/claudeai/status/2115467192276025500",
-    "username": "claudeai",
-    "text": "New in Claude for Legal: a gallery of ready-made artifacts for contract review, regulatory horizon scans, cite checks, and more.\n\nStart from the built-in example, add your own documents and connectors, and share it with anyone across the business. https://t.co/Wn2VK2HeMU",
-    "text_ja": "Claude for Legalの新機能：契約書レビュー、規制動向の調査、引用チェックなどに使える、すぐに使えるアーティファクトのギャラリーを追加しました。\n\n内蔵のサンプルから始めて、ご自身の文書やコネクタを追加し、社内の誰とでも共有できます。 https://t.co/Wn2VK2HeMU"
+    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
+    "username": "NVIDIAAI",
+    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
+    "text_ja": "NVIDIA Nemotron 3.5 Transcribeのご紹介 🎙️\n\nオープンウェイト、プロンプト指定可能な30B MoEモデル（約4Bのアクティブパラメータ）で、40言語の文字起こし、話者識別、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめました。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
    },
    "post_ids": [
-    "2115467192276025500"
+    "2115462300241141882",
+    "2115962853463396395"
    ],
-   "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "post_count": 2,
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "23f4207652",
@@ -83,7 +77,7 @@
    ],
    "score": 90,
    "credibility": 90,
-   "heat": 66,
+   "heat": 65,
    "first_seen": "2026-10-28T17:02:21.000Z",
    "latest": "2026-10-28T17:02:21.000Z",
    "authors": [
@@ -111,7 +105,63 @@
     "2115489356437651654"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
+  },
+  {
+   "id": "c1b407df67",
+   "verdict": "confirmed",
+   "title": "Claude for Legal に契約書レビュー等の既製テンプレートを追加",
+   "summary": "Anthropicの公式Claudeアカウントは、「Claude for Legal」に契約書レビュー、規制動向の調査、引用確認などの既製のartifactギャラリーを追加したと投稿した。内蔵の例から始め、自社の文書やコネクタを加えて社内の誰とでも共有できると説明している。",
+   "points": [
+    "新しいのは、法務向けの既製artifactを選んで使える点と、社内で共有できる点。",
+    "法務担当者が定型作業を素早く始められるため、業務効率に影響しうる。",
+    "精度や、扱える文書の範囲・情報管理の条件は投稿からは未確認。"
+   ],
+   "terms": [
+    {
+     "term": "artifact",
+     "desc": "Claudeの画面上で作られる、文書やアプリなどの成果物のこと。"
+    },
+    {
+     "term": "コネクタ",
+     "desc": "AIが外部のサービスやデータに接続するための連携機能のこと。"
+    },
+    {
+     "term": "引用確認(cite check)",
+     "desc": "文書中の引用元や参照が正しいかを確かめる作業のこと。"
+    }
+   ],
+   "score": 90,
+   "credibility": 85,
+   "heat": 73,
+   "first_seen": "2026-10-28T15:34:16.000Z",
+   "latest": "2026-10-28T15:34:16.000Z",
+   "authors": [
+    "claudeai"
+   ],
+   "author_labels": [
+    {
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Claude公式アカウントの機能告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/claudeai/status/2115467192276025500",
+    "username": "claudeai",
+    "text": "New in Claude for Legal: a gallery of ready-made artifacts for contract review, regulatory horizon scans, cite checks, and more.\n\nStart from the built-in example, add your own documents and connectors, and share it with anyone across the business. https://t.co/Wn2VK2HeMU",
+    "text_ja": "Claude for Legalの新機能：契約書レビュー、規制動向の調査、引用チェックなどに使える、すぐに使えるアーティファクトのギャラリーを追加しました。\n\n内蔵のサンプルから始めて、ご自身の文書やコネクタを追加し、社内の誰とでも共有できます。 https://t.co/Wn2VK2HeMU"
+   },
+   "post_ids": [
+    "2115467192276025500"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "11f78091c5",
@@ -133,9 +183,9 @@
      "desc": "人の指示を受けて、AIが複数の作業を自律的に進める仕組みのこと。"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 90,
-   "heat": 59,
+   "heat": 58,
    "first_seen": "2026-10-28T23:17:13.000Z",
    "latest": "2026-10-28T23:17:13.000Z",
    "authors": [
@@ -163,63 +213,7 @@
     "2115583698074755078"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
-  },
-  {
-   "id": "bee38cc600",
-   "verdict": "confirmed",
-   "title": "NVIDIA、音声認識モデル「Nemotron 3.5 Transcribe」を発表",
-   "summary": "NVIDIAは公式アカウントで、オープンウェイトで提示可能な「Nemotron 3.5 Transcribe」を紹介した。投稿によると、約30Bパラメータ（うち約4Bが稼働）のMoEモデルで、40言語の文字起こし、話者の識別、翻訳、音声理解を1つのチェックポイントで行えるとされる。複数人が同時に話す場面で誰が何を話したかを追跡する例も示された。",
-   "points": [
-    "新しさ: 文字起こし・話者識別・翻訳・音声理解を1つのモデルにまとめた点が特徴として挙げられている。",
-    "注意点: 精度や実際の性能に関する数値は投稿に含まれておらず、詳細は未確認。",
-    "用語の見方: 「話者識別（ダイアライゼーション）」は、音声の中で誰が話しているかを区別する技術。"
-   ],
-   "terms": [
-    {
-     "term": "オープンウェイト",
-     "desc": "学習済みモデルの重みを公開し、誰でもダウンロードして利用できる形式のこと。"
-    },
-    {
-     "term": "パラメータ（アクティブ）",
-     "desc": "モデルの内部の数値の数。「稼働」分は1回の処理で実際に使われる量を指す。"
-    },
-    {
-     "term": "話者識別",
-     "desc": "音声の中で、誰がいつ話したかを区別して記録する技術。"
-    }
-   ],
-   "score": 88,
-   "credibility": 90,
-   "heat": 61,
-   "first_seen": "2026-10-28T15:14:50.000Z",
-   "latest": "2026-10-28T15:14:50.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの発表",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
-    "text_ja": "NVIDIA Nemotron 3.5 Transcribeのご紹介 🎙️\n\nオープンウェイト、プロンプト指定可能な30B MoEモデル（約4Bのアクティブパラメータ）で、40言語の文字起こし、話者識別、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめました。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
-   },
-   "post_ids": [
-    "2115462300241141882"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "3bc2e7ddd1",
@@ -247,7 +241,7 @@
    ],
    "score": 85,
    "credibility": 90,
-   "heat": 53,
+   "heat": 52,
    "first_seen": "2026-10-28T17:03:17.000Z",
    "latest": "2026-10-28T17:03:17.000Z",
    "authors": [
@@ -275,37 +269,24 @@
     "2115489593818816591"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
-   "id": "26fdf853c7",
+   "id": "3e331c2971",
    "verdict": "confirmed",
-   "title": "Sakana AI、SNS分析で米中間選挙を題材に報告",
-   "summary": "Sakana AIは公式アカウントで、Sakana Intelligence Reportとして、AIによるSNS分析で米中間選挙の情勢をどこまで読めるかを検証したと発表した。題材は、約30年間共和党が勝ってきたテキサス州の上院選で、X上の約71万件の反応を同社の独自技術で分析したという。投稿では、両候補への評価の転換が、Cook Political Reportなどの主要評価機関が判断を変える約2か月前に現れていたとしている。",
+   "title": "Sakana AI、SNSデータで米中間選挙を分析した事例を公表",
+   "summary": "Sakana AIは、AIを使ったSNS分析で米中間選挙をどこまで読み解けるかを検証したレポートを公開した。対象はテキサス州の上院選で、X上の約71万件の反応を自社技術で分析したとしている。また同社は、数学分野の「Recursive Self Improvement in Mathematics」ハッカソン（OpenMath 2026）で企業部門1位になったと発表した。",
    "points": [
-    "SNSデータは世論調査に現れない動きを捉えられる可能性がある一方、投稿数だけでなく発信者や動機の確認が必要と説明されている。",
-    "「AIが仮説を出し、人間が吟味して判断する」協働のあり方を示す事例として位置づけられている。",
-    "予測精度や分析手法の詳細は投稿からは分からず、選挙結果との照合も未確認。"
+    "SNS分析は世論調査にない材料を得られる一方、投稿者の属性や動機を読まないと情勢の判断を誤りうると同社は述べている。",
+    "レポートでは、評価の転換がCook Political Reportなどの評価機関の判断より約2か月前に現れたとされるが、詳細な手法や検証は元記事で確認が必要。",
+    "数学ハッカソンの成果（14の数学分野、うち6件の完全解決など）は同社の自己申告で、外部による検証は今後の報告を待つ必要がある。"
    ],
-   "terms": [
-    {
-     "term": "世論調査",
-     "desc": "有権者の意見を一部の人に聞いて、社会全体の考えを推定する調査。"
-    },
-    {
-     "term": "Cook Political Report",
-     "desc": "米国の選挙予測や情勢評価を行う独立系の報道・分析機関。"
-    },
-    {
-     "term": "中間選挙",
-     "desc": "米国で大統領任期の途中に行われる連邦議会選挙。"
-    }
-   ],
+   "terms": [],
    "score": 76,
    "credibility": 100,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-10-29T08:20:24.000Z",
-   "latest": "2026-10-29T08:20:24.000Z",
+   "latest": "2026-10-29T14:30:00.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -319,12 +300,22 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業の公式レポート告知",
+   "evidence_note": "Sakana AI公式のレポートと発表",
    "links": [
     {
      "url": "https://sakana.ai/us-midterms-analysis/",
      "domain": "sakana.ai",
      "primary": true
+    },
+    {
+     "url": "https://rsihouse.ai/openmath",
+     "domain": "rsihouse.ai",
+     "primary": false
+    },
+    {
+     "url": "https://bit.ly/4yT2Dav",
+     "domain": "bit.ly",
+     "primary": false
     }
    ],
    "post": {
@@ -334,10 +325,69 @@
     "text_ja": null
    },
    "post_ids": [
-    "2115720393369473344"
+    "2115720393369473344",
+    "2115813405835846058"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-30T15:07:04Z"
+  },
+  {
+   "id": "b3a242abc7",
+   "verdict": "confirmed",
+   "title": "Sakana AI、企業向け「Sakana API Platform」を発表",
+   "summary": "Sakana AIは公式アカウントで、企業顧客がAPIを安心して使えるよう開発した「Sakana API Platform」のエンタープライズ向けアーリーアクセスを開始したと発表した。投稿によれば、Sakana AIのモデルを組織での管理機能とあわせてAPI経由で利用できるという。",
+   "points": [
+    "アーリーアクセスは一部の利用者向けの先行提供で、正式提供の時期や料金は投稿では示されていない。",
+    "組織の管理機能が付くことで、社内導入の際のアクセス管理などに役立つとみられる。",
+    "対応モデルの一覧や具体的な機能の詳細は、リンク先を確認する必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士がデータや機能をやり取りするための接続の仕組み。"
+    },
+    {
+     "term": "アーリーアクセス",
+     "desc": "正式公開前に、一部の利用者が先行して製品を試せる提供形態。"
+    }
+   ],
+   "score": 75,
+   "credibility": 100,
+   "heat": 12,
+   "first_seen": "2026-10-29T01:07:44.000Z",
+   "latest": "2026-10-29T01:07:44.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業の公式アカウント投稿",
+   "links": [
+    {
+     "url": "https://sakana.ai/api-platform-earlyaccess/",
+     "domain": "sakana.ai",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2115611510051598623",
+    "username": "SakanaAILabs",
+    "text": "企業のお客様にSakana AIのAPIを安心してお使いいただけるよう、「Sakana API Platform」を開発しました。本日より、エンタープライズ向けのアーリーアクセスを開始します。\n\nhttps://t.co/UJHGy6zHZv\n\nSakana AIのモデルを、組織での管理機能とあわせてAPIでご利用いただけます。",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2115611510051598623"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "4a54117dba",
@@ -363,9 +413,9 @@
      "desc": "動画の映像表現を学習するMetaの研究モデル"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 93,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-28T17:08:33.000Z",
    "latest": "2026-10-28T17:08:33.000Z",
    "authors": [
@@ -399,7 +449,7 @@
     "2115490919923548307"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "c48e441a85",
@@ -421,9 +471,9 @@
      "desc": "軍事や安全保障の分野で、AIを情報分析や支援などに使うこと。"
     }
    ],
-   "score": 70,
+   "score": 69,
    "credibility": 90,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-29T07:01:42.000Z",
    "latest": "2026-10-29T07:01:42.000Z",
    "authors": [
@@ -451,7 +501,7 @@
     "2115700588457660571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   }
  ]
 }

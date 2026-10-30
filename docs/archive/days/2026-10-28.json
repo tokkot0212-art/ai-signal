@@ -2,21 +2,21 @@
  "date": "2026-10-28",
  "items": [
   {
-   "id": "6a4ea7b131",
+   "id": "6f89e7c18a",
    "verdict": "confirmed",
-   "title": "Mistral AI、新モデル「Le Chonk」の重みを公開",
-   "summary": "Mistral AIは公式アカウントで、新しい「Le Chonk」の重みを公開したと発表した。投稿では、オープンモデルの中でCognitionのFrontierCodeで1位になったこと、サイバー防御分野で複数のセキュリティ企業が評価したことが挙げられている。NVIDIAも公式アカウントで祝意を示し、1兆パラメータのMoE型マルチモーダルモデルで、3,800基のNVIDIA Grace Blackwell GPUで学習したと投稿した。",
+   "title": "Mistral、オープンウェイト新モデル「Le Chonk」を公開",
+   "summary": "Mistral AIは、新しい「Le Chonk」の重み（weights）を公開したと発表した。投稿では、オープンモデルの中でFrontierCodeで1位、Artificial Analysisで新たな効率ベンチマークを示したとされ、サイバー防御でも高い性能を持つと主張している。NVIDIAも同モデルを1Tパラメータ規模のMoE型マルチモーダルモデルとして紹介し、Hugging FaceでのNVFP4対応を発表した。",
    "points": [
-    "重みがHugging Faceで公開され、カスタマイズや自社環境へのデプロイが可能と案内されている",
-    "NVIDIAはNVFP4形式とDynamoによる分散推論への対応を発表しており、導入時の選択肢となる",
-    "各種ベンチマークの結果は企業側の発表であり、第三者による再現結果は投稿からは確認できない"
+    "「重みを公開」とは、モデルの学習結果のファイルを誰でも入手し、自社環境で動かせる状態にすること。",
+    "性能の数字（1位・新記録など）は各社の発表ベース。第三者の検証結果は投稿からは確認できていない。",
+    "NVIDIA側は3,800基のGrace Blackwell GPUで学習と述べているが、これも両社の発表に基づく情報。"
    ],
    "terms": [],
-   "score": 97,
+   "score": 96,
    "credibility": 100,
-   "heat": 55,
+   "heat": 52,
    "first_seen": "2026-10-27T17:00:11.000Z",
-   "latest": "2026-10-30T09:48:50.000Z",
+   "latest": "2026-10-29T14:46:44.000Z",
    "authors": [
     "MistralAI",
     "NVIDIAAI"
@@ -37,7 +37,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業の公式アカウントによる発表",
+   "evidence_note": "Mistral・NVIDIAの公式投稿",
    "links": [
     {
      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
@@ -54,15 +54,14 @@
     "url": "https://x.com/MistralAI/status/2115811242556137820",
     "username": "MistralAI",
     "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity.\n\n💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on @artificialanalysis.\n\n🛡 Built to defend: State-of-the-art in cyberdefense, put through the paces by the world's leading cyber vendors, including @CrowdStrike, @cloudflare, @rubrik, @zscaler, and others.\n\nBuilt for sovereignty: Make it yo",
-    "text_ja": "本日、新しく改良されたLe Chonkの重みを公開します。エージェント型コーディングとサイバーセキュリティにおけるオープンなフロンティアを前進させるものです。\n\n💻 構築のために作られた: Le Chonkは、@cognitionのFrontierCodeでオープンモデルの中で1位にランクインし、@artificialanalysisのParetoエフィシエンシーで新たなベンチマークを打ち立てました。\n\n🛡 防御のために作られた: サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler など、世界有数のサイバーセキュリティ企業によって検証されています。\n\n主権のために: 自分のものとして使えます。@huggingface で重みをダウンロードし、Mistral Forgeでカスタマイズして、必要な場所にデプロイできます。\n\nチームや顧客による詳しい記事は👇からどうぞ:"
+    "text_ja": "本日、新しく改良された Le Chonk の重みを公開します。エージェント型コーディングとサイバーセキュリティにおけるオープンモデルの最先端を前進させるものです。\n\n💻 開発のために作られた: Le Chonk は、Cognition の FrontierCode でオープンモデルの中で1位にランクインし、@artificialanalysis の Pareto 効率で新たなベンチマークを打ち立てました。\n\n🛡 防御のために作られた: サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler などを含む世界の主要なサイバーセキュリティベンダーによって検証されました。\n\n主権のために: 自分のものにしてください。@huggingface で重みをダウンロードし、Mistral Forge でカスタマイズして、必要な場所にデプロイできます。\n\nチームと顧客からの詳細はこちら 👇"
    },
    "post_ids": [
     "2115811242556137820",
-    "2116105034673058023",
     "2115817617911157099"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "6170438680",
@@ -84,9 +83,9 @@
      "desc": "企業同士が共同で研究を進める、踏み込んだ協力関係のこと。"
     }
    ],
-   "score": 94,
+   "score": 93,
    "credibility": 100,
-   "heat": 59,
+   "heat": 58,
    "first_seen": "2026-10-27T20:27:48.000Z",
    "latest": "2026-10-27T20:27:48.000Z",
    "authors": [
@@ -120,7 +119,7 @@
     "2115178675050307942"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "9ce8aa9398",
@@ -144,7 +143,7 @@
    ],
    "score": 87,
    "credibility": 90,
-   "heat": 58,
+   "heat": 57,
    "first_seen": "2026-10-27T16:10:55.000Z",
    "latest": "2026-10-27T16:10:55.000Z",
    "authors": [
@@ -172,7 +171,7 @@
     "2115114028338962672"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "ed14ceed78",
@@ -196,7 +195,7 @@
    ],
    "score": 86,
    "credibility": 100,
-   "heat": 41,
+   "heat": 40,
    "first_seen": "2026-10-27T22:20:23.000Z",
    "latest": "2026-10-27T22:20:23.000Z",
    "authors": [
@@ -230,7 +229,7 @@
     "2115207004293853358"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "31b33236dc",
@@ -286,69 +285,7 @@
     "2115114625985368299"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
-  },
-  {
-   "id": "394c6db86a",
-   "verdict": "confirmed",
-   "title": "NVIDIAのEarth-2とFourCastNet 3で保険会社AXAが台風リスクを分析",
-   "summary": "NVIDIA公式AIアカウントは、AXAの研究者がNVIDIA Earth-2を使い、気象予報モデルFourCastNet 3で1,000以上の模擬的な台風シーズンを生成したと紹介した。このシミュレーションは、台風の移動経路や発生頻度、同一シーズン内で複数地域に影響する状況を調べるために使われ、AXAのリスク評価や顧客への防災対策に役立てられるとしている。",
-   "points": [
-    "過去数十年のデータだけでは見えにくい台風リスクを、大量のシミュレーションで補う手法として注目される。",
-    "保険や防災の分野で、リスク評価の精度向上に関わる可能性がある。",
-    "投稿には実際の精度や効果の数値はなく、どの程度有効かは未確認。"
-   ],
-   "terms": [
-    {
-     "term": "Earth-2",
-     "desc": "NVIDIAが提供する、気象・気候のシミュレーションを行う基盤の名称。"
-    },
-    {
-     "term": "FourCastNet 3",
-     "desc": "NVIDIAのEarth-2に含まれる、世界規模の天気予報を行うAIモデル。"
-    },
-    {
-     "term": "シミュレーション",
-     "desc": "コンピュータ上で仮想的に現象を再現し、将来や仮定の状況を調べる手法。"
-    }
-   ],
-   "score": 72,
-   "credibility": 93,
-   "heat": 15,
-   "first_seen": "2026-10-27T19:47:43.000Z",
-   "latest": "2026-10-27T19:47:43.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の事例紹介",
-   "links": [
-    {
-     "url": "https://nvda.ws/4hPfG7z",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115168584351805628",
-    "username": "NVIDIAAI",
-    "text": "How do you assess cyclone risk beyond what a few decades of historical data can reveal?\n\n@AXA researchers are using NVIDIA Earth-2 to help fill that gap.\n\nUsing FourCastNet 3, one of Earth-2’s open, global weather forecasting models, the team generated more than 1,000 simulated cyclone seasons to study possible storm activity around the globe.\n\nThese simulations help researchers understand where cyclones travel, how often they occur, and how storms affect multiple regions within the same season.",
-    "text_ja": "数十年分の過去データだけでは分からない台風リスクを、どのように評価すればよいでしょうか。\n\n@AXA の研究者たちは、そのギャップを埋めるためにNVIDIA Earth-2を活用しています。\n\nEarth-2のオープンな全球天気予報モデルの一つであるFourCastNet 3を使い、チームは世界中の潜在的な台風活動を調べるために、1,000以上の模擬的な台風シーズンを生成しました。\n\nこのシミュレーションにより、研究者は台風がどこへ移動するか、どのくらいの頻度で発生するか、同じシーズン内で嵐が複数の地域にどう影響するかを理解できます。これらの知見はAXAのリスク評価に活かされ、顧客の予防対策の重点化にも役立ちうるとされています。\n\nAXAなどの組織がEarth-2を天気予報、リスク評価などにどう活用しているかは、こちらでご確認ください。"
-   },
-   "post_ids": [
-    "2115168584351805628"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "67a7e3e878",
@@ -376,7 +313,7 @@
    ],
    "score": 71,
    "credibility": 93,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-27T16:20:42.000Z",
    "latest": "2026-10-27T16:20:42.000Z",
    "authors": [
@@ -410,31 +347,84 @@
     "2115116486671176161"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
-   "id": "fe34faca71",
+   "id": "394c6db86a",
    "verdict": "confirmed",
-   "title": "MAI-Image-2.6が Microsoft Foundryで一般提供開始",
-   "summary": "Microsoft AI公式アカウントが、画像生成モデルMAI-Image-2.6とMAI-Image-2.6-Flashが、Microsoft Foundryで一般提供（GA）になったと発表した。投稿では、品質・速度・価格性能について顧客から好評を得ていると述べている。Microsoft Playgroundでも試せるとしている。",
+   "title": "NVIDIAのEarth-2とFourCastNet 3で保険会社AXAが台風リスクを分析",
+   "summary": "NVIDIA公式AIアカウントは、AXAの研究者がNVIDIA Earth-2を使い、気象予報モデルFourCastNet 3で1,000以上の模擬的な台風シーズンを生成したと紹介した。このシミュレーションは、台風の移動経路や発生頻度、同一シーズン内で複数地域に影響する状況を調べるために使われ、AXAのリスク評価や顧客への防災対策に役立てられるとしている。",
    "points": [
-    "一般提供になったことで、開発者がMicrosoft Foundry経由で本番利用の検討をしやすくなる",
-    "『好評』や性能の評価は企業側の説明であり、独立した比較結果は投稿には含まれていない",
-    "Flash版は高速・低コスト向けとみられるが、具体的な価格や仕様は公式ページで確認が必要"
+    "過去数十年のデータだけでは見えにくい台風リスクを、大量のシミュレーションで補う手法として注目される。",
+    "保険や防災の分野で、リスク評価の精度向上に関わる可能性がある。",
+    "投稿には実際の精度や効果の数値はなく、どの程度有効かは未確認。"
    ],
    "terms": [
     {
-     "term": "一般提供（GA）",
-     "desc": "開発段階を終え、誰でも正式に利用できるようになった状態のこと。"
+     "term": "Earth-2",
+     "desc": "NVIDIAが提供する、気象・気候のシミュレーションを行う基盤の名称。"
     },
     {
-     "term": "Microsoft Foundry",
-     "desc": "Microsoftが提供するAIモデルの開発・運用向けプラットフォーム。"
+     "term": "FourCastNet 3",
+     "desc": "NVIDIAのEarth-2に含まれる、世界規模の天気予報を行うAIモデル。"
+    },
+    {
+     "term": "シミュレーション",
+     "desc": "コンピュータ上で仮想的に現象を再現し、将来や仮定の状況を調べる手法。"
     }
    ],
-   "score": 70,
+   "score": 71,
    "credibility": 93,
-   "heat": 11,
+   "heat": 14,
+   "first_seen": "2026-10-27T19:47:43.000Z",
+   "latest": "2026-10-27T19:47:43.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式の事例紹介",
+   "links": [
+    {
+     "url": "https://nvda.ws/4hPfG7z",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115168584351805628",
+    "username": "NVIDIAAI",
+    "text": "How do you assess cyclone risk beyond what a few decades of historical data can reveal?\n\n@AXA researchers are using NVIDIA Earth-2 to help fill that gap.\n\nUsing FourCastNet 3, one of Earth-2’s open, global weather forecasting models, the team generated more than 1,000 simulated cyclone seasons to study possible storm activity around the globe.\n\nThese simulations help researchers understand where cyclones travel, how often they occur, and how storms affect multiple regions within the same season.",
+    "text_ja": "数十年分の過去データだけでは分からない台風リスクを、どのように評価すればよいでしょうか。\n\n@AXA の研究者たちは、そのギャップを埋めるためにNVIDIA Earth-2を活用しています。\n\nEarth-2のオープンな全球天気予報モデルの一つであるFourCastNet 3を使い、チームは世界中の潜在的な台風活動を調べるために、1,000以上の模擬的な台風シーズンを生成しました。\n\nこのシミュレーションにより、研究者は台風がどこへ移動するか、どのくらいの頻度で発生するか、同じシーズン内で嵐が複数の地域にどう影響するかを理解できます。これらの知見はAXAのリスク評価に活かされ、顧客の予防対策の重点化にも役立ちうるとされています。\n\nAXAなどの組織がEarth-2を天気予報、リスク評価などにどう活用しているかは、こちらでご確認ください。"
+   },
+   "post_ids": [
+    "2115168584351805628"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T15:07:04Z"
+  },
+  {
+   "id": "03037b41f0",
+   "verdict": "confirmed",
+   "title": "Microsoft、画像生成モデル「MAI-Image-2.6」を一般提供開始",
+   "summary": "Microsoft AIは、画像生成モデル「MAI-Image-2.6」と「MAI-Image-2.6-Flash」がMicrosoft Foundryで一般提供（GA）になったと発表した。あわせて、画像編集のランキングで「MAI Image 2.7 Preview」が3位（ラボ別では2位）になり、2.6より45ポイント上がったと投稿している。",
+   "points": [
+    "「GA（一般提供）」とは、限られた利用者向けの段階を終え、誰でも正式に利用できるようになった状態を指す。",
+    "ランキングの順位は、arena（利用者の投票で比較する仕組み）の結果で、あくまで投票ベースの指標。",
+    "2.7 Previewは公開段階の製品ではなくプレビュー版である点に注意が必要。"
+   ],
+   "terms": [],
+   "score": 71,
+   "credibility": 93,
+   "heat": 14,
    "first_seen": "2026-10-27T15:26:57.000Z",
    "latest": "2026-10-27T15:42:56.000Z",
    "authors": [
@@ -450,7 +440,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式の提供開始発表",
+   "evidence_note": "Microsoft AI公式の発表投稿",
    "links": [
     {
      "url": "https://msft.it/6012aL90M",
@@ -470,62 +460,63 @@
     "text_ja": "MAI-Image-2.6 と MAI-Image-2.6-Flash が Microsoft Foundry で一般提供（GA）開始されました！\n\n当社の最も優れた画像モデルは、品質、速度、価格性能の面でお客様から高い評価をいただいており、今回ついに GA となります。\n\nチームの素晴らしい仕事です。ぜひ使って何か作ってみてください！\n\n詳しくはこちら: https://t.co/V5QQKqhMFv\n\n今すぐ Microsoft Playground で試せます: https://t.co/x9sYWLxKn8"
    },
    "post_ids": [
-    "2115106982730342888"
+    "2115106982730342888",
+    "2115102961957499069"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
-   "id": "6be231ff2f",
+   "id": "9ff49d52ae",
    "verdict": "confirmed",
-   "title": "MAI Image 2.7 Previewが画像編集ランキングで3位に",
-   "summary": "Microsoft AI公式アカウントが、MAI Image 2.7 Previewがarenaの画像編集リーダーボードで3位になったと発表した。投稿では、開発元別では2位で、GPT-Image-2より上位だとしている。前版2.6からは45ポイント上昇したと述べている。",
+   "title": "Sakana AIがGartner IT Symposiumに出展、3製品を紹介",
+   "summary": "Sakana AIは、11月4日から6日までパシフィコ横浜ノースで開催されるGartner IT Symposium/Xpo 2026に出展すると公式アカウントで発表した。ブースでは戦略リサーチエージェント「Sakana Marlin」、AIオーケストレーター「Sakana Fugu」、日本語特化モデル「Sakana Namazu」をデモとともに紹介するとしている。",
    "points": [
-    "ランキングは利用者の投票などに基づく相対評価で、順位は時期や条件によって変わる",
-    "投稿はPreview版の結果であり、正式版の性能は別途確認が必要",
-    "企業公式の発表のため、順位自体は公開ランキングで自分でも確認できる"
+    "新製品の発表ではなく、既存または発表済みとみられる製品をイベントで紹介するという告知である点がポイント",
+    "企業向けのAI活用に関心がある人は、ブースでのデモ内容を確認するとよい",
+    "各製品の性能や価格などは投稿からは未確認"
    ],
    "terms": [
     {
-     "term": "リーダーボード",
-     "desc": "AIモデルの性能を比較する順位表のこと。"
+     "term": "Gartner IT Symposium/Xpo",
+     "desc": "米Gartner社が主催する企業向けIT分野の大規模カンファレンス"
     },
     {
-     "term": "Preview版",
-     "desc": "正式公開前に一部の利用者へ試験的に提供されているバージョン。"
+     "term": "AIオーケストレーター",
+     "desc": "複数のAIモデルや作業を調整・連携させて動かす仕組み"
     }
    ],
-   "score": 70,
+   "score": 66,
    "credibility": 90,
-   "heat": 15,
-   "first_seen": "2026-10-27T15:26:57.000Z",
-   "latest": "2026-10-27T15:26:57.000Z",
+   "heat": 6,
+   "first_seen": "2026-10-28T07:46:28.000Z",
+   "latest": "2026-10-28T07:46:28.000Z",
    "authors": [
-    "MicrosoftAI"
+    "SakanaAILabs"
    ],
    "author_labels": [
     {
-     "username": "MicrosoftAI",
-     "label": "Microsoft AI（企業公式）",
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式のランキング告知",
+   "evidence_note": "企業公式X投稿",
    "links": [],
    "post": {
-    "url": "https://x.com/MicrosoftAI/status/2115102961957499069",
-    "username": "MicrosoftAI",
-    "text": "MAI-Image keeps climbing! \n\nMAI Image 2.7 Preview is now #3 on @arena's image editing leaderboard. #2 by lab and ahead of GPT-Image-2. That's a +45 point jump from 2.6. https://t.co/52ArJMjRBS",
-    "text_ja": "MAI-Image が順位を上げ続けています！\n\nMAI Image 2.7 Preview が @arena の画像編集リーダーボードで第3位にランクインしました。ラボ別では第2位で、GPT-Image-2 も上回っています。2.6 からは +45 ポイントの上昇です。 https://t.co/52ArJMjRBS"
+    "url": "https://x.com/SakanaAILabs/status/2115349465360126111",
+    "username": "SakanaAILabs",
+    "text": "【お知らせ】Sakana AIは11/4〜6、パシフィコ横浜ノースで開催のGartner IT Symposium/Xpo™ 2026に出展します🐡\n\n戦略リサーチエージェントSakana Marlin、AIオーケストレーターSakana Fugu、日本語特化モデルSakana Namazuをデモと共にご紹介。\n\nぜひブースにお立ち寄りください🚀\n#GartnerSYM https://t.co/Ee0aW764IZ",
+    "text_ja": null
    },
    "post_ids": [
-    "2115102961957499069"
+    "2115349465360126111"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "f9f4d26095",
@@ -549,7 +540,7 @@
    ],
    "score": 67,
    "credibility": 90,
-   "heat": 8,
+   "heat": 7,
    "first_seen": "2026-10-27T17:00:11.000Z",
    "latest": "2026-10-27T17:00:11.000Z",
    "authors": [
@@ -577,7 +568,7 @@
     "2115126425019896307"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "9f70dc7ba0",
@@ -601,7 +592,7 @@
    ],
    "score": 65,
    "credibility": 83,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-10-28T05:30:01.000Z",
    "latest": "2026-10-28T05:30:01.000Z",
    "authors": [
@@ -635,7 +626,7 @@
     "2115315124906905928"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   },
   {
    "id": "c47fd1799c",
@@ -661,9 +652,9 @@
      "desc": "文字情報だけを入力として扱えるAIのこと。画像は直接見られない。"
     }
    ],
-   "score": 62,
+   "score": 61,
    "credibility": 75,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-10-28T12:34:05.000Z",
    "latest": "2026-10-28T12:35:07.000Z",
    "authors": [
@@ -692,7 +683,7 @@
     "2115421845247938616"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T10:15:58Z"
+   "archived_at": "2026-10-30T15:07:04Z"
   }
  ]
 }

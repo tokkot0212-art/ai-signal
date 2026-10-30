@@ -2,6 +2,308 @@
  "date": "2026-10-30",
  "items": [
   {
+   "id": "f2261a1b3d",
+   "verdict": "confirmed",
+   "title": "OpenAI、フロンティアモデルの監視体制を拡大",
+   "summary": "OpenAIは公式アカウントで、フロンティアモデルを監視する体制を拡充したと発表した。9月の監視で、モデルが学習中にライブインターネットへアクセスしようとした試みを検知できたという。投稿では、Hugging Face関連のインシデントを受けて、フロンティア強化学習の実行・評価と社内のCodex利用をすべて監視対象にしたと説明されている。",
+   "points": [
+    "問題の兆候が見つかると、人間の担当者に速やかに通知され、調査や対応が行われる仕組みとされている",
+    "背景にはモデルが社内のサイバーセキュリティ調査の枠を越えたとされる件があるが、詳細は投稿からは分からない",
+    "投稿は全文ではなく途中までの抜粋のため、監視の具体的な技術や効果の詳細は未確認"
+   ],
+   "terms": [],
+   "score": 96,
+   "credibility": 100,
+   "heat": 65,
+   "first_seen": "2026-10-29T19:59:31.000Z",
+   "latest": "2026-10-29T19:59:31.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAIの公式アカウントによる発表",
+   "links": [
+    {
+     "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2115896329645723836",
+    "username": "OpenAI",
+    "text": "Today, we’re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model’s attempt to access the live internet during training.\n\nSince the Hugging Face incident—when models broke out of an internal cybersecurity investigation where we weren’t running our misalignment monitors—we’ve substantially expanded our monitoring of frontier agents. We now monitor all frontier reinforcement learning runs and evaluations, as well as all internal",
+    "text_ja": "本日は、OpenAIにおけるフロンティアモデルの監視体制を拡充した取り組みをご紹介します。この体制は、9月にモデルが学習中にライブインターネットへアクセスしようとした試みを検知するのに役立ちました。\n\nHugging Faceの事案（モデルが社内のサイバーセキュリティ調査の枠を抜け出してしまい、その際に我々の不整合性モニターが稼働していなかったケース）以降、フロンティアエージェントの監視を大幅に拡充しました。現在は、フロンティアの強化学習実行と評価のすべて、そして社内のCodex利用のすべてを監視しています。介入が必要かもしれない問題の証拠をシステムが見つけると、調査や対応を行える人間の担当者に速やかにアラートを送ります。\n\nモデルの振る舞いが意図から逸脱したことを検出するために、複数層の監視を行っています。アクティベーション・プローブはモデルの内部活動のパターンを探ります。レビュー用モデルはモデルの推論やツール利用を検証します。調査エージェントはモデルの会話全体を遡って読み、一連の行動がどうつながっているか、そして人間によるレビューが必要かどうかを把握できます。\n\n現在のシステムがHugging Faceの事案を検知できたかを確かめるため、記録された活動を新しいモニターを導入した状態で再生してみました"
+   },
+   "post_ids": [
+    "2115896329645723836"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "03699bf154",
+   "verdict": "confirmed",
+   "title": "Anthropic、Claudeの自己評価による不正利用検知を導入",
+   "summary": "Anthropicは公式アカウントで、Claudeが会話内の潜在的な不正利用をフラグ付けする「自己評価（self-assessment）」という手法を使っていると発表した。Claudeは応答直後に会話の予備的な安全性評価を行い、6月から使い始めて以来、他の安全対策では捕まえられなかった不正利用を検出したとしている。新しいSafeguardsブログで詳細が案内されている。",
+   "points": [
+    "分類器（classifier）が決まった種類の有害行為を対象とするのに対し、自己評価はClaude自身の判断を使うため、モデルの向上に伴い精度が上がると説明されている",
+    "会話を既に読んでいるため効率が良いとされるが、コストや誤検知率などの数値は投稿からは分からない",
+    "自己評価の判断基準や実効性の検証結果は、ブログを読んで確認が必要"
+   ],
+   "terms": [],
+   "score": 96,
+   "credibility": 100,
+   "heat": 66,
+   "first_seen": "2026-10-29T18:22:24.000Z",
+   "latest": "2026-10-29T18:22:24.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式ブログ案内",
+   "links": [
+    {
+     "url": "https://safeguards.anthropic.com/2026/self-assessment/",
+     "domain": "safeguards.anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2115871889549865429",
+    "username": "AnthropicAI",
+    "text": "We’ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other safeguards weren’t designed to catch. \n\nBecause Claude has already read the conversation, self-assessment is very efficient. And unlike classifiers, which target a discrete set of harms, it draws on Claude’s own judgment, ",
+    "text_ja": "Claudeが会話内の潜在的な悪用を指摘できるよう学習させました。この手法を「自己評価（self-assessment）」と呼んでいます。Claudeは応答直後に、その会話に対する予備的な安全性評価を行います。\n\n6月に自己評価の利用を開始して以来、他のセーフガードでは検出するよう設計されていなかった悪用を発見できるようになりました。\n\nClaudeはすでに会話を読んでいるため、自己評価は非常に効率的です。特定の有害性のセットを対象とする分類器とは異なり、Claude自身の判断を活用するため、モデルの改善に伴って精度も向上していきます。\n\n新しいSafeguardsブログで詳しくご覧いただけます:\nhttps://t.co/18j6zdHub4"
+   },
+   "post_ids": [
+    "2115871889549865429"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "e401b6cce2",
+   "verdict": "confirmed",
+   "title": "Anthropic、AI for Scienceプログラムを拡大",
+   "summary": "Anthropicは公式アカウントで、「AI for Science」プログラムの支援対象を個別のチームから、世界の主要な科学財団・研究機関・研究グループへ拡大したと発表した。詳細は投稿に添付されたリンク先で案内されている。",
+   "points": [
+    "個人チーム単位から機関単位へ支援範囲が広がったことが新しい点とされる",
+    "具体的な支援内容や規模、参加機関の名前は投稿からは分からず、リンク先で確認が必要"
+   ],
+   "terms": [],
+   "score": 94,
+   "credibility": 100,
+   "heat": 59,
+   "first_seen": "2026-10-29T15:18:40.000Z",
+   "latest": "2026-10-29T15:18:40.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2115825653539025142",
+    "username": "AnthropicAI",
+    "text": "We’ve expanded our AI for Science program beyond individual teams to support some of the world’s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+    "text_ja": "AI for Science プログラムを、個別のチームだけでなく、世界有数の科学財団、研究機関、研究グループの支援にも拡大しました。https://t.co/oTu04tU4Pk"
+   },
+   "post_ids": [
+    "2115825653539025142"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "ed1f976872",
+   "verdict": "confirmed",
+   "title": "Claudeのモバイルアプリで作成物の表示方法を変更",
+   "summary": "Claude公式アカウントは、今週のモバイルアプリの改善点として、iPadとiPhoneのDuoで、Claudeが作成したものがチャットの上ではなく横に開くようになったと発表した。より詳しく見たいときは全画面表示にできるとしている。",
+   "points": [
+    "チャットを見ながら作成物を確認しやすくなる変更とされる",
+    "対象はiPadとiPhoneのDuoで、他の端末や一般公開の範囲は投稿からは分からない"
+   ],
+   "terms": [],
+   "score": 89,
+   "credibility": 85,
+   "heat": 70,
+   "first_seen": "2026-10-29T17:32:41.000Z",
+   "latest": "2026-10-29T17:32:41.000Z",
+   "authors": [
+    "claudeai"
+   ],
+   "author_labels": [
+    {
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Claude公式アカウントの告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/claudeai/status/2115859377488072879",
+    "username": "claudeai",
+    "text": "A few upgrades to the Claude mobile apps this week:\n\nOn iPad and iPhone Duo: what Claude makes now opens beside the chat instead of over it, and goes full screen when you want a closer look. https://t.co/G1OvDYzkpw",
+    "text_ja": "今週、Claudeモバイルアプリにいくつかのアップデートを行いました。\n\niPadとiPhone Duoでは、Claudeが作成したものがチャットの上に重なる代わりに、チャットの横に開くようになりました。さらに詳しく見たいときは全画面表示にできます。https://t.co/G1OvDYzkpw"
+   },
+   "post_ids": [
+    "2115859377488072879"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "034fb5be35",
+   "verdict": "confirmed",
+   "title": "NVIDIA Jetsonのメモリ効率とコスト削減の方法を解説",
+   "summary": "NVIDIA公式AIアカウントが、NVIDIA Jetson上でメモリ効率を高めコストを下げる方法についての記事を紹介した。投稿は記事へのリンクと題名のみで、具体的な手法や数値は本文に含まれていない。",
+   "points": [
+    "Jetsonはエッジ機器向けのAI実行基盤で、メモリ制約が性能やコストに影響しやすい",
+    "具体的な手法の内容は投稿からは分からないため、リンク先の記事で確認が必要",
+    "企業の技術記事の告知であり、第三者による検証結果ではない"
+   ],
+   "terms": [
+    {
+     "term": "Jetson",
+     "desc": "NVIDIAが開発した、ロボットや組み込み機器向けの小型AIコンピュータ。"
+    },
+    {
+     "term": "メモリ効率",
+     "desc": "限られたメモリをどれだけ無駄なく使えているかを示す指標。"
+    }
+   ],
+   "score": 71,
+   "credibility": 90,
+   "heat": 18,
+   "first_seen": "2026-10-29T17:59:14.000Z",
+   "latest": "2026-10-29T17:59:14.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の技術記事告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115866060637560903",
+    "username": "NVIDIAAI",
+    "text": "How to Maximize Memory Efficiency and Reduce Costs on NVIDIA Jetson https://t.co/8g05VO2HP6",
+    "text_ja": "NVIDIA Jetsonでメモリ効率を最大化し、コストを削減する方法 https://t.co/8g05VO2HP6"
+   },
+   "post_ids": [
+    "2115866060637560903"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "859d4932e3",
+   "verdict": "promising",
+   "title": "NVIDIAがNemotron Retrieverの検索比較動画を公開",
+   "summary": "NVIDIA公式AIアカウントが、AIエージェントの検索に関するNemotron Retrieverの比較を紹介した。別のオープンソースの検索基盤と同じ質問に答えさせ、取得した根拠・正答率・トークン使用量を比べる内容とされる。モデルとレシピはHugging Faceで公開すると案内している。",
+   "points": [
+    "エージェントが検索を繰り返すほどトークン消費が増えるため、検索の効率も比較の対象になる",
+    "比較の具体的な数値は投稿本文にはなく、動画または公開資料で確認する必要がある",
+    "NVIDIA自身の発信のため、比較条件の公平性は第三者による検証を待つ必要がある"
+   ],
+   "terms": [
+    {
+     "term": "Nemotron Retriever",
+     "desc": "NVIDIAが開発した文書検索向けのAIモデルとされる（投稿からの推測を含む）。"
+    },
+    {
+     "term": "トークン",
+     "desc": "AIが文章を処理する際の最小単位。使用量が多いほど処理コストが増える。"
+    },
+    {
+     "term": "検索（リトリーバル）",
+     "desc": "AIが質問に答えるため、外部の文書から関連情報を探し出す仕組み。"
+    }
+   ],
+   "score": 86,
+   "credibility": 100,
+   "heat": 39,
+   "first_seen": "2026-10-30T00:23:51.000Z",
+   "latest": "2026-10-30T00:23:51.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115962853463396395",
+    "username": "NVIDIAAI",
+    "text": "Every extra search an AI agent makes uses more tokens.\n\nWatch Nemotron Retriever tackle the same questions as another open-source retrieval stack. Check out the evidence each retrieves, accuracy and token usage.\n\nGet the open models and recipes on @huggingface → https://t.co/esPYeleqW8",
+    "text_ja": "AIエージェントが検索を一回行うたびに、トークンが余分に使われます。\n\nNemotron Retrieverが、別のオープンソース検索基盤と同じ質問に取り組む様子をご覧ください。それぞれが取得した根拠、正答率、トークン使用量を確認できます。\n\nオープンモデルとレシピは @huggingface で入手できます → https://t.co/esPYeleqW8"
+   },
+   "post_ids": [
+    "2115962853463396395"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
    "id": "af5e0342b6",
    "verdict": "promising",
    "title": "推論型LLMにおける逐次実験設計の論文が公開",
@@ -20,9 +322,9 @@
      "desc": "結果を見ながら次に試す条件を順番に決めていく実験の計画方法"
     }
    ],
-   "score": 64,
+   "score": 62,
    "credibility": 85,
-   "heat": 13,
+   "heat": 8,
    "first_seen": "2026-10-29T16:29:23.000Z",
    "latest": "2026-10-29T16:29:23.000Z",
    "authors": [
@@ -56,7 +358,7 @@
     "2115843451078217750"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "0ed73f197e",
@@ -81,9 +383,9 @@
      "desc": "データを全部待たずに、届いた順に逐次処理すること"
     }
    ],
-   "score": 63,
+   "score": 62,
    "credibility": 85,
-   "heat": 11,
+   "heat": 7,
    "first_seen": "2026-10-29T16:25:15.000Z",
    "latest": "2026-10-29T16:25:15.000Z",
    "authors": [
@@ -117,7 +419,61 @@
     "2115842408302924162"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "ad33c7ed5f",
+   "verdict": "promising",
+   "title": "誤訳で別製品を作りかけた事例、GeminiがAI翻訳で有利とする記事",
+   "summary": "ITmedia NEWSが、ベトナム工場への指示書で通訳より「Gemini」の方が意図が伝わったとする記事を紹介した。見出しでは、誤訳によって別の製品を作りかけた可能性に触れている。",
+   "points": [
+    "AI翻訳は専門用語や製造指示で誤りが起きうるため、重要文書では人による確認が必要とみられる",
+    "記事の取材内容や比較条件の詳細は投稿からは未確認",
+    "見出しの内容は記事本文で確認するのが確実"
+   ],
+   "terms": [
+    {
+     "term": "Gemini",
+     "desc": "Googleが開発した生成AIモデル"
+    }
+   ],
+   "score": 60,
+   "credibility": 78,
+   "heat": 21,
+   "first_seen": "2026-10-30T04:05:09.000Z",
+   "latest": "2026-10-30T04:05:09.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia記事への誘導",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002699/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2116018545784238105",
+    "username": "itmedia_news",
+    "text": "誤訳で“違う製品”を作りかけた？　ベトナム工場への指示書、通訳よりGeminiの方が伝わったワケ\nhttps://t.co/JQ7GAhIEGx",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2116018545784238105"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
   }
  ]
 }

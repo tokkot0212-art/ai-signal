@@ -2,34 +2,21 @@
  "date": "2026-10-28",
  "items": [
   {
-   "id": "6f89e7c18a",
+   "id": "6a4ea7b131",
    "verdict": "confirmed",
-   "title": "Mistral、オープンウェイト新モデル「Le Chonk」を公開",
-   "summary": "Mistral AIは公式アカウントで、新しい「Le Chonk」の重みを公開したと発表した。投稿では、オープンモデルの中でCognitionのFrontierCodeで1位になったこと、サイバー防御分野でCrowdStrikeなど複数の企業が評価したことに言及している。NVIDIAも公式アカウントで、このモデルが1Tパラメータ規模のMoE型マルチモーダルモデルで、3,800基のNVIDIA Grace Blackwell GPUで学習されたと紹介し、NVFP4への当日対応を案内した。",
+   "title": "Mistral AI、新モデル「Le Chonk」の重みを公開",
+   "summary": "Mistral AIは公式アカウントで、新しい「Le Chonk」の重みを公開したと発表した。投稿では、オープンモデルの中でCognitionのFrontierCodeで1位になったこと、サイバー防御分野で複数のセキュリティ企業が評価したことが挙げられている。NVIDIAも公式アカウントで祝意を示し、1兆パラメータのMoE型マルチモーダルモデルで、3,800基のNVIDIA Grace Blackwell GPUで学習したと投稿した。",
    "points": [
-    "新しさ: 重みがHugging Faceで公開され、自社環境で動かしたりカスタマイズしたりできる点が強調されている。",
-    "注意点: 性能の主張（FrontierCodeでの1位、Pareto効率）は投稿の自己申告で、第三者の詳細な検証結果はこの投稿からは未確認。",
-    "用語の見方: 「オープンウェイト」は学習済みの重みが公開され、利用者が手元で動かせるモデルのこと。"
+    "重みがHugging Faceで公開され、カスタマイズや自社環境へのデプロイが可能と案内されている",
+    "NVIDIAはNVFP4形式とDynamoによる分散推論への対応を発表しており、導入時の選択肢となる",
+    "各種ベンチマークの結果は企業側の発表であり、第三者による再現結果は投稿からは確認できない"
    ],
-   "terms": [
-    {
-     "term": "オープンウェイト",
-     "desc": "学習済みモデルの重みを公開し、誰でもダウンロードして利用できる形式のこと。"
-    },
-    {
-     "term": "MoE（Mixture of Experts）",
-     "desc": "多数の専門家ネットワークを持ち、入力ごとに一部だけを動かす仕組み。大規模でも計算を抑えやすい。"
-    },
-    {
-     "term": "NVFP4",
-     "desc": "NVIDIAのGPU向けの低精度数値形式。メモリと計算量を減らす目的で使われる。"
-    }
-   ],
-   "score": 99,
+   "terms": [],
+   "score": 97,
    "credibility": 100,
-   "heat": 60,
+   "heat": 55,
    "first_seen": "2026-10-27T17:00:11.000Z",
-   "latest": "2026-10-29T14:46:44.000Z",
+   "latest": "2026-10-30T09:48:50.000Z",
    "authors": [
     "MistralAI",
     "NVIDIAAI"
@@ -50,7 +37,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの発表",
+   "evidence_note": "企業の公式アカウントによる発表",
    "links": [
     {
      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
@@ -67,14 +54,15 @@
     "url": "https://x.com/MistralAI/status/2115811242556137820",
     "username": "MistralAI",
     "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity.\n\n💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on @artificialanalysis.\n\n🛡 Built to defend: State-of-the-art in cyberdefense, put through the paces by the world's leading cyber vendors, including @CrowdStrike, @cloudflare, @rubrik, @zscaler, and others.\n\nBuilt for sovereignty: Make it yo",
-    "text_ja": "本日、新しく改良された「Le Chonk」の重みを公開します。エージェント型コーディングとサイバーセキュリティにおいて、オープンなフロンティアを前進させます。\n\n💻 構築するために作られた: Le Chonkは、@cognitionのFrontierCodeでオープンモデルの中で1位になりました。また、@artificialanalysisでパレート効率の新たなベンチマークを打ち立てました。\n\n🛡 守るために作られた: サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler など世界有数のサイバーセキュリティ企業によって検証されました。\n\n主権のために: 自分のものにしてください。@huggingface で重みをダウンロードし、Mistral Forge でカスタマイズして、必要な場所にデプロイできます。\n\n私たちのチームと顧客からの詳細は👇をご覧ください："
+    "text_ja": "本日、新しく改良されたLe Chonkの重みを公開します。エージェント型コーディングとサイバーセキュリティにおけるオープンなフロンティアを前進させるものです。\n\n💻 構築のために作られた: Le Chonkは、@cognitionのFrontierCodeでオープンモデルの中で1位にランクインし、@artificialanalysisのParetoエフィシエンシーで新たなベンチマークを打ち立てました。\n\n🛡 防御のために作られた: サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler など、世界有数のサイバーセキュリティ企業によって検証されています。\n\n主権のために: 自分のものとして使えます。@huggingface で重みをダウンロードし、Mistral Forgeでカスタマイズして、必要な場所にデプロイできます。\n\nチームや顧客による詳しい記事は👇からどうぞ:"
    },
    "post_ids": [
     "2115811242556137820",
+    "2116105034673058023",
     "2115817617911157099"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "6170438680",
@@ -98,7 +86,7 @@
    ],
    "score": 94,
    "credibility": 100,
-   "heat": 61,
+   "heat": 59,
    "first_seen": "2026-10-27T20:27:48.000Z",
    "latest": "2026-10-27T20:27:48.000Z",
    "authors": [
@@ -132,7 +120,7 @@
     "2115178675050307942"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "9ce8aa9398",
@@ -154,9 +142,9 @@
      "desc": "操作にほとんど遅れなく、即座に結果が反映される様子のこと。"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 90,
-   "heat": 60,
+   "heat": 58,
    "first_seen": "2026-10-27T16:10:55.000Z",
    "latest": "2026-10-27T16:10:55.000Z",
    "authors": [
@@ -184,7 +172,7 @@
     "2115114028338962672"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "ed14ceed78",
@@ -206,9 +194,9 @@
      "desc": "米国の政府調達を担う連邦機関（米国一般調達局）"
     }
    ],
-   "score": 87,
+   "score": 86,
    "credibility": 100,
-   "heat": 42,
+   "heat": 41,
    "first_seen": "2026-10-27T22:20:23.000Z",
    "latest": "2026-10-27T22:20:23.000Z",
    "authors": [
@@ -242,7 +230,7 @@
     "2115207004293853358"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "31b33236dc",
@@ -268,9 +256,9 @@
      "desc": "環境の雰囲気を表す背景音のこと。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 37,
+   "heat": 35,
    "first_seen": "2026-10-27T16:13:18.000Z",
    "latest": "2026-10-27T16:13:18.000Z",
    "authors": [
@@ -298,7 +286,7 @@
     "2115114625985368299"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "394c6db86a",
@@ -326,7 +314,7 @@
    ],
    "score": 72,
    "credibility": 93,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-10-27T19:47:43.000Z",
    "latest": "2026-10-27T19:47:43.000Z",
    "authors": [
@@ -360,75 +348,7 @@
     "2115168584351805628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
-  },
-  {
-   "id": "03037b41f0",
-   "verdict": "confirmed",
-   "title": "Microsoft、画像生成モデル「MAI-Image-2.6」を一般提供開始",
-   "summary": "Microsoft AIは公式アカウントで、画像生成モデル「MAI-Image-2.6」と「MAI-Image-2.6-Flash」がMicrosoft Foundryで一般提供（GA）になったと発表した。同じ投稿で、顧客から品質・速度・価格性能への評価があったとも述べている。別の投稿では、「MAI Image 2.7 Preview」がArenaの画像編集ランキングで3位（ラボ別では2位）になり、2.6から45ポイント上がったと紹介した。",
-   "points": [
-    "新しさ: 2.6系が一般提供となり、利用者が実際に開発に組み込める段階に入った。",
-    "注意点: 顧客の評価や順位は企業側の説明で、ランキングの具体的な条件や評価方法は投稿からは確認できない。",
-    "用語の見方: 「GA（一般提供）」は、限定公開を終えて誰でも利用できる状態になったこと。"
-   ],
-   "terms": [
-    {
-     "term": "GA（一般提供）",
-     "desc": "限定的な提供を終え、誰でも正式に利用できるようになった状態のこと。"
-    },
-    {
-     "term": "Microsoft Foundry",
-     "desc": "Microsoftが提供するAIモデルの開発・利用基盤のこと。"
-    },
-    {
-     "term": "リーダーボード",
-     "desc": "複数のAIモデルを同じ条件で評価し、順位を並べた一覧のこと。"
-    }
-   ],
-   "score": 72,
-   "credibility": 93,
-   "heat": 16,
-   "first_seen": "2026-10-27T15:26:57.000Z",
-   "latest": "2026-10-27T15:42:56.000Z",
-   "authors": [
-    "MicrosoftAI"
-   ],
-   "author_labels": [
-    {
-     "username": "MicrosoftAI",
-     "label": "Microsoft AI（企業公式）",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://msft.it/6012aL90M",
-     "domain": "msft.it",
-     "primary": false
-    },
-    {
-     "url": "https://msft.it/6011aL90z",
-     "domain": "msft.it",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/MicrosoftAI/status/2115106982730342888",
-    "username": "MicrosoftAI",
-    "text": "MAI-Image-2.6 and MAI-Image-2.6-Flash are now generally available in Microsoft Foundry!\n\nOur strongest image models are already getting great feedback from customers for their quality, speed and price performance - and now they’re GA.\n\nFantastic work from the team. Come build with them!\n\nRead more here: https://t.co/V5QQKqhMFv\n\nTry it today on Microsoft Playground: https://t.co/x9sYWLxKn8",
-    "text_ja": "MAI-Image-2.6 と MAI-Image-2.6-Flash が Microsoft Foundry で一般提供（GA）開始されました！\n\n当社の最も優れた画像モデルは、品質、速度、価格性能の面でお客様から高い評価をいただいており、今回ついに GA となります。\n\nチームの素晴らしい仕事です。ぜひ使って何か作ってみてください！\n\n詳しくはこちら: https://t.co/V5QQKqhMFv\n\n今すぐ Microsoft Playground で試せます: https://t.co/x9sYWLxKn8"
-   },
-   "post_ids": [
-    "2115106982730342888",
-    "2115102961957499069"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "67a7e3e878",
@@ -456,7 +376,7 @@
    ],
    "score": 71,
    "credibility": 93,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-27T16:20:42.000Z",
    "latest": "2026-10-27T16:20:42.000Z",
    "authors": [
@@ -490,7 +410,122 @@
     "2115116486671176161"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "fe34faca71",
+   "verdict": "confirmed",
+   "title": "MAI-Image-2.6が Microsoft Foundryで一般提供開始",
+   "summary": "Microsoft AI公式アカウントが、画像生成モデルMAI-Image-2.6とMAI-Image-2.6-Flashが、Microsoft Foundryで一般提供（GA）になったと発表した。投稿では、品質・速度・価格性能について顧客から好評を得ていると述べている。Microsoft Playgroundでも試せるとしている。",
+   "points": [
+    "一般提供になったことで、開発者がMicrosoft Foundry経由で本番利用の検討をしやすくなる",
+    "『好評』や性能の評価は企業側の説明であり、独立した比較結果は投稿には含まれていない",
+    "Flash版は高速・低コスト向けとみられるが、具体的な価格や仕様は公式ページで確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "一般提供（GA）",
+     "desc": "開発段階を終え、誰でも正式に利用できるようになった状態のこと。"
+    },
+    {
+     "term": "Microsoft Foundry",
+     "desc": "Microsoftが提供するAIモデルの開発・運用向けプラットフォーム。"
+    }
+   ],
+   "score": 70,
+   "credibility": 93,
+   "heat": 11,
+   "first_seen": "2026-10-27T15:26:57.000Z",
+   "latest": "2026-10-27T15:42:56.000Z",
+   "authors": [
+    "MicrosoftAI"
+   ],
+   "author_labels": [
+    {
+     "username": "MicrosoftAI",
+     "label": "Microsoft AI（企業公式）",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の提供開始発表",
+   "links": [
+    {
+     "url": "https://msft.it/6012aL90M",
+     "domain": "msft.it",
+     "primary": false
+    },
+    {
+     "url": "https://msft.it/6011aL90z",
+     "domain": "msft.it",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/MicrosoftAI/status/2115106982730342888",
+    "username": "MicrosoftAI",
+    "text": "MAI-Image-2.6 and MAI-Image-2.6-Flash are now generally available in Microsoft Foundry!\n\nOur strongest image models are already getting great feedback from customers for their quality, speed and price performance - and now they’re GA.\n\nFantastic work from the team. Come build with them!\n\nRead more here: https://t.co/V5QQKqhMFv\n\nTry it today on Microsoft Playground: https://t.co/x9sYWLxKn8",
+    "text_ja": "MAI-Image-2.6 と MAI-Image-2.6-Flash が Microsoft Foundry で一般提供（GA）開始されました！\n\n当社の最も優れた画像モデルは、品質、速度、価格性能の面でお客様から高い評価をいただいており、今回ついに GA となります。\n\nチームの素晴らしい仕事です。ぜひ使って何か作ってみてください！\n\n詳しくはこちら: https://t.co/V5QQKqhMFv\n\n今すぐ Microsoft Playground で試せます: https://t.co/x9sYWLxKn8"
+   },
+   "post_ids": [
+    "2115106982730342888"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-30T10:15:58Z"
+  },
+  {
+   "id": "6be231ff2f",
+   "verdict": "confirmed",
+   "title": "MAI Image 2.7 Previewが画像編集ランキングで3位に",
+   "summary": "Microsoft AI公式アカウントが、MAI Image 2.7 Previewがarenaの画像編集リーダーボードで3位になったと発表した。投稿では、開発元別では2位で、GPT-Image-2より上位だとしている。前版2.6からは45ポイント上昇したと述べている。",
+   "points": [
+    "ランキングは利用者の投票などに基づく相対評価で、順位は時期や条件によって変わる",
+    "投稿はPreview版の結果であり、正式版の性能は別途確認が必要",
+    "企業公式の発表のため、順位自体は公開ランキングで自分でも確認できる"
+   ],
+   "terms": [
+    {
+     "term": "リーダーボード",
+     "desc": "AIモデルの性能を比較する順位表のこと。"
+    },
+    {
+     "term": "Preview版",
+     "desc": "正式公開前に一部の利用者へ試験的に提供されているバージョン。"
+    }
+   ],
+   "score": 70,
+   "credibility": 90,
+   "heat": 15,
+   "first_seen": "2026-10-27T15:26:57.000Z",
+   "latest": "2026-10-27T15:26:57.000Z",
+   "authors": [
+    "MicrosoftAI"
+   ],
+   "author_labels": [
+    {
+     "username": "MicrosoftAI",
+     "label": "Microsoft AI（企業公式）",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式のランキング告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/MicrosoftAI/status/2115102961957499069",
+    "username": "MicrosoftAI",
+    "text": "MAI-Image keeps climbing! \n\nMAI Image 2.7 Preview is now #3 on @arena's image editing leaderboard. #2 by lab and ahead of GPT-Image-2. That's a +45 point jump from 2.6. https://t.co/52ArJMjRBS",
+    "text_ja": "MAI-Image が順位を上げ続けています！\n\nMAI Image 2.7 Preview が @arena の画像編集リーダーボードで第3位にランクインしました。ラボ別では第2位で、GPT-Image-2 も上回っています。2.6 からは +45 ポイントの上昇です。 https://t.co/52ArJMjRBS"
+   },
+   "post_ids": [
+    "2115102961957499069"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "f9f4d26095",
@@ -512,9 +547,9 @@
      "desc": "作られた基本AIモデルを、追加の学習で目的に合わせて調整する工程。"
     }
    ],
-   "score": 68,
+   "score": 67,
    "credibility": 90,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-27T17:00:11.000Z",
    "latest": "2026-10-27T17:00:11.000Z",
    "authors": [
@@ -542,7 +577,7 @@
     "2115126425019896307"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "9f70dc7ba0",
@@ -566,7 +601,7 @@
    ],
    "score": 65,
    "credibility": 83,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-28T05:30:01.000Z",
    "latest": "2026-10-28T05:30:01.000Z",
    "authors": [
@@ -600,7 +635,7 @@
     "2115315124906905928"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   },
   {
    "id": "c47fd1799c",
@@ -628,7 +663,7 @@
    ],
    "score": 62,
    "credibility": 75,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-10-28T12:34:05.000Z",
    "latest": "2026-10-28T12:35:07.000Z",
    "authors": [
@@ -657,7 +692,7 @@
     "2115421845247938616"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T02:03:08Z"
+   "archived_at": "2026-10-30T10:15:58Z"
   }
  ]
 }

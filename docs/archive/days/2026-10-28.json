@@ -2,55 +2,55 @@
  "date": "2026-10-28",
  "items": [
   {
-   "id": "e6337b7a6d",
+   "id": "6f89e7c18a",
    "verdict": "confirmed",
-   "title": "NVIDIAとMistralが新しい公開AIモデルを発表",
-   "summary": "NVIDIA公式アカウントは、音声認識モデル「Nemotron 3.5 Transcribe」を紹介し、40言語の文字起こし・話者識別・翻訳などを1つのモデルで扱えると説明した。同じくNVIDIA公式は、Mistral AI公式が新モデル「Le Chonk」の重みを公開したことに祝意を示し、NVFP4形式での当日対応と分散推論の最適化を案内した。",
+   "title": "Mistral、オープンウェイト新モデル「Le Chonk」を公開",
+   "summary": "Mistral AIは公式アカウントで、新しい「Le Chonk」の重みを公開したと発表した。投稿では、オープンモデルの中でCognitionのFrontierCodeで1位になったこと、サイバー防御分野でCrowdStrikeなど複数の企業が評価したことに言及している。NVIDIAも公式アカウントで、このモデルが1Tパラメータ規模のMoE型マルチモーダルモデルで、3,800基のNVIDIA Grace Blackwell GPUで学習されたと紹介し、NVFP4への当日対応を案内した。",
    "points": [
-    "Mistral Le Chonkは重みがHugging Faceで公開され、誰でもダウンロードして自社環境で動かせるとされる（投稿による）",
-    "NVIDIAのモデルは約30Bパラメータのうち約4Bが動作するMoE方式で、軽さと性能の両立を狙った設計とみられる",
-    "「1T（1兆）パラメータ」「MoE」など性能の数字は各社の自己申告であり、第三者の検証はこれからとみられる"
+    "新しさ: 重みがHugging Faceで公開され、自社環境で動かしたりカスタマイズしたりできる点が強調されている。",
+    "注意点: 性能の主張（FrontierCodeでの1位、Pareto効率）は投稿の自己申告で、第三者の詳細な検証結果はこの投稿からは未確認。",
+    "用語の見方: 「オープンウェイト」は学習済みの重みが公開され、利用者が手元で動かせるモデルのこと。"
    ],
    "terms": [
     {
-     "term": "MoE（Mixture of Experts）",
-     "desc": "複数の専門家モデルを持ち、入力ごとに一部だけ動かす方式。計算量を抑えられる。"
+     "term": "オープンウェイト",
+     "desc": "学習済みモデルの重みを公開し、誰でもダウンロードして利用できる形式のこと。"
     },
     {
-     "term": "オープンウェイト",
-     "desc": "学習済みモデルの重みが公開され、誰でもダウンロードして使えること。"
+     "term": "MoE（Mixture of Experts）",
+     "desc": "多数の専門家ネットワークを持ち、入力ごとに一部だけを動かす仕組み。大規模でも計算を抑えやすい。"
     },
     {
      "term": "NVFP4",
-     "desc": "NVIDIAのGPU向けの低精度数値形式。計算を速く、メモリを少なく済ませるための技術。"
+     "desc": "NVIDIAのGPU向けの低精度数値形式。メモリと計算量を減らす目的で使われる。"
     }
    ],
-   "score": 100,
+   "score": 99,
    "credibility": 100,
-   "heat": 70,
+   "heat": 60,
    "first_seen": "2026-10-27T17:00:11.000Z",
    "latest": "2026-10-29T14:46:44.000Z",
    "authors": [
-    "NVIDIAAI",
-    "MistralAI"
+    "MistralAI",
+    "NVIDIAAI"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
      "type": "official",
      "former": ""
     },
     {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA・Mistral公式アカウント投稿",
+   "evidence_note": "企業公式アカウントの発表",
    "links": [
     {
      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
@@ -64,18 +64,17 @@
     }
    ],
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
-    "text_ja": "NVIDIA Nemotron 3.5 Transcribeのご紹介 🎙️\n\nオープンウェイト、プロンプト指定可能な30B MoEモデル（約4Bのアクティブパラメータ）で、40言語の文字起こし、話者識別、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめました。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
+    "url": "https://x.com/MistralAI/status/2115811242556137820",
+    "username": "MistralAI",
+    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity.\n\n💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on @artificialanalysis.\n\n🛡 Built to defend: State-of-the-art in cyberdefense, put through the paces by the world's leading cyber vendors, including @CrowdStrike, @cloudflare, @rubrik, @zscaler, and others.\n\nBuilt for sovereignty: Make it yo",
+    "text_ja": "本日、新しく改良された「Le Chonk」の重みを公開します。エージェント型コーディングとサイバーセキュリティにおいて、オープンなフロンティアを前進させます。\n\n💻 構築するために作られた: Le Chonkは、@cognitionのFrontierCodeでオープンモデルの中で1位になりました。また、@artificialanalysisでパレート効率の新たなベンチマークを打ち立てました。\n\n🛡 守るために作られた: サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler など世界有数のサイバーセキュリティ企業によって検証されました。\n\n主権のために: 自分のものにしてください。@huggingface で重みをダウンロードし、Mistral Forge でカスタマイズして、必要な場所にデプロイできます。\n\n私たちのチームと顧客からの詳細は👇をご覧ください："
    },
    "post_ids": [
-    "2115462300241141882",
     "2115811242556137820",
     "2115817617911157099"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "6170438680",
@@ -97,9 +96,9 @@
      "desc": "企業同士が共同で研究を進める、踏み込んだ協力関係のこと。"
     }
    ],
-   "score": 95,
+   "score": 94,
    "credibility": 100,
-   "heat": 62,
+   "heat": 61,
    "first_seen": "2026-10-27T20:27:48.000Z",
    "latest": "2026-10-27T20:27:48.000Z",
    "authors": [
@@ -133,7 +132,7 @@
     "2115178675050307942"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "9ce8aa9398",
@@ -157,7 +156,7 @@
    ],
    "score": 88,
    "credibility": 90,
-   "heat": 61,
+   "heat": 60,
    "first_seen": "2026-10-27T16:10:55.000Z",
    "latest": "2026-10-27T16:10:55.000Z",
    "authors": [
@@ -185,7 +184,7 @@
     "2115114028338962672"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "ed14ceed78",
@@ -207,9 +206,9 @@
      "desc": "米国の政府調達を担う連邦機関（米国一般調達局）"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 100,
-   "heat": 44,
+   "heat": 42,
    "first_seen": "2026-10-27T22:20:23.000Z",
    "latest": "2026-10-27T22:20:23.000Z",
    "authors": [
@@ -243,7 +242,7 @@
     "2115207004293853358"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "31b33236dc",
@@ -271,7 +270,7 @@
    ],
    "score": 79,
    "credibility": 90,
-   "heat": 38,
+   "heat": 37,
    "first_seen": "2026-10-27T16:13:18.000Z",
    "latest": "2026-10-27T16:13:18.000Z",
    "authors": [
@@ -299,7 +298,7 @@
     "2115114625985368299"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "394c6db86a",
@@ -325,9 +324,9 @@
      "desc": "コンピュータ上で仮想的に現象を再現し、将来や仮定の状況を調べる手法。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 93,
-   "heat": 17,
+   "heat": 16,
    "first_seen": "2026-10-27T19:47:43.000Z",
    "latest": "2026-10-27T19:47:43.000Z",
    "authors": [
@@ -361,72 +360,35 @@
     "2115168584351805628"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
-   "id": "8024815cb9",
+   "id": "03037b41f0",
    "verdict": "confirmed",
-   "title": "NVIDIA、Nemotronを地域向けに追加学習する手順を公開",
-   "summary": "NVIDIA公式AIアカウントは、同社のオープンモデルNemotronを地域の用語や方針、トーンに合わせて調整する方法を紹介した。合成データとLoRAを使った事後学習（post-training）の5つの手順を解説するブログを案内し、欧州向けの事後学習に関するページも共有している。",
+   "title": "Microsoft、画像生成モデル「MAI-Image-2.6」を一般提供開始",
+   "summary": "Microsoft AIは公式アカウントで、画像生成モデル「MAI-Image-2.6」と「MAI-Image-2.6-Flash」がMicrosoft Foundryで一般提供（GA）になったと発表した。同じ投稿で、顧客から品質・速度・価格性能への評価があったとも述べている。別の投稿では、「MAI Image 2.7 Preview」がArenaの画像編集ランキングで3位（ラボ別では2位）になり、2.6から45ポイント上がったと紹介した。",
    "points": [
-    "新しいのは、Nemotronを地域ごとの言葉や方針に合わせて調整する具体的な手順が示された点である",
-    "LoRAは大きなモデル全体を再学習せずに一部だけを追加学習する手法で、比較的少ない計算資源で調整できるとされる（一般的な背景知識）",
-    "投稿から性能や効果の数値は分からないため、実際にどの程度有効かは公式ブログで確認が必要である"
+    "新しさ: 2.6系が一般提供となり、利用者が実際に開発に組み込める段階に入った。",
+    "注意点: 顧客の評価や順位は企業側の説明で、ランキングの具体的な条件や評価方法は投稿からは確認できない。",
+    "用語の見方: 「GA（一般提供）」は、限定公開を終えて誰でも利用できる状態になったこと。"
    ],
-   "terms": [],
+   "terms": [
+    {
+     "term": "GA（一般提供）",
+     "desc": "限定的な提供を終え、誰でも正式に利用できるようになった状態のこと。"
+    },
+    {
+     "term": "Microsoft Foundry",
+     "desc": "Microsoftが提供するAIモデルの開発・利用基盤のこと。"
+    },
+    {
+     "term": "リーダーボード",
+     "desc": "複数のAIモデルを同じ条件で評価し、順位を並べた一覧のこと。"
+    }
+   ],
    "score": 72,
    "credibility": 93,
-   "heat": 15,
-   "first_seen": "2026-10-27T16:20:42.000Z",
-   "latest": "2026-10-27T17:00:11.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式技術ブログ",
-   "links": [
-    {
-     "url": "https://nvda.ws/4zeRBxd",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115116486671176161",
-    "username": "NVIDIAAI",
-    "text": "Build AI agents that speak the language and understand the local context.\n\nHere's 5 steps to learn how to post-train NVIDIA Nemotron with synthetic data and LoRA to adapt its responses for regional terminology, policies and tone.\n\nFollow the step-by-step tech blog: https://t.co/5TddqdSxib",
-    "text_ja": "地域の言葉や文脈を理解するAIエージェントを構築しましょう。\n\nNVIDIA Nemotronを、合成データとLoRAを使って事後学習し、地域特有の用語、方針、トーンに合わせて応答を調整する5つの手順をご紹介します。\n\n ステップバイステップの技術ブログをご覧ください: https://t.co/5TddqdSxib"
-   },
-   "post_ids": [
-    "2115116486671176161",
-    "2115126425019896307"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-29T19:01:51Z"
-  },
-  {
-   "id": "fe34faca71",
-   "verdict": "confirmed",
-   "title": "Microsoftの画像生成モデルMAI-Image-2.6が一般提供開始",
-   "summary": "Microsoft AI公式アカウントは、画像生成モデルのMAI-Image-2.6とMAI-Image-2.6-FlashがMicrosoft Foundryで一般提供（GA）になったと発表した。同社は、顧客から品質・速度・価格性能で好評を得ていると述べ、Microsoft Playgroundでも試せると案内している。",
-   "points": [
-    "新しいのは、開発者や企業がMicrosoft Foundry上でこの画像モデルを正式に利用できるようになった点である",
-    "「GA（一般提供）」は、試験段階を終え誰でも利用できる状態になったことを指す",
-    "品質や速度の評価は同社と顧客の評価によるもので、独立した数値比較は本投稿からは確認できない"
-   ],
-   "terms": [],
-   "score": 71,
-   "credibility": 93,
-   "heat": 13,
+   "heat": 16,
    "first_seen": "2026-10-27T15:26:57.000Z",
    "latest": "2026-10-27T15:42:56.000Z",
    "authors": [
@@ -442,7 +404,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Microsoft公式発表",
+   "evidence_note": "企業公式アカウントの発表",
    "links": [
     {
      "url": "https://msft.it/6012aL90M",
@@ -462,53 +424,125 @@
     "text_ja": "MAI-Image-2.6 と MAI-Image-2.6-Flash が Microsoft Foundry で一般提供（GA）開始されました！\n\n当社の最も優れた画像モデルは、品質、速度、価格性能の面でお客様から高い評価をいただいており、今回ついに GA となります。\n\nチームの素晴らしい仕事です。ぜひ使って何か作ってみてください！\n\n詳しくはこちら: https://t.co/V5QQKqhMFv\n\n今すぐ Microsoft Playground で試せます: https://t.co/x9sYWLxKn8"
    },
    "post_ids": [
-    "2115106982730342888"
+    "2115106982730342888",
+    "2115102961957499069"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
-   "id": "6be231ff2f",
+   "id": "67a7e3e878",
    "verdict": "confirmed",
-   "title": "MAI Image 2.7 Previewが画像編集ランキングで3位",
-   "summary": "Microsoft AI公式アカウントは、MAI Image 2.7 Previewが画像編集のリーダーボード（arena）で3位になったと投稿した。同社はこれを企業別で2位、GPT-Image-2より上位としており、2.6からの上昇幅は45ポイントだと述べている。",
+   "title": "NVIDIA、Nemotronの地域向け後処理手順を解説",
+   "summary": "NVIDIA公式AIアカウントは、合成データとLoRAを使ってNVIDIA Nemotronを地域特有の用語・方針・口調に合わせて後学習（post-train）する方法を、5つのステップで説明するテックブログを案内した。目的は、AIエージェントが現地の言語や文脈を理解できるようにすることとされている。",
    "points": [
-    "新しいのは、画像編集の比較ランキングで自社モデルが上位に入ったという点である",
-    "リーダーボードはユーザーの投票などで順位が決まる仕組みとみられるが、投稿では詳細な方法は示されていない",
-    "プレビュー版の順位であり、正式版や別の評価では結果が変わる可能性がある"
+    "新しさ: 合成データとLoRAで、大規模モデルを地域の用語や文化に合わせる手順が具体的に示されている。",
+    "なぜ重要か: 日本語など地域特有の表現を扱う開発者が、自社向けに調整する際の参考になりうる。",
+    "注意点: 手順の効果や必要な計算資源などは投稿からは分からず、ブログ本文での確認が必要。"
    ],
-   "terms": [],
-   "score": 69,
-   "credibility": 90,
-   "heat": 17,
-   "first_seen": "2026-10-27T15:26:57.000Z",
-   "latest": "2026-10-27T15:26:57.000Z",
+   "terms": [
+    {
+     "term": "後学習（post-train）",
+     "desc": "学習済みモデルに追加の学習を行い、特定の用途や振る舞いに合わせる工程のこと。"
+    },
+    {
+     "term": "LoRA",
+     "desc": "大規模モデルの一部だけを少量の追加パラメータで調整する、軽量な微調整手法。"
+    },
+    {
+     "term": "合成データ",
+     "desc": "実データではなく、AIや計算処理で人工的に作ったデータのこと。"
+    }
+   ],
+   "score": 71,
+   "credibility": 93,
+   "heat": 14,
+   "first_seen": "2026-10-27T16:20:42.000Z",
+   "latest": "2026-10-27T16:20:42.000Z",
    "authors": [
-    "MicrosoftAI"
+    "NVIDIAAI"
    ],
    "author_labels": [
     {
-     "username": "MicrosoftAI",
-     "label": "Microsoft AI（企業公式）",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     }
    ],
-   "evidence": "official_evaluation",
-   "evidence_label": "公式評価",
-   "evidence_note": "arenaの公開ランキングを開発元が紹介",
-   "links": [],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の技術ブログ案内",
+   "links": [
+    {
+     "url": "https://nvda.ws/4zeRBxd",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/MicrosoftAI/status/2115102961957499069",
-    "username": "MicrosoftAI",
-    "text": "MAI-Image keeps climbing! \n\nMAI Image 2.7 Preview is now #3 on @arena's image editing leaderboard. #2 by lab and ahead of GPT-Image-2. That's a +45 point jump from 2.6. https://t.co/52ArJMjRBS",
-    "text_ja": "MAI-Image が順位を上げ続けています！\n\nMAI Image 2.7 Preview が @arena の画像編集リーダーボードで第3位にランクインしました。ラボ別では第2位で、GPT-Image-2 も上回っています。2.6 からは +45 ポイントの上昇です。 https://t.co/52ArJMjRBS"
+    "url": "https://x.com/NVIDIAAI/status/2115116486671176161",
+    "username": "NVIDIAAI",
+    "text": "Build AI agents that speak the language and understand the local context.\n\nHere's 5 steps to learn how to post-train NVIDIA Nemotron with synthetic data and LoRA to adapt its responses for regional terminology, policies and tone.\n\nFollow the step-by-step tech blog: https://t.co/5TddqdSxib",
+    "text_ja": "地域の言葉や文脈を理解するAIエージェントを構築しましょう。\n\nNVIDIA Nemotronを、合成データとLoRAを使って事後学習し、地域特有の用語、方針、トーンに合わせて応答を調整する5つの手順をご紹介します。\n\n ステップバイステップの技術ブログをご覧ください: https://t.co/5TddqdSxib"
    },
    "post_ids": [
-    "2115102961957499069"
+    "2115116486671176161"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-30T02:03:08Z"
+  },
+  {
+   "id": "f9f4d26095",
+   "verdict": "promising",
+   "title": "NVIDIAがEurope向けNemotronの事後学習について紹介",
+   "summary": "NVIDIAの公式AIアカウントが、「Post-Training Nemotron for Europe」と題したNemotron Labsのページへのリンクを投稿した。投稿に書かれているのは題名とリンクのみで、具体的な内容や時期は本文からは分からない。",
+   "points": [
+    "Nemotronは、NVIDIAが開発しているAIモデルのシリーズ名とみられる（一般知識に基づく推測）。",
+    "「事後学習（post-training）」は、基本モデルを追加学習して用途に合わせて調整する工程を指す。",
+    "投稿だけでは、対象言語や具体的な成果は未確認。リンク先の内容を確認する必要がある。"
+   ],
+   "terms": [
+    {
+     "term": "Nemotron",
+     "desc": "NVIDIAが開発するAIモデルのシリーズ名とみられる（推測）。"
+    },
+    {
+     "term": "事後学習（post-training）",
+     "desc": "作られた基本AIモデルを、追加の学習で目的に合わせて調整する工程。"
+    }
+   ],
+   "score": 68,
+   "credibility": 90,
+   "heat": 9,
+   "first_seen": "2026-10-27T17:00:11.000Z",
+   "latest": "2026-10-27T17:00:11.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115126425019896307",
+    "username": "NVIDIAAI",
+    "text": "Post-Training Nemotron for Europe | Nemotron Labs https://t.co/7kDHnXxe9s",
+    "text_ja": "欧州向けにNemotronを事後学習する | Nemotron Labs https://t.co/7kDHnXxe9s"
+   },
+   "post_ids": [
+    "2115126425019896307"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "9f70dc7ba0",
@@ -530,9 +564,9 @@
      "desc": "社内で複数のAIモデルへの接続・利用状況・コストを一括管理する中継の仕組み"
     }
    ],
-   "score": 66,
+   "score": 65,
    "credibility": 83,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-10-28T05:30:01.000Z",
    "latest": "2026-10-28T05:30:01.000Z",
    "authors": [
@@ -566,7 +600,7 @@
     "2115315124906905928"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   },
   {
    "id": "c47fd1799c",
@@ -592,9 +626,9 @@
      "desc": "文字情報だけを入力として扱えるAIのこと。画像は直接見られない。"
     }
    ],
-   "score": 63,
+   "score": 62,
    "credibility": 75,
-   "heat": 25,
+   "heat": 23,
    "first_seen": "2026-10-28T12:34:05.000Z",
    "latest": "2026-10-28T12:35:07.000Z",
    "authors": [
@@ -623,7 +657,7 @@
     "2115421845247938616"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-29T19:01:51Z"
+   "archived_at": "2026-10-30T02:03:08Z"
   }
  ]
 }

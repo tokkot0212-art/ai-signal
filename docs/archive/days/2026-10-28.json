@@ -2,34 +2,34 @@
  "date": "2026-10-28",
  "items": [
   {
-   "id": "6a4ea7b131",
+   "id": "6f89e7c18a",
    "verdict": "confirmed",
-   "title": "Mistralがオープンな大規模モデル「Le Chonk」の重みを公開",
-   "summary": "Mistral AIが、新しく改良した「Le Chonk」の重み（モデルのデータ本体）を公開したと発表した。同社は、AIエージェントによるコーディングとサイバーセキュリティで高い性能を示したと主張している。NVIDIAは同モデルを1兆パラメータ規模のマルチモーダルMoEモデルと紹介し、NVFP4での初日対応を発表した。",
+   "title": "Mistral AIが新モデルLe Chonkの重みを公開",
+   "summary": "Mistral AIは公式アカウントで、新しいLe Chonkの重み（モデルのデータ本体）を公開したと発表した。投稿では、オープンモデルの中でFrontierCodeで1位、Artificial Analysisで新たなパレート効率の基準を示したと述べている。サイバー防御でも主要セキュリティ企業による評価を受けたとしている。NVIDIAも同モデルを1兆パラメータのMoEで、3,800基のGrace Blackwell GPUで学習したと祝意とともに紹介し、NVFP4によるday 0対応を告知している。",
    "points": [
-    "重みが公開されたため、ダウンロードして自社環境で動かしたり改変したりできる（オープンモデル）",
-    "コーディング性能はCognitionのFrontierCodeでオープンモデル中1位とされ、性能効率の指標でも新記録と主張されている",
-    "各社の評価は発表側の主張であり、第三者による独立検証の詳細は投稿からは確認できない"
+    "Hugging Faceから重みをダウンロードでき、自社環境での利用や改変が可能とされる（オープンウェイト）。",
+    "性能の主張（FrontierCodeやArtificial Analysisでの順位）は投稿者側の発表で、第三者の詳細な検証結果は本投稿からは確認できない。",
+    "NVIDIAの投稿によれば、1兆パラメータ級のモデルで、対応は推論向けの最適化を前提としているため、一般の利用者が手元で動かすには大きな計算資源が必要とみられる。"
    ],
    "terms": [
     {
-     "term": "重み（weights）",
-     "desc": "AIモデルが学習で獲得した数値データ本体。公開されるとモデルを手元で動かせる"
+     "term": "重み（ウェイト）",
+     "desc": "AIモデルの学習結果としての数値データ。公開されればダウンロードして使える。"
     },
     {
-     "term": "MoE（専門家混合）",
-     "desc": "多数の専門家モジュールを持ち、入力ごとに一部だけを動かして効率を上げる設計"
+     "term": "MoE（混合エキスパート）",
+     "desc": "複数の専門家ネットワークを持ち、入力ごとに一部だけを動かす仕組み。大規模でも計算を抑えやすい。"
     },
     {
      "term": "NVFP4",
-     "desc": "NVIDIAの低精度数値形式で、少ないメモリと計算量でAIを動かすのに使われる"
+     "desc": "NVIDIAが提唱する4ビットの数値形式。計算を軽くして高速化を狙う。"
     }
    ],
-   "score": 95,
+   "score": 94,
    "credibility": 100,
-   "heat": 51,
+   "heat": 48,
    "first_seen": "2026-10-27T17:00:11.000Z",
-   "latest": "2026-10-30T09:48:50.000Z",
+   "latest": "2026-10-29T14:46:44.000Z",
    "authors": [
     "MistralAI",
     "NVIDIAAI"
@@ -50,7 +50,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業の公式アカウントによる発表",
+   "evidence_note": "Mistral・NVIDIA公式投稿",
    "links": [
     {
      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
@@ -67,39 +67,34 @@
     "url": "https://x.com/MistralAI/status/2115811242556137820",
     "username": "MistralAI",
     "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity.\n\n💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on @artificialanalysis.\n\n🛡 Built to defend: State-of-the-art in cyberdefense, put through the paces by the world's leading cyber vendors, including @CrowdStrike, @cloudflare, @rubrik, @zscaler, and others.\n\nBuilt for sovereignty: Make it yo",
-    "text_ja": "本日、新しく改良された Le Chonk の重みを公開します。エージェント型コーディングとサイバーセキュリティにおけるオープンモデルの最先端を前進させるものです。\n\n💻 開発のために作られた: Le Chonk は、Cognition の FrontierCode でオープンモデルの中で1位にランクインし、@artificialanalysis の Pareto 効率で新たなベンチマークを打ち立てました。\n\n🛡 防御のために作られた: サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler などを含む世界の主要なサイバーセキュリティベンダーによって検証されました。\n\n主権のために: 自分のものにしてください。@huggingface で重みをダウンロードし、Mistral Forge でカスタマイズして、必要な場所にデプロイできます。\n\nチームと顧客からの詳細はこちら 👇"
+    "text_ja": "本日、新しく改良されたLe Chonkの重みを公開します。エージェント型コーディングとサイバーセキュリティにおけるオープンモデルの最前線を前進させるものです。\n\n💻 作るためのモデル：Le Chonkは、@cognitionのFrontierCodeでオープンモデルの中で1位となり、@artificialanalysisでパレート効率の新たなベンチマークを打ち立てました。\n\n🛡 守るためのモデル：サイバー防御で最先端の性能を示し、@CrowdStrike、@cloudflare、@rubrik、@zscalerなど世界有数のサイバーセキュリティ企業により検証されました。\n\n主権のために：自分のものとして使ってください。@huggingfaceで重みをダウンロードし、Mistral Forgeでカスタマイズし、必要な場所にデプロイできます。\n\n👇チームと顧客による詳細をご覧ください："
    },
    "post_ids": [
     "2115811242556137820",
-    "2115817617911157099",
-    "2116105034673058023"
+    "2115817617911157099"
    ],
    "post_count": 3,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
-   "id": "8ba88218c8",
+   "id": "e401b6cce2",
    "verdict": "confirmed",
-   "title": "Anthropicが科学研究や創薬でのClaude活用を拡大",
-   "summary": "Anthropic公式アカウントが、6つの創薬機関との研究提携と自社の創薬の取り組みを進めていると発表した。ブログで初期の成果を共有しているという。また、AI for Scienceプログラムを個人チームから科学財団や研究機関・研究グループへ拡大したと述べた。",
+   "title": "AnthropicがAI for Scienceの対象を機関へ拡大",
+   "summary": "Anthropicは公式アカウントで、「AI for Science」プログラムを個々のチームを超えて、世界の主要な科学財団・研究機関・研究グループの支援へ広げたと発表した。投稿は発表文とリンクのみで、具体的な参加機関や支援内容、開始時期は投稿からは分からない。",
    "points": [
-    "Claudeが創薬の複数の段階をどう支援できるかについて、初期成果が公表された",
-    "科学研究向けの支援対象が広がり、製薬や研究機関での活用が進む可能性がある",
-    "成果の具体的な内容や効果の大きさは、投稿リンク先のブログで確認する必要がある"
+    "個人チーム向けから機関向けへの拡大で、科学研究へのAI提供がより組織的に進むことを示す。",
+    "具体的な参加先や支援内容は投稿からは不明のため、リンク先の公式情報で確認が必要。",
+    "研究者や研究機関にとって利用機会が広がる可能性があるが、条件や費用は未確認。"
    ],
    "terms": [
     {
-     "term": "創薬",
-     "desc": "新しい薬の候補を見つけ、開発して実用化するまでの過程"
-    },
-    {
      "term": "AI for Science",
-     "desc": "AIを科学研究の加速に使う取り組みや支援プログラムの総称"
+     "desc": "AIを科学研究の加速に使おうとする取り組みの総称。"
     }
    ],
-   "score": 93,
+   "score": 91,
    "credibility": 100,
-   "heat": 58,
+   "heat": 53,
    "first_seen": "2026-10-27T20:27:48.000Z",
    "latest": "2026-10-29T15:18:40.000Z",
    "authors": [
@@ -115,13 +110,8 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式ブログ（投稿リンク）",
+   "evidence_note": "Anthropic公式投稿",
    "links": [
-    {
-     "url": "https://www.anthropic.com/research/early-progress-drug-development",
-     "domain": "anthropic.com",
-     "primary": true
-    },
     {
      "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
      "domain": "anthropic.com",
@@ -129,17 +119,17 @@
     }
    ],
    "post": {
-    "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+    "url": "https://x.com/AnthropicAI/status/2115825653539025142",
     "username": "AnthropicAI",
-    "text": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own.\n\nIn doing so, we’ve learned much more about how Claude can support the many stages of drug development.\n\nIn this blog post, we share some early results from these efforts, and describe how this work fits in with our wider ambitions in the life sciences.\n\nhttps://t.co/EVbxkdDTgJ",
-    "text_ja": "この数か月間、Anthropicの科学者たちは、新薬を開発する6つの組織と深い研究提携を行ってきました。また、私たち自身も創薬の取り組みを始めています。\n\nその過程で、Claudeが創薬の多くの段階をどのように支援できるかについて、多くを学びました。\n\nこのブログ記事では、これらの取り組みからの初期成果を共有し、この研究がライフサイエンス分野における私たちのより広い野心とどう関係するかを説明します。\n\nhttps://t.co/EVbxkdDTgJ"
+    "text": "We’ve expanded our AI for Science program beyond individual teams to support some of the world’s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+    "text_ja": "私たちはAI for Scienceプログラムを個別のチームを超えて拡大し、世界の主要な科学財団、研究機関、研究グループの一部を支援するようになりました。 https://t.co/oTu04tU4Pk"
    },
    "post_ids": [
     "2115178675050307942",
     "2115825653539025142"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "9ce8aa9398",
@@ -508,7 +498,7 @@
    ],
    "score": 66,
    "credibility": 90,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-10-28T07:46:28.000Z",
    "latest": "2026-10-28T07:46:28.000Z",
    "authors": [
@@ -536,7 +526,7 @@
     "2115349465360126111"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "f9f4d26095",
@@ -610,9 +600,9 @@
      "desc": "社内で複数のAIモデルへの接続・利用状況・コストを一括管理する中継の仕組み"
     }
    ],
-   "score": 65,
+   "score": 64,
    "credibility": 83,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-28T05:30:01.000Z",
    "latest": "2026-10-28T05:30:01.000Z",
    "authors": [
@@ -646,7 +636,7 @@
     "2115315124906905928"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "c47fd1799c",
@@ -674,7 +664,7 @@
    ],
    "score": 61,
    "credibility": 75,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-10-28T12:34:05.000Z",
    "latest": "2026-10-28T12:35:07.000Z",
    "authors": [
@@ -703,7 +693,7 @@
     "2115421845247938616"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   }
  ]
 }

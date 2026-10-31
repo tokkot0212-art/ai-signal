@@ -2,56 +2,6 @@
  "date": "2026-10-29",
  "items": [
   {
-   "id": "e8813d8c51",
-   "verdict": "confirmed",
-   "title": "NVIDIA、音声認識・検索向けのオープンモデルを発表",
-   "summary": "NVIDIAは、オープンウェイトの音声認識モデル「Nemotron 3.5 Transcribe」を発表した。40言語の文字起こし、話者の識別、翻訳などを1つのモデルで行えるとしており、約4Bのアクティブパラメータを持つ30B MoEモデルと紹介している。あわせて「Nemotron Retriever」について、別のオープン検索基盤と比較する取り組みを公開したと投稿している。",
-   "points": [
-    "「アクティブパラメータ」とは、1回の処理で実際に計算に使われるパラメータ数のこと。総数より小さく、動作の軽さに関係する。",
-    "検索（retrieval）の比較では、精度だけでなくトークン使用量も示されている。AIエージェントの処理コストに関わる観点。",
-    "比較結果の具体的な数値や第三者による検証は、投稿からは確認できていない。"
-   ],
-   "terms": [],
-   "score": 94,
-   "credibility": 100,
-   "heat": 59,
-   "first_seen": "2026-10-28T15:14:50.000Z",
-   "latest": "2026-10-30T00:23:51.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の製品発表投稿",
-   "links": [
-    {
-     "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
-    "text_ja": "NVIDIA Nemotron 3.5 Transcribeのご紹介 🎙️\n\nオープンウェイト、プロンプト指定可能な30B MoEモデル（約4Bのアクティブパラメータ）で、40言語の文字起こし、話者識別、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめました。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
-   },
-   "post_ids": [
-    "2115462300241141882",
-    "2115962853463396395"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-30T18:41:11Z"
-  },
-  {
    "id": "23f4207652",
    "verdict": "confirmed",
    "title": "Google DeepMind、新モデル「Gemini 4 Carbon」を発表",
@@ -75,9 +25,9 @@
      "desc": "長い時間や多くの手順にわたる作業を、途切れずこなせる能力のこと。"
     }
    ],
-   "score": 90,
+   "score": 89,
    "credibility": 90,
-   "heat": 64,
+   "heat": 62,
    "first_seen": "2026-10-28T17:02:21.000Z",
    "latest": "2026-10-28T17:02:21.000Z",
    "authors": [
@@ -105,7 +55,7 @@
     "2115489356437651654"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "c1b407df67",
@@ -131,9 +81,9 @@
      "desc": "文書中の引用元や参照が正しいかを確かめる作業のこと。"
     }
    ],
-   "score": 90,
+   "score": 89,
    "credibility": 85,
-   "heat": 73,
+   "heat": 71,
    "first_seen": "2026-10-28T15:34:16.000Z",
    "latest": "2026-10-28T15:34:16.000Z",
    "authors": [
@@ -161,7 +111,63 @@
     "2115467192276025500"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
+  },
+  {
+   "id": "bee38cc600",
+   "verdict": "confirmed",
+   "title": "NVIDIAが音声認識モデルNemotron 3.5 Transcribeを発表",
+   "summary": "NVIDIAは公式アカウントで、オープンウェイトの音声認識モデル「Nemotron 3.5 Transcribe」を発表した。投稿によると、約300億パラメータのMoEモデルで有効な約40億パラメータを使い、40言語の文字起こし、話者の識別、翻訳、音声理解を1つのチェックポイントで行えるとしている。複数人が同時に話す場面で誰が何を言ったかを追跡する例も示した。",
+   "points": [
+    "文字起こし・話者識別・翻訳などを1つのモデルで扱える点が新しいとされる。",
+    "「有効約40億パラメータ」は推論時に実際に動く量で、全体の規模より軽く動く可能性がある、と読める。ただし実機での速度や精度は投稿からは不明。",
+    "会議録やコールセンターの記録などで使われる可能性があるが、精度や対応言語の品質は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイト",
+     "desc": "学習済みモデルの重みが公開され、誰でもダウンロードして使える形態。"
+    },
+    {
+     "term": "話者識別（スピーカーダイアライゼーション）",
+     "desc": "音声の中で誰が話しているかを区別して記録する技術。"
+    },
+    {
+     "term": "チェックポイント",
+     "desc": "学習済みモデルを保存した単位。ここでは1つのモデルファイルに複数機能が入っている意味。"
+    }
+   ],
+   "score": 87,
+   "credibility": 90,
+   "heat": 57,
+   "first_seen": "2026-10-28T15:14:50.000Z",
+   "latest": "2026-10-28T15:14:50.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式投稿（スレッド1件目）",
+   "links": [],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
+    "username": "NVIDIAAI",
+    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
+    "text_ja": "NVIDIA Nemotron 3.5 Transcribeを紹介します 🎙️\n\n30B規模のMoEモデルで、有効パラメータは約4Bのオープンウェイトかつプロンプト指定可能なモデルです。40言語での文字起こし、話者の特定、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめています。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
+   },
+   "post_ids": [
+    "2115462300241141882"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "11f78091c5",
@@ -183,9 +189,9 @@
      "desc": "人の指示を受けて、AIが複数の作業を自律的に進める仕組みのこと。"
     }
    ],
-   "score": 87,
+   "score": 86,
    "credibility": 90,
-   "heat": 57,
+   "heat": 55,
    "first_seen": "2026-10-28T23:17:13.000Z",
    "latest": "2026-10-28T23:17:13.000Z",
    "authors": [
@@ -213,7 +219,7 @@
     "2115583698074755078"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "3bc2e7ddd1",
@@ -241,7 +247,7 @@
    ],
    "score": 84,
    "credibility": 90,
-   "heat": 51,
+   "heat": 50,
    "first_seen": "2026-10-28T17:03:17.000Z",
    "latest": "2026-10-28T17:03:17.000Z",
    "authors": [
@@ -269,7 +275,7 @@
     "2115489593818816591"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "26fdf853c7",
@@ -295,9 +301,9 @@
      "desc": "人々が共有する物語や論点の枠組みのこと"
     }
    ],
-   "score": 76,
+   "score": 75,
    "credibility": 100,
-   "heat": 14,
+   "heat": 12,
    "first_seen": "2026-10-29T08:20:24.000Z",
    "latest": "2026-10-29T08:20:24.000Z",
    "authors": [
@@ -331,7 +337,7 @@
     "2115720393369473344"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "b3a242abc7",
@@ -353,9 +359,9 @@
      "desc": "正式公開前に、一部の利用者が先行して製品を試せる提供形態。"
     }
    ],
-   "score": 75,
+   "score": 74,
    "credibility": 100,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-29T01:07:44.000Z",
    "latest": "2026-10-29T01:07:44.000Z",
    "authors": [
@@ -389,7 +395,7 @@
     "2115611510051598623"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "4a54117dba",
@@ -417,7 +423,7 @@
    ],
    "score": 73,
    "credibility": 93,
-   "heat": 19,
+   "heat": 18,
    "first_seen": "2026-10-28T17:08:33.000Z",
    "latest": "2026-10-28T17:08:33.000Z",
    "authors": [
@@ -451,7 +457,7 @@
     "2115490919923548307"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "c48e441a85",
@@ -473,9 +479,9 @@
      "desc": "軍事や安全保障の分野で、AIを情報分析や支援などに使うこと。"
     }
    ],
-   "score": 69,
+   "score": 68,
    "credibility": 90,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-10-29T07:01:42.000Z",
    "latest": "2026-10-29T07:01:42.000Z",
    "authors": [
@@ -503,7 +509,7 @@
     "2115700588457660571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   },
   {
    "id": "6abb15d727",
@@ -531,7 +537,7 @@
    ],
    "score": 71,
    "credibility": 93,
-   "heat": 14,
+   "heat": 12,
    "first_seen": "2026-10-29T14:30:00.000Z",
    "latest": "2026-10-29T14:30:00.000Z",
    "authors": [
@@ -570,7 +576,7 @@
     "2115813405835846058"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-30T18:41:11Z"
+   "archived_at": "2026-10-31T01:41:51Z"
   }
  ]
 }

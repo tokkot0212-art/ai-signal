@@ -2,6 +2,68 @@
  "date": "2026-10-31",
  "items": [
   {
+   "id": "c344aa8a66",
+   "verdict": "confirmed",
+   "title": "Anthropic、悪意ある学習データを自動生成する研究を公表",
+   "summary": "Anthropicは公式アカウントで新しい研究を発表した。同社は多数のClaudeエージェントに、学習データの監視装置を回避する課題を与えたと述べている。エージェントは監視装置には無害に見えるが、実際には望ましくない振る舞いを教える学習データを作り出したという。",
+   "points": [
+    "新しさ: 安全性テスト（レッドチーミング）の一部を人手ではなくAIで自動化する試みとして紹介されている",
+    "重要性: 将来の学習データ監視装置の改善に、この種の例を直接使えるとされている",
+    "注意点: 投稿は「まずは第一歩」と位置づけており、実用的な効果の大きさはまだ不明"
+   ],
+   "terms": [
+    {
+     "term": "レッドチーミング",
+     "desc": "AIに意図的に問題を起こさせ、弱点や危険な振る舞いを見つけるテスト手法"
+    },
+    {
+     "term": "ミスアライメント",
+     "desc": "AIが人間の意図や安全基準から外れた振る舞いをすること"
+    },
+    {
+     "term": "学習データ監視装置",
+     "desc": "AIの学習に使うデータに問題がないかを自動で調べる仕組み"
+    }
+   ],
+   "score": 98,
+   "credibility": 100,
+   "heat": 69,
+   "first_seen": "2026-10-31T01:59:06.000Z",
+   "latest": "2026-10-31T01:59:06.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式の研究発表",
+   "links": [
+    {
+     "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+     "domain": "alignment.anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2116349211549843666",
+    "username": "AnthropicAI",
+    "text": "New Anthropic research: Automating subtle emergent misalignment research.\n\nRed-teaming is a vital part of model safety testing, but it’s also limited by researchers’ time. To see if we could automate it, we set thousands of Claude agents the task of evading a training data monitor.\n\nThese agents developed training data that looked harmless to monitors (like a veteran wrestler mentoring a newcomer, or a Q&A about professional beekeeping), but that in fact taught misaligned behavior.\n\nExamples lik",
+    "text_ja": "Anthropicの新しい研究: 微妙に現れる誤った振る舞い（ミスアライメント）の研究を自動化する。\n\nレッドチーミングはモデルの安全性テストに欠かせないが、研究者の時間に制約される。自動化できるかを確かめるため、数千のClaudeエージェントに、学習データ監視装置を回避するという課題を与えた。\n\nエージェントらは、監視装置には無害に見える学習データ（ベテランのレスラーが新人を指導する話や、プロの養蜂家についてのQ&Aのようなもの）を作り出したが、実際には望ましくない振る舞いを教えるものだった。\n\nこうした例は、将来の学習データ監視装置を直接改善するのに使える。この研究はまだ第一歩にすぎないが、今後のレッドチーミングは、より良いモデルを使うことでさらに改善できる可能性を示している。"
+   },
+   "post_ids": [
+    "2116349211549843666"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-31T09:49:58Z"
+  },
+  {
    "id": "681e403231",
    "verdict": "confirmed",
    "title": "OpenAIが企業向けのデータ保護機能「Private Intelligence」を発表",
@@ -21,9 +83,9 @@
      "desc": "現時点で最も高性能な、開発の最先端にあるAIモデルのこと"
     }
    ],
-   "score": 94,
+   "score": 92,
    "credibility": 100,
-   "heat": 61,
+   "heat": 55,
    "first_seen": "2026-10-30T15:12:35.000Z",
    "latest": "2026-10-30T15:12:35.000Z",
    "authors": [
@@ -57,7 +119,121 @@
     "2116186509384815084"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T01:41:51Z"
+   "archived_at": "2026-10-31T09:49:58Z"
+  },
+  {
+   "id": "a75509e786",
+   "verdict": "confirmed",
+   "title": "NVIDIA、9.6Mパラメータの音声改善モデルを公開",
+   "summary": "NVIDIAは公式アカウントで、新しいオープンな多言語モデル「NemotronLabs RE-USE」を発表した。このモデルは背景ノイズや反響などを除去して音声を聞き取りやすくするとしており、パラメータ数は9.6Mと紹介されている。デモとモデルのダウンロードはHugging Faceで提供されるという。",
+   "points": [
+    "新しさ: 約960万パラメータと小型で、音声の雑音除去を行うオープンモデルとして紹介されている",
+    "重要性: 小型で動くなら、端末上での音声処理など身近な用途に広がる可能性がある（推測）",
+    "注意点: 投稿に性能の定量比較は示されておらず、実際の品質は試聴や検証が必要"
+   ],
+   "terms": [
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルの内部にある調整可能な数値の総数。大きいほど複雑な処理が可能な傾向がある"
+    },
+    {
+     "term": "Hugging Face",
+     "desc": "AIモデルやデータを公開・共有するためのオンラインプラットフォーム"
+    },
+    {
+     "term": "オープンモデル",
+     "desc": "重みなどが公開され、誰でも試したり利用したりできるAIモデル"
+    }
+   ],
+   "score": 90,
+   "credibility": 100,
+   "heat": 50,
+   "first_seen": "2026-10-30T20:15:04.000Z",
+   "latest": "2026-10-30T20:15:04.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [
+    {
+     "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2116262634349818190",
+    "username": "NVIDIAAI",
+    "text": "Sound on 🔊 Listen to the difference.\n\nOur new open multilingual NemotronLabs RE-USE model from NVIDIA researchers cleans up background noise, echo and other audio distortions to make speech clearer. All with just 9.6M parameters.\n\nTry the demo and download the model on @huggingface → https://t.co/gg6KcUbTfE",
+    "text_ja": "音を聞いてみて🔊 違いに注目してください。\n\nNVIDIAの研究者による、新しいオープンな多言語モデル「NemotronLabs RE-USE」は、背景ノイズ、エコーなどの音声の歪みを取り除き、話し声をより明瞭にします。パラメータはわずか9.6Mです。\n\nデモを試して、モデルは@huggingfaceからダウンロードできます → https://t.co/gg6KcUbTfE"
+   },
+   "post_ids": [
+    "2116262634349818190"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-31T09:49:58Z"
+  },
+  {
+   "id": "007a063198",
+   "verdict": "confirmed",
+   "title": "OpenAI、Agents APIの今週の新機能を案内",
+   "summary": "OpenAIの開発者向け公式アカウントは、Agents APIを使って開発している人向けに、今週リリースした内容を紹介するリンクを投稿した。投稿本文には具体的な機能名や内容は書かれておらず、詳細はリンク先で確認する形になっている。",
+   "points": [
+    "新しさ: 具体的な新機能は投稿本文に書かれておらず、リンク先の確認が必要",
+    "重要性: Agents APIを使う開発者が更新内容を把握するための案内",
+    "注意点: 本文だけでは内容を判断できないため、リンク先の内容は未確認"
+   ],
+   "terms": [
+    {
+     "term": "Agents API",
+     "desc": "AIが文脈を理解して作業を進める「エージェント」を、開発者が自分のアプリに組み込むための仕組み"
+    },
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士が機能をやり取りするための接続口"
+    }
+   ],
+   "score": 82,
+   "credibility": 90,
+   "heat": 45,
+   "first_seen": "2026-10-30T23:08:03.000Z",
+   "latest": "2026-10-30T23:08:03.000Z",
+   "authors": [
+    "OpenAIDevs"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAIDevs",
+     "label": "OpenAI開発者向け公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式の更新案内",
+   "links": [],
+   "post": {
+    "url": "https://x.com/OpenAIDevs/status/2116306164375863343",
+    "username": "OpenAIDevs",
+    "text": "Building with the Agents API? \n\nHere's what we shipped this week for you: https://t.co/NkTFAsLJCR",
+    "text_ja": "Agents APIで開発していますか？\n\n今週お届けした新機能はこちらです: https://t.co/NkTFAsLJCR"
+   },
+   "post_ids": [
+    "2116306164375863343"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-31T09:49:58Z"
   },
   {
    "id": "e03daef380",
@@ -79,9 +255,9 @@
      "desc": "人の腕のように複数の関節を持ち、物を掴んだり動かしたりする機械"
     }
    ],
-   "score": 77,
+   "score": 74,
    "credibility": 90,
-   "heat": 32,
+   "heat": 25,
    "first_seen": "2026-10-30T18:29:59.000Z",
    "latest": "2026-10-30T18:29:59.000Z",
    "authors": [
@@ -109,7 +285,7 @@
     "2116236188319453386"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T01:41:51Z"
+   "archived_at": "2026-10-31T09:49:58Z"
   },
   {
    "id": "a52f744a15",
@@ -135,9 +311,9 @@
      "desc": "AIが文章を処理する際の最小単位。量が少ないほど処理コストが抑えられる目安になる"
     }
    ],
-   "score": 70,
+   "score": 69,
    "credibility": 93,
-   "heat": 11,
+   "heat": 7,
    "first_seen": "2026-10-30T18:30:36.000Z",
    "latest": "2026-10-30T18:30:36.000Z",
    "authors": [
@@ -171,35 +347,142 @@
     "2116236342653026706"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T01:41:51Z"
+   "archived_at": "2026-10-31T09:49:58Z"
   },
   {
-   "id": "7709c1fd32",
+   "id": "2986364142",
    "verdict": "promising",
-   "title": "npakaさんがNVIDIAのMotionBricksを試した記録を公開",
-   "summary": "プログラマーのnpaka氏が、NVIDIAのMotionBricks（ゲームやロボットの動作をリアルタイム生成するAI）を試し始めたと投稿した。Codexと Colab CLI を使ったセットアップに12分かかったと書かれている。詳細はnote.comの記事にまとめられている。",
+   "title": "UCバークレーの研究、AI組織が自ら役職を発明する仕組み",
+   "summary": "AI論文紹介メディア「AIDB」は、UCバークレーの研究者らがAI同士で組織を設計し、行き詰まると組織構成を作り変える仕組みを開発したと紹介した。役職の例として「あまのじゃく係」「新鮮な目の係」「行き止まり再訪係」を挙げ、この仕組みで作られたAI組織がGPUカーネルを書き、現実で使われているものより高速だと伝えている。",
    "points": [
-    "セットアップ時間が12分という具体的な数字は、本人が実際に手を動かした記録として読める",
-    "MotionBricksはゲームやロボットの動きを作る技術とされ、開発者の作業効率に関心が集まりうる",
-    "動作の品質や性能の評価は記事の内容を見ないと判断できない"
+    "新しさ: 上司のAIが部下の働きぶりを見て必要な役職を作る、という自動組織設計の発想",
+    "重要性: AIに複雑なプログラム開発を任せる際の作業分担の考え方に関係する",
+    "注意点: 「現実のものより高速」の比較条件や再現性は投稿からは未確認。元論文での確認が必要"
    ],
    "terms": [
     {
-     "term": "NVIDIA MotionBricks",
-     "desc": "ゲームやロボットの動作をリアルタイムで生成するとされるNVIDIAのAI技術。詳細は未確認。"
+     "term": "GPUカーネル",
+     "desc": "GPUで計算を実行するための小さなプログラム。AI計算の速度に大きく影響する"
+    },
+    {
+     "term": "マルチエージェント",
+     "desc": "複数のAIが役割を分担して協力しながら作業する仕組み"
+    }
+   ],
+   "score": 67,
+   "credibility": 75,
+   "heat": 41,
+   "first_seen": "2026-10-31T03:25:43.000Z",
+   "latest": "2026-10-31T03:25:43.000Z",
+   "authors": [
+    "ai_database"
+   ],
+   "author_labels": [
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の制作・検証の報告",
+   "links": [],
+   "post": {
+    "url": "https://x.com/ai_database/status/2116371009125363767",
+    "username": "ai_database",
+    "text": "「AIが\"AIだけの組織\"を自分で設計し、行き詰まるたびに\"自ら組織を作り変えていく\"」仕組みをUCバークレーの研究者らが開発しました。\nその結果、柔軟なアイデアで進化したAI組織は優れた成果も出しています。\n\n以下は、AI組織で生まれた斬新な役職の例です。\n\n①あまのじゃく係\n「これ以上は無理」という主張を疑う\n\n②新鮮な目の係\n一度捨てた案を、先入観なしで試し直す\n\n③行き止まり再訪係\n「ダメだった」と記録された案を掘り起こす\n\n研究者らは、AIの組織においても「作業の段階ごとに必要な役割が変わる」必要があると考えました。\nそこで、上司のAIが部下のAIたちの働きぶりを見て\"足りない役職\"をその場で\"発明\"していく仕組みを作ったのです。\n\n実験の結果、進化していったAI組織は、GPUカーネルという複雑なプログラムをゼロから書き上げ、それは今現実で使用されているものよりも高速なのだそうです。",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2116371009125363767"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-31T09:49:58Z"
+  },
+  {
+   "id": "29350c5f0b",
+   "verdict": "promising",
+   "title": "画像1枚から3D生成するAI「Idol」を紹介",
+   "summary": "プログラマーのnpaka123氏が、1枚の画像から3D Gaussian Splattingを生成するAI「Idol」の概要をnoteで紹介した。別の投稿では、Codex と Colab CLI を使ってIdolを試しており、セットアップに12分かかったと書いている。",
+   "points": [
+    "3D Gaussian Splattingは、写真のような立体表示を少ない計算で描く手法とみられる（一般的な背景知識）",
+    "試用の報告はあるが、生成品質や処理時間の数値は投稿に示されていない",
+    "実際の性能や利用条件は、公式資料や本人の検証結果で確認する必要がある"
+   ],
+   "terms": [
+    {
+     "term": "3D Gaussian Splatting",
+     "desc": "多数の小さな楕円状の点で物体や風景を立体的に描く手法。"
     },
     {
      "term": "Colab CLI",
-     "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するためのツールとみられる。"
-    },
-    {
-     "term": "Codex",
-     "desc": "AIがプログラムを書くことを支援するツール・サービスの名称。"
+     "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するツール。"
     }
    ],
-   "score": 59,
+   "score": 57,
    "credibility": 73,
-   "heat": 23,
+   "heat": 18,
+   "first_seen": "2026-10-31T05:08:28.000Z",
+   "latest": "2026-10-31T05:11:53.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の試用報告（セットアップ時間）",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n66f6eaffeecb?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/npaka123/status/2116397727429140727",
+    "username": "npaka123",
+    "text": "Idolの概要 - 1枚の画像から3D Gaussian Splattingを生成するAI｜npaka @npaka123 https://t.co/kVm300k25y",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2116397727429140727",
+    "2116396867059888409"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-31T09:49:58Z"
+  },
+  {
+   "id": "c122f5a163",
+   "verdict": "promising",
+   "title": "NVIDIAのMotionBricksをColabで試用中と報告",
+   "summary": "プログラマーのnpaka123氏が、NVIDIAの「MotionBricks」を試用中だと投稿した。Codex と Colab CLI を使い、セットアップに12分かかったと書いている。",
+   "points": [
+    "MotionBricksの機能や性能の具体的な数値は、投稿からは分からない",
+    "試用の報告はあるが、結果の画面や数値は示されていない",
+    "NVIDIAの公式資料で仕様を確認すると理解が深まる"
+   ],
+   "terms": [
+    {
+     "term": "MotionBricks",
+     "desc": "NVIDIAが発表したとされる動作生成関連のAI（投稿からは詳細不明）。"
+    },
+    {
+     "term": "Colab CLI",
+     "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するツール。"
+    }
+   ],
+   "score": 51,
+   "credibility": 70,
+   "heat": 7,
    "first_seen": "2026-10-31T01:22:44.000Z",
    "latest": "2026-10-31T01:26:14.000Z",
    "authors": [
@@ -215,14 +498,8 @@
    ],
    "evidence": "hands_on_test",
    "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の導入試行と記事",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/n77061cfd370e?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
+   "evidence_note": "本人の試用報告（セットアップ時間）",
+   "links": [],
    "post": {
     "url": "https://x.com/npaka123/status/2116340940898250827",
     "username": "npaka123",
@@ -231,11 +508,10 @@
    },
    "post_ids": [
     "2116340940898250827",
-    "2116340804398817281",
     "2116340058458566941"
    ],
-   "post_count": 3,
-   "archived_at": "2026-10-31T01:41:51Z"
+   "post_count": 2,
+   "archived_at": "2026-10-31T09:49:58Z"
   }
  ]
 }

@@ -25,9 +25,9 @@
      "desc": "AIの学習に使うデータに問題がないかを自動で調べる仕組み"
     }
    ],
-   "score": 98,
+   "score": 96,
    "credibility": 100,
-   "heat": 69,
+   "heat": 64,
    "first_seen": "2026-10-31T01:59:06.000Z",
    "latest": "2026-10-31T01:59:06.000Z",
    "authors": [
@@ -61,7 +61,65 @@
     "2116349211549843666"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
+  },
+  {
+   "id": "8cffcbc3fa",
+   "verdict": "confirmed",
+   "title": "英政府の建築許可審査AI「PlanAssist」、12議会へ拡大",
+   "summary": "Google DeepMindは公式アカウントで、英国政府の計画担当官の業務を支援するAI「PlanAssist」を紹介した。Geminiを使って構築されたもので、住宅の増改築申請の審査時間を最大58%削減できたとしている。今後は12の自治体（議会）に追加で提供されるという。",
+   "points": [
+    "「最大58%」は条件付きの最大値であり、平均的な削減率かどうかは投稿からは不明。",
+    "自治体の審査が速くなれば、住宅の建築・改修を計画する一般の人にも影響がありそう（とみられる）。",
+    "AIが審査を補助する範囲や最終判断の責任の所在は投稿に書かれていない。"
+   ],
+   "terms": [
+    {
+     "term": "Gemini",
+     "desc": "Google DeepMindが開発した大規模AIモデルのシリーズ。"
+    },
+    {
+     "term": "householder application",
+     "desc": "住宅の所有者自身による増改築などの建築申請のこと。"
+    }
+   ],
+   "score": 92,
+   "credibility": 93,
+   "heat": 66,
+   "first_seen": "2026-10-31T13:33:39.000Z",
+   "latest": "2026-10-31T13:33:39.000Z",
+   "authors": [
+    "GoogleDeepMind"
+   ],
+   "author_labels": [
+    {
+     "username": "GoogleDeepMind",
+     "label": "Google DeepMind公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Google DeepMind公式発表",
+   "links": [
+    {
+     "url": "https://goo.gle/4iQXYkl",
+     "domain": "goo.gle",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/GoogleDeepMind/status/2116524000977285321",
+    "username": "GoogleDeepMind",
+    "text": "We built PlanAssist to help UK Government planning officers speed up building and renovations across the country.\n\nBuilt with Gemini, it has shown it can cut the time planning officers spend assessing householder applications by up to 58%. It is now being made available to 12 more councils to help them to make faster decisions. 🏡 → https://t.co/L3tGJNtiAC",
+    "text_ja": "私たちは、英国政府の計画担当官が全国の建築・改修の手続きをスピードアップできるよう、PlanAssistを開発しました。\n\nGeminiで構築されたこのツールは、住宅所有者による申請の審査にかかる計画担当官の時間を最大58%削減できることが確認されています。現在、より迅速な意思決定を支援するため、さらに12の自治体に提供が拡大されています。🏡 → https://t.co/L3tGJNtiAC"
+   },
+   "post_ids": [
+    "2116524000977285321"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "681e403231",
@@ -83,9 +141,9 @@
      "desc": "現時点で最も高性能な、開発の最先端にあるAIモデルのこと"
     }
    ],
-   "score": 92,
+   "score": 91,
    "credibility": 100,
-   "heat": 55,
+   "heat": 53,
    "first_seen": "2026-10-30T15:12:35.000Z",
    "latest": "2026-10-30T15:12:35.000Z",
    "authors": [
@@ -119,69 +177,7 @@
     "2116186509384815084"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
-  },
-  {
-   "id": "a75509e786",
-   "verdict": "confirmed",
-   "title": "NVIDIA、9.6Mパラメータの音声改善モデルを公開",
-   "summary": "NVIDIAは公式アカウントで、新しいオープンな多言語モデル「NemotronLabs RE-USE」を発表した。このモデルは背景ノイズや反響などを除去して音声を聞き取りやすくするとしており、パラメータ数は9.6Mと紹介されている。デモとモデルのダウンロードはHugging Faceで提供されるという。",
-   "points": [
-    "新しさ: 約960万パラメータと小型で、音声の雑音除去を行うオープンモデルとして紹介されている",
-    "重要性: 小型で動くなら、端末上での音声処理など身近な用途に広がる可能性がある（推測）",
-    "注意点: 投稿に性能の定量比較は示されておらず、実際の品質は試聴や検証が必要"
-   ],
-   "terms": [
-    {
-     "term": "パラメータ",
-     "desc": "AIモデルの内部にある調整可能な数値の総数。大きいほど複雑な処理が可能な傾向がある"
-    },
-    {
-     "term": "Hugging Face",
-     "desc": "AIモデルやデータを公開・共有するためのオンラインプラットフォーム"
-    },
-    {
-     "term": "オープンモデル",
-     "desc": "重みなどが公開され、誰でも試したり利用したりできるAIモデル"
-    }
-   ],
-   "score": 90,
-   "credibility": 100,
-   "heat": 50,
-   "first_seen": "2026-10-30T20:15:04.000Z",
-   "latest": "2026-10-30T20:15:04.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2116262634349818190",
-    "username": "NVIDIAAI",
-    "text": "Sound on 🔊 Listen to the difference.\n\nOur new open multilingual NemotronLabs RE-USE model from NVIDIA researchers cleans up background noise, echo and other audio distortions to make speech clearer. All with just 9.6M parameters.\n\nTry the demo and download the model on @huggingface → https://t.co/gg6KcUbTfE",
-    "text_ja": "音を聞いてみて🔊 違いに注目してください。\n\nNVIDIAの研究者による、新しいオープンな多言語モデル「NemotronLabs RE-USE」は、背景ノイズ、エコーなどの音声の歪みを取り除き、話し声をより明瞭にします。パラメータはわずか9.6Mです。\n\nデモを試して、モデルは@huggingfaceからダウンロードできます → https://t.co/gg6KcUbTfE"
-   },
-   "post_ids": [
-    "2116262634349818190"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "007a063198",
@@ -203,9 +199,9 @@
      "desc": "ソフトウェア同士が機能をやり取りするための接続口"
     }
    ],
-   "score": 82,
+   "score": 81,
    "credibility": 90,
-   "heat": 45,
+   "heat": 42,
    "first_seen": "2026-10-30T23:08:03.000Z",
    "latest": "2026-10-30T23:08:03.000Z",
    "authors": [
@@ -233,7 +229,7 @@
     "2116306164375863343"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "e03daef380",
@@ -255,9 +251,9 @@
      "desc": "人の腕のように複数の関節を持ち、物を掴んだり動かしたりする機械"
     }
    ],
-   "score": 74,
+   "score": 73,
    "credibility": 90,
-   "heat": 25,
+   "heat": 22,
    "first_seen": "2026-10-30T18:29:59.000Z",
    "latest": "2026-10-30T18:29:59.000Z",
    "authors": [
@@ -285,7 +281,7 @@
     "2116236188319453386"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "a52f744a15",
@@ -311,9 +307,9 @@
      "desc": "AIが文章を処理する際の最小単位。量が少ないほど処理コストが抑えられる目安になる"
     }
    ],
-   "score": 69,
+   "score": 68,
    "credibility": 93,
-   "heat": 7,
+   "heat": 5,
    "first_seen": "2026-10-30T18:30:36.000Z",
    "latest": "2026-10-30T18:30:36.000Z",
    "authors": [
@@ -347,7 +343,7 @@
     "2116236342653026706"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "2986364142",
@@ -369,9 +365,9 @@
      "desc": "複数のAIが役割を分担して協力しながら作業する仕組み"
     }
    ],
-   "score": 67,
+   "score": 65,
    "credibility": 75,
-   "heat": 41,
+   "heat": 35,
    "first_seen": "2026-10-31T03:25:43.000Z",
    "latest": "2026-10-31T03:25:43.000Z",
    "authors": [
@@ -399,7 +395,7 @@
     "2116371009125363767"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "29350c5f0b",
@@ -421,9 +417,9 @@
      "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するツール。"
     }
    ],
-   "score": 57,
+   "score": 55,
    "credibility": 73,
-   "heat": 18,
+   "heat": 12,
    "first_seen": "2026-10-31T05:08:28.000Z",
    "latest": "2026-10-31T05:11:53.000Z",
    "authors": [
@@ -458,32 +454,36 @@
     "2116396867059888409"
    ],
    "post_count": 2,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
-   "id": "c122f5a163",
+   "id": "d0b9454bcb",
    "verdict": "promising",
-   "title": "NVIDIAのMotionBricksをColabで試用中と報告",
-   "summary": "プログラマーのnpaka123氏が、NVIDIAの「MotionBricks」を試用中だと投稿した。Codex と Colab CLI を使い、セットアップに12分かかったと書いている。",
+   "title": "NVIDIAのMotionBricksをnpaka氏が紹介・試用",
+   "summary": "プログラマーのnpaka氏が、NVIDIAの「MotionBricks」について概要を紹介する投稿とnoteの記事を公開した。氏は「おためし中」とし、Codex と Colab CLI を使ったセットアップに12分かかったと書いている。投稿からは、MotionBricksがゲームやロボットの動作をリアルタイム生成するAIであることが分かる。",
    "points": [
-    "MotionBricksの機能や性能の具体的な数値は、投稿からは分からない",
-    "試用の報告はあるが、結果の画面や数値は示されていない",
-    "NVIDIAの公式資料で仕様を確認すると理解が深まる"
+    "MotionBricksはゲームやロボットの動きをリアルタイムに生成するAIと紹介されている（詳細な仕様は投稿からは未確認）",
+    "実際に試した人がセットアップ時間（12分）を示しており、導入の手軽さの目安になる",
+    "NVIDIAの公式発表や性能評価は本クラスタ内では確認できないため、性能面は未確認"
    ],
    "terms": [
     {
      "term": "MotionBricks",
-     "desc": "NVIDIAが発表したとされる動作生成関連のAI（投稿からは詳細不明）。"
+     "desc": "NVIDIAが公開したとされる、ゲームやロボットの動作を生成するAI（詳細は未確認）"
     },
     {
      "term": "Colab CLI",
-     "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するツール。"
+     "desc": "Google Colab をコマンドラインから操作するためのツールとみられる（未確認）"
+    },
+    {
+     "term": "Codex",
+     "desc": "プログラミングを支援するAIツールの名前。コードの作成や修正を手伝う"
     }
    ],
-   "score": 51,
-   "credibility": 70,
-   "heat": 7,
-   "first_seen": "2026-10-31T01:22:44.000Z",
+   "score": 52,
+   "credibility": 73,
+   "heat": 5,
+   "first_seen": "2026-10-31T01:11:13.000Z",
    "latest": "2026-10-31T01:26:14.000Z",
    "authors": [
     "npaka123"
@@ -498,20 +498,33 @@
    ],
    "evidence": "hands_on_test",
    "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の試用報告（セットアップ時間）",
-   "links": [],
+   "evidence_note": "本人の試用メモ・セットアップ時間",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n77061cfd370e?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n491013486de6?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
    "post": {
-    "url": "https://x.com/npaka123/status/2116340940898250827",
+    "url": "https://x.com/npaka123/status/2116340804398817281",
     "username": "npaka123",
-    "text": "NVIDIA MotionBricks をおためし中\n\nCodex + Colab CLI でセットアップ時間12分 https://t.co/RpbKtdvNtv",
+    "text": "NVIDIA MotionBricks の概要 - ゲームやロボットの動作をリアルタイム生成するAI｜npaka @npaka123 https://t.co/VmB6vcKgLL",
     "text_ja": null
    },
    "post_ids": [
+    "2116340804398817281",
+    "2116337161641558241",
     "2116340940898250827",
     "2116340058458566941"
    ],
-   "post_count": 2,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "post_count": 4,
+   "archived_at": "2026-10-31T14:35:52Z"
   }
  ]
 }

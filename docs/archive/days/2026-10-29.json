@@ -2,6 +2,69 @@
  "date": "2026-10-29",
  "items": [
   {
+   "id": "641a8f554c",
+   "verdict": "confirmed",
+   "title": "NVIDIA、音声の雑音除去モデルと音声認識モデルを発表",
+   "summary": "NVIDIA公式AIアカウントは、新しい多言語の音声モデル「NemotronLabs RE-USE」を発表した。背景雑音やエコーを取り除き、音声を聞き取りやすくするモデルで、パラメータ数は9.6Mとしている。また同社は「Nemotron 3.5 Transcribe」も紹介し、40言語の文字起こし、話者の識別、翻訳などを1つのモデルで行えるとしている。両モデルはHugging Faceで公開されており、デモも試せるとしている。",
+   "points": [
+    "9.6Mという小ささは、大規模言語モデルに比べて軽量で端末上での動作が期待できる、という一般的な意味合いがあるが、実際の動作環境は投稿からは不明。",
+    "Transcribeは約30Bの総パラメータのうち約4Bだけが動くMoE型で、計算量を抑える工夫とみられる。",
+    "性能の比較数値は投稿に示されていないため、雑音除去や認識精度の実力は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "パラメータ",
+     "desc": "AIモデルが学習で調整する内部の数値。多いほど規模が大きい目安になる。"
+    },
+    {
+     "term": "MoE（Mixture of Experts）",
+     "desc": "多数の専門家モデルを持ち、入力ごとに一部だけを動かす仕組み。"
+    },
+    {
+     "term": "話者識別（speaker attribution）",
+     "desc": "誰が話したかを区別して記録する機能。"
+    }
+   ],
+   "score": 92,
+   "credibility": 100,
+   "heat": 55,
+   "first_seen": "2026-10-28T15:14:50.000Z",
+   "latest": "2026-10-30T20:15:04.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式発表",
+   "links": [
+    {
+     "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2116262634349818190",
+    "username": "NVIDIAAI",
+    "text": "Sound on 🔊 Listen to the difference.\n\nOur new open multilingual NemotronLabs RE-USE model from NVIDIA researchers cleans up background noise, echo and other audio distortions to make speech clearer. All with just 9.6M parameters.\n\nTry the demo and download the model on @huggingface → https://t.co/gg6KcUbTfE",
+    "text_ja": "音を聞いてください 🔊 違いを聴き比べてください。\n\nNVIDIA研究者による新しいオープンな多言語モデル NemotronLabs RE-USE は、背景雑音、エコー、その他の音声の歪みを取り除き、話し声をより明瞭にします。パラメータはわずか9.6Mです。\n\nデモを試して、@huggingface でモデルをダウンロードできます → https://t.co/gg6KcUbTfE"
+   },
+   "post_ids": [
+    "2116262634349818190",
+    "2115462300241141882"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-31T14:35:52Z"
+  },
+  {
    "id": "c1b407df67",
    "verdict": "confirmed",
    "title": "Claude for Legal に契約書レビュー等の既製テンプレートを追加",
@@ -27,7 +90,7 @@
    ],
    "score": 89,
    "credibility": 85,
-   "heat": 70,
+   "heat": 69,
    "first_seen": "2026-10-28T15:34:16.000Z",
    "latest": "2026-10-28T15:34:16.000Z",
    "authors": [
@@ -55,7 +118,7 @@
     "2115467192276025500"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "23f4207652",
@@ -83,7 +146,7 @@
    ],
    "score": 88,
    "credibility": 90,
-   "heat": 61,
+   "heat": 60,
    "first_seen": "2026-10-28T17:02:21.000Z",
    "latest": "2026-10-28T17:02:21.000Z",
    "authors": [
@@ -111,63 +174,7 @@
     "2115489356437651654"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
-  },
-  {
-   "id": "bee38cc600",
-   "verdict": "confirmed",
-   "title": "NVIDIAが音声認識モデルNemotron 3.5 Transcribeを発表",
-   "summary": "NVIDIAは公式アカウントで、オープンウェイトの音声認識モデル「Nemotron 3.5 Transcribe」を発表した。投稿によると、約300億パラメータのMoEモデルで有効な約40億パラメータを使い、40言語の文字起こし、話者の識別、翻訳、音声理解を1つのチェックポイントで行えるとしている。複数人が同時に話す場面で誰が何を言ったかを追跡する例も示した。",
-   "points": [
-    "文字起こし・話者識別・翻訳などを1つのモデルで扱える点が新しいとされる。",
-    "「有効約40億パラメータ」は推論時に実際に動く量で、全体の規模より軽く動く可能性がある、と読める。ただし実機での速度や精度は投稿からは不明。",
-    "会議録やコールセンターの記録などで使われる可能性があるが、精度や対応言語の品質は未確認。"
-   ],
-   "terms": [
-    {
-     "term": "オープンウェイト",
-     "desc": "学習済みモデルの重みが公開され、誰でもダウンロードして使える形態。"
-    },
-    {
-     "term": "話者識別（スピーカーダイアライゼーション）",
-     "desc": "音声の中で誰が話しているかを区別して記録する技術。"
-    },
-    {
-     "term": "チェックポイント",
-     "desc": "学習済みモデルを保存した単位。ここでは1つのモデルファイルに複数機能が入っている意味。"
-    }
-   ],
-   "score": 86,
-   "credibility": 90,
-   "heat": 56,
-   "first_seen": "2026-10-28T15:14:50.000Z",
-   "latest": "2026-10-28T15:14:50.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式投稿（スレッド1件目）",
-   "links": [],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
-    "username": "NVIDIAAI",
-    "text": "Meet NVIDIA Nemotron 3.5 Transcribe 🎙️\n\nAn open-weight, promptable 30B MoE model with ~4B active parameters that brings transcription in 40 languages, speaker attribution, translation, contextual prompting and audio understanding into one checkpoint.\n\nWatch it keep track of who said what when everyone’s talking at once.\n\n1/ 🧵",
-    "text_ja": "NVIDIA Nemotron 3.5 Transcribeを紹介します 🎙️\n\n30B規模のMoEモデルで、有効パラメータは約4Bのオープンウェイトかつプロンプト指定可能なモデルです。40言語での文字起こし、話者の特定、翻訳、文脈プロンプト、音声理解を1つのチェックポイントにまとめています。\n\n全員が同時に話しているときに、誰がいつ何を言ったかを追跡する様子をご覧ください。\n\n1/ 🧵"
-   },
-   "post_ids": [
-    "2115462300241141882"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "11f78091c5",
@@ -219,7 +226,7 @@
     "2115583698074755078"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "3bc2e7ddd1",
@@ -275,127 +282,7 @@
     "2115489593818816591"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
-  },
-  {
-   "id": "b3a242abc7",
-   "verdict": "confirmed",
-   "title": "Sakana AI、企業向け「Sakana API Platform」を発表",
-   "summary": "Sakana AIは公式アカウントで、企業顧客がAPIを安心して使えるよう開発した「Sakana API Platform」のエンタープライズ向けアーリーアクセスを開始したと発表した。投稿によれば、Sakana AIのモデルを組織での管理機能とあわせてAPI経由で利用できるという。",
-   "points": [
-    "アーリーアクセスは一部の利用者向けの先行提供で、正式提供の時期や料金は投稿では示されていない。",
-    "組織の管理機能が付くことで、社内導入の際のアクセス管理などに役立つとみられる。",
-    "対応モデルの一覧や具体的な機能の詳細は、リンク先を確認する必要がある。"
-   ],
-   "terms": [
-    {
-     "term": "API",
-     "desc": "ソフトウェア同士がデータや機能をやり取りするための接続の仕組み。"
-    },
-    {
-     "term": "アーリーアクセス",
-     "desc": "正式公開前に、一部の利用者が先行して製品を試せる提供形態。"
-    }
-   ],
-   "score": 74,
-   "credibility": 100,
-   "heat": 10,
-   "first_seen": "2026-10-29T01:07:44.000Z",
-   "latest": "2026-10-29T01:07:44.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業の公式アカウント投稿",
-   "links": [
-    {
-     "url": "https://sakana.ai/api-platform-earlyaccess/",
-     "domain": "sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2115611510051598623",
-    "username": "SakanaAILabs",
-    "text": "企業のお客様にSakana AIのAPIを安心してお使いいただけるよう、「Sakana API Platform」を開発しました。本日より、エンタープライズ向けのアーリーアクセスを開始します。\n\nhttps://t.co/UJHGy6zHZv\n\nSakana AIのモデルを、組織での管理機能とあわせてAPIでご利用いただけます。",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2115611510051598623"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
-  },
-  {
-   "id": "26fdf853c7",
-   "verdict": "confirmed",
-   "title": "Sakana AIがX上の約71万件の投稿を使い米中間選挙を分析",
-   "summary": "Sakana AI公式アカウントが、同社のレポートで米中間選挙を取り上げたと発表した。題材はテキサス州の上院選で、X上の約71万件の反応をSakana AIの独自技術で分析したという。投稿は、両候補への評価の転換が、主要評価機関が判断を変える約2か月前に現れていたと述べている。",
-   "points": [
-    "SNSデータから、世論調査では見えない動きを捉えようとする試みとして示された",
-    "分析は投稿数の集計だけでなく、誰が・なぜ書いたかまで読む必要があると強調している",
-    "分析結果の予測精度や独自技術の中身は投稿からは確認できず、予測として確立したとは言えない"
-   ],
-   "terms": [
-    {
-     "term": "中間選挙",
-     "desc": "米国で大統領任期の中間に行われる連邦議会選挙"
-    },
-    {
-     "term": "世論調査",
-     "desc": "一部の人に意見を聞いて、社会全体の考えを推定する調査"
-    },
-    {
-     "term": "ナラティブ",
-     "desc": "人々が共有する物語や論点の枠組みのこと"
-    }
-   ],
-   "score": 74,
-   "credibility": 100,
-   "heat": 11,
-   "first_seen": "2026-10-29T08:20:24.000Z",
-   "latest": "2026-10-29T08:20:24.000Z",
-   "authors": [
-    "SakanaAILabs"
-   ],
-   "author_labels": [
-    {
-     "username": "SakanaAILabs",
-     "label": "Sakana AI公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式のレポート紹介",
-   "links": [
-    {
-     "url": "https://sakana.ai/us-midterms-analysis/",
-     "domain": "sakana.ai",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/SakanaAILabs/status/2115720393369473344",
-    "username": "SakanaAILabs",
-    "text": "【Sakana Intelligence Report】SNSのAI分析からみる米中間選挙\n\nAIを使ったSNS分析で、選挙の情勢をどこまで読み解けるのか。そのケーススタディとして、11月3日に投票が行われる米国中間選挙を取り上げました。題材にしたのは、約30年にわたって共和党が勝ち続けてきたテキサス州の上院選です。X上の 約71万件の反応をSakana AIの独自技術で分析しました。\n\nSNSの大規模なデータからは、世論調査などの伝統的な分析では見えない材料が得られます。ただ、本当の情勢をつかむには、投稿の数を数えるだけでなく「誰が・なぜ書いたのか」まで遡って読む必要があります。\n\n今回のケースでは、X上で両候補のナラティブとその評価をめぐって、世論調査には現れない複雑な動きが見られました。たとえば両候補への評価の転換は、Cook Political Reportなどの主要評価機関が判断を変える約2か月前に現れていました。\n\nAIは膨大な情報から仮説を導き、根拠とともに示します。人間はそれを吟味したうえで最終的な判断を下します。私たちは、こうしたAIと人間の協働がAI時代のインテリジ",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2115720393369473344"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "4a54117dba",
@@ -457,7 +344,7 @@
     "2115490919923548307"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "c48e441a85",
@@ -481,7 +368,7 @@
    ],
    "score": 68,
    "credibility": 90,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-10-29T07:01:42.000Z",
    "latest": "2026-10-29T07:01:42.000Z",
    "authors": [
@@ -509,7 +396,75 @@
     "2115700588457660571"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
+  },
+  {
+   "id": "39778c4067",
+   "verdict": "confirmed",
+   "title": "Sakana AI、SNS分析で米中間選挙を読むケーススタディ公開",
+   "summary": "Sakana AIは公式アカウントで「Sakana Intelligence Report」を公開し、11月3日投票の米中間選挙を題材に、AIによるSNS分析を紹介した。テキサス州の上院選について、X上の約71万件の反応を独自技術で分析したという。投稿では、両候補への評価の転換が、Cook Political Reportなどの評価機関が判断を変える約2か月前に現れていたと述べている。同社は、AIが仮説を示し人間が判断する協働の重要性も強調している。また同日、企業向けの「Sakana API Platform」のアーリーアクセス開始も発表した。",
+   "points": [
+    "SNSの反応データは世論調査とは性質が異なり、どの層の意見を反映しているかには注意が必要。",
+    "「約2か月前」の先行性は一つのケースの説明で、一般化できるかは投稿からは不明。",
+    "企業向けAPIのアーリーアクセスは、導入を検討する組織が試せる段階という意味。"
+   ],
+   "terms": [
+    {
+     "term": "ナラティブ",
+     "desc": "物事を一貫した物語として語る枠組みや語り口のこと。"
+    },
+    {
+     "term": "アーリーアクセス",
+     "desc": "正式公開前に、一部の利用者へ先行して提供すること。"
+    },
+    {
+     "term": "API",
+     "desc": "ソフトウェア同士が機能をやり取りするための接続口。"
+    }
+   ],
+   "score": 67,
+   "credibility": 100,
+   "heat": 10,
+   "first_seen": "2026-10-29T01:07:44.000Z",
+   "latest": "2026-10-29T08:20:24.000Z",
+   "authors": [
+    "SakanaAILabs"
+   ],
+   "author_labels": [
+    {
+     "username": "SakanaAILabs",
+     "label": "Sakana AI公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "expert_analysis",
+   "evidence_label": "独自データの分析",
+   "evidence_note": "自社の独自データ分析",
+   "links": [
+    {
+     "url": "https://sakana.ai/us-midterms-analysis/",
+     "domain": "sakana.ai",
+     "primary": true
+    },
+    {
+     "url": "https://sakana.ai/api-platform-earlyaccess/",
+     "domain": "sakana.ai",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/SakanaAILabs/status/2115720393369473344",
+    "username": "SakanaAILabs",
+    "text": "【Sakana Intelligence Report】SNSのAI分析からみる米中間選挙\n\nAIを使ったSNS分析で、選挙の情勢をどこまで読み解けるのか。そのケーススタディとして、11月3日に投票が行われる米国中間選挙を取り上げました。題材にしたのは、約30年にわたって共和党が勝ち続けてきたテキサス州の上院選です。X上の 約71万件の反応をSakana AIの独自技術で分析しました。\n\nSNSの大規模なデータからは、世論調査などの伝統的な分析では見えない材料が得られます。ただ、本当の情勢をつかむには、投稿の数を数えるだけでなく「誰が・なぜ書いたのか」まで遡って読む必要があります。\n\n今回のケースでは、X上で両候補のナラティブとその評価をめぐって、世論調査には現れない複雑な動きが見られました。たとえば両候補への評価の転換は、Cook Political Reportなどの主要評価機関が判断を変える約2か月前に現れていました。\n\nAIは膨大な情報から仮説を導き、根拠とともに示します。人間はそれを吟味したうえで最終的な判断を下します。私たちは、こうしたAIと人間の協働がAI時代のインテリジ",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2115720393369473344",
+    "2115611510051598623"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-10-31T14:35:52Z"
   },
   {
    "id": "6abb15d727",
@@ -537,7 +492,7 @@
    ],
    "score": 70,
    "credibility": 93,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-10-29T14:30:00.000Z",
    "latest": "2026-10-29T14:30:00.000Z",
    "authors": [
@@ -576,7 +531,7 @@
     "2115813405835846058"
    ],
    "post_count": 1,
-   "archived_at": "2026-10-31T09:49:58Z"
+   "archived_at": "2026-10-31T14:35:52Z"
   }
  ]
 }

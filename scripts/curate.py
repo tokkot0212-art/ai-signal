@@ -25,6 +25,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).parent))
 from x_client import XClient, build_from_queries  # noqa: E402
+from services import Catalog, load_catalog  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -43,7 +44,7 @@ AUTHOR_TYPES = {
     "promoter":     ("宣伝・情報商材", -15),
 }
 EXPERT_TYPES = {"official", "researcher", "journalist"}
-REVIEW_VERSION = 6   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
+REVIEW_VERSION = 7   # 判定基準を変えたら上げる（保存済みの判定をやり直す）
 AUTHOR_VERSION = 2
 
 # 根拠（エビデンス）の種類と、話題スコアへの加点。シグナルに入れるのは evidence_ok のものだけ
@@ -59,6 +60,21 @@ EVIDENCE = {
     "rumor":                 ("噂・リーク", -10, False),
     "promo":                 ("宣伝", -20, False),
 }
+
+# 注目サービス一覧（config/services.yml）。main() で読み込む
+CAT: Catalog = Catalog({})
+
+
+def use_catalog(cfg: dict, cat: Catalog):
+    """サービス一覧を判定に反映する: 公式サイトを一次情報に、サービス名をAI関連語に加える。"""
+    global CAT, AI_RE
+    CAT = cat
+    cfg["primary_domains"] = list(dict.fromkeys(cfg.get("primary_domains", []) + cat.domains()))
+    q = cfg.setdefault("quality", {})
+    names = [a for sv in cat.services for a in (sv.get("aliases") or [sv["name"]])]
+    q["ai_keywords"] = list(dict.fromkeys((q.get("ai_keywords") or []) + names))
+    AI_RE = None
+
 
 # ---------------------------------------------------------------- utils
 
@@ -182,6 +198,11 @@ def passes_discovery_gate(t: dict, cfg: dict) -> bool:
     need = q.get("discovery_min_engagement", 15)
     if any(is_primary(domain_of(u), cfg["primary_domains"]) for u in tweet_urls(t)):
         need = min(need, 3)  # 一次情報リンク付きは基準を下げる（ゼロ反応は除外）
+    elif CAT.services:
+        text = tweet_text(t)
+        # 注目サービスの「動き」（調達・買収・新機能など）は、知名度が低くても拾えるよう基準を下げる
+        if CAT.mentions_any(text) and CAT.detect_events([text]):
+            need = min(need, q.get("service_event_min_engagement", 5))
     return engagement(t) >= need
 
 
@@ -209,6 +230,13 @@ def score_tweet(t: dict, user: dict | None, cfg: dict, now: datetime) -> dict:
 
     a = (user or {}).get("_author") or {}
     atype = "official" if tier == 1 else a.get("type", "")
+    off = CAT.official_by_profile(user) if tier == 0 else None
+    if off:
+        # 注目サービスの公式アカウント（プロフィールのリンク先が公式サイト＋ユーザー名に社名）
+        atype = "official"
+        a = {**a, "role": a.get("role") or f"{off['company'] or off['service']}公式"}
+        flags.add("official_profile")
+        pos.append(f"注目サービスの公式アカウント（{off['domain']}）")
     if atype in AUTHOR_TYPES and tier == 0:
         label, bonus = AUTHOR_TYPES[atype]
         cred += bonus
@@ -379,7 +407,7 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
 
     best = max(t["_s"]["cred"] for t in group)
     heat = max(t["_s"]["heat"] for t in group)
-    has_official = any(t["_s"]["tier"] == 1 for t in group)
+    has_official = any(t["_s"]["tier"] == 1 or "official_profile" in t["_s"]["flags"] for t in group)
     has_primary = any("primary" in t["_s"]["flags"] for t in group)
     rumor = any("rumor" in t["_s"]["flags"] for t in group) and not (has_official or has_primary)
 
@@ -400,7 +428,14 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
         verdict = "unverified"  # 出どころが小さい・裏付けなし
 
     corroboration = min(15, 5 * (len(credible) - 1)) if credible else 0
-    score = min(100, round(0.6 * best + 0.4 * heat + corroboration))
+    # 注目サービスのタグと「動き」（調達・買収・提携・新機能）。並び順を少し上げる
+    texts = [tweet_text(t) for t in group]
+    services = CAT.match_services(texts, [d for t in group for d in t["_s"]["domains"]])
+    events = CAT.detect_events(texts) if services else []
+    svc_bonus = 0
+    if services:
+        svc_bonus = 4 + (4 if any(x["tier"] == "niche" for x in services) else 0)  # ニッチ企業は大手に埋もれないように
+    score = min(100, round(0.6 * best + 0.4 * heat + corroboration + svc_bonus))
 
     links, seen = [], set()
     for t in group:
@@ -418,6 +453,9 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
         neg += [x for x in t["_s"]["neg"] if x not in neg]
     if len(credible) >= 2:
         pos.insert(0, f"独立した{len(credible)}アカウントが言及")
+    if services:
+        pos.append("注目サービス：" + "・".join(x["name"] for x in services[:3])
+                   + (f"（{'・'.join(events)}）" if events else ""))
 
     posts = []
     for t in group[:8]:
@@ -451,6 +489,8 @@ def build_cluster(group: list[dict], users: dict, cfg: dict) -> dict:
         "posts": posts, "links": links[:5],
         "reasons_pos": pos[:6], "reasons_neg": neg[:6], "llm_note": None,
         "points": [], "terms": [], "evidence": None, "evidence_label": None, "evidence_note": None,
+        "services": services[:4], "events": events[:3],
+        "value": None, "first_step": None, "usable": False,
     }
 
 
@@ -487,6 +527,15 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
     迷ったら: 本人が手を動かした証拠（手順・数値・成果物）が投稿から読み取れなければ hands_on_test にしない
 - evidence_note: 根拠の中身を20字以内で（例「arXiv論文」「公式ブログ」「日経の取材記事」「本人の感想」）
 - note: 判定理由を1文で。誰の発言か（posts の author_type / author_role）と根拠の強さを踏まえる
+- value: この情報を「どの程度の判断に使えるか」を3つの基準で1〜3の整数で評価する。読者の状況と目的は下の【読者】を使う
+    impact（効果の大きさ）: 1=小さな改善・話題性だけ / 2=一部の作業や製品選びで差が出る / 3=仕事のやり方や業界の地図を変えるほど
+    closeness（読者との近さ）: 1=読者の状況・目的から遠い / 2=間接的に関係する / 3=読者の目的に直接効く
+    try_cost（試すコストの低さ）: 3=今日すぐ無料か安価に試せる（日本から使える）/ 2=申込・有料プラン・設定が必要 /
+      1=企業契約のみ・未公開・順番待ちなど試せない（研究成果や資金調達のニュースで試す対象がなければ1）
+    why: 3つの評価の理由を40字以内で
+    数値は控えめに付ける。誇張された投稿でも、投稿から読み取れる事実だけで評価する
+- first_step: value の3項目がすべて2以上のときだけ、試すなら最初の一歩を40字以内で（「〜を試してみる」のような候補の形。
+    命令・断定はしない。選ぶのは読者）。それ以外は空文字
 - translations: 日本語以外（lang が ja でない）の投稿だけ、本文の自然な日本語訳。
     意訳しすぎず、数値・固有名詞・URLはそのまま残す。日本語の投稿は含めない
 
@@ -497,6 +546,9 @@ LLM_PROMPT = """あなたはAIニュースの編集者兼ファクトチェッ�
 - 意見・感想は summary の冒頭に【意見】と付け、「〜と述べた」のように誰の意見かが分かる書き方にする
 - 有名人や専門家の発言でも、根拠が示されていなければ evidence は opinion にする
 - 他人の成果を評価・解説するだけの投稿は commentary にする（報道機関の取材記事は reporting）
+
+【読者】
+{{PROFILE}}
 
 結果は submit_reviews ツールで提出してください。translations は [{"post_id":"投稿id","ja":"日本語訳"}] の形です。
 
@@ -528,12 +580,19 @@ REVIEW_TOOL = {
                         "note": {"type": "string"},
                         "evidence": {"type": "string", "enum": list(EVIDENCE)},
                         "evidence_note": {"type": "string"},
+                        "value": {"type": "object", "properties": {
+                            "impact": {"type": "integer", "minimum": 1, "maximum": 3},
+                            "closeness": {"type": "integer", "minimum": 1, "maximum": 3},
+                            "try_cost": {"type": "integer", "minimum": 1, "maximum": 3},
+                            "why": {"type": "string"}},
+                            "required": ["impact", "closeness", "try_cost"]},
+                        "first_step": {"type": "string"},
                         "translations": {"type": "array", "items": {
                             "type": "object",
                             "properties": {"post_id": {"type": "string"}, "ja": {"type": "string"}},
                             "required": ["post_id", "ja"]}},
                     },
-                    "required": ["id", "title", "summary", "points", "verdict", "note", "evidence"],
+                    "required": ["id", "title", "summary", "points", "verdict", "note", "evidence", "value"],
                 },
             }
         },
@@ -846,6 +905,51 @@ def apply_review(c: dict, r: dict):
             # 本人の制作・検証報告がリンク先にあるだけで「紹介」と誤判定されるのを防ぐ
             ev, note = "hands_on_test", "本人の制作・検証の報告"
     apply_evidence(c, ev, note)
+    apply_value(c, r.get("value"), r.get("first_step"))
+
+
+def _clamp3(v) -> int | None:
+    try:
+        return max(1, min(3, int(v)))
+    except (TypeError, ValueError):
+        return None
+
+
+def apply_value(c: dict, v, first_step=None):
+    """3つの基準（効果の大きさ・自分との近さ・試すコストの低さ）で「使える情報」かを決める。
+    判定（確認済み・有望など）は変えず、並び順と「今日の3件」の選び方にだけ使う。"""
+    if not isinstance(v, dict):
+        return
+    vals = {k: _clamp3(v.get(k)) for k in ("impact", "closeness", "try_cost")}
+    if None in vals.values():
+        return
+    c["value"] = {**vals, "why": (v.get("why") or "").strip()[:60]}
+    total = sum(vals.values())
+    c["score"] = max(0, min(100, c["score"] + 2 * (total - 6)))
+    c["usable"] = c["verdict"] in ("confirmed", "promising") and min(vals.values()) >= 2
+    fs = (first_step or "").strip()
+    c["first_step"] = fs[:60] if c["usable"] and fs else None
+
+
+def profile_text(cfg: dict) -> str:
+    pf = cfg.get("profile") or {}
+    lines = []
+    if pf.get("situation"):
+        lines.append(f"状況: {pf['situation']}")
+    for g in pf.get("goals") or []:
+        lines.append(f"解決したいこと: {g}")
+    return "\n".join(lines) or "AIに関心のある日本人の社会人（特定の目的は未設定）"
+
+
+def pick_digest(clusters: list[dict], now: datetime, n: int = 3, hours: int = 24) -> list[str]:
+    """AIは情報を増やすより絞り込むために使う: シグナルの中から「今日の3件」を選ぶ。"""
+    cand = [c for c in clusters if c["verdict"] in ("confirmed", "promising")
+            and (now - parse_ts(c["latest"])).total_seconds() <= hours * 3600]
+
+    def key(c):
+        v = c.get("value") or {}
+        return (bool(c.get("usable")), sum(v.get(k, 0) for k in ("impact", "closeness", "try_cost")), c["score"])
+    return [c["id"] for c in sorted(cand, key=key, reverse=True)[:n]]
 
 
 def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
@@ -871,13 +975,15 @@ def llm_review(clusters: list[dict], cfg: dict, cache: dict) -> int:
             "id": c["id"],
             "rule_verdict": c["verdict"],
             "links": [l["domain"] for l in c["links"]],
+            "services": [f"{x['name']}（{x['category_label']}）" for x in c.get("services", [])],
             "posts": [{"id": p["id"], "by": p["username"], "lang": p.get("lang", ""),
                        "author_type": p.get("author_type", ""), "author_role": p.get("author_role", ""),
                        "text": p["text"][:700]} for p in c["posts"][:5]],
         } for c, _ in chunk]
         try:
+            prompt = LLM_PROMPT.replace("{{PROFILE}}", profile_text(cfg))
             results = _call_claude(key, lc.get("model", "claude-haiku-5-5"),
-                                   LLM_PROMPT + json.dumps(payload, ensure_ascii=False))
+                                   prompt + json.dumps(payload, ensure_ascii=False))
         except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
             print(f"[llm] batch skipped: {e}", file=sys.stderr)
             continue
@@ -954,6 +1060,8 @@ def _archive_entry(c: dict, now: datetime) -> dict:
         "evidence": c.get("evidence"), "evidence_label": c.get("evidence_label"),
         "evidence_note": c.get("evidence_note"),
         "links": c["links"][:3],
+        "services": c.get("services", []), "events": c.get("events", []),
+        "value": c.get("value"), "first_step": c.get("first_step"), "usable": c.get("usable", False),
         "post": {"url": p0["url"], "username": p0["username"], "text": p0["text"][:500],
                  "text_ja": p0.get("text_ja")},
         "post_ids": [p["id"] for p in c["posts"]],
@@ -965,7 +1073,8 @@ def _archive_entry(c: dict, now: datetime) -> dict:
 def _merge_entry(old: dict, new: dict, live_ids: set | None = None) -> dict:
     """同じ話題の続報で上書きするときの統合ルール。"""
     if not new["summary"] and old.get("summary"):  # 要約がまだ無い回は前回の要約を残す
-        for k in ("title", "summary", "points", "terms", "evidence", "evidence_label", "evidence_note"):
+        for k in ("title", "summary", "points", "terms", "evidence", "evidence_label", "evidence_note",
+                  "value", "first_step", "usable"):
             new[k] = old.get(k)
     if old.get("verdict") == "confirmed":  # 一度「確認済み」になったものは格下げしない
         new["verdict"] = "confirmed"
@@ -989,8 +1098,16 @@ def _write_day_markdown(day: str, entries: list[dict]):
         if e.get("author_labels"):
             meta.append("発言者: " + "、".join(f"@{a['username']}" + (f"（{a['label']}）" if a.get("label") else "")
                                             for a in e["author_labels"][:3]))
+        if e.get("services"):
+            meta.append("サービス: " + "、".join(f"{x['name']}（{x.get('category_label', '')}）" for x in e["services"])
+                        + (f" ・ {'・'.join(e['events'])}" if e.get("events") else ""))
+        v = e.get("value")
+        if v:
+            meta.append(f"使える度: 効果{v['impact']}・近さ{v['closeness']}・試しやすさ{v['try_cost']}")
         if meta:
             lines += ["", " / ".join(meta)]
+        if e.get("first_step"):
+            lines += ["", f"試すなら: {e['first_step']}"]
         if e.get("summary"):
             lines += ["", e["summary"]]
         for pt in e.get("points") or []:
@@ -1186,6 +1303,26 @@ def _today_budget(state: dict, cfg: dict, now: datetime) -> float:
         return 0.0
 
 
+def discovery_queries(cfg: dict, cat: Catalog | None = None) -> list[tuple[str, str]]:
+    """探索の順番: 一般 → サービス1 → 一般 → サービス2 … （一般の探索が半分を占める）"""
+    cat = cat or CAT
+    main_q = ("discovery", re.sub(r"\s+", " ", cfg["discovery_query"]).strip())
+    watch = (cfg.get("profile") or {}).get("watch") or []
+    svc = cat.build_queries(watch, "-is:retweet -is:reply -is:quote (lang:ja OR lang:en)",
+                            max_len=cfg.get("fetch", {}).get("service_query_len", 480))
+    order = []
+    for i, q in enumerate(svc):
+        order += [main_q, (f"svc{i}", q)]
+    return order or [main_q]
+
+
+def next_discovery(cfg: dict, state: dict) -> tuple[str, str]:
+    order = discovery_queries(cfg)
+    i = state.get("disc_rot", 0) % len(order)
+    state["disc_rot"] = i + 1
+    return order[i]
+
+
 def month_key(now: datetime) -> str:
     return now.strftime("%Y-%m")
 
@@ -1200,6 +1337,7 @@ def main():
     cfg = yaml.safe_load((ROOT / "config" / "sources.yml").read_text(encoding="utf-8"))
     global CFG
     CFG = cfg
+    use_catalog(cfg, load_catalog())
     state = load_json(DATA / "state.json", {"since": {}, "spend": {}})
     user_cache = load_json(DATA / "users.json", {})
     store = load_json(DATA / "tweets.json", {})
@@ -1244,10 +1382,12 @@ def main():
                     state["since"][key] = max(res, key=lambda t: int(t["id"]))["id"]
                 fetched += res
             if disc_n:
-                q = re.sub(r"\s+", " ", cfg["discovery_query"]).strip()
-                res = client.search_recent(q, disc_n, state["since"].get("discovery"))
+                # 一般の探索と、注目サービスの「動き」の探索を交互に回す（取得件数・費用は同じ）
+                skey, q = next_discovery(cfg, state)
+                res = client.search_recent(q, disc_n, state["since"].get(skey))
                 if res:
-                    state["since"]["discovery"] = max(res, key=lambda t: int(t["id"]))["id"]
+                    state["since"][skey] = max(res, key=lambda t: int(t["id"]))["id"]
+                print(f"discovery[{skey}]: {q[:90]}…")
                 kept = [t for t in res if passes_discovery_gate(t, cfg)]
                 print(f"discovery: {len(res)} fetched, {len(kept)} passed the gate")
                 fetched += kept
@@ -1349,11 +1489,14 @@ def main():
         "stats": {
             "posts": len(tweets), "clusters": len(clusters), **counts, "dropped_low_quality": dropped,
             "llm_reviewed": reviewed,
+            "usable": sum(1 for c in clusters if c.get("usable")),
+            "service_topics": sum(1 for c in clusters if c.get("services") and c["verdict"] != "excluded"),
             "month_spend_usd": _cycle_spent(state, cfg, now),
             "month_budget_usd": cfg["budget"]["monthly_usd"],
             "today_spend_usd": state.get("daily_spend", {}).get(now.astimezone(JST).strftime("%Y-%m-%d"), 0.0),
             "today_budget_usd": round(_today_budget(state, cfg, now), 3),
         },
+        "digest": pick_digest(clusters, now),
         "clusters": clusters,
     }
     save_json(Path(args.out), feed)

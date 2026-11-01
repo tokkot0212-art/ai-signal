@@ -51,6 +51,24 @@ class TestCurate(unittest.TestCase):
         self.assertEqual(c["verdict"], "excluded")
         self.assertEqual(c["evidence"], "commentary")
 
+    def test_service_tag_event_and_official_profile(self):
+        c = self.find("Legora raises")
+        self.assertEqual([s["name"] for s in c["services"]], ["Legora"])
+        self.assertEqual(c["services"][0]["category_label"], "法務")
+        self.assertIn("資金調達", c["events"])
+        self.assertEqual(c["authors"][0]["type"], "official")   # プロフィールのリンク先が公式サイト
+        self.assertEqual(c["verdict"], "confirmed")
+
+    def test_usable_and_digest(self):
+        c = self.find("作業手順書の下書き")
+        self.assertTrue(c["usable"])
+        self.assertTrue(c["first_step"])
+        legora = self.find("Legora raises")
+        self.assertFalse(legora["usable"])          # 試せない（試すコスト1）ので「使える情報」ではない
+        self.assertIsNone(legora["first_step"])
+        self.assertEqual(self.feed["digest"][0], c["id"])
+        self.assertLessEqual(len(self.feed["digest"]), 3)
+
     def test_author_types_labeled(self):
         c = self.find("Introducing Orion-2")
         types = {a["username"]: a["type"] for a in c["authors"]}
@@ -192,6 +210,71 @@ class TestQualityAndArchive(unittest.TestCase):
         ids = self.c._guard_group([c("x", "OpenAIDevs", "Codex beta composer predictions"),
                                    c("y", "SakanaAILabs", "artificial life podcast Codex")])
         self.assertEqual(ids, ["x"])
+
+    def test_service_alias_is_case_sensitive(self):
+        cat = self.c.load_catalog()
+        self.assertEqual(cat.match_services(["I moved the cursor to the left"]), [])
+        self.assertEqual([s["name"] for s in cat.match_services(["Cursor shipped a new agent mode"])], ["Cursor"])
+        self.assertEqual([s["name"] for s in cat.match_services(["see"], ["parloa.com"])], ["Parloa"])
+        self.assertEqual(cat.match_services(["new post"], ["openai.com"]), [])   # 共有ドメインではタグを付けない
+
+    def test_official_by_profile_needs_handle_and_size(self):
+        cat = self.c.load_catalog()
+        prof = {"entities": {"url": {"urls": [{"expanded_url": "https://legora.com"}]}}}
+        self.assertTrue(cat.official_by_profile({**prof, "username": "LegoraHQ", "name": "Legora",
+                                                 "verified_type": "business"}))
+        # 社員の個人アカウント（表示名に社名）は公式にしない
+        self.assertIsNone(cat.official_by_profile({**prof, "username": "alice_k", "name": "Alice @Legora",
+                                                   "public_metrics": {"followers_count": 50000}}))
+        # 小さなアカウントはなりすまし対策で対象外
+        self.assertIsNone(cat.official_by_profile({**prof, "username": "legora_news", "name": "Legora",
+                                                   "public_metrics": {"followers_count": 100}}))
+
+    def test_service_event_lowers_gate(self):
+        self.c.use_catalog(self.cfg, self.c.load_catalog())
+        low = {"public_metrics": {"like_count": 6}}
+        self.assertTrue(self.c.passes_discovery_gate({**low, "text": "Parloa raises $350M Series D"}, self.cfg))
+        self.assertFalse(self.c.passes_discovery_gate({**low, "text": "Parloa は面白い"}, self.cfg))
+        self.assertFalse(self.c.passes_discovery_gate({**low, "text": "AI startup raises"}, self.cfg))
+
+    def test_discovery_alternates_general_and_services(self):
+        self.c.use_catalog(self.cfg, self.c.load_catalog())
+        st = {}
+        keys = [self.c.next_discovery(self.cfg, st)[0] for _ in range(4)]
+        self.assertEqual(keys[0], "discovery")
+        self.assertEqual(keys[2], "discovery")
+        self.assertTrue(keys[1].startswith("svc") and keys[3].startswith("svc") and keys[1] != keys[3])
+        for _, q in self.c.discovery_queries(self.cfg):
+            self.assertLessEqual(len(q), 512)
+
+    def test_value_needs_all_three(self):
+        base = {"verdict": "promising", "score": 50}
+        c = dict(base)
+        self.c.apply_value(c, {"impact": 3, "closeness": 3, "try_cost": 1}, "試す")
+        self.assertFalse(c["usable"])
+        self.assertIsNone(c["first_step"])
+        d = dict(base)
+        self.c.apply_value(d, {"impact": 2, "closeness": 2, "try_cost": 3}, "公開版を試してみる")
+        self.assertTrue(d["usable"])
+        self.assertEqual(d["first_step"], "公開版を試してみる")
+        e = dict(base, verdict="unverified")
+        self.c.apply_value(e, {"impact": 3, "closeness": 3, "try_cost": 3}, "x")
+        self.assertFalse(e["usable"])               # 根拠のない話は「使える」にしない
+
+    def test_archive_keeps_services_and_value(self):
+        from datetime import datetime, timezone
+        tmp = Path(tempfile.mkdtemp())
+        self.c.ARCHIVE = tmp
+        cl = dict(self._cl("A", ["1"], "2026-10-11T00:00:00Z", "s", "confirmed"),
+                  services=[{"name": "Legora", "category_label": "法務", "tier": "niche"}], events=["資金調達"],
+                  value={"impact": 2, "closeness": 3, "try_cost": 3, "why": "w"}, first_step="試す", usable=True)
+        self.c.archive([cl], datetime(2026, 10, 11, 3, tzinfo=timezone.utc))
+        e = json.loads((tmp / "days" / "2026-10-11.json").read_text(encoding="utf-8"))["items"][0]
+        self.assertEqual(e["services"][0]["name"], "Legora")
+        self.assertTrue(e["usable"])
+        md = (tmp / "days" / "2026-10-11.md").read_text(encoding="utf-8")
+        self.assertIn("サービス: Legora", md)
+        self.assertIn("試すなら: 試す", md)
 
     def test_migrate_monthly_archive(self):
         from datetime import datetime, timezone

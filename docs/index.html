@@ -71,6 +71,7 @@ h1{font-size:20px;letter-spacing:.02em;margin:0;font-weight:800}
 .filters[hidden]{display:none}
 .hist-bar{display:flex;flex-wrap:wrap;gap:6px;max-width:720px;margin:10px auto 0;align-items:center}
 .hist-bar[hidden]{display:none}
+.hist-bar [hidden]{display:none!important}
 .hist-bar select,.hist-bar input{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;min-width:0}
 .hist-bar input{flex:1 1 100%;order:-1}
 .hist-bar select{flex:1}
@@ -157,6 +158,36 @@ details[open] summary::after{content:" ▴"}
 .open{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:14px;font-weight:700;color:var(--accent);
   text-decoration:none;background:var(--blue-bg);padding:7px 14px;border-radius:10px}
 .empty{text-align:center;color:var(--sub);padding:48px 16px;font-size:14px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 0}
+.svc{font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--blue-bg);color:var(--blue)}
+.svc small{font-weight:500;margin-left:4px;opacity:.85}
+.svc.niche{background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent)}
+.evt{font-size:12px;font-weight:800;border-radius:999px;padding:2px 9px;border:1px dashed var(--accent);color:var(--accent)}
+.val{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0 2px}
+.val div{background:var(--chip);border-radius:10px;padding:6px 8px;font-size:11.5px;color:var(--sub);text-align:center}
+.val b{display:block;font-size:13px;color:var(--ink);letter-spacing:2px;margin-top:1px}
+.val-why{font-size:12.5px;color:var(--sub);margin:4px 0 0}
+.usable{font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:999px;color:var(--bg);background:var(--ok)}
+.step{margin:8px 0 2px;padding:9px 12px;border-radius:10px;border:1px solid color-mix(in srgb,var(--ok) 45%,transparent);font-size:14px}
+.step span{display:block;font-size:11px;font-weight:800;color:var(--ok);margin-bottom:2px}
+.card{scroll-margin-top:170px}
+.digest{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin:0 0 14px}
+.digest h2{font-size:14px;margin:0 0 2px}
+.digest p.d-sub{font-size:12px;color:var(--sub);margin:0 0 8px}
+.digest ol{margin:0;padding-left:1.3em}
+.digest li{margin:6px 0;font-size:14.5px;line-height:1.5}
+.digest li a{color:var(--ink);text-decoration:none;font-weight:700}
+.digest li small{display:block;color:var(--sub);font-size:12px;font-weight:500}
+.hsec{font-size:13px;font-weight:800;color:var(--sub);margin:14px 0 6px}
+.quiz{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 14px}
+.quiz .qk{font-size:11.5px;font-weight:800;color:var(--accent);margin-bottom:6px}
+.quiz .qq{font-size:16.5px;font-weight:750;line-height:1.5;margin:0 0 10px}
+.quiz .qa{background:var(--chip);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;margin:0 0 10px}
+.quiz .qa ul{margin:4px 0 0;padding-left:1.2em}
+.qbtns{display:flex;gap:8px;flex-wrap:wrap}
+.qbtn{border:0;border-radius:10px;padding:9px 14px;font:inherit;font-size:14px;font-weight:700;background:var(--chip);color:var(--ink)}
+.qbtn.pri{background:var(--accent);color:#fff}
+.quiz .qmeta{font-size:12px;color:var(--sub);margin-top:10px}
 footer{max-width:720px;margin:4px auto 0;padding:0 16px;font-size:12px;color:var(--sub);text-align:center}
 </style>
 </head>
@@ -181,6 +212,7 @@ footer{max-width:720px;margin:4px auto 0;padding:0 16px;font-size:12px;color:var
     <button class="chip" data-h="24" aria-pressed="true">24時間</button>
     <button class="chip" data-h="72" aria-pressed="false">3日</button>
     <button class="chip" data-unread aria-pressed="false">未読のみ</button>
+    <button class="chip" data-usable aria-pressed="false">使える情報</button>
   </div>
   <div class="hist-bar" id="histbar" hidden>
     <button class="chip navb" id="hprev" aria-label="前の日">‹</button>
@@ -188,6 +220,7 @@ footer{max-width:720px;margin:4px auto 0;padding:0 16px;font-size:12px;color:var
     <button class="chip navb" id="hnext" aria-label="次の日">›</button>
     <input id="hq" type="search" placeholder="全期間をキーワード検索（例: Claude, 論文）" autocomplete="off">
     <button class="chip" id="hconf" aria-pressed="false">確認済みのみ</button>
+    <button class="chip" id="hquiz" aria-pressed="false">復習</button>
   </div>
 </header>
 <main id="main"></main>
@@ -199,14 +232,14 @@ const INTRO = {
   signal:"公式発表・論文やデータ・取材報道・本人が手を動かした検証など、根拠のある話題だけを表示しています。",
   unverified:"噂・リーク・出典不明の話題と、根拠を示さない意見・感想（専門家の発言を含む）。裏付けが出れば「シグナル」へ移ります。",
   excluded:"釣り・回数稼ぎ・宣伝、AIと無関係な投稿、他人の成果を論評・解説しただけの投稿。判定理由を確認できます。",
-  history:"「シグナル」に入った話題を、最初に見つけた日ごとに記録しています。‹ › で前後の日へ。検索は全期間が対象です。"
+  history:"「シグナル」に入った話題を、最初に見つけた日ごとに記録しています。あなたが開いた話題は「最近使った」として上に集まります。検索は全期間が対象です。"
 };
 const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 };
 let feed = null;
-let state = { tab: store.get("tab","signal"), hours: store.get("hours",24), unread: store.get("unread",false) };
+let state = { tab: store.get("tab","signal"), hours: store.get("hours",24), unread: store.get("unread",false), usable: store.get("usable",false) };
 let readSet = new Set(store.get("read", []));
 
 const $ = s => document.querySelector(s);
@@ -234,9 +267,14 @@ function render(){
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.tab === state.tab));
   const isHist = state.tab === "history";
   $("#filters").hidden = isHist; $("#histbar").hidden = !isHist;
+  const timed0 = feed.clusters.filter(inTime);
+  $("#n-signal").textContent = timed0.filter(c => c.verdict==="confirmed"||c.verdict==="promising").length;
+  $("#n-unverified").textContent = timed0.filter(c => c.verdict==="unverified").length;
+  $("#n-excluded").textContent = timed0.filter(c => c.verdict==="excluded").length;
   if (isHist){ renderHistory(); return; }
   document.querySelectorAll("#filters .chip").forEach(b => {
-    b.setAttribute("aria-pressed", b.hasAttribute("data-unread") ? state.unread : Number(b.dataset.h) === state.hours);
+    b.setAttribute("aria-pressed", b.hasAttribute("data-unread") ? state.unread
+      : b.hasAttribute("data-usable") ? state.usable : Number(b.dataset.h) === state.hours);
   });
   const timed = feed.clusters.filter(inTime);
   $("#n-signal").textContent = timed.filter(c => c.verdict==="confirmed"||c.verdict==="promising").length;
@@ -245,6 +283,7 @@ function render(){
 
   let list = timed.filter(inTab);
   if (state.unread) list = list.filter(c => !readSet.has(c.id));
+  if (state.usable) list = list.filter(c => c.usable);
 
   let html = "";
   if (feed.demo) html += `<div class="banner">サンプルデータを表示しています（架空の投稿）。X APIキーを設定すると本物のフィードに切り替わります。</div>`;
@@ -252,6 +291,7 @@ function render(){
   if (!feed.demo && !(feed.stats||{}).llm_reviewed && feed.clusters.some(c => c.verdict !== "excluded"))
     html += `<div class="banner">日本語の概要・解説は、GitHub Secrets に ANTHROPIC_API_KEY を登録すると表示されます。</div>`;
   html += `<p class="intro">${INTRO[state.tab]}</p>`;
+  if (state.tab === "signal") html += digestBox();
   html += list.length ? list.map(card).join("") : `<div class="empty">この条件に当てはまる話題はありません</div>`;
   $("#main").innerHTML = html;
 
@@ -273,7 +313,25 @@ function overview(c){
 }
 
 // ---------------- 履歴（日付ごと）
-const hist = { index:null, day:null, data:{}, q:"", conf: store.get("hconf", false), days:[] };
+const hist = { index:null, day:null, data:{}, q:"", conf: store.get("hconf", false), days:[], quiz:false, reveal:false };
+// 使ったもの（開いた話題）を上に: 開いた順に記録する。タグやフォルダ分けはしない
+let opened = store.get("opened", []);
+const jstDay = iso => new Date(new Date(iso).getTime() + 9*3600e3).toISOString().slice(0,10);
+function noteOpened(o){
+  if (!o.id) return;
+  opened = [{...o, at: Date.now()}, ...opened.filter(x => x.id !== o.id)].slice(0, 300);
+  store.set("opened", opened);
+}
+function shiftDay(d, n){ const t = new Date(d + "T00:00:00Z"); t.setUTCDate(t.getUTCDate()+n); return t.toISOString().slice(0,10); }
+async function findEntry(o){
+  for (const d of [o.day, shiftDay(o.day,-1), shiftDay(o.day,1)]){
+    if (!hist.days.includes(d)) continue;
+    await loadDay(d);
+    const e = (hist.data[d]||[]).find(e => e.id === o.id || (o.pid && (e.post_ids||[]).includes(o.pid)));
+    if (e) return e;
+  }
+  return null;
+}
 const WD = "日月火水木金土";
 function dayLabel(d){
   const [y,m,dd] = d.split("-").map(Number);
@@ -301,7 +359,7 @@ async function loadDay(d){
   if (!d || hist.data[d]) return;
   try{
     const r = await fetch(`archive/days/${d}.json?t=` + Date.now(), {cache:"no-store"});
-    hist.data[d] = r.ok ? (await r.json()).items || [] : [];
+    hist.data[d] = (r.ok ? (await r.json()).items || [] : []).map(e => ({...e, _day: d}));
   }catch(e){ hist.data[d] = []; }
 }
 function hl(text, q){
@@ -317,21 +375,78 @@ function histItem(e, q){
   const post = e.post ? `<div class="post"><div class="who">@${esc(e.post.username)}</div>
       ${e.post.text_ja ? `<div class="ja"><span class="ja-tag">日本語訳</span>${hl(e.post.text_ja,q)}</div><div class="txt orig">${esc(e.post.text)}</div>` : `<div class="txt">${hl(e.post.text,q)}</div>`}
       <div class="meta"><a href="${esc(e.post.url)}" target="_blank" rel="noopener">Xで開く ↗</a></div></div>` : "";
-  return `<details class="hitem"><summary>
-      <div class="row"><span class="badge b-${e.verdict}">${LABEL[e.verdict]}</span>${evChip(e)}<span class="count">${e.post_count}件の投稿</span></div>
+  return `<details class="hitem" data-open="${esc(e.id)}" data-day="${esc(e._day||"")}"><summary>
+      <div class="row"><span class="badge b-${e.verdict}">${LABEL[e.verdict]}</span>${evChip(e)}${e.usable ? `<span class="usable">使える</span>` : ""}<span class="count">${e.post_count}件の投稿</span></div>
       <div class="authors">${byExpertise(e.author_labels || (e.authors||[]).map(u=>({username:u}))).slice(0,3).map(a=>authorChip({...a, role:a.label})).join("")}</div>
-      <div class="ht">${hl(e.title,q)}</div>${e.summary ? `<div class="hs">${hl(e.summary,q)}</div>` : ""}
+      <div class="ht">${hl(e.title,q)}</div>${tags(e)}${e.summary ? `<div class="hs">${hl(e.summary,q)}</div>` : ""}
     </summary><div class="hb">
+      ${valueBlock(e)}
       ${e.summary ? `<div class="ov"><div class="ov-h">概要</div><p>${hl(e.summary,q)}</p>${pts}${terms}</div>` : ""}
       ${links}${post}
     </div></details>`;
 }
 function matches(e, q){
   return [e.title, e.summary, (e.points||[]).join(" "), (e.terms||[]).map(t=>t.term).join(" "),
-    e.post && e.post.text, e.post && e.post.text_ja, (e.authors||[]).join(" "), e.evidence_label].join(" ").toLowerCase().includes(q);
+    e.post && e.post.text, e.post && e.post.text_ja, (e.authors||[]).join(" "), e.evidence_label,
+    (e.services||[]).map(x => `${x.name} ${x.company||""} ${x.category_label||""}`).join(" "), (e.events||[]).join(" ")].join(" ").toLowerCase().includes(q);
 }
+async function recentSection(){
+  const out = [];
+  for (const o of opened.slice(0, 8)){
+    const e = await findEntry(o);
+    if (e && !out.some(x => x.id === e.id)) out.push(e);
+    if (out.length >= 5) break;
+  }
+  return out.length ? `<div class="hsec">最近使った（開いた順）</div>` + out.map(e => histItem(e, "")).join("") : "";
+}
+
+// ---- 復習（検索学習）: 開いて1日以上寝かせた話題を、クイズ形式で思い出す
+const REST_MS = 20 * 3600e3;
+const NEXT_DAYS = [3, 7, 14, 30];
+async function quizCards(){
+  const rv = store.get("rv", {}), now = Date.now(), cards = [];
+  for (const o of opened.filter(o => now - o.at >= REST_MS).slice(0, 40)){
+    const e = await findEntry(o); if (!e) continue;
+    if (e.summary) cards.push({k: e.id, kind: "要点", q: `「${e.title}」は、何が新しく、なぜ重要でしたか？`, e});
+    (e.terms||[]).forEach(t => cards.push({k: `${e.id}|${t.term}`, kind: "用語", q: `「${t.term}」とは？`, a: t.desc, e}));
+  }
+  return cards.filter(c => !rv[c.k] || rv[c.k].next <= now);
+}
+async function renderQuiz(){
+  let html = `<p class="intro">読んだ内容を思い出す練習（検索学習）です。開いてから1日以上寝かせた話題が出てきます。思い出してから答えを見てください。</p>`;
+  const cards = await quizCards();
+  if (state.tab !== "history" || !hist.quiz) return;
+  if (!cards.length){
+    html += `<div class="empty">いま復習する話題はありません。<br>気になった話題を開いておくと、1日後からここに出てきます。</div>`;
+  } else {
+    const c = cards[0];
+    const ans = c.kind === "用語" ? `<p style="margin:0">${esc(c.a)}</p>`
+      : `<p style="margin:0">${esc(c.e.summary)}</p>${(c.e.points||[]).length ? `<ul>${c.e.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}`;
+    html += `<section class="quiz"><div class="qk">${c.kind}の復習 ・ 残り${cards.length}問</div><p class="qq">${esc(c.q)}</p>`
+      + (hist.reveal
+        ? `<div class="qa">${ans}</div><div class="qbtns"><button class="qbtn pri" data-q="ok" data-k="${esc(c.k)}">思い出せた</button><button class="qbtn" data-q="ng" data-k="${esc(c.k)}">まだあいまい</button></div>`
+        : `<div class="qbtns"><button class="qbtn pri" data-q="show">答えを見る</button></div>`)
+      + `<div class="qmeta">出典：${dayLabel(c.e._day)}の記録</div></section>`;
+  }
+  $("#main").innerHTML = html;
+  $("#footer").textContent = `開いた話題 ${opened.length}件 ・ 思い出せた話題は 3→7→14→30日後に再登場`;
+}
+function gradeQuiz(k, ok){
+  const rv = store.get("rv", {}), cur = rv[k] || {n: 0};
+  const n = ok ? cur.n + 1 : 0;
+  const days = ok ? NEXT_DAYS[Math.min(n - 1, NEXT_DAYS.length - 1)] : 1;
+  rv[k] = {n, next: Date.now() + days * 86400e3};
+  store.set("rv", rv);
+  hist.reveal = false;
+  renderQuiz();
+}
+
 async function renderHistory(){
   $("#hconf").setAttribute("aria-pressed", hist.conf);
+  $("#hquiz").setAttribute("aria-pressed", hist.quiz);
+  $("#hquiz").textContent = hist.quiz ? "復習を終える" : "復習";
+  ["#hprev","#hnext","#hmonth","#hq","#hconf"].forEach(sel => $(sel).hidden = hist.quiz);
+  if (hist.quiz){ await loadHistoryIndex(); return renderQuiz(); }
   $("#main").innerHTML = `<p class="intro">${INTRO.history}</p><div class="empty">読み込み中…</div>`;
   await loadHistoryIndex();
   if (!hist.day){ $("#main").innerHTML = `<p class="intro">${INTRO.history}</p><div class="empty">まだ履歴はありません。次回の自動更新から記録されます。</div>`; return; }
@@ -357,7 +472,9 @@ async function renderHistory(){
     $("#footer").textContent = `全${hist.days.length}日分から ${total}件 見つかりました`;
   } else {
     await loadDay(hist.day);
+    const recent = await recentSection();
     if (state.tab !== "history") return;
+    html += recent;
     let items = hist.data[hist.day] || [];
     if (hist.conf) items = items.filter(e => e.verdict === "confirmed");
     html += `<div class="hday">${dayLabel(hist.day)}</div>`;
@@ -365,6 +482,28 @@ async function renderHistory(){
     $("#footer").textContent = `記録 ${hist.days.length}日分 ・ この日 ${(hist.data[hist.day]||[]).length}件`;
   }
   $("#main").innerHTML = html;
+}
+
+const DOTS = n => "●".repeat(n) + "○".repeat(3 - n);
+function tags(e){
+  const sv = (e.services||[]).map(x => `<span class="svc ${x.tier==="niche"?"niche":""}">${esc(x.name)}${x.category_label?`<small>${esc(x.category_label)}</small>`:""}</span>`);
+  const ev = (e.events||[]).map(x => `<span class="evt">${esc(x)}</span>`);
+  return sv.length || ev.length ? `<div class="tags">${sv.join("")}${ev.join("")}</div>` : "";
+}
+function valueBlock(e){
+  const v = e.value; if (!v) return "";
+  return `<div class="val"><div>効果の大きさ<b>${DOTS(v.impact)}</b></div><div>自分との近さ<b>${DOTS(v.closeness)}</b></div><div>試しやすさ<b>${DOTS(v.try_cost)}</b></div></div>`
+    + (v.why ? `<p class="val-why">${esc(v.why)}</p>` : "")
+    + (e.first_step ? `<div class="step"><span>試すなら（候補・選ぶのはあなた）</span>${esc(e.first_step)}</div>` : "");
+}
+function digestBox(){
+  const ids = (feed.digest||[]); if (!ids.length) return "";
+  const by = Object.fromEntries(feed.clusters.map(c => [c.id, c]));
+  const items = ids.map(id => by[id]).filter(Boolean);
+  if (!items.length) return "";
+  return `<section class="digest"><h2>今日の3件</h2><p class="d-sub">根拠のある話題から「効果・近さ・試しやすさ」で絞り込みました。どれを使うかはあなたが決めてください。</p><ol>`
+    + items.map(c => `<li><a href="#c-${c.id}">${esc(c.title)}</a>${c.value ? `<small>${c.usable ? "使える情報 ・ " : ""}効果${DOTS(c.value.impact)} 近さ${DOTS(c.value.closeness)} 試しやすさ${DOTS(c.value.try_cost)}</small>` : ""}</li>`).join("")
+    + `</ol></section>`;
 }
 
 const EV_OK = {official_announcement:1, paper_or_data:1, reporting:1, hands_on_test:1, expert_analysis:1};
@@ -404,12 +543,14 @@ function card(c){
   return `<article class="card ${readSet.has(c.id)?"read":""}" id="c-${c.id}">
     <div class="row">
       <span class="badge b-${c.verdict}">${LABEL[c.verdict]}</span>
-      ${evChip(c)}
+      ${evChip(c)}${c.usable ? `<span class="usable">使える</span>` : ""}
       <span class="time">${ago(c.latest, ref)}</span>
       <span class="count">${c.post_count}件の投稿 · ${c.authors.length}人</span>
     </div>
     <div class="title">${esc(c.title)}</div>
+    ${tags(c)}
     ${overview(c)}
+    ${valueBlock(c)}
     <div class="meters">
       <div class="meter"><label>信頼度 <b>${c.credibility}</b></label><div class="track"><div class="fill" style="width:${c.credibility}%;background:${barColor(c.credibility)}"></div></div></div>
       <div class="meter"><label>熱量 <b>${c.heat}</b></label><div class="track"><div class="fill" style="width:${c.heat}%;background:var(--accent)"></div></div></div>
@@ -426,6 +567,8 @@ function card(c){
 }
 
 function markRead(id){
+  const c = feed && feed.clusters.find(x => x.id === id);
+  if (c) noteOpened({id, day: jstDay(c.first_seen), pid: c.posts[0] && c.posts[0].id, title: c.title});
   if (readSet.has(id)) return;
   readSet.add(id);
   store.set("read", [...readSet].slice(-800));
@@ -457,6 +600,7 @@ document.querySelector(".tabs").addEventListener("click", e => {
 $("#filters").addEventListener("click", e => {
   const b = e.target.closest(".chip"); if (!b) return;
   if (b.hasAttribute("data-unread")){ state.unread = !state.unread; store.set("unread", state.unread); }
+  else if (b.hasAttribute("data-usable")){ state.usable = !state.usable; store.set("usable", state.usable); }
   else { state.hours = Number(b.dataset.h); store.set("hours", state.hours); }
   render();
 });
@@ -465,6 +609,10 @@ $("#main").addEventListener("click", e => {
 });
 $("#main").addEventListener("toggle", e => {
   if (e.target.matches("details[data-read]") && e.target.open) markRead(e.target.dataset.read);
+  if (e.target.matches("details[data-open]") && e.target.open){
+    const d = e.target.dataset.day, e2 = (hist.data[d]||[]).find(x => x.id === e.target.dataset.open);
+    noteOpened({id: e.target.dataset.open, day: d, pid: e2 && (e2.post_ids||[])[0], title: e2 && e2.title});
+  }
 }, true);
 $("#refresh").addEventListener("click", () => { hist.index = null; hist.data = {}; load(true); });
 $("#hmonth").addEventListener("change", e => { hist.day = e.target.value; renderHistory(); window.scrollTo({top:0}); });
@@ -472,6 +620,12 @@ $("#hprev").addEventListener("click", () => { const i = hist.days.indexOf(hist.d
 $("#hnext").addEventListener("click", () => { const i = hist.days.indexOf(hist.day); if (i > 0){ hist.day = hist.days[i-1]; renderHistory(); window.scrollTo({top:0}); } });
 let hqTimer; $("#hq").addEventListener("input", e => { clearTimeout(hqTimer); hqTimer = setTimeout(() => { hist.q = e.target.value; renderHistory(); }, 200); });
 $("#hconf").addEventListener("click", () => { hist.conf = !hist.conf; store.set("hconf", hist.conf); renderHistory(); });
+$("#hquiz").addEventListener("click", () => { hist.quiz = !hist.quiz; hist.reveal = false; renderHistory(); window.scrollTo({top:0}); });
+$("#main").addEventListener("click", e => {
+  const b = e.target.closest("[data-q]"); if (!b) return;
+  if (b.dataset.q === "show"){ hist.reveal = true; renderQuiz(); }
+  else gradeQuiz(b.dataset.k, b.dataset.q === "ok");
+});
 document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
 
 if ("serviceWorker" in navigator) {

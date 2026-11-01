@@ -1,0 +1,87 @@
+# =========================================================
+#  注目するAIサービス一覧（アルゴリズムが参照するカタログ）
+#  元にした情報: 2026年9月に整理した「カリフォルニア発の大手AIエージェント」と
+#                「大手に買収されてもおかしくないニッチ領域のAIエージェント20社＋Vesence」
+#
+#  使われ方（すべて追加費用なし）
+#   1. 投稿にサービス名が出たら、話題に「サービス名・分野」のタグを付ける
+#   2. 注目サービスの話題は並び順を少し上げる（ニッチ企業はさらに少し上げ、大手の話題に埋もれないようにする）
+#   3. 資金調達・買収・提携・新機能などの「動き」を自動で見分けてタグにする
+#   4. 公式サイト（domains）へのリンクは「一次情報」として扱う
+#   5. プロフィールのリンク先が公式サイトで、名前に会社名が入っている大きめのアカウントは「公式」と判定する
+#   6. キーワード探索の一部を、ここにある名前の「発表・調達・買収」の検索に回す（取得件数・費用は変わらない）
+#
+#  追加のしかた: 下の services に1件足すだけ。
+#   aliases … 投稿の中で探す名前。大文字小文字を区別します（"Cursor" と一般語の "cursor" を区別するため）
+#   query   … X 検索に使う語（空なら探索の検索には使わない）
+#   domains … 確認できた公式サイトだけを書く（他人のサイトを書くと誤って信頼してしまうため）
+# =========================================================
+
+categories:
+  work: 業務・汎用
+  coding: コーディング
+  browser: ブラウザ・PC操作
+  platform: エージェント基盤
+  legal: 法務
+  medical: 医療
+  voice: 音声・顧客対応
+  finance: 金融・経理
+  security: セキュリティ
+  logistics: 物流
+  manufacturing: 製造
+  restaurant: 飲食
+
+# サービス名と一緒に出たら「動き」とみなす表現（大文字小文字は区別しない）
+events:
+  funding:
+    label: 資金調達
+    words: [raises, raised, "Series A", "Series B", "Series C", "Series D", "Series E", seed round, funding round,
+            valuation, 資金調達, 調達, 評価額, シリーズA, シリーズB, シリーズC, シリーズD]
+  acquisition:
+    label: 買収
+    words: [acquires, acquired, acquisition, to acquire, 買収, 傘下]
+  partnership:
+    label: 提携
+    words: [partnership, partners with, partnering, 提携, 協業, 連携を発表]
+  launch:
+    label: 新機能・公開
+    words: [launch, launches, launched, introducing, now available, released, rolling out, general availability,
+            リリース, 提供開始, 公開, 発表, 新機能, 一般提供]
+
+# 探索の検索で、サービス名と組み合わせる語（X検索。大文字小文字は区別されない）
+event_query: (launch OR launches OR introducing OR raises OR acquires OR acquisition OR "Series" OR リリース OR 提供開始 OR 資金調達 OR 買収 OR 提携)
+
+services:
+  # ---- 大手（カリフォルニア本社）----
+  - {name: ChatGPT Work, company: OpenAI, category: work, tier: major, aliases: [ChatGPT Work, Workspace Agents], query: '"ChatGPT Work"', domains: [openai.com]}
+  - {name: Codex, company: OpenAI, category: coding, tier: major, aliases: [Codex], query: '"OpenAI Codex"', domains: [openai.com]}
+  - {name: Claude Code, company: Anthropic, category: coding, tier: major, aliases: [Claude Code], query: '"Claude Code"', domains: [anthropic.com, claude.com]}
+  - {name: Claude Cowork, company: Anthropic, category: work, tier: major, aliases: [Claude Cowork, Claude in Chrome], query: '"Claude in Chrome"', domains: [anthropic.com, claude.com]}
+  - {name: Gemini Enterprise, company: Google, category: platform, tier: major, aliases: [Gemini Enterprise], query: '"Gemini Enterprise"', domains: [blog.google, cloud.google.com]}
+  - {name: Gemini Computer Use, company: Google, category: browser, tier: major, aliases: [Gemini Computer Use, Project Mariner], query: '"Gemini Computer Use"', domains: [blog.google, deepmind.google]}
+  - {name: Agentforce, company: Salesforce, category: work, tier: major, aliases: [Agentforce], query: Agentforce, domains: [salesforce.com]}
+  - {name: Cursor, company: Anysphere, category: coding, tier: major, aliases: [Cursor, Anysphere], query: '"Cursor AI" OR Anysphere', domains: [cursor.com]}
+  - {name: Devin, company: Cognition, category: coding, tier: major, aliases: [Devin AI, Cognition AI, Windsurf], query: '"Cognition AI" OR "Devin AI"', domains: [cognition.ai, devin.ai]}
+
+  # ---- ニッチ領域（大手の買収候補）----
+  - {name: Legora, company: Legora, category: legal, tier: niche, aliases: [Legora], query: Legora, domains: [legora.com]}
+  - {name: Wordsmith, company: Wordsmith, category: legal, tier: niche, aliases: [Wordsmith AI], query: '"Wordsmith AI"', domains: []}
+  - {name: Luminance, company: Luminance, category: legal, tier: niche, aliases: [Luminance AI, Luminance legal], query: '"Luminance AI"', domains: [luminance.com]}
+  - {name: Vesence, company: Vesence, category: legal, tier: niche, aliases: [Vesence], query: Vesence, domains: [vesence.com]}
+  - {name: Parloa, company: Parloa, category: voice, tier: niche, aliases: [Parloa], query: Parloa, domains: [parloa.com]}
+  - {name: PolyAI, company: PolyAI, category: voice, tier: niche, aliases: [PolyAI, Poly AI], query: PolyAI, domains: [poly.ai]}
+  - {name: RevComm, company: RevComm, category: voice, tier: niche, aliases: [RevComm, レブコム, MiiTel], query: RevComm OR レブコム OR MiiTel, domains: [revcomm.co.jp]}
+  - {name: Nabla, company: Nabla, category: medical, tier: niche, aliases: [Nabla AI, Nabla Copilot], query: '"Nabla AI"', domains: [nabla.com]}
+  - {name: Tandem Health, company: Tandem Health, category: medical, tier: niche, aliases: [Tandem Health], query: '"Tandem Health"', domains: [tandemhealth.ai]}
+  - {name: Heidi Health, company: Heidi Health, category: medical, tier: niche, aliases: [Heidi Health, Heidi AI], query: '"Heidi Health"', domains: [heidihealth.com]}
+  - {name: Unique, company: Unique AG, category: finance, tier: niche, aliases: [Unique AG, Unique AI], query: '"Unique AI" agentic', domains: []}
+  - {name: LayerX, company: LayerX, category: finance, tier: niche, aliases: [LayerX, バクラク, Ai Workforce], query: LayerX OR バクラク, domains: [layerx.co.jp]}
+  - {name: Dust, company: Dust, category: platform, tier: niche, aliases: [Dust.tt, dust.tt], query: '"dust.tt"', domains: [dust.tt]}
+  - {name: Langdock, company: Langdock, category: platform, tier: niche, aliases: [Langdock], query: Langdock, domains: [langdock.com]}
+  - {name: H Company, company: H Company, category: browser, tier: niche, aliases: [H Company, Surfer-H, Surfer H], query: '"H Company" agent', domains: [hcompany.ai]}
+  - {name: Qodo, company: Qodo, category: coding, tier: niche, aliases: [Qodo, CodiumAI], query: Qodo, domains: [qodo.ai]}
+  - {name: Emergent, company: Emergent, category: coding, tier: niche, aliases: [Emergent.sh, emergent.sh, Emergent AI], query: '"emergent.sh" OR "Emergent AI"', domains: [emergent.sh]}
+  - {name: Hadrian, company: Hadrian, category: security, tier: niche, aliases: [Hadrian Security, Hadrian AI], query: '"Hadrian" security agent', domains: []}
+  - {name: Cargofy, company: Cargofy, category: logistics, tier: niche, aliases: [Cargofy], query: Cargofy, domains: []}
+  - {name: Juna.ai, company: Juna.ai, category: manufacturing, tier: niche, aliases: [Juna.ai, Juna AI], query: '"Juna.ai" OR "Juna AI"', domains: []}
+  - {name: allO, company: allO, category: restaurant, tier: niche, aliases: [allO], query: '"allO" restaurant', domains: [allo.restaurant]}

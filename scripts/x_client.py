@@ -15,7 +15,7 @@ import urllib.request
 
 API = "https://api.x.com/2"
 TWEET_FIELDS = "created_at,author_id,public_metrics,entities,lang,note_tweet,referenced_tweets"
-USER_FIELDS = "created_at,public_metrics,verified,verified_type,description,profile_image_url,name,username"
+USER_FIELDS = "created_at,public_metrics,verified,verified_type,description,profile_image_url,name,username,url,entities"
 
 
 class XClient:

@@ -40,7 +40,13 @@
     "1002": "社内の評価セットでOrion-2を試しました。数学には強いものの、長い文脈からの情報検索はレポートが示すほどではありません。メモはこちら："
    },
    "evidence": "official_announcement",
-   "evidence_note": "GitHubの公式公開"
+   "evidence_note": "GitHubの公式公開",
+   "value": {
+    "impact": 3,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "研究上の影響は大きいが、読者の目的からは遠い"
+   }
   },
   "1008": {
    "title": "小型エージェントが大型に勝つ手法の論文",
@@ -156,6 +162,51 @@
    "note": "本人が実機で動かした結果。",
    "evidence": "hands_on_test",
    "evidence_note": "RTX 4090で実際に動作"
+  },
+  "1013": {
+   "title": "Legoraが追加の資金調達を発表",
+   "summary": "リーガルAIのLegora（架空のサンプル投稿）が、法律事務所向けAIエージェントの展開のため資金調達を発表しました。",
+   "points": [
+    "法務分野のAIエージェントに資金が集まり続けている",
+    "大手による買収候補として注目される企業の一つ"
+   ],
+   "terms": [],
+   "verdict": "confirmed",
+   "note": "公式アカウントの発表で、公式ブログへのリンクがあるため。",
+   "evidence": "official_announcement",
+   "evidence_note": "公式ブログ",
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "業界動向として重要だが、個人がすぐ試せる製品ではない"
+   },
+   "first_step": ""
+  },
+  "1014": {
+   "title": "Claude Codeで手順書の下書きを自動作成",
+   "summary": "開発者が、写真と口頭メモから作業手順書の下書きを作るスクリプトをClaude Codeで作り、15分で初版ができたと報告しました。",
+   "points": [
+    "写真とメモから下書きまで自動化し、人は確認と修正に集中できる",
+    "現場ごとの書式に合わせる調整は別途必要"
+   ],
+   "terms": [
+    {
+     "term": "Claude Code",
+     "desc": "Anthropicのコーディング用AIエージェント"
+    }
+   ],
+   "verdict": "promising",
+   "note": "本人が作って試した結果で、手順と成果物が公開されている。",
+   "evidence": "hands_on_test",
+   "evidence_note": "本人の制作報告",
+   "value": {
+    "impact": 2,
+    "closeness": 3,
+    "try_cost": 3,
+    "why": "手順書づくりに直結し、公開コードで今日試せる"
+   },
+   "first_step": "手元の手順書1枚分の写真とメモで、公開スクリプトを試してみる"
   }
  },
  "users": [
@@ -260,6 +311,45 @@
    "public_metrics": {
     "followers_count": 60000,
     "following_count": 800
+   }
+  },
+  {
+   "id": "u11",
+   "username": "LegoraHQ",
+   "name": "Legora",
+   "created_at": "2023-01-10T00:00:00Z",
+   "verified_type": "business",
+   "public_metrics": {
+    "followers_count": 15000,
+    "following_count": 40
+   },
+   "entities": {
+    "url": {
+     "urls": [
+      {
+       "expanded_url": "https://legora.com"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "u12",
+   "username": "fake_legora_fan",
+   "name": "Legora News",
+   "created_at": "2025-01-10T00:00:00Z",
+   "public_metrics": {
+    "followers_count": 120,
+    "following_count": 900
+   },
+   "entities": {
+    "url": {
+     "urls": [
+      {
+       "expanded_url": "https://legora.com"
+      }
+     ]
+    }
    }
   }
  ],
@@ -495,6 +585,48 @@
     "reply_count": 40,
     "bookmark_count": 200
    }
+  },
+  {
+   "id": "1013",
+   "author_id": "u11",
+   "created_at": "2026-10-10T05:00:00Z",
+   "lang": "en",
+   "text": "Legora raises a Series E to bring AI agents to every law firm. Read more: https://t.co/l1",
+   "entities": {
+    "urls": [
+     {
+      "expanded_url": "https://legora.com/blog/series-e"
+     }
+    ]
+   },
+   "public_metrics": {
+    "like_count": 6,
+    "retweet_count": 1,
+    "quote_count": 0,
+    "reply_count": 0,
+    "bookmark_count": 1
+   }
+  },
+  {
+   "id": "1014",
+   "author_id": "u3",
+   "created_at": "2026-10-10T04:00:00Z",
+   "lang": "ja",
+   "text": "Claude Code で作業手順書の下書きを自動作成するスクリプトを作った。写真10枚と口頭メモから15分で初版。手順と結果をまとめました https://t.co/c1",
+   "entities": {
+    "urls": [
+     {
+      "expanded_url": "https://github.com/dev-tanaka/sop-draft"
+     }
+    ]
+   },
+   "public_metrics": {
+    "like_count": 40,
+    "retweet_count": 8,
+    "quote_count": 1,
+    "reply_count": 3,
+    "bookmark_count": 30
+   }
   }
  ],
  "demo_authors": {
@@ -546,6 +678,11 @@
   "u10": {
    "type": "commentator",
    "role": "AI評論家",
+   "former": ""
+  },
+  "u11": {
+   "type": "official",
+   "role": "リーガルAI企業",
    "former": ""
   }
  }

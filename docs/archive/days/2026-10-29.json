@@ -2,82 +2,6 @@
  "date": "2026-10-29",
  "items": [
   {
-   "id": "f0b10646ac",
-   "verdict": "confirmed",
-   "title": "NVIDIAが音声ノイズ除去モデルRE-USEを公開",
-   "summary": "NVIDIAの公式AIアカウントは、NVIDIAの研究者によるオープンな多言語モデル「NemotronLabs RE-USE」を発表した。背景雑音・エコーなどの音声の歪みを除去して話し声を明瞭にするとし、パラメータ数は9.6Mと紹介している。デモの試用とモデルのダウンロードはHugging Faceで可能とされている。",
-   "points": [
-    "パラメータ数が9.6Mと小規模で、軽量な音声処理モデルとして扱いやすい可能性がある（性能の詳細は投稿からは未確認）",
-    "オープンモデルとして公開されているため、自社サービスへの組み込みや検証を個人でも試せる",
-    "ノイズ除去の精度や他製品との比較は投稿に示されていないため、実際のデモで確認が必要"
-   ],
-   "terms": [
-    {
-     "term": "パラメータ数",
-     "desc": "AIモデルの内部にある調整可能な数値の総数。大きいほど複雑な処理ができる傾向がある。"
-    },
-    {
-     "term": "Hugging Face",
-     "desc": "AIモデルやデータを公開・共有するためのオンラインプラットフォーム。"
-    },
-    {
-     "term": "オープンモデル",
-     "desc": "学習済みモデルを誰でも取得して使える形で公開されたAIモデル。"
-    }
-   ],
-   "score": 90,
-   "credibility": 100,
-   "heat": 37,
-   "first_seen": "2026-10-28T15:14:50.000Z",
-   "latest": "2026-11-01T03:32:30.000Z",
-   "authors": [
-    "NVIDIAAI",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの投稿",
-   "links": [
-    {
-     "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
-     "domain": "huggingface.co",
-     "primary": true
-    },
-    {
-     "url": "https://note.com/npaka/n/n02c39c194fa6?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2116262634349818190",
-    "username": "NVIDIAAI",
-    "text": "Sound on 🔊 Listen to the difference.\n\nOur new open multilingual NemotronLabs RE-USE model from NVIDIA researchers cleans up background noise, echo and other audio distortions to make speech clearer. All with just 9.6M parameters.\n\nTry the demo and download the model on @huggingface → https://t.co/gg6KcUbTfE",
-    "text_ja": "音を聴いてみてください 🔊 違いがわかります。\n\nNVIDIAの研究者による、当社の新しい多言語オープンモデル「NemotronLabs RE-USE」は、背景ノイズ、エコー、その他の音声の歪みを取り除き、話し声をより明瞭にします。パラメータ数はわずか9.6Mです。\n\n@huggingface でデモを試し、モデルをダウンロードできます → https://t.co/gg6KcUbTfE"
-   },
-   "post_ids": [
-    "2115462300241141882",
-    "2116262634349818190",
-    "2116735105817592049"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-01T18:27:39Z"
-  },
-  {
    "id": "c1b407df67",
    "verdict": "confirmed",
    "title": "Claude for Legal に契約書レビュー等の既製テンプレートを追加",
@@ -132,6 +56,79 @@
    ],
    "post_count": 1,
    "archived_at": "2026-10-31T14:35:52Z"
+  },
+  {
+   "id": "f0b10646ac",
+   "verdict": "confirmed",
+   "title": "NVIDIA、9.6Mパラメータの音声ノイズ除去モデル「RE-USE」を公開",
+   "summary": "NVIDIAの公式AIアカウントは、同社研究者によるオープンな多言語音声モデル「NemotronLabs RE-USE」を発表した。背景雑音・エコーなどを取り除き音声を明瞭にするモデルで、パラメータ数は9.6Mとしている。Hugging Faceでデモを試せ、モデルもダウンロードできるとされる。日本語の投稿では、音楽・音声生成AIのリリース年表にも追加された。",
+   "points": [
+    "パラメータが小さく、手元のPCや端末でも動かせる可能性があるとみられる（未確認）。",
+    "録音された作業音声や説明の聞き取りを改善する用途が考えられる。",
+    "日本語の音声での精度や商用利用の条件は投稿に書かれておらず未確認。"
+   ],
+   "terms": [],
+   "score": 89,
+   "credibility": 100,
+   "heat": 36,
+   "first_seen": "2026-10-28T15:14:50.000Z",
+   "latest": "2026-11-01T03:32:30.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式投稿・Hugging Face公開",
+   "links": [
+    {
+     "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
+     "domain": "huggingface.co",
+     "primary": true
+    },
+    {
+     "url": "https://note.com/npaka/n/n02c39c194fa6?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 3,
+    "why": "音声の聞き取り改善に使えるが、製造業の業務への直接効果は未確認"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2116262634349818190",
+    "username": "NVIDIAAI",
+    "text": "Sound on 🔊 Listen to the difference.\n\nOur new open multilingual NemotronLabs RE-USE model from NVIDIA researchers cleans up background noise, echo and other audio distortions to make speech clearer. All with just 9.6M parameters.\n\nTry the demo and download the model on @huggingface → https://t.co/gg6KcUbTfE",
+    "text_ja": "音を聴いてみてください 🔊 違いがわかります。\n\nNVIDIAの研究者による、当社の新しい多言語オープンモデル「NemotronLabs RE-USE」は、背景ノイズ、エコー、その他の音声の歪みを取り除き、話し声をより明瞭にします。パラメータ数はわずか9.6Mです。\n\n@huggingface でデモを試し、モデルをダウンロードできます → https://t.co/gg6KcUbTfE"
+   },
+   "post_ids": [
+    "2115462300241141882",
+    "2116262634349818190",
+    "2116735105817592049"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-01T23:51:15Z"
   },
   {
    "id": "23f4207652",

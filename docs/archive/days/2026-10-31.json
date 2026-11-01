@@ -2,32 +2,91 @@
  "date": "2026-10-31",
  "items": [
   {
-   "id": "c344aa8a66",
+   "id": "5f37c7ba40",
    "verdict": "confirmed",
-   "title": "Anthropic、悪意ある学習データを自動生成する研究を公表",
-   "summary": "Anthropicは公式アカウントで新しい研究を発表した。同社は多数のClaudeエージェントに、学習データの監視装置を回避する課題を与えたと述べている。エージェントは監視装置には無害に見えるが、実際には望ましくない振る舞いを教える学習データを作り出したという。",
+   "title": "Anthropic、Claudeの月額プラン名称を変更し一部の利用制限を撤廃",
+   "summary": "Anthropicは公式アカウントで、Claudeの有料プランのうち「Max 5x」を「Max」、「Max 20x」を「Ultra」へ改名すると発表した。料金は月100ドル（Max）と200ドル（Ultra）のまま変わらないとしている。認証済みUltraアカウントでは5時間の利用制限を撤廃し、週単位の制限は変更なしとしている。",
    "points": [
-    "新しさ: 安全性テスト（レッドチーミング）の一部を人手ではなくAIで自動化する試みとして紹介されている",
-    "重要性: 将来の学習データ監視装置の改善に、この種の例を直接使えるとされている",
-    "注意点: 投稿は「まずは第一歩」と位置づけており、実用的な効果の大きさはまだ不明"
+    "料金は据え置きで、名称と5時間制限の扱いが変わる点が新しい。",
+    "認証前の新規アカウントには一時的な制限が残り、不正利用防止が理由とされる。",
+    "日本円の料金や日本での提供条件は投稿に書かれていないため未確認。"
    ],
-   "terms": [
+   "terms": [],
+   "score": 100,
+   "credibility": 100,
+   "heat": 63,
+   "first_seen": "2026-10-30T17:29:07.000Z",
+   "latest": "2026-11-01T22:05:06.000Z",
+   "authors": [
+    "claudeai",
+    "itmedia_news"
+   ],
+   "author_labels": [
     {
-     "term": "レッドチーミング",
-     "desc": "AIに意図的に問題を起こさせ、弱点や危険な振る舞いを見つけるテスト手法"
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
+     "type": "official",
+     "former": ""
     },
     {
-     "term": "ミスアライメント",
-     "desc": "AIが人間の意図や安全基準から外れた振る舞いをすること"
-    },
-    {
-     "term": "学習データ監視装置",
-     "desc": "AIの学習に使うデータに問題がないかを自動で調べる仕組み"
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
     }
    ],
-   "score": 90,
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式投稿・ITmedia記事",
+   "links": [
+    {
+     "url": "http://claude.com/pricing",
+     "domain": "claude.com",
+     "primary": true
+    },
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002777/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "料金は同じで、個人利用の制限が緩和される。仕事の進め方への影響は限定的"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/claudeai/status/2116220869479428500",
+    "username": "claudeai",
+    "text": "We’re renaming our Max plans: \n\nMax 5x → Max\nMax 20x → Ultra\n\nMax is still $100/month, and Ultra is still $200. If you’re a subscriber, there’s nothing you need to do.\n\nWe’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers. Newer accounts keep a temporary limit until they’re verified, which helps us prevent fraud and abuse. You'll get an email when it's removed.\n\nWeekly limits remain unchanged. View our plans here:  https://t.co/niRpyGF5M",
+    "text_ja": "Maxプランの名称を変更します。\n\nMax 5x → Max\nMax 20x → Ultra\n\nMaxの料金は引き続き月額100ドル、Ultraは200ドルのままです。現在サブスクリプションをご利用の方に、必要な対応はありません。\n\nまた、本人確認済みのUltraアカウントについて、5時間の利用上限を撤廃します。本日より、既存のサブスクライバーの大半が対象です。新しいアカウントは、本人確認が完了するまで一時的に上限が設けられます。これは不正利用や悪用を防ぐためです。上限が撤廃されると、メールでお知らせします。\n\n週単位の上限は変更ありません。プランの詳細はこちら: https://t.co/niRpyGF5Me"
+   },
+   "post_ids": [
+    "2116220869479428500",
+    "2117015098250416160"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-01T23:51:15Z"
+  },
+  {
+   "id": "c344aa8a66",
+   "verdict": "confirmed",
+   "title": "Anthropic、トレーニングデータに潜む不整合を自動で探す研究を発表",
+   "summary": "Anthropicは公式アカウントで新しい研究を発表した。Claudeの多数のエージェントに、学習データの監視システムを回避する課題を与えたところ、監視には無害に見えるが、実際には不整合な振る舞いを学習させるデータが作られたと説明している。こうした例は今後の学習データ監視の改善に使えるとし、研究は第一歩だとしている。",
+   "points": [
+    "レッドチーミング（攻撃役による安全性テスト）を人手から自動化する試みが新しい。",
+    "監視をすり抜けるデータの例は、今後の安全対策に直接使えるとされる。",
+    "研究はまだ初期段階と明記されており、実際の効果の大きさは未確認。"
+   ],
+   "terms": [],
+   "score": 86,
    "credibility": 100,
-   "heat": 51,
+   "heat": 50,
    "first_seen": "2026-10-31T01:59:06.000Z",
    "latest": "2026-10-31T01:59:06.000Z",
    "authors": [
@@ -43,7 +102,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式の研究発表",
+   "evidence_note": "Anthropic公式研究ページ（投稿内リンク）",
    "links": [
     {
      "url": "https://alignment.anthropic.com/2026/automated-em-search/",
@@ -51,6 +110,16 @@
      "primary": true
     }
    ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "AI安全性研究の話で、現場の手順書作成には直接使えない"
+   },
+   "first_step": null,
+   "usable": false,
    "post": {
     "url": "https://x.com/AnthropicAI/status/2116349211549843666",
     "username": "AnthropicAI",
@@ -61,31 +130,22 @@
     "2116349211549843666"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
+   "archived_at": "2026-11-01T23:51:15Z"
   },
   {
    "id": "681e403231",
    "verdict": "confirmed",
-   "title": "OpenAIが企業向けのデータ保護機能「Private Intelligence」を発表",
-   "summary": "OpenAI公式アカウントが、企業が自社データに対する管理を強められる「OpenAI Private Intelligence」を発表した。同社は一部の大口顧客と協力してこれらの保護機能を構築していると述べている。投稿には具体的な提供開始日や価格は書かれていない。",
+   "title": "OpenAI、企業向けのデータ保護強化「Private Intelligence」を発表",
+   "summary": "OpenAIは公式アカウントで「OpenAI Private Intelligence」を発表した。最上位モデルを使いながら、企業がデータに対する管理をより強く行えるようにするもので、大口顧客と共同で保護機能を作っているとしている。機密性の高い業務にフロンティアAIを使うことを狙いとしている。",
    "points": [
-    "企業が最上位モデルを使う際に、データの管理権限を強める仕組みとして示された",
-    "機密性の高い業務へ最先端AIを導入したい企業にとって関心の対象になりうる",
-    "提供範囲・料金・提供時期は投稿からは分からず、詳細は公式ブログ等での確認が必要"
+    "機密データを扱う企業向けに、データ管理の強化を打ち出した点が新しい。",
+    "製造業の機密情報（図面・手順書）を外部AIに預ける際の判断材料になり得る。",
+    "価格、提供地域、個人事業主が使えるかどうかは投稿に書かれておらず未確認。"
    ],
-   "terms": [
-    {
-     "term": "データ管理",
-     "desc": "企業が自社の情報をどこに保存し、誰が使えるかを管理すること"
-    },
-    {
-     "term": "フロンティアAI",
-     "desc": "現時点で最も高性能な、開発の最先端にあるAIモデルのこと"
-    }
-   ],
-   "score": 88,
+   "terms": [],
+   "score": 85,
    "credibility": 100,
-   "heat": 44,
+   "heat": 43,
    "first_seen": "2026-10-30T15:12:35.000Z",
    "latest": "2026-10-30T15:12:35.000Z",
    "authors": [
@@ -101,7 +161,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの告知",
+   "evidence_note": "OpenAI公式投稿",
    "links": [
     {
      "url": "https://openai.com/business/private-intelligence/",
@@ -109,6 +169,16 @@
      "primary": true
     }
    ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "企業向けで申込や契約が必要とみられ、個人が今すぐ試すのは難しい"
+   },
+   "first_step": null,
+   "usable": false,
    "post": {
     "url": "https://x.com/OpenAI/status/2116186509384815084",
     "username": "OpenAI",
@@ -119,89 +189,22 @@
     "2116186509384815084"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
-  },
-  {
-   "id": "8cffcbc3fa",
-   "verdict": "confirmed",
-   "title": "英政府の建築許可審査AI「PlanAssist」、12議会へ拡大",
-   "summary": "Google DeepMindは公式アカウントで、英国政府の計画担当官の業務を支援するAI「PlanAssist」を紹介した。Geminiを使って構築されたもので、住宅の増改築申請の審査時間を最大58%削減できたとしている。今後は12の自治体（議会）に追加で提供されるという。",
-   "points": [
-    "「最大58%」は条件付きの最大値であり、平均的な削減率かどうかは投稿からは不明。",
-    "自治体の審査が速くなれば、住宅の建築・改修を計画する一般の人にも影響がありそう（とみられる）。",
-    "AIが審査を補助する範囲や最終判断の責任の所在は投稿に書かれていない。"
-   ],
-   "terms": [
-    {
-     "term": "Gemini",
-     "desc": "Google DeepMindが開発した大規模AIモデルのシリーズ。"
-    },
-    {
-     "term": "householder application",
-     "desc": "住宅の所有者自身による増改築などの建築申請のこと。"
-    }
-   ],
-   "score": 78,
-   "credibility": 93,
-   "heat": 31,
-   "first_seen": "2026-10-31T13:33:39.000Z",
-   "latest": "2026-10-31T13:33:39.000Z",
-   "authors": [
-    "GoogleDeepMind"
-   ],
-   "author_labels": [
-    {
-     "username": "GoogleDeepMind",
-     "label": "Google DeepMind公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Google DeepMind公式発表",
-   "links": [
-    {
-     "url": "https://goo.gle/4iQXYkl",
-     "domain": "goo.gle",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/GoogleDeepMind/status/2116524000977285321",
-    "username": "GoogleDeepMind",
-    "text": "We built PlanAssist to help UK Government planning officers speed up building and renovations across the country.\n\nBuilt with Gemini, it has shown it can cut the time planning officers spend assessing householder applications by up to 58%. It is now being made available to 12 more councils to help them to make faster decisions. 🏡 → https://t.co/L3tGJNtiAC",
-    "text_ja": "私たちは、英国政府の計画担当官が全国の建築・改修の手続きをスピードアップできるよう、PlanAssistを開発しました。\n\nGeminiで構築されたこのツールは、住宅所有者による申請の審査にかかる計画担当官の時間を最大58%削減できることが確認されています。現在、より迅速な意思決定を支援するため、さらに12の自治体に提供が拡大されています。🏡 → https://t.co/L3tGJNtiAC"
-   },
-   "post_ids": [
-    "2116524000977285321"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
+   "archived_at": "2026-11-01T23:51:15Z"
   },
   {
    "id": "007a063198",
    "verdict": "confirmed",
-   "title": "OpenAI、Agents APIの今週の新機能を案内",
-   "summary": "OpenAIの開発者向け公式アカウントは、Agents APIを使って開発している人向けに、今週リリースした内容を紹介するリンクを投稿した。投稿本文には具体的な機能名や内容は書かれておらず、詳細はリンク先で確認する形になっている。",
+   "title": "OpenAIが今週リリースしたAgents API関連の機能を案内",
+   "summary": "OpenAI開発者向け公式アカウントが、Agents APIを使う開発者向けに、今週リリースした内容をまとめたリンクを投稿した。投稿本文には具体的な機能名や内容は書かれていない。",
    "points": [
-    "新しさ: 具体的な新機能は投稿本文に書かれておらず、リンク先の確認が必要",
-    "重要性: Agents APIを使う開発者が更新内容を把握するための案内",
-    "注意点: 本文だけでは内容を判断できないため、リンク先の内容は未確認"
+    "Agents APIはAIが作業を自律的に進める仕組みを開発者が組み込むための接続口とみられる",
+    "具体的に何が追加されたかはリンク先を見ないと分からず、投稿からは判断できない",
+    "個人や小さなチームは、公式の更新情報を定期的に確認するだけでも動向をつかみやすい"
    ],
-   "terms": [
-    {
-     "term": "Agents API",
-     "desc": "AIが文脈を理解して作業を進める「エージェント」を、開発者が自分のアプリに組み込むための仕組み"
-    },
-    {
-     "term": "API",
-     "desc": "ソフトウェア同士が機能をやり取りするための接続口"
-    }
-   ],
-   "score": 76,
+   "terms": [],
+   "score": 74,
    "credibility": 90,
-   "heat": 31,
+   "heat": 30,
    "first_seen": "2026-10-30T23:08:03.000Z",
    "latest": "2026-10-30T23:08:03.000Z",
    "authors": [
@@ -219,6 +222,16 @@
    "evidence_label": "公式発表",
    "evidence_note": "OpenAI公式の更新案内",
    "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "内容が不明で、リンク先を見ないと製品効果を判断できない"
+   },
+   "first_step": null,
+   "usable": false,
    "post": {
     "url": "https://x.com/OpenAIDevs/status/2116306164375863343",
     "username": "OpenAIDevs",
@@ -229,29 +242,20 @@
     "2116306164375863343"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
+   "archived_at": "2026-11-01T23:51:15Z"
   },
   {
    "id": "e03daef380",
    "verdict": "confirmed",
-   "title": "OpenAIがロボット共同体での実験でGPT-6 Astraによるロボットアーム遠隔操作を紹介",
-   "summary": "OpenAI開発者向け公式アカウントが、ロボティクスコミュニティ「Scav」を紹介した。その中の一つの実験で、GPT-6 Astraがロボットアームを遠隔操作したと述べている。実験の詳細な手順や結果の数値は投稿には書かれていない。",
+   "title": "OpenAIが、ロボットアームをAIで遠隔操作した事例を紹介",
+   "summary": "OpenAIの開発者向け公式アカウントが、ロボティクスのコミュニティ「Scav」の紹介投稿を行った。投稿では、同コミュニティの実験の一つとして「GPT-6 Astra」がロボットアームを遠隔操作したと書かれている。投稿には動画や詳細な手順は含まれていない。",
    "points": [
-    "AIが物理世界のロボットを操作する例として示された",
-    "「GPT-6 Astra」は投稿中の名称で、正式な提供状況や性能は投稿からは確認できない",
-    "実験の再現性や安全性、遠隔操作の精度などは未確認"
+    "AIが実世界のロボットを操作する例として紹介されている",
+    "投稿だけでは、性能や再現手順、安全面の情報は分からない",
+    "GPT-6 Astraは一般に利用できるモデルか未確認"
    ],
-   "terms": [
-    {
-     "term": "遠隔操作",
-     "desc": "離れた場所から機械を操作すること。ここではAIが指示を出してロボットを動かすこと"
-    },
-    {
-     "term": "ロボットアーム",
-     "desc": "人の腕のように複数の関節を持ち、物を掴んだり動かしたりする機械"
-    }
-   ],
-   "score": 70,
+   "terms": [],
+   "score": 64,
    "credibility": 90,
    "heat": 14,
    "first_seen": "2026-10-30T18:29:59.000Z",
@@ -269,8 +273,18 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの紹介投稿",
+   "evidence_note": "OpenAI公式X投稿",
    "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "製造現場への直接の示唆は薄く、試せる情報もない"
+   },
+   "first_step": null,
+   "usable": false,
    "post": {
     "url": "https://x.com/OpenAIDevs/status/2116236188319453386",
     "username": "OpenAIDevs",
@@ -281,93 +295,84 @@
     "2116236188319453386"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
+   "archived_at": "2026-11-01T23:51:15Z"
   },
   {
-   "id": "a52f744a15",
-   "verdict": "confirmed",
-   "title": "NVIDIAがSiemensの回路設計エージェントの改善事例を公開",
-   "summary": "NVIDIA公式AIアカウントが、Siemens EDAチームの取り組みを紹介した。NeMo Gymを使ってエージェントの出力を検証し、スキルやツールの説明を改善したところ、標準セル特性評価ベンチマークで複合検証スコアが約55%から約95%に上がったという。エージェントのターン数は66%、出力トークン数は64%減ったと述べられている。技術ブログも公開された。",
+   "id": "26f074978d",
+   "verdict": "promising",
+   "title": "npaka氏、HairDeckとIdolをCodex+Colab CLIで試行",
+   "summary": "プログラマーのnpaka123氏が、「HairDeck」と「Idol」を試している状況を投稿した。両方ともCodexとColab CLIを使ってセットアップし、かかった時間はそれぞれ約5分30秒と12分とされている。",
    "points": [
-    "AIエージェントの信頼性と効率を、検証と改善の繰り返しで高める手法の事例として示された",
-    "半導体設計などエンジニアリング分野でAIを使う企業にとって参考になりうる",
-    "数値はNVIDIAの紹介に基づく。ベンチマークの条件や他の設計課題での再現性は未確認"
+    "Colab CLIは、Googleのクラウド実行環境Colabをコマンドラインから操作する仕組みとみられる（未確認）。",
+    "セットアップ時間は個人の環境によるため、同じ結果が得られるとは限らない。",
+    "HairDeckとIdolが何をするツールかは本文からは分からず、用途の確認が必要。"
    ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "人の指示を受けて、複数の作業を自律的に計画・実行するAIシステム"
-    },
-    {
-     "term": "EDA",
-     "desc": "電子回路や半導体の設計を支援するソフトウェアの総称"
-    },
-    {
-     "term": "トークン",
-     "desc": "AIが文章を処理する際の最小単位。量が少ないほど処理コストが抑えられる目安になる"
-    }
-   ],
-   "score": 67,
-   "credibility": 93,
-   "heat": 3,
-   "first_seen": "2026-10-30T18:30:36.000Z",
-   "latest": "2026-10-30T18:30:36.000Z",
+   "terms": [],
+   "score": 58,
+   "credibility": 70,
+   "heat": 16,
+   "first_seen": "2026-10-31T05:08:28.000Z",
+   "latest": "2026-11-01T01:07:20.000Z",
    "authors": [
-    "NVIDIAAI"
+    "npaka123"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
      "former": ""
     }
    ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式技術ブログの紹介",
-   "links": [
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人によるセットアップ時間の記録",
+   "links": [],
+   "services": [
     {
-     "url": "https://nvda.ws/4Beujcb",
-     "domain": "nvda.ws",
-     "primary": false
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
     }
    ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "個人開発の手順として参考になるが、ツールの中身は本文から不明"
+   },
+   "first_step": null,
+   "usable": true,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2116236342653026706",
-    "username": "NVIDIAAI",
-    "text": "How do you make a chip design agent more reliable and efficient?\n\nThe @Siemens EDA team used NVIDIA NeMo Gym to check the engineering files its agent produced, trace errors, and improve the agent’s skills and tool descriptions.\n\nIn its standard cell characterization benchmark, those changes raised the composite verification score from ~55% to ~95%, with 66% fewer agent turns and 64% fewer output tokens.\n\nWe just published a new techblog that walks through what the team measured, what they change",
-    "text_ja": "チップ設計エージェントの信頼性と効率を高めるにはどうすればよいでしょうか？\n\n@Siemens EDAチームは、NVIDIA NeMo Gymを使って、エージェントが生成したエンジニアリングファイルをチェックし、エラーを追跡し、エージェントのスキルやツールの説明文を改善しました。\n\n標準セルの特性評価ベンチマークでは、これらの変更により複合検証スコアが約55%から約95%に向上し、エージェントのターン数は66%、出力トークン数は64%削減されました。\n\nチームが何を測定し、何を変更し、他のエンジニアリングチームがこのアプローチをどう応用できるかをまとめた新しいテックブログを公開しました → https://t.co/fs0nAEdTtX"
+    "url": "https://x.com/npaka123/status/2116698573450678734",
+    "username": "npaka123",
+    "text": "HairDeck をおためし中\n\nCodex x Colab CLI でセットアップ : 約5分30秒 https://t.co/HVN6bgAxpd",
+    "text_ja": null
    },
    "post_ids": [
-    "2116236342653026706"
+    "2116698573450678734",
+    "2116396867059888409"
    ],
-   "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
+   "post_count": 2,
+   "archived_at": "2026-11-01T23:51:15Z"
   },
   {
    "id": "2986364142",
    "verdict": "promising",
-   "title": "UCバークレーの研究、AI組織が自ら役職を発明する仕組み",
-   "summary": "AI論文紹介メディア「AIDB」は、UCバークレーの研究者らがAI同士で組織を設計し、行き詰まると組織構成を作り変える仕組みを開発したと紹介した。役職の例として「あまのじゃく係」「新鮮な目の係」「行き止まり再訪係」を挙げ、この仕組みで作られたAI組織がGPUカーネルを書き、現実で使われているものより高速だと伝えている。",
+   "title": "UCバークレーの研究、AIが自ら役職を作る組織設計の仕組み",
+   "summary": "AI論文紹介メディア「AIDB」が、UCバークレーの研究者らがAIだけで構成された組織を自ら設計・改編する仕組みを開発したと紹介した。投稿では、上司AIが部下の働きぶりを見て不足する役職を作る仕組みで、その結果GPUカーネルを書き上げ、現在使われているものより高速だとされている。",
    "points": [
-    "新しさ: 上司のAIが部下の働きぶりを見て必要な役職を作る、という自動組織設計の発想",
-    "重要性: AIに複雑なプログラム開発を任せる際の作業分担の考え方に関係する",
-    "注意点: 「現実のものより高速」の比較条件や再現性は投稿からは未確認。元論文での確認が必要"
+    "「GPUカーネル」はGPUで計算を行うための細かいプログラムで、高速化は性能向上の目安となる。",
+    "投稿は論文の要約で、ベンチマーク条件や比較対象の詳細は本文からは確認できない。",
+    "自動で組織を作り直す仕組みは、AIエージェントの設計に応用できる可能性があるが、実用性は未確認。"
    ],
-   "terms": [
-    {
-     "term": "GPUカーネル",
-     "desc": "GPUで計算を実行するための小さなプログラム。AI計算の速度に大きく影響する"
-    },
-    {
-     "term": "マルチエージェント",
-     "desc": "複数のAIが役割を分担して協力しながら作業する仕組み"
-    }
-   ],
-   "score": 60,
+   "terms": [],
+   "score": 57,
    "credibility": 75,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-10-31T03:25:43.000Z",
    "latest": "2026-10-31T03:25:43.000Z",
    "authors": [
@@ -385,6 +390,16 @@
    "evidence_label": "本人が手を動かした検証",
    "evidence_note": "本人の制作・検証の報告",
    "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "エージェント設計の参考になるが、研究段階で試せる製品はない"
+   },
+   "first_step": null,
+   "usable": false,
    "post": {
     "url": "https://x.com/ai_database/status/2116371009125363767",
     "username": "ai_database",
@@ -395,136 +410,7 @@
     "2116371009125363767"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T18:27:39Z"
-  },
-  {
-   "id": "29350c5f0b",
-   "verdict": "promising",
-   "title": "画像1枚から3D生成するAI「Idol」を紹介",
-   "summary": "プログラマーのnpaka123氏が、1枚の画像から3D Gaussian Splattingを生成するAI「Idol」の概要をnoteで紹介した。別の投稿では、Codex と Colab CLI を使ってIdolを試しており、セットアップに12分かかったと書いている。",
-   "points": [
-    "3D Gaussian Splattingは、写真のような立体表示を少ない計算で描く手法とみられる（一般的な背景知識）",
-    "試用の報告はあるが、生成品質や処理時間の数値は投稿に示されていない",
-    "実際の性能や利用条件は、公式資料や本人の検証結果で確認する必要がある"
-   ],
-   "terms": [
-    {
-     "term": "3D Gaussian Splatting",
-     "desc": "多数の小さな楕円状の点で物体や風景を立体的に描く手法。"
-    },
-    {
-     "term": "Colab CLI",
-     "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するツール。"
-    }
-   ],
-   "score": 52,
-   "credibility": 73,
-   "heat": 5,
-   "first_seen": "2026-10-31T05:08:28.000Z",
-   "latest": "2026-10-31T05:11:53.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の試用報告（セットアップ時間）",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/n66f6eaffeecb?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/npaka123/status/2116397727429140727",
-    "username": "npaka123",
-    "text": "Idolの概要 - 1枚の画像から3D Gaussian Splattingを生成するAI｜npaka @npaka123 https://t.co/kVm300k25y",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2116397727429140727",
-    "2116396867059888409"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-01T18:27:39Z"
-  },
-  {
-   "id": "d0b9454bcb",
-   "verdict": "promising",
-   "title": "NVIDIAのMotionBricksをnpaka123氏が紹介・試用",
-   "summary": "プログラマーのnpaka123氏が、NVIDIAの「MotionBricks」をゲームやロボットの動作をリアルタイム生成するAIとして紹介した。同氏は年表への追加と、Codex と Colab CLI を使ったセットアップ(12分)を投稿で示している。投稿からは詳細な性能や公式発表の内容までは読み取れない。",
-   "points": [
-    "MotionBricksはゲームやロボットの動きをリアルタイムで生成するAIとして紹介されている。",
-    "投稿者は実際に試用中で、セットアップに約12分かかったと報告している。",
-    "性能の数値や評価結果は投稿に示されておらず、詳細は未確認。"
-   ],
-   "terms": [
-    {
-     "term": "リアルタイム生成",
-     "desc": "操作や状況に合わせて、動きや映像をその場で作り出すこと。"
-    },
-    {
-     "term": "Colab CLI",
-     "desc": "Googleのクラウド実行環境Colabをコマンドラインから操作するためのツール。"
-    },
-    {
-     "term": "Codex",
-     "desc": "OpenAIのコード生成AIを指す。ここではプログラミング作業の補助に使われたとみられる。"
-    }
-   ],
-   "score": 51,
-   "credibility": 73,
-   "heat": 2,
-   "first_seen": "2026-10-31T01:11:13.000Z",
-   "latest": "2026-10-31T01:26:14.000Z",
-   "authors": [
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人のセットアップ試用・note記事",
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/n77061cfd370e?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n491013486de6?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "post": {
-    "url": "https://x.com/npaka123/status/2116340804398817281",
-    "username": "npaka123",
-    "text": "NVIDIA MotionBricks の概要 - ゲームやロボットの動作をリアルタイム生成するAI｜npaka @npaka123 https://t.co/VmB6vcKgLL",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2116340804398817281",
-    "2116337161641558241",
-    "2116340940898250827",
-    "2116340058458566941"
-   ],
-   "post_count": 4,
-   "archived_at": "2026-11-01T18:27:39Z"
+   "archived_at": "2026-11-01T23:51:15Z"
   }
  ]
 }

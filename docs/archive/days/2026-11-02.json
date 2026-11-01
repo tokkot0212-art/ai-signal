@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-02",
+ "items": [
+  {
+   "id": "aadd501ded",
+   "verdict": "promising",
+   "title": "Karpathy氏、YouTube推薦を補正する個人製作ツール「HackerTube」を公開",
+   "summary": "AI研究者のAndrej Karpathy氏（個人アカウント）が、YouTubeの推薦に不満があったため、Hacker Newsの20年分・4,300万件のコメントをClaudeで分析し、推薦されやすい6,454本の動画に絞ったWebサイトを作ったと投稿した。作業時間は約2時間で、使用モデルはOpus 5.5とClaude Codeとされている。ログイン不要で、分析データはzipファイルで公開されている。",
+   "points": [
+    "個人が数時間で作ったツールで、AIを使った小規模な個人開発の例として参考になる。",
+    "分析データを公開し、自分用に作り直せる点が特徴。",
+    "投稿内のサイトを実際に試した結果や、著作権・規約面の扱いは未確認。"
+   ],
+   "terms": [],
+   "score": 98,
+   "credibility": 73,
+   "heat": 100,
+   "first_seen": "2026-11-01T18:14:46.000Z",
+   "latest": "2026-11-01T18:14:46.000Z",
+   "authors": [
+    "karpathy"
+   ],
+   "author_labels": [
+    {
+     "username": "karpathy",
+     "label": "個人（自己紹介なし）",
+     "type": "individual",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人が作ったツールの投稿",
+   "links": [
+    {
+     "url": "https://hackertube.org/",
+     "domain": "hackertube.org",
+     "primary": false
+    }
+   ],
+   "services": [
+    {
+     "name": "Claude Code",
+     "company": "Anthropic",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 3,
+    "try_cost": 3,
+    "why": "小さなデータ分析ツールを作る手順の参考になり、無料で試せる"
+   },
+   "first_step": "分析データのzipを入手して、自分用の推薦ツールづくりを試してみる",
+   "usable": true,
+   "post": {
+    "url": "https://x.com/karpathy/status/2116957135661945283",
+    "username": "karpathy",
+    "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/JIhXN7OSh1\n\n- Excellent recs without any logins (state is kept in local browser session)\n- Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads\n- Underlying data from the",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2116957135661945283"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-01T23:51:15Z"
+  }
+ ]
+}

@@ -1,74 +1,4 @@
 {
- "2115881074115084733": {
-  "author_id": "2939913921",
-  "created_at": "2026-10-29T18:58:53.000Z",
-  "edit_history_tweet_ids": [
-   "2115881074115084733"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/archiehall/sta…",
-     "end": 168,
-     "expanded_url": "https://twitter.com/archiehall/status/2115851542511161620",
-     "start": 145,
-     "url": "https://t.co/yyIbiEtHFH"
-    }
-   ]
-  },
-  "id": "2115881074115084733",
-  "lang": "en",
-  "public_metrics": {
-   "bookmark_count": 1,
-   "impression_count": 321,
-   "like_count": 3,
-   "quote_count": 0,
-   "reply_count": 1,
-   "retweet_count": 0
-  },
-  "referenced_tweets": [
-   {
-    "id": "2115851542511161620",
-    "type": "quoted"
-   }
-  ],
-  "text": "Glad to see more institutions exploring the ideas here. I don’t think it’s cut and dry that distillation is bad for the US’s AI competitiveness. https://t.co/yyIbiEtHFH"
- },
- "2115875693120676157": {
-  "author_id": "39125788",
-  "created_at": "2026-10-29T18:37:30.000Z",
-  "edit_history_tweet_ids": [
-   "2115875693120676157"
-  ],
-  "entities": {
-   "urls": [
-    {
-     "display_url": "x.com/addyosmani/sta…",
-     "end": 308,
-     "expanded_url": "https://twitter.com/addyosmani/status/2115688494865465370",
-     "start": 285,
-     "url": "https://t.co/FZnFqhF3t4"
-    }
-   ]
-  },
-  "id": "2115875693120676157",
-  "lang": "en",
-  "public_metrics": {
-   "bookmark_count": 35,
-   "impression_count": 4773,
-   "like_count": 59,
-   "quote_count": 1,
-   "reply_count": 28,
-   "retweet_count": 2
-  },
-  "referenced_tweets": [
-   {
-    "id": "2115688494865465370",
-    "type": "quoted"
-   }
-  ],
-  "text": "This is good advice for now to think about working with models like Opus 5.5.\n\nBut it is often best to build in checkpoints where the model reports back to you with interim ideas or prototypes so you can guide &amp; give feedback on the process, rather than one-shotting on your goal. https://t.co/FZnFqhF3t4"
- },
  "2116105034673058023": {
   "author_id": "1667249535519805451",
   "created_at": "2026-10-30T09:48:50.000Z",
@@ -177,38 +107,6 @@
    "retweet_count": 22
   },
   "text": "Every extra search an AI agent makes uses more tokens.\n\nWatch Nemotron Retriever tackle the same questions as another open-source retrieval stack. Check out the evidence each retrieves, accuracy and token usage.\n\nGet the open models and recipes on @huggingface → https://t.co/L2BhAP6n8d"
- },
- "2115896329645723836": {
-  "author_id": "4398626122",
-  "created_at": "2026-10-29T19:59:31.000Z",
-  "edit_history_tweet_ids": [
-   "2115896329645723836"
-  ],
-  "id": "2115896329645723836",
-  "lang": "en",
-  "note_tweet": {
-   "entities": {
-    "urls": [
-     {
-      "display_url": "openai.com/index/how-we-d…",
-      "end": 1934,
-      "expanded_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
-      "start": 1911,
-      "url": "https://t.co/dIYP7B1GlD"
-     }
-    ]
-   },
-   "text": "Today, we’re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model’s attempt to access the live internet during training.\n\nSince the Hugging Face incident—when models broke out of an internal cybersecurity investigation where we weren’t running our misalignment monitors—we’ve substantially expanded our monitoring of frontier agents. We now monitor all frontier reinforcement learning runs and evaluations, as well as all internal Codex use. When our system finds evidence of a problem that might require intervention, it rapidly alerts human responders who can investigate and take action.\n\nTo detect when a model’s behavior departs from what we intended, we use several layers of monitoring. Activation probes look for patterns in a model’s internal activity. Reviewer models examine its reasoning and tool use, and investigative agents can read back through the model’s entire transcript to understand how a sequence of actions fits together and whether it warrants human review.\n\nTo test whether our current system would have detected the Hugging Face incident, we replayed the recorded activity with our new monitors in place. In the replay, our monitors alerted our security team about 30 minutes after the agents escaped their sandbox. That was more than 30 hours before the point at which the agents breached Hugging Face’s systems in the original incident.\n\nIn September, a model exploited a DNS misconfiguration to reach the live internet. Our monitors flagged the breach within 15 minutes, and a responder began reviewing the alert three minutes later. The alert enabled responders to investigate while the run was still underway.\n\nAs we give models more autonomy, we need to know when they cross a boundary we expected to hold. We believe that monitoring is essential to catching those failures in time for people to intervene. \nhttps://t.co/dIYP7B1GlD"
-  },
-  "public_metrics": {
-   "bookmark_count": 779,
-   "impression_count": 605434,
-   "like_count": 3556,
-   "quote_count": 239,
-   "reply_count": 552,
-   "retweet_count": 263
-  },
-  "text": "Today, we’re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model’s attempt to access the live internet during training.\n\nSince the Hugging Face incident—when models broke out of an internal cybersecurity"
  },
  "2116106743566757965": {
   "author_id": "3584601",
@@ -2994,5 +2892,255 @@
    "retweet_count": 0
   },
   "text": "A bunch of funded projects to unblock some long-standing backlogs in translations using AI would be interesting; especially when AI models can do a reasonable first pass at interpretation &amp; significance, not just translation. There are major repositories of untranslated ancient"
+ },
+ "2117033602290794566": {
+  "author_id": "3584601",
+  "created_at": "2026-11-01T23:18:38.000Z",
+  "edit_history_tweet_ids": [
+   "2117033602290794566"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/hortense667/st…",
+     "end": 33,
+     "expanded_url": "https://twitter.com/hortense667/status/2116843730338463855",
+     "start": 10,
+     "url": "https://t.co/3c5TcxrrPx"
+    }
+   ]
+  },
+  "id": "2117033602290794566",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 1,
+   "impression_count": 1130,
+   "like_count": 2,
+   "quote_count": 0,
+   "reply_count": 0,
+   "retweet_count": 0
+  },
+  "referenced_tweets": [
+   {
+    "id": "2116843730338463855",
+    "type": "quoted"
+   }
+  ],
+  "text": "さすがに違法では? https://t.co/3c5TcxrrPx"
+ },
+ "2117021403417604210": {
+  "author_id": "31070671",
+  "created_at": "2026-11-01T22:30:09.000Z",
+  "edit_history_tweet_ids": [
+   "2117021403417604210"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "FBIは、暗号資産取引所Binanceから60億ドル超の暗号資産が盗まれた事件を北朝鮮のサイバー攻撃活動「TraderTraitor」による犯行と発表した。FBIなどは民間事業者に資金洗浄の阻止を要請。なお、Binance Japanは日本の顧客資産は安全に保管されていると報告し、影響はないとしている。",
+     "display_url": "itmedia.co.jp/news/article/2…",
+     "end": 76,
+     "expanded_url": "https://www.itmedia.co.jp/news/article/2611/02/2000002778/",
+     "images": [
+      {
+       "height": 628,
+       "url": "https://pbs.twimg.com/news_img/2117021407276384256/d8PJvhHp?format=jpg&name=orig",
+       "width": 1200
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2117021407276384256/d8PJvhHp?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 53,
+     "status": 200,
+     "title": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表",
+     "unwound_url": "https://www.itmedia.co.jp/news/article/2611/02/2000002778/",
+     "url": "https://t.co/wVITuEwyY8"
+    }
+   ]
+  },
+  "id": "2117021403417604210",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 1,
+   "impression_count": 5926,
+   "like_count": 13,
+   "quote_count": 1,
+   "reply_count": 0,
+   "retweet_count": 12
+  },
+  "text": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表\nhttps://t.co/wVITuEwyY8"
+ },
+ "2117015098250416160": {
+  "author_id": "31070671",
+  "created_at": "2026-11-01T22:05:06.000Z",
+  "edit_history_tweet_ids": [
+   "2117015098250416160"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "Anthropicは、「Claude」の個人向け有料プランの名称を変更し、月額100ドルの「Max 5x」を「Max」に、月額200ドルの「Max 20x」を「Ultra」にした。料金は据え置き。Ultraでは確認済みアカウントを対象に、5時間ごとの利用制限を撤廃した。週ごとの制限は変わらない。",
+     "display_url": "itmedia.co.jp/news/article/2…",
+     "end": 86,
+     "expanded_url": "https://www.itmedia.co.jp/news/article/2611/02/2000002777/",
+     "images": [
+      {
+       "height": 888,
+       "url": "https://pbs.twimg.com/news_img/2117015104181137408/zsaLzrhE?format=jpg&name=orig",
+       "width": 1697
+      },
+      {
+       "height": 150,
+       "url": "https://pbs.twimg.com/news_img/2117015104181137408/zsaLzrhE?format=jpg&name=150x150",
+       "width": 150
+      }
+     ],
+     "start": 63,
+     "status": 200,
+     "title": "Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更　月200ドルで5時間ごとの利用制限を撤廃",
+     "unwound_url": "https://www.itmedia.co.jp/news/article/2611/02/2000002777/",
+     "url": "https://t.co/avSs9OiBjR"
+    }
+   ]
+  },
+  "id": "2117015098250416160",
+  "lang": "ja",
+  "public_metrics": {
+   "bookmark_count": 4,
+   "impression_count": 8393,
+   "like_count": 32,
+   "quote_count": 1,
+   "reply_count": 4,
+   "retweet_count": 8
+  },
+  "text": "Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更　月200ドルで5時間ごとの利用制限を撤廃\nhttps://t.co/avSs9OiBjR"
+ },
+ "2116987671939875319": {
+  "author_id": "39125788",
+  "created_at": "2026-11-01T20:16:07.000Z",
+  "edit_history_tweet_ids": [
+   "2116987671939875319"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/alexolegimas/s…",
+     "end": 299,
+     "expanded_url": "https://twitter.com/alexolegimas/status/2116967827773030602",
+     "start": 276,
+     "url": "https://t.co/9qOAa353y2"
+    }
+   ]
+  },
+  "id": "2116987671939875319",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 65,
+   "impression_count": 20009,
+   "like_count": 408,
+   "quote_count": 3,
+   "reply_count": 99,
+   "retweet_count": 16
+  },
+  "referenced_tweets": [
+   {
+    "id": "2116967827773030602",
+    "type": "quoted"
+   }
+  ],
+  "text": "GPT-4 could do 4 minutes of independent work with a 50% chance of success.\n\nCurrent models can do multiple weeks of work, and January 2026 is a reasonable cut-off for the moment agentic work started.\n\nLarge productivity impacts before that would mostly be confined to coding. https://t.co/9qOAa353y2"
+ },
+ "2116957135661945283": {
+  "author_id": "33836629",
+  "created_at": "2026-11-01T18:14:46.000Z",
+  "edit_history_tweet_ids": [
+   "2116957135661945283"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "description": "The YouTube videos that Hacker News keeps telling each other to watch.",
+     "display_url": "hackertube.org",
+     "end": 267,
+     "expanded_url": "https://hackertube.org/",
+     "start": 244,
+     "status": 200,
+     "title": "HackerTube",
+     "unwound_url": "https://hackertube.org/",
+     "url": "https://t.co/xULTGY6VhH"
+    },
+    {
+     "display_url": "pic.x.com/QRq80bJo4o",
+     "end": 304,
+     "expanded_url": "https://x.com/karpathy/status/2116957135661945283/photo/1",
+     "media_key": "3_2116946614682263552",
+     "start": 281,
+     "url": "https://t.co/QRq80bJo4o"
+    }
+   ]
+  },
+  "id": "2116957135661945283",
+  "lang": "en",
+  "note_tweet": {
+   "entities": {
+    "urls": [
+     {
+      "display_url": "hackertube.org",
+      "end": 267,
+      "expanded_url": "https://hackertube.org/",
+      "start": 244,
+      "url": "https://t.co/JIhXN7OSh1"
+     }
+    ]
+   },
+   "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/JIhXN7OSh1\n\n- Excellent recs without any logins (state is kept in local browser session)\n- Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads\n- Underlying data from the comment analysis as one zip file, point your Claude at it and ask for your own version\n- HackerTube Longs ✊\n\nA bit more on the process:\nI use Claude Code (desktop app for Mac), Opus 5.5 on Medium effort as my default. I only talk to Claude and have it do everything, the only \"manual work\" I helped with in tandem was in the browser (reminiscent of MenuGen): 1) I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata, 2) I booted up a VPS box for serving and 3) I bought the domain name. Once the box was up I gave Claude the IP and told it update, secure, harden, deploy and optimize the code, and it did the whole thing.\n\nMany awesome projects that would have normally taken weeks/months even can now be few-shotted for breakfast. What else are we not thinking of."
+  },
+  "public_metrics": {
+   "bookmark_count": 22171,
+   "impression_count": 1826772,
+   "like_count": 25599,
+   "quote_count": 723,
+   "reply_count": 1066,
+   "retweet_count": 2104
+  },
+  "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/xULTGY6VhH\n\n- Excellent https://t.co/QRq80bJo4o"
+ },
+ "2116915149546389960": {
+  "author_id": "39125788",
+  "created_at": "2026-11-01T15:27:56.000Z",
+  "edit_history_tweet_ids": [
+   "2116915149546389960"
+  ],
+  "entities": {
+   "urls": [
+    {
+     "display_url": "x.com/emollick/statu…",
+     "end": 244,
+     "expanded_url": "https://twitter.com/emollick/status/2116905564680687831",
+     "start": 221,
+     "url": "https://t.co/G1HuB5Nkpp"
+    }
+   ]
+  },
+  "id": "2116915149546389960",
+  "lang": "en",
+  "public_metrics": {
+   "bookmark_count": 46,
+   "impression_count": 26929,
+   "like_count": 274,
+   "quote_count": 6,
+   "reply_count": 74,
+   "retweet_count": 9
+  },
+  "referenced_tweets": [
+   {
+    "id": "2116905564680687831",
+    "type": "quoted"
+   }
+  ],
+  "text": "This post is a reverse CAPTCHA.\n\nLook at the replies, AIs love talking about the Oxyrhynchus Papyri, and I would be willing to guess that only a very small proportion of humans have, and most of them will spell it wrong. https://t.co/G1HuB5Nkpp"
  }
 }

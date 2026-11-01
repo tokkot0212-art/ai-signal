@@ -2,55 +2,6 @@
  "date": "2026-10-30",
  "items": [
   {
-   "id": "03699bf154",
-   "verdict": "confirmed",
-   "title": "Anthropic、Claudeの自己評価による不正利用検知を導入",
-   "summary": "Anthropicは公式アカウントで、Claudeが会話内の潜在的な不正利用をフラグ付けする「自己評価（self-assessment）」という手法を使っていると発表した。Claudeは応答直後に会話の予備的な安全性評価を行い、6月から使い始めて以来、他の安全対策では捕まえられなかった不正利用を検出したとしている。新しいSafeguardsブログで詳細が案内されている。",
-   "points": [
-    "分類器（classifier）が決まった種類の有害行為を対象とするのに対し、自己評価はClaude自身の判断を使うため、モデルの向上に伴い精度が上がると説明されている",
-    "会話を既に読んでいるため効率が良いとされるが、コストや誤検知率などの数値は投稿からは分からない",
-    "自己評価の判断基準や実効性の検証結果は、ブログを読んで確認が必要"
-   ],
-   "terms": [],
-   "score": 91,
-   "credibility": 100,
-   "heat": 52,
-   "first_seen": "2026-10-29T18:22:24.000Z",
-   "latest": "2026-10-29T18:22:24.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式ブログ案内",
-   "links": [
-    {
-     "url": "https://safeguards.anthropic.com/2026/self-assessment/",
-     "domain": "safeguards.anthropic.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2115871889549865429",
-    "username": "AnthropicAI",
-    "text": "We’ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other safeguards weren’t designed to catch. \n\nBecause Claude has already read the conversation, self-assessment is very efficient. And unlike classifiers, which target a discrete set of harms, it draws on Claude’s own judgment, ",
-    "text_ja": "Claudeが会話内の潜在的な悪用を指摘できるよう学習させました。この手法を「自己評価（self-assessment）」と呼んでいます。Claudeは応答直後に、その会話に対する予備的な安全性評価を行います。\n\n6月に自己評価の利用を開始して以来、他のセーフガードでは検出するよう設計されていなかった悪用を発見できるようになりました。\n\nClaudeはすでに会話を読んでいるため、自己評価は非常に効率的です。特定の有害性のセットを対象とする分類器とは異なり、Claude自身の判断を活用するため、モデルの改善に伴って精度も向上していきます。\n\n新しいSafeguardsブログで詳しくご覧いただけます:\nhttps://t.co/18j6zdHub4"
-   },
-   "post_ids": [
-    "2115871889549865429"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
-  },
-  {
    "id": "f2261a1b3d",
    "verdict": "confirmed",
    "title": "OpenAI、フロンティアモデルの監視体制を拡大",
@@ -63,7 +14,7 @@
    "terms": [],
    "score": 90,
    "credibility": 100,
-   "heat": 51,
+   "heat": 49,
    "first_seen": "2026-10-29T19:59:31.000Z",
    "latest": "2026-10-29T19:59:31.000Z",
    "authors": [
@@ -97,7 +48,56 @@
     "2115896329645723836"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
+  },
+  {
+   "id": "03699bf154",
+   "verdict": "confirmed",
+   "title": "Anthropic、Claudeの自己評価による不正利用検知を導入",
+   "summary": "Anthropicは公式アカウントで、Claudeが会話内の潜在的な不正利用をフラグ付けする「自己評価（self-assessment）」という手法を使っていると発表した。Claudeは応答直後に会話の予備的な安全性評価を行い、6月から使い始めて以来、他の安全対策では捕まえられなかった不正利用を検出したとしている。新しいSafeguardsブログで詳細が案内されている。",
+   "points": [
+    "分類器（classifier）が決まった種類の有害行為を対象とするのに対し、自己評価はClaude自身の判断を使うため、モデルの向上に伴い精度が上がると説明されている",
+    "会話を既に読んでいるため効率が良いとされるが、コストや誤検知率などの数値は投稿からは分からない",
+    "自己評価の判断基準や実効性の検証結果は、ブログを読んで確認が必要"
+   ],
+   "terms": [],
+   "score": 90,
+   "credibility": 100,
+   "heat": 51,
+   "first_seen": "2026-10-29T18:22:24.000Z",
+   "latest": "2026-10-29T18:22:24.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式ブログ案内",
+   "links": [
+    {
+     "url": "https://safeguards.anthropic.com/2026/self-assessment/",
+     "domain": "safeguards.anthropic.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2115871889549865429",
+    "username": "AnthropicAI",
+    "text": "We’ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other safeguards weren’t designed to catch. \n\nBecause Claude has already read the conversation, self-assessment is very efficient. And unlike classifiers, which target a discrete set of harms, it draws on Claude’s own judgment, ",
+    "text_ja": "Claudeが会話内の潜在的な悪用を指摘できるよう学習させました。この手法を「自己評価（self-assessment）」と呼んでいます。Claudeは応答直後に、その会話に対する予備的な安全性評価を行います。\n\n6月に自己評価の利用を開始して以来、他のセーフガードでは検出するよう設計されていなかった悪用を発見できるようになりました。\n\nClaudeはすでに会話を読んでいるため、自己評価は非常に効率的です。特定の有害性のセットを対象とする分類器とは異なり、Claude自身の判断を活用するため、モデルの改善に伴って精度も向上していきます。\n\n新しいSafeguardsブログで詳しくご覧いただけます:\nhttps://t.co/18j6zdHub4"
+   },
+   "post_ids": [
+    "2115871889549865429"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "ed1f976872",
@@ -109,9 +109,9 @@
     "対象はiPadとiPhoneのDuoで、他の端末や一般公開の範囲は投稿からは分からない"
    ],
    "terms": [],
-   "score": 84,
+   "score": 83,
    "credibility": 85,
-   "heat": 57,
+   "heat": 55,
    "first_seen": "2026-10-29T17:32:41.000Z",
    "latest": "2026-10-29T17:32:41.000Z",
    "authors": [
@@ -139,7 +139,7 @@
     "2115859377488072879"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "859d4932e3",
@@ -165,9 +165,9 @@
      "desc": "外部の文書を検索してからAIが回答を作る仕組み。"
     }
    ],
-   "score": 79,
+   "score": 78,
    "credibility": 100,
-   "heat": 23,
+   "heat": 21,
    "first_seen": "2026-10-30T00:23:51.000Z",
    "latest": "2026-10-30T00:23:51.000Z",
    "authors": [
@@ -201,7 +201,64 @@
     "2115962853463396395"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
+  },
+  {
+   "id": "f7322f7a50",
+   "verdict": "confirmed",
+   "title": "Hugging FaceがMistral Large 4の発表日にMistral社員へインタビュー",
+   "summary": "Hugging Faceは、Mistral Large 4の発表日に同社のPierre StockとSagar Vazeに話を聞いたと公式アカウントで投稿した。内容はサイバー分野、学習、評価、サンドボックス化などについての会話とされ、オープンウェイトで自社データセンターで学習されたと紹介している。別途、ギリア株式会社の入江氏（shi3z）が「技研ベース 非公式PV」の字幕MVを紹介しているが、AIモデルとは無関係の内容である。",
+   "points": [
+    "インタビューは動画で公開されており、Mistralのモデルの学習や安全性評価の考え方を一次情報として聞ける。",
+    "「サイバーに強い」といった性能評価は企業側の説明であり、独立した検証は別途確認が必要。",
+    "同じクラスタ内の別投稿（MV紹介）はAIニュースとは無関係で、情報源としての価値はない。"
+   ],
+   "terms": [],
+   "score": 76,
+   "credibility": 88,
+   "heat": 20,
+   "first_seen": "2026-10-29T15:30:01.000Z",
+   "latest": "2026-10-31T23:57:39.000Z",
+   "authors": [
+    "huggingface",
+    "shi3z"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "shi3z",
+     "label": "ギリア株式会社ファウンダー・顧問",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Hugging Face公式の動画告知",
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=FczbSauVvjw&feature=youtu.be",
+     "domain": "youtube.com",
+     "primary": false
+    }
+   ],
+   "post": {
+    "url": "https://x.com/huggingface/status/2115828507712327979",
+    "username": "huggingface",
+    "text": "We sat down with @MistralAI's Pierre Stock and Sagar Vaze from Mistral on launch day of Mistral Large 4. \n\nOpen weights. Trained in Mistral’s own data centers. Excels at cyber.\n\nFull conversation on cyber, training, evals and sandboxing:\n\nhttps://t.co/JOyEpqGBO9",
+    "text_ja": "Mistral Large 4の発表日に、@MistralAI のPierre StockさんとMistralのSagar Vazeさんに話を聞きました。\n\nオープンウェイト。Mistralの自社データセンターで学習。サイバー分野に強い。\n\nサイバー、学習、評価、サンドボックス化についての対話の全編はこちら：\n\nhttps://t.co/JOyEpqGBO9"
+   },
+   "post_ids": [
+    "2115828507712327979",
+    "2116681035627032795"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "034fb5be35",
@@ -223,9 +280,9 @@
      "desc": "限られたメモリをどれだけ無駄なく使えているかを示す指標。"
     }
    ],
-   "score": 68,
+   "score": 67,
    "credibility": 90,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-10-29T17:59:14.000Z",
    "latest": "2026-10-29T17:59:14.000Z",
    "authors": [
@@ -253,7 +310,7 @@
     "2115866060637560903"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "35eba37e15",
@@ -310,7 +367,7 @@
     "2115826286652248275"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "db60b5e981",
@@ -367,7 +424,7 @@
     "2115844222729507001"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "af5e0342b6",
@@ -424,7 +481,7 @@
     "2115843451078217750"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "0ed73f197e",
@@ -447,7 +504,7 @@
    ],
    "score": 60,
    "credibility": 85,
-   "heat": 3,
+   "heat": 2,
    "first_seen": "2026-10-29T16:25:15.000Z",
    "latest": "2026-10-29T16:25:15.000Z",
    "authors": [
@@ -481,7 +538,7 @@
     "2115842408302924162"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "ad33c7ed5f",
@@ -501,7 +558,7 @@
    ],
    "score": 54,
    "credibility": 78,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-10-30T04:05:09.000Z",
    "latest": "2026-10-30T04:05:09.000Z",
    "authors": [
@@ -535,7 +592,7 @@
     "2116018545784238105"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   }
  ]
 }

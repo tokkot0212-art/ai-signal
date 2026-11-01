@@ -2,55 +2,42 @@
  "date": "2026-10-28",
  "items": [
   {
-   "id": "6f89e7c18a",
+   "id": "6a4ea7b131",
    "verdict": "confirmed",
-   "title": "Mistral AIが新モデル「Le Chonk」の重みを公開",
-   "summary": "Mistral AIは、改良版の「Le Chonk」の重み（モデルのデータ本体）を公開したと発表した。投稿では、オープンモデルの中でCognitionのFrontierCodeで1位になったこと、サイバー防御分野の評価で複数のセキュリティ企業の名前が挙がっていることが述べられている。NVIDIAも、このモデルを学習に使った計算基盤と、NVFP4形式での初日対応を公式アカウントで紹介した。",
+   "title": "Mistral AIが1兆パラメータのMoEモデル「Le Chonk」の重みを公開",
+   "summary": "Mistral AIは新しい「Le Chonk」の重み（weights）を公開したと発表した。同社は、コーディングとサイバーセキュリティ分野で強みがあると説明し、Hugging FaceでのダウンロードとMistral Forgeでのカスタマイズを案内している。NVIDIAも公式アカウントで、NVFP4形式でのday 0対応と、1兆パラメータ・3,800基のGrace Blackwell GPUで学習したことを紹介している。",
    "points": [
-    "公開されたのはモデルの重みで、Hugging Face経由でダウンロードしてカスタマイズできると案内されている",
-    "NVIDIAの投稿によると1兆パラメータのMoE（専門家の組み合わせ型）多峰性モデルで、3,800基のGPUで学習されたとされる",
-    "性能の数字は各社の発表によるもので、第三者による独立検証の結果はこの投稿からは確認できない"
+    "公開された重みはHugging Faceで入手でき、自社環境で動かしたりカスタマイズしたりできると案内されている。",
+    "「#1 among open models」などの順位や性能は、Mistral・Cognition・Artificial Analysisなどの提示によるもので、第三者の独立検証は投稿からは確認できない。",
+    "MoE（専門家混合）は全体の一部だけを使って計算する方式とみられ、大規模でも推論コストを抑えられる可能性があるが、実際の効率は未確認。"
    ],
-   "terms": [
-    {
-     "term": "重み（weights）",
-     "desc": "AIモデルが学習で獲得した数値の集まり。これを公開すると誰でもモデルを動かせる。"
-    },
-    {
-     "term": "MoE（専門家の組み合わせ型）",
-     "desc": "複数の小さな“専門家”ネットワークを状況に応じて使い分ける構造。大規模でも計算を抑えやすい。"
-    },
-    {
-     "term": "NVFP4",
-     "desc": "NVIDIAのGPU向けの4ビットの数値形式。メモリと計算を節約するための技術。"
-    }
-   ],
-   "score": 92,
+   "terms": [],
+   "score": 91,
    "credibility": 100,
-   "heat": 43,
+   "heat": 41,
    "first_seen": "2026-10-27T17:00:11.000Z",
-   "latest": "2026-10-29T14:46:44.000Z",
+   "latest": "2026-10-30T09:48:50.000Z",
    "authors": [
-    "MistralAI",
-    "NVIDIAAI"
+    "NVIDIAAI",
+    "MistralAI"
    ],
    "author_labels": [
     {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
      "type": "official",
      "former": ""
     },
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Mistral・NVIDIAの公式投稿",
+   "evidence_note": "Mistral・NVIDIA公式投稿",
    "links": [
     {
      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
@@ -64,17 +51,18 @@
     }
    ],
    "post": {
-    "url": "https://x.com/MistralAI/status/2115811242556137820",
-    "username": "MistralAI",
-    "text": "Today, we release the weights of a new and improved Le Chonk, advancing the open frontier for agentic coding and cybersecurity.\n\n💻 Built to build: Le Chonk ranks #1 on @cognition’s FrontierCode among open models, and sets a new benchmark for Pareto efficiency on @artificialanalysis.\n\n🛡 Built to defend: State-of-the-art in cyberdefense, put through the paces by the world's leading cyber vendors, including @CrowdStrike, @cloudflare, @rubrik, @zscaler, and others.\n\nBuilt for sovereignty: Make it yo",
-    "text_ja": "本日、新しく改良されたLe Chonkの重みを公開します。オープンなフロンティアを、エージェント型コーディングとサイバーセキュリティの分野で前進させるものです。\n\n💻 開発する力：Le Chonkは、Cognitionの FrontierCodeでオープンモデルの中で第1位となり、@artificialanalysis で効率性（パレート効率）の新たなベンチマークを打ち立てました。\n\n🛡 守る力：サイバー防御で最先端の性能を持ち、@CrowdStrike、@cloudflare、@rubrik、@zscaler など世界有数のサイバーセキュリティ企業によって検証されています。\n\n主権のために：ご自身のものとして使ってください。@huggingface で重みをダウンロードし、Mistral Forgeでカスタマイズし、必要な場所に展開できます。\n\nチームとお客様からの詳しい話は👇をご覧ください："
+    "url": "https://x.com/NVIDIAAI/status/2115817617911157099",
+    "username": "NVIDIAAI",
+    "text": "Congrats @MistralAI team on the next gen Le Chonk! 🙌\n\n1T-parameter MoE multimodal model trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs.\n\nOur day 0 support:\nNVFP4 on @huggingface → https://t.co/WSqdsXezAo\n\nScale distributed inference using performance-optimized Dynamo → https://t.co/70cV5Wl1ln",
+    "text_ja": "新しいLe Chonkの誕生おめでとう、@MistralAIチーム！🙌\n\n1兆パラメータのMoEマルチモーダルモデルで、NVIDIA Grace Blackwell GPU 3,800基を使ってゼロから学習されました。\n\nday 0サポート：\n@huggingface でのNVFP4 → https://t.co/WSqdsXezAo\n\n性能最適化されたDynamoを使って分散推論を拡張 → https://t.co/70cV5Wl1ln"
    },
    "post_ids": [
+    "2115817617911157099",
     "2115811242556137820",
-    "2115817617911157099"
+    "2116105034673058023"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "e401b6cce2",
@@ -92,9 +80,9 @@
      "desc": "AIを科学研究の加速に使おうとする取り組みの総称。"
     }
    ],
-   "score": 89,
+   "score": 88,
    "credibility": 100,
-   "heat": 47,
+   "heat": 46,
    "first_seen": "2026-10-27T20:27:48.000Z",
    "latest": "2026-10-29T15:18:40.000Z",
    "authors": [
@@ -129,7 +117,7 @@
     "2115825653539025142"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-01T01:18:43Z"
+   "archived_at": "2026-11-01T10:39:59Z"
   },
   {
    "id": "9ce8aa9398",

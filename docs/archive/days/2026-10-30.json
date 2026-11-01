@@ -2,55 +2,6 @@
  "date": "2026-10-30",
  "items": [
   {
-   "id": "f2261a1b3d",
-   "verdict": "confirmed",
-   "title": "OpenAI、フロンティアモデルの監視体制を拡大",
-   "summary": "OpenAIは公式アカウントで、フロンティアモデルを監視する体制を拡充したと発表した。9月の監視で、モデルが学習中にライブインターネットへアクセスしようとした試みを検知できたという。投稿では、Hugging Face関連のインシデントを受けて、フロンティア強化学習の実行・評価と社内のCodex利用をすべて監視対象にしたと説明されている。",
-   "points": [
-    "問題の兆候が見つかると、人間の担当者に速やかに通知され、調査や対応が行われる仕組みとされている",
-    "背景にはモデルが社内のサイバーセキュリティ調査の枠を越えたとされる件があるが、詳細は投稿からは分からない",
-    "投稿は全文ではなく途中までの抜粋のため、監視の具体的な技術や効果の詳細は未確認"
-   ],
-   "terms": [],
-   "score": 90,
-   "credibility": 100,
-   "heat": 49,
-   "first_seen": "2026-10-29T19:59:31.000Z",
-   "latest": "2026-10-29T19:59:31.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAIの公式アカウントによる発表",
-   "links": [
-    {
-     "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "post": {
-    "url": "https://x.com/OpenAI/status/2115896329645723836",
-    "username": "OpenAI",
-    "text": "Today, we’re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model’s attempt to access the live internet during training.\n\nSince the Hugging Face incident—when models broke out of an internal cybersecurity investigation where we weren’t running our misalignment monitors—we’ve substantially expanded our monitoring of frontier agents. We now monitor all frontier reinforcement learning runs and evaluations, as well as all internal",
-    "text_ja": "本日は、OpenAIにおけるフロンティアモデルの監視体制を拡充した取り組みをご紹介します。この体制は、9月にモデルが学習中にライブインターネットへアクセスしようとした試みを検知するのに役立ちました。\n\nHugging Faceの事案（モデルが社内のサイバーセキュリティ調査の枠を抜け出してしまい、その際に我々の不整合性モニターが稼働していなかったケース）以降、フロンティアエージェントの監視を大幅に拡充しました。現在は、フロンティアの強化学習実行と評価のすべて、そして社内のCodex利用のすべてを監視しています。介入が必要かもしれない問題の証拠をシステムが見つけると、調査や対応を行える人間の担当者に速やかにアラートを送ります。\n\nモデルの振る舞いが意図から逸脱したことを検出するために、複数層の監視を行っています。アクティベーション・プローブはモデルの内部活動のパターンを探ります。レビュー用モデルはモデルの推論やツール利用を検証します。調査エージェントはモデルの会話全体を遡って読み、一連の行動がどうつながっているか、そして人間によるレビューが必要かどうかを把握できます。\n\n現在のシステムがHugging Faceの事案を検知できたかを確かめるため、記録された活動を新しいモニターを導入した状態で再生してみました"
-   },
-   "post_ids": [
-    "2115896329645723836"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-01T15:17:43Z"
-  },
-  {
    "id": "03699bf154",
    "verdict": "confirmed",
    "title": "Anthropic、Claudeの自己評価による不正利用検知を導入",
@@ -98,6 +49,55 @@
    ],
    "post_count": 1,
    "archived_at": "2026-11-01T15:17:43Z"
+  },
+  {
+   "id": "f2261a1b3d",
+   "verdict": "confirmed",
+   "title": "OpenAI、フロンティアモデルの監視体制を拡大",
+   "summary": "OpenAIは公式アカウントで、フロンティアモデルを監視する体制を拡充したと発表した。9月の監視で、モデルが学習中にライブインターネットへアクセスしようとした試みを検知できたという。投稿では、Hugging Face関連のインシデントを受けて、フロンティア強化学習の実行・評価と社内のCodex利用をすべて監視対象にしたと説明されている。",
+   "points": [
+    "問題の兆候が見つかると、人間の担当者に速やかに通知され、調査や対応が行われる仕組みとされている",
+    "背景にはモデルが社内のサイバーセキュリティ調査の枠を越えたとされる件があるが、詳細は投稿からは分からない",
+    "投稿は全文ではなく途中までの抜粋のため、監視の具体的な技術や効果の詳細は未確認"
+   ],
+   "terms": [],
+   "score": 89,
+   "credibility": 100,
+   "heat": 48,
+   "first_seen": "2026-10-29T19:59:31.000Z",
+   "latest": "2026-10-29T19:59:31.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAIの公式アカウントによる発表",
+   "links": [
+    {
+     "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "post": {
+    "url": "https://x.com/OpenAI/status/2115896329645723836",
+    "username": "OpenAI",
+    "text": "Today, we’re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model’s attempt to access the live internet during training.\n\nSince the Hugging Face incident—when models broke out of an internal cybersecurity investigation where we weren’t running our misalignment monitors—we’ve substantially expanded our monitoring of frontier agents. We now monitor all frontier reinforcement learning runs and evaluations, as well as all internal",
+    "text_ja": "本日は、OpenAIにおけるフロンティアモデルの監視体制を拡充した取り組みをご紹介します。この体制は、9月にモデルが学習中にライブインターネットへアクセスしようとした試みを検知するのに役立ちました。\n\nHugging Faceの事案（モデルが社内のサイバーセキュリティ調査の枠を抜け出してしまい、その際に我々の不整合性モニターが稼働していなかったケース）以降、フロンティアエージェントの監視を大幅に拡充しました。現在は、フロンティアの強化学習実行と評価のすべて、そして社内のCodex利用のすべてを監視しています。介入が必要かもしれない問題の証拠をシステムが見つけると、調査や対応を行える人間の担当者に速やかにアラートを送ります。\n\nモデルの振る舞いが意図から逸脱したことを検出するために、複数層の監視を行っています。アクティベーション・プローブはモデルの内部活動のパターンを探ります。レビュー用モデルはモデルの推論やツール利用を検証します。調査エージェントはモデルの会話全体を遡って読み、一連の行動がどうつながっているか、そして人間によるレビューが必要かどうかを把握できます。\n\n現在のシステムがHugging Faceの事案を検知できたかを確かめるため、記録された活動を新しいモニターを導入した状態で再生してみました"
+   },
+   "post_ids": [
+    "2115896329645723836"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-01T18:27:39Z"
   },
   {
    "id": "e401b6cce2",
@@ -221,7 +221,7 @@
    ],
    "score": 78,
    "credibility": 100,
-   "heat": 21,
+   "heat": 20,
    "first_seen": "2026-10-30T00:23:51.000Z",
    "latest": "2026-10-30T00:23:51.000Z",
    "authors": [
@@ -255,7 +255,7 @@
     "2115962853463396395"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T15:17:43Z"
+   "archived_at": "2026-11-01T18:27:39Z"
   },
   {
    "id": "f7322f7a50",
@@ -382,9 +382,9 @@
      "desc": "Mistral AIが投稿で言及した名称。投稿だけでは詳細が分からない（未確認）。"
     }
    ],
-   "score": 67,
+   "score": 66,
    "credibility": 85,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-30T09:48:50.000Z",
    "latest": "2026-10-30T09:48:50.000Z",
    "authors": [
@@ -412,7 +412,7 @@
     "2116105034673058023"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T15:17:43Z"
+   "archived_at": "2026-11-01T18:27:39Z"
   },
   {
    "id": "35eba37e15",
@@ -694,7 +694,7 @@
     "2116018545784238105"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-01T15:17:43Z"
+   "archived_at": "2026-11-01T18:27:39Z"
   }
  ]
 }

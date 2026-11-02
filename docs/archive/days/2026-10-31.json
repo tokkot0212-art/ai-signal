@@ -2,6 +2,79 @@
  "date": "2026-10-31",
  "items": [
   {
+   "id": "3dbc8d3da2",
+   "verdict": "confirmed",
+   "title": "Anthropic、AIエージェントで訓練データの不整合検出を自動化する研究を公表",
+   "summary": "Anthropicは公式アカウントで新しい研究を発表した。数千のClaudeエージェントに、訓練データの監視役（モニター）を回避する課題を与えたところ、監視役には無害に見えるが実際には望ましくない振る舞いを教えるデータが作られた。投稿によると、この事例は今後の訓練データ監視の改善に使えるとされ、研究は「最初の一歩」と位置づけられている。",
+   "points": [
+    "新しい点: 人間の研究者ではなくAIエージェントが、安全性テスト（レッドチーム）の役割を担う試みである",
+    "重要性: 安全性テストの人手不足を補える可能性があり、AI開発の安全対策に関わる人に関係する",
+    "注意点: 投稿は「最初の一歩」としており、実運用での効果や再現性は投稿からは分からない"
+   ],
+   "terms": [],
+   "score": 89,
+   "credibility": 100,
+   "heat": 45,
+   "first_seen": "2026-10-31T01:59:06.000Z",
+   "latest": "2026-11-01T15:27:56.000Z",
+   "authors": [
+    "AnthropicAI",
+    "emollick"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "emollick",
+     "label": "Wharton教授",
+     "type": "researcher",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式研究告知",
+   "links": [
+    {
+     "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+     "domain": "alignment.anthropic.com",
+     "primary": true
+    },
+    {
+     "url": "https://oxyrhynchus.web.ox.ac.uk/home",
+     "domain": "oxyrhynchus.web.ox.ac.uk",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "安全性研究の話で製造現場の業務には直接効かない。試せる公開物もない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2116349211549843666",
+    "username": "AnthropicAI",
+    "text": "New Anthropic research: Automating subtle emergent misalignment research.\n\nRed-teaming is a vital part of model safety testing, but it’s also limited by researchers’ time. To see if we could automate it, we set thousands of Claude agents the task of evading a training data monitor.\n\nThese agents developed training data that looked harmless to monitors (like a veteran wrestler mentoring a newcomer, or a Q&A about professional beekeeping), but that in fact taught misaligned behavior.\n\nExamples lik",
+    "text_ja": "Anthropicの新しい研究: 不整合の微妙な発生の研究を自動化する。\n\nレッドチーミング（攻撃側に立った安全性テスト）はモデル安全性テストの重要な一部だが、研究者の時間に制約されている。これを自動化できるか確かめるため、数千のClaudeエージェントに、訓練データ監視をすり抜けるという課題を与えた。\n\nエージェントたちは、監視役には無害に見える訓練データ（ベテランのレスラーが新人を指導する話や、プロの養蜂家についてのQ&Aなど）を作り出したが、実際には望ましくない振る舞いを教え込むものだった。\n\nこのような事例は、将来の訓練データ監視を直接改善するために使える。この研究はまだ最初の一歩にすぎないが、将来のレッドチーミングはより良いモデルを使うことで、さらに大きく改善できることを示唆している。"
+   },
+   "post_ids": [
+    "2116349211549843666",
+    "2116915149546389960",
+    "2116905564680687831"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-11-02T22:22:38Z"
+  },
+  {
    "id": "f0b10646ac",
    "verdict": "confirmed",
    "title": "NVIDIA、9.6Mパラメータの音声ノイズ除去モデル「RE-USE」を公開",
@@ -133,65 +206,6 @@
    "archived_at": "2026-11-02T11:28:40Z"
   },
   {
-   "id": "c344aa8a66",
-   "verdict": "confirmed",
-   "title": "Anthropic、トレーニングデータに潜む不整合を自動で探す研究を発表",
-   "summary": "Anthropicは公式アカウントで新しい研究を発表した。Claudeの多数のエージェントに、学習データの監視システムを回避する課題を与えたところ、監視には無害に見えるが、実際には不整合な振る舞いを学習させるデータが作られたと説明している。こうした例は今後の学習データ監視の改善に使えるとし、研究は第一歩だとしている。",
-   "points": [
-    "レッドチーミング（攻撃役による安全性テスト）を人手から自動化する試みが新しい。",
-    "監視をすり抜けるデータの例は、今後の安全対策に直接使えるとされる。",
-    "研究はまだ初期段階と明記されており、実際の効果の大きさは未確認。"
-   ],
-   "terms": [],
-   "score": 84,
-   "credibility": 100,
-   "heat": 46,
-   "first_seen": "2026-10-31T01:59:06.000Z",
-   "latest": "2026-10-31T01:59:06.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式研究ページ（投稿内リンク）",
-   "links": [
-    {
-     "url": "https://alignment.anthropic.com/2026/automated-em-search/",
-     "domain": "alignment.anthropic.com",
-     "primary": true
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "AI安全性研究の話で、現場の手順書作成には直接使えない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2116349211549843666",
-    "username": "AnthropicAI",
-    "text": "New Anthropic research: Automating subtle emergent misalignment research.\n\nRed-teaming is a vital part of model safety testing, but it’s also limited by researchers’ time. To see if we could automate it, we set thousands of Claude agents the task of evading a training data monitor.\n\nThese agents developed training data that looked harmless to monitors (like a veteran wrestler mentoring a newcomer, or a Q&A about professional beekeeping), but that in fact taught misaligned behavior.\n\nExamples lik",
-    "text_ja": "Anthropicの新しい研究: 微妙に現れる誤った振る舞い（ミスアライメント）の研究を自動化する。\n\nレッドチーミングはモデルの安全性テストに欠かせないが、研究者の時間に制約される。自動化できるかを確かめるため、数千のClaudeエージェントに、学習データ監視装置を回避するという課題を与えた。\n\nエージェントらは、監視装置には無害に見える学習データ（ベテランのレスラーが新人を指導する話や、プロの養蜂家についてのQ&Aのようなもの）を作り出したが、実際には望ましくない振る舞いを教えるものだった。\n\nこうした例は、将来の学習データ監視装置を直接改善するのに使える。この研究はまだ第一歩にすぎないが、今後のレッドチーミングは、より良いモデルを使うことでさらに改善できる可能性を示している。"
-   },
-   "post_ids": [
-    "2116349211549843666"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-02T18:31:58Z"
-  },
-  {
    "id": "007a063198",
    "verdict": "confirmed",
    "title": "OpenAIが今週リリースしたAgents API関連の機能を案内",
@@ -242,7 +256,7 @@
     "2116306164375863343"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-02T18:31:58Z"
+   "archived_at": "2026-11-02T22:22:38Z"
   },
   {
    "id": "e03daef380",
@@ -319,7 +333,7 @@
    ],
    "score": 57,
    "credibility": 78,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-30T17:29:07.000Z",
    "latest": "2026-11-01T22:05:06.000Z",
    "authors": [
@@ -364,7 +378,7 @@
     "2117015098250416160"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-02T18:31:58Z"
+   "archived_at": "2026-11-02T22:22:38Z"
   },
   {
    "id": "2986364142",
@@ -417,33 +431,24 @@
     "2116371009125363767"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-02T18:31:58Z"
+   "archived_at": "2026-11-02T22:22:38Z"
   },
   {
-   "id": "26f074978d",
+   "id": "269e5d3b6e",
    "verdict": "promising",
-   "title": "npakaさんがHairDeckとIdolを試し、Codex+Colab CLIでの設定時間を報告",
-   "summary": "プログラマーの@npaka123さんが、『HairDeck』と『Idol』という2つのツールを試したと投稿した。Codexと Colab CLIを組み合わせたセットアップにかかった時間は、HairDeckが約5分30秒、Idolが12分だったと報告している。",
+   "title": "画像1枚から動く3Dヘアモデルを生成するAI『HairDeck』を試用",
+   "summary": "プログラマーでnpaka氏は、1枚の画像から動く3Dヘアモデルを生成するAI『HairDeck』の概要を紹介し、Codex と Colab CLI を使ってセットアップし、約5分30秒でセットアップできたと投稿した。試用中であることも示されている。出力の品質や細かな手順は投稿からは分からない。",
    "points": [
-    "セットアップ時間を具体的な数値で示しており、個人が試した結果として参考になる",
-    "ツールの機能や品質についての評価は投稿では述べられていない",
-    "Colab（クラウドの計算環境）を使う前提なので、利用条件や料金は別途確認が必要"
+    "新しい点: 1枚の画像から動く3Dヘアを作るツールの紹介",
+    "重要性: 3Dキャラクターや製品イメージ作りの手間を減らせる可能性がある",
+    "注意点: 本人の試用は確認できるが、出力の品質や実用性は投稿からは判断できない"
    ],
-   "terms": [
-    {
-     "term": "Codex",
-     "desc": "OpenAIのコーディング支援AI（投稿では作業に使ったツールとして言及）"
-    },
-    {
-     "term": "Colab CLI",
-     "desc": "Googleのクラウド計算環境『Colab』をコマンドラインから操作する仕組み"
-    }
-   ],
-   "score": 55,
-   "credibility": 70,
-   "heat": 12,
+   "terms": [],
+   "score": 54,
+   "credibility": 73,
+   "heat": 11,
    "first_seen": "2026-10-31T05:08:28.000Z",
-   "latest": "2026-11-01T01:07:20.000Z",
+   "latest": "2026-11-01T01:27:10.000Z",
    "authors": [
     "npaka123"
    ],
@@ -457,8 +462,14 @@
    ],
    "evidence": "hands_on_test",
    "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人の設定時間の計測報告",
-   "links": [],
+   "evidence_note": "本人の試用記録（セットアップ時間）",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n06fcb7653436?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
    "services": [
     {
      "name": "Codex",
@@ -471,24 +482,92 @@
    "events": [],
    "value": {
     "impact": 1,
-    "closeness": 2,
+    "closeness": 1,
     "try_cost": 2,
-    "why": "ツール選びの参考にはなるが、現場業務への効果は示されていない"
+    "why": "製造業の業務とは遠い。試すには環境構築が必要"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/npaka123/status/2116698573450678734",
+    "url": "https://x.com/npaka123/status/2116703562390810911",
     "username": "npaka123",
-    "text": "HairDeck をおためし中\n\nCodex x Colab CLI でセットアップ : 約5分30秒 https://t.co/HVN6bgAxpd",
+    "text": "HairDeck の概要 - 1枚画像から動く3Dヘアモデルを生成するAI｜npaka @npaka123 https://t.co/zzBEqgiM7t",
     "text_ja": null
    },
    "post_ids": [
-    "2116698573450678734",
+    "2116703562390810911",
+    "2116698573450678734"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-02T22:22:38Z"
+  },
+  {
+   "id": "29350c5f0b",
+   "verdict": "promising",
+   "title": "1枚の画像から3D表現を作るAI「Idol」を試用",
+   "summary": "プログラマーのnpaka123氏が、1枚の画像から3D Gaussian Splattingを生成するAI「Idol」の概要を紹介した。同氏はCodexとColab CLIを使ってセットアップし、所要時間は12分だったと投稿している。",
+   "points": [
+    "1枚の画像から3D表現を作れるとされ、3D素材づくりの手間を減らす可能性がある",
+    "セットアップ12分という数値は投稿者本人の環境によるもので、再現性は未確認",
+    "製造現場での活用（部品や装置の3Dモデル化など）は一般論で、本件では検証されていない"
+   ],
+   "terms": [],
+   "score": 51,
+   "credibility": 73,
+   "heat": 3,
+   "first_seen": "2026-10-31T05:08:28.000Z",
+   "latest": "2026-10-31T05:11:53.000Z",
+   "authors": [
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の試用メモ（時間のみ）",
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n66f6eaffeecb?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "3D生成は現場業務と距離があり、試用はColab等の設定が必要"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/npaka123/status/2116397727429140727",
+    "username": "npaka123",
+    "text": "Idolの概要 - 1枚の画像から3D Gaussian Splattingを生成するAI｜npaka @npaka123 https://t.co/kVm300k25y",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2116397727429140727",
     "2116396867059888409"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-02T18:31:58Z"
+   "archived_at": "2026-11-02T22:22:38Z"
   }
  ]
 }

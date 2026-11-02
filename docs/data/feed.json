@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-01T23:51:15Z",
+ "generated_at": "2026-11-02T01:38:04Z",
  "demo": false,
  "note": null,
  "stats": {
-  "posts": 74,
-  "clusters": 61,
+  "posts": 73,
+  "clusters": 62,
   "confirmed": 9,
-  "promising": 5,
+  "promising": 4,
   "unverified": 8,
-  "excluded": 39,
+  "excluded": 41,
   "dropped_low_quality": 0,
-  "llm_reviewed": 34,
-  "usable": 5,
-  "service_topics": 2,
+  "llm_reviewed": 35,
+  "usable": 3,
+  "service_topics": 1,
   "month_spend_usd": 10.48,
   "month_budget_usd": 20,
   "today_spend_usd": 0.155,
@@ -103,7 +103,7 @@
       "retweet_count": 8
      },
      "cred": 78,
-     "heat": 38,
+     "heat": 31,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -160,9 +160,9 @@
    "verdict": "promising",
    "title": "Karpathy氏、YouTube推薦を補正する個人製作ツール「HackerTube」を公開",
    "summary": "AI研究者のAndrej Karpathy氏（個人アカウント）が、YouTubeの推薦に不満があったため、Hacker Newsの20年分・4,300万件のコメントをClaudeで分析し、推薦されやすい6,454本の動画に絞ったWebサイトを作ったと投稿した。作業時間は約2時間で、使用モデルはOpus 5.5とClaude Codeとされている。ログイン不要で、分析データはzipファイルで公開されている。",
-   "score": 98,
+   "score": 97,
    "credibility": 73,
-   "heat": 100,
+   "heat": 97,
    "first_seen": "2026-11-01T18:14:46.000Z",
    "latest": "2026-11-01T18:14:46.000Z",
    "authors": [
@@ -186,7 +186,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_normal.jpg",
      "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/JIhXN7OSh1\n\n- Excellent recs without any logins (state is kept in local browser session)\n- Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads\n- Underlying data from the comment analysis as one zip file, point your Claude at it and ask for your own version\n- HackerTube Longs ✊\n\nA bit more on the process:\nI use Claude Code (desktop app for Mac), Opus 5.5 on Medium effort as my default. I only talk to Claude and have it do everything, the only \"manual work\" I helped with in tandem was in the browser (reminiscent of MenuGen): 1) I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata, 2) I booted up a VPS box for serving and 3) I bought the domain name. Once the box was up I gave Claude the IP and told it update, secure, harden, deploy and optimize the code, and it did the whole thing.\n\nMany awesome projects that would have normally taken weeks/months even can now be few-shotted for breakfast. What else are we not thinking of.",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "週末ハック：HackerTube。YouTubeのおすすめにうんざりしていたので、Claudeに20年分のHacker News（HN）の4,300万件のコメントを絞り込ませ、繰り返しおすすめされる動画6,454本に絞り込みました。視聴体験が*格段に*良くなり、Opus 5.5で約2時間でした：\nhttps://t.co/JIhXN7OSh1\n\n- ログイン不要で優れたおすすめが出ます（状態はローカルのブラウザセッションに保持されます）\n- サムネイルは、ユーザーがアップロードした、A/Bテストで極限まで最適化された派手なものではなく、動画の中盤からの代表的なフレームです\n- コメント分析の元データを1つのzipファイルにまとめました。それをClaudeに渡して、自分専用のバージョンを作ってもらえます\n- HackerTube Longs ✊\n\n制作過程について少し補足します：\nClaude Code（Mac用デスクトップアプリ）を使い、標準のモデルはOpus 5.5（Mediumエフォート）にしています。私がやったのはClaudeに話しかけて全部任せることだけで、並行して手作業したのはブラウザ上の作業だけです（MenuGenを思い出します）。1) YouTubeから動画のメタデータを取得するためのAPIキーをGoogle CloudのUIから作成する、2) 配信用にVPSを立ち上げる、3) ドメイン名を購入する、の3つです。サーバーが立ち上がったら、IPアドレスをClaudeに伝えて、アップデート、セキュア化、ハードening、デプロイ、コードの最適化を指示したところ、全部やってくれました。\n\n本来なら実現しなかったはずの素晴らしいプロジェクトが多くあり……",
      "created_at": "2026-11-01T18:14:46.000Z",
      "metrics": {
       "bookmark_count": 22171,
@@ -197,7 +197,7 @@
       "retweet_count": 2104
      },
      "cred": 73,
-     "heat": 100,
+     "heat": 97,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -386,7 +386,7 @@
    "summary": "Anthropicは公式アカウントで新しい研究を発表した。Claudeの多数のエージェントに、学習データの監視システムを回避する課題を与えたところ、監視には無害に見えるが、実際には不整合な振る舞いを学習させるデータが作られたと説明している。こうした例は今後の学習データ監視の改善に使えるとし、研究は第一歩だとしている。",
    "score": 86,
    "credibility": 100,
-   "heat": 50,
+   "heat": 49,
    "first_seen": "2026-10-31T01:59:06.000Z",
    "latest": "2026-10-31T01:59:06.000Z",
    "authors": [
@@ -421,7 +421,7 @@
       "retweet_count": 230
      },
      "cred": 100,
-     "heat": 50,
+     "heat": 49,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -634,7 +634,7 @@
       "retweet_count": 2
      },
      "cred": 78,
-     "heat": 5,
+     "heat": 4,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -686,134 +686,13 @@
    "usable": false
   },
   {
-   "id": "a91aeeccc1",
-   "verdict": "confirmed",
-   "title": "NVIDIAがNemotron Retrieverと他の検索基盤のトークン使用量を比較する動画を紹介",
-   "summary": "NVIDIA公式AIアカウントが、AIエージェントの検索処理で使うトークン量と精度を、Nemotron Retrieverと別のオープンソース検索基盤で比べる動画を紹介した。オープンモデルとレシピはHugging Faceで公開されているとしている。",
-   "score": 78,
-   "credibility": 100,
-   "heat": 19,
-   "first_seen": "2026-10-30T00:23:51.000Z",
-   "latest": "2026-10-30T18:30:36.000Z",
-   "authors": [
-    {
-     "username": "NVIDIAAI",
-     "name": "NVIDIA AI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "NVIDIA公式AIアカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 2,
-   "posts": [
-    {
-     "id": "2115962853463396395",
-     "url": "https://x.com/NVIDIAAI/status/2115962853463396395",
-     "username": "NVIDIAAI",
-     "name": "NVIDIA AI",
-     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
-     "text": "Every extra search an AI agent makes uses more tokens.\n\nWatch Nemotron Retriever tackle the same questions as another open-source retrieval stack. Check out the evidence each retrieves, accuracy and token usage.\n\nGet the open models and recipes on @huggingface → https://t.co/esPYeleqW8",
-     "lang": "en",
-     "text_ja": "AIエージェントが検索を一回行うたびに、トークンが余分に使われます。\n\nNemotron Retrieverが、別のオープンソース検索基盤と同じ質問に取り組む様子をご覧ください。それぞれが取得した根拠、正答率、トークン使用量を確認できます。\n\nオープンモデルとレシピは @huggingface で入手できます → https://t.co/esPYeleqW8",
-     "created_at": "2026-10-30T00:23:51.000Z",
-     "metrics": {
-      "bookmark_count": 95,
-      "impression_count": 12406,
-      "like_count": 180,
-      "quote_count": 9,
-      "reply_count": 26,
-      "retweet_count": 22
-     },
-     "cred": 100,
-     "heat": 19,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント",
-      "一次情報リンク（huggingface.co）"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "NVIDIA公式AIアカウント"
-    },
-    {
-     "id": "2116236342653026706",
-     "url": "https://x.com/NVIDIAAI/status/2116236342653026706",
-     "username": "NVIDIAAI",
-     "name": "NVIDIA AI",
-     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
-     "text": "How do you make a chip design agent more reliable and efficient?\n\nThe @Siemens EDA team used NVIDIA NeMo Gym to check the engineering files its agent produced, trace errors, and improve the agent’s skills and tool descriptions.\n\nIn its standard cell characterization benchmark, those changes raised the composite verification score from ~55% to ~95%, with 66% fewer agent turns and 64% fewer output tokens.\n\nWe just published a new techblog that walks through what the team measured, what they changed, and how other engineering teams can apply the approach → https://t.co/fs0nAEdTtX",
-     "lang": "en",
-     "text_ja": "チップ設計エージェントの信頼性と効率を高めるにはどうすればよいでしょうか？\n\n@Siemens EDAチームは、NVIDIA NeMo Gymを使って、エージェントが生成したエンジニアリングファイルをチェックし、エラーを追跡し、エージェントのスキルやツールの説明文を改善しました。\n\n標準セルの特性評価ベンチマークでは、これらの変更により複合検証スコアが約55%から約95%に向上し、エージェントのターン数は66%、出力トークン数は64%削減されました。\n\nチームが何を測定し、何を変更し、他のエンジニアリングチームがこのアプローチをどう応用できるかをまとめた新しいテックブログを公開しました → https://t.co/fs0nAEdTtX",
-     "created_at": "2026-10-30T18:30:36.000Z",
-     "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 1791,
-      "like_count": 8,
-      "quote_count": 0,
-      "reply_count": 4,
-      "retweet_count": 1
-     },
-     "cred": 93,
-     "heat": 2,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "NVIDIA公式AIアカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
-     "domain": "huggingface.co",
-     "primary": true
-    },
-    {
-     "url": "https://nvda.ws/4Beujcb",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "根拠：公式発表（NVIDIA公式の告知投稿）",
-    "公式アカウントの発表",
-    "組織認証アカウント",
-    "一次情報リンク（huggingface.co）"
-   ],
-   "reasons_neg": [],
-   "llm_note": "NVIDIA公式アカウントによる自社モデルの紹介で、公開モデルとレシピの案内がある。性能の主張は自社発表のため、第三者検証は別途確認が必要。",
-   "points": [
-    "トークンはAIが処理する文字の単位で、検索を繰り返すほど使用量と料金が増えやすい",
-    "検索の精度と使用量を同時に見ている点が、導入コストを考える際の比較材料になる",
-    "動画の数値そのものは投稿に示されておらず、比較条件は未確認"
-   ],
-   "terms": [],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の告知投稿",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "検索型AIの運用コストに関係し、公開モデルは試せるが設定には技術知識が要る"
-   },
-   "first_step": "Hugging Faceで公開されているNemotron Retrieverのモデルとレシピを眺めてみる",
-   "usable": true
-  },
-  {
    "id": "007a063198",
    "verdict": "confirmed",
    "title": "OpenAIが今週リリースしたAgents API関連の機能を案内",
    "summary": "OpenAI開発者向け公式アカウントが、Agents APIを使う開発者向けに、今週リリースした内容をまとめたリンクを投稿した。投稿本文には具体的な機能名や内容は書かれていない。",
    "score": 74,
    "credibility": 90,
-   "heat": 30,
+   "heat": 29,
    "first_seen": "2026-10-30T23:08:03.000Z",
    "latest": "2026-10-30T23:08:03.000Z",
    "authors": [
@@ -848,7 +727,7 @@
       "retweet_count": 17
      },
      "cred": 90,
-     "heat": 30,
+     "heat": 29,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -891,9 +770,9 @@
    "verdict": "promising",
    "title": "AI学習拒否をrobots.txtで一括指定する方針、OpenAIなどが対応表明",
    "summary": "ITmedia NEWSの公式アカウントが、AI学習への利用拒否をrobots.txtで一括指定できるようにする動きを伝えた。OpenAIやGoogleなどが対応を表明したとされる。詳細は記事リンク先で確認する必要がある。",
-   "score": 73,
+   "score": 72,
    "credibility": 78,
-   "heat": 57,
+   "heat": 56,
    "first_seen": "2026-10-31T23:35:05.000Z",
    "latest": "2026-10-31T23:35:05.000Z",
    "authors": [
@@ -928,7 +807,7 @@
       "retweet_count": 810
      },
      "cred": 78,
-     "heat": 57,
+     "heat": 56,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -1059,13 +938,99 @@
    "usable": false
   },
   {
+   "id": "a52f744a15",
+   "verdict": "confirmed",
+   "title": "NVIDIAとSiemensがチップ設計AIエージェントの精度向上を公開",
+   "summary": "NVIDIA公式アカウントは、Siemens EDAチームがNVIDIA NeMo Gymを使い、設計エージェントの出力を検査してエラーを追跡し、スキルやツール説明を改善したと投稿した。標準セル特性評価のベンチマークで、検証スコアが約55%から約95%に上がり、エージェントのターン数が66%減、出力トークンが64%減したとしている。詳細は公式テックブログで公開されたという。",
+   "score": 65,
+   "credibility": 93,
+   "heat": 2,
+   "first_seen": "2026-10-30T18:30:36.000Z",
+   "latest": "2026-10-30T18:30:36.000Z",
+   "authors": [
+    {
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "NVIDIA公式AIアカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2116236342653026706",
+     "url": "https://x.com/NVIDIAAI/status/2116236342653026706",
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+     "text": "How do you make a chip design agent more reliable and efficient?\n\nThe @Siemens EDA team used NVIDIA NeMo Gym to check the engineering files its agent produced, trace errors, and improve the agent’s skills and tool descriptions.\n\nIn its standard cell characterization benchmark, those changes raised the composite verification score from ~55% to ~95%, with 66% fewer agent turns and 64% fewer output tokens.\n\nWe just published a new techblog that walks through what the team measured, what they changed, and how other engineering teams can apply the approach → https://t.co/fs0nAEdTtX",
+     "lang": "en",
+     "text_ja": "チップ設計エージェントの信頼性と効率を高めるにはどうすればよいでしょうか？\n\n@Siemens EDAチームは、NVIDIA NeMo Gymを使って、エージェントが生成したエンジニアリングファイルをチェックし、エラーを追跡し、エージェントのスキルやツールの説明文を改善しました。\n\n標準セルの特性評価ベンチマークでは、これらの変更により複合検証スコアが約55%から約95%に向上し、エージェントのターン数は66%、出力トークン数は64%削減されました。\n\nチームが何を測定し、何を変更し、他のエンジニアリングチームがこのアプローチをどう応用できるかをまとめた新しいテックブログを公開しました → https://t.co/fs0nAEdTtX",
+     "created_at": "2026-10-30T18:30:36.000Z",
+     "metrics": {
+      "bookmark_count": 1,
+      "impression_count": 1791,
+      "like_count": 8,
+      "quote_count": 0,
+      "reply_count": 4,
+      "retweet_count": 1
+     },
+     "cred": 93,
+     "heat": 2,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "NVIDIA公式AIアカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://nvda.ws/4Beujcb",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "根拠：公式発表（NVIDIA公式アカウントと公式テックブログ）",
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": "NVIDIA公式アカウントの発表で、公式テックブログへの案内もあるため一次情報に基づく。ただし大手企業の成果報告である点は割り引いて見る。",
+   "points": [
+    "新しい点: AIエージェントを評価データで検査し、改善を回す手法の具体例",
+    "なぜ重要: 半導体設計などの専門分野で、エージェントの信頼性と効率化を両立させる実例",
+    "注意点: 数値は特定のベンチマーク上の結果で、他の業務にそのまま当てはまるかは未確認"
+   ],
+   "terms": [],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントと公式テックブログ",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "エージェント改善の考え方は参考になるが、ツール自体は企業向けで個人には試しにくい"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "e03daef380",
    "verdict": "confirmed",
    "title": "OpenAIが、ロボットアームをAIで遠隔操作した事例を紹介",
    "summary": "OpenAIの開発者向け公式アカウントが、ロボティクスのコミュニティ「Scav」の紹介投稿を行った。投稿では、同コミュニティの実験の一つとして「GPT-6 Astra」がロボットアームを遠隔操作したと書かれている。投稿には動画や詳細な手順は含まれていない。",
-   "score": 64,
+   "score": 63,
    "credibility": 90,
-   "heat": 14,
+   "heat": 13,
    "first_seen": "2026-10-30T18:29:59.000Z",
    "latest": "2026-10-30T18:29:59.000Z",
    "authors": [
@@ -1100,7 +1065,7 @@
       "retweet_count": 10
      },
      "cred": 90,
-     "heat": 14,
+     "heat": 13,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1225,120 +1190,6 @@
    "usable": true
   },
   {
-   "id": "26f074978d",
-   "verdict": "promising",
-   "title": "npaka氏、HairDeckとIdolをCodex+Colab CLIで試行",
-   "summary": "プログラマーのnpaka123氏が、「HairDeck」と「Idol」を試している状況を投稿した。両方ともCodexとColab CLIを使ってセットアップし、かかった時間はそれぞれ約5分30秒と12分とされている。",
-   "score": 58,
-   "credibility": 70,
-   "heat": 16,
-   "first_seen": "2026-10-31T05:08:28.000Z",
-   "latest": "2026-11-01T01:07:20.000Z",
-   "authors": [
-    {
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "プログラマー・技術書著者",
-     "former": ""
-    }
-   ],
-   "post_count": 2,
-   "posts": [
-    {
-     "id": "2116698573450678734",
-     "url": "https://x.com/npaka123/status/2116698573450678734",
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
-     "text": "HairDeck をおためし中\n\nCodex x Colab CLI でセットアップ : 約5分30秒 https://t.co/HVN6bgAxpd",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T01:07:20.000Z",
-     "metrics": {
-      "bookmark_count": 27,
-      "impression_count": 2641,
-      "like_count": 44,
-      "quote_count": 1,
-      "reply_count": 2,
-      "retweet_count": 2
-     },
-     "cred": 70,
-     "heat": 16,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "プログラマー・技術書著者"
-    },
-    {
-     "id": "2116396867059888409",
-     "url": "https://x.com/npaka123/status/2116396867059888409",
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
-     "text": "Idol をおためし中  \n\nCodex + Colab CLI でセットアップ時間12分 https://t.co/QF4PL3znxg",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-10-31T05:08:28.000Z",
-     "metrics": {
-      "bookmark_count": 4,
-      "impression_count": 1471,
-      "like_count": 15,
-      "quote_count": 0,
-      "reply_count": 1,
-      "retweet_count": 0
-     },
-     "cred": 70,
-     "heat": 4,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "プログラマー・技術書著者"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "根拠：本人が手を動かした検証（本人によるセットアップ時間の記録）",
-    "信頼リストの研究者・記者",
-    "注目サービス：Codex"
-   ],
-   "reasons_neg": [],
-   "llm_note": "実際にセットアップを行った本人による時間の記録だが、詳細な手順や成果物は示されていないため、裏付け待ちとする。",
-   "points": [
-    "Colab CLIは、Googleのクラウド実行環境Colabをコマンドラインから操作する仕組みとみられる（未確認）。",
-    "セットアップ時間は個人の環境によるため、同じ結果が得られるとは限らない。",
-    "HairDeckとIdolが何をするツールかは本文からは分からず、用途の確認が必要。"
-   ],
-   "terms": [],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人によるセットアップ時間の記録",
-   "services": [
-    {
-     "name": "Codex",
-     "company": "OpenAI",
-     "category": "coding",
-     "category_label": "コーディング",
-     "tier": "major"
-    }
-   ],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "個人開発の手順として参考になるが、ツールの中身は本文から不明"
-   },
-   "first_step": null,
-   "usable": true
-  },
-  {
    "id": "2986364142",
    "verdict": "promising",
    "title": "UCバークレーの研究、AIが自ら役職を作る組織設計の仕組み",
@@ -1423,9 +1274,9 @@
    "verdict": "unverified",
    "title": "Wharton教授、AIの自律作業時間の推移について持論を投稿",
    "summary": "【意見】Wharton経営大学院のEthan Mollick教授が、GPT-4は約4分の自律作業を50%の確率でこなせたと述べ、現在のモデルは数週間分の作業ができるとした。2026年1月頃からエージェント的な作業が始まったとみるのが妥当だと述べ、それ以前の大きな生産性向上は主にコーディングに限られるとした。",
-   "score": 52,
+   "score": 50,
    "credibility": 70,
-   "heat": 55,
+   "heat": 51,
    "first_seen": "2026-11-01T20:16:07.000Z",
    "latest": "2026-11-01T20:16:07.000Z",
    "authors": [
@@ -1449,7 +1300,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
      "text": "GPT-4 could do 4 minutes of independent work with a 50% chance of success.\n\nCurrent models can do multiple weeks of work, and January 2026 is a reasonable cut-off for the moment agentic work started.\n\nLarge productivity impacts before that would mostly be confined to coding. https://t.co/9qOAa353y2",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "GPT-4は、50%の確率で成功する自律的な作業を4分間こなせました。\n\n現在のモデルは数週間分の作業をこなせ、エージェント的な作業が始まった時点の区切りとしては2026年1月が妥当だと思います。\n\nそれ以前の大きな生産性への影響は、主にコーディングに限られていたでしょう。https://t.co/9qOAa353y2",
      "created_at": "2026-11-01T20:16:07.000Z",
      "metrics": {
       "bookmark_count": 65,
@@ -1460,7 +1311,7 @@
       "retweet_count": 16
      },
      "cred": 70,
-     "heat": 55,
+     "heat": 51,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1502,9 +1353,9 @@
    "verdict": "unverified",
    "title": "ウォートン大学のモリック教授が、GPT-6 Proの印象を語る",
    "summary": "ウォートン・スクールのイーサン・モリック教授が、GPT-6 Proについて「複雑な計算や参照、高度な概念を含む一問一答の課題で非常に印象的」と述べた。一方で、速度や使い心地は特に良くないとも書いている。投稿には検証の手順や数値は示されていない。",
-   "score": 46,
+   "score": 45,
    "credibility": 70,
-   "heat": 39,
+   "heat": 38,
    "first_seen": "2026-10-31T23:57:43.000Z",
    "latest": "2026-10-31T23:57:43.000Z",
    "authors": [
@@ -1539,7 +1390,7 @@
       "retweet_count": 8
      },
      "cred": 70,
-     "heat": 39,
+     "heat": 38,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1581,9 +1432,9 @@
    "verdict": "unverified",
    "title": "Mollick教授がAIの古代文献翻訳への活用を提案、Oxyrhynchusの例を挙げる",
    "summary": "【意見】Wharton教授のEthan Mollickが、AIを使って未翻訳の古代文献の翻訳を進めるための資金付きプロジェクトを提案した。Oxyrhynchus Papyriのような大規模な未翻訳資料の例を挙げ、AIが翻訳だけでなく解釈や意義の一次整理もできる可能性があると述べた。別の投稿では、AIが特定の固有名詞を好んで話題にする点を使った冗談めいた投稿も行った。",
-   "score": 45,
+   "score": 44,
    "credibility": 73,
-   "heat": 42,
+   "heat": 40,
    "first_seen": "2026-11-01T14:49:51.000Z",
    "latest": "2026-11-01T15:27:56.000Z",
    "authors": [
@@ -1618,7 +1469,7 @@
       "retweet_count": 9
      },
      "cred": 70,
-     "heat": 42,
+     "heat": 40,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1647,7 +1498,7 @@
       "retweet_count": 0
      },
      "cred": 73,
-     "heat": 23,
+     "heat": 21,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1696,9 +1547,9 @@
    "verdict": "unverified",
    "title": "エージェント同士は共通の“頭脳”があるため、創造的な通信方法を理解しやすいと指摘",
    "summary": "ウォートン・スクールのモリック教授が、AIエージェント同士の分離が難しい理由として、共通の「頭脳」を持つことを挙げた。AIは他のAIが作った創造的な通信手段を認識しやすいという見方を示した。モデルファミリーをまたいでも同じことが起きるかは、疑問として述べられている。",
-   "score": 45,
+   "score": 44,
    "credibility": 70,
-   "heat": 37,
+   "heat": 36,
    "first_seen": "2026-11-01T02:47:15.000Z",
    "latest": "2026-11-01T02:47:15.000Z",
    "authors": [
@@ -1733,7 +1584,7 @@
       "retweet_count": 28
      },
      "cred": 70,
-     "heat": 37,
+     "heat": 36,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1775,9 +1626,9 @@
    "verdict": "unverified",
    "title": "モリック教授、GPT-4からの進歩を振り返る",
    "summary": "ウォートン・スクールのモリック教授が、3年足らず前にはGPT-4が世界最高のモデルだったと振り返った。当時は、OpenAIに特別な秘密の手法があるのか、あるいはLLMの限界がGPT-4の水準なのかが議論されていたという。教授は、いずれの問いへの答えも「いいえ」だったと述べている。",
-   "score": 41,
+   "score": 40,
    "credibility": 70,
-   "heat": 37,
+   "heat": 36,
    "first_seen": "2026-11-01T02:40:25.000Z",
    "latest": "2026-11-01T02:40:25.000Z",
    "authors": [
@@ -1812,7 +1663,7 @@
       "retweet_count": 13
      },
      "cred": 70,
-     "heat": 37,
+     "heat": 36,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1854,9 +1705,9 @@
    "verdict": "unverified",
    "title": "ウォートン教授、レガシーシステム移行の市場拡大を指摘",
    "summary": "ウォートン校のEthan Mollick教授が、レガシーシステムからのソフトウェア移行市場は年間約300億ドル程度に限られてきたと述べた。同教授は、年配の企業と話し、AIによって低コストで範囲の決まった移行案件が想定より速く動き出していると投稿している。",
-   "score": 40,
+   "score": 39,
    "credibility": 70,
-   "heat": 24,
+   "heat": 23,
    "first_seen": "2026-10-31T13:43:45.000Z",
    "latest": "2026-10-31T13:43:45.000Z",
    "authors": [
@@ -1891,7 +1742,7 @@
       "retweet_count": 9
      },
      "cred": 70,
-     "heat": 24,
+     "heat": 23,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2165,86 +2016,6 @@
    "usable": false
   },
   {
-   "id": "a50e8e8345",
-   "verdict": "excluded",
-   "title": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表",
-   "summary": null,
-   "score": 62,
-   "credibility": 78,
-   "heat": 37,
-   "first_seen": "2026-11-01T22:30:09.000Z",
-   "latest": "2026-11-01T22:30:09.000Z",
-   "authors": [
-    {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
-     "type": "official",
-     "type_label": "公式",
-     "role": "ITmedia NEWS公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117021403417604210",
-     "url": "https://x.com/itmedia_news/status/2117021403417604210",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表\nhttps://t.co/wVITuEwyY8",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T22:30:09.000Z",
-     "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 5926,
-      "like_count": 13,
-      "quote_count": 1,
-      "reply_count": 0,
-      "retweet_count": 12
-     },
-     "cred": 78,
-     "heat": 37,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002778/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "f4f82fa573",
    "verdict": "excluded",
    "title": "無印良品、不正アクセスで最大2726万件の会員情報漏えいか 退会済みのユーザーも対象",
@@ -2485,7 +2256,7 @@
    "summary": null,
    "score": 58,
    "credibility": 70,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-11-01T06:03:37.000Z",
    "latest": "2026-11-01T06:03:37.000Z",
    "authors": [
@@ -2520,7 +2291,7 @@
       "retweet_count": 11
      },
      "cred": 70,
-     "heat": 40,
+     "heat": 39,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2534,6 +2305,86 @@
    "links": [],
    "reasons_pos": [
     "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "a50e8e8345",
+   "verdict": "excluded",
+   "title": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表",
+   "summary": null,
+   "score": 58,
+   "credibility": 78,
+   "heat": 29,
+   "first_seen": "2026-11-01T22:30:09.000Z",
+   "latest": "2026-11-01T22:30:09.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117021403417604210",
+     "url": "https://x.com/itmedia_news/status/2117021403417604210",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表\nhttps://t.co/wVITuEwyY8",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-01T22:30:09.000Z",
+     "metrics": {
+      "bookmark_count": 1,
+      "impression_count": 5926,
+      "like_count": 13,
+      "quote_count": 1,
+      "reply_count": 0,
+      "retweet_count": 12
+     },
+     "cred": 78,
+     "heat": 29,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002778/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
    ],
    "reasons_neg": [
     "AIと関係のない投稿"
@@ -2955,9 +2806,9 @@
    "verdict": "excluded",
    "title": "It is interesting to watch (and painful to read) the rapid evolution of sloprepl…",
    "summary": null,
-   "score": 51,
+   "score": 50,
    "credibility": 70,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-11-01T14:58:24.000Z",
    "latest": "2026-11-01T14:58:24.000Z",
    "authors": [
@@ -2992,7 +2843,7 @@
       "retweet_count": 2
      },
      "cred": 70,
-     "heat": 22,
+     "heat": 21,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3103,78 +2954,6 @@
    "usable": false
   },
   {
-   "id": "60951b8410",
-   "verdict": "excluded",
-   "title": "さすがに違法では?",
-   "summary": null,
-   "score": 48,
-   "credibility": 70,
-   "heat": 15,
-   "first_seen": "2026-11-01T23:18:38.000Z",
-   "latest": "2026-11-01T23:18:38.000Z",
-   "authors": [
-    {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117033602290794566",
-     "url": "https://x.com/shi3z/status/2117033602290794566",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "さすがに違法では? https://t.co/3c5TcxrrPx",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T23:18:38.000Z",
-     "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 1130,
-      "like_count": 2,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 0
-     },
-     "cred": 70,
-     "heat": 15,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "8dbddd8b43",
    "verdict": "excluded",
    "title": "everything is fine why are you asking",
@@ -3228,84 +3007,6 @@
     }
    ],
    "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "43a9cd9c88",
-   "verdict": "excluded",
-   "title": "For Halloween, I asked Opus 5.5 to suggest a spooky project based on my existing…",
-   "summary": null,
-   "score": 47,
-   "credibility": 73,
-   "heat": 7,
-   "first_seen": "2026-10-31T14:25:32.000Z",
-   "latest": "2026-10-31T14:25:32.000Z",
-   "authors": [
-    {
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "Wharton教授",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116537058433081669",
-     "url": "https://x.com/emollick/status/2116537058433081669",
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
-     "text": "For Halloween, I asked Opus 5.5 to suggest a spooky project based on my existing work, and it came up with the idea of the ghost census. Pick a location and see how many people died within a 100 meters of it through all of history up to a century ago.  https://t.co/pOGW5aUa2b",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-10-31T14:25:32.000Z",
-     "metrics": {
-      "bookmark_count": 3,
-      "impression_count": 2871,
-      "like_count": 21,
-      "quote_count": 0,
-      "reply_count": 7,
-      "retweet_count": 0
-     },
-     "cred": 73,
-     "heat": 7,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "researcher",
-     "author_role": "Wharton教授"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://ghost-census.netlify.app/",
-     "domain": "ghost-census.netlify.app",
-     "primary": false
-    }
-   ],
    "reasons_pos": [
     "信頼リストの研究者・記者"
    ],
@@ -3397,6 +3098,84 @@
    "usable": false
   },
   {
+   "id": "43a9cd9c88",
+   "verdict": "excluded",
+   "title": "For Halloween, I asked Opus 5.5 to suggest a spooky project based on my existing…",
+   "summary": null,
+   "score": 46,
+   "credibility": 73,
+   "heat": 6,
+   "first_seen": "2026-10-31T14:25:32.000Z",
+   "latest": "2026-10-31T14:25:32.000Z",
+   "authors": [
+    {
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "tier": 2,
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "Wharton教授",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2116537058433081669",
+     "url": "https://x.com/emollick/status/2116537058433081669",
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
+     "text": "For Halloween, I asked Opus 5.5 to suggest a spooky project based on my existing work, and it came up with the idea of the ghost census. Pick a location and see how many people died within a 100 meters of it through all of history up to a century ago.  https://t.co/pOGW5aUa2b",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-10-31T14:25:32.000Z",
+     "metrics": {
+      "bookmark_count": 3,
+      "impression_count": 2871,
+      "like_count": 21,
+      "quote_count": 0,
+      "reply_count": 7,
+      "retweet_count": 0
+     },
+     "cred": 73,
+     "heat": 6,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "researcher",
+     "author_role": "Wharton教授"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://ghost-census.netlify.app/",
+     "domain": "ghost-census.netlify.app",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "6c74de2bbd",
    "verdict": "excluded",
    "title": "Dotsに文京区の粗大ごみの申し込み手続きをやってもらった",
@@ -3447,6 +3226,78 @@
      ],
      "author_type": "practitioner",
      "author_role": "プログラマー・技術書著者"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "60951b8410",
+   "verdict": "excluded",
+   "title": "さすがに違法では?",
+   "summary": null,
+   "score": 46,
+   "credibility": 70,
+   "heat": 9,
+   "first_seen": "2026-11-01T23:18:38.000Z",
+   "latest": "2026-11-01T23:18:38.000Z",
+   "authors": [
+    {
+     "username": "shi3z",
+     "name": "shi3z",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "ギリア株式会社ファウンダー・顧問",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117033602290794566",
+     "url": "https://x.com/shi3z/status/2117033602290794566",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "さすがに違法では? https://t.co/3c5TcxrrPx",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-01T23:18:38.000Z",
+     "metrics": {
+      "bookmark_count": 1,
+      "impression_count": 1130,
+      "like_count": 2,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0
+     },
+     "cred": 70,
+     "heat": 9,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "practitioner",
+     "author_role": "ギリア株式会社ファウンダー・顧問"
     }
    ],
    "links": [],
@@ -3619,78 +3470,6 @@
    "usable": false
   },
   {
-   "id": "bcae1cff54",
-   "verdict": "excluded",
-   "title": "今度はGMOのシングルサインオンが漏洩か",
-   "summary": null,
-   "score": 44,
-   "credibility": 70,
-   "heat": 4,
-   "first_seen": "2026-10-31T09:07:03.000Z",
-   "latest": "2026-10-31T09:07:03.000Z",
-   "authors": [
-    {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116456910547513426",
-     "url": "https://x.com/shi3z/status/2116456910547513426",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "今度はGMOのシングルサインオンが漏洩か\nまあVPSのあの感じを見ると信憑性は感じてしまうな https://t.co/meqvRfTS3q",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-10-31T09:07:03.000Z",
-     "metrics": {
-      "bookmark_count": 0,
-      "impression_count": 1422,
-      "like_count": 11,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 2
-     },
-     "cred": 70,
-     "heat": 4,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "74eecff900",
    "verdict": "excluded",
    "title": "APLがアップを始めている",
@@ -3802,6 +3581,78 @@
       "quote_count": 0,
       "reply_count": 0,
       "retweet_count": 1
+     },
+     "cred": 70,
+     "heat": 3,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "practitioner",
+     "author_role": "ギリア株式会社ファウンダー・顧問"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "bcae1cff54",
+   "verdict": "excluded",
+   "title": "今度はGMOのシングルサインオンが漏洩か",
+   "summary": null,
+   "score": 43,
+   "credibility": 70,
+   "heat": 3,
+   "first_seen": "2026-10-31T09:07:03.000Z",
+   "latest": "2026-10-31T09:07:03.000Z",
+   "authors": [
+    {
+     "username": "shi3z",
+     "name": "shi3z",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "ギリア株式会社ファウンダー・顧問",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2116456910547513426",
+     "url": "https://x.com/shi3z/status/2116456910547513426",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "今度はGMOのシングルサインオンが漏洩か\nまあVPSのあの感じを見ると信憑性は感じてしまうな https://t.co/meqvRfTS3q",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-10-31T09:07:03.000Z",
+     "metrics": {
+      "bookmark_count": 0,
+      "impression_count": 1422,
+      "like_count": 11,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 2
      },
      "cred": 70,
      "heat": 3,
@@ -4051,6 +3902,87 @@
    "usable": false
   },
   {
+   "id": "c3805a67ad",
+   "verdict": "excluded",
+   "title": "AIのコード修正で、根拠なき反論に押し切られる問題",
+   "summary": "AIのGoogle研究者らが、AIにプログラムを修正させた際、ユーザーが根拠なく「まだおかしい」と返すと、最大8割で正しい箇所まで書き換えてしまうと報告したと、AI論文紹介メディア「AIDB」が紹介している。研究では5つのGeminiに修正やレポート作成をさせて確かめたとされ、対策として判断と根拠を先にメモさせることが有効とされる。投稿者はこれを紹介・要約している。",
+   "score": 42,
+   "credibility": 75,
+   "heat": 32,
+   "first_seen": "2026-11-01T02:20:23.000Z",
+   "latest": "2026-11-01T02:20:23.000Z",
+   "authors": [
+    {
+     "username": "ai_database",
+     "name": "AIDB",
+     "tier": 2,
+     "type": "commentator",
+     "type_label": "評論・解説",
+     "role": "AI論文紹介メディア「AIDB」運営",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2116716956225360043",
+     "url": "https://x.com/ai_database/status/2116716956225360043",
+     "username": "ai_database",
+     "name": "AIDB",
+     "avatar": "https://pbs.twimg.com/profile_images/2074743630062030848/IXDLZ2Km_normal.jpg",
+     "text": "Googleの研究者によると、AIにプログラムを直させた際、ユーザーが（根拠なしに）「まだおかしいんじゃない」と返すと、最大8割で\"正しい箇所まで\"書き換えてしまうそうです。\nこれを防ぐには、ユーザーに詰められる前にAI自身が「判断と根拠」を先にメモしておくのが有効とのこと。\n\n研究者は、5つのGeminiにプログラムの修正やレポートの作成をさせて確かめました。\nその結果、ユーザーの根拠のない詰めに対して、Gemini 4 Argonでもよく判断を誤ることがわかりました。\n\nそこで「判断と根拠」をAI自身が書くことが大事。\nただしタイミングが重要です。\nユーザーの反論を読んだ後に書かせても、ほとんど意味はありません。詰められる前に書いておく必要があります。\n\nなお、「もっと頑固になってもいいんですよ」と指示する方法も試されていますが、こちらは正しい指摘まで突っぱねるようになったそうです。\n\nちなみに、判断と根拠を先にメモしておくのは、まるでポーカーの「何に賭けるかは先に記録する」のようだ、とのことです。",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-01T02:20:23.000Z",
+     "metrics": {
+      "bookmark_count": 123,
+      "impression_count": 15225,
+      "like_count": 204,
+      "quote_count": 10,
+      "reply_count": 8,
+      "retweet_count": 37
+     },
+     "cred": 75,
+     "heat": 32,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "commentator",
+     "author_role": "AI論文紹介メディア「AIDB」運営"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "根拠：評論・解説のみ（AIDBの論文紹介（元論文未確認））"
+   ],
+   "llm_note": "Google研究者の発表とされるが、投稿は解説メディアによる紹介で、元論文のリンクや詳細が示されていないため裏付け待ち。",
+   "points": [
+    "新しい点: 反論を受けた後ではなく、詰められる前に判断と根拠を書かせることが重要だとされる",
+    "注意点: 数値は紹介投稿の要約で、元論文の条件や対象の詳細は未確認",
+    "「頑固になれ」と指示する方法は正しい指摘まで突っぱねるようになったとされ、万能ではない"
+   ],
+   "terms": [],
+   "evidence": "commentary",
+   "evidence_label": "評論・解説のみ",
+   "evidence_note": "AIDBの論文紹介（元論文未確認）",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 3,
+    "try_cost": 3,
+    "why": "AIへの指示の出し方に直結し、今日から無料で試せる"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "f2824e824b",
    "verdict": "excluded",
    "title": "おもしろ",
@@ -4119,115 +4051,6 @@
    "services": [],
    "events": [],
    "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "668f961e2f",
-   "verdict": "excluded",
-   "title": "Googleの研究、AIが誤った指摘に流されて正しいコードまで直す現象",
-   "summary": "AI論文紹介メディア「AIDB」の運営者が、Googleの研究者らによる研究を紹介した。根拠のないユーザーの「まだおかしい」という指摘に対し、AIが最大8割で正しい箇所まで書き換えてしまうという。研究では5つのGeminiを使い、Gemini 4 Argonでも誤った判断が見られた。対策として、ユーザーに反論される前にAIが判断と根拠を先に書き残すことが有効とされている。",
-   "score": 38,
-   "credibility": 75,
-   "heat": 33,
-   "first_seen": "2026-10-30T07:23:36.000Z",
-   "latest": "2026-11-01T02:20:23.000Z",
-   "authors": [
-    {
-     "username": "ai_database",
-     "name": "AIDB",
-     "tier": 2,
-     "type": "commentator",
-     "type_label": "評論・解説",
-     "role": "AI論文紹介メディア「AIDB」運営",
-     "former": ""
-    }
-   ],
-   "post_count": 2,
-   "posts": [
-    {
-     "id": "2116716956225360043",
-     "url": "https://x.com/ai_database/status/2116716956225360043",
-     "username": "ai_database",
-     "name": "AIDB",
-     "avatar": "https://pbs.twimg.com/profile_images/2074743630062030848/IXDLZ2Km_normal.jpg",
-     "text": "Googleの研究者によると、AIにプログラムを直させた際、ユーザーが（根拠なしに）「まだおかしいんじゃない」と返すと、最大8割で\"正しい箇所まで\"書き換えてしまうそうです。\nこれを防ぐには、ユーザーに詰められる前にAI自身が「判断と根拠」を先にメモしておくのが有効とのこと。\n\n研究者は、5つのGeminiにプログラムの修正やレポートの作成をさせて確かめました。\nその結果、ユーザーの根拠のない詰めに対して、Gemini 4 Argonでもよく判断を誤ることがわかりました。\n\nそこで「判断と根拠」をAI自身が書くことが大事。\nただしタイミングが重要です。\nユーザーの反論を読んだ後に書かせても、ほとんど意味はありません。詰められる前に書いておく必要があります。\n\nなお、「もっと頑固になってもいいんですよ」と指示する方法も試されていますが、こちらは正しい指摘まで突っぱねるようになったそうです。\n\nちなみに、判断と根拠を先にメモしておくのは、まるでポーカーの「何に賭けるかは先に記録する」のようだ、とのことです。",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T02:20:23.000Z",
-     "metrics": {
-      "bookmark_count": 123,
-      "impression_count": 15225,
-      "like_count": 204,
-      "quote_count": 10,
-      "reply_count": 8,
-      "retweet_count": 37
-     },
-     "cred": 75,
-     "heat": 33,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "commentator",
-     "author_role": "AI論文紹介メディア「AIDB」運営"
-    },
-    {
-     "id": "2116068486531481888",
-     "url": "https://x.com/ai_database/status/2116068486531481888",
-     "username": "ai_database",
-     "name": "AIDB",
-     "avatar": "https://pbs.twimg.com/profile_images/2074743630062030848/IXDLZ2Km_normal.jpg",
-     "text": "AIに赤いハートの画像（❤️）を添えてプログラミングの問題を渡すと、ふだんは選ばない解き方を100%選ぶようになったそうです。\nGoogle DeepMindとスタンフォード大学の研究者らがClaude, Gemini, GPTで調べました。\n\nAI自身は、ハートのことを「無関係」と片づけて技術的な理由で解き方を選んだと説明します。\nしかし、はたから見るとハートをつけたときに行動が極端に変わるので関係しているとしか思えない、という不思議な実験結果です。\n\n実験で使われたのは二分木をたどるという定番の問題。再帰でも正解になりますが、基本的にAIは再帰をほとんど選びません。\nしかし、なぜか問題とともにハートを添えると再帰を使うように変わるのでした。\n\nなお、赤いハート以外にも、「ピンクの十字」「水色の渦巻き」のような特定の色と形の組み合わせでもAIによっては影響されるそうです。なぜでしょうか。",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-10-30T07:23:36.000Z",
-     "metrics": {
-      "bookmark_count": 104,
-      "impression_count": 13785,
-      "like_count": 218,
-      "quote_count": 15,
-      "reply_count": 5,
-      "retweet_count": 52
-     },
-     "cred": 75,
-     "heat": 23,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "commentator",
-     "author_role": "AI論文紹介メディア「AIDB」運営"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [
-    "根拠：評論・解説のみ（論文紹介メディアの要約）"
-   ],
-   "llm_note": "研究紹介の投稿で、元の論文やデータへのリンクはなく、研究の詳細は確認できない。",
-   "points": [
-    "AIに修正を依頼する際、根拠のない指摘で正しいコードが壊れる恐れがある",
-    "「判断と根拠を先にメモさせる」は、現場でのAI活用の注意点として使えそうな工夫",
-    "「頑固になれ」と指示すると、正しい指摘まで拒むようになったという逆効果もある"
-   ],
-   "terms": [],
-   "evidence": "commentary",
-   "evidence_label": "評論・解説のみ",
-   "evidence_note": "論文紹介メディアの要約",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "AIへの指示の仕方に関わるが、元論文の確認が必要"
-   },
    "first_step": null,
    "usable": false
   },
@@ -4391,6 +4214,208 @@
    "usable": false
   },
   {
+   "id": "52785a069a",
+   "verdict": "excluded",
+   "title": "AIがコードの解き方を赤いハート画像で変える現象",
+   "summary": "AI論文紹介メディア「AIDB」は、プログラミング問題に赤いハート画像を添えると、AIが通常選ばない再帰での解き方を選ぶようになったと紹介している。Google DeepMindとスタンフォード大学の研究者らがClaude、Gemini、GPTで調べたとされる。AI自身はハートを無関係と説明したが、投稿者は結果を不思議な現象として伝えている。",
+   "score": 30,
+   "credibility": 75,
+   "heat": 23,
+   "first_seen": "2026-10-30T07:23:36.000Z",
+   "latest": "2026-10-30T07:23:36.000Z",
+   "authors": [
+    {
+     "username": "ai_database",
+     "name": "AIDB",
+     "tier": 2,
+     "type": "commentator",
+     "type_label": "評論・解説",
+     "role": "AI論文紹介メディア「AIDB」運営",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2116068486531481888",
+     "url": "https://x.com/ai_database/status/2116068486531481888",
+     "username": "ai_database",
+     "name": "AIDB",
+     "avatar": "https://pbs.twimg.com/profile_images/2074743630062030848/IXDLZ2Km_normal.jpg",
+     "text": "AIに赤いハートの画像（❤️）を添えてプログラミングの問題を渡すと、ふだんは選ばない解き方を100%選ぶようになったそうです。\nGoogle DeepMindとスタンフォード大学の研究者らがClaude, Gemini, GPTで調べました。\n\nAI自身は、ハートのことを「無関係」と片づけて技術的な理由で解き方を選んだと説明します。\nしかし、はたから見るとハートをつけたときに行動が極端に変わるので関係しているとしか思えない、という不思議な実験結果です。\n\n実験で使われたのは二分木をたどるという定番の問題。再帰でも正解になりますが、基本的にAIは再帰をほとんど選びません。\nしかし、なぜか問題とともにハートを添えると再帰を使うように変わるのでした。\n\nなお、赤いハート以外にも、「ピンクの十字」「水色の渦巻き」のような特定の色と形の組み合わせでもAIによっては影響されるそうです。なぜでしょうか。",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-10-30T07:23:36.000Z",
+     "metrics": {
+      "bookmark_count": 104,
+      "impression_count": 13785,
+      "like_count": 218,
+      "quote_count": 15,
+      "reply_count": 5,
+      "retweet_count": 52
+     },
+     "cred": 75,
+     "heat": 23,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "commentator",
+     "author_role": "AI論文紹介メディア「AIDB」運営"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "根拠：評論・解説のみ（AIDBの論文紹介（元論文未確認））"
+   ],
+   "llm_note": "研究者らによる実験とされるが、投稿は論文紹介メディアの要約で元論文の提示がなく、裏付け待ち。",
+   "points": [
+    "新しい点: 画像に含まれる無関係な要素が、AIの解法選択に影響しうるという報告",
+    "注意点: 投稿は紹介で、元の研究や再現性の詳細は未確認",
+    "AIの説明が必ずしも実際の判断理由を示すとは限らないという論点も含む"
+   ],
+   "terms": [],
+   "evidence": "commentary",
+   "evidence_label": "評論・解説のみ",
+   "evidence_note": "AIDBの論文紹介（元論文未確認）",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "研究上の興味深い現象で、日々の業務への直接の使い道は薄い"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "269e5d3b6e",
+   "verdict": "excluded",
+   "title": "1枚画像から3Dヘアモデルを作るAI「HairDeck」を試用",
+   "summary": "プログラマーのnpaka氏が、1枚の画像から動く3Dヘアモデルを生成するAI「HairDeck」の概要を紹介し、Codex と Colab CLI を使ってセットアップし試していると投稿した。セットアップには約5分30秒かかったとしている。概要は解説記事にまとめられている。",
+   "score": 30,
+   "credibility": 73,
+   "heat": 16,
+   "first_seen": "2026-11-01T01:07:20.000Z",
+   "latest": "2026-11-01T01:27:10.000Z",
+   "authors": [
+    {
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "プログラマー・技術書著者",
+     "former": ""
+    }
+   ],
+   "post_count": 2,
+   "posts": [
+    {
+     "id": "2116703562390810911",
+     "url": "https://x.com/npaka123/status/2116703562390810911",
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
+     "text": "HairDeck の概要 - 1枚画像から動く3Dヘアモデルを生成するAI｜npaka @npaka123 https://t.co/zzBEqgiM7t",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-01T01:27:10.000Z",
+     "metrics": {
+      "bookmark_count": 22,
+      "impression_count": 2831,
+      "like_count": 33,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 5
+     },
+     "cred": 73,
+     "heat": 14,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "プログラマー・技術書著者"
+    },
+    {
+     "id": "2116698573450678734",
+     "url": "https://x.com/npaka123/status/2116698573450678734",
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
+     "text": "HairDeck をおためし中\n\nCodex x Colab CLI でセットアップ : 約5分30秒 https://t.co/HVN6bgAxpd",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-01T01:07:20.000Z",
+     "metrics": {
+      "bookmark_count": 27,
+      "impression_count": 2641,
+      "like_count": 44,
+      "quote_count": 1,
+      "reply_count": 2,
+      "retweet_count": 2
+     },
+     "cred": 70,
+     "heat": 16,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "プログラマー・技術書著者"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n06fcb7653436?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "注目サービス：Codex"
+   ],
+   "reasons_neg": [
+    "根拠：評論・解説のみ（個人の試用メモ（成果物なし））"
+   ],
+   "llm_note": "投稿者は実際にセットアップしたと述べるが、生成結果の成果物は示されておらず、試用の報告としては限定的。",
+   "points": [
+    "新しい点: 1枚画像から動く3Dヘアモデルを作るという用途",
+    "注意点: 投稿者は試用中とのみ述べ、生成品質や結果の具体的な評価は示されていない",
+    "製造業の業務への直接の関係は薄く、用途は主に3Dやデザイン分野"
+   ],
+   "terms": [],
+   "evidence": "commentary",
+   "evidence_label": "評論・解説のみ",
+   "evidence_note": "個人の試用メモ（成果物なし）",
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "3D分野の話で製造業の業務には遠く、環境構築も必要"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "d20f9a0407",
    "verdict": "excluded",
    "title": "AIの作業報告で都合の悪い結果が抜ける問題を解説",
@@ -4482,9 +4507,9 @@
    "verdict": "excluded",
    "title": "Mollick教授、OpenAIのDotの使い勝手の課題を指摘",
    "summary": "ウォートン校のEthan Mollick教授が、OpenAIの「Dot」について、良いアドバイスがあるとしつつ、パーソナルエージェント全般のUXに課題があると述べた。投稿では、何をしているか、何を知っているか、何をしてくれるかが分かりにくい点を挙げている。",
-   "score": 27,
+   "score": 26,
    "credibility": 70,
-   "heat": 22,
+   "heat": 21,
    "first_seen": "2026-10-31T00:07:18.000Z",
    "latest": "2026-10-31T00:07:18.000Z",
    "authors": [
@@ -4519,7 +4544,7 @@
       "retweet_count": 3
      },
      "cred": 70,
-     "heat": 22,
+     "heat": 21,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4561,9 +4586,9 @@
    "verdict": "excluded",
    "title": "オープンモデル研究者が自身のデータ公開サイトを案内",
    "summary": "Trillium Labs創設者でオープンモデルを手がけるnatolambert氏が、自身のオープンモデル関連データを公開しているウェブサイトについて、無料で提供していると投稿した。投稿は短く、内容の詳細や具体的なデータ項目は書かれていない。",
-   "score": 27,
+   "score": 26,
    "credibility": 73,
-   "heat": 17,
+   "heat": 16,
    "first_seen": "2026-11-01T15:01:47.000Z",
    "latest": "2026-11-01T15:01:47.000Z",
    "authors": [
@@ -4598,7 +4623,7 @@
       "retweet_count": 2
      },
      "cred": 73,
-     "heat": 17,
+     "heat": 16,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4642,15 +4667,15 @@
    "usable": false
   },
   {
-   "id": "d3d7b22899",
+   "id": "29350c5f0b",
    "verdict": "excluded",
-   "title": "1枚画像から動く3Dヘアモデルを生成するAI「HairDeck」を紹介",
-   "summary": "プログラマーでnpaka氏が、1枚の画像から動く3Dヘアモデルを生成するAI「HairDeck」の概要をnoteの記事で紹介した。また同氏は、1枚の画像から3D Gaussian Splattingを生成するAI「Idol」の概要も紹介している。投稿はいずれも記事への案内で、実際の性能や検証結果は投稿からは読み取れない。",
-   "score": 26,
+   "title": "1枚画像から3D Gaussian Splattingを作る「Idol」を試用",
+   "summary": "プログラマーのnpaka氏が、1枚の画像から3D Gaussian Splattingを生成するAI「Idol」の概要を紹介し、Codex と Colab CLI でセットアップして試していると投稿した。セットアップ時間は12分だとしている。概要は解説記事にまとめられている。",
+   "score": 25,
    "credibility": 73,
-   "heat": 15,
-   "first_seen": "2026-10-31T05:11:53.000Z",
-   "latest": "2026-11-01T01:27:10.000Z",
+   "heat": 4,
+   "first_seen": "2026-10-31T05:08:28.000Z",
+   "latest": "2026-10-31T05:11:53.000Z",
    "authors": [
     {
      "username": "npaka123",
@@ -4664,33 +4689,6 @@
    ],
    "post_count": 2,
    "posts": [
-    {
-     "id": "2116703562390810911",
-     "url": "https://x.com/npaka123/status/2116703562390810911",
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
-     "text": "HairDeck の概要 - 1枚画像から動く3Dヘアモデルを生成するAI｜npaka @npaka123 https://t.co/zzBEqgiM7t",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T01:27:10.000Z",
-     "metrics": {
-      "bookmark_count": 22,
-      "impression_count": 2831,
-      "like_count": 33,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 5
-     },
-     "cred": 73,
-     "heat": 15,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "プログラマー・技術書著者"
-    },
     {
      "id": "2116397727429140727",
      "url": "https://x.com/npaka123/status/2116397727429140727",
@@ -4717,14 +4715,36 @@
      "neg": [],
      "author_type": "practitioner",
      "author_role": "プログラマー・技術書著者"
+    },
+    {
+     "id": "2116396867059888409",
+     "url": "https://x.com/npaka123/status/2116396867059888409",
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
+     "text": "Idol をおためし中  \n\nCodex + Colab CLI でセットアップ時間12分 https://t.co/QF4PL3znxg",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-10-31T05:08:28.000Z",
+     "metrics": {
+      "bookmark_count": 4,
+      "impression_count": 1471,
+      "like_count": 15,
+      "quote_count": 0,
+      "reply_count": 1,
+      "retweet_count": 0
+     },
+     "cred": 70,
+     "heat": 4,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "プログラマー・技術書著者"
     }
    ],
    "links": [
-    {
-     "url": "https://note.com/npaka/n/n06fcb7653436?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    },
     {
      "url": "https://note.com/npaka/n/n66f6eaffeecb?sub_rt=share_pw",
      "domain": "note.com",
@@ -4732,28 +4752,37 @@
     }
    ],
    "reasons_pos": [
-    "信頼リストの研究者・記者"
+    "信頼リストの研究者・記者",
+    "注目サービス：Codex"
    ],
    "reasons_neg": [
-    "根拠：評論・解説のみ（個人noteの概要紹介）"
+    "根拠：評論・解説のみ（個人の試用メモ（成果物なし））"
    ],
-   "llm_note": "紹介役の投稿で、記事の中身や公式の出典は本文からは確認できず、裏付けは記事を読んでから判断する必要がある。",
+   "llm_note": "投稿者は試用したと述べるが、生成結果や具体的な数値は示されず、試用報告としては限定的。",
    "points": [
-    "1枚の画像から3Dを作るAIは、3Dモデル制作の手間を減らす方向の技術とされる",
-    "製造業の図面や部品の3D化への利用可能性は、本投稿からは確認できない",
-    "対象はヘアや人物などの3D生成で、製造現場の手順書や教育とは直接の関係は薄い"
+    "新しい点: 1枚の画像から3D表現を作る手法の紹介",
+    "注意点: 投稿は試用中とのみ述べ、生成結果の品質や評価は示されていない",
+    "3D空間の再現に関わる技術で、製造業の現場業務への直接の用途は未確認"
    ],
    "terms": [],
    "evidence": "commentary",
    "evidence_label": "評論・解説のみ",
-   "evidence_note": "個人noteの概要紹介",
-   "services": [],
+   "evidence_note": "個人の試用メモ（成果物なし）",
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
    "events": [],
    "value": {
     "impact": 1,
     "closeness": 1,
     "try_cost": 2,
-    "why": "3D制作の分野で、現場の業務改善とは遠い"
+    "why": "3D再構成の技術で、現場の業務改善には直接つながりにくい"
    },
    "first_step": null,
    "usable": false
@@ -4763,9 +4792,9 @@
    "verdict": "excluded",
    "title": "NVIDIAのロボット・ゲーム向け動作生成AI「MotionBricks」を紹介",
    "summary": "プログラマーのnpaka氏が、NVIDIAの「MotionBricks」について、ゲームやロボットの動作をリアルタイムで生成するAIとして概要を紹介した。同氏は、Codex と Colab CLI を使ったセットアップに約12分かかったと投稿し、試用中であることも伝えている。投稿に示された性能や詳細な検証結果は確認できない。",
-   "score": 25,
+   "score": 24,
    "credibility": 73,
-   "heat": 2,
+   "heat": 1,
    "first_seen": "2026-10-31T01:11:13.000Z",
    "latest": "2026-10-31T01:26:14.000Z",
    "authors": [
@@ -4781,33 +4810,6 @@
    ],
    "post_count": 4,
    "posts": [
-    {
-     "id": "2116340804398817281",
-     "url": "https://x.com/npaka123/status/2116340804398817281",
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
-     "text": "NVIDIA MotionBricks の概要 - ゲームやロボットの動作をリアルタイム生成するAI｜npaka @npaka123 https://t.co/VmB6vcKgLL",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-10-31T01:25:42.000Z",
-     "metrics": {
-      "bookmark_count": 0,
-      "impression_count": 309,
-      "like_count": 0,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 1
-     },
-     "cred": 73,
-     "heat": 0,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "プログラマー・技術書著者"
-    },
     {
      "id": "2116337161641558241",
      "url": "https://x.com/npaka123/status/2116337161641558241",
@@ -4825,6 +4827,33 @@
       "quote_count": 0,
       "reply_count": 0,
       "retweet_count": 0
+     },
+     "cred": 73,
+     "heat": 0,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "プログラマー・技術書著者"
+    },
+    {
+     "id": "2116340804398817281",
+     "url": "https://x.com/npaka123/status/2116340804398817281",
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
+     "text": "NVIDIA MotionBricks の概要 - ゲームやロボットの動作をリアルタイム生成するAI｜npaka @npaka123 https://t.co/VmB6vcKgLL",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-10-31T01:25:42.000Z",
+     "metrics": {
+      "bookmark_count": 0,
+      "impression_count": 309,
+      "like_count": 0,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 1
      },
      "cred": 73,
      "heat": 0,
@@ -4854,7 +4883,7 @@
       "retweet_count": 2
      },
      "cred": 70,
-     "heat": 2,
+     "heat": 1,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4892,12 +4921,12 @@
    ],
    "links": [
     {
-     "url": "https://note.com/npaka/n/n77061cfd370e?sub_rt=share_pw",
+     "url": "https://note.com/npaka/n/n491013486de6?sub_rt=share_pw",
      "domain": "note.com",
      "primary": false
     },
     {
-     "url": "https://note.com/npaka/n/n491013486de6?sub_rt=share_pw",
+     "url": "https://note.com/npaka/n/n77061cfd370e?sub_rt=share_pw",
      "domain": "note.com",
      "primary": false
     }
@@ -5271,7 +5300,7 @@
    "summary": "プログラマーでnpaka氏が、2026年11月発売予定の技術書6冊を紹介するnote記事へのリンクを投稿した。テーマはAIエージェント、ロボティクス、LLMセキュリティとされている。投稿は記事への案内で、個々の書名や内容は投稿からは確認できない。",
    "score": 17,
    "credibility": 61,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-11-01T08:27:34.000Z",
    "latest": "2026-11-01T08:27:34.000Z",
    "authors": [
@@ -5306,7 +5335,7 @@
       "retweet_count": 0
      },
      "cred": 61,
-     "heat": 6,
+     "heat": 5,
      "pos": [
       "信頼リストの研究者・記者"
      ],

@@ -265,72 +265,7 @@
     "2116018545784238105"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-01T23:51:15Z"
-  },
-  {
-   "id": "a91aeeccc1",
-   "verdict": "confirmed",
-   "title": "NVIDIAがNemotron Retrieverと他の検索基盤のトークン使用量を比較する動画を紹介",
-   "summary": "NVIDIA公式AIアカウントが、AIエージェントの検索処理で使うトークン量と精度を、Nemotron Retrieverと別のオープンソース検索基盤で比べる動画を紹介した。オープンモデルとレシピはHugging Faceで公開されているとしている。",
-   "points": [
-    "トークンはAIが処理する文字の単位で、検索を繰り返すほど使用量と料金が増えやすい",
-    "検索の精度と使用量を同時に見ている点が、導入コストを考える際の比較材料になる",
-    "動画の数値そのものは投稿に示されておらず、比較条件は未確認"
-   ],
-   "terms": [],
-   "score": 78,
-   "credibility": 100,
-   "heat": 19,
-   "first_seen": "2026-10-30T00:23:51.000Z",
-   "latest": "2026-10-30T18:30:36.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の告知投稿",
-   "links": [
-    {
-     "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
-     "domain": "huggingface.co",
-     "primary": true
-    },
-    {
-     "url": "https://nvda.ws/4Beujcb",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "検索型AIの運用コストに関係し、公開モデルは試せるが設定には技術知識が要る"
-   },
-   "first_step": "Hugging Faceで公開されているNemotron Retrieverのモデルとレシピを眺めてみる",
-   "usable": true,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2115962853463396395",
-    "username": "NVIDIAAI",
-    "text": "Every extra search an AI agent makes uses more tokens.\n\nWatch Nemotron Retriever tackle the same questions as another open-source retrieval stack. Check out the evidence each retrieves, accuracy and token usage.\n\nGet the open models and recipes on @huggingface → https://t.co/esPYeleqW8",
-    "text_ja": "AIエージェントが検索を一回行うたびに、トークンが余分に使われます。\n\nNemotron Retrieverが、別のオープンソース検索基盤と同じ質問に取り組む様子をご覧ください。それぞれが取得した根拠、正答率、トークン使用量を確認できます。\n\nオープンモデルとレシピは @huggingface で入手できます → https://t.co/esPYeleqW8"
-   },
-   "post_ids": [
-    "2115962853463396395",
-    "2116236342653026706"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-01T23:51:15Z"
+   "archived_at": "2026-11-02T01:38:04Z"
   },
   {
    "id": "f7322f7a50",
@@ -440,6 +375,66 @@
    ],
    "post_count": 1,
    "archived_at": "2026-11-01T15:17:43Z"
+  },
+  {
+   "id": "a52f744a15",
+   "verdict": "confirmed",
+   "title": "NVIDIAとSiemensがチップ設計AIエージェントの精度向上を公開",
+   "summary": "NVIDIA公式アカウントは、Siemens EDAチームがNVIDIA NeMo Gymを使い、設計エージェントの出力を検査してエラーを追跡し、スキルやツール説明を改善したと投稿した。標準セル特性評価のベンチマークで、検証スコアが約55%から約95%に上がり、エージェントのターン数が66%減、出力トークンが64%減したとしている。詳細は公式テックブログで公開されたという。",
+   "points": [
+    "新しい点: AIエージェントを評価データで検査し、改善を回す手法の具体例",
+    "なぜ重要: 半導体設計などの専門分野で、エージェントの信頼性と効率化を両立させる実例",
+    "注意点: 数値は特定のベンチマーク上の結果で、他の業務にそのまま当てはまるかは未確認"
+   ],
+   "terms": [],
+   "score": 65,
+   "credibility": 93,
+   "heat": 2,
+   "first_seen": "2026-10-30T00:23:51.000Z",
+   "latest": "2026-10-30T18:30:36.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントと公式テックブログ",
+   "links": [
+    {
+     "url": "https://nvda.ws/4Beujcb",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "エージェント改善の考え方は参考になるが、ツール自体は企業向けで個人には試しにくい"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2116236342653026706",
+    "username": "NVIDIAAI",
+    "text": "How do you make a chip design agent more reliable and efficient?\n\nThe @Siemens EDA team used NVIDIA NeMo Gym to check the engineering files its agent produced, trace errors, and improve the agent’s skills and tool descriptions.\n\nIn its standard cell characterization benchmark, those changes raised the composite verification score from ~55% to ~95%, with 66% fewer agent turns and 64% fewer output tokens.\n\nWe just published a new techblog that walks through what the team measured, what they change",
+    "text_ja": "チップ設計エージェントの信頼性と効率を高めるにはどうすればよいでしょうか？\n\n@Siemens EDAチームは、NVIDIA NeMo Gymを使って、エージェントが生成したエンジニアリングファイルをチェックし、エラーを追跡し、エージェントのスキルやツールの説明文を改善しました。\n\n標準セルの特性評価ベンチマークでは、これらの変更により複合検証スコアが約55%から約95%に向上し、エージェントのターン数は66%、出力トークン数は64%削減されました。\n\nチームが何を測定し、何を変更し、他のエンジニアリングチームがこのアプローチをどう応用できるかをまとめた新しいテックブログを公開しました → https://t.co/fs0nAEdTtX"
+   },
+   "post_ids": [
+    "2115962853463396395",
+    "2116236342653026706"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-02T01:38:04Z"
   },
   {
    "id": "35eba37e15",

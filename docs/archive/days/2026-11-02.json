@@ -2,21 +2,74 @@
  "date": "2026-11-02",
  "items": [
   {
-   "id": "756753a883",
+   "id": "1da86c161a",
    "verdict": "confirmed",
-   "title": "Sakana AIが東京でシンポジウム開催、新言語モデル計画を発表",
-   "summary": "Sakana AIは10月26日、東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催し、400名超が参加したと公式に報告した。基調講演はJürgen Schmidhuber教授、対談はCEOのDavid Haが務めた。チーフサイエンティストの秋葉拓哉が、自社開発の言語モデルシリーズ「Sakana Sawara（仮称）」を発表し、最初の小規模モデルは順調に進めば2027年春に公開予定とした。",
+   "title": "Mistralが大型モデルで分子計算ソルバーを自動生成したと紹介",
+   "summary": "Mistral AIは公式アカウントで、大規模モデル「Mistral Large 4」に分子を解離させる様子を示させたと紹介した。短い指示から量子化学のSCFソルバーを一から書き、出力を検証して3D表示まで作ったとしている。さらに、指示なしで分子の切り方や表示する軌道を自ら選んだと述べている。",
    "points": [
-    "自社開発の言語モデル「Sakana Sawara（仮称）」の計画が示された。名称は仮称",
-    "最初のモデルは2027年春の公開予定で、現時点で試すことはできない",
-    "講演では生成AIの次の課題として、自ら実験を考える人工科学者や実世界で働くPhysical AIが挙げられた"
+    "コードを書くだけでなく、化学計算の結果を検証し可視化まで行った点が特徴とされる",
+    "量子化学の専門的な処理をAIが自力で組めるかの一例として注目される",
+    "デモの投稿で、正確さの定量的な評価や再現性は示されていない。専門家による確認は未確認"
    ],
    "terms": [],
-   "score": 77,
+   "score": 79,
+   "credibility": 85,
+   "heat": 59,
+   "first_seen": "2026-11-02T12:16:06.000Z",
+   "latest": "2026-11-02T12:16:06.000Z",
+   "authors": [
+    "MistralAI"
+   ],
+   "author_labels": [
+    {
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Mistral公式アカウントのデモ投稿",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "デモの紹介で、一般の製造現場の業務との関連は薄く、利用手段も示されていない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/MistralAI/status/2117229259425038344",
+    "username": "MistralAI",
+    "text": "We asked Mistral Large 4 to show what happens when you break a molecule. ⚛️\n\nWith a short prompt, it wrote a quantum chemistry SCF solver from scratch, validated its output, and built a 3D view around it. \n\nLe Chonk also understand chemistry enough to independently choose how to break the molecule and what orbitals to show, without further input. 🧵",
+    "text_ja": "Mistral Large 4 に、分子を切断するとどうなるかを示させてみました。⚛️\n\n短い指示だけで、量子化学のSCF（自己無撞着場）ソルバーをゼロから書き、その出力を検証し、さらにその周りに3D表示を組み上げました。\n\n「Le Chonk」は化学についても十分に理解しており、追加の指示なしに、分子をどう切断するか、どの軌道を表示するかを自分で選びました。🧵"
+   },
+   "post_ids": [
+    "2117229259425038344"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-02T18:31:58Z"
+  },
+  {
+   "id": "e8b10f57b9",
+   "verdict": "confirmed",
+   "title": "Sakana AIが東京でシンポジウム開催、新言語モデル系列を発表",
+   "summary": "Sakana AIは10月26日、東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催したと公式に報告した。400名超が参加し、チーフ・サイエンティスト・ディレクターのJürgen Schmidhuber教授の基調講演と、CEOのDavid Haとの対談が行われた。あわせて自社開発の言語モデルシリーズ「Sakana Sawara（仮称）」が発表され、最初の小規模モデル「Sawara Small（仮称）」は順調なら2027年春に公開予定とされる。",
+   "points": [
+    "最初のモデルの公開は2027年春を予定しており、今すぐ使えるものではない（仮称のため名称も変わりうる）",
+    "Physical AI（実世界で働くAI）や人工科学者など、大型ラボ以外にも機会があるという方向性が示された",
+    "日本発の自社モデル開発の動きとして注目。ただし性能や提供形態はまだ分からない"
+   ],
+   "terms": [],
+   "score": 79,
    "credibility": 100,
-   "heat": 33,
+   "heat": 28,
    "first_seen": "2026-11-02T01:43:12.000Z",
-   "latest": "2026-11-02T01:43:12.000Z",
+   "latest": "2026-11-02T16:00:02.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -33,7 +86,7 @@
    "evidence_note": "Sakana AI公式の開催レポート",
    "links": [
     {
-     "url": "https://sakana.ai/symposium-2026/",
+     "url": "https://sakana.ai/symposium-2026/#English",
      "domain": "sakana.ai",
      "primary": true
     }
@@ -41,24 +94,25 @@
    "services": [],
    "events": [],
    "value": {
-    "impact": 1,
-    "closeness": 1,
+    "impact": 2,
+    "closeness": 2,
     "try_cost": 1,
-    "why": "国内研究所の計画発表で、現時点で読者が使えるものはない"
+    "why": "国産モデルの動向として参考になるが、公開は2027年予定で今は試せない"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/SakanaAILabs/status/2117069983679467522",
+    "url": "https://x.com/SakanaAILabs/status/2117285614592950479",
     "username": "SakanaAILabs",
-    "text": "Sakana AIシンポジウム：日本から挑む言語モデル・世界モデル・Physical AI\n\n開催レポート https://t.co/4O4AWYWOHs \n\n10月26日、東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催しました。9月にChief Scientific Advisorとしてお迎えしたJürgen Schmidhuber教授の基調講演 と、2018年に教授と論文「World Models」を共著したCEOのDavid Haとの対談に、400名を超える方にご参加いただきました。\n\n基調講演では、甘利俊一氏や福島邦彦氏をはじめとする日本の研究者を含め、世界各地の研究者の功績に触れながら、自身による1990年の世界モデルや人工好奇心の研究まで、いまのAIにつながる流れをたどりました。\n\nまた、チーフサイエンティストの秋葉拓哉が、事前学習から自社で開発する言語モデルシリーズ「Sakana Sawara（仮称）」を発表しました。最初のモデルとなる小規模な「Sawara Small（仮称）」は、順調に進めば2027年春に公開",
-    "text_ja": null
+    "text": "Sakana AI Symposium: Building the Future of Language Models, World Models, and Physical AI from Japan\n\nEvent Report (English): https://t.co/dW29YYm0bv \n\nOn October 26, we hosted the symposium “From World Models to Real-World AI” at Hitotsubashi Hall in Tokyo. More than 400 people joined us for a keynote by Professor Jürgen Schmidhuber (@SchmidhuberAI), who became our Chief Scientific Advisor in September, and a conversation with our CEO David Ha, his co-author on the 2018 paper “World Models.”\n\n",
+    "text_ja": "Sakana AI シンポジウム：日本から築く言語モデル、ワールドモデル、そしてフィジカルAIの未来\n\nイベントレポート（英語）：https://t.co/dW29YYm0bv \n\n10月26日、東京・一橋ホールにて、シンポジウム「ワールドモデルから現実世界のAIへ」を開催しました。9月に当社の主席科学顧問に就任したユルゲン・シュミットフーバー教授（@SchmidhuberAI）による基調講演と、2018年の論文「World Models」の共著者でもある当社CEOのデイビッド・ハによる対談には、400名を超える方々にご参加いただきました。\n\n基調講演でユルゲンは、日本の甘利俊一氏や福島邦彦氏をはじめ、世界中の研究者の功績をたどりながら、今日のAIに至るまでの道のりを語りました。そこには、彼自身による1990年のワールドモデルと人工的好奇心に関する研究も含まれています。\n\nまた、当社のチーフサイエンティストである秋葉拓哉からは、事前学習から始めてゼロから構築している新しい言語モデルシリーズ「Sakana Sawara」（仮称）について紹介しました。順調に進めば、最初のモデルである小型モデル「Sawara Small」（仮称）は2027年春にリリースされる予定です。\n\nユルゲンが思い描いてきたAIのうち、約半分は生成AIによって実現されたと言えるかもしれません。残りの半分は、自ら実験を設計する人工科学者であり、"
    },
    "post_ids": [
+    "2117285614592950479",
     "2117069983679467522"
    ],
-   "post_count": 1,
-   "archived_at": "2026-11-02T11:28:40Z"
+   "post_count": 2,
+   "archived_at": "2026-11-02T18:31:58Z"
   },
   {
    "id": "aadd501ded",
@@ -71,9 +125,9 @@
     "投稿内のサイトを実際に試した結果や、著作権・規約面の扱いは未確認。"
    ],
    "terms": [],
-   "score": 93,
+   "score": 91,
    "credibility": 73,
-   "heat": 88,
+   "heat": 84,
    "first_seen": "2026-11-01T18:14:46.000Z",
    "latest": "2026-11-01T18:14:46.000Z",
    "authors": [
@@ -125,7 +179,7 @@
     "2116957135661945283"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-02T11:28:40Z"
+   "archived_at": "2026-11-02T18:31:58Z"
   }
  ]
 }

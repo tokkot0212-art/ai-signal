@@ -265,7 +265,7 @@
    "terms": [],
    "score": 74,
    "credibility": 93,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-10-30T04:05:09.000Z",
    "latest": "2026-10-31T13:33:39.000Z",
    "authors": [
@@ -310,73 +310,7 @@
     "2116524000977285321"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-02T11:28:40Z"
-  },
-  {
-   "id": "72423c2ad3",
-   "verdict": "confirmed",
-   "title": "NVIDIA、AIエージェントの活用事例を2件公開",
-   "summary": "NVIDIA公式AIアカウントは、SETI InstituteとBreakthrough ListenがAIエージェントでAllen Telescope Arrayを制御し、地球外信号を探す取り組みを紹介した。また、Siemens EDAチームがNVIDIA NeMo Gymを使い、チップ設計エージェントの検証スコアを約55%から約95%に改善したと報告した。改善にあたりエージェントの回数とトークン数は減ったとされる。",
-   "points": [
-    "Siemens EDAの事例は、エージェントの出力を検証し改善する手法の具体例として参考になる",
-    "検証スコアの向上は同社のベンチマーク内の結果で、他の業務にそのまま当てはまるかは不明",
-    "NVIDIAのテックブログに詳細な手順があるとされるが、投稿内容からは内容の確認はできていない"
-   ],
-   "terms": [],
-   "score": 72,
-   "credibility": 93,
-   "heat": 20,
-   "first_seen": "2026-10-30T00:23:51.000Z",
-   "latest": "2026-10-31T15:57:11.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントと公式テックブログ",
-   "links": [
-    {
-     "url": "https://nvda.ws/4zgYoGv",
-     "domain": "nvda.ws",
-     "primary": false
-    },
-    {
-     "url": "https://nvda.ws/4Beujcb",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "エージェント改善の考え方は参考になるが、NeMo Gymは企業向け環境で個人は試しにくい"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2116560120457142451",
-    "username": "NVIDIAAI",
-    "text": "AI agents are now steering the Allen Telescope Array in Northern California to search for possible alien signals. 👽 \n\nHappy Halloween. Sleep tight. 🎃\n\nSee how the @SETIInstitute and Breakthrough Listen are using NVIDIA Holoscan and CUDA-X libraries to listen to the skies → https://t.co/8l527ZWuFQ",
-    "text_ja": "AIエージェントが、カリフォルニア州北部にあるアレン望遠鏡アレイを操作し、地球外からの信号の探索を行うようになりました。👽\n\nハッピーハロウィン。おやすみなさい。🎃\n\n@SETIInstitute と Breakthrough Listen が NVIDIA Holoscan と CUDA-X ライブラリを使って、宇宙からの信号を聴き取っている様子はこちら → https://t.co/8l527ZWuFQ"
-   },
-   "post_ids": [
-    "2115962853463396395",
-    "2116560120457142451",
-    "2116236342653026706"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-02T11:28:40Z"
+   "archived_at": "2026-11-02T18:31:58Z"
   },
   {
    "id": "034fb5be35",
@@ -429,6 +363,67 @@
    ],
    "post_count": 1,
    "archived_at": "2026-11-01T15:17:43Z"
+  },
+  {
+   "id": "7da75d1c70",
+   "verdict": "confirmed",
+   "title": "NVIDIAが電波望遠鏡の観測にAIエージェントを使ったと紹介",
+   "summary": "NVIDIA公式AIアカウントは、カリフォルニア北部のAllen Telescope Arrayの操作にAIエージェントが使われていると紹介した。目的は地球外からの可能性がある信号の探索とされる。SETI InstituteとBreakthrough ListenがNVIDIA Holoscanや CUDA-Xライブラリを使っているとして、関連ページへのリンクを示している。",
+   "points": [
+    "AIエージェントが実際の観測機器の制御に使われている実例として挙げられている",
+    "GPUソフトウェア（CUDA-X等）が科学観測の処理基盤になっている点がNVIDIAの事業的な強みを示す",
+    "投稿の多くは宣伝的な表現で、AIエージェントの具体的な役割や成果の詳細は、リンク先を確認する必要がある"
+   ],
+   "terms": [],
+   "score": 67,
+   "credibility": 93,
+   "heat": 19,
+   "first_seen": "2026-10-30T00:23:51.000Z",
+   "latest": "2026-10-31T15:57:11.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの紹介投稿",
+   "links": [
+    {
+     "url": "https://nvda.ws/4zgYoGv",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "科学観測での活用事例で、製造現場の業務や個人の導入には直接関係しない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2116560120457142451",
+    "username": "NVIDIAAI",
+    "text": "AI agents are now steering the Allen Telescope Array in Northern California to search for possible alien signals. 👽 \n\nHappy Halloween. Sleep tight. 🎃\n\nSee how the @SETIInstitute and Breakthrough Listen are using NVIDIA Holoscan and CUDA-X libraries to listen to the skies → https://t.co/8l527ZWuFQ",
+    "text_ja": "AIエージェントが、カリフォルニア州北部にあるアレン望遠鏡アレイを操作し、地球外からの信号の探索を行うようになりました。👽\n\nハッピーハロウィン。おやすみなさい。🎃\n\n@SETIInstitute と Breakthrough Listen が NVIDIA Holoscan と CUDA-X ライブラリを使って、宇宙からの信号を聴き取っている様子はこちら → https://t.co/8l527ZWuFQ"
+   },
+   "post_ids": [
+    "2115962853463396395",
+    "2116236342653026706",
+    "2116560120457142451"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-02T18:31:58Z"
   },
   {
    "id": "35eba37e15",

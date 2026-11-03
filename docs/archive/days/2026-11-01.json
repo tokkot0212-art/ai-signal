@@ -2,24 +2,32 @@
  "date": "2026-11-01",
  "items": [
   {
-   "id": "a89143207a",
+   "id": "60ec556d9f",
    "verdict": "promising",
-   "title": "AI学習拒否をrobots.txtで一括指定へ、OpenAIなどが対応表明",
-   "summary": "ITmedia NEWSは、Webサイトの運営者がAI学習への利用を拒否する設定を、robots.txtで一括指定できる方向になり、OpenAIやGoogleなどが対応を表明したと報じた。別のAI論文紹介メディア「AIDB」は、Googleの研究者による実験を紹介し、AIにプログラムを修正させた際にユーザーの根拠のない指摘に流されやすく、事前に判断と根拠を書かせることが有効だとしている。",
+   "title": "AI学習拒否をrobots.txtで一括指定、OpenAIやGoogleが対応表明",
+   "summary": "ITmedia NEWSが、AI学習への利用拒否をrobots.txtで一括して指定できる仕組みについて、OpenAIやGoogleなどが対応を表明したと報じた。投稿はその見出しと記事へのリンクのみで、詳細な仕組みや実施時期は投稿からは読み取れない。",
    "points": [
-    "robots.txtはサイトの巡回ルールを書くファイルで、AI学習の拒否設定にも使われる。新しい共通指定が導入される見込みとみられる",
-    "AIDBの紹介では、ユーザーの根拠のない反論に対し、AIが正しい箇所まで書き換えてしまう例が示されている",
-    "報道の詳細な仕様や実施時期、実際の効果は投稿からは確認できない"
+    "Webサイトの運営者が、AIの学習利用を拒否する設定を一括で行える可能性があり、自社サイトを持つ個人事業者にも関係する。",
+    "対応の具体的な仕様や開始時期、対象となる企業の範囲は記事本文で確認が必要。",
+    "robots.txtは法的な拘束力を持つものではないとされるため、実効性には注意が必要（一般的な背景知識）。"
    ],
-   "terms": [],
-   "score": 76,
+   "terms": [
+    {
+     "term": "robots.txt",
+     "desc": "Webサイトの管理者が、検索や収集ツールへのアクセス可否を書くテキストファイル。"
+    },
+    {
+     "term": "AI学習",
+     "desc": "大量のデータからAIのモデルを育てること。Web上の文章や画像が使われることがある。"
+    }
+   ],
+   "score": 72,
    "credibility": 78,
-   "heat": 47,
+   "heat": 46,
    "first_seen": "2026-10-31T23:35:05.000Z",
-   "latest": "2026-11-01T02:20:23.000Z",
+   "latest": "2026-10-31T23:35:05.000Z",
    "authors": [
-    "itmedia_news",
-    "ai_database"
+    "itmedia_news"
    ],
    "author_labels": [
     {
@@ -27,17 +35,11 @@
      "label": "ITmedia NEWS公式",
      "type": "official",
      "former": ""
-    },
-    {
-     "username": "ai_database",
-     "label": "AI論文紹介メディア「AIDB」運営",
-     "type": "commentator",
-     "former": ""
     }
    ],
    "evidence": "reporting",
    "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事見出し（AIDBは解説）",
+   "evidence_note": "ITmedia NEWSの記事見出し",
    "links": [
     {
      "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/",
@@ -50,10 +52,10 @@
    "value": {
     "impact": 2,
     "closeness": 2,
-    "try_cost": 2,
-    "why": "Web公開側の設定は運用に関係。AIへの指示の工夫は現場の手順作成に役立つ可能性"
+    "try_cost": 3,
+    "why": "自社サイトのAI学習拒否設定に関係するが、実作業は記事確認後"
    },
-   "first_step": "AIに手順書を修正させる前に、判断と根拠を先に書かせる指示を試してみる",
+   "first_step": null,
    "usable": true,
    "post": {
     "url": "https://x.com/itmedia_news/status/2116675356296200550",
@@ -62,11 +64,10 @@
     "text_ja": null
    },
    "post_ids": [
-    "2116675356296200550",
-    "2116716956225360043"
+    "2116675356296200550"
    ],
-   "post_count": 2,
-   "archived_at": "2026-11-03T16:20:47Z"
+   "post_count": 1,
+   "archived_at": "2026-11-03T20:10:44Z"
   },
   {
    "id": "a6a5a072aa",
@@ -125,7 +126,7 @@
     "2116838961599635705"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-03T16:20:47Z"
+   "archived_at": "2026-11-03T20:10:44Z"
   }
  ]
 }

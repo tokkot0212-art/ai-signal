@@ -2,23 +2,24 @@
  "date": "2026-11-01",
  "items": [
   {
-   "id": "60ec556d9f",
+   "id": "a89143207a",
    "verdict": "promising",
-   "title": "AI学習拒否をrobots.txtで一括指定する方針、OpenAIなどが対応表明",
-   "summary": "ITmedia NEWSの公式アカウントが、AI学習への利用拒否をrobots.txtで一括指定できるようにする動きを伝えた。OpenAIやGoogleなどが対応を表明したとされる。詳細は記事リンク先で確認する必要がある。",
+   "title": "AI学習拒否をrobots.txtで一括指定へ、OpenAIなどが対応表明",
+   "summary": "ITmedia NEWSは、Webサイトの運営者がAI学習への利用を拒否する設定を、robots.txtで一括指定できる方向になり、OpenAIやGoogleなどが対応を表明したと報じた。別のAI論文紹介メディア「AIDB」は、Googleの研究者による実験を紹介し、AIにプログラムを修正させた際にユーザーの根拠のない指摘に流されやすく、事前に判断と根拠を書かせることが有効だとしている。",
    "points": [
-    "robots.txtはWebサイトが検索ロボットなどに巡回の可否を伝えるファイルで、AI学習にも使えるようになる方向とみられる",
-    "自分のサイトの文章や画像をAI学習に使わせたくない人・企業には、設定方法の変化が影響しうる",
-    "対象となる企業の範囲や適用の強制力は、投稿だけでは未確認"
+    "robots.txtはサイトの巡回ルールを書くファイルで、AI学習の拒否設定にも使われる。新しい共通指定が導入される見込みとみられる",
+    "AIDBの紹介では、ユーザーの根拠のない反論に対し、AIが正しい箇所まで書き換えてしまう例が示されている",
+    "報道の詳細な仕様や実施時期、実際の効果は投稿からは確認できない"
    ],
    "terms": [],
-   "score": 70,
+   "score": 76,
    "credibility": 78,
-   "heat": 50,
+   "heat": 49,
    "first_seen": "2026-10-31T23:35:05.000Z",
-   "latest": "2026-10-31T23:35:05.000Z",
+   "latest": "2026-11-01T02:20:23.000Z",
    "authors": [
-    "itmedia_news"
+    "itmedia_news",
+    "ai_database"
    ],
    "author_labels": [
     {
@@ -26,11 +27,17 @@
      "label": "ITmedia NEWS公式",
      "type": "official",
      "former": ""
+    },
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
     }
    ],
    "evidence": "reporting",
    "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia記事の見出し紹介",
+   "evidence_note": "ITmedia NEWSの記事見出し（AIDBは解説）",
    "links": [
     {
      "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/",
@@ -43,11 +50,11 @@
    "value": {
     "impact": 2,
     "closeness": 2,
-    "try_cost": 1,
-    "why": "Web公開情報の扱いに関係するが、現場の業務効率には直接効かず試す対象もない"
+    "try_cost": 2,
+    "why": "Web公開側の設定は運用に関係。AIへの指示の工夫は現場の手順作成に役立つ可能性"
    },
-   "first_step": null,
-   "usable": false,
+   "first_step": "AIに手順書を修正させる前に、判断と根拠を先に書かせる指示を試してみる",
+   "usable": true,
    "post": {
     "url": "https://x.com/itmedia_news/status/2116675356296200550",
     "username": "itmedia_news",
@@ -55,10 +62,11 @@
     "text_ja": null
    },
    "post_ids": [
-    "2116675356296200550"
+    "2116675356296200550",
+    "2116716956225360043"
    ],
-   "post_count": 1,
-   "archived_at": "2026-11-02T22:22:38Z"
+   "post_count": 2,
+   "archived_at": "2026-11-03T03:32:30Z"
   },
   {
    "id": "a6a5a072aa",
@@ -117,7 +125,7 @@
     "2116838961599635705"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-02T22:22:38Z"
+   "archived_at": "2026-11-03T03:32:30Z"
   }
  ]
 }

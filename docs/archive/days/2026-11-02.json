@@ -2,32 +2,19 @@
  "date": "2026-11-02",
  "items": [
   {
-   "id": "2175cf8135",
+   "id": "6b27c7da3f",
    "verdict": "confirmed",
-   "title": "Mistral、大規模モデル「Mistral Large 4」の活用例を複数公開",
-   "summary": "Mistral AIは公式アカウントで、新モデル「Mistral Large 4」を使った複数のデモを投稿した。内容は、Djangoの脆弱性の発見・修正、衛星追跡アプリの作成、量子化学ソルバーの作成、研究用ワークスペース「Open Math OS」への提供などである。投稿で示された範囲のデモであり、第三者による検証結果は含まれていない。",
+   "title": "Mistral、大規模モデルでのセキュリティ脆弱性検出デモを公開",
+   "summary": "Mistral AI公式アカウントは、同社の大規模モデル「Mistral Large 4」がDjangoの最近のCVE（公開された脆弱性）を見つけ、再現し、修正できるかを試したと投稿した。133のエージェントがコードを解析し、攻撃シナリオを試し、バグを確認した後、「Le Chonk」がパッチを当てる様子を90倍速で示したとされる。あわせて、Le Chonkの開発過程を紹介する記事もarXivとalphaXivで公開されたと案内している。",
    "points": [
-    "デモは発見→検証→修正まで一連の作業をAIに任せた例として示されている。ただし投稿は宣伝色が強く、成功例のみの可能性がある",
-    "Open Math OSは承認済みのチーム向けに提供中と書かれており、一般の個人が今日すぐ使えるかは不明",
-    "Mistral Large 4は1.05Tのオープンウェイト・1Mコンテキストと記載されている。実際の性能や費用は投稿からは判断できない"
+    "脆弱性の発見・再現・修正を複数のエージェントに分担させる構成がデモの要点。",
+    "デモは公式の動画・投稿によるもので、第三者による再現結果は投稿からは確認できない。",
+    "実際の製品での精度や運用コストは未確認。"
    ],
-   "terms": [
-    {
-     "term": "オープンウェイト",
-     "desc": "学習済みモデルの重み（パラメータ）が公開され、誰でも手元で動かせるモデルのこと"
-    },
-    {
-     "term": "脆弱性（CVE）",
-     "desc": "ソフトウェアのセキュリティ上の欠陥。CVEは共通の識別番号のこと"
-    },
-    {
-     "term": "SCFソルバー",
-     "desc": "量子化学で分子の電子状態を計算するための計算プログラムのこと"
-    }
-   ],
-   "score": 84,
+   "terms": [],
+   "score": 81,
    "credibility": 88,
-   "heat": 57,
+   "heat": 51,
    "first_seen": "2026-11-02T12:16:06.000Z",
    "latest": "2026-11-04T10:24:20.000Z",
    "authors": [
@@ -43,7 +30,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Mistral公式X投稿（デモ紹介）",
+   "evidence_note": "企業公式アカウントの投稿・デモ動画",
    "links": [
     {
      "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
@@ -57,7 +44,7 @@
     "impact": 2,
     "closeness": 2,
     "try_cost": 1,
-    "why": "自社製品の宣伝デモで、読者の現場業務に直結せず、利用条件も承認制"
+    "why": "セキュリティ自動化は関心分野だが、モデル自体の利用条件は投稿から不明"
    },
    "first_step": null,
    "usable": false,
@@ -69,44 +56,28 @@
    },
    "post_ids": [
     "2117925908572991748",
-    "2117574509179900410",
-    "2117670644506861900",
-    "2117229259425038344",
     "2117562068220195097",
     "2117558028111421576"
    ],
    "post_count": 6,
-   "archived_at": "2026-11-04T16:25:03Z"
+   "archived_at": "2026-11-04T20:28:16Z"
   },
   {
-   "id": "e8b10f57b9",
+   "id": "ef3a2a1212",
    "verdict": "confirmed",
-   "title": "Sakana AIがシンポジウム開催、言語モデル「Sawara」を発表",
-   "summary": "Sakana AI公式アカウントによると、10月26日に東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催し、400名超が参加した。基調講演はJürgen Schmidhuber教授、CEOのDavid Haとの対談も行われた。チーフサイエンティストの秋葉拓哉氏が、自社開発の言語モデルシリーズ「Sakana Sawara（仮称）」を発表し、最初の小規模モデルは2027年春の公開を予定しているという。",
+   "title": "Sakana AIがシンポジウムを開催、次期言語モデル計画を発表",
+   "summary": "Sakana AIは、2025年10月26日に東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催したと報告した。400名超が参加し、Jürgen Schmidhuber教授の基調講演と、CEOのDavid Haとの対談が行われた。あわせてチーフサイエンティストの秋葉拓哉が、自社開発の言語モデルシリーズ「Sakana Sawara（仮称）」を発表し、最初の小型モデル「Sawara Small（仮称）」を2027年春に公開する予定だと述べた。",
    "points": [
-    "自社で事前学習から行う言語モデル開発を明示しており、日本発の基盤モデルの動きとして注目できる。",
-    "最初のモデルの公開は2027年春を予定しており、現時点では個人が使える段階ではない。『仮称』の表記もある。",
-    "Physical AIや人工科学者などは『まだスケールしていない』と同社が述べており、現場への応用は今後の話。"
+    "新モデルは「順調に進めば」という条件付きの公開予定で、時期は確定ではない。",
+    "Physical AI（実世界で動くAI）や人工科学者への関心を示す内容で、製造業との接点が今後出てくる可能性がある。",
+    "現時点で一般向けに試せるのは既存のデモ（Marlin、Fugu、Namazu）に限られる。"
    ],
-   "terms": [
-    {
-     "term": "世界モデル（World Models）",
-     "desc": "環境の仕組みを内部で再現し、未来を予測するAIの考え方。"
-    },
-    {
-     "term": "Physical AI",
-     "desc": "ロボットなど現実世界の物体を扱い、動くAIのこと。"
-    },
-    {
-     "term": "事前学習",
-     "desc": "大量のデータであらかじめAIを学習させる工程。基盤モデル作りの土台。"
-    }
-   ],
-   "score": 72,
+   "terms": [],
+   "score": 74,
    "credibility": 100,
    "heat": 15,
    "first_seen": "2026-11-02T01:43:12.000Z",
-   "latest": "2026-11-02T16:00:02.000Z",
+   "latest": "2026-11-04T02:29:47.000Z",
    "authors": [
     "SakanaAILabs"
    ],
@@ -120,7 +91,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Sakana AI公式の開催レポート",
+   "evidence_note": "企業公式のイベント報告",
    "links": [
     {
      "url": "https://sakana.ai/symposium-2026/",
@@ -132,9 +103,9 @@
    "events": [],
    "value": {
     "impact": 2,
-    "closeness": 1,
+    "closeness": 2,
     "try_cost": 1,
-    "why": "基盤モデルの動向として参考になるが、今は試せず業務への直結も薄い"
+    "why": "国内モデルの動向として重要だが、公開は2027年予定で今すぐ試せない"
    },
    "first_step": null,
    "usable": false,
@@ -146,10 +117,64 @@
    },
    "post_ids": [
     "2117069983679467522",
-    "2117285614592950479"
+    "2117285614592950479",
+    "2117806486172860793"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-04T16:25:03Z"
+   "archived_at": "2026-11-04T20:28:16Z"
+  },
+  {
+   "id": "1da86c161a",
+   "verdict": "confirmed",
+   "title": "Mistral Large 4で量子化学のSCFソルバーを作成したと発表",
+   "summary": "Mistral AI公式アカウントは、同社の大規模モデル「Mistral Large 4」に分子を切断する様子を示させたと投稿した。短い指示から量子化学のSCF（自己無撞着場）ソルバーをゼロから書き、出力を検証して、周囲に3D表示を作ったとしている。さらに、指示なしで切断方法と表示する軌道を自ら選んだとも述べている。",
+   "points": [
+    "SCFソルバーは量子化学計算の基本的な手法で、モデルが一から実装した点が注目点。",
+    "投稿は公式デモの紹介で、検証の詳細や第三者による確認は示されていない。",
+    "研究用途としての精度は未確認。"
+   ],
+   "terms": [],
+   "score": 69,
+   "credibility": 85,
+   "heat": 36,
+   "first_seen": "2026-11-02T12:16:06.000Z",
+   "latest": "2026-11-02T12:16:06.000Z",
+   "authors": [
+    "MistralAI"
+   ],
+   "author_labels": [
+    {
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式アカウントの投稿",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "研究デモで、現場の手順書・教育業務との関係は薄い"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/MistralAI/status/2117229259425038344",
+    "username": "MistralAI",
+    "text": "We asked Mistral Large 4 to show what happens when you break a molecule. ⚛️\n\nWith a short prompt, it wrote a quantum chemistry SCF solver from scratch, validated its output, and built a 3D view around it. \n\nLe Chonk also understand chemistry enough to independently choose how to break the molecule and what orbitals to show, without further input. 🧵",
+    "text_ja": "分子を壊すとどうなるかを示すために、Mistral Large 4に依頼しました ⚛️\n\n短いプロンプトで、量子化学のSCFソルバーをゼロから書き、出力を検証し、その周りに3D表示を作りました。\n\nLe Chonkは、追加の指示なしに、分子をどう壊すか、どの軌道を表示するかも自ら判断できるほど化学を理解しています。🧵"
+   },
+   "post_ids": [
+    "2117229259425038344"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-04T20:28:16Z"
   },
   {
    "id": "aadd501ded",
@@ -238,9 +263,9 @@
      "desc": "Claudeの高額な個人向け有料プランの名称（投稿での旧名）"
     }
    ],
-   "score": 55,
+   "score": 54,
    "credibility": 78,
-   "heat": 7,
+   "heat": 6,
    "first_seen": "2026-11-01T22:05:06.000Z",
    "latest": "2026-11-01T22:05:06.000Z",
    "authors": [
@@ -284,7 +309,7 @@
     "2117015098250416160"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-04T16:25:03Z"
+   "archived_at": "2026-11-04T20:28:16Z"
   }
  ]
 }

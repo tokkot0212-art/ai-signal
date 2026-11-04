@@ -2,30 +2,34 @@
  "date": "2026-11-02",
  "items": [
   {
-   "id": "2175cf8135",
+   "id": "bce7d098b7",
    "verdict": "confirmed",
-   "title": "Mistralが「Le Chonk」の開発話を公開、arXivとalphaXivで紹介",
-   "summary": "Mistral AIの公式アカウントが、「Le Chonk」がどのように作られたかを開発チームが語る内容を公開したと投稿した。同じ内容を、論文サイトarXivと論文解説サイトalphaXivでも紹介するとしている。また別の投稿では、Mistral Large 4に短い指示を与えたところ、量子化学の計算プログラムを書き、出力を検証し、3D表示まで作ったと紹介している。",
+   "title": "MistralがLarge 4を使ったデモ3件を公開",
+   "summary": "Mistral AIの公式アカウントは、同社のモデル「Mistral Large 4」を使った3つの事例を紹介した。衛星・デブリを追跡する3Dアプリの自動作成、研究ワークスペース「Open Math OS」への提供、分子の量子化学計算ソルバーと3D表示の作成などが示されている。",
    "points": [
-    "新しいのは、Le Chonkという名前のプロジェクトの開発経緯が公式に語られた点。",
-    "AIが指示から計算プログラムと可視化を作った例として、開発の参考になる。",
-    "投稿からは「Le Chonk」の性能や公開範囲の詳細は読み取れない。"
+    "新しい点: 同じモデルで、アプリ作成から数学研究、化学計算まで幅広い作業を行ったとされる事例が示されている",
+    "重要性: 1回の指示でコードや可視化まで作れるという例は、業務用ツールづくりの参考になる",
+    "注意点: すべて企業側のデモで、第三者による性能検証や再現性は投稿からは確認できない。Open Math OSは承認されたチームのみ利用可能"
    ],
    "terms": [
     {
-     "term": "arXiv",
-     "desc": "研究論文を無料で公開・閲覧できる海外のサイト"
+     "term": "オープンウェイト",
+     "desc": "AIモデルの学習済みパラメータを公開し、誰でも取得して動かせる形式"
+    },
+    {
+     "term": "コンテキスト長（1M）",
+     "desc": "AIが一度に読める文章の量。100万は非常に長い文章を扱えることを指す"
     },
     {
      "term": "SCFソルバー",
-     "desc": "分子の電子状態を計算するための数値計算プログラム"
+     "desc": "分子の電子状態を計算する量子化学の計算プログラム"
     }
    ],
-   "score": 74,
-   "credibility": 88,
-   "heat": 42,
+   "score": 79,
+   "credibility": 85,
+   "heat": 49,
    "first_seen": "2026-11-02T12:16:06.000Z",
-   "latest": "2026-11-03T10:18:34.000Z",
+   "latest": "2026-11-03T17:30:00.000Z",
    "authors": [
     "MistralAI"
    ],
@@ -39,37 +43,31 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Mistral公式アカウントの投稿",
-   "links": [
-    {
-     "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
-     "domain": "alphaxiv.org",
-     "primary": false
-    }
-   ],
+   "evidence_note": "企業公式アカウントのデモ紹介",
+   "links": [],
    "services": [],
    "events": [],
    "value": {
-    "impact": 1,
-    "closeness": 1,
+    "impact": 2,
+    "closeness": 2,
     "try_cost": 1,
-    "why": "話題性中心で、読者の業務やサービス作りに直接効く情報は少ない"
+    "why": "ツール作成の参考になるが、Open Math OSは承認制で一般の読者は今すぐ試せない"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/MistralAI/status/2117229259425038344",
+    "url": "https://x.com/MistralAI/status/2117574509179900410",
     "username": "MistralAI",
-    "text": "We asked Mistral Large 4 to show what happens when you break a molecule. ⚛️\n\nWith a short prompt, it wrote a quantum chemistry SCF solver from scratch, validated its output, and built a 3D view around it. \n\nLe Chonk also understand chemistry enough to independently choose how to break the molecule and what orbitals to show, without further input. 🧵",
-    "text_ja": "Mistral Large 4に、分子を「壊す」とどうなるかを示させました。⚛️\n\n短いプロンプトで、量子化学のSCFソルバーをゼロから書き、出力を検証し、その周りに3D表示を作りました。\n\nLe Chonkはさらに、追加の指示なしで、分子をどう切るか、どの軌道を表示するかを自分で判断できるほど化学を理解しています。🧵"
+    "text": "We tasked Mistral Large 4 with creating a real-time, 3D tracker of the roughly 19,000 satellites and debris fragments orbiting Earth. \n\nThe model built a working app, tested it like a user, made it fast, and passed strict verification. \n\nPlease meet Orbital Trace : https://t.co/8XQuBNZKMO",
+    "text_ja": "Mistral Large 4に、地球を周回する約19,000個の衛星と宇宙デブリをリアルタイムで3D追跡するツールの作成を依頼しました。\n\nモデルは動作するアプリを構築し、ユーザーのように実際にテストし、処理を高速化し、厳格な検証にも合格しました。\n\nOrbital Traceをご紹介します：https://t.co/8XQuBNZKMO"
    },
    "post_ids": [
-    "2117229259425038344",
-    "2117562068220195097",
-    "2117558028111421576"
+    "2117574509179900410",
+    "2117670644506861900",
+    "2117229259425038344"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-03T20:10:44Z"
+   "archived_at": "2026-11-04T02:29:24Z"
   },
   {
    "id": "e8b10f57b9",
@@ -97,7 +95,7 @@
    ],
    "score": 73,
    "credibility": 100,
-   "heat": 18,
+   "heat": 17,
    "first_seen": "2026-11-02T01:43:12.000Z",
    "latest": "2026-11-02T16:00:02.000Z",
    "authors": [
@@ -142,7 +140,7 @@
     "2117285614592950479"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-03T20:10:44Z"
+   "archived_at": "2026-11-04T02:29:24Z"
   },
   {
    "id": "aadd501ded",
@@ -157,7 +155,7 @@
    "terms": [],
    "score": 88,
    "credibility": 73,
-   "heat": 76,
+   "heat": 75,
    "first_seen": "2026-11-01T18:14:46.000Z",
    "latest": "2026-11-01T18:14:46.000Z",
    "authors": [
@@ -209,7 +207,7 @@
     "2116957135661945283"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-03T20:10:44Z"
+   "archived_at": "2026-11-04T02:29:24Z"
   }
  ]
 }

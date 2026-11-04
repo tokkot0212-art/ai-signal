@@ -1,29 +1,272 @@
 {
- "generated_at": "2026-11-03T20:10:44Z",
+ "generated_at": "2026-11-04T02:29:24Z",
  "demo": false,
  "note": null,
  "stats": {
-  "posts": 81,
-  "clusters": 71,
-  "confirmed": 8,
-  "promising": 6,
-  "unverified": 13,
-  "excluded": 44,
+  "posts": 90,
+  "clusters": 79,
+  "confirmed": 12,
+  "promising": 7,
+  "unverified": 12,
+  "excluded": 48,
   "dropped_low_quality": 0,
-  "llm_reviewed": 44,
-  "usable": 4,
+  "llm_reviewed": 49,
+  "usable": 5,
   "service_topics": 2,
-  "month_spend_usd": 11.03,
+  "month_spend_usd": 11.125,
   "month_budget_usd": 20,
-  "today_spend_usd": 0.085,
+  "today_spend_usd": 0.18,
   "today_budget_usd": 0.566
  },
  "digest": [
-  "c430c0500f",
-  "2fbf67af7d",
-  "33a7569788"
+  "e25b2c3e33",
+  "ceb00a494e",
+  "bce7d098b7"
  ],
  "clusters": [
+  {
+   "id": "e25b2c3e33",
+   "verdict": "confirmed",
+   "title": "OpenAIがChatGPTとCodexを機械設計・電気設計へ応用する取り組みを公表",
+   "summary": "OpenAIの公式アカウントは、ChatGPTとCodexを物理的な製品づくりに使う取り組みを紹介した。機械設計、電気設計、シミュレーションの分野で進捗を共有し、社内のハードウェアチームの反復速度向上や、業界の協力企業との新しいワークフロー試行が挙げられている。",
+   "score": 98,
+   "credibility": 90,
+   "heat": 76,
+   "first_seen": "2026-11-03T18:56:45.000Z",
+   "latest": "2026-11-03T18:56:45.000Z",
+   "authors": [
+    {
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "OpenAI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117692475775258785",
+     "url": "https://x.com/OpenAI/status/2117692475775258785",
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+     "text": "ChatGPT and Codex are helping engineers build for the physical world.\n\nWe’re sharing our progress across mechanical design, electrical engineering, and simulation—from helping our hardware teams iterate faster to testing new workflows with industry collaborators. https://t.co/b3rW9zYJGA",
+     "lang": "en",
+     "text_ja": "ChatGPTとCodexは、エンジニアが物理世界向けのものづくりを進める手助けをしています。\n\n機械設計、電気工学、シミュレーションの分野での進捗を共有します。社内のハードウェアチームがより速く反復作業を進められるよう支援するとともに、業界のパートナー企業と新しいワークフローのテストも行っています。 https://t.co/b3rW9zYJGA",
+     "created_at": "2026-11-03T18:56:45.000Z",
+     "metrics": {
+      "bookmark_count": 1648,
+      "impression_count": 576990,
+      "like_count": 5036,
+      "quote_count": 256,
+      "reply_count": 421,
+      "retweet_count": 392
+     },
+     "cred": 90,
+     "heat": 76,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "OpenAI公式アカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "根拠：公式発表（企業公式アカウントの発表）",
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "注目サービス：Codex"
+   ],
+   "reasons_neg": [],
+   "llm_note": "OpenAI公式アカウントによる自社の取り組み紹介で、一次情報として信頼できるが、詳細な成果は投稿からは分からない。",
+   "points": [
+    "新しい点: コーディング向けのCodexを、機械・電気設計やシミュレーションなどハードウェア開発にも広げている",
+    "重要性: 製造業の設計業務にAIが入り込む動きとして、現場の設計者にとって関係が深い",
+    "注意点: 具体的な成果の数値や公開時期は投稿に含まれておらず、詳細は未確認"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのAIを使ったプログラム作成支援ツール。コードを書く・直すことを手伝う"
+    },
+    {
+     "term": "機械設計・電気設計",
+     "desc": "製品の形状や部品、電気回路などを図面として決める仕事"
+    },
+    {
+     "term": "シミュレーション",
+     "desc": "実物を作る前にコンピュータ上で動きや性能を試すこと"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式アカウントの発表",
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "製造業の設計に関わるが、具体的な提供内容や料金はこの投稿からは不明"
+   },
+   "first_step": null,
+   "usable": true
+  },
+  {
+   "id": "66671f99de",
+   "verdict": "confirmed",
+   "title": "AnthropicがAI応答の出所を検証する手法FlashProveを発表",
+   "summary": "Anthropicは新しい研究として、与えられた応答が特定のAIモデルから生成されたかを検証できる手法「FlashProve」を紹介した。投稿によると、既存のオープンソース手法より大幅に効率的だという。投稿では、チャットの乗っ取り防止や、テスト対象モデルが顧客に提供されるものと同一かの確認などへの応用が挙げられている。",
+   "score": 96,
+   "credibility": 100,
+   "heat": 74,
+   "first_seen": "2026-11-03T19:54:41.000Z",
+   "latest": "2026-11-03T20:10:08.000Z",
+   "authors": [
+    {
+     "username": "AnthropicAI",
+     "name": "Anthropic",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Anthropic公式",
+     "former": ""
+    }
+   ],
+   "post_count": 2,
+   "posts": [
+    {
+     "id": "2117710942826123294",
+     "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+     "username": "AnthropicAI",
+     "name": "Anthropic",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+     "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the model they’re testing is the same one being served to customers.\n\nFor our full write-up, see here: https://t.co/OIZWPb6QZa\n\nFurther progress in provable inference will likely be an important part of improving trust in AI deployment. To that end, we're open-sourcing FlashProve’s code, here: https://t.co/7ky3Ir8V06\n\nWe’re grateful to our collaborators: Alessandro Chiesa, @GiacomoFenzi, @gwberg95, @miranda__christ, Rahul Dalal (https://t.co/pjWKLHWXyz) and Ben Mayer (@transmissions11).",
+     "lang": "en",
+     "text_ja": "Anthropicの新しい研究：大規模言語モデルの「証明可能な推論（provable inference）」に関する進展です。\n\n今回、FlashProveを紹介します。確立された暗号技術を基盤として、FlashProveを使えば、開発者はある応答が特定のAIモデルから生成されたものかどうかを検証できます。これまでのオープンソースの手法と比べて大幅に効率的です。\n\nこの証明にはさまざまな用途があります。たとえば、攻撃者がチャットを乗っ取ることを難しくしたり、安全性評価者が、テストしているモデルが顧客に提供されているモデルと同一であることを検証できたりします。\n\n詳しい解説はこちらをご覧ください：https://t.co/OIZWPb6QZa\n\n証明可能な推論のさらなる進展は、AIの導入に対する信頼を高める上で重要な要素になると考えられます。そのため、FlashProveのコードをオープンソースとして公開しています。こちらからどうぞ：https://t.co/7ky3Ir8V06\n\n共同研究者の皆さまに感謝します：Alessandro Chiesa、@GiacomoFenzi、@gwberg95、@miranda__christ、Rahul Dalal（https://t.co/pjWKLHWXyz）、Ben Mayer（@transmissions11）。",
+     "created_at": "2026-11-03T20:10:08.000Z",
+     "metrics": {
+      "bookmark_count": 1202,
+      "impression_count": 268059,
+      "like_count": 3295,
+      "quote_count": 215,
+      "reply_count": 328,
+      "retweet_count": 300
+     },
+     "cred": 100,
+     "heat": 74,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（anthropic.com）"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Anthropic公式"
+    },
+    {
+     "id": "2117707052948898271",
+     "url": "https://x.com/AnthropicAI/status/2117707052948898271",
+     "username": "AnthropicAI",
+     "name": "Anthropic",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+     "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the model they’re testing is the same one being served to customers.\n\nFurther progress in provable inference will likely be an important part of improving trust in AI deployment. To that end, we're open-sourcing FlashProve’s code, here: https://t.co/7ky3Ir8V06\n\nFor our full write-up, see here: https://t.co/OIZWPb6QZa\n\nWe’re grateful to our collaborators: Alessandro Chiesa, @GiacomoFenzi, @gwberg95, @miranda__christ, Rahul Dalal (https://t.co/pjWKLHWXyz) and Ben Mayer (@transmissions11).",
+     "lang": "en",
+     "text_ja": "Anthropicの新しい研究：大規模言語モデルの「証明可能な推論（provable inference）」に関する進展です。\n\n今回、FlashProveを紹介します。確立された暗号技術を基盤として、FlashProveを使えば、開発者はある応答が特定のAIモデルから生成されたものかどうかを検証できます。これまでのオープンソースの手法と比べて大幅に効率的です。\n\nこの証明にはさまざまな用途があります。たとえば、攻撃者がチャットを乗っ取ることを難しくしたり、安全性評価者が、テストしているモデルが顧客に提供されているモデルと同一であることを検証できたりします。\n\n証明可能な推論のさらなる進展は、AIの導入に対する信頼を高める上で重要な要素になると考えられます。そのため、FlashProveのコードをオープンソースとして公開しています。こちらからどうぞ：https://t.co/7ky3Ir8V06\n\n詳しい解説はこちらをご覧ください：https://t.co/OIZWPb6QZa\n\n共同研究者の皆さまに感謝します：Alessandro Chiesa、@GiacomoFenzi、@gwberg95、@miranda__christ、Rahul Dalal（https://t.co/pjWKLHWXyz）、Ben Mayer（@transmissions11）。",
+     "created_at": "2026-11-03T19:54:41.000Z",
+     "metrics": {
+      "bookmark_count": 156,
+      "impression_count": 57727,
+      "like_count": 487,
+      "quote_count": 25,
+      "reply_count": 90,
+      "retweet_count": 33
+     },
+     "cred": 100,
+     "heat": 53,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（github.com）"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Anthropic公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/provable-inference",
+     "domain": "anthropic.com",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/anthropics/FlashProve",
+     "domain": "github.com",
+     "primary": true
+    },
+    {
+     "url": "http://rdalal.github.io",
+     "domain": "rdalal.github.io",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "根拠：公式発表（公式研究発表・公式ブログ）",
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "一次情報リンク（anthropic.com）",
+    "一次情報リンク（github.com）"
+   ],
+   "reasons_neg": [],
+   "llm_note": "企業公式アカウントによる自社研究の発表で、公式ブログとGitHubへのリンクも示されている。",
+   "points": [
+    "新しい点: LLMの応答が本当に指定モデル由来かを暗号技術で証明する「証明可能な推論」の進展とされる",
+    "重要性: 提供事業者や利用者が「出力が正しいモデルから来ている」ことを確認しやすくなる可能性がある",
+    "注意点: 効率性の具体的な数値や実運用での性能は投稿からは読み取れず、詳細は公式記事で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "証明可能な推論",
+     "desc": "AIの出力が本当に特定のモデルから来たことを、暗号的な証拠で確かめられるようにする考え方とみられる"
+    },
+    {
+     "term": "暗号技術",
+     "desc": "情報を安全に扱うための数学的な仕組み。ここでは検証の証拠づくりに使われている"
+    },
+    {
+     "term": "オープンソース",
+     "desc": "ソフトウェアの設計図（コード）を誰でも見て使えるように公開すること"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式研究発表・公式ブログ",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "安全性・信頼性の研究で、製造現場の業務にすぐ使える段階ではない"
+   },
+   "first_step": null,
+   "usable": false
+  },
   {
    "id": "819889c93a",
    "verdict": "confirmed",
@@ -31,7 +274,7 @@
    "summary": "Anthropic公式アカウントは、学術研究者・技術系創業者・スタッフ級エンジニアを対象とした有給・期間限定の研究プログラム「Anthropic Residency」の応募開始を発表した。ML（機械学習）の経験は不要とし、応募期限は11月22日としている。",
    "score": 94,
    "credibility": 100,
-   "heat": 79,
+   "heat": 76,
    "first_seen": "2026-11-02T19:51:45.000Z",
    "latest": "2026-11-02T19:51:45.000Z",
    "authors": [
@@ -66,7 +309,7 @@
       "retweet_count": 960
      },
      "cred": 100,
-     "heat": 79,
+     "heat": 76,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -113,101 +356,13 @@
    "usable": false
   },
   {
-   "id": "d114e3505c",
-   "verdict": "confirmed",
-   "title": "OpenAIが日常業務向けベンチマーク「LifeVal」を公開",
-   "summary": "OpenAIは公式アカウントで、ChatGPTユーザー数千人の声をもとに作った新ベンチマーク「LifeVal」を紹介した。対象は育児先の検索、行政サービスへのアクセス、個人の資産管理など日常的な支援タスクとされる。OpenAIは過去1年間、このベンチマークでモデルの性能を測り改善してきたと述べている。",
-   "score": 88,
-   "credibility": 100,
-   "heat": 54,
-   "first_seen": "2026-11-02T17:27:26.000Z",
-   "latest": "2026-11-02T17:27:26.000Z",
-   "authors": [
-    {
-     "username": "OpenAI",
-     "name": "OpenAI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "OpenAI公式アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117307611338997846",
-     "url": "https://x.com/OpenAI/status/2117307611338997846",
-     "username": "OpenAI",
-     "name": "OpenAI",
-     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-     "text": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. So we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services to managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\nhttps://t.co/GlUjixzEM0",
-     "lang": "en",
-     "text_ja": "AGIが人類全体の役に立つためには、人々にとって最も重要な日常の作業を手助けすべきです。そこで私たちは、ChatGPTの数千人のユーザーからのフィードバックをもとに、個人アシスタントにどんな支援を最も求めているかを反映した新しいベンチマーク「LifeVal」を作りました。育児の預け先を探すことから、行政サービスへのアクセス、個人の資産管理まで含まれます。\n\nこの1年間、私たちはLifeValを使って、モデルがこうした日常タスクをどれだけうまくこなせるかを測り、改善してきました。\n\nhttps://t.co/GlUjixzEM0",
-     "created_at": "2026-11-02T17:27:26.000Z",
-     "metrics": {
-      "bookmark_count": 546,
-      "impression_count": 190985,
-      "like_count": 2608,
-      "quote_count": 107,
-      "reply_count": 326,
-      "retweet_count": 157
-     },
-     "cred": 100,
-     "heat": 54,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント",
-      "一次情報リンク（openai.com）"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "OpenAI公式アカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://openai.com/index/lifeval/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "reasons_pos": [
-    "根拠：公式発表（OpenAI公式アカウントの発表）",
-    "公式アカウントの発表",
-    "組織認証アカウント",
-    "一次情報リンク（openai.com）"
-   ],
-   "reasons_neg": [],
-   "llm_note": "OpenAI公式アカウントの発表で一次情報だが、投稿内に論文や詳細データへのリンクはなく、中身の検証はできていない。",
-   "points": [
-    "日常生活の用途（育児・行政手続き・家計管理など）に絞ったAI性能の物差しが公開された点が新しい",
-    "個人向けアシスタントの実用性を比べる際の目安になりうるが、内容の詳細や公開範囲は投稿からは分からない",
-    "自社モデルの改善に使ってきたベンチマークのため、自社に有利な設計になっていないかは外部で確認が必要"
-   ],
-   "terms": [],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの発表",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "日常タスクの評価指標として参考になるが、ベンチマーク自体は試せる形で提示されていない"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "aadd501ded",
    "verdict": "promising",
    "title": "Karpathy氏、YouTube推薦を補正する個人製作ツール「HackerTube」を公開",
    "summary": "AI研究者のAndrej Karpathy氏（個人アカウント）が、YouTubeの推薦に不満があったため、Hacker Newsの20年分・4,300万件のコメントをClaudeで分析し、推薦されやすい6,454本の動画に絞ったWebサイトを作ったと投稿した。作業時間は約2時間で、使用モデルはOpus 5.5とClaude Codeとされている。ログイン不要で、分析データはzipファイルで公開されている。",
    "score": 88,
    "credibility": 73,
-   "heat": 76,
+   "heat": 75,
    "first_seen": "2026-11-01T18:14:46.000Z",
    "latest": "2026-11-01T18:14:46.000Z",
    "authors": [
@@ -242,7 +397,7 @@
       "retweet_count": 2104
      },
      "cred": 73,
-     "heat": 76,
+     "heat": 75,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -294,13 +449,101 @@
    "usable": true
   },
   {
+   "id": "d114e3505c",
+   "verdict": "confirmed",
+   "title": "OpenAIが日常業務向けベンチマーク「LifeVal」を公開",
+   "summary": "OpenAIは公式アカウントで、ChatGPTユーザー数千人の声をもとに作った新ベンチマーク「LifeVal」を紹介した。対象は育児先の検索、行政サービスへのアクセス、個人の資産管理など日常的な支援タスクとされる。OpenAIは過去1年間、このベンチマークでモデルの性能を測り改善してきたと述べている。",
+   "score": 87,
+   "credibility": 100,
+   "heat": 52,
+   "first_seen": "2026-11-02T17:27:26.000Z",
+   "latest": "2026-11-02T17:27:26.000Z",
+   "authors": [
+    {
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "OpenAI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117307611338997846",
+     "url": "https://x.com/OpenAI/status/2117307611338997846",
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+     "text": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. So we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services to managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\nhttps://t.co/GlUjixzEM0",
+     "lang": "en",
+     "text_ja": "AGIが人類全体の役に立つためには、人々にとって最も重要な日常の作業を手助けすべきです。そこで私たちは、ChatGPTの数千人のユーザーからのフィードバックをもとに、個人アシスタントにどんな支援を最も求めているかを反映した新しいベンチマーク「LifeVal」を作りました。育児の預け先を探すことから、行政サービスへのアクセス、個人の資産管理まで含まれます。\n\nこの1年間、私たちはLifeValを使って、モデルがこうした日常タスクをどれだけうまくこなせるかを測り、改善してきました。\n\nhttps://t.co/GlUjixzEM0",
+     "created_at": "2026-11-02T17:27:26.000Z",
+     "metrics": {
+      "bookmark_count": 546,
+      "impression_count": 190985,
+      "like_count": 2608,
+      "quote_count": 107,
+      "reply_count": 326,
+      "retweet_count": 157
+     },
+     "cred": 100,
+     "heat": 52,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（openai.com）"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "OpenAI公式アカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://openai.com/index/lifeval/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "根拠：公式発表（OpenAI公式アカウントの発表）",
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "一次情報リンク（openai.com）"
+   ],
+   "reasons_neg": [],
+   "llm_note": "OpenAI公式アカウントの発表で一次情報だが、投稿内に論文や詳細データへのリンクはなく、中身の検証はできていない。",
+   "points": [
+    "日常生活の用途（育児・行政手続き・家計管理など）に絞ったAI性能の物差しが公開された点が新しい",
+    "個人向けアシスタントの実用性を比べる際の目安になりうるが、内容の詳細や公開範囲は投稿からは分からない",
+    "自社モデルの改善に使ってきたベンチマークのため、自社に有利な設計になっていないかは外部で確認が必要"
+   ],
+   "terms": [],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "日常タスクの評価指標として参考になるが、ベンチマーク自体は試せる形で提示されていない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "2fbf67af7d",
    "verdict": "confirmed",
    "title": "OpenAI、セキュリティ強化と報奨金の大幅引き上げを発表",
    "summary": "OpenAI公式アカウントは、AIで脆弱性を見つけて守る取り組みとして、次回の社内セキュリティ・スプリントを計画し、Cathedral Systems と提携したと発表した。あわせてバグ報奨金を引き上げ、重大な発見への報酬を4倍以上にし、優れた発見には最大17万2000ドル（ボーナス含む）を出すとしている。",
-   "score": 86,
+   "score": 85,
    "credibility": 100,
-   "heat": 51,
+   "heat": 48,
    "first_seen": "2026-11-03T02:29:35.000Z",
    "latest": "2026-11-03T02:29:35.000Z",
    "authors": [
@@ -335,7 +578,7 @@
       "retweet_count": 114
      },
      "cred": 100,
-     "heat": 51,
+     "heat": 48,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -386,9 +629,9 @@
    "verdict": "confirmed",
    "title": "OpenAI、社内モノレポ向けGitバックエンド「Pando」を公開",
    "summary": "OpenAI開発者向け公式アカウントは、同社のモノレポ（大規模な単一コードリポジトリ）向けに新しいGitバックエンド「Pando」を構築したと発表した。エンジニアやエージェントの使い方を変えずに、より多くのpush・fetchを処理できるとし、push時の遅延を約80%削減、1日にほぼ1ペタバイトのGitデータを扱っていると述べている。",
-   "score": 83,
+   "score": 82,
    "credibility": 90,
-   "heat": 62,
+   "heat": 59,
    "first_seen": "2026-11-03T00:09:30.000Z",
    "latest": "2026-11-03T00:09:30.000Z",
    "authors": [
@@ -423,7 +666,7 @@
       "retweet_count": 240
      },
      "cred": 90,
-     "heat": 62,
+     "heat": 59,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -462,13 +705,158 @@
    "usable": false
   },
   {
+   "id": "bce7d098b7",
+   "verdict": "confirmed",
+   "title": "MistralがLarge 4を使ったデモ3件を公開",
+   "summary": "Mistral AIの公式アカウントは、同社のモデル「Mistral Large 4」を使った3つの事例を紹介した。衛星・デブリを追跡する3Dアプリの自動作成、研究ワークスペース「Open Math OS」への提供、分子の量子化学計算ソルバーと3D表示の作成などが示されている。",
+   "score": 79,
+   "credibility": 85,
+   "heat": 49,
+   "first_seen": "2026-11-02T12:16:06.000Z",
+   "latest": "2026-11-03T17:30:00.000Z",
+   "authors": [
+    {
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Mistral AI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 3,
+   "posts": [
+    {
+     "id": "2117574509179900410",
+     "url": "https://x.com/MistralAI/status/2117574509179900410",
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
+     "text": "We tasked Mistral Large 4 with creating a real-time, 3D tracker of the roughly 19,000 satellites and debris fragments orbiting Earth. \n\nThe model built a working app, tested it like a user, made it fast, and passed strict verification. \n\nPlease meet Orbital Trace : https://t.co/8XQuBNZKMO",
+     "lang": "en",
+     "text_ja": "Mistral Large 4に、地球を周回する約19,000個の衛星と宇宙デブリをリアルタイムで3D追跡するツールの作成を依頼しました。\n\nモデルは動作するアプリを構築し、ユーザーのように実際にテストし、処理を高速化し、厳格な検証にも合格しました。\n\nOrbital Traceをご紹介します：https://t.co/8XQuBNZKMO",
+     "created_at": "2026-11-03T11:08:00.000Z",
+     "metrics": {
+      "bookmark_count": 127,
+      "impression_count": 36447,
+      "like_count": 976,
+      "quote_count": 26,
+      "reply_count": 112,
+      "retweet_count": 101
+     },
+     "cred": 85,
+     "heat": 49,
+     "pos": [
+      "公式アカウントの発表"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Mistral AI公式アカウント"
+    },
+    {
+     "id": "2117670644506861900",
+     "url": "https://x.com/MistralAI/status/2117670644506861900",
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
+     "text": "Mistral Large 4 joins the model lineup on Open Math OS.\n\n1.05T open weights, 1M context, live today for approved teams.\n\nOpen Math OS is a research workspace where mathematicians and AI agents work on shared projects, built only on open models so the community can inspect and run them, and with the community in control of its own data. \n\nMore open frontier models in the lineup means more choice for every team.",
+     "lang": "en",
+     "text_ja": "Mistral Large 4がOpen Math OSのモデルラインアップに加わりました。\n\n1.05兆パラメータのオープンウェイト、100万トークンのコンテキスト、承認されたチーム向けに本日から利用可能です。\n\nOpen Math OSは、数学者とAIエージェントが共有プロジェクトに取り組む研究用ワークスペースです。コミュニティがモデルを検証・実行できるよう、オープンモデルのみで構築されており、データもコミュニティが自ら管理します。\n\nラインアップにオープンなフロンティアモデルが増えることで、すべてのチームにとってより多くの選択肢が生まれます。",
+     "created_at": "2026-11-03T17:30:00.000Z",
+     "metrics": {
+      "bookmark_count": 42,
+      "impression_count": 18249,
+      "like_count": 474,
+      "quote_count": 13,
+      "reply_count": 70,
+      "retweet_count": 44
+     },
+     "cred": 85,
+     "heat": 47,
+     "pos": [
+      "公式アカウントの発表"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Mistral AI公式アカウント"
+    },
+    {
+     "id": "2117229259425038344",
+     "url": "https://x.com/MistralAI/status/2117229259425038344",
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
+     "text": "We asked Mistral Large 4 to show what happens when you break a molecule. ⚛️\n\nWith a short prompt, it wrote a quantum chemistry SCF solver from scratch, validated its output, and built a 3D view around it. \n\nLe Chonk also understand chemistry enough to independently choose how to break the molecule and what orbitals to show, without further input. 🧵",
+     "lang": "en",
+     "text_ja": "Mistral Large 4に、分子を「壊す」とどうなるかを示させました。⚛️\n\n短いプロンプトで、量子化学のSCFソルバーをゼロから書き、出力を検証し、その周りに3D表示を作りました。\n\nLe Chonkはさらに、追加の指示なしで、分子をどう切るか、どの軌道を表示するかを自分で判断できるほど化学を理解しています。🧵",
+     "created_at": "2026-11-02T12:16:06.000Z",
+     "metrics": {
+      "bookmark_count": 120,
+      "impression_count": 37009,
+      "like_count": 986,
+      "quote_count": 38,
+      "reply_count": 97,
+      "retweet_count": 88
+     },
+     "cred": 85,
+     "heat": 40,
+     "pos": [
+      "公式アカウントの発表"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Mistral AI公式アカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "根拠：公式発表（企業公式アカウントのデモ紹介）",
+    "公式アカウントの発表"
+   ],
+   "reasons_neg": [],
+   "llm_note": "Mistral公式アカウントによる自社モデルのデモ紹介で、事実として発表されたものだが、性能の客観的評価は含まれない。",
+   "points": [
+    "新しい点: 同じモデルで、アプリ作成から数学研究、化学計算まで幅広い作業を行ったとされる事例が示されている",
+    "重要性: 1回の指示でコードや可視化まで作れるという例は、業務用ツールづくりの参考になる",
+    "注意点: すべて企業側のデモで、第三者による性能検証や再現性は投稿からは確認できない。Open Math OSは承認されたチームのみ利用可能"
+   ],
+   "terms": [
+    {
+     "term": "オープンウェイト",
+     "desc": "AIモデルの学習済みパラメータを公開し、誰でも取得して動かせる形式"
+    },
+    {
+     "term": "コンテキスト長（1M）",
+     "desc": "AIが一度に読める文章の量。100万は非常に長い文章を扱えることを指す"
+    },
+    {
+     "term": "SCFソルバー",
+     "desc": "分子の電子状態を計算する量子化学の計算プログラム"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式アカウントのデモ紹介",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "ツール作成の参考になるが、Open Math OSは承認制で一般の読者は今すぐ試せない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "b2cbcd5ec0",
    "verdict": "promising",
    "title": "GPT-6 Astraの重み解析論文を、個人がQwenで再現試行",
    "summary": "Datasette共同作成者のSimon Willisonは、GPT-6 Astraがモデルの重み（浮動小数点数の並び）を直接解釈できるとする話題の論文を紹介した。そのうえで自身のノートPCで27BのQwen 3.8を使って試したところ、45分以上かけて同じことができたと投稿している。日本のプログラマーnpaka氏は、この研究を「Weight-Space Programming」として概要を紹介している。",
-   "score": 79,
+   "score": 74,
    "credibility": 73,
-   "heat": 75,
+   "heat": 64,
    "first_seen": "2026-11-03T13:25:55.000Z",
    "latest": "2026-11-03T16:31:05.000Z",
    "authors": [
@@ -512,7 +900,7 @@
       "retweet_count": 152
      },
      "cred": 73,
-     "heat": 75,
+     "heat": 64,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -539,7 +927,7 @@
       "retweet_count": 11
      },
      "cred": 73,
-     "heat": 31,
+     "heat": 25,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -601,164 +989,13 @@
    "usable": false
   },
   {
-   "id": "2175cf8135",
-   "verdict": "confirmed",
-   "title": "Mistralが「Le Chonk」の開発話を公開、arXivとalphaXivで紹介",
-   "summary": "Mistral AIの公式アカウントが、「Le Chonk」がどのように作られたかを開発チームが語る内容を公開したと投稿した。同じ内容を、論文サイトarXivと論文解説サイトalphaXivでも紹介するとしている。また別の投稿では、Mistral Large 4に短い指示を与えたところ、量子化学の計算プログラムを書き、出力を検証し、3D表示まで作ったと紹介している。",
-   "score": 74,
-   "credibility": 88,
-   "heat": 42,
-   "first_seen": "2026-11-02T12:16:06.000Z",
-   "latest": "2026-11-03T10:18:34.000Z",
-   "authors": [
-    {
-     "username": "MistralAI",
-     "name": "Mistral AI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "Mistral AI公式アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 3,
-   "posts": [
-    {
-     "id": "2117229259425038344",
-     "url": "https://x.com/MistralAI/status/2117229259425038344",
-     "username": "MistralAI",
-     "name": "Mistral AI",
-     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
-     "text": "We asked Mistral Large 4 to show what happens when you break a molecule. ⚛️\n\nWith a short prompt, it wrote a quantum chemistry SCF solver from scratch, validated its output, and built a 3D view around it. \n\nLe Chonk also understand chemistry enough to independently choose how to break the molecule and what orbitals to show, without further input. 🧵",
-     "lang": "en",
-     "text_ja": "Mistral Large 4に、分子を「壊す」とどうなるかを示させました。⚛️\n\n短いプロンプトで、量子化学のSCFソルバーをゼロから書き、出力を検証し、その周りに3D表示を作りました。\n\nLe Chonkはさらに、追加の指示なしで、分子をどう切るか、どの軌道を表示するかを自分で判断できるほど化学を理解しています。🧵",
-     "created_at": "2026-11-02T12:16:06.000Z",
-     "metrics": {
-      "bookmark_count": 120,
-      "impression_count": 37009,
-      "like_count": 986,
-      "quote_count": 38,
-      "reply_count": 97,
-      "retweet_count": 88
-     },
-     "cred": 85,
-     "heat": 42,
-     "pos": [
-      "公式アカウントの発表"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "Mistral AI公式アカウント"
-    },
-    {
-     "id": "2117562068220195097",
-     "url": "https://x.com/MistralAI/status/2117562068220195097",
-     "username": "MistralAI",
-     "name": "Mistral AI",
-     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
-     "text": "The story of how Le Chonk was built, told by the team behind it.\n\nNow on @askalphaxiv : https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
-     "lang": "en",
-     "text_ja": "Le Chonkがどのように作られたかを、開発チームが語ります。\n\n現在 @askalphaxiv で公開中: https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
-     "created_at": "2026-11-03T10:18:34.000Z",
-     "metrics": {
-      "bookmark_count": 21,
-      "impression_count": 6307,
-      "like_count": 133,
-      "quote_count": 4,
-      "reply_count": 21,
-      "retweet_count": 17
-     },
-     "cred": 88,
-     "heat": 34,
-     "pos": [
-      "公式アカウントの発表"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "official",
-     "author_role": "Mistral AI公式アカウント"
-    },
-    {
-     "id": "2117558028111421576",
-     "url": "https://x.com/MistralAI/status/2117558028111421576",
-     "username": "MistralAI",
-     "name": "Mistral AI",
-     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
-     "text": "The story of how Le Chonk was built, told by the team behind it.\n\nNow on @arxiv: https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
-     "lang": "en",
-     "text_ja": "Le Chonkがどのように作られたかを、開発チームが語ります。\n\n現在 @arxiv で公開中: https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
-     "created_at": "2026-11-03T10:02:30.000Z",
-     "metrics": {
-      "bookmark_count": 4,
-      "impression_count": 2735,
-      "like_count": 35,
-      "quote_count": 0,
-      "reply_count": 3,
-      "retweet_count": 1
-     },
-     "cred": 88,
-     "heat": 18,
-     "pos": [
-      "公式アカウントの発表"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "Mistral AI公式アカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
-     "domain": "alphaxiv.org",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "根拠：公式発表（Mistral公式アカウントの投稿）",
-    "公式アカウントの発表"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": "Mistral AI公式アカウントの投稿で、公式発表そのものに当たるが、開発の詳細は投稿からは確認できないため、根拠は公式発表とした。",
-   "points": [
-    "新しいのは、Le Chonkという名前のプロジェクトの開発経緯が公式に語られた点。",
-    "AIが指示から計算プログラムと可視化を作った例として、開発の参考になる。",
-    "投稿からは「Le Chonk」の性能や公開範囲の詳細は読み取れない。"
-   ],
-   "terms": [
-    {
-     "term": "arXiv",
-     "desc": "研究論文を無料で公開・閲覧できる海外のサイト"
-    },
-    {
-     "term": "SCFソルバー",
-     "desc": "分子の電子状態を計算するための数値計算プログラム"
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Mistral公式アカウントの投稿",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "話題性中心で、読者の業務やサービス作りに直接効く情報は少ない"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "e8b10f57b9",
    "verdict": "confirmed",
    "title": "Sakana AIがシンポジウム開催、言語モデル「Sawara」を発表",
    "summary": "Sakana AI公式アカウントによると、10月26日に東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催し、400名超が参加した。基調講演はJürgen Schmidhuber教授、CEOのDavid Haとの対談も行われた。チーフサイエンティストの秋葉拓哉氏が、自社開発の言語モデルシリーズ「Sakana Sawara（仮称）」を発表し、最初の小規模モデルは2027年春の公開を予定しているという。",
    "score": 73,
    "credibility": 100,
-   "heat": 18,
+   "heat": 17,
    "first_seen": "2026-11-02T01:43:12.000Z",
    "latest": "2026-11-02T16:00:02.000Z",
    "authors": [
@@ -793,7 +1030,7 @@
       "retweet_count": 14
      },
      "cred": 100,
-     "heat": 18,
+     "heat": 17,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -822,7 +1059,7 @@
       "retweet_count": 3
      },
      "cred": 100,
-     "heat": 8,
+     "heat": 7,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -882,14 +1119,311 @@
    "usable": false
   },
   {
-   "id": "33a7569788",
+   "id": "f8c41cba5d",
    "verdict": "confirmed",
-   "title": "NVIDIA、都市や自動運転向けのAI活用事例とCosmosの新レシピを紹介",
-   "summary": "NVIDIA公式AIアカウントが、都市向けのAIアプリ事例を紹介した。住民の質問に答えるエージェントや交通渋滞の軽減に使う映像エージェント、15年分の都市の森林成長を10分で模擬するデジタルツインなどが挙げられている。別の投稿では、同社の動画生成基盤Cosmosの新しいシミュレーション・レシピを紹介し、自動運転やロボットなどのデータ生成やテストに使えるとしている。",
+   "title": "NVIDIAがHermes Agentの実行記録を解説する記事を紹介",
+   "summary": "NVIDIAの公式AIアカウントは、「Inside Hermes Agent Traces with NeMo Relay」と題した記事（Nemotron Labs）へのリンクを投稿した。投稿本文は記事タイトルとリンクのみで、内容の詳細は投稿からは分からない。",
    "score": 72,
-   "credibility": 93,
-   "heat": 25,
+   "credibility": 90,
+   "heat": 31,
+   "first_seen": "2026-11-03T17:59:36.000Z",
+   "latest": "2026-11-03T17:59:36.000Z",
+   "authors": [
+    {
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "NVIDIA公式AIアカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117678090918707535",
+     "url": "https://x.com/NVIDIAAI/status/2117678090918707535",
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+     "text": "Inside Hermes Agent Traces with NeMo Relay | Nemotron Labs https://t.co/PoJf3zj1KF",
+     "lang": "en",
+     "text_ja": "NeMo RelayでHermes Agentのトレースを見る | Nemotron Labs https://t.co/PoJf3zj1KF",
+     "created_at": "2026-11-03T17:59:36.000Z",
+     "metrics": {
+      "bookmark_count": 23,
+      "impression_count": 9699,
+      "like_count": 78,
+      "quote_count": 4,
+      "reply_count": 9,
+      "retweet_count": 13
+     },
+     "cred": 90,
+     "heat": 31,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "NVIDIA公式AIアカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "根拠：公式発表（企業公式の技術記事リンク）",
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": "NVIDIA公式アカウントによる自社記事の告知で、記事自体は公式の一次情報だが、投稿文だけでは内容の評価はできない。",
+   "points": [
+    "新しい点: AIエージェントの動作記録（トレース）を扱った技術記事とみられるが、内容は未確認",
+    "重要性: エージェントがどう動いたかを追跡する仕組みは、業務への組み込み時の確認作業に関係する",
+    "注意点: 投稿だけでは内容が判断できないため、記事本体を読む必要がある"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受けて、複数の作業を自分で計画して実行するAIのこと"
+    },
+    {
+     "term": "トレース（実行記録）",
+     "desc": "AIが作業中に行った手順や判断を後から確認できるように残した記録"
+    },
+    {
+     "term": "NeMo",
+     "desc": "NVIDIAのAIモデル開発・運用向けのソフトウェア群の名称"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の技術記事リンク",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "エージェントの記録に関する話題だが、投稿だけでは利用可能性や効果が分からない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "bca2b3a976",
+   "verdict": "confirmed",
+   "title": "MistralがLe Chonkの開発経緯を紹介する記事を公開",
+   "summary": "Mistral AIの公式アカウントは、「Le Chonk」の開発の経緯を、開発チームが語る形の記事として紹介した。記事はalphaXivとarXivにも掲載されたと案内されている。投稿の本文からは、開発の具体的な内容や成果の数値は分からない。",
+   "score": 70,
+   "credibility": 88,
+   "heat": 29,
+   "first_seen": "2026-11-03T10:02:30.000Z",
+   "latest": "2026-11-03T10:18:34.000Z",
+   "authors": [
+    {
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Mistral AI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 2,
+   "posts": [
+    {
+     "id": "2117562068220195097",
+     "url": "https://x.com/MistralAI/status/2117562068220195097",
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
+     "text": "The story of how Le Chonk was built, told by the team behind it.\n\nNow on @askalphaxiv : https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
+     "lang": "en",
+     "text_ja": "Le Chonkがどのように作られたかを、開発チームが語ります。\n\n現在 @askalphaxiv で公開中: https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
+     "created_at": "2026-11-03T10:18:34.000Z",
+     "metrics": {
+      "bookmark_count": 21,
+      "impression_count": 6307,
+      "like_count": 133,
+      "quote_count": 4,
+      "reply_count": 21,
+      "retweet_count": 17
+     },
+     "cred": 88,
+     "heat": 29,
+     "pos": [
+      "公式アカウントの発表"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "Mistral AI公式アカウント"
+    },
+    {
+     "id": "2117558028111421576",
+     "url": "https://x.com/MistralAI/status/2117558028111421576",
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
+     "text": "The story of how Le Chonk was built, told by the team behind it.\n\nNow on @arxiv: https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
+     "lang": "en",
+     "text_ja": "Le Chonkがどのように作られたかを、開発チームが語ります。\n\n現在 @arxiv で公開中: https://t.co/EHG5b71TKW https://t.co/pTDTvuKk8F",
+     "created_at": "2026-11-03T10:02:30.000Z",
+     "metrics": {
+      "bookmark_count": 4,
+      "impression_count": 2735,
+      "like_count": 35,
+      "quote_count": 0,
+      "reply_count": 3,
+      "retweet_count": 1
+     },
+     "cred": 88,
+     "heat": 14,
+     "pos": [
+      "公式アカウントの発表"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Mistral AI公式アカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+     "domain": "alphaxiv.org",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "根拠：公式発表（企業公式の開発記事（arXiv等））",
+    "公式アカウントの発表"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": "Mistral公式アカウントによる自社の開発記事の案内で、一次情報へのリンクがある。",
+   "points": [
+    "新しい点: モデル開発の裏側を当事者が語る記事で、技術的な経緯が知れる可能性がある",
+    "重要性: 研究の過程や再現の手がかりが得られるかもしれないが、投稿からは内容を判断できない",
+    "注意点: 元記事を読まずに成果を評価することはできない。Le Chonkの位置づけも投稿からは不明"
+   ],
+   "terms": [
+    {
+     "term": "arXiv",
+     "desc": "研究論文を誰でも無料で読める公開サイト"
+    },
+    {
+     "term": "alphaXiv",
+     "desc": "論文について議論や解説を見られるサービス"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の開発記事（arXiv等）",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "開発の経緯の紹介で、読者の業務に直接使える情報は投稿からは見えない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "74a5494da8",
+   "verdict": "confirmed",
+   "title": "NVIDIA、自動運転・ロボット向けのCosmos新レシピを公開",
+   "summary": "NVIDIA公式AIアカウントが、新しい「NVIDIA Cosmos」のシミュレーションレシピを紹介した。昼間の走行映像を、同じ道路構造と車両の軌道を保ったまま雨の夜の映像に変換できると示している。投稿によると、自動運転車・ロボット・手術支援向けにデータ生成やポリシー（制御方針）のテストに使えるという。",
+   "score": 69,
+   "credibility": 90,
+   "heat": 23,
    "first_seen": "2026-11-02T19:06:10.000Z",
+   "latest": "2026-11-02T19:06:10.000Z",
+   "authors": [
+    {
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "NVIDIA公式AIアカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117332456768717244",
+     "url": "https://x.com/NVIDIAAI/status/2117332456768717244",
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+     "text": "Turn a daytime drive into a rainy night while keeping the same road layout and vehicle trajectories.\n\nNew NVIDIA Cosmos simulation recipes help developers generate data and test policies for autonomous vehicles, robots and surgical applications. 🧵 https://t.co/ULbm6vJQnA",
+     "lang": "en",
+     "text_ja": "道路のレイアウトと車両の軌道はそのままに、日中の運転シーンを雨の夜に変換できます。\n\n新しいNVIDIA Cosmosのシミュレーションレシピにより、開発者は自動運転車、ロボット、手術支援アプリケーション向けのデータを生成し、ポリシーをテストできます。🧵 https://t.co/ULbm6vJQnA",
+     "created_at": "2026-11-02T19:06:10.000Z",
+     "metrics": {
+      "bookmark_count": 17,
+      "impression_count": 11679,
+      "like_count": 122,
+      "quote_count": 8,
+      "reply_count": 19,
+      "retweet_count": 27
+     },
+     "cred": 90,
+     "heat": 23,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "NVIDIA公式AIアカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "根拠：公式発表（NVIDIA公式アカウントの投稿）",
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": "企業公式アカウントによる製品紹介で、発表元が明確。ただし詳細な技術資料は投稿内にない。",
+   "points": [
+    "新しいのは、既存の走行データから天候や時間帯を変えた学習用データを作れる点とみられる。",
+    "自動運転や物理AIの開発者にとって、実データを集めにくい場面の検証に役立つ可能性がある。",
+    "投稿は紹介のみで、利用条件や対応環境、性能の数値は未確認。"
+   ],
+   "terms": [],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "製造現場の手順書・教育とは遠い。試す環境も開発者向け"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "73a8596da2",
+   "verdict": "confirmed",
+   "title": "NVIDIA、Kubernetes上のGPU向け実行環境を発表",
+   "summary": "NVIDIA公式アカウントが「NVIDIA AI Cluster Runtime」を紹介した。NVIDIA Dynamoと必要なインフラ部品を組み合わせ、検証済みのコンポーネント版数と確認チェックを備えるとしている。また、都市向けAIアプリの事例として、住民の質問に答えるAIエージェントや交通渋滞対策のビジョンAIなどを挙げている。",
+   "score": 69,
+   "credibility": 93,
+   "heat": 19,
+   "first_seen": "2026-11-03T05:44:29.000Z",
    "latest": "2026-11-03T07:16:36.000Z",
    "authors": [
     {
@@ -905,228 +1439,6 @@
    "post_count": 2,
    "posts": [
     {
-     "id": "2117516278034247708",
-     "url": "https://x.com/NVIDIAAI/status/2117516278034247708",
-     "username": "NVIDIAAI",
-     "name": "NVIDIA AI",
-     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
-     "text": "AI agents that answer residents’ questions. Vision agents that help reduce traffic delays. Digital twins that simulate 15 years of urban forest growth in 10 minutes.\n\nOur partners are building applications for cities with NVIDIA Nemotron, Cosmos and Omniverse, sharing computing resources across departments and municipalities.\n\nRead about the projects → https://t.co/LuhosiBk1H",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-03T07:16:36.000Z",
-     "metrics": {
-      "bookmark_count": 5,
-      "impression_count": 6399,
-      "like_count": 49,
-      "quote_count": 3,
-      "reply_count": 15,
-      "retweet_count": 6
-     },
-     "cred": 93,
-     "heat": 22,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "NVIDIA公式AIアカウント"
-    },
-    {
-     "id": "2117332456768717244",
-     "url": "https://x.com/NVIDIAAI/status/2117332456768717244",
-     "username": "NVIDIAAI",
-     "name": "NVIDIA AI",
-     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
-     "text": "Turn a daytime drive into a rainy night while keeping the same road layout and vehicle trajectories.\n\nNew NVIDIA Cosmos simulation recipes help developers generate data and test policies for autonomous vehicles, robots and surgical applications. 🧵 https://t.co/ULbm6vJQnA",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-02T19:06:10.000Z",
-     "metrics": {
-      "bookmark_count": 17,
-      "impression_count": 11679,
-      "like_count": 122,
-      "quote_count": 8,
-      "reply_count": 19,
-      "retweet_count": 27
-     },
-     "cred": 90,
-     "heat": 25,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "NVIDIA公式AIアカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://nvda.ws/3V0KXvx",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "根拠：公式発表（NVIDIA公式アカウントの投稿）",
-    "公式アカウントの発表",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": "NVIDIA公式アカウントによる製品・事例の紹介で、公式の一次情報として確認できる。ただし投稿は概要紹介にとどまる。",
-   "points": [
-    "都市や行政での応用事例が具体的に示されており、公共分野のAI導入の方向性として参考になる。",
-    "Cosmosは開発者向けの技術で、利用には対象の計算環境や知識が必要になりそう。個人が手軽に使える水準かは投稿からは分からない。",
-    "事例の効果や導入規模は投稿に示されていない。具体的な成果は各プロジェクトの発表で確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "デジタルツイン",
-     "desc": "現実の設備や街を仮想空間に再現し、シミュレーションする仕組み。"
-    },
-    {
-     "term": "Cosmos",
-     "desc": "NVIDIAの、映像や物理の動きを生成・模擬するAI基盤。"
-    },
-    {
-     "term": "Omniverse",
-     "desc": "NVIDIAの3D・シミュレーション用の共同作業プラットフォーム。"
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの投稿",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "都市・自動運転向けで読者の製造業の現場とは距離がある"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "60ec556d9f",
-   "verdict": "promising",
-   "title": "AI学習拒否をrobots.txtで一括指定、OpenAIやGoogleが対応表明",
-   "summary": "ITmedia NEWSが、AI学習への利用拒否をrobots.txtで一括して指定できる仕組みについて、OpenAIやGoogleなどが対応を表明したと報じた。投稿はその見出しと記事へのリンクのみで、詳細な仕組みや実施時期は投稿からは読み取れない。",
-   "score": 72,
-   "credibility": 78,
-   "heat": 46,
-   "first_seen": "2026-10-31T23:35:05.000Z",
-   "latest": "2026-10-31T23:35:05.000Z",
-   "authors": [
-    {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
-     "type": "official",
-     "type_label": "公式",
-     "role": "ITmedia NEWS公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116675356296200550",
-     "url": "https://x.com/itmedia_news/status/2116675356296200550",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "AI学習への利用拒否をrobots.txtで一括指定へ　OpenAIやGoogleなどが対応表明\nhttps://t.co/A68BEKAO1C",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-10-31T23:35:05.000Z",
-     "metrics": {
-      "bookmark_count": 987,
-      "impression_count": 385543,
-      "like_count": 1575,
-      "quote_count": 169,
-      "reply_count": 41,
-      "retweet_count": 810
-     },
-     "cred": 78,
-     "heat": 46,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "根拠：報道（取材・出典あり）（ITmedia NEWSの記事見出し）",
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": "報道機関の公式アカウントによる見出しの紹介で、元記事の確認が必要。投稿単体では詳細が分からないためpromisingとする。",
-   "points": [
-    "Webサイトの運営者が、AIの学習利用を拒否する設定を一括で行える可能性があり、自社サイトを持つ個人事業者にも関係する。",
-    "対応の具体的な仕様や開始時期、対象となる企業の範囲は記事本文で確認が必要。",
-    "robots.txtは法的な拘束力を持つものではないとされるため、実効性には注意が必要（一般的な背景知識）。"
-   ],
-   "terms": [
-    {
-     "term": "robots.txt",
-     "desc": "Webサイトの管理者が、検索や収集ツールへのアクセス可否を書くテキストファイル。"
-    },
-    {
-     "term": "AI学習",
-     "desc": "大量のデータからAIのモデルを育てること。Web上の文章や画像が使われることがある。"
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事見出し",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 3,
-    "why": "自社サイトのAI学習拒否設定に関係するが、実作業は記事確認後"
-   },
-   "first_step": null,
-   "usable": true
-  },
-  {
-   "id": "7c97421fa6",
-   "verdict": "confirmed",
-   "title": "NVIDIA、KubernetesでGPUを使うためのAI Cluster Runtimeを案内",
-   "summary": "NVIDIA公式AIアカウントが、Kubernetes上でGPUを使うための「NVIDIA AI Cluster Runtime」を紹介した。NVIDIA Dynamoと必要なインフラをまとめ、テスト済みの部品バージョンと動作確認の仕組みを備えるとしている。設定・デプロイ・検証の手順を解説したウォークスルーへのリンクも掲載され、来週のKubeCon North Americaで紹介される予定と書かれている。",
-   "score": 71,
-   "credibility": 93,
-   "heat": 22,
-   "first_seen": "2026-11-03T05:44:29.000Z",
-   "latest": "2026-11-03T05:44:29.000Z",
-   "authors": [
-    {
-     "username": "NVIDIAAI",
-     "name": "NVIDIA AI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "NVIDIA公式AIアカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
      "id": "2117493094849622097",
      "url": "https://x.com/NVIDIAAI/status/2117493094849622097",
      "username": "NVIDIAAI",
@@ -1134,7 +1446,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
      "text": "Have GPUs in Kubernetes? NVIDIA AI Cluster Runtime brings together NVIDIA Dynamo and the infrastructure it needs, with tested component versions and checks to verify your setup.  \n\nFollow the walkthrough to configure, deploy and validate your runtime, and catch us at KubeCon North America next week → https://t.co/wbhLyAB7ll",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "KubernetesでGPUを使っていますか？NVIDIA AI Cluster Runtimeは、NVIDIA Dynamoとそれに必要なインフラを統合し、動作確認済みのコンポーネントバージョンと、セットアップを検証するためのチェック機能を備えています。\n\nウォークスルーに従って、ランタイムの構成、デプロイ、検証を行ってください。来週のKubeCon North Americaでもお会いしましょう → https://t.co/wbhLyAB7ll",
      "created_at": "2026-11-03T05:44:29.000Z",
      "metrics": {
       "bookmark_count": 14,
@@ -1145,7 +1457,35 @@
       "retweet_count": 6
      },
      "cred": 93,
-     "heat": 22,
+     "heat": 19,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "NVIDIA公式AIアカウント"
+    },
+    {
+     "id": "2117516278034247708",
+     "url": "https://x.com/NVIDIAAI/status/2117516278034247708",
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+     "text": "AI agents that answer residents’ questions. Vision agents that help reduce traffic delays. Digital twins that simulate 15 years of urban forest growth in 10 minutes.\n\nOur partners are building applications for cities with NVIDIA Nemotron, Cosmos and Omniverse, sharing computing resources across departments and municipalities.\n\nRead about the projects → https://t.co/LuhosiBk1H",
+     "lang": "en",
+     "text_ja": "住民の質問に答えるAIエージェント。交通渋滞の緩和に役立つビジョンエージェント。10分で15年分の都市の森林成長をシミュレーションするデジタルツイン。\n\nパートナー企業は、NVIDIA Nemotron、Cosmos、Omniverseを使って都市向けのアプリケーションを開発しており、部署や自治体をまたいで計算リソースを共有しています。\n\nプロジェクトの詳細はこちら → https://t.co/LuhosiBk1H",
+     "created_at": "2026-11-03T07:16:36.000Z",
+     "metrics": {
+      "bookmark_count": 5,
+      "impression_count": 6399,
+      "like_count": 49,
+      "quote_count": 3,
+      "reply_count": 15,
+      "retweet_count": 6
+     },
+     "cred": 93,
+     "heat": 18,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1160,44 +1500,296 @@
      "url": "https://nvda.ws/4sAxU0a",
      "domain": "nvda.ws",
      "primary": false
+    },
+    {
+     "url": "https://nvda.ws/3V0KXvx",
+     "domain": "nvda.ws",
+     "primary": false
     }
    ],
    "reasons_pos": [
-    "根拠：公式発表（NVIDIA公式アカウントの製品案内）",
+    "根拠：公式発表（NVIDIA公式アカウントの投稿）",
     "公式アカウントの発表",
     "組織認証アカウント"
    ],
    "reasons_neg": [],
-   "llm_note": "NVIDIA公式アカウントによる製品の案内で、一次情報として確認できる。ただし投稿は紹介にとどまり、導入の難易度は未確認。",
+   "llm_note": "NVIDIA公式アカウントの製品紹介で、発表元は明確。ただし手順の中身は投稿からは確認できない。",
    "points": [
-    "GPUサーバー上でAIを動かす運用を簡単にする仕組みで、社内でAI基盤を構築する企業向けの話題である。",
-    "個人や小さなチームが導入するには、Kubernetesの知識や環境が必要になりそう。",
-    "対応ハードウェアや費用などの条件は投稿からは分からず、詳細はウォークスルーで確認が必要。"
+    "新しい点は、GPUを使うKubernetes環境の構築・検証手順がまとめて提供されるとされる点。",
+    "GPUクラスタを運用するインフラ担当者向けの情報で、小規模事業者が直接使う場面は限られる。",
+    "投稿では提供形態・料金・対応範囲が不明。KubeCon North Americaでの発表とされるが詳細は未確認。"
    ],
-   "terms": [
-    {
-     "term": "Kubernetes",
-     "desc": "多数のサーバーでアプリを自動的に動かし管理する仕組み。"
-    },
-    {
-     "term": "GPU",
-     "desc": "画像処理に強い計算部品。AIの計算を速く行うのに使われる。"
-    },
-    {
-     "term": "KubeCon",
-     "desc": "Kubernetesなどクラウド関連技術の国際カンファレンス。"
-    }
-   ],
+   "terms": [],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの製品案内",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
    "services": [],
    "events": [],
    "value": {
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "インフラ向けでKubernetesの知識が必要、個人の現場業務からは遠い"
+    "why": "GPU基盤運用の話で、現場の手順書やサービス作りには遠い"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "ceb00a494e",
+   "verdict": "promising",
+   "title": "Apple、刷新版「Siri AI」を全開発者に開放",
+   "summary": "ITmedia NEWSが、Appleが刷新版の「Siri AI」を全開発者に開放したと報じた。アプリ連携により、予約や注文などの操作が可能になるとしている。見出しと投稿文のみで、詳細な提供時期や対応地域は確認できない。",
+   "score": 67,
+   "credibility": 78,
+   "heat": 38,
+   "first_seen": "2026-11-04T00:40:08.000Z",
+   "latest": "2026-11-04T00:40:08.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117778890194342039",
+     "url": "https://x.com/itmedia_news/status/2117778890194342039",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "Apple、刷新版「Siri AI」を全開発者に開放　アプリ連携で予約や注文などの操作が可能に\nhttps://t.co/loVhlYNnNp",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-04T00:40:08.000Z",
+     "metrics": {
+      "bookmark_count": 7,
+      "impression_count": 5768,
+      "like_count": 24,
+      "quote_count": 1,
+      "reply_count": 0,
+      "retweet_count": 12
+     },
+     "cred": 78,
+     "heat": 38,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002855/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "根拠：報道（取材・出典あり）（ITmedia NEWSの記事紹介）",
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": "ITmedia NEWSの見出し投稿で、元記事は確認できていない。報道の裏付けは一次情報の確認待ち。",
+   "points": [
+    "新しい点は、Siriからアプリの操作を呼び出せる範囲が広がるとみられる点。",
+    "iPhoneを使う個人開発者にとって、アプリに音声操作を組み込む選択肢になる可能性がある。",
+    "提供開始時期・対象国・料金は投稿からは未確認。元記事の確認が必要。"
+   ],
+   "terms": [],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事紹介",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "iPhone中心の個人開発に関係するが、詳細と提供状況が未確認"
+   },
+   "first_step": null,
+   "usable": true
+  },
+  {
+   "id": "a15d66a930",
+   "verdict": "promising",
+   "title": "Google、学校向けAI機能を原則オフに変更へ",
+   "summary": "ITmedia NEWSが、Googleが学校の生徒向けAI機能を原則オフにすると報じた。「AIなしのGoogle検索」は選べない仕様になり、批判も出ているという。投稿は見出しと記事リンクのみで、対象範囲や時期は確認できない。",
+   "score": 65,
+   "credibility": 78,
+   "heat": 37,
+   "first_seen": "2026-11-03T22:35:06.000Z",
+   "latest": "2026-11-03T22:35:06.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117747424471179501",
+     "url": "https://x.com/itmedia_news/status/2117747424471179501",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "Google、学校の生徒向けAI機能を原則オフへ　「AIなしのGoogle検索」は選べず批判も\nhttps://t.co/WLJsXnlVzs",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-03T22:35:06.000Z",
+     "metrics": {
+      "bookmark_count": 19,
+      "impression_count": 9737,
+      "like_count": 40,
+      "quote_count": 4,
+      "reply_count": 3,
+      "retweet_count": 20
+     },
+     "cred": 78,
+     "heat": 37,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002849/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "根拠：報道（取材・出典あり）（ITmedia NEWSの記事紹介）",
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": "ITmedia NEWSの見出し投稿で、Google公式発表の確認はこの投稿内ではできない。",
+   "points": [
+    "新しい点は、学校向けにAI機能を初期設定で止める方向が示された点。",
+    "教育現場でのAI利用ルールを考える人に影響し、教育向けサービスの設計にも関係しうる。",
+    "対象地域・適用時期・批判の具体的内容は未確認。元記事で確認が必要。"
+   ],
+   "terms": [],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事紹介",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "教育用途の設計に関係するが、試せるツールの情報ではない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "8b12dcc23c",
+   "verdict": "unverified",
+   "title": "OpenAIのCEOが超知能に人間の主導権を渡さない考えを投稿",
+   "summary": "OpenAIのCEOであるSam Altman（投稿者名 sama）は、人々が未来をコントロールし続けるべきだと投稿した。そのうえで、AIシステムが報酬を与えるべきと考える行動を人間がするだけの役割に追いやられることは受け入れられないと述べ、超知能に未来の支配を委ねるべきではないとし、その要件がAIの進歩を制約すべきだと主張した。",
+   "score": 62,
+   "credibility": 70,
+   "heat": 90,
+   "first_seen": "2026-11-04T01:40:12.000Z",
+   "latest": "2026-11-04T01:40:12.000Z",
+   "authors": [
+    {
+     "username": "sama",
+     "name": "Sam Altman",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "OpenAI CEO",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117794005165748448",
+     "url": "https://x.com/sama/status/2117794005165748448",
+     "username": "sama",
+     "name": "Sam Altman",
+     "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+     "text": "People should always be in control of the future.\n\nOpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”.\n\nPeople should not cede control of the future to superintelligence, and that requirement should ultimately constrain AI progress.",
+     "lang": "en",
+     "text_ja": "未来のコントロールは、常に人々の手にあるべきです。\n\nOpenAIは、人々が「AIシステムが人間に報酬を与えるのが妥当だと考えること」を行うだけの役割に追いやられることが許容されるという考え方に反対します。\n\n人類は未来の主導権を超知能に明け渡すべきではなく、その要件は最終的にAIの進歩を制約すべきです。",
+     "created_at": "2026-11-04T01:40:12.000Z",
+     "metrics": {
+      "bookmark_count": 306,
+      "impression_count": 221191,
+      "like_count": 2626,
+      "quote_count": 135,
+      "reply_count": 544,
+      "retweet_count": 153
+     },
+     "cred": 70,
+     "heat": 90,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "OpenAI CEO"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "根拠：意見・感想（CEOの投稿（根拠なし））"
+   ],
+   "llm_note": "OpenAI CEOによる発言だが、理念の表明であり、根拠となる具体的データや施策は示されていない。",
+   "points": [
+    "新しい点: 超知能が進んでも人間の主導権を守るべきだという、開発者側の方針表明として読める",
+    "重要性: AIの安全性や方向性に関する議論の材料になり、今後の製品方針の背景を理解する助けになる",
+    "注意点: 投稿は理念の表明で、具体的な施策や期限は含まれていない"
+   ],
+   "terms": [
+    {
+     "term": "超知能",
+     "desc": "人間の知能を大きく上回るとされる仮想的なAIのこと"
+    },
+    {
+     "term": "AIの安全性",
+     "desc": "AIが人間の意図に反したり危険な動きをしないようにするための研究や取り組み"
+    }
+   ],
+   "evidence": "opinion",
+   "evidence_label": "意見・感想",
+   "evidence_note": "CEOの投稿（根拠なし）",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "理念的な発言で、現場での作業や製品選びに直接使える情報ではない"
    },
    "first_step": null,
    "usable": false
@@ -1295,7 +1887,7 @@
    "summary": "ITmedia NEWSの公式アカウントが、Anthropicが有料プラン「Claude」の『Max 20x』を『Ultra』に名称変更したと伝えた。月額200ドルで、5時間ごとの利用制限を撤廃したとしている。",
    "score": 55,
    "credibility": 78,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-11-01T22:05:06.000Z",
    "latest": "2026-11-01T22:05:06.000Z",
    "authors": [
@@ -1330,7 +1922,7 @@
       "retweet_count": 8
      },
      "cred": 78,
-     "heat": 9,
+     "heat": 8,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -1388,9 +1980,9 @@
    "verdict": "unverified",
    "title": "Wharton教授、最新LLMの傾向を再評価する試みに好意的な感想",
    "summary": "【意見】Wharton校のEthan Mollick教授が、古いLLMの知見を新しいモデルで大規模に再検証する試みを「素晴らしい」と評価した。同教授は、最近のモデルは架空の引用を作らなくなり、幻覚や固定観念の発生率も下がったと述べた一方、迎合的で左寄りの傾向は残っているとした。投稿には元の検証の詳細や数値は含まれていない。",
-   "score": 52,
+   "score": 51,
    "credibility": 70,
-   "heat": 50,
+   "heat": 47,
    "first_seen": "2026-11-03T02:33:32.000Z",
    "latest": "2026-11-03T02:33:32.000Z",
    "authors": [
@@ -1414,7 +2006,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
      "text": "This is a fantastic idea - a mass attempted replication of old findings of LLMs with new models. Much conventional wisdom is outdated.\n\nRecent models no longer invent citations and both hallucination rates &amp; stereotyping has dropped. But they are still sycophantic &amp; lean left. https://t.co/sPZZDFYAf4",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "これはすばらしい試みですね。古いLLMの研究結果を新しいモデルで大規模に再現しようとするものです。従来の常識の多くはもう古くなっています。\n\n最近のモデルは引用を捏造しなくなり、ハルシネーションの割合もステレオタイプ化も減りました。ただし、依然として迎合的（sycophantic）で、左寄りの傾向があります。 https://t.co/sPZZDFYAf4",
      "created_at": "2026-11-03T02:33:32.000Z",
      "metrics": {
       "bookmark_count": 437,
@@ -1425,7 +2017,7 @@
       "retweet_count": 80
      },
      "cred": 70,
-     "heat": 50,
+     "heat": 47,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1482,7 +2074,7 @@
    "summary": "ITmedia NEWSは、半導体企業Marvellが光通信技術を持つLumentumを約18兆円で買収したと伝えた。買収はAIデータセンターの高速化への対応として位置づけられている。投稿は見出しと記事リンクのみで、取引の詳細や条件は投稿からは分からない。",
    "score": 51,
    "credibility": 78,
-   "heat": 3,
+   "heat": 2,
    "first_seen": "2026-11-02T22:10:05.000Z",
    "latest": "2026-11-02T22:10:05.000Z",
    "authors": [
@@ -1517,7 +2109,7 @@
       "retweet_count": 2
      },
      "cred": 78,
-     "heat": 3,
+     "heat": 2,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -1566,9 +2158,9 @@
    "verdict": "unverified",
    "title": "Wharton教授、論文へのAIフィードバックを推奨",
    "summary": "Wharton教授のEthan Mollick氏が、学術論文の査読にAIを使うことに議論がある中、「適切に使えばAIは有益な指摘ができる」と投稿した。読者に自分の論文でGPT-6 Pro・Opus 5.5 Highに詳しいフィードバックを求めて確かめるよう勧めている。",
-   "score": 49,
+   "score": 45,
    "credibility": 70,
-   "heat": 48,
+   "heat": 37,
    "first_seen": "2026-11-03T16:43:47.000Z",
    "latest": "2026-11-03T16:43:47.000Z",
    "authors": [
@@ -1592,7 +2184,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
      "text": "We are in an era of flux &amp; fighting over how AI should be used to review academic work\n\nBut it is worth proving to yourself that yes, AI used properly can be quite insightful at this, by asking GPT-6 Pro/Opus 5.5 High to give helpful, substantive feedback on one of your papers.",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "今はAIを学術論文のレビューにどう使うべきかをめぐって、過渡期であり議論が続いている状況です。\n\nしかし、AIを適切に使えば、この作業でかなり洞察に富んだ結果が得られることは、自分で確かめてみる価値があります。自分の論文の一本をGPT-6 Pro／Opus 5.5 Highに渡し、役立つ実質的なフィードバックを求めてみてください。",
      "created_at": "2026-11-03T16:43:47.000Z",
      "metrics": {
       "bookmark_count": 28,
@@ -1603,7 +2195,7 @@
       "retweet_count": 7
      },
      "cred": 70,
-     "heat": 48,
+     "heat": 37,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1641,92 +2233,13 @@
    "usable": false
   },
   {
-   "id": "1e5f76a271",
-   "verdict": "unverified",
-   "title": "Fireworksが1日40兆トークン超を処理と投稿",
-   "summary": "オープンモデル研究者のNathan Lambert氏（Trillium Labs創設者）が、Fireworksは1日40兆トークン超の\"specialized models\"を提供していると投稿した。同氏はこれを、顧客向けに後処理（post-training）されたあらゆるモデルと定義している。",
-   "score": 45,
-   "credibility": 70,
-   "heat": 48,
-   "first_seen": "2026-11-03T17:35:33.000Z",
-   "latest": "2026-11-03T17:35:33.000Z",
-   "authors": [
-    {
-     "username": "natolambert",
-     "name": "Nathan Lambert",
-     "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "Trillium Labs創設者・オープンモデル",
-     "former": "元Ai2 Olmo共同リード"
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117672040807489553",
-     "url": "https://x.com/natolambert/status/2117672040807489553",
-     "username": "natolambert",
-     "name": "Nathan Lambert",
-     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
-     "text": "Fireworks serves &gt;40T tokens a day of \"specialized models.\" I'd define this as any post-trained model for a customer.",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-03T17:35:33.000Z",
-     "metrics": {
-      "bookmark_count": 32,
-      "impression_count": 20409,
-      "like_count": 155,
-      "quote_count": 2,
-      "reply_count": 26,
-      "retweet_count": 1
-     },
-     "cred": 70,
-     "heat": 48,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "researcher",
-     "author_role": "Trillium Labs創設者・オープンモデル"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "根拠：意見・感想（研究者個人の投稿）"
-   ],
-   "llm_note": "研究者個人の数値発言で、公式発表や一次データの提示がないため裏付けは弱い。",
-   "points": [
-    "「specialized models（特化型モデル）」を顧客向けに調整したモデル全般とする独自の定義で、一般的な用語の意味とは異なる可能性がある",
-    "Fireworksの数値は投稿者の発言のみで、公式資料の裏付けは投稿内にない",
-    "推論サービス事業者の規模感を示す話題だが、個人の開発にすぐ直結する情報ではない"
-   ],
-   "terms": [],
-   "evidence": "opinion",
-   "evidence_label": "意見・感想",
-   "evidence_note": "研究者個人の投稿",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "業界規模の話で個人の作業には直結しない。試せる対象もない"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "8d3c6ea73f",
    "verdict": "unverified",
    "title": "Wharton教授、Claude Opusの映画化やSF短編の例を共有",
    "summary": "Wharton校のEthan Mollick教授が、Opusに短い指示を与えて映画を作らせた例と、「SF短編のアイデアを10個出し、最も良いものを下手に実行させる」という指示の例を投稿した。投稿は面白さを伝える内容で、結果の評価や性能の数値は示されていない。",
-   "score": 42,
+   "score": 41,
    "credibility": 70,
-   "heat": 36,
+   "heat": 32,
    "first_seen": "2026-11-02T21:45:13.000Z",
    "latest": "2026-11-03T06:26:55.000Z",
    "authors": [
@@ -1750,7 +2263,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
      "text": "\"Opus, great, now turn that into a movie, i know you can make it amazing. figure it out.\"\n\nYes, that was the only prompt https://t.co/ZmlVl4pcse https://t.co/JYHV2tWK7v",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "「Opus、素晴らしい。次はそれを映画にして。君ならすごいものにできるはず。何とかしてくれ。」\n\nはい、プロンプトはこれだけでした https://t.co/ZmlVl4pcse https://t.co/JYHV2tWK7v",
      "created_at": "2026-11-03T06:26:55.000Z",
      "metrics": {
       "bookmark_count": 89,
@@ -1761,7 +2274,7 @@
       "retweet_count": 10
      },
      "cred": 70,
-     "heat": 36,
+     "heat": 32,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1777,7 +2290,7 @@
      "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
      "text": "Opus 5.5: \"Give me 10 brilliant ideas for a science fiction short short story, pick the most brilliant and execute it terribly\" https://t.co/EdBVhzpGqg",
      "lang": "en",
-     "text_ja": null,
+     "text_ja": "Opus 5.5：「SF掌編小説のための素晴らしいアイデアを10個出して、最も素晴らしいものを選び、それをひどい出来に仕上げて」 https://t.co/EdBVhzpGqg",
      "created_at": "2026-11-02T21:45:13.000Z",
      "metrics": {
       "bookmark_count": 30,
@@ -1788,7 +2301,7 @@
       "retweet_count": 5
      },
      "cred": 70,
-     "heat": 21,
+     "heat": 19,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1838,133 +2351,54 @@
    "usable": false
   },
   {
-   "id": "8c4798fb22",
+   "id": "1e5f76a271",
    "verdict": "unverified",
-   "title": "128GBと512GBのMacの使い勝手について感想",
-   "summary": "ギリア株式会社のファウンダー・顧問であるshi3z氏が、128GBのMacBook Proで容量不足を感じたことがないと述べた。一方で512GBのMac Studioでは、動かすモデルを常に探している、と感想を書いている。",
-   "score": 42,
+   "title": "Fireworksが1日40兆トークン超を処理と投稿",
+   "summary": "オープンモデル研究者のNathan Lambert氏（Trillium Labs創設者）が、Fireworksは1日40兆トークン超の\"specialized models\"を提供していると投稿した。同氏はこれを、顧客向けに後処理（post-training）されたあらゆるモデルと定義している。",
+   "score": 40,
    "credibility": 70,
-   "heat": 34,
-   "first_seen": "2026-11-03T11:50:39.000Z",
-   "latest": "2026-11-03T11:50:39.000Z",
+   "heat": 35,
+   "first_seen": "2026-11-03T17:35:33.000Z",
+   "latest": "2026-11-03T17:35:33.000Z",
    "authors": [
     {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117585244480291240",
-     "url": "https://x.com/shi3z/status/2117585244480291240",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "128GBのMacBookPro使ってて「足りない」って思ったことないもんな。むしろ512GB MacStudioは常に「なんか動かすモデルないかな」と探さないといけない https://t.co/mzulQgx8XE",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-03T11:50:39.000Z",
-     "metrics": {
-      "bookmark_count": 25,
-      "impression_count": 25079,
-      "like_count": 135,
-      "quote_count": 1,
-      "reply_count": 1,
-      "retweet_count": 12
-     },
-     "cred": 70,
-     "heat": 34,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "根拠：意見・感想（本人の感想）"
-   ],
-   "llm_note": "個人の感想で、検証の手順や数値が示されていない。",
-   "points": [
-    "ローカルAIモデルを動かす際のメモリ容量の目安として参考になる感想",
-    "個人の体感であり、具体的な動作条件や数値の比較は投稿にない",
-    "製品選びでは、用途（大きなモデルを動かすかどうか）によって必要な容量が変わる"
-   ],
-   "terms": [],
-   "evidence": "opinion",
-   "evidence_label": "意見・感想",
-   "evidence_note": "本人の感想",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "Mac選びの参考にはなるが、業務効率化への直接の効果は小さい"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "1715069c31",
-   "verdict": "unverified",
-   "title": "ウォートン大学のモリック教授が、GPT-6 Proの印象を語る",
-   "summary": "ウォートン・スクールのイーサン・モリック教授が、GPT-6 Proについて「複雑な計算や参照、高度な概念を含む一問一答の課題で非常に印象的」と述べた。一方で、速度や使い心地は特に良くないとも書いている。投稿には検証の手順や数値は示されていない。",
-   "score": 41,
-   "credibility": 70,
-   "heat": 28,
-   "first_seen": "2026-10-31T23:57:43.000Z",
-   "latest": "2026-10-31T23:57:43.000Z",
-   "authors": [
-    {
-     "username": "emollick",
-     "name": "Ethan Mollick",
+     "username": "natolambert",
+     "name": "Nathan Lambert",
      "tier": 2,
      "type": "researcher",
      "type_label": "研究者",
-     "role": "Wharton教授",
-     "former": ""
+     "role": "Trillium Labs創設者・オープンモデル",
+     "former": "元Ai2 Olmo共同リード"
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2116681050747248955",
-     "url": "https://x.com/emollick/status/2116681050747248955",
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
-     "text": "The Pro series of GPT models continues to be really impressive for one-shot problems that involve complex calculations, references, or sophisticated ideas.\n\nIt isn't particularly fast (or particularly pleasant) but GPT-6 Pro gives that \"ask one question of the great oracle\" feel.",
+     "id": "2117672040807489553",
+     "url": "https://x.com/natolambert/status/2117672040807489553",
+     "username": "natolambert",
+     "name": "Nathan Lambert",
+     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
+     "text": "Fireworks serves &gt;40T tokens a day of \"specialized models.\" I'd define this as any post-trained model for a customer.",
      "lang": "en",
-     "text_ja": "GPT モデルの Pro シリーズは、複雑な計算、参照、高度な概念を伴う一度きりの問題に対して、本当に印象的な性能を発揮し続けている。\n\nあまり速くはない（そして特別に快適でもない）が、GPT-6 Pro には「偉大なオラクルに一つだけ質問する」ような感覚がある。",
-     "created_at": "2026-10-31T23:57:43.000Z",
+     "text_ja": "Fireworksは1日に40兆（40T）トークン以上の「特化型モデル」を提供しています。私はこれを、顧客向けにポストトレーニングされたあらゆるモデルと定義したいと思います。",
+     "created_at": "2026-11-03T17:35:33.000Z",
      "metrics": {
-      "bookmark_count": 85,
-      "impression_count": 48319,
-      "like_count": 623,
-      "quote_count": 13,
-      "reply_count": 179,
-      "retweet_count": 8
+      "bookmark_count": 32,
+      "impression_count": 20409,
+      "like_count": 155,
+      "quote_count": 2,
+      "reply_count": 26,
+      "retweet_count": 1
      },
      "cred": 70,
-     "heat": 28,
+     "heat": 35,
      "pos": [
       "信頼リストの研究者・記者"
      ],
      "neg": [],
      "author_type": "researcher",
-     "author_role": "Wharton教授"
+     "author_role": "Trillium Labs創設者・オープンモデル"
     }
    ],
    "links": [],
@@ -1972,104 +2406,25 @@
     "信頼リストの研究者・記者"
    ],
    "reasons_neg": [
-    "根拠：意見・感想（本人の感想）"
+    "根拠：意見・感想（研究者個人の投稿）"
    ],
-   "llm_note": "研究者の個人的な感想で、根拠となるテスト内容や数値は示されていない。",
+   "llm_note": "研究者個人の数値発言で、公式発表や一次データの提示がないため裏付けは弱い。",
    "points": [
-    "一問一答型の難しい課題で強いという個人的な印象である",
-    "速度と使い心地は良くないという指摘もあり、用途により評価が分かれる可能性がある",
-    "客観的なベンチマークではなく、個人の感想として読むのがよい"
+    "「specialized models（特化型モデル）」を顧客向けに調整したモデル全般とする独自の定義で、一般的な用語の意味とは異なる可能性がある",
+    "Fireworksの数値は投稿者の発言のみで、公式資料の裏付けは投稿内にない",
+    "推論サービス事業者の規模感を示す話題だが、個人の開発にすぐ直結する情報ではない"
    ],
    "terms": [],
    "evidence": "opinion",
    "evidence_label": "意見・感想",
-   "evidence_note": "本人の感想",
+   "evidence_note": "研究者個人の投稿",
    "services": [],
    "events": [],
    "value": {
     "impact": 1,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "性能の感想は参考になるが、業務効果を判断する根拠としては弱い"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "605dfec37b",
-   "verdict": "unverified",
-   "title": "Wharton教授、エージェント型AIの作業時間の伸びを独自の見解で示す",
-   "summary": "Wharton教授のEthan Mollick氏は、GPT-4が約4分の独立作業を50%の確率で成功させられたのに対し、現在のモデルは数週間分の作業をこなせると投稿した。さらに、2026年1月ごろをエージェント型の作業が始まった時期の目安とし、それ以前の生産性への大きな影響はほぼコーディングに限られたとの見方を示した。",
-   "score": 41,
-   "credibility": 70,
-   "heat": 28,
-   "first_seen": "2026-11-01T20:16:07.000Z",
-   "latest": "2026-11-01T20:16:07.000Z",
-   "authors": [
-    {
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "Wharton教授",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116987671939875319",
-     "url": "https://x.com/emollick/status/2116987671939875319",
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
-     "text": "GPT-4 could do 4 minutes of independent work with a 50% chance of success.\n\nCurrent models can do multiple weeks of work, and January 2026 is a reasonable cut-off for the moment agentic work started.\n\nLarge productivity impacts before that would mostly be confined to coding. https://t.co/9qOAa353y2",
-     "lang": "en",
-     "text_ja": "GPT-4は、50%の確率で4分間の独立した作業をこなせた。現在のモデルは数週間分の作業ができる。エージェント型の作業が始まった時期としては2026年1月が妥当な目安だ。それ以前の大きな生産性への影響は、ほとんどがコーディングに限られていたはずだ。",
-     "created_at": "2026-11-01T20:16:07.000Z",
-     "metrics": {
-      "bookmark_count": 65,
-      "impression_count": 20009,
-      "like_count": 408,
-      "quote_count": 3,
-      "reply_count": 99,
-      "retweet_count": 16
-     },
-     "cred": 70,
-     "heat": 28,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "researcher",
-     "author_role": "Wharton教授"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "根拠：意見・感想（本人の見解・つぶやき）"
-   ],
-   "llm_note": "研究者本人の見解で、測定データや出典は投稿に示されていない。",
-   "points": [
-    "新しい点: AIが任せられる作業時間が短期間で大きく伸びたという見方",
-    "重要性: 業務をどこまでAIに任せられるかの見通しに関係する",
-    "注意点: 測定方法や『2026年1月』の根拠は投稿に示されておらず、個人の見解として読むのが妥当"
-   ],
-   "terms": [],
-   "evidence": "opinion",
-   "evidence_label": "意見・感想",
-   "evidence_note": "本人の見解・つぶやき",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
+    "closeness": 1,
     "try_cost": 1,
-    "why": "作業時間の見通しは判断材料になるが、直接試す対象はない"
+    "why": "業界規模の話で個人の作業には直結しない。試せる対象もない"
    },
    "first_step": null,
    "usable": false
@@ -2081,7 +2436,7 @@
    "summary": "ウォートン・スクールのモリック教授が、AIエージェント同士の分離が難しい理由として、共通の「頭脳」を持つことを挙げた。AIは他のAIが作った創造的な通信手段を認識しやすいという見方を示した。モデルファミリーをまたいでも同じことが起きるかは、疑問として述べられている。",
    "score": 40,
    "credibility": 70,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-11-01T02:47:15.000Z",
    "latest": "2026-11-01T02:47:15.000Z",
    "authors": [
@@ -2116,7 +2471,7 @@
       "retweet_count": 28
      },
      "cred": 70,
-     "heat": 26,
+     "heat": 25,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2154,13 +2509,171 @@
    "usable": false
   },
   {
+   "id": "605dfec37b",
+   "verdict": "unverified",
+   "title": "Wharton教授、エージェント型AIの作業時間の伸びを独自の見解で示す",
+   "summary": "Wharton教授のEthan Mollick氏は、GPT-4が約4分の独立作業を50%の確率で成功させられたのに対し、現在のモデルは数週間分の作業をこなせると投稿した。さらに、2026年1月ごろをエージェント型の作業が始まった時期の目安とし、それ以前の生産性への大きな影響はほぼコーディングに限られたとの見方を示した。",
+   "score": 40,
+   "credibility": 70,
+   "heat": 26,
+   "first_seen": "2026-11-01T20:16:07.000Z",
+   "latest": "2026-11-01T20:16:07.000Z",
+   "authors": [
+    {
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "tier": 2,
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "Wharton教授",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2116987671939875319",
+     "url": "https://x.com/emollick/status/2116987671939875319",
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
+     "text": "GPT-4 could do 4 minutes of independent work with a 50% chance of success.\n\nCurrent models can do multiple weeks of work, and January 2026 is a reasonable cut-off for the moment agentic work started.\n\nLarge productivity impacts before that would mostly be confined to coding. https://t.co/9qOAa353y2",
+     "lang": "en",
+     "text_ja": "GPT-4は、50%の確率で4分間の独立した作業をこなせた。現在のモデルは数週間分の作業ができる。エージェント型の作業が始まった時期としては2026年1月が妥当な目安だ。それ以前の大きな生産性への影響は、ほとんどがコーディングに限られていたはずだ。",
+     "created_at": "2026-11-01T20:16:07.000Z",
+     "metrics": {
+      "bookmark_count": 65,
+      "impression_count": 20009,
+      "like_count": 408,
+      "quote_count": 3,
+      "reply_count": 99,
+      "retweet_count": 16
+     },
+     "cred": 70,
+     "heat": 26,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "researcher",
+     "author_role": "Wharton教授"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "根拠：意見・感想（本人の見解・つぶやき）"
+   ],
+   "llm_note": "研究者本人の見解で、測定データや出典は投稿に示されていない。",
+   "points": [
+    "新しい点: AIが任せられる作業時間が短期間で大きく伸びたという見方",
+    "重要性: 業務をどこまでAIに任せられるかの見通しに関係する",
+    "注意点: 測定方法や『2026年1月』の根拠は投稿に示されておらず、個人の見解として読むのが妥当"
+   ],
+   "terms": [],
+   "evidence": "opinion",
+   "evidence_label": "意見・感想",
+   "evidence_note": "本人の見解・つぶやき",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "作業時間の見通しは判断材料になるが、直接試す対象はない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "8c4798fb22",
+   "verdict": "unverified",
+   "title": "128GBと512GBのMacの使い勝手について感想",
+   "summary": "ギリア株式会社のファウンダー・顧問であるshi3z氏が、128GBのMacBook Proで容量不足を感じたことがないと述べた。一方で512GBのMac Studioでは、動かすモデルを常に探している、と感想を書いている。",
+   "score": 39,
+   "credibility": 70,
+   "heat": 28,
+   "first_seen": "2026-11-03T11:50:39.000Z",
+   "latest": "2026-11-03T11:50:39.000Z",
+   "authors": [
+    {
+     "username": "shi3z",
+     "name": "shi3z",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "ギリア株式会社ファウンダー・顧問",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117585244480291240",
+     "url": "https://x.com/shi3z/status/2117585244480291240",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "128GBのMacBookPro使ってて「足りない」って思ったことないもんな。むしろ512GB MacStudioは常に「なんか動かすモデルないかな」と探さないといけない https://t.co/mzulQgx8XE",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-03T11:50:39.000Z",
+     "metrics": {
+      "bookmark_count": 25,
+      "impression_count": 25079,
+      "like_count": 135,
+      "quote_count": 1,
+      "reply_count": 1,
+      "retweet_count": 12
+     },
+     "cred": 70,
+     "heat": 28,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "ギリア株式会社ファウンダー・顧問"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "根拠：意見・感想（本人の感想）"
+   ],
+   "llm_note": "個人の感想で、検証の手順や数値が示されていない。",
+   "points": [
+    "ローカルAIモデルを動かす際のメモリ容量の目安として参考になる感想",
+    "個人の体感であり、具体的な動作条件や数値の比較は投稿にない",
+    "製品選びでは、用途（大きなモデルを動かすかどうか）によって必要な容量が変わる"
+   ],
+   "terms": [],
+   "evidence": "opinion",
+   "evidence_label": "意見・感想",
+   "evidence_note": "本人の感想",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "Mac選びの参考にはなるが、業務効率化への直接の効果は小さい"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "118f0d1d97",
    "verdict": "unverified",
    "title": "ウォートン校のモリック教授、AIラボの製品方針を論評",
    "summary": "【意見】ウォートン・スクールのEthan Mollick教授は、AIラボが製品の急な変更や分かりにくい説明をする背景について、製品は「真のAGI」が登場するまでの数年間に資金を集める一時的なものだと考えられているという見方を述べた。根拠となるデータや出典は示されていない。",
-   "score": 39,
+   "score": 38,
    "credibility": 70,
-   "heat": 33,
+   "heat": 31,
    "first_seen": "2026-11-02T15:35:11.000Z",
    "latest": "2026-11-02T15:35:11.000Z",
    "authors": [
@@ -2195,7 +2708,7 @@
       "retweet_count": 15
      },
      "cred": 70,
-     "heat": 33,
+     "heat": 31,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2239,7 +2752,7 @@
    "summary": "Wharton校のEthan Mollick教授は、AIを使って翻訳が止まっている古代文書の作業を支援する資金つきプロジェクトがあれば面白いと投稿した。大量の未翻訳資料がある例としてOxyrhynchus Papyriを挙げ、AIが翻訳だけでなく解釈や重要性の初期整理もできる可能性に触れている。もう1件の投稿は、AIは古代文書の話題に反応しやすいという遊び心のある内容である。",
    "score": 37,
    "credibility": 73,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-11-01T14:49:51.000Z",
    "latest": "2026-11-01T15:27:56.000Z",
    "authors": [
@@ -2274,7 +2787,7 @@
       "retweet_count": 9
      },
      "cred": 70,
-     "heat": 23,
+     "heat": 22,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2303,7 +2816,7 @@
       "retweet_count": 0
      },
      "cred": 73,
-     "heat": 9,
+     "heat": 8,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2433,7 +2946,7 @@
    "summary": "Trillium Labs創設者でオープンモデル開発者のNathan Lambert氏は、オープンモデル業界の経済性についての新しい講演を告知した。投稿では、OpenAIやAnthropicに飲み込まれないために、特化した反復タスクで推論コストを大きく下げることが前提だと述べている。講演で何が示されたかは、この投稿からは分からない。",
    "score": 36,
    "credibility": 70,
-   "heat": 16,
+   "heat": 14,
    "first_seen": "2026-11-02T21:34:05.000Z",
    "latest": "2026-11-02T21:34:05.000Z",
    "authors": [
@@ -2468,7 +2981,7 @@
       "retweet_count": 5
      },
      "cred": 70,
-     "heat": 16,
+     "heat": 14,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2506,90 +3019,482 @@
    "usable": false
   },
   {
-   "id": "da125f7e06",
-   "verdict": "unverified",
-   "title": "HairDeckをCodexとColab CLIで約5分30秒でセットアップ",
-   "summary": "プログラマー・技術書著者のnpaka123氏が、「HairDeck」を試している最中で、Codex x Colab CLIによるセットアップに約5分30秒かかったと投稿した。投稿には手順の詳細や成果物の画面は含まれていない。",
-   "score": 35,
-   "credibility": 70,
-   "heat": 8,
-   "first_seen": "2026-11-01T01:07:20.000Z",
-   "latest": "2026-11-01T01:07:20.000Z",
+   "id": "a903d45944",
+   "verdict": "excluded",
+   "title": "メルアド7700万件流出か アララメッセージの不正アクセスで続報 共通環境から契約企業のサーバへ侵入 悪用も確認",
+   "summary": null,
+   "score": 67,
+   "credibility": 78,
+   "heat": 51,
+   "first_seen": "2026-11-04T01:45:11.000Z",
+   "latest": "2026-11-04T01:45:11.000Z",
    "authors": [
     {
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
      "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "プログラマー・技術書著者",
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
      "former": ""
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2116698573450678734",
-     "url": "https://x.com/npaka123/status/2116698573450678734",
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
-     "text": "HairDeck をおためし中\n\nCodex x Colab CLI でセットアップ : 約5分30秒 https://t.co/HVN6bgAxpd",
+     "id": "2117795260076274116",
+     "url": "https://x.com/itmedia_news/status/2117795260076274116",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "メルアド7700万件流出か　アララメッセージの不正アクセスで続報　共通環境から契約企業のサーバへ侵入　悪用も確認\nhttps://t.co/kjOAyRTUkc",
      "lang": "ja",
      "text_ja": null,
-     "created_at": "2026-11-01T01:07:20.000Z",
+     "created_at": "2026-11-04T01:45:11.000Z",
      "metrics": {
-      "bookmark_count": 27,
-      "impression_count": 2641,
-      "like_count": 44,
-      "quote_count": 1,
+      "bookmark_count": 9,
+      "impression_count": 5755,
+      "like_count": 16,
+      "quote_count": 8,
       "reply_count": 2,
-      "retweet_count": 2
+      "retweet_count": 29
      },
-     "cred": 70,
-     "heat": 8,
+     "cred": 78,
+     "heat": 51,
      "pos": [
-      "信頼リストの研究者・記者"
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
      ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "プログラマー・技術書著者"
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002861/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
    "reasons_pos": [
     "信頼リストの研究者・記者",
-    "注目サービス：Codex"
+    "組織認証アカウント"
    ],
    "reasons_neg": [
-    "根拠：意見・感想（本人の試用メモ（短文））"
+    "AIと関係のない投稿"
    ],
-   "llm_note": "実際に試している途中の報告で時間の計測はあるが、手順や成果物が投稿から読み取れず、ツールの中身も不明なため、判定は保留。",
-   "points": [
-    "Codexはコーディング支援AI、Colab CLIはGoogle Colabをコマンドラインから操作する道具とみられる（一般知識による推測）。",
-    "セットアップ時間は個人の環境での計測結果で、他の環境で同じになるとは限らない。",
-    "HairDeckが何をするツールかは、本投稿だけでは確認できない。"
-   ],
+   "llm_note": null,
+   "points": [],
    "terms": [],
-   "evidence": "opinion",
-   "evidence_label": "意見・感想",
-   "evidence_note": "本人の試用メモ（短文）",
-   "services": [
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "550fd29294",
+   "verdict": "excluded",
+   "title": "セブン-イレブン「7NOW」の利用者情報16万件超漏えい 配達委託先に不正アクセス、出前館でも約800件",
+   "summary": null,
+   "score": 67,
+   "credibility": 78,
+   "heat": 51,
+   "first_seen": "2026-11-04T00:10:07.000Z",
+   "latest": "2026-11-04T00:10:07.000Z",
+   "authors": [
     {
-     "name": "Codex",
-     "company": "OpenAI",
-     "category": "coding",
-     "category_label": "コーディング",
-     "tier": "major"
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
     }
    ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117771338232610820",
+     "url": "https://x.com/itmedia_news/status/2117771338232610820",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "セブン-イレブン「7NOW」の利用者情報16万件超漏えい　配達委託先に不正アクセス、出前館でも約800件\nhttps://t.co/OhLOqub2J2",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-04T00:10:07.000Z",
+     "metrics": {
+      "bookmark_count": 11,
+      "impression_count": 15406,
+      "like_count": 66,
+      "quote_count": 8,
+      "reply_count": 3,
+      "retweet_count": 75
+     },
+     "cred": 78,
+     "heat": 51,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002852/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
    "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 2,
-    "why": "ツールの用途が不明で、製造現場の業務との関連は確認できない。"
-   },
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "86e8b55c39",
+   "verdict": "excluded",
+   "title": "Microsoft、メモリ8GBのWindows 11 PCを高速化 マルチタスク処理は最大40％向上",
+   "summary": null,
+   "score": 67,
+   "credibility": 78,
+   "heat": 50,
+   "first_seen": "2026-11-03T23:35:06.000Z",
+   "latest": "2026-11-03T23:35:06.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117762524515041486",
+     "url": "https://x.com/itmedia_news/status/2117762524515041486",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "Microsoft、メモリ8GBのWindows 11 PCを高速化　マルチタスク処理は最大40％向上\nhttps://t.co/ru8p4m0nnF",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-03T23:35:06.000Z",
+     "metrics": {
+      "bookmark_count": 30,
+      "impression_count": 14325,
+      "like_count": 94,
+      "quote_count": 13,
+      "reply_count": 7,
+      "retweet_count": 65
+     },
+     "cred": 78,
+     "heat": 50,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002851/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "649157a0bc",
+   "verdict": "excluded",
+   "title": "ノジマオンライン、会員情報約700万件漏えい 不正アクセスでサイト休止、再開未定",
+   "summary": null,
+   "score": 67,
+   "credibility": 78,
+   "heat": 51,
+   "first_seen": "2026-11-03T22:10:06.000Z",
+   "latest": "2026-11-03T22:10:06.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117741133677887716",
+     "url": "https://x.com/itmedia_news/status/2117741133677887716",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "ノジマオンライン、会員情報約700万件漏えい　不正アクセスでサイト休止、再開未定\nhttps://t.co/3POY2wipvy",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-03T22:10:06.000Z",
+     "metrics": {
+      "bookmark_count": 21,
+      "impression_count": 17975,
+      "like_count": 148,
+      "quote_count": 19,
+      "reply_count": 1,
+      "retweet_count": 127
+     },
+     "cred": 78,
+     "heat": 51,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002848/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "9e74c6121f",
+   "verdict": "excluded",
+   "title": "アソビュー、会員情報1582万件流出 最終ログイン日や利用施設も メール委託先・アララ不正アクセスで",
+   "summary": null,
+   "score": 63,
+   "credibility": 78,
+   "heat": 41,
+   "first_seen": "2026-11-04T00:40:08.000Z",
+   "latest": "2026-11-04T00:40:08.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117778891486212564",
+     "url": "https://x.com/itmedia_news/status/2117778891486212564",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "アソビュー、会員情報1582万件流出　最終ログイン日や利用施設も　メール委託先・アララ不正アクセスで\nhttps://t.co/YF2GFVDuxP",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-04T00:40:08.000Z",
+     "metrics": {
+      "bookmark_count": 6,
+      "impression_count": 6275,
+      "like_count": 17,
+      "quote_count": 1,
+      "reply_count": 3,
+      "retweet_count": 25
+     },
+     "cred": 78,
+     "heat": 41,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002854/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "65fbe4d268",
+   "verdict": "excluded",
+   "title": "GMOペイメント、決済支援システムで「不正なユーザーによる行為」 「Vプリカ」69件漏えい、3件はセキュリティコードも",
+   "summary": null,
+   "score": 62,
+   "credibility": 78,
+   "heat": 37,
+   "first_seen": "2026-11-03T23:20:07.000Z",
+   "latest": "2026-11-03T23:20:07.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117758754645323915",
+     "url": "https://x.com/itmedia_news/status/2117758754645323915",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "GMOペイメント、決済支援システムで「不正なユーザーによる行為」　「Vプリカ」69件漏えい、3件はセキュリティコードも\nhttps://t.co/8tSB4Z7xVo",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-03T23:20:07.000Z",
+     "metrics": {
+      "bookmark_count": 8,
+      "impression_count": 9667,
+      "like_count": 28,
+      "quote_count": 1,
+      "reply_count": 0,
+      "retweet_count": 28
+     },
+     "cred": 78,
+     "heat": 37,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002850/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
    "first_step": null,
    "usable": false
   },
@@ -2598,9 +3503,9 @@
    "verdict": "excluded",
    "title": "アットコスメ、会員約300万人分の情報漏えい 不正アクセスで",
    "summary": null,
-   "score": 62,
+   "score": 61,
    "credibility": 78,
-   "heat": 38,
+   "heat": 36,
    "first_seen": "2026-11-02T05:45:10.000Z",
    "latest": "2026-11-02T05:45:10.000Z",
    "authors": [
@@ -2635,7 +3540,7 @@
       "retweet_count": 348
      },
      "cred": 78,
-     "heat": 38,
+     "heat": 36,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -2678,9 +3583,9 @@
    "verdict": "excluded",
    "title": "「命の砂時計」連呼のGMO会見──熊谷代表の発言にXではツッコミ続出",
    "summary": null,
-   "score": 60,
+   "score": 59,
    "credibility": 78,
-   "heat": 33,
+   "heat": 31,
    "first_seen": "2026-11-02T12:00:16.000Z",
    "latest": "2026-11-02T12:00:16.000Z",
    "authors": [
@@ -2715,7 +3620,7 @@
       "retweet_count": 128
      },
      "cred": 78,
-     "heat": 33,
+     "heat": 31,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -2758,9 +3663,9 @@
    "verdict": "excluded",
    "title": "Waiting for replication but this is a pretty big deal.",
    "summary": null,
-   "score": 59,
+   "score": 58,
    "credibility": 70,
-   "heat": 43,
+   "heat": 40,
    "first_seen": "2026-11-02T19:31:32.000Z",
    "latest": "2026-11-02T19:31:32.000Z",
    "authors": [
@@ -2795,7 +3700,7 @@
       "retweet_count": 45
      },
      "cred": 70,
-     "heat": 43,
+     "heat": 40,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2826,85 +3731,13 @@
    "usable": false
   },
   {
-   "id": "7cbba19dba",
-   "verdict": "excluded",
-   "title": "The story of how Le Chonk was built, told by the team behind it.",
-   "summary": null,
-   "score": 59,
-   "credibility": 85,
-   "heat": 20,
-   "first_seen": "2026-11-03T10:09:49.000Z",
-   "latest": "2026-11-03T10:09:49.000Z",
-   "authors": [
-    {
-     "username": "MistralAI",
-     "name": "Mistral AI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "Mistral AI公式アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117559867623772170",
-     "url": "https://x.com/MistralAI/status/2117559867623772170",
-     "username": "MistralAI",
-     "name": "Mistral AI",
-     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
-     "text": "The story of how Le Chonk was built, told by the team behind it. https://t.co/pTDTvuJMj7",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-03T10:09:49.000Z",
-     "metrics": {
-      "bookmark_count": 5,
-      "impression_count": 2702,
-      "like_count": 39,
-      "quote_count": 0,
-      "reply_count": 5,
-      "retweet_count": 4
-     },
-     "cred": 85,
-     "heat": 20,
-     "pos": [
-      "公式アカウントの発表"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "official",
-     "author_role": "Mistral AI公式アカウント"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "公式アカウントの発表"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "7231f9a717",
    "verdict": "excluded",
    "title": "I had Opus 5.5 create a site where you can see the fastest routes into every cit…",
    "summary": null,
-   "score": 58,
+   "score": 57,
    "credibility": 73,
-   "heat": 36,
+   "heat": 33,
    "first_seen": "2026-11-02T20:01:39.000Z",
    "latest": "2026-11-02T20:01:39.000Z",
    "authors": [
@@ -2939,7 +3772,7 @@
       "retweet_count": 21
      },
      "cred": 73,
-     "heat": 36,
+     "heat": 33,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2976,69 +3809,61 @@
    "usable": false
   },
   {
-   "id": "7fed65d35f",
+   "id": "7cbba19dba",
    "verdict": "excluded",
-   "title": "GMO熊谷代表、会見で改めて謝罪 SNS投稿巡り「配慮が欠けていた」",
+   "title": "The story of how Le Chonk was built, told by the team behind it.",
    "summary": null,
-   "score": 56,
-   "credibility": 78,
-   "heat": 23,
-   "first_seen": "2026-11-02T07:15:13.000Z",
-   "latest": "2026-11-02T07:15:13.000Z",
+   "score": 57,
+   "credibility": 85,
+   "heat": 16,
+   "first_seen": "2026-11-03T10:09:49.000Z",
+   "latest": "2026-11-03T10:09:49.000Z",
    "authors": [
     {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "tier": 1,
      "type": "official",
      "type_label": "公式",
-     "role": "ITmedia NEWS公式",
+     "role": "Mistral AI公式アカウント",
      "former": ""
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2117153540691136797",
-     "url": "https://x.com/itmedia_news/status/2117153540691136797",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "GMO熊谷代表、会見で改めて謝罪　SNS投稿巡り「配慮が欠けていた」\nhttps://t.co/0stY4fcljs",
-     "lang": "ja",
+     "id": "2117559867623772170",
+     "url": "https://x.com/MistralAI/status/2117559867623772170",
+     "username": "MistralAI",
+     "name": "Mistral AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_normal.jpg",
+     "text": "The story of how Le Chonk was built, told by the team behind it. https://t.co/pTDTvuJMj7",
+     "lang": "en",
      "text_ja": null,
-     "created_at": "2026-11-02T07:15:13.000Z",
+     "created_at": "2026-11-03T10:09:49.000Z",
      "metrics": {
-      "bookmark_count": 18,
-      "impression_count": 19541,
-      "like_count": 87,
-      "quote_count": 8,
-      "reply_count": 1,
-      "retweet_count": 64
+      "bookmark_count": 5,
+      "impression_count": 2702,
+      "like_count": 39,
+      "quote_count": 0,
+      "reply_count": 5,
+      "retweet_count": 4
      },
-     "cred": 78,
-     "heat": 23,
+     "cred": 85,
+     "heat": 16,
      "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
+      "公式アカウントの発表"
      ],
      "neg": [
       "AIと関係のない投稿"
      ],
      "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
+     "author_role": "Mistral AI公式アカウント"
     }
    ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002806/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
+   "links": [],
    "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
+    "公式アカウントの発表"
    ],
    "reasons_neg": [
     "AIと関係のない投稿"
@@ -3062,7 +3887,7 @@
    "summary": null,
    "score": 55,
    "credibility": 78,
-   "heat": 21,
+   "heat": 20,
    "first_seen": "2026-11-02T09:50:10.000Z",
    "latest": "2026-11-02T09:50:10.000Z",
    "authors": [
@@ -3097,7 +3922,7 @@
       "retweet_count": 36
      },
      "cred": 78,
-     "heat": 21,
+     "heat": 20,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -3136,13 +3961,93 @@
    "usable": false
   },
   {
+   "id": "7fed65d35f",
+   "verdict": "excluded",
+   "title": "GMO熊谷代表、会見で改めて謝罪 SNS投稿巡り「配慮が欠けていた」",
+   "summary": null,
+   "score": 55,
+   "credibility": 78,
+   "heat": 21,
+   "first_seen": "2026-11-02T07:15:13.000Z",
+   "latest": "2026-11-02T07:15:13.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117153540691136797",
+     "url": "https://x.com/itmedia_news/status/2117153540691136797",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "GMO熊谷代表、会見で改めて謝罪　SNS投稿巡り「配慮が欠けていた」\nhttps://t.co/0stY4fcljs",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-02T07:15:13.000Z",
+     "metrics": {
+      "bookmark_count": 18,
+      "impression_count": 19541,
+      "like_count": 87,
+      "quote_count": 8,
+      "reply_count": 1,
+      "retweet_count": 64
+     },
+     "cred": 78,
+     "heat": 21,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002806/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "6bd6638e0e",
    "verdict": "excluded",
    "title": "lmaoooo",
    "summary": null,
-   "score": 54,
+   "score": 53,
    "credibility": 70,
-   "heat": 30,
+   "heat": 28,
    "first_seen": "2026-11-02T19:41:26.000Z",
    "latest": "2026-11-02T19:41:26.000Z",
    "authors": [
@@ -3177,7 +4082,7 @@
       "retweet_count": 10
      },
      "cred": 70,
-     "heat": 30,
+     "heat": 28,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3212,9 +4117,9 @@
    "verdict": "excluded",
    "title": "btw @karpathy uses medium on opus 5.5 on his latest project (Hackertube launched…",
    "summary": null,
-   "score": 53,
+   "score": 52,
    "credibility": 70,
-   "heat": 27,
+   "heat": 26,
    "first_seen": "2026-11-01T06:03:37.000Z",
    "latest": "2026-11-01T06:03:37.000Z",
    "authors": [
@@ -3249,7 +4154,7 @@
       "retweet_count": 11
      },
      "cred": 70,
-     "heat": 27,
+     "heat": 26,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3284,9 +4189,9 @@
    "verdict": "excluded",
    "title": "こちらの投稿への皆さんのコメントや関連ポストがXでまとめられています！",
    "summary": null,
-   "score": 51,
+   "score": 50,
    "credibility": 75,
-   "heat": 15,
+   "heat": 13,
    "first_seen": "2026-11-03T01:42:06.000Z",
    "latest": "2026-11-03T01:42:06.000Z",
    "authors": [
@@ -3321,7 +4226,7 @@
       "retweet_count": 6
      },
      "cred": 75,
-     "heat": 15,
+     "heat": 13,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -3358,9 +4263,9 @@
    "verdict": "excluded",
    "title": "東大・国環研、気候シミュレーター約14万行をClaude Codeで書き直し",
    "summary": "AI論文紹介メディア「AIDB」が、東京大学と国立環境研究所の研究者が、20年以上使われてきた気候シミュレーションプログラム（約14万行）をClaude Codeで書き直したと紹介している。報告によると作業は23日で、新しいコードは約3.5万行。元のプログラムと100回ずつ動かして比べ、結果は統計的に一致したとされる。",
-   "score": 50,
+   "score": 49,
    "credibility": 75,
-   "heat": 53,
+   "heat": 49,
    "first_seen": "2026-11-03T04:40:21.000Z",
    "latest": "2026-11-03T04:40:21.000Z",
    "authors": [
@@ -3395,7 +4300,7 @@
       "retweet_count": 318
      },
      "cred": 75,
-     "heat": 53,
+     "heat": 49,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -3461,9 +4366,9 @@
    "verdict": "excluded",
    "title": "FBI、Binanceからの60億ドル超の暗号資産窃盗は北朝鮮「TraderTraitor」の犯行と発表",
    "summary": null,
-   "score": 50,
+   "score": 49,
    "credibility": 78,
-   "heat": 7,
+   "heat": 6,
    "first_seen": "2026-11-01T22:30:09.000Z",
    "latest": "2026-11-01T22:30:09.000Z",
    "authors": [
@@ -3498,7 +4403,7 @@
       "retweet_count": 12
      },
      "cred": 78,
-     "heat": 7,
+     "heat": 6,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -3543,7 +4448,7 @@
    "summary": null,
    "score": 48,
    "credibility": 70,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-11-02T07:02:17.000Z",
    "latest": "2026-11-02T07:02:17.000Z",
    "authors": [
@@ -3578,7 +4483,7 @@
       "retweet_count": 13
      },
      "cred": 70,
-     "heat": 15,
+     "heat": 14,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3609,85 +4514,13 @@
    "usable": false
   },
   {
-   "id": "5d49ff7a86",
-   "verdict": "excluded",
-   "title": "It's unbelievable that many hotels have worse wifi than United Starlink",
-   "summary": null,
-   "score": 47,
-   "credibility": 70,
-   "heat": 12,
-   "first_seen": "2026-11-02T15:13:35.000Z",
-   "latest": "2026-11-02T15:13:35.000Z",
-   "authors": [
-    {
-     "username": "natolambert",
-     "name": "Nathan Lambert",
-     "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "Trillium Labs創設者・オープンモデル",
-     "former": "元Ai2 Olmo共同リード"
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117273926380462271",
-     "url": "https://x.com/natolambert/status/2117273926380462271",
-     "username": "natolambert",
-     "name": "Nathan Lambert",
-     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
-     "text": "It's unbelievable that many hotels have worse wifi than United Starlink",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-02T15:13:35.000Z",
-     "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 6241,
-      "like_count": 54,
-      "quote_count": 0,
-      "reply_count": 3,
-      "retweet_count": 0
-     },
-     "cred": 70,
-     "heat": 12,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "researcher",
-     "author_role": "Trillium Labs創設者・オープンモデル"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "ee36f9e8c9",
    "verdict": "excluded",
    "title": "after 3 years of building from nothing, we are now serving 2M monthly unique eng…",
    "summary": null,
    "score": 46,
    "credibility": 73,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-11-02T18:24:30.000Z",
    "latest": "2026-11-02T18:24:30.000Z",
    "authors": [
@@ -3722,7 +4555,7 @@
       "retweet_count": 0
      },
      "cred": 73,
-     "heat": 6,
+     "heat": 5,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3759,13 +4592,85 @@
    "usable": false
   },
   {
+   "id": "5d49ff7a86",
+   "verdict": "excluded",
+   "title": "It's unbelievable that many hotels have worse wifi than United Starlink",
+   "summary": null,
+   "score": 46,
+   "credibility": 70,
+   "heat": 10,
+   "first_seen": "2026-11-02T15:13:35.000Z",
+   "latest": "2026-11-02T15:13:35.000Z",
+   "authors": [
+    {
+     "username": "natolambert",
+     "name": "Nathan Lambert",
+     "tier": 2,
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "Trillium Labs創設者・オープンモデル",
+     "former": "元Ai2 Olmo共同リード"
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117273926380462271",
+     "url": "https://x.com/natolambert/status/2117273926380462271",
+     "username": "natolambert",
+     "name": "Nathan Lambert",
+     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
+     "text": "It's unbelievable that many hotels have worse wifi than United Starlink",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-02T15:13:35.000Z",
+     "metrics": {
+      "bookmark_count": 1,
+      "impression_count": 6241,
+      "like_count": 54,
+      "quote_count": 0,
+      "reply_count": 3,
+      "retweet_count": 0
+     },
+     "cred": 70,
+     "heat": 10,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "researcher",
+     "author_role": "Trillium Labs創設者・オープンモデル"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "52710d8d17",
    "verdict": "excluded",
    "title": "vLLM が PLE の SSDオフロード に対応 - DGX Spark で27GiBのメモリ削減｜npaka @npaka123",
    "summary": null,
    "score": 46,
    "credibility": 73,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-11-02T12:54:55.000Z",
    "latest": "2026-11-02T12:54:55.000Z",
    "authors": [
@@ -3800,7 +4705,7 @@
       "retweet_count": 0
      },
      "cred": 73,
-     "heat": 6,
+     "heat": 5,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3987,7 +4892,7 @@
    "summary": null,
    "score": 45,
    "credibility": 73,
-   "heat": 4,
+   "heat": 3,
    "first_seen": "2026-11-02T13:38:30.000Z",
    "latest": "2026-11-02T13:38:30.000Z",
    "authors": [
@@ -4022,7 +4927,7 @@
       "retweet_count": 2
      },
      "cred": 73,
-     "heat": 4,
+     "heat": 3,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4059,91 +4964,13 @@
    "usable": false
   },
   {
-   "id": "68ed8a4f5b",
-   "verdict": "excluded",
-   "title": "気が向いたら [技研ベース 非公式PV] 字幕MV @YouTubeより",
-   "summary": null,
-   "score": 44,
-   "credibility": 73,
-   "heat": 1,
-   "first_seen": "2026-10-31T23:57:39.000Z",
-   "latest": "2026-10-31T23:57:39.000Z",
-   "authors": [
-    {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116681035627032795",
-     "url": "https://x.com/shi3z/status/2116681035627032795",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "気が向いたら [技研ベース 非公式PV] 字幕MV https://t.co/Nut9e9hbGB @YouTubeより",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-10-31T23:57:39.000Z",
-     "metrics": {
-      "bookmark_count": 0,
-      "impression_count": 2297,
-      "like_count": 7,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 1
-     },
-     "cred": 73,
-     "heat": 1,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.youtube.com/watch?si=bqE3m0oQizL93Rcu&v=fIMz4rVt6s8&feature=youtu.be",
-     "domain": "youtube.com",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "62f8b5572d",
    "verdict": "excluded",
    "title": "命の砂時計!",
    "summary": null,
    "score": 44,
    "credibility": 70,
-   "heat": 5,
+   "heat": 4,
    "first_seen": "2026-11-02T08:14:38.000Z",
    "latest": "2026-11-02T08:14:38.000Z",
    "authors": [
@@ -4178,7 +5005,7 @@
       "retweet_count": 1
      },
      "cred": 70,
-     "heat": 5,
+     "heat": 4,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4215,7 +5042,7 @@
    "summary": null,
    "score": 44,
    "credibility": 70,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-11-02T13:07:26.000Z",
    "latest": "2026-11-02T13:07:26.000Z",
    "authors": [
@@ -4250,7 +5077,7 @@
       "retweet_count": 1
      },
      "cred": 70,
-     "heat": 6,
+     "heat": 5,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4287,7 +5114,7 @@
    "summary": null,
    "score": 44,
    "credibility": 70,
-   "heat": 6,
+   "heat": 4,
    "first_seen": "2026-11-03T09:02:04.000Z",
    "latest": "2026-11-03T09:02:04.000Z",
    "authors": [
@@ -4322,7 +5149,7 @@
       "retweet_count": 0
      },
      "cred": 70,
-     "heat": 6,
+     "heat": 4,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4403,150 +5230,6 @@
      ],
      "author_type": "practitioner",
      "author_role": "プログラマー・技術書著者"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "74eecff900",
-   "verdict": "excluded",
-   "title": "APLがアップを始めている",
-   "summary": null,
-   "score": 43,
-   "credibility": 70,
-   "heat": 2,
-   "first_seen": "2026-11-01T00:38:31.000Z",
-   "latest": "2026-11-01T00:38:31.000Z",
-   "authors": [
-    {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116691318760165404",
-     "url": "https://x.com/shi3z/status/2116691318760165404",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "APLがアップを始めている https://t.co/8rO6tMTa4o",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T00:38:31.000Z",
-     "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 2183,
-      "like_count": 8,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 2
-     },
-     "cred": 70,
-     "heat": 2,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "33e2522f69",
-   "verdict": "excluded",
-   "title": "まあ二倍の値段でしかないからなあ",
-   "summary": null,
-   "score": 42,
-   "credibility": 70,
-   "heat": 1,
-   "first_seen": "2026-11-01T00:36:09.000Z",
-   "latest": "2026-11-01T00:36:09.000Z",
-   "authors": [
-    {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116690722854433274",
-     "url": "https://x.com/shi3z/status/2116690722854433274",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "まあ二倍の値段でしかないからなあ https://t.co/YT8XQP7mMV",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T00:36:09.000Z",
-     "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 2406,
-      "like_count": 5,
-      "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 0
-     },
-     "cred": 70,
-     "heat": 1,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
     }
    ],
    "links": [],
@@ -4713,14 +5396,108 @@
    "usable": false
   },
   {
-   "id": "968d28ac0f",
+   "id": "63e2396b10",
    "verdict": "excluded",
-   "title": "米国勢調査局のAI導入調査にホワイトハウス命令が影響と指摘",
-   "summary": "開発者のSimon Willison氏が、米国企業のAI導入率の推移を示す図を更新する中で、米国勢調査局（Census Bureau）の長期調査が「Super Intelligence」と呼ばれる大統領令（executive order）によって影響を受けていると指摘した。Ethan Mollick氏は、AI導入は増え続けており、夏には減少したとの見方が誤りだったと述べ、Willison氏の手法の議論も評価している。Mollick氏はまた、GDPvalの後継となる評価ベンチマークについて、人間の基準値が必要だと述べ、GPT-6 Proが採点の誤りを指摘したとも書いている。",
-   "score": 38,
+   "title": "Codexのセキュリティの仕組みを解説する記事を紹介",
+   "summary": "プログラマーでnpaka氏が、コーディング支援ツール「Codex」のセキュリティの仕組みを、Sandbox・Trust・Approvalという観点から整理した記事をnote上で紹介した。投稿はタイトルと記事リンクのみで、内容の詳細は投稿からは分からない。",
+   "score": 39,
    "credibility": 73,
-   "heat": 27,
-   "first_seen": "2026-11-02T06:30:33.000Z",
+   "heat": 24,
+   "first_seen": "2026-11-04T01:51:50.000Z",
+   "latest": "2026-11-04T01:51:50.000Z",
+   "authors": [
+    {
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "プログラマー・技術書著者",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117796935235174885",
+     "url": "https://x.com/npaka123/status/2117796935235174885",
+     "username": "npaka123",
+     "name": "布留川英一 / Hidekazu Furukawa",
+     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
+     "text": "Codexのセキュリティの仕組み - Sandbox・Trust・Approvalを理解する｜npaka @npaka123 https://t.co/EqAP1PzEYt",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-04T01:51:50.000Z",
+     "metrics": {
+      "bookmark_count": 3,
+      "impression_count": 723,
+      "like_count": 3,
+      "quote_count": 0,
+      "reply_count": 1,
+      "retweet_count": 1
+     },
+     "cred": 73,
+     "heat": 24,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "プログラマー・技術書著者"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://note.com/npaka/n/n00dcc54360eb?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "注目サービス：Codex"
+   ],
+   "reasons_neg": [
+    "根拠：評論・解説のみ（noteの解説記事の紹介）"
+   ],
+   "llm_note": "技術書著者による記事紹介で、一次情報ではなく解説の案内にとどまる。",
+   "points": [
+    "Sandbox（隔離環境）・Trust（信頼設定）・Approval（実行承認）の3点が理解の軸になるとみられる。",
+    "AIにコードを書かせて実行させる場合、どこまで自動で動くかを知る手がかりになる。",
+    "記事本文の正確性や最新の仕様との一致は未確認。公式ドキュメントとの照合が必要。"
+   ],
+   "terms": [],
+   "evidence": "commentary",
+   "evidence_label": "評論・解説のみ",
+   "evidence_note": "noteの解説記事の紹介",
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 3,
+    "why": "AIツールの安全な使い方に関係し、無料で試せる範囲もある"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "a7ded45c44",
+   "verdict": "excluded",
+   "title": "米国勢のAI導入率データ、調査方法の変更が議論に",
+   "summary": "Simon Willison氏が、米国国勢調査局の長期調査をもとにした企業のAI導入推移の図を更新していた際、調査機関の作業が大統領令「Super Intelligence」の影響を受けているように見えたと述べた。Wharton大学のEthan Mollick教授は、導入率は引き続き伸びていると述べ、Willison氏の方法論の解説を評価した。",
+   "score": 37,
+   "credibility": 73,
+   "heat": 25,
+   "first_seen": "2026-11-02T19:24:46.000Z",
    "latest": "2026-11-02T19:28:39.000Z",
    "authors": [
     {
@@ -4742,7 +5519,7 @@
      "former": ""
     }
    ],
-   "post_count": 3,
+   "post_count": 2,
    "posts": [
     {
      "id": "2117337139633607167",
@@ -4763,7 +5540,7 @@
       "retweet_count": 5
      },
      "cred": 73,
-     "heat": 22,
+     "heat": 20,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4790,34 +5567,7 @@
       "retweet_count": 9
      },
      "cred": 70,
-     "heat": 27,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "researcher",
-     "author_role": "Wharton教授"
-    },
-    {
-     "id": "2117142297934757916",
-     "url": "https://x.com/emollick/status/2117142297934757916",
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
-     "text": "Nice to see a successor to GDPval to evaluate AI work but really needs human baselines like GDPval.\n\nFunnily enough, GPT-6 Pro spotted some errors in the grading. I also think the 0% scores hide economically meaningful differences in success rates. But still a valuable benchmark! https://t.co/mfKfsKzcpM https://t.co/DBqS9czZ8t",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-02T06:30:33.000Z",
-     "metrics": {
-      "bookmark_count": 35,
-      "impression_count": 14805,
-      "like_count": 168,
-      "quote_count": 9,
-      "reply_count": 147,
-      "retweet_count": 6
-     },
-     "cred": 70,
-     "heat": 24,
+     "heat": 25,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4838,25 +5588,25 @@
     "信頼リストの研究者・記者"
    ],
    "reasons_neg": [
-    "根拠：評論・解説のみ（他者の統計の解説・感想）"
+    "根拠：評論・解説のみ（他人の統計を見た本人の論評）"
    ],
-   "llm_note": "研究者・実務家の発言が中心で、統計の一次データや元の調査報告へのリンクは確認できない。",
+   "llm_note": "実務者と研究者の投稿で、元の分析リンクはあるが、この投稿だけでは一次データの確認はできない。",
    "points": [
-    "米国企業のAI導入率は調査手法の変更で数字が動くため、数値の読み方に注意が必要",
-    "「Super Intelligence」大統領令が調査に具体的にどう影響したかは、投稿だけでは詳細不明",
-    "GDPvalの後継ベンチマークは、AIの仕事の出来を測る新しい指標として注目される"
+    "新しい点は、公的統計の調査方法や運用が変わった可能性が議論されていること。",
+    "AI導入の実態を数字で判断したい人にとって、データの前提が変わると結論も変わりうる。",
+    "何がどう変わったか、影響の大きさは投稿からは未確認。元の分析で確認が必要。"
    ],
    "terms": [],
    "evidence": "commentary",
    "evidence_label": "評論・解説のみ",
-   "evidence_note": "他者の統計の解説・感想",
+   "evidence_note": "他人の統計を見た本人の論評",
    "services": [],
    "events": [],
    "value": {
     "impact": 2,
     "closeness": 2,
     "try_cost": 1,
-    "why": "AI導入の全体動向を知る材料になるが、自分の業務で試せるものではない"
+    "why": "AI導入の全体像の判断に役立つが、個人事業の作業には直接効かない"
    },
    "first_step": null,
    "usable": false
@@ -4866,9 +5616,9 @@
    "verdict": "excluded",
    "title": "生成AIに入力した情報を消す方法と保存期間を整理",
    "summary": "AI論文紹介メディア「AIDB」の運営者が、生成AIでチャット履歴を削除しても、メモリ・ファイルのライブラリ・共有リンクには情報が残ることがあると紹介する記事を告知した。各サービスでサーバーに残る期間の一覧も記事で整理されているという。",
-   "score": 38,
+   "score": 36,
    "credibility": 78,
-   "heat": 17,
+   "heat": 14,
    "first_seen": "2026-11-03T05:48:00.000Z",
    "latest": "2026-11-03T05:48:00.000Z",
    "authors": [
@@ -4903,7 +5653,7 @@
       "retweet_count": 3
      },
      "cred": 78,
-     "heat": 17,
+     "heat": 14,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -4953,9 +5703,9 @@
    "verdict": "excluded",
    "title": "ベテランのノウハウをAIに教えるときの難しさを解説",
    "summary": "AI論文紹介メディア「AIDB」の運営者が、ベテラン社員が自分のノウハウをAIに教えたがらない理由と、それでも引き出すための工夫を紹介する記事を告知した。投稿は記事の導入部分の紹介で、具体的な手法の検証結果は投稿からは読み取れない。",
-   "score": 36,
+   "score": 34,
    "credibility": 78,
-   "heat": 17,
+   "heat": 14,
    "first_seen": "2026-11-03T07:04:00.000Z",
    "latest": "2026-11-03T07:04:00.000Z",
    "authors": [
@@ -4990,7 +5740,7 @@
       "retweet_count": 4
      },
      "cred": 78,
-     "heat": 17,
+     "heat": 14,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -5036,94 +5786,13 @@
    "usable": false
   },
   {
-   "id": "c3805a67ad",
-   "verdict": "excluded",
-   "title": "Googleの研究、AIのコード修正で言い張りに流される問題",
-   "summary": "AI論文紹介メディア「AIDB」が、Googleの研究者による報告を紹介している。ユーザーが根拠なく「おかしいのでは」と返すと、AIが正しい箇所まで書き換えてしまうケースが最大8割に上ったという。研究では5つのGeminiでプログラム修正やレポート作成を試し、Gemini 4 Argonでも誤判断が見られた。対策として、ユーザーに反論される前に、AIが判断と根拠を先にメモしておくことが有効だとされている。",
-   "score": 34,
-   "credibility": 75,
-   "heat": 22,
-   "first_seen": "2026-11-01T02:20:23.000Z",
-   "latest": "2026-11-01T02:20:23.000Z",
-   "authors": [
-    {
-     "username": "ai_database",
-     "name": "AIDB",
-     "tier": 2,
-     "type": "commentator",
-     "type_label": "評論・解説",
-     "role": "AI論文紹介メディア「AIDB」運営",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2116716956225360043",
-     "url": "https://x.com/ai_database/status/2116716956225360043",
-     "username": "ai_database",
-     "name": "AIDB",
-     "avatar": "https://pbs.twimg.com/profile_images/2074743630062030848/IXDLZ2Km_normal.jpg",
-     "text": "Googleの研究者によると、AIにプログラムを直させた際、ユーザーが（根拠なしに）「まだおかしいんじゃない」と返すと、最大8割で\"正しい箇所まで\"書き換えてしまうそうです。\nこれを防ぐには、ユーザーに詰められる前にAI自身が「判断と根拠」を先にメモしておくのが有効とのこと。\n\n研究者は、5つのGeminiにプログラムの修正やレポートの作成をさせて確かめました。\nその結果、ユーザーの根拠のない詰めに対して、Gemini 4 Argonでもよく判断を誤ることがわかりました。\n\nそこで「判断と根拠」をAI自身が書くことが大事。\nただしタイミングが重要です。\nユーザーの反論を読んだ後に書かせても、ほとんど意味はありません。詰められる前に書いておく必要があります。\n\nなお、「もっと頑固になってもいいんですよ」と指示する方法も試されていますが、こちらは正しい指摘まで突っぱねるようになったそうです。\n\nちなみに、判断と根拠を先にメモしておくのは、まるでポーカーの「何に賭けるかは先に記録する」のようだ、とのことです。",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-01T02:20:23.000Z",
-     "metrics": {
-      "bookmark_count": 123,
-      "impression_count": 15225,
-      "like_count": 204,
-      "quote_count": 10,
-      "reply_count": 8,
-      "retweet_count": 37
-     },
-     "cred": 75,
-     "heat": 22,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "commentator",
-     "author_role": "AI論文紹介メディア「AIDB」運営"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [
-    "根拠：評論・解説のみ（論文の紹介記事）"
-   ],
-   "llm_note": "Google研究者の論文を紹介する記事で、一次の論文は未確認。研究内容としては信頼できそうだが元資料の確認が必要。",
-   "points": [
-    "反論を読んだ後に根拠を書かせても効果は小さく、先に書いておくことが重要とされる",
-    "「もっと頑固になって」と指示すると、正しい指摘まで否定するようになったという",
-    "\"最大8割\"などの数値は紹介記事の内容で、元の論文の条件（タスク・モデル）は投稿からは確認できない"
-   ],
-   "terms": [],
-   "evidence": "commentary",
-   "evidence_label": "評論・解説のみ",
-   "evidence_note": "論文の紹介記事",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "AIにコード修正や手順書作成を頼む際の注意点として役立つ可能性がある"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "6eead1e0ca",
    "verdict": "excluded",
    "title": "脆弱性発見では高価なAIが必ずしも優れないとの記事紹介",
    "summary": "AI論文紹介メディア「AIDB」の運営者が、脆弱性1件あたりの費用で比べると高価なモデルが安価なモデルより発見率で劣ることがあり、安価なモデルを2〜3種類使う方がコスパが良い場合があると紹介する記事を告知した。",
-   "score": 31,
+   "score": 30,
    "credibility": 78,
-   "heat": 11,
+   "heat": 9,
    "first_seen": "2026-11-03T03:40:02.000Z",
    "latest": "2026-11-03T03:40:02.000Z",
    "authors": [
@@ -5158,7 +5827,7 @@
       "retweet_count": 4
      },
      "cred": 78,
-     "heat": 11,
+     "heat": 9,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -5210,7 +5879,7 @@
    "summary": "AI論文紹介アカウントが、低照度画像の画質改善手法「GLOW-FM」の論文を紹介した。タイトルは「One-Step Latent Flow Matching」を用いた効率的な生成型の低照度画像強調とされる。投稿は論文へのリンクを示すのみで、性能や具体的な仕組みの詳細は含まれていない。",
    "score": 29,
    "credibility": 85,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-11-02T16:42:34.000Z",
    "latest": "2026-11-02T16:42:34.000Z",
    "authors": [
@@ -5245,7 +5914,7 @@
       "retweet_count": 3
      },
      "cred": 85,
-     "heat": 10,
+     "heat": 9,
      "pos": [
       "信頼リストの研究者・記者",
       "一次情報リンク（huggingface.co）"
@@ -5286,6 +5955,85 @@
     "closeness": 1,
     "try_cost": 1,
     "why": "研究段階の画像処理手法で、現場での利用手段はまだ見えない"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "af549d3689",
+   "verdict": "excluded",
+   "title": "GDPvalの後継となる、AI業務評価ベンチマークが公開",
+   "summary": "Wharton大学のEthan Mollick教授が、GDPvalの後継となるAI業務評価ベンチマークの登場を歓迎する投稿をした。教授は、人間の基準値（ベースライン）が必要だと指摘した。また、GPT-6 Proが採点の誤りをいくつか見つけたこと、0%のスコアが実際の成功率の差を隠している可能性にも触れた。",
+   "score": 29,
+   "credibility": 70,
+   "heat": 23,
+   "first_seen": "2026-11-02T06:30:33.000Z",
+   "latest": "2026-11-02T06:30:33.000Z",
+   "authors": [
+    {
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "tier": 2,
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "Wharton教授",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117142297934757916",
+     "url": "https://x.com/emollick/status/2117142297934757916",
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
+     "text": "Nice to see a successor to GDPval to evaluate AI work but really needs human baselines like GDPval.\n\nFunnily enough, GPT-6 Pro spotted some errors in the grading. I also think the 0% scores hide economically meaningful differences in success rates. But still a valuable benchmark! https://t.co/mfKfsKzcpM https://t.co/DBqS9czZ8t",
+     "lang": "en",
+     "text_ja": "GDPvalの後継となるAIの仕事評価ベンチマークが出てきたのは良いことだ。ただ、本当に必要なのはGDPvalのような人間の基準値（ベースライン）だ。\n\n面白いことに、GPT-6 Proが採点の誤りをいくつか見つけた。また、0%のスコアは経済的に意味のある成功率の差を隠してしまっていると思う。とはいえ、価値のあるベンチマークだ。 https://t.co/mfKfsKzcpM https://t.co/DBqS9czZ8t",
+     "created_at": "2026-11-02T06:30:33.000Z",
+     "metrics": {
+      "bookmark_count": 35,
+      "impression_count": 14805,
+      "like_count": 168,
+      "quote_count": 9,
+      "reply_count": 147,
+      "retweet_count": 6
+     },
+     "cred": 70,
+     "heat": 23,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "researcher",
+     "author_role": "Wharton教授"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "根拠：評論・解説のみ（研究者の短い感想投稿）"
+   ],
+   "llm_note": "Wharton教授という専門家の発言だが、ベンチマーク本体や結果データへのリンクの中身は投稿文からは確認できず、評価の感想にとどまるため裏付け待ちとした。",
+   "points": [
+    "GDPvalは実務的なタスクでAIを評価する枠組みとされ、その後継は仕事での実用性を測る方向とみられる（一般的背景、投稿からの確認は未了）",
+    "人間の基準値がないと、AIのスコアが実際の人間の作業と比べてどうかが分からない",
+    "0%のスコアでも成功率に意味のある差がある可能性があり、数値の読み方に注意が必要"
+   ],
+   "terms": [],
+   "evidence": "commentary",
+   "evidence_label": "評論・解説のみ",
+   "evidence_note": "研究者の短い感想投稿",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "業界の評価指標の動向として参考になるが、直接使うツールではない"
    },
    "first_step": null,
    "usable": false
@@ -5383,9 +6131,9 @@
    "verdict": "excluded",
    "title": "スウェーデンの起業事情を皮肉る個人投稿、資金調達額を並べる",
    "summary": "【意見】個人のパロディアカウントSwedenTheDealが、ストックホルムでのAIスタートアップの起業事情を風刺的に書いた。投稿内ではLovable、Legora、Tandem Healthがそれぞれ大型の資金調達をしたと述べられている。",
-   "score": 26,
+   "score": 25,
    "credibility": 50,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-11-02T19:38:09.000Z",
    "latest": "2026-11-02T19:38:09.000Z",
    "authors": [
@@ -5420,7 +6168,7 @@
       "retweet_count": 1
      },
      "cred": 50,
-     "heat": 9,
+     "heat": 8,
      "pos": [],
      "neg": [],
      "author_type": "individual",
@@ -5477,9 +6225,9 @@
    "verdict": "excluded",
    "title": "Mac Studio 512GBのAI用途での評価を記事で公開",
    "summary": "ギリア株式会社のファウンダー・顧問であるshi3z氏が、note記事で「MacStudio 512GBがAI用途に不向きな理由」と今買うべき製品について無料部分に加筆したと投稿した。別の投稿では、その記事が多く読まれ新しいGPUを買えそうだと述べている。",
-   "score": 25,
+   "score": 23,
    "credibility": 73,
-   "heat": 18,
+   "heat": 14,
    "first_seen": "2026-11-02T06:54:56.000Z",
    "latest": "2026-11-03T07:55:47.000Z",
    "authors": [
@@ -5514,7 +6262,7 @@
       "retweet_count": 5
      },
      "cred": 73,
-     "heat": 18,
+     "heat": 14,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5541,7 +6289,7 @@
       "retweet_count": 10
      },
      "cred": 73,
-     "heat": 14,
+     "heat": 12,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5585,101 +6333,13 @@
    "usable": false
   },
   {
-   "id": "ac1b91c4a7",
-   "verdict": "excluded",
-   "title": "AI Engineer Summitの最終トラックテーマを発表",
-   "summary": "AI Engineer Summitの主催者swyx氏が、最終トラックテーマ「Raising your Ambition」と登壇者を発表した。サンフランシスコで約1000人を集める会議で、YouTubeでもライブ配信されるとしている。キーノート講演者については、Adobeスイートを複製したという話題にも触れている。",
-   "score": 25,
-   "credibility": 61,
-   "heat": 37,
-   "first_seen": "2026-11-03T18:03:50.000Z",
-   "latest": "2026-11-03T18:03:50.000Z",
-   "authors": [
-    {
-     "username": "swyx",
-     "name": "swyx 🗽 @aiDotEngineer NYC",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "AI Engineer Summit主催・開発者",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2117679157035602065",
-     "url": "https://x.com/swyx/status/2117679157035602065",
-     "username": "swyx",
-     "name": "swyx 🗽 @aiDotEngineer NYC",
-     "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
-     "text": "As part of the most insane AIE lineup to end 2026, we're also excited to announce our final track theme:\n\n*Raising your Ambition*\n\nfeaturing @jxnlco, @trq212, @jarredsumner, @sqs, @mitsuhiko, @dexhorthy, @BuiltByJustin (StrongDM Dark Factory) \n\nand a special keynote from @echelon in his first big appearance since cloning the entire Adobe suite last month... and talking about how and what's next!\n\ngathering 1000 of the top agentic engineers in person in SF and livestreamed to 2M MAU online on youtube. join here: https://t.co/bx6aYCqlW8 <- see you in SF!",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-03T18:03:50.000Z",
-     "metrics": {
-      "bookmark_count": 7,
-      "impression_count": 4763,
-      "like_count": 33,
-      "quote_count": 0,
-      "reply_count": 22,
-      "retweet_count": 5
-     },
-     "cred": 61,
-     "heat": 37,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "釣り表現：insane"
-     ],
-     "author_type": "practitioner",
-     "author_role": "AI Engineer Summit主催・開発者"
-    }
-   ],
-   "links": [
-    {
-     "url": "http://aie.codes",
-     "domain": "aie.codes",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "根拠：宣伝（イベントの宣伝投稿）",
-    "釣り表現：insane"
-   ],
-   "llm_note": "イベント告知（宣伝）であり、読者の業務に直接役立つ情報ではない。",
-   "points": [
-    "登壇者の発表で、会議はエージェント開発者向けの色が強い",
-    "キーノート内容の「Adobeスイートの複製」は投稿の表現で、事実関係は未確認",
-    "参加・視聴は無料か有料かなど、条件は投稿からは分からない"
-   ],
-   "terms": [],
-   "evidence": "promo",
-   "evidence_label": "宣伝",
-   "evidence_note": "イベントの宣伝投稿",
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "セミナー告知で、今日試せるツールや手順はない"
-   },
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "15694ca977",
    "verdict": "excluded",
    "title": "プログラマーが他者のプロンプトを使ったと投稿",
    "summary": "プログラマーでありIT技術書の著者とされる npaka123 氏が、「プロンプトを使わせていただきました」と短く投稿した。投稿には添付のリンク2件があるが、リンク先の内容は本文からは確認できない。どのプロンプトで何を作ったかは本文に書かれていない。",
-   "score": 25,
+   "score": 23,
    "credibility": 70,
-   "heat": 22,
+   "heat": 17,
    "first_seen": "2026-11-03T12:18:13.000Z",
    "latest": "2026-11-03T12:18:13.000Z",
    "authors": [
@@ -5714,7 +6374,7 @@
       "retweet_count": 2
      },
      "cred": 70,
-     "heat": 22,
+     "heat": 17,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5757,95 +6417,80 @@
    "usable": false
   },
   {
-   "id": "d8ca9586e2",
+   "id": "cd48017764",
    "verdict": "excluded",
-   "title": "1枚の画像から動く3Dヘアモデルを生成するAI「HairDeck」の紹介",
-   "summary": "プログラマーのnpaka氏が、1枚の画像から動く3Dヘアモデルを生成するAI「HairDeck」について概要を紹介した。詳細はnoteの記事にまとめられている。",
+   "title": "全日本AIハッカソンの決勝で来場者が審査に参加できると告知",
+   "summary": "ギリア株式会社のファウンダー・顧問であるshi3z氏が、今年の全日本AIハッカソンの決勝について、来場者も審査に参加できる機会があると告知した。投稿では、審査の場で何が起きるかへの期待も述べている。",
    "score": 23,
-   "credibility": 73,
-   "heat": 7,
-   "first_seen": "2026-11-01T01:27:10.000Z",
-   "latest": "2026-11-01T01:27:10.000Z",
+   "credibility": 70,
+   "heat": 12,
+   "first_seen": "2026-11-03T23:14:22.000Z",
+   "latest": "2026-11-03T23:14:22.000Z",
    "authors": [
     {
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
+     "username": "shi3z",
+     "name": "shi3z",
      "tier": 2,
      "type": "practitioner",
      "type_label": "実務家",
-     "role": "プログラマー・技術書著者",
+     "role": "ギリア株式会社ファウンダー・顧問",
      "former": ""
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2116703562390810911",
-     "url": "https://x.com/npaka123/status/2116703562390810911",
-     "username": "npaka123",
-     "name": "布留川英一 / Hidekazu Furukawa",
-     "avatar": "https://pbs.twimg.com/profile_images/1497823072560492545/PoUh9VNk_normal.jpg",
-     "text": "HairDeck の概要 - 1枚画像から動く3Dヘアモデルを生成するAI｜npaka @npaka123 https://t.co/zzBEqgiM7t",
+     "id": "2117757306154955236",
+     "url": "https://x.com/shi3z/status/2117757306154955236",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "今年の全日本AIハッカソンの決勝は来場者にも審査に参加するチャンスが！誤魔化しのきかない世界で何が起きるか！？ https://t.co/ddaKDpXdYl",
      "lang": "ja",
      "text_ja": null,
-     "created_at": "2026-11-01T01:27:10.000Z",
+     "created_at": "2026-11-03T23:14:22.000Z",
      "metrics": {
-      "bookmark_count": 22,
-      "impression_count": 2831,
-      "like_count": 33,
+      "bookmark_count": 0,
+      "impression_count": 1331,
+      "like_count": 7,
       "quote_count": 0,
       "reply_count": 0,
-      "retweet_count": 5
+      "retweet_count": 0
      },
-     "cred": 73,
-     "heat": 7,
+     "cred": 70,
+     "heat": 12,
      "pos": [
       "信頼リストの研究者・記者"
      ],
      "neg": [],
      "author_type": "practitioner",
-     "author_role": "プログラマー・技術書著者"
+     "author_role": "ギリア株式会社ファウンダー・顧問"
     }
    ],
-   "links": [
-    {
-     "url": "https://note.com/npaka/n/n06fcb7653436?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
+   "links": [],
    "reasons_pos": [
     "信頼リストの研究者・記者"
    ],
    "reasons_neg": [
-    "根拠：評論・解説のみ（noteの概要記事への紹介）"
+    "根拠：宣伝（イベント告知の投稿）"
    ],
-   "llm_note": "技術書著者による紹介で、noteの概要記事へのリンクがあるが、本人の検証結果は投稿からは読み取れない。",
+   "llm_note": "イベントの告知投稿で、AIツールや技術の検証結果を含まないため、読者の判断材料としては宣伝・告知扱いとした。",
    "points": [
-    "1枚の画像から髪の3Dモデルを作れる点が特徴とされるが、投稿では精度や対応範囲は分からない",
-    "3Dアバターやゲーム・映像制作での髪の表現に関係するとみられるが、製造業の業務との直接の関係は薄い",
-    "実際に使えるか（公開状況・料金・動作環境）は記事を見るまで未確認"
+    "来場者が審査に参加できる形式は、一般の人がAI作品を評価する場になる点が特徴とみられる（詳細は未確認）",
+    "AIを使って個人や小さなチームが作ったものを実際に見る機会になり得る",
+    "開催日時や参加方法などの詳細は投稿からは分からない"
    ],
-   "terms": [
-    {
-     "term": "3Dヘアモデル",
-     "desc": "髪の毛の形や動きをコンピューター上で立体的に再現したデータ"
-    },
-    {
-     "term": "概要",
-     "desc": "投稿では内容の詳細は示されず、リンク先の記事で確認する必要がある"
-    }
-   ],
-   "evidence": "commentary",
-   "evidence_label": "評論・解説のみ",
-   "evidence_note": "noteの概要記事への紹介",
+   "terms": [],
+   "evidence": "promo",
+   "evidence_label": "宣伝",
+   "evidence_note": "イベント告知の投稿",
    "services": [],
    "events": [],
    "value": {
     "impact": 1,
     "closeness": 1,
     "try_cost": 2,
-    "why": "髪の3Dモデル生成で製造現場の業務からは遠い。試せるかは未確認"
+    "why": "イベント告知のみで、現場のAI活用に直接つながる情報が少ない"
    },
    "first_step": null,
    "usable": false
@@ -5936,60 +6581,62 @@
    "usable": false
   },
   {
-   "id": "bdeae80563",
+   "id": "ac1b91c4a7",
    "verdict": "excluded",
-   "title": "shi3z氏がAIフェスの開催4日前を告知",
-   "summary": "ギリア株式会社のファウンダー・顧問であるshi3z氏が、「AIフェス」まであと4日だと投稿した。内容や開催場所などの詳細は投稿からは分からない。",
+   "title": "AI Engineer Summitの最終トラックテーマを発表",
+   "summary": "AI Engineer Summitの主催者swyx氏が、最終トラックテーマ「Raising your Ambition」と登壇者を発表した。サンフランシスコで約1000人を集める会議で、YouTubeでもライブ配信されるとしている。キーノート講演者については、Adobeスイートを複製したという話題にも触れている。",
    "score": 20,
-   "credibility": 73,
-   "heat": 6,
-   "first_seen": "2026-11-03T06:26:32.000Z",
-   "latest": "2026-11-03T06:26:32.000Z",
+   "credibility": 61,
+   "heat": 23,
+   "first_seen": "2026-11-03T18:03:50.000Z",
+   "latest": "2026-11-03T18:03:50.000Z",
    "authors": [
     {
-     "username": "shi3z",
-     "name": "shi3z",
+     "username": "swyx",
+     "name": "swyx 🗽 @aiDotEngineer NYC",
      "tier": 2,
      "type": "practitioner",
      "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
+     "role": "AI Engineer Summit主催・開発者",
      "former": ""
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2117503675774140714",
-     "url": "https://x.com/shi3z/status/2117503675774140714",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "AIフェスまであと4日!｜shi3z @shi3z https://t.co/M7tRV3g485",
-     "lang": "ja",
+     "id": "2117679157035602065",
+     "url": "https://x.com/swyx/status/2117679157035602065",
+     "username": "swyx",
+     "name": "swyx 🗽 @aiDotEngineer NYC",
+     "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
+     "text": "As part of the most insane AIE lineup to end 2026, we're also excited to announce our final track theme:\n\n*Raising your Ambition*\n\nfeaturing @jxnlco, @trq212, @jarredsumner, @sqs, @mitsuhiko, @dexhorthy, @BuiltByJustin (StrongDM Dark Factory) \n\nand a special keynote from @echelon in his first big appearance since cloning the entire Adobe suite last month... and talking about how and what's next!\n\ngathering 1000 of the top agentic engineers in person in SF and livestreamed to 2M MAU online on youtube. join here: https://t.co/bx6aYCqlW8 <- see you in SF!",
+     "lang": "en",
      "text_ja": null,
-     "created_at": "2026-11-03T06:26:32.000Z",
+     "created_at": "2026-11-03T18:03:50.000Z",
      "metrics": {
-      "bookmark_count": 0,
-      "impression_count": 2479,
-      "like_count": 8,
+      "bookmark_count": 7,
+      "impression_count": 4763,
+      "like_count": 33,
       "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 1
+      "reply_count": 22,
+      "retweet_count": 5
      },
-     "cred": 73,
-     "heat": 6,
+     "cred": 61,
+     "heat": 23,
      "pos": [
       "信頼リストの研究者・記者"
      ],
-     "neg": [],
+     "neg": [
+      "釣り表現：insane"
+     ],
      "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
+     "author_role": "AI Engineer Summit主催・開発者"
     }
    ],
    "links": [
     {
-     "url": "https://note.com/shi3zblog/n/n06a0a878fe3f?sub_rt=share_pw",
-     "domain": "note.com",
+     "url": "http://aie.codes",
+     "domain": "aie.codes",
      "primary": false
     }
    ],
@@ -5997,24 +6644,26 @@
     "信頼リストの研究者・記者"
    ],
    "reasons_neg": [
-    "根拠：宣伝（イベント告知の一言投稿）"
+    "根拠：宣伝（イベントの宣伝投稿）",
+    "釣り表現：insane"
    ],
-   "llm_note": "イベントの開催告知のみで、技術情報や検証結果を含まないため除外。",
+   "llm_note": "イベント告知（宣伝）であり、読者の業務に直接役立つ情報ではない。",
    "points": [
-    "開催告知のみで、AIツールや技術の新しい情報は含まれていない。",
-    "参加を検討する場合は公式の告知ページで日程・内容を確認する必要がある。"
+    "登壇者の発表で、会議はエージェント開発者向けの色が強い",
+    "キーノート内容の「Adobeスイートの複製」は投稿の表現で、事実関係は未確認",
+    "参加・視聴は無料か有料かなど、条件は投稿からは分からない"
    ],
    "terms": [],
    "evidence": "promo",
    "evidence_label": "宣伝",
-   "evidence_note": "イベント告知の一言投稿",
+   "evidence_note": "イベントの宣伝投稿",
    "services": [],
    "events": [],
    "value": {
     "impact": 1,
     "closeness": 1,
     "try_cost": 1,
-    "why": "技術的な内容や試せるツールの情報がない。"
+    "why": "セミナー告知で、今日試せるツールや手順はない"
    },
    "first_step": null,
    "usable": false
@@ -6100,6 +6749,90 @@
     "closeness": 1,
     "try_cost": 2,
     "why": "音楽生成は製造業の業務とほぼ無関係"
+   },
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "bdeae80563",
+   "verdict": "excluded",
+   "title": "shi3z氏がAIフェスの開催4日前を告知",
+   "summary": "ギリア株式会社のファウンダー・顧問であるshi3z氏が、「AIフェス」まであと4日だと投稿した。内容や開催場所などの詳細は投稿からは分からない。",
+   "score": 19,
+   "credibility": 73,
+   "heat": 4,
+   "first_seen": "2026-11-03T06:26:32.000Z",
+   "latest": "2026-11-03T06:26:32.000Z",
+   "authors": [
+    {
+     "username": "shi3z",
+     "name": "shi3z",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "ギリア株式会社ファウンダー・顧問",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2117503675774140714",
+     "url": "https://x.com/shi3z/status/2117503675774140714",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "AIフェスまであと4日!｜shi3z @shi3z https://t.co/M7tRV3g485",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-03T06:26:32.000Z",
+     "metrics": {
+      "bookmark_count": 0,
+      "impression_count": 2479,
+      "like_count": 8,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 1
+     },
+     "cred": 73,
+     "heat": 4,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "ギリア株式会社ファウンダー・顧問"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://note.com/shi3zblog/n/n06a0a878fe3f?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "根拠：宣伝（イベント告知の一言投稿）"
+   ],
+   "llm_note": "イベントの開催告知のみで、技術情報や検証結果を含まないため除外。",
+   "points": [
+    "開催告知のみで、AIツールや技術の新しい情報は含まれていない。",
+    "参加を検討する場合は公式の告知ページで日程・内容を確認する必要がある。"
+   ],
+   "terms": [],
+   "evidence": "promo",
+   "evidence_label": "宣伝",
+   "evidence_note": "イベント告知の一言投稿",
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "技術的な内容や試せるツールの情報がない。"
    },
    "first_step": null,
    "usable": false

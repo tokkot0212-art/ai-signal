@@ -1,0 +1,346 @@
+{
+ "date": "2026-11-04",
+ "items": [
+  {
+   "id": "e25b2c3e33",
+   "verdict": "confirmed",
+   "title": "OpenAIがChatGPTとCodexを機械設計・電気設計へ応用する取り組みを公表",
+   "summary": "OpenAIの公式アカウントは、ChatGPTとCodexを物理的な製品づくりに使う取り組みを紹介した。機械設計、電気設計、シミュレーションの分野で進捗を共有し、社内のハードウェアチームの反復速度向上や、業界の協力企業との新しいワークフロー試行が挙げられている。",
+   "points": [
+    "新しい点: コーディング向けのCodexを、機械・電気設計やシミュレーションなどハードウェア開発にも広げている",
+    "重要性: 製造業の設計業務にAIが入り込む動きとして、現場の設計者にとって関係が深い",
+    "注意点: 具体的な成果の数値や公開時期は投稿に含まれておらず、詳細は未確認"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのAIを使ったプログラム作成支援ツール。コードを書く・直すことを手伝う"
+    },
+    {
+     "term": "機械設計・電気設計",
+     "desc": "製品の形状や部品、電気回路などを図面として決める仕事"
+    },
+    {
+     "term": "シミュレーション",
+     "desc": "実物を作る前にコンピュータ上で動きや性能を試すこと"
+    }
+   ],
+   "score": 98,
+   "credibility": 90,
+   "heat": 76,
+   "first_seen": "2026-11-03T18:56:45.000Z",
+   "latest": "2026-11-03T18:56:45.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式アカウントの発表",
+   "links": [],
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "製造業の設計に関わるが、具体的な提供内容や料金はこの投稿からは不明"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2117692475775258785",
+    "username": "OpenAI",
+    "text": "ChatGPT and Codex are helping engineers build for the physical world.\n\nWe’re sharing our progress across mechanical design, electrical engineering, and simulation—from helping our hardware teams iterate faster to testing new workflows with industry collaborators. https://t.co/b3rW9zYJGA",
+    "text_ja": "ChatGPTとCodexは、エンジニアが物理世界向けのものづくりを進める手助けをしています。\n\n機械設計、電気工学、シミュレーションの分野での進捗を共有します。社内のハードウェアチームがより速く反復作業を進められるよう支援するとともに、業界のパートナー企業と新しいワークフローのテストも行っています。 https://t.co/b3rW9zYJGA"
+   },
+   "post_ids": [
+    "2117692475775258785"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-04T02:29:24Z"
+  },
+  {
+   "id": "66671f99de",
+   "verdict": "confirmed",
+   "title": "AnthropicがAI応答の出所を検証する手法FlashProveを発表",
+   "summary": "Anthropicは新しい研究として、与えられた応答が特定のAIモデルから生成されたかを検証できる手法「FlashProve」を紹介した。投稿によると、既存のオープンソース手法より大幅に効率的だという。投稿では、チャットの乗っ取り防止や、テスト対象モデルが顧客に提供されるものと同一かの確認などへの応用が挙げられている。",
+   "points": [
+    "新しい点: LLMの応答が本当に指定モデル由来かを暗号技術で証明する「証明可能な推論」の進展とされる",
+    "重要性: 提供事業者や利用者が「出力が正しいモデルから来ている」ことを確認しやすくなる可能性がある",
+    "注意点: 効率性の具体的な数値や実運用での性能は投稿からは読み取れず、詳細は公式記事で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "証明可能な推論",
+     "desc": "AIの出力が本当に特定のモデルから来たことを、暗号的な証拠で確かめられるようにする考え方とみられる"
+    },
+    {
+     "term": "暗号技術",
+     "desc": "情報を安全に扱うための数学的な仕組み。ここでは検証の証拠づくりに使われている"
+    },
+    {
+     "term": "オープンソース",
+     "desc": "ソフトウェアの設計図（コード）を誰でも見て使えるように公開すること"
+    }
+   ],
+   "score": 96,
+   "credibility": 100,
+   "heat": 74,
+   "first_seen": "2026-11-03T19:54:41.000Z",
+   "latest": "2026-11-03T20:10:08.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式研究発表・公式ブログ",
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/provable-inference",
+     "domain": "anthropic.com",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/anthropics/FlashProve",
+     "domain": "github.com",
+     "primary": true
+    },
+    {
+     "url": "http://rdalal.github.io",
+     "domain": "rdalal.github.io",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "安全性・信頼性の研究で、製造現場の業務にすぐ使える段階ではない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+    "username": "AnthropicAI",
+    "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the mo",
+    "text_ja": "Anthropicの新しい研究：大規模言語モデルの「証明可能な推論（provable inference）」に関する進展です。\n\n今回、FlashProveを紹介します。確立された暗号技術を基盤として、FlashProveを使えば、開発者はある応答が特定のAIモデルから生成されたものかどうかを検証できます。これまでのオープンソースの手法と比べて大幅に効率的です。\n\nこの証明にはさまざまな用途があります。たとえば、攻撃者がチャットを乗っ取ることを難しくしたり、安全性評価者が、テストしているモデルが顧客に提供されているモデルと同一であることを検証できたりします。\n\n詳しい解説はこちらをご覧ください：https://t.co/OIZWPb6QZa\n\n証明可能な推論のさらなる進展は、AIの導入に対する信頼を高める上で重要な要素になると考えられます。そのため、FlashProveのコードをオープンソースとして公開しています。こちらからどうぞ：https://t.co/7ky3Ir8V06\n\n共同研究者の皆さまに感謝します：Alessandro Chiesa、@GiacomoFenzi、@gwberg95、@miranda__christ、Rahul Dalal（https://t.co/pjWKLHWXyz）、Ben Mayer（@transmissions11）。"
+   },
+   "post_ids": [
+    "2117710942826123294",
+    "2117707052948898271"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-04T02:29:24Z"
+  },
+  {
+   "id": "f8c41cba5d",
+   "verdict": "confirmed",
+   "title": "NVIDIAがHermes Agentの実行記録を解説する記事を紹介",
+   "summary": "NVIDIAの公式AIアカウントは、「Inside Hermes Agent Traces with NeMo Relay」と題した記事（Nemotron Labs）へのリンクを投稿した。投稿本文は記事タイトルとリンクのみで、内容の詳細は投稿からは分からない。",
+   "points": [
+    "新しい点: AIエージェントの動作記録（トレース）を扱った技術記事とみられるが、内容は未確認",
+    "重要性: エージェントがどう動いたかを追跡する仕組みは、業務への組み込み時の確認作業に関係する",
+    "注意点: 投稿だけでは内容が判断できないため、記事本体を読む必要がある"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受けて、複数の作業を自分で計画して実行するAIのこと"
+    },
+    {
+     "term": "トレース（実行記録）",
+     "desc": "AIが作業中に行った手順や判断を後から確認できるように残した記録"
+    },
+    {
+     "term": "NeMo",
+     "desc": "NVIDIAのAIモデル開発・運用向けのソフトウェア群の名称"
+    }
+   ],
+   "score": 72,
+   "credibility": 90,
+   "heat": 31,
+   "first_seen": "2026-11-03T17:59:36.000Z",
+   "latest": "2026-11-03T17:59:36.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業公式の技術記事リンク",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "エージェントの記録に関する話題だが、投稿だけでは利用可能性や効果が分からない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2117678090918707535",
+    "username": "NVIDIAAI",
+    "text": "Inside Hermes Agent Traces with NeMo Relay | Nemotron Labs https://t.co/PoJf3zj1KF",
+    "text_ja": "NeMo RelayでHermes Agentのトレースを見る | Nemotron Labs https://t.co/PoJf3zj1KF"
+   },
+   "post_ids": [
+    "2117678090918707535"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-04T02:29:24Z"
+  },
+  {
+   "id": "ceb00a494e",
+   "verdict": "promising",
+   "title": "Apple、刷新版「Siri AI」を全開発者に開放",
+   "summary": "ITmedia NEWSが、Appleが刷新版の「Siri AI」を全開発者に開放したと報じた。アプリ連携により、予約や注文などの操作が可能になるとしている。見出しと投稿文のみで、詳細な提供時期や対応地域は確認できない。",
+   "points": [
+    "新しい点は、Siriからアプリの操作を呼び出せる範囲が広がるとみられる点。",
+    "iPhoneを使う個人開発者にとって、アプリに音声操作を組み込む選択肢になる可能性がある。",
+    "提供開始時期・対象国・料金は投稿からは未確認。元記事の確認が必要。"
+   ],
+   "terms": [],
+   "score": 67,
+   "credibility": 78,
+   "heat": 38,
+   "first_seen": "2026-11-04T00:40:08.000Z",
+   "latest": "2026-11-04T00:40:08.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事紹介",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002855/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "iPhone中心の個人開発に関係するが、詳細と提供状況が未確認"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2117778890194342039",
+    "username": "itmedia_news",
+    "text": "Apple、刷新版「Siri AI」を全開発者に開放　アプリ連携で予約や注文などの操作が可能に\nhttps://t.co/loVhlYNnNp",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2117778890194342039"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-04T02:29:24Z"
+  },
+  {
+   "id": "a15d66a930",
+   "verdict": "promising",
+   "title": "Google、学校向けAI機能を原則オフに変更へ",
+   "summary": "ITmedia NEWSが、Googleが学校の生徒向けAI機能を原則オフにすると報じた。「AIなしのGoogle検索」は選べない仕様になり、批判も出ているという。投稿は見出しと記事リンクのみで、対象範囲や時期は確認できない。",
+   "points": [
+    "新しい点は、学校向けにAI機能を初期設定で止める方向が示された点。",
+    "教育現場でのAI利用ルールを考える人に影響し、教育向けサービスの設計にも関係しうる。",
+    "対象地域・適用時期・批判の具体的内容は未確認。元記事で確認が必要。"
+   ],
+   "terms": [],
+   "score": 65,
+   "credibility": 78,
+   "heat": 37,
+   "first_seen": "2026-11-03T22:35:06.000Z",
+   "latest": "2026-11-03T22:35:06.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事紹介",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002849/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "教育用途の設計に関係するが、試せるツールの情報ではない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2117747424471179501",
+    "username": "itmedia_news",
+    "text": "Google、学校の生徒向けAI機能を原則オフへ　「AIなしのGoogle検索」は選べず批判も\nhttps://t.co/WLJsXnlVzs",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2117747424471179501"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-04T02:29:24Z"
+  }
+ ]
+}

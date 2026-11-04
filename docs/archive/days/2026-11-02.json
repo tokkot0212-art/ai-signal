@@ -2,34 +2,34 @@
  "date": "2026-11-02",
  "items": [
   {
-   "id": "bce7d098b7",
+   "id": "2175cf8135",
    "verdict": "confirmed",
-   "title": "MistralがLarge 4を使ったデモ3件を公開",
-   "summary": "Mistral AIの公式アカウントは、同社のモデル「Mistral Large 4」を使った3つの事例を紹介した。衛星・デブリを追跡する3Dアプリの自動作成、研究ワークスペース「Open Math OS」への提供、分子の量子化学計算ソルバーと3D表示の作成などが示されている。",
+   "title": "Mistral、大規模モデル「Mistral Large 4」の活用例を複数公開",
+   "summary": "Mistral AIは公式アカウントで、新モデル「Mistral Large 4」を使った複数のデモを投稿した。内容は、Djangoの脆弱性の発見・修正、衛星追跡アプリの作成、量子化学ソルバーの作成、研究用ワークスペース「Open Math OS」への提供などである。投稿で示された範囲のデモであり、第三者による検証結果は含まれていない。",
    "points": [
-    "新しい点: 同じモデルで、アプリ作成から数学研究、化学計算まで幅広い作業を行ったとされる事例が示されている",
-    "重要性: 1回の指示でコードや可視化まで作れるという例は、業務用ツールづくりの参考になる",
-    "注意点: すべて企業側のデモで、第三者による性能検証や再現性は投稿からは確認できない。Open Math OSは承認されたチームのみ利用可能"
+    "デモは発見→検証→修正まで一連の作業をAIに任せた例として示されている。ただし投稿は宣伝色が強く、成功例のみの可能性がある",
+    "Open Math OSは承認済みのチーム向けに提供中と書かれており、一般の個人が今日すぐ使えるかは不明",
+    "Mistral Large 4は1.05Tのオープンウェイト・1Mコンテキストと記載されている。実際の性能や費用は投稿からは判断できない"
    ],
    "terms": [
     {
      "term": "オープンウェイト",
-     "desc": "AIモデルの学習済みパラメータを公開し、誰でも取得して動かせる形式"
+     "desc": "学習済みモデルの重み（パラメータ）が公開され、誰でも手元で動かせるモデルのこと"
     },
     {
-     "term": "コンテキスト長（1M）",
-     "desc": "AIが一度に読める文章の量。100万は非常に長い文章を扱えることを指す"
+     "term": "脆弱性（CVE）",
+     "desc": "ソフトウェアのセキュリティ上の欠陥。CVEは共通の識別番号のこと"
     },
     {
      "term": "SCFソルバー",
-     "desc": "分子の電子状態を計算する量子化学の計算プログラム"
+     "desc": "量子化学で分子の電子状態を計算するための計算プログラムのこと"
     }
    ],
-   "score": 79,
-   "credibility": 85,
-   "heat": 49,
+   "score": 84,
+   "credibility": 88,
+   "heat": 57,
    "first_seen": "2026-11-02T12:16:06.000Z",
-   "latest": "2026-11-03T17:30:00.000Z",
+   "latest": "2026-11-04T10:24:20.000Z",
    "authors": [
     "MistralAI"
    ],
@@ -43,31 +43,40 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントのデモ紹介",
-   "links": [],
+   "evidence_note": "Mistral公式X投稿（デモ紹介）",
+   "links": [
+    {
+     "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+     "domain": "alphaxiv.org",
+     "primary": false
+    }
+   ],
    "services": [],
    "events": [],
    "value": {
     "impact": 2,
     "closeness": 2,
     "try_cost": 1,
-    "why": "ツール作成の参考になるが、Open Math OSは承認制で一般の読者は今すぐ試せない"
+    "why": "自社製品の宣伝デモで、読者の現場業務に直結せず、利用条件も承認制"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/MistralAI/status/2117574509179900410",
+    "url": "https://x.com/MistralAI/status/2117925908572991748",
     "username": "MistralAI",
-    "text": "We tasked Mistral Large 4 with creating a real-time, 3D tracker of the roughly 19,000 satellites and debris fragments orbiting Earth. \n\nThe model built a working app, tested it like a user, made it fast, and passed strict verification. \n\nPlease meet Orbital Trace : https://t.co/8XQuBNZKMO",
-    "text_ja": "Mistral Large 4に、地球を周回する約19,000個の衛星と宇宙デブリをリアルタイムで3D追跡するツールの作成を依頼しました。\n\nモデルは動作するアプリを構築し、ユーザーのように実際にテストし、処理を高速化し、厳格な検証にも合格しました。\n\nOrbital Traceをご紹介します：https://t.co/8XQuBNZKMO"
+    "text": "Can Mistral Large 4 find a critical vulnerability, prove it and fix it? We tested it on a recent Django CVE.\n\n133 agents map the code, hunt for flaws, test attack scenarios and confirm the bug. Then Le Chonk patches it.\n\nTriage, repro, patch. Shown at 90x speed. https://t.co/NTtZvTQE38",
+    "text_ja": "Mistral Large 4は重大な脆弱性を見つけ、それを証明し、修正できるか？最近のDjango CVEで試してみました。\n\n133のエージェントがコードを解析し、欠陥を探し、攻撃シナリオを試し、バグを確認します。その後、Le Chonkがパッチを当てます。\n\nトリアージ、再現、パッチ。90倍速で表示しています。"
    },
    "post_ids": [
+    "2117925908572991748",
     "2117574509179900410",
     "2117670644506861900",
-    "2117229259425038344"
+    "2117229259425038344",
+    "2117562068220195097",
+    "2117558028111421576"
    ],
-   "post_count": 3,
-   "archived_at": "2026-11-04T02:29:24Z"
+   "post_count": 6,
+   "archived_at": "2026-11-04T16:25:03Z"
   },
   {
    "id": "e8b10f57b9",
@@ -93,9 +102,9 @@
      "desc": "大量のデータであらかじめAIを学習させる工程。基盤モデル作りの土台。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 100,
-   "heat": 17,
+   "heat": 15,
    "first_seen": "2026-11-02T01:43:12.000Z",
    "latest": "2026-11-02T16:00:02.000Z",
    "authors": [
@@ -140,7 +149,7 @@
     "2117285614592950479"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-04T02:29:24Z"
+   "archived_at": "2026-11-04T16:25:03Z"
   },
   {
    "id": "aadd501ded",
@@ -153,9 +162,9 @@
     "投稿内のサイトを実際に試した結果や、著作権・規約面の扱いは未確認。"
    ],
    "terms": [],
-   "score": 88,
+   "score": 87,
    "credibility": 73,
-   "heat": 75,
+   "heat": 72,
    "first_seen": "2026-11-01T18:14:46.000Z",
    "latest": "2026-11-01T18:14:46.000Z",
    "authors": [
@@ -207,7 +216,75 @@
     "2116957135661945283"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-04T02:29:24Z"
+   "archived_at": "2026-11-04T16:25:03Z"
+  },
+  {
+   "id": "6c18255674",
+   "verdict": "promising",
+   "title": "AnthropicがClaudeの「Max 20x」を「Ultra」に改名",
+   "summary": "ITmedia NEWSの公式アカウントが、Anthropicが有料プラン「Claude」の『Max 20x』を『Ultra』に名称変更したと伝えた。月額200ドルで、5時間ごとの利用制限を撤廃したとしている。",
+   "points": [
+    "料金プランの名称と利用制限の変更という、製品の契約条件に関する話題",
+    "利用制限の撤廃の範囲（週間上限の有無など）は投稿からは分からない",
+    "個人事業で毎日AIを長時間使う場合、費用対効果の比較材料になる可能性がある"
+   ],
+   "terms": [
+    {
+     "term": "利用制限（レートリミット）",
+     "desc": "一定時間内に使える量の上限。超えると一時的に使えなくなる"
+    },
+    {
+     "term": "Max 20x",
+     "desc": "Claudeの高額な個人向け有料プランの名称（投稿での旧名）"
+    }
+   ],
+   "score": 55,
+   "credibility": 78,
+   "heat": 7,
+   "first_seen": "2026-11-01T22:05:06.000Z",
+   "latest": "2026-11-01T22:05:06.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの速報（元記事リンクあり）",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002777/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "有料プランの条件変更で、個人の選択に影響するが、業務手順の効率化には直接は効かない"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2117015098250416160",
+    "username": "itmedia_news",
+    "text": "Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更　月200ドルで5時間ごとの利用制限を撤廃\nhttps://t.co/avSs9OiBjR",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2117015098250416160"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-04T16:25:03Z"
   }
  ]
 }

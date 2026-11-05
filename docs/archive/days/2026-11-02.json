@@ -2,19 +2,19 @@
  "date": "2026-11-02",
  "items": [
   {
-   "id": "6b27c7da3f",
+   "id": "2175cf8135",
    "verdict": "confirmed",
-   "title": "Mistral、大規模モデルでのセキュリティ脆弱性検出デモを公開",
-   "summary": "Mistral AI公式アカウントは、同社の大規模モデル「Mistral Large 4」がDjangoの最近のCVE（公開された脆弱性）を見つけ、再現し、修正できるかを試したと投稿した。133のエージェントがコードを解析し、攻撃シナリオを試し、バグを確認した後、「Le Chonk」がパッチを当てる様子を90倍速で示したとされる。あわせて、Le Chonkの開発過程を紹介する記事もarXivとalphaXivで公開されたと案内している。",
+   "title": "Mistral、大規模モデル「Mistral Large 4」の実演事例を公開",
+   "summary": "Mistral AIは公式アカウントで、Mistral Large 4を使った複数のデモを投稿した。Djangoの脆弱性の発見・検証・修正、衛星追跡アプリの作成、分子の量子化学計算ソルバーの作成などが紹介されている。Open Math OSへの導入も発表され、一部チーム向けに提供開始とされている。",
    "points": [
-    "脆弱性の発見・再現・修正を複数のエージェントに分担させる構成がデモの要点。",
-    "デモは公式の動画・投稿によるもので、第三者による再現結果は投稿からは確認できない。",
-    "実際の製品での精度や運用コストは未確認。"
+    "デモは開発元の自社発表であり、第三者による再現や性能の独立評価はまだ確認できない",
+    "Open Math OSは数学者とAIエージェントが共同作業する研究基盤で、オープンモデルのみで構成されるとされる",
+    "読者にとっては、AIに実際のコードを書かせて検証・修正まで任せる使い方の参考になる"
    ],
    "terms": [],
-   "score": 81,
+   "score": 79,
    "credibility": 88,
-   "heat": 51,
+   "heat": 46,
    "first_seen": "2026-11-02T12:16:06.000Z",
    "latest": "2026-11-04T10:24:20.000Z",
    "authors": [
@@ -30,7 +30,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの投稿・デモ動画",
+   "evidence_note": "企業の公式X投稿",
    "links": [
     {
      "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
@@ -44,7 +44,7 @@
     "impact": 2,
     "closeness": 2,
     "try_cost": 1,
-    "why": "セキュリティ自動化は関心分野だが、モデル自体の利用条件は投稿から不明"
+    "why": "開発手法の参考になるが、提供は承認済みチーム向けで一般利用は限定的"
    },
    "first_step": null,
    "usable": false,
@@ -56,26 +56,29 @@
    },
    "post_ids": [
     "2117925908572991748",
+    "2117574509179900410",
+    "2117229259425038344",
+    "2117670644506861900",
     "2117562068220195097",
     "2117558028111421576"
    ],
    "post_count": 6,
-   "archived_at": "2026-11-04T20:28:16Z"
+   "archived_at": "2026-11-05T02:37:34Z"
   },
   {
-   "id": "ef3a2a1212",
+   "id": "4e96ccf80f",
    "verdict": "confirmed",
-   "title": "Sakana AIがシンポジウムを開催、次期言語モデル計画を発表",
-   "summary": "Sakana AIは、2025年10月26日に東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催したと報告した。400名超が参加し、Jürgen Schmidhuber教授の基調講演と、CEOのDavid Haとの対談が行われた。あわせてチーフサイエンティストの秋葉拓哉が、自社開発の言語モデルシリーズ「Sakana Sawara（仮称）」を発表し、最初の小型モデル「Sawara Small（仮称）」を2027年春に公開する予定だと述べた。",
+   "title": "Sakana AIが東京でシンポジウムを開催、Schmidhuber氏が基調講演",
+   "summary": "Sakana AIは、10月26日に東京の一橋ホールで開いたシンポジウム「From World Models to Real-World AI」の報告を公開した。投稿によると、400人以上が参加し、Jürgen Schmidhuber氏の基調講演と、CEOのDavid Ha氏との対談が行われた。Schmidhuber氏は9月にSakana AIの首席科学顧問に就任したとされる。別の投稿では、Gartner IT Symposium 2026でSakana Marlin、Fugu、Namazuのデモを展示していると報告している。",
    "points": [
-    "新モデルは「順調に進めば」という条件付きの公開予定で、時期は確定ではない。",
-    "Physical AI（実世界で動くAI）や人工科学者への関心を示す内容で、製造業との接点が今後出てくる可能性がある。",
-    "現時点で一般向けに試せるのは既存のデモ（Marlin、Fugu、Namazu）に限られる。"
+    "Schmidhuber氏は、日本の甘利俊一氏や福島邦彦氏の研究にも触れたとされ、日本発のAI研究史への関心が示された",
+    "Sakana AIは日本発の基盤モデル開発企業として知られ、国内の動きを追う材料になる",
+    "イベント報告は主催者自身によるもので、講演内容の詳細は報告記事で確認する必要がある"
    ],
    "terms": [],
-   "score": 74,
+   "score": 69,
    "credibility": 100,
-   "heat": 15,
+   "heat": 12,
    "first_seen": "2026-11-02T01:43:12.000Z",
    "latest": "2026-11-04T02:29:47.000Z",
    "authors": [
@@ -91,10 +94,10 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業公式のイベント報告",
+   "evidence_note": "企業の公式X投稿・イベント報告",
    "links": [
     {
-     "url": "https://sakana.ai/symposium-2026/",
+     "url": "https://sakana.ai/symposium-2026/#English",
      "domain": "sakana.ai",
      "primary": true
     }
@@ -102,18 +105,18 @@
    "services": [],
    "events": [],
    "value": {
-    "impact": 2,
-    "closeness": 2,
+    "impact": 1,
+    "closeness": 1,
     "try_cost": 1,
-    "why": "国内モデルの動向として重要だが、公開は2027年予定で今すぐ試せない"
+    "why": "イベント報告が中心で、読者が今日使える情報は少ない"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/SakanaAILabs/status/2117069983679467522",
+    "url": "https://x.com/SakanaAILabs/status/2117285614592950479",
     "username": "SakanaAILabs",
-    "text": "Sakana AIシンポジウム：日本から挑む言語モデル・世界モデル・Physical AI\n\n開催レポート https://t.co/4O4AWYWOHs \n\n10月26日、東京・一橋講堂でシンポジウム「From World Models to Real-World AI」を開催しました。9月にChief Scientific Advisorとしてお迎えしたJürgen Schmidhuber教授の基調講演 と、2018年に教授と論文「World Models」を共著したCEOのDavid Haとの対談に、400名を超える方にご参加いただきました。\n\n基調講演では、甘利俊一氏や福島邦彦氏をはじめとする日本の研究者を含め、世界各地の研究者の功績に触れながら、自身による1990年の世界モデルや人工好奇心の研究まで、いまのAIにつながる流れをたどりました。\n\nまた、チーフサイエンティストの秋葉拓哉が、事前学習から自社で開発する言語モデルシリーズ「Sakana Sawara（仮称）」を発表しました。最初のモデルとなる小規模な「Sawara Small（仮称）」は、順調に進めば2027年春に公開",
-    "text_ja": null
+    "text": "Sakana AI Symposium: Building the Future of Language Models, World Models, and Physical AI from Japan\n\nEvent Report (English): https://t.co/dW29YYm0bv \n\nOn October 26, we hosted the symposium “From World Models to Real-World AI” at Hitotsubashi Hall in Tokyo. More than 400 people joined us for a keynote by Professor Jürgen Schmidhuber (@SchmidhuberAI), who became our Chief Scientific Advisor in September, and a conversation with our CEO David Ha, his co-author on the 2018 paper “World Models.”\n\n",
+    "text_ja": "Sakana AIシンポジウム：日本から挑む言語モデル・世界モデル・Physical AIの未来\n\nイベントレポート（英語）： https://t.co/dW29YYm0bv\n\n10月26日、東京・一橋講堂で「From World Models to Real-World AI」と題したシンポジウムを開催しました。9月にChief Scientific Advisorに就任したJürgen Schmidhuber教授の基調講演と、2018年に教授と論文「World Models」を共著したCEOのDavid Haとの対談には、400名を超える方にご参加いただきました。\n\n基調講演では、甘利俊一氏や福島邦彦氏を含む日本や世界各地の研究者の功績に触れながら、教授自身による1990年の研究など、いまのAIにつながる流れをたどりました。"
    },
    "post_ids": [
     "2117069983679467522",
@@ -121,60 +124,7 @@
     "2117806486172860793"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-04T20:28:16Z"
-  },
-  {
-   "id": "1da86c161a",
-   "verdict": "confirmed",
-   "title": "Mistral Large 4で量子化学のSCFソルバーを作成したと発表",
-   "summary": "Mistral AI公式アカウントは、同社の大規模モデル「Mistral Large 4」に分子を切断する様子を示させたと投稿した。短い指示から量子化学のSCF（自己無撞着場）ソルバーをゼロから書き、出力を検証して、周囲に3D表示を作ったとしている。さらに、指示なしで切断方法と表示する軌道を自ら選んだとも述べている。",
-   "points": [
-    "SCFソルバーは量子化学計算の基本的な手法で、モデルが一から実装した点が注目点。",
-    "投稿は公式デモの紹介で、検証の詳細や第三者による確認は示されていない。",
-    "研究用途としての精度は未確認。"
-   ],
-   "terms": [],
-   "score": 69,
-   "credibility": 85,
-   "heat": 36,
-   "first_seen": "2026-11-02T12:16:06.000Z",
-   "latest": "2026-11-02T12:16:06.000Z",
-   "authors": [
-    "MistralAI"
-   ],
-   "author_labels": [
-    {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの投稿",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "研究デモで、現場の手順書・教育業務との関係は薄い"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/MistralAI/status/2117229259425038344",
-    "username": "MistralAI",
-    "text": "We asked Mistral Large 4 to show what happens when you break a molecule. ⚛️\n\nWith a short prompt, it wrote a quantum chemistry SCF solver from scratch, validated its output, and built a 3D view around it. \n\nLe Chonk also understand chemistry enough to independently choose how to break the molecule and what orbitals to show, without further input. 🧵",
-    "text_ja": "分子を壊すとどうなるかを示すために、Mistral Large 4に依頼しました ⚛️\n\n短いプロンプトで、量子化学のSCFソルバーをゼロから書き、出力を検証し、その周りに3D表示を作りました。\n\nLe Chonkは、追加の指示なしに、分子をどう壊すか、どの軌道を表示するかも自ら判断できるほど化学を理解しています。🧵"
-   },
-   "post_ids": [
-    "2117229259425038344"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-04T20:28:16Z"
+   "archived_at": "2026-11-05T02:37:34Z"
   },
   {
    "id": "aadd501ded",

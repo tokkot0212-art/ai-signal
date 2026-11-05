@@ -2,6 +2,71 @@
  "date": "2026-11-03",
  "items": [
   {
+   "id": "79925e9eda",
+   "verdict": "confirmed",
+   "title": "OpenAIがセキュリティ研究向けGPT-6 Cyberとバグ報奨金拡充を発表",
+   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けの新モデル「GPT-6 Cyber」を発表し、一部の顧客に提供を始めたと投稿した。あわせて、社内セキュリティ検証を外部研究機関Cathedral Systemsと行うこと、重大な脆弱性へのバグ報奨金を4倍超に引き上げることも伝えている。",
+   "points": [
+    "新しい点は、AIモデルを脆弱性発見と修正に使う取り組みを企業向けに広げていること。",
+    "一般の個人やスモールチームが今日すぐ使える段階ではなく、招待された一部顧客向けの提供と投稿されている。",
+    "報奨金の上限172,000ドルは投稿の記載どおり。実際の運用や効果はこの投稿だけでは判断できない。"
+   ],
+   "terms": [],
+   "score": 96,
+   "credibility": 100,
+   "heat": 91,
+   "first_seen": "2026-11-03T02:29:35.000Z",
+   "latest": "2026-11-05T17:09:13.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+     "domain": "openai.com",
+     "primary": true
+    },
+    {
+     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "セキュリティ業界向けで読者の製造現場業務とは遠く、提供も限定的"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2118390190246879554",
+    "username": "OpenAI",
+    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://t.co/Nzab3Z1Td6",
+    "text_ja": "GPT‑6 Cyber を発表します。より高い性能と、より優れたモデルのアライメントを兼ね備えた、セキュリティ研究における大きな前進です。\n\nこのモデルは、昨日発表した Linux カーネル研究の基盤となっています。Mozilla、Palo Alto Networks、Calif、Cisco などの企業のセキュリティチームや、OpenAI 社内のチームがすでにこれを活用し始めています。\n\nGPT-6 Cyber は、一部の Daybreak Red のお客様にご利用いただけます。今後、順次アクセスを拡大していく予定です。\n\nhttps://t.co/Nzab3Z1Td6"
+   },
+   "post_ids": [
+    "2118390190246879554",
+    "2117444048227123277"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T20:43:50Z"
+  },
+  {
    "id": "819889c93a",
    "verdict": "confirmed",
    "title": "Anthropic、AI安全研究の「Residency」応募を開始",
@@ -80,9 +145,9 @@
      "desc": "実物を作る前に、コンピュータ上で動きや性能を再現して確かめる手法。"
     }
    ],
-   "score": 91,
+   "score": 90,
    "credibility": 90,
-   "heat": 57,
+   "heat": 56,
    "first_seen": "2026-11-02T17:27:26.000Z",
    "latest": "2026-11-03T18:56:45.000Z",
    "authors": [
@@ -128,7 +193,7 @@
     "2117692475775258785"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
    "id": "01a0ca8cc6",
@@ -154,9 +219,9 @@
      "desc": "AIサービスを機械的に呼び出した際にかかる利用料金。"
     }
    ],
-   "score": 90,
+   "score": 89,
    "credibility": 90,
-   "heat": 74,
+   "heat": 72,
    "first_seen": "2026-11-03T02:29:35.000Z",
    "latest": "2026-11-04T23:13:24.000Z",
    "authors": [
@@ -194,7 +259,7 @@
     "2118119451401048497"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
    "id": "d114e3505c",
@@ -265,65 +330,6 @@
    "archived_at": "2026-11-05T16:33:27Z"
   },
   {
-   "id": "2fbf67af7d",
-   "verdict": "confirmed",
-   "title": "OpenAIがセキュリティ強化策と報奨金増額を発表",
-   "summary": "OpenAI公式アカウントが、社内セキュリティ・スプリントの計画と、Cathedral Systemsとの提携を投稿した。研究者が同社のモデルを使って防御を試すとしている。あわせて脆弱性報奨金を引き上げ、重大な発見は4倍以上に増額し、優秀な発見には最大172,000ドル（ボーナス込み）を出すと述べた。",
-   "points": [
-    "AIが脆弱性を見つける能力が上がり、攻撃者より先に防御側がAIを使う必要があるという考えが背景にある。",
-    "報奨金の上限額は、バグ報告を募る仕組みへの投資の大きさを示す。ただし個人開発者がすぐ関わる話ではない。",
-    "Cathedral Systemsの詳細や、提携の期間・成果は投稿からは分からない。"
-   ],
-   "terms": [],
-   "score": 81,
-   "credibility": 100,
-   "heat": 37,
-   "first_seen": "2026-11-03T02:29:35.000Z",
-   "latest": "2026-11-03T02:29:35.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
-   "links": [
-    {
-     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "セキュリティ企業向けの動きで、読者の現場作業には直接効きにくい。試せる対象もない。"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2117444048227123277",
-    "username": "OpenAI",
-    "text": "As AI becomes more capable at finding vulnerabilities, defenders need to put it to work before attackers do.\n\nWe’re planning our next internal security sprint at OpenAI and partnering with Cathedral Systems, whose researchers will use our models alongside our teams to challenge our defenses. They’ll bring differentiated expertise and approaches to our ongoing work to find and fix weaknesses with AI.\n\nWe’re also raising bug bounty rewards, including more than quadrupling rewards for critical find",
-    "text_ja": "AIが脆弱性を見つける能力を高めるにつれ、攻撃者より先に防御側がAIを活用する必要があります。\n\nOpenAIでは次回の社内セキュリティ・スプリントを計画しており、Cathedral Systemsと提携します。同社の研究者は当社のモデルを使い、当社のチームとともに当社の防御を検証します。AIで弱点を見つけて修正するという当社の継続的な取り組みに、独自の専門知識とアプローチをもたらしてくれるはずです。\n\nまた、バグバウンティの報酬も引き上げます。重大な脆弱性の発見に対する報酬は4倍以上に増額します。卓越した発見には、ボーナスを含めて最大172,000ドルが支払われる対象となります。\n\n今後もモデルの開発を進め、自社システムの強化に活用するとともに、信頼できる防御側へのアクセスを拡大していきます。\n\nhttps://t.co/vcaoHROTt2"
-   },
-   "post_ids": [
-    "2117444048227123277"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T16:33:27Z"
-  },
-  {
    "id": "da061e1e0b",
    "verdict": "confirmed",
    "title": "OpenAI、社内モノレポ向けGitバックエンド「Pando」を公開",
@@ -334,9 +340,9 @@
     "「約80%」「約1ペタバイト/日」は同社の社内計測値とみられ、外部からの検証はされていない"
    ],
    "terms": [],
-   "score": 78,
+   "score": 77,
    "credibility": 90,
-   "heat": 49,
+   "heat": 48,
    "first_seen": "2026-11-03T00:09:30.000Z",
    "latest": "2026-11-03T00:09:30.000Z",
    "authors": [
@@ -374,35 +380,22 @@
     "2117408792346509663"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
-   "id": "b127559a25",
+   "id": "605c1100cf",
    "verdict": "confirmed",
-   "title": "NVIDIAがCosmosとAgent Toolkitを更新",
-   "summary": "NVIDIAの公式アカウントは、自動運転・ロボット・手術向けのデータ生成と方策テストに使う新しい「Cosmos」シミュレーション手順（レシピ）を紹介した。昼の運転映像を、同じ道路配置と車両の軌道を保ったまま雨の夜の映像に変換する例も示した。また「Agent Toolkit」を拡張し、企業データを使って質問応答や予測を行うエージェントを作れるようにしたとし、Lila Sciences、Siemens、Dassault Systèmesの活用例を挙げている。",
+   "title": "NVIDIAがAgent ToolkitとHermes Agent関連の情報を公開",
+   "summary": "NVIDIAの公式AIアカウントが、Hermes Agentのトレース（動作記録）をNeMo Relayで見る解説記事を紹介した。あわせて、NVIDIA Agent Toolkitを拡張し、企業データを使って質問に答えたり予測したりするエージェントを作れるようにしたと投稿した。投稿では、LilaSciences、Siemens、Dassault3DSがAIエージェントを使う事例も紹介されている。",
    "points": [
-    "企業データへのアクセスや実行できる操作を制御しながらAIエージェントを作れるようになったという点が新しい",
-    "Siemensなど製造業の大手が工場の生産計画などに使う例が挙げられており、製造業のエージェント活用の動きとして注目できる",
-    "投稿は公式の紹介で、価格・提供条件・性能の数値は書かれていないため、実際の使い勝手は各公式ページで確認が必要"
+    "エージェントが使えるデータや実行できる操作を制御する仕組みが加わったと投稿されている（詳細は元記事で要確認）",
+    "製造業の計画や設計にAIエージェントを使う事例（工場計画・車両設計）が示されており、製造業向けサービスを考える際の参考になりうる",
+    "投稿は発表の紹介のみで、性能や価格、日本での提供状況は未確認"
    ],
-   "terms": [
-    {
-     "term": "Agent Toolkit",
-     "desc": "AIエージェント（自律的に作業するAI）を開発者が作るための道具一式"
-    },
-    {
-     "term": "Cosmos",
-     "desc": "NVIDIAの、物理世界を模したシミュレーションを作るAIモデル群"
-    },
-    {
-     "term": "Digital twin（デジタルツイン）",
-     "desc": "現実の工場や製品を仮想空間に再現して試す仕組み（投稿中の語ではなく一般知識）"
-    }
-   ],
-   "score": 70,
+   "terms": [],
+   "score": 74,
    "credibility": 93,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-11-02T19:06:10.000Z",
    "latest": "2026-11-04T16:15:51.000Z",
    "authors": [
@@ -430,83 +423,79 @@
    "events": [],
    "value": {
     "impact": 2,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "製造業の事例は参考になるが、主に企業向けで個人が今日試す手段は限られる"
+    "closeness": 3,
+    "try_cost": 2,
+    "why": "製造業のAIエージェント動向に関係。企業向け製品で個人は導入が難しい場合が多い"
    },
    "first_step": null,
-   "usable": false,
+   "usable": true,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2117332456768717244",
+    "url": "https://x.com/NVIDIAAI/status/2117678090918707535",
     "username": "NVIDIAAI",
-    "text": "Turn a daytime drive into a rainy night while keeping the same road layout and vehicle trajectories.\n\nNew NVIDIA Cosmos simulation recipes help developers generate data and test policies for autonomous vehicles, robots and surgical applications. 🧵 https://t.co/ULbm6vJQnA",
-    "text_ja": "道路のレイアウトと車両の軌道はそのままに、日中の運転シーンを雨の夜に変換できます。\n\n新しいNVIDIA Cosmosのシミュレーションレシピにより、開発者は自動運転車、ロボット、手術支援アプリケーション向けのデータを生成し、ポリシーをテストできます。🧵 https://t.co/ULbm6vJQnA"
+    "text": "Inside Hermes Agent Traces with NeMo Relay | Nemotron Labs https://t.co/PoJf3zj1KF",
+    "text_ja": "NeMo RelayでHermes Agentのトレースを見る | Nemotron Labs https://t.co/PoJf3zj1KF"
    },
    "post_ids": [
     "2117332456768717244",
+    "2117678090918707535",
     "2118014372845142048"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
-   "id": "4985a5a445",
+   "id": "3c7079b761",
    "verdict": "confirmed",
-   "title": "NVIDIA、都市向けAIエージェント・デジタルツインの事例を紹介",
-   "summary": "NVIDIAは公式アカウントで、パートナーが都市向けのアプリケーションを開発している事例を紹介した。住民の質問に答えるAIエージェント、交通渋滞の緩和を目指す映像AI、都市の森林成長を10分で15年分シミュレーションするデジタルツインが挙げられている。開発にはNVIDIA Nemotron、Cosmos、Omniverseが使われ、部門や自治体間で計算資源を共有しているとされる。",
+   "title": "Mistral Large 4、衛星追跡アプリ作成や数学研究基盤への採用を発表",
+   "summary": "Mistral AI公式アカウントは、Mistral Large 4に地球を周回する約19,000個の衛星・デブリを3Dでリアルタイム追跡するアプリを作らせたと紹介した。また、同モデルが数学研究の共同ワークスペース「Open Math OS」に承認済みチーム向けに採用されたと発表し、1.05兆パラメータのオープンウェイト、100万トークンのコンテキストに言及した。",
    "points": [
-    "都市行政では、住民対応や街づくりのシミュレーションにAIを使う動きが広がりつつあることがうかがえる",
-    "NVIDIAの製品を前提とした事例のため、企業向けの大規模導入が中心とみられる",
-    "個別事例の効果は投稿に数値の裏付けがなく、詳細は事例ページでの確認が必要"
+    "オープンウェイト（重みが公開され手元で動かせるモデル）の大規模モデルとして紹介されている",
+    "数学研究の場で、研究者とAIエージェントが共同作業する基盤として使われる点が新しい",
+    "衛星アプリの性能やOpen Math OSの一般提供時期は投稿からは未確認"
    ],
    "terms": [],
-   "score": 66,
-   "credibility": 93,
-   "heat": 10,
-   "first_seen": "2026-11-03T07:16:36.000Z",
-   "latest": "2026-11-03T07:16:36.000Z",
+   "score": 71,
+   "credibility": 85,
+   "heat": 35,
+   "first_seen": "2026-11-03T11:08:00.000Z",
+   "latest": "2026-11-03T17:30:00.000Z",
    "authors": [
-    "NVIDIAAI"
+    "MistralAI"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業の公式X投稿",
-   "links": [
-    {
-     "url": "https://nvda.ws/3V0KXvx",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
+   "evidence_note": "企業公式アカウントの発表",
+   "links": [],
    "services": [],
    "events": [],
    "value": {
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "自治体・大規模向けで、個人事業者が直接試す機会は少ない"
+    "why": "大規模モデルの動向として参考になるが、承認済みチーム向けで個人が試しにくい"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2117516278034247708",
-    "username": "NVIDIAAI",
-    "text": "AI agents that answer residents’ questions. Vision agents that help reduce traffic delays. Digital twins that simulate 15 years of urban forest growth in 10 minutes.\n\nOur partners are building applications for cities with NVIDIA Nemotron, Cosmos and Omniverse, sharing computing resources across departments and municipalities.\n\nRead about the projects → https://t.co/LuhosiBk1H",
-    "text_ja": "住民の質問に答えるAIエージェント。交通渋滞の緩和に役立つビジョンエージェント。10分で15年分の都市の森林成長をシミュレーションするデジタルツイン。\n\nパートナー企業は、NVIDIA Nemotron、Cosmos、Omniverseを使って都市向けのアプリケーションを開発しており、部署や自治体をまたいで計算リソースを共有しています。\n\nプロジェクトの詳細はこちら → https://t.co/LuhosiBk1H"
+    "url": "https://x.com/MistralAI/status/2117574509179900410",
+    "username": "MistralAI",
+    "text": "We tasked Mistral Large 4 with creating a real-time, 3D tracker of the roughly 19,000 satellites and debris fragments orbiting Earth. \n\nThe model built a working app, tested it like a user, made it fast, and passed strict verification. \n\nPlease meet Orbital Trace : https://t.co/8XQuBNZKMO",
+    "text_ja": "地球を周回する約19,000の衛星やデブリの破片を、リアルタイムで3D表示する追跡ツールを作るよう、Mistral Large 4に依頼しました。\n\nモデルは動作するアプリを作り、ユーザーのように試し、高速化し、厳格な検証に合格しました。\n\nOrbital Traceをご紹介します： https://t.co/8XQuBNZKMO"
    },
    "post_ids": [
-    "2117516278034247708"
+    "2117574509179900410",
+    "2117670644506861900"
    ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "post_count": 2,
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
    "id": "7c97421fa6",
@@ -534,7 +523,7 @@
    ],
    "score": 66,
    "credibility": 93,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-11-03T05:44:29.000Z",
    "latest": "2026-11-03T05:44:29.000Z",
    "authors": [
@@ -578,7 +567,66 @@
     "2117493094849622097"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
+  },
+  {
+   "id": "4985a5a445",
+   "verdict": "confirmed",
+   "title": "NVIDIA、都市向けAIエージェント・デジタルツインの事例を紹介",
+   "summary": "NVIDIAは公式アカウントで、パートナーが都市向けのアプリケーションを開発している事例を紹介した。住民の質問に答えるAIエージェント、交通渋滞の緩和を目指す映像AI、都市の森林成長を10分で15年分シミュレーションするデジタルツインが挙げられている。開発にはNVIDIA Nemotron、Cosmos、Omniverseが使われ、部門や自治体間で計算資源を共有しているとされる。",
+   "points": [
+    "都市行政では、住民対応や街づくりのシミュレーションにAIを使う動きが広がりつつあることがうかがえる",
+    "NVIDIAの製品を前提とした事例のため、企業向けの大規模導入が中心とみられる",
+    "個別事例の効果は投稿に数値の裏付けがなく、詳細は事例ページでの確認が必要"
+   ],
+   "terms": [],
+   "score": 65,
+   "credibility": 93,
+   "heat": 9,
+   "first_seen": "2026-11-03T07:16:36.000Z",
+   "latest": "2026-11-03T07:16:36.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "企業の公式X投稿",
+   "links": [
+    {
+     "url": "https://nvda.ws/3V0KXvx",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "自治体・大規模向けで、個人事業者が直接試す機会は少ない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2117516278034247708",
+    "username": "NVIDIAAI",
+    "text": "AI agents that answer residents’ questions. Vision agents that help reduce traffic delays. Digital twins that simulate 15 years of urban forest growth in 10 minutes.\n\nOur partners are building applications for cities with NVIDIA Nemotron, Cosmos and Omniverse, sharing computing resources across departments and municipalities.\n\nRead about the projects → https://t.co/LuhosiBk1H",
+    "text_ja": "住民の質問に答えるAIエージェント。交通渋滞の緩和に役立つビジョンエージェント。10分で15年分の都市の森林成長をシミュレーションするデジタルツイン。\n\nパートナー企業は、NVIDIA Nemotron、Cosmos、Omniverseを使って都市向けのアプリケーションを開発しており、部署や自治体をまたいで計算リソースを共有しています。\n\nプロジェクトの詳細はこちら → https://t.co/LuhosiBk1H"
+   },
+   "post_ids": [
+    "2117516278034247708"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
    "id": "b2cbcd5ec0",
@@ -604,9 +652,9 @@
      "desc": "中国Alibabaが開発・公開しているオープンなAIモデルのシリーズ。"
     }
    ],
-   "score": 68,
+   "score": 67,
    "credibility": 73,
-   "heat": 47,
+   "heat": 46,
    "first_seen": "2026-11-03T13:25:55.000Z",
    "latest": "2026-11-03T16:31:05.000Z",
    "authors": [
@@ -663,7 +711,7 @@
     "2117609218673090886"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
   },
   {
    "id": "c430c0500f",
@@ -722,7 +770,7 @@
     "2117378741336932757"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T16:33:27Z"
+   "archived_at": "2026-11-05T20:43:50Z"
   }
  ]
 }

@@ -2,6 +2,134 @@
  "date": "2026-11-03",
  "items": [
   {
+   "id": "f84ac24990",
+   "verdict": "confirmed",
+   "title": "OpenAIが生活支援の評価指標LifeValとロボット設計へのAI活用を紹介",
+   "summary": "OpenAIの公式アカウントは、ChatGPTユーザーの要望をもとに作った新しいベンチマーク「LifeVal」を紹介した。保育施設探し、行政サービスの利用、家計管理などの日常業務で、モデルの性能を測り改善してきたとしている。また、ChatGPTとCodexを機械設計・電気設計・シミュレーションに使い、ハードウェア開発を進めていることも投稿している。",
+   "points": [
+    "生活支援タスクを測る指標を公開した点が新しい。ただし公開詳細は本文からは分からない。",
+    "製造業の設計支援にAIを使う取り組みは、現場の業務を考える読者にも参考になる。",
+    "どの程度の成果が出ているかは投稿に数値がなく未確認。"
+   ],
+   "terms": [],
+   "score": 97,
+   "credibility": 100,
+   "heat": 58,
+   "first_seen": "2026-11-02T17:27:26.000Z",
+   "latest": "2026-11-03T18:56:45.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://openai.com/index/lifeval/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "設計支援の取り組みは製造業に関係するが、現時点では企業の発表段階で個人が直接使う手段は示されていない"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2117307611338997846",
+    "username": "OpenAI",
+    "text": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. So we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services to managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\nhttps://t.co/GlUjixzEM0",
+    "text_ja": "AGIが人類全体の役に立つためには、人々にとって最も重要な日常の作業を手助けすべきです。そこで私たちは、ChatGPTの数千人のユーザーからのフィードバックをもとに、個人アシスタントにどんな支援を最も求めているかを反映した新しいベンチマーク「LifeVal」を作りました。育児の預け先を探すことから、行政サービスへのアクセス、個人の資産管理まで含まれます。\n\nこの1年間、私たちはLifeValを使って、モデルがこうした日常タスクをどれだけうまくこなせるかを測り、改善してきました。\n\nhttps://t.co/GlUjixzEM0"
+   },
+   "post_ids": [
+    "2117307611338997846",
+    "2117692475775258785"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T11:14:46Z"
+  },
+  {
+   "id": "d4c7b06d91",
+   "verdict": "confirmed",
+   "title": "OpenAIが脆弱性の自動発見・修正パイプラインの成果を公表",
+   "summary": "OpenAIの公式アカウントは、同社のセキュリティ研究者が構築した自律型の脆弱性発見・悪用検証・パッチ生成のパイプラインを紹介した。次期サイバー対応モデルを使った1回の実行で、Linuxカーネルの948件のローカル権限昇格の脆弱性についてパッチを検証・生成し、総APIコストは120万ドルだったと述べている。また、同アカウントは次の社内セキュリティスプリントをCathedral Systemsと組んで行うこと、バグバウンティ報奨金を引き上げること（重大な発見は最大17万2000ドル）も投稿している。",
+   "points": [
+    "AIが脆弱性を見つけ、修正案まで作る流れを企業が自ら示した点が新しい。",
+    "1回の実行に約120万ドルのAPI費用がかかる点は、個人や小規模チームにとって現実的なハードルを示している。",
+    "投稿は企業の自己発表で、第三者による検証結果は示されていない。実際の修正品質は未確認。"
+   ],
+   "terms": [],
+   "score": 96,
+   "credibility": 100,
+   "heat": 78,
+   "first_seen": "2026-11-03T02:29:35.000Z",
+   "latest": "2026-11-04T23:13:24.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "セキュリティ業界の動きで製造現場の業務には遠い。試す手段も未公開の次期モデルが前提"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2118119451401048497",
+    "username": "OpenAI",
+    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\n\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API cost of $1.2 million.",
+    "text_ja": "当社のセキュリティ研究者が、脆弱性の自律的な発見・悪用・パッチ適用パイプラインを構築しました。\n\n今後公開予定のサイバー分野のモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、それぞれにパッチを生成しました。かかったAPIの総コストは120万ドルです。"
+   },
+   "post_ids": [
+    "2118119451401048497",
+    "2117444048227123277"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T11:14:46Z"
+  },
+  {
    "id": "819889c93a",
    "verdict": "confirmed",
    "title": "Anthropic、AI安全研究の「Residency」応募を開始",
@@ -12,9 +140,9 @@
     "期間や報酬の詳細は投稿に書かれていないため、応募前に公式サイトで確認が必要"
    ],
    "terms": [],
-   "score": 92,
+   "score": 91,
    "credibility": 100,
-   "heat": 70,
+   "heat": 68,
    "first_seen": "2026-11-02T19:51:45.000Z",
    "latest": "2026-11-02T19:51:45.000Z",
    "authors": [
@@ -58,125 +186,7 @@
     "2117343929960112486"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T02:37:34Z"
-  },
-  {
-   "id": "d114e3505c",
-   "verdict": "confirmed",
-   "title": "OpenAIが日常業務向けベンチマーク「LifeVal」を公開",
-   "summary": "OpenAIは公式アカウントで、ChatGPTユーザー数千人の声をもとに作った新ベンチマーク「LifeVal」を紹介した。対象は育児先の検索、行政サービスへのアクセス、個人の資産管理など日常的な支援タスクとされる。OpenAIは過去1年間、このベンチマークでモデルの性能を測り改善してきたと述べている。",
-   "points": [
-    "日常生活の用途（育児・行政手続き・家計管理など）に絞ったAI性能の物差しが公開された点が新しい",
-    "個人向けアシスタントの実用性を比べる際の目安になりうるが、内容の詳細や公開範囲は投稿からは分からない",
-    "自社モデルの改善に使ってきたベンチマークのため、自社に有利な設計になっていないかは外部で確認が必要"
-   ],
-   "terms": [],
-   "score": 84,
-   "credibility": 100,
-   "heat": 46,
-   "first_seen": "2026-11-02T17:27:26.000Z",
-   "latest": "2026-11-02T17:27:26.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://openai.com/index/lifeval/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "日常タスクの評価指標として参考になるが、ベンチマーク自体は試せる形で提示されていない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2117307611338997846",
-    "username": "OpenAI",
-    "text": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. So we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services to managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\nhttps://t.co/GlUjixzEM0",
-    "text_ja": "AGIが人類全体の役に立つためには、人々にとって最も重要な日常の作業を手助けすべきです。そこで私たちは、ChatGPTの数千人のユーザーからのフィードバックをもとに、個人アシスタントにどんな支援を最も求めているかを反映した新しいベンチマーク「LifeVal」を作りました。育児の預け先を探すことから、行政サービスへのアクセス、個人の資産管理まで含まれます。\n\nこの1年間、私たちはLifeValを使って、モデルがこうした日常タスクをどれだけうまくこなせるかを測り、改善してきました。\n\nhttps://t.co/GlUjixzEM0"
-   },
-   "post_ids": [
-    "2117307611338997846"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T02:37:34Z"
-  },
-  {
-   "id": "2fbf67af7d",
-   "verdict": "confirmed",
-   "title": "OpenAI、セキュリティ強化と報奨金の大幅引き上げを発表",
-   "summary": "OpenAI公式アカウントは、AIで脆弱性を見つけて守る取り組みとして、次回の社内セキュリティ・スプリントを計画し、Cathedral Systems と提携したと発表した。あわせてバグ報奨金を引き上げ、重大な発見への報酬を4倍以上にし、優れた発見には最大17万2000ドル（ボーナス含む）を出すとしている。",
-   "points": [
-    "AIが脆弱性を見つける能力が上がり、防御側が先に活用する必要があるという考えが示されている",
-    "重大な脆弱性への報奨金が4倍以上になるとされ、セキュリティ研究者の参加意欲に影響する可能性がある",
-    "Cathedral Systemsとの協業の具体的な内容や期間は投稿に書かれていない"
-   ],
-   "terms": [],
-   "score": 82,
-   "credibility": 100,
-   "heat": 40,
-   "first_seen": "2026-11-03T02:29:35.000Z",
-   "latest": "2026-11-03T02:29:35.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの告知",
-   "links": [
-    {
-     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "大企業のセキュリティ施策で、個人・小規模チームが直接使えるものではない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2117444048227123277",
-    "username": "OpenAI",
-    "text": "As AI becomes more capable at finding vulnerabilities, defenders need to put it to work before attackers do.\n\nWe’re planning our next internal security sprint at OpenAI and partnering with Cathedral Systems, whose researchers will use our models alongside our teams to challenge our defenses. They’ll bring differentiated expertise and approaches to our ongoing work to find and fix weaknesses with AI.\n\nWe’re also raising bug bounty rewards, including more than quadrupling rewards for critical find",
-    "text_ja": "AIが脆弱性を見つける能力を高めるにつれ、攻撃者より先に防御側がAIを活用する必要があります。\n\nOpenAIでは次回の社内セキュリティ・スプリントを計画しており、Cathedral Systemsと提携します。同社の研究者は当社のモデルを使い、当社のチームとともに当社の防御を検証します。AIで弱点を見つけて修正するという当社の継続的な取り組みに、独自の専門知識とアプローチをもたらしてくれるはずです。\n\nまた、バグバウンティの報酬も引き上げます。重大な脆弱性の発見に対する報酬は4倍以上に増額します。卓越した発見には、ボーナスを含めて最大172,000ドルが支払われる対象となります。\n\n今後もモデルの開発を進め、自社システムの強化に活用するとともに、信頼できる防御側へのアクセスを拡大していきます。\n\nhttps://t.co/vcaoHROTt2"
-   },
-   "post_ids": [
-    "2117444048227123277"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T02:37:34Z"
+   "archived_at": "2026-11-05T11:14:46Z"
   },
   {
    "id": "da061e1e0b",
@@ -189,9 +199,9 @@
     "「約80%」「約1ペタバイト/日」は同社の社内計測値とみられ、外部からの検証はされていない"
    ],
    "terms": [],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 52,
+   "heat": 50,
    "first_seen": "2026-11-03T00:09:30.000Z",
    "latest": "2026-11-03T00:09:30.000Z",
    "authors": [
@@ -229,22 +239,102 @@
     "2117408792346509663"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T02:37:34Z"
+   "archived_at": "2026-11-05T11:14:46Z"
   },
   {
-   "id": "16db39a62d",
+   "id": "36a9a04da1",
    "verdict": "confirmed",
-   "title": "NVIDIA、AIエージェント向け基盤ツールの拡張と運用基盤の案内",
-   "summary": "NVIDIAは公式アカウントで、2件の発表を投稿した。1つ目はKubernetes上でGPUを使うためのNVIDIA AI Cluster Runtimeで、KubeCon North America前に設定・検証手順を案内している。2つ目はNVIDIA Agent Toolkitの拡張で、企業データを使う質問応答・予測エージェントとアクセス制御の機能が追加されたとされる。Lila Sciences、Siemens、Dassault Systèmesの活用例も紹介されている。",
+   "title": "NVIDIAがAbaqusの構造解析をCUDA-Xで高速化と発表",
+   "summary": "NVIDIA公式AIアカウントは、構造シミュレーションソフトAbaqusを「NVIDIA CUDA-X」で高速化したと投稿し、詳細記事へのリンクを示した。投稿本文には性能の数値や日付は書かれていない。",
    "points": [
-    "AIエージェントが社内データにアクセスする際の権限管理が強化されたとされ、企業導入の要件に関わる",
-    "Siemens、Dassault Systèmesなど製造業の大手が事例に挙がっており、製造現場への応用の参考になる",
-    "Kubernetesや専用GPU環境が前提のため、個人が手軽に試せる内容ではない"
+    "新しい点：構造解析（部品の強度や変形の計算）をGPUで速くする取り組みとされる。",
+    "影響：製造業の設計・検証の時間短縮に関係しうるが、どの程度速くなるかは投稿本文からは分からない。",
+    "注意点：リンク先の詳細を確認しないと、対象バージョンや条件は未確認。"
    ],
-   "terms": [],
+   "terms": [
+    {
+     "term": "Abaqus",
+     "desc": "部品の強度や変形などを計算する構造解析用のシミュレーションソフト。"
+    },
+    {
+     "term": "CUDA-X",
+     "desc": "NVIDIAのGPUを使って計算を高速化するためのソフトウェア群。"
+    },
+    {
+     "term": "構造シミュレーション",
+     "desc": "設計した部品が力や熱にどう耐えるかをコンピュータ上で計算すること。"
+    }
+   ],
+   "score": 70,
+   "credibility": 90,
+   "heat": 20,
+   "first_seen": "2026-11-02T19:06:10.000Z",
+   "latest": "2026-11-04T16:59:10.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの告知",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "製造業の解析に関係するが、導入には専用ソフトとGPU環境が必要"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118025273710981511",
+    "username": "NVIDIAAI",
+    "text": "Accelerating Structural Simulation in Abaqus with NVIDIA CUDA-X https://t.co/HitM5YZLqa",
+    "text_ja": "NVIDIA CUDA-XによるAbaqusの構造シミュレーションの高速化 https://t.co/HitM5YZLqa"
+   },
+   "post_ids": [
+    "2118025273710981511",
+    "2117332456768717244"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T11:14:46Z"
+  },
+  {
+   "id": "afe392e674",
+   "verdict": "confirmed",
+   "title": "NVIDIAがAgent Toolkitを拡張、企業データ活用型エージェントに対応",
+   "summary": "NVIDIA公式アカウントは、NVIDIA Agent Toolkitを拡張したと発表した。企業データを使って質問に答えたり予測したりするエージェントを作れるようにし、エージェントのアクセス範囲や動作を制御する仕組みを備えるとしている。LilaSciences、Siemens、Dassault Systèmesの活用例も紹介された。",
+   "points": [
+    "新しい点：エージェントが使える企業データや操作を管理できる点が強調されている。",
+    "影響：Siemens・Dassault Systèmesの例から、工程計画や設計の分野での活用が想定される。",
+    "注意点：各社の具体的な成果や料金・提供条件は本文に示されておらず、未確認。"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受けて、AIが情報収集や作業を自律的に進めるしくみ。"
+    },
+    {
+     "term": "Agent Toolkit",
+     "desc": "エージェント開発に必要な部品や機能をまとめたNVIDIAの開発キット。"
+    },
+    {
+     "term": "デジタルツイン",
+     "desc": "現実の工場や製品を仮想空間に再現し、シミュレーションする考え方。"
+    }
+   ],
    "score": 69,
    "credibility": 93,
-   "heat": 13,
+   "heat": 8,
    "first_seen": "2026-11-03T05:44:29.000Z",
    "latest": "2026-11-04T16:15:51.000Z",
    "authors": [
@@ -260,13 +350,8 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業の公式X投稿",
+   "evidence_note": "NVIDIA公式アカウントの発表",
    "links": [
-    {
-     "url": "https://nvda.ws/4sAxU0a",
-     "domain": "nvda.ws",
-     "primary": false
-    },
     {
      "url": "https://nvda.ws/4BJ7VrE",
      "domain": "nvda.ws",
@@ -276,78 +361,24 @@
    "services": [],
    "events": [],
    "value": {
-    "impact": 2,
+    "impact": 3,
     "closeness": 2,
     "try_cost": 1,
-    "why": "製造業の事例は参考になるが、個人が今日試せる環境ではない"
+    "why": "製造業の計画・設計へのエージェント活用に関係。企業向けで個人には試しにくい"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2117493094849622097",
+    "url": "https://x.com/NVIDIAAI/status/2118014372845142048",
     "username": "NVIDIAAI",
-    "text": "Have GPUs in Kubernetes? NVIDIA AI Cluster Runtime brings together NVIDIA Dynamo and the infrastructure it needs, with tested component versions and checks to verify your setup.  \n\nFollow the walkthrough to configure, deploy and validate your runtime, and catch us at KubeCon North America next week → https://t.co/wbhLyAB7ll",
-    "text_ja": "KubernetesでGPUを使っていますか？NVIDIA AI Cluster Runtimeは、NVIDIA Dynamoとそれに必要なインフラを統合し、動作確認済みのコンポーネントバージョンと、セットアップを検証するためのチェック機能を備えています。\n\nウォークスルーに従って、ランタイムの構成、デプロイ、検証を行ってください。来週のKubeCon North Americaでもお会いしましょう → https://t.co/wbhLyAB7ll"
+    "text": "We expanded the NVIDIA Agent Toolkit to help developers build agents that use company data to answer questions and make predictions, with controls over what agents can access and do.\n\nWatch how @LilaSciences , @Siemens and @Dassault3DS are using AI agents to design potential therapies, plan factory production and refine vehicle designs.\n\nSee what’s new → https://t.co/GBTWEioZy1",
+    "text_ja": "NVIDIA Agent Toolkit を拡充しました。開発者が企業データを使って質問に答えたり予測を行ったりするエージェントを構築できるようにし、エージェントがアクセスできる内容や実行できる操作を制御できるようにしています。\n\n@LilaSciences、@Siemens、@Dassault3DS が AI エージェントを使って、治療法の候補を設計し、工場の生産計画を立て、車両設計を洗練させている様子をご覧ください。\n\n新機能はこちら → https://t.co/GBTWEioZy1"
    },
    "post_ids": [
-    "2117493094849622097",
     "2118014372845142048"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T02:37:34Z"
-  },
-  {
-   "id": "74a5494da8",
-   "verdict": "confirmed",
-   "title": "NVIDIA、自動運転・ロボット向けのCosmos新レシピを公開",
-   "summary": "NVIDIA公式AIアカウントが、新しい「NVIDIA Cosmos」のシミュレーションレシピを紹介した。昼間の走行映像を、同じ道路構造と車両の軌道を保ったまま雨の夜の映像に変換できると示している。投稿によると、自動運転車・ロボット・手術支援向けにデータ生成やポリシー（制御方針）のテストに使えるという。",
-   "points": [
-    "新しいのは、既存の走行データから天候や時間帯を変えた学習用データを作れる点とみられる。",
-    "自動運転や物理AIの開発者にとって、実データを集めにくい場面の検証に役立つ可能性がある。",
-    "投稿は紹介のみで、利用条件や対応環境、性能の数値は未確認。"
-   ],
-   "terms": [],
-   "score": 67,
-   "credibility": 90,
-   "heat": 18,
-   "first_seen": "2026-11-02T19:06:10.000Z",
-   "latest": "2026-11-02T19:06:10.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの投稿",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "製造現場の手順書・教育とは遠い。試す環境も開発者向け"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2117332456768717244",
-    "username": "NVIDIAAI",
-    "text": "Turn a daytime drive into a rainy night while keeping the same road layout and vehicle trajectories.\n\nNew NVIDIA Cosmos simulation recipes help developers generate data and test policies for autonomous vehicles, robots and surgical applications. 🧵 https://t.co/ULbm6vJQnA",
-    "text_ja": "道路のレイアウトと車両の軌道はそのままに、日中の運転シーンを雨の夜に変換できます。\n\n新しいNVIDIA Cosmosのシミュレーションレシピにより、開発者は自動運転車、ロボット、手術支援アプリケーション向けのデータを生成し、ポリシーをテストできます。🧵 https://t.co/ULbm6vJQnA"
-   },
-   "post_ids": [
-    "2117332456768717244"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-05T02:37:34Z"
+   "archived_at": "2026-11-05T11:14:46Z"
   },
   {
    "id": "4985a5a445",
@@ -360,9 +391,9 @@
     "個別事例の効果は投稿に数値の裏付けがなく、詳細は事例ページでの確認が必要"
    ],
    "terms": [],
-   "score": 67,
+   "score": 66,
    "credibility": 93,
-   "heat": 12,
+   "heat": 10,
    "first_seen": "2026-11-03T07:16:36.000Z",
    "latest": "2026-11-03T07:16:36.000Z",
    "authors": [
@@ -406,7 +437,79 @@
     "2117516278034247708"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T02:37:34Z"
+   "archived_at": "2026-11-05T11:14:46Z"
+  },
+  {
+   "id": "7c97421fa6",
+   "verdict": "confirmed",
+   "title": "NVIDIA AI Cluster Runtimeの紹介、KubeCon前に案内",
+   "summary": "NVIDIA公式AIアカウントは、Kubernetes上でGPUを使うための「NVIDIA AI Cluster Runtime」を紹介した。NVIDIA Dynamoとその必要な基盤を組み合わせ、構成・デプロイ・検証の手順を案内し、次週のKubeCon North Americaでの出展にも触れている。",
+   "points": [
+    "新しい点：動作確認済みの部品バージョンと検証チェックがセットで提供されるとされる。",
+    "背景：Kubernetesは複数サーバーでアプリを運用する仕組みで、GPUを組み込むのは手間がかかることがある。",
+    "注意点：大規模なGPUサーバー環境が前提で、個人や小規模チームが今すぐ使うのは難しいとみられる。"
+   ],
+   "terms": [
+    {
+     "term": "Kubernetes（クーバネティス）",
+     "desc": "多数のサーバーにアプリを自動で配置・管理する仕組み。"
+    },
+    {
+     "term": "NVIDIA Dynamo",
+     "desc": "AIモデルの推論（応答生成）を大規模に効率よく動かすためのNVIDIAのソフトウェア。"
+    },
+    {
+     "term": "KubeCon",
+     "desc": "Kubernetesなどクラウド技術の大規模な国際カンファレンス。"
+    }
+   ],
+   "score": 66,
+   "credibility": 93,
+   "heat": 11,
+   "first_seen": "2026-11-03T05:44:29.000Z",
+   "latest": "2026-11-03T05:44:29.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの製品案内",
+   "links": [
+    {
+     "url": "https://nvda.ws/4sAxU0a",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "インフラ運用向けで、現場の手順書や教育には直接関係しにくい"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2117493094849622097",
+    "username": "NVIDIAAI",
+    "text": "Have GPUs in Kubernetes? NVIDIA AI Cluster Runtime brings together NVIDIA Dynamo and the infrastructure it needs, with tested component versions and checks to verify your setup.  \n\nFollow the walkthrough to configure, deploy and validate your runtime, and catch us at KubeCon North America next week → https://t.co/wbhLyAB7ll",
+    "text_ja": "KubernetesでGPUを使っていますか？NVIDIA AI Cluster Runtimeは、NVIDIA Dynamoとそれに必要なインフラを統合し、動作確認済みのコンポーネントバージョンと、セットアップを検証するためのチェック機能を備えています。\n\nウォークスルーに従って、ランタイムの構成、デプロイ、検証を行ってください。来週のKubeCon North Americaでもお会いしましょう → https://t.co/wbhLyAB7ll"
+   },
+   "post_ids": [
+    "2117493094849622097"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T11:14:46Z"
   },
   {
    "id": "b2cbcd5ec0",
@@ -432,9 +535,9 @@
      "desc": "中国Alibabaが開発・公開しているオープンなAIモデルのシリーズ。"
     }
    ],
-   "score": 69,
+   "score": 68,
    "credibility": 73,
-   "heat": 51,
+   "heat": 49,
    "first_seen": "2026-11-03T13:25:55.000Z",
    "latest": "2026-11-03T16:31:05.000Z",
    "authors": [
@@ -491,7 +594,59 @@
     "2117609218673090886"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T02:37:34Z"
+   "archived_at": "2026-11-05T11:14:46Z"
+  },
+  {
+   "id": "2f52896070",
+   "verdict": "promising",
+   "title": "128GBのMacBookPro使ってて「足りない」って思ったことないもんな。むしろ512GB MacStudioは常に「なんか動かすモデルないかな」と探さない…",
+   "summary": null,
+   "points": [],
+   "terms": [],
+   "score": 51,
+   "credibility": 73,
+   "heat": 17,
+   "first_seen": "2026-11-03T07:55:47.000Z",
+   "latest": "2026-11-04T19:18:40.000Z",
+   "authors": [
+    "shi3z"
+   ],
+   "author_labels": [
+    {
+     "username": "shi3z",
+     "label": "ギリア株式会社ファウンダー・顧問",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "links": [
+    {
+     "url": "https://note.com/shi3zblog/n/n1abc371fac21?sub_rt=share_pb",
+     "domain": "note.com",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/shi3z/status/2117585244480291240",
+    "username": "shi3z",
+    "text": "128GBのMacBookPro使ってて「足りない」って思ったことないもんな。むしろ512GB MacStudioは常に「なんか動かすモデルないかな」と探さないといけない https://t.co/mzulQgx8XE",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2117585244480291240",
+    "2117526136788078646",
+    "2118060378563506303"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-11-05T11:14:46Z"
   },
   {
    "id": "c430c0500f",
@@ -550,7 +705,7 @@
     "2117378741336932757"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T02:37:34Z"
+   "archived_at": "2026-11-05T11:14:46Z"
   }
  ]
 }

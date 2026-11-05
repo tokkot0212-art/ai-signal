@@ -12,9 +12,9 @@
     "投稿は発表内容の要約で、画質や料金などの詳細は本文からは分からない。"
    ],
    "terms": [],
-   "score": 100,
+   "score": 98,
    "credibility": 90,
-   "heat": 85,
+   "heat": 81,
    "first_seen": "2026-11-04T23:35:14.000Z",
    "latest": "2026-11-04T23:35:14.000Z",
    "authors": [
@@ -52,7 +52,7 @@
     "2118124944928432327"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "ac37004776",
@@ -65,9 +65,9 @@
     "「一貫性が高い」という評価は発表側の説明で、第三者の検証は未確認。"
    ],
    "terms": [],
-   "score": 94,
+   "score": 92,
    "credibility": 90,
-   "heat": 65,
+   "heat": 61,
    "first_seen": "2026-11-04T23:34:28.000Z",
    "latest": "2026-11-04T23:34:28.000Z",
    "authors": [
@@ -113,7 +113,60 @@
     "2118124753340756055"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "d10044b568",
+   "verdict": "confirmed",
+   "title": "Hugging Faceが小型モデル化の量子化ライブ配信を告知",
+   "summary": "Hugging Face公式が、次の火曜日に開催するライブ配信を告知した。モデルを小さくしてノートPCで動かす方法を、llama.cppとvLLMを使った量子化の解説で扱うとしている。登壇者として複数の研究者・開発者の名前が挙げられている。",
+   "points": [
+    "量子化とは、モデルの数値の精度を下げて軽くする技術で、ノートPCでも動かしやすくなる。",
+    "個人や小さなチームが手元の機器でAIを動かす選択肢を広げる話題として関係がある。",
+    "配信の内容の詳細や録画の有無は投稿からは分からない。"
+   ],
+   "terms": [],
+   "score": 83,
+   "credibility": 85,
+   "heat": 55,
+   "first_seen": "2026-11-05T11:36:58.000Z",
+   "latest": "2026-11-05T11:36:58.000Z",
+   "authors": [
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Hugging Face公式の告知投稿",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 3,
+    "why": "手元でAIを動かす話で関連はあるが、告知だけで成果は未確認。視聴は無料とみられる。"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/huggingface/status/2118306577203822976",
+    "username": "huggingface",
+    "text": "Join us in this livestream next Tuesday, learn how to shrink models to fit in your laptop and make them go brrr 💨\n\nWe will have @mervenoyann @maximelabonne @TadimetiAditya @bartowski1182  and @mgoin_ giving a primer and know-hows on quantization with llama.cpp and vLLM ⚡️ https://t.co/JXjQUouVM4",
+    "text_ja": "来週火曜のライブ配信にぜひご参加ください。モデルを縮小してノートPCに収め、サクサク動かす方法を学べます 💨\n\n@mervenoyann @maximelabonne @TadimetiAditya @bartowski1182 @mgoin_ が登壇し、llama.cppとvLLMを使った量子化の入門と実践的なコツを解説します ⚡️ https://t.co/JXjQUouVM4"
+   },
+   "post_ids": [
+    "2118306577203822976"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "95becc0c84",
@@ -126,9 +179,9 @@
     "日本語での精度や利用条件は投稿からは分からない。"
    ],
    "terms": [],
-   "score": 80,
+   "score": 78,
    "credibility": 90,
-   "heat": 34,
+   "heat": 31,
    "first_seen": "2026-11-04T18:56:55.000Z",
    "latest": "2026-11-04T18:56:55.000Z",
    "authors": [
@@ -166,7 +219,73 @@
     "2118054904300486928"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "3887c1978d",
+   "verdict": "confirmed",
+   "title": "NVIDIAがAbaqusの構造解析をCUDA-Xで高速化",
+   "summary": "NVIDIAの公式アカウントは、構造解析ソフト「Abaqus」をNVIDIA CUDA-Xで高速化する取り組みを紹介する記事への案内を投稿した。投稿本文は記事タイトルのみで、具体的な速度向上の数値や条件は書かれていない。",
+   "points": [
+    "構造解析（部品の強度や変形をコンピュータで計算すること）の計算時間短縮に関する話題",
+    "製造業の設計検証に関係する分野だが、投稿からは効果の大きさは読み取れない",
+    "詳細は元記事で確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Abaqus",
+     "desc": "部品の強度や変形などを計算するための構造解析ソフト"
+    },
+    {
+     "term": "CUDA-X",
+     "desc": "NVIDIAのGPUで計算を速くするためのソフトウェア群"
+    },
+    {
+     "term": "構造解析",
+     "desc": "設計した部品が力や熱にどう耐えるかをコンピュータで計算すること"
+    }
+   ],
+   "score": 69,
+   "credibility": 90,
+   "heat": 17,
+   "first_seen": "2026-11-04T16:59:10.000Z",
+   "latest": "2026-11-04T16:59:10.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの記事案内",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "設計計算の高速化で製造業には関係するが、個人が試せる形ではなさそう"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118025273710981511",
+    "username": "NVIDIAAI",
+    "text": "Accelerating Structural Simulation in Abaqus with NVIDIA CUDA-X https://t.co/HitM5YZLqa",
+    "text_ja": "NVIDIA CUDA-XによるAbaqusの構造シミュレーションの高速化 https://t.co/HitM5YZLqa"
+   },
+   "post_ids": [
+    "2118025273710981511"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "93f83faba2",
@@ -194,7 +313,7 @@
    ],
    "score": 65,
    "credibility": 85,
-   "heat": 21,
+   "heat": 19,
    "first_seen": "2026-11-04T15:38:18.000Z",
    "latest": "2026-11-04T15:38:18.000Z",
    "authors": [
@@ -232,113 +351,7 @@
     "2118004921597665638"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
-   "id": "97aa812622",
-   "verdict": "promising",
-   "title": "中国で初のAI Engineer Summit（上海）が開幕",
-   "summary": "AI Engineer Summitの主催者swyx氏が、上海で初めて開かれるAIE Shanghaiの開幕を喜ぶ投稿をした。Microsoft、MiniMax、Meta、ManusAIなど多数の企業・団体の名前を挙げ、ライブ配信はしないが動画を後で投稿すると述べた。",
-   "points": [
-    "海外のAI開発者向けイベントが中国で初めて開かれたという事実で、登壇企業の顔ぶれから業界の関心の方向が分かる。",
-    "ライブ配信がないため、内容を知るには後日の動画や発表を待つ必要がある。",
-    "投稿は開幕の告知・感想で、講演内容や参加者数は未確認。"
-   ],
-   "terms": [
-    {
-     "term": "AI Engineer Summit",
-     "desc": "AIを実際のサービスに組み込む開発者向けのカンファレンス（会議）。"
-    },
-    {
-     "term": "SOTA",
-     "desc": "State of the Artの略で、その時点で最高水準の性能を指す。"
-    }
-   ],
-   "score": 60,
-   "credibility": 65,
-   "heat": 38,
-   "first_seen": "2026-11-05T07:39:39.000Z",
-   "latest": "2026-11-05T07:39:39.000Z",
-   "authors": [
-    "swyx"
-   ],
-   "author_labels": [
-    {
-     "username": "swyx",
-     "label": "AI Engineer Summit主催・開発者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "主催者本人の開幕投稿",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "業界の動向を知る材料だが、直接試せるツールや手順はない。"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/swyx/status/2118246851136909731",
-    "username": "swyx",
-    "text": "absolutely tearing up seeing AIE Shanghai kick off and SUCH INCREDIBLE EXECUTION from @StandupPartners. \n\nthe first AIE in China is actually happening!!!\n\nand its a packed room and a hot schedule featuring @ryolu_ , @Microsoft, @MiniMax_AI , @theworldlabs, @HeyGen , @ExaAILabs , @openclaw , @StepFun_ai , @liquidai , @youdotcom , @DynaRobotics , @baseten, @Meta , @OptiverGlobal , @ManusAI  and more.\n\nnot livestreamed because Reasons but you can bet we'll be posting up some videos and takes",
-    "text_ja": "AIE上海の開幕を見て、本当に感極まっています。@StandupPartnersの素晴らしい実行力にも感動しました。\n\n中国で初めてのAIEが実際に開催されています！！！\n\n会場は満席で、スケジュールも盛りだくさんです。@ryolu_、@Microsoft、@MiniMax_AI、@theworldlabs、@HeyGen、@ExaAILabs、@openclaw、@StepFun_ai、@liquidai、@youdotcom、@DynaRobotics、@baseten、@Meta、@OptiverGlobal、@ManusAI など、多くの登壇者が参加します。\n\n事情により配信はありませんが、動画や感想はきっと投稿しますので楽しみにしていてください。"
-   },
-   "post_ids": [
-    "2118246851136909731"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
-   "id": "dd106d2543",
-   "verdict": "promising",
-   "title": "AIエージェントユーザーに質問です。",
-   "summary": null,
-   "points": [],
-   "terms": [],
-   "score": 48,
-   "credibility": 75,
-   "heat": 7,
-   "first_seen": "2026-11-05T05:09:35.000Z",
-   "latest": "2026-11-05T05:09:35.000Z",
-   "authors": [
-    "ai_database"
-   ],
-   "author_labels": [
-    {
-     "username": "ai_database",
-     "label": "AI論文紹介メディア「AIDB」運営",
-     "type": "commentator",
-     "former": ""
-    }
-   ],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/ai_database/status/2118209087192412294",
-    "username": "ai_database",
-    "text": "AIエージェントユーザーに質問です。\n同時にどれほどの数のセッションを進めていますか？\n体感、日常の平均で大丈夫です。",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2118209087192412294"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   }
  ]
 }

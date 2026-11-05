@@ -2,21 +2,34 @@
  "date": "2026-11-02",
  "items": [
   {
-   "id": "2175cf8135",
+   "id": "b893ec0c11",
    "verdict": "confirmed",
-   "title": "Mistral、大規模モデル「Mistral Large 4」の実演事例を公開",
-   "summary": "Mistral AIは公式アカウントで、Mistral Large 4を使った複数のデモを投稿した。Djangoの脆弱性の発見・検証・修正、衛星追跡アプリの作成、分子の量子化学計算ソルバーの作成などが紹介されている。Open Math OSへの導入も発表され、一部チーム向けに提供開始とされている。",
+   "title": "Mistral、大規模モデルLarge 4を使ったエージェント機能などを発表",
+   "summary": "Mistral AIの公式アカウントは、新しいStudioの機能として管理型エージェントやアプリ、ワークフロー・企業接続・評価などの機能を紹介した。あわせて、Mistral Large 4を使った脆弱性修正の試み、衛星・デブリを追跡する3Dアプリの作成、Open Math OSへの提供など、複数の事例を投稿している。投稿は主に同社の製品紹介と自社の事例共有である。",
    "points": [
-    "デモは開発元の自社発表であり、第三者による再現や性能の独立評価はまだ確認できない",
-    "Open Math OSは数学者とAIエージェントが共同作業する研究基盤で、オープンモデルのみで構成されるとされる",
-    "読者にとっては、AIに実際のコードを書かせて検証・修正まで任せる使い方の参考になる"
+    "エージェントを作って管理・評価まで一つのサービス内で行える点が、個人や小規模チームにも関係する動き。",
+    "投稿で示された事例（脆弱性修正・衛星追跡）は同社の紹介であり、第三者による検証結果は確認できない。",
+    "Open Math OSは承認されたチームのみが利用可能とされており、一般の人が今すぐ使えるかは不明。"
    ],
-   "terms": [],
-   "score": 77,
+   "terms": [
+    {
+     "term": "マネージドエージェント",
+     "desc": "AIエージェントの実行環境や運用を提供事業者が管理してくれる形のサービス。"
+    },
+    {
+     "term": "Mistral Large 4",
+     "desc": "Mistral AIの大規模言語モデル。投稿では1.05Tのオープンウェイトと1Mのコンテキストと記載。"
+    },
+    {
+     "term": "コンテキスト（1M）",
+     "desc": "AIが一度に扱える文章の量。100万程度の大きさとされる。"
+    }
+   ],
+   "score": 89,
    "credibility": 88,
-   "heat": 41,
+   "heat": 65,
    "first_seen": "2026-11-02T12:16:06.000Z",
-   "latest": "2026-11-04T10:24:20.000Z",
+   "latest": "2026-11-05T15:49:54.000Z",
    "authors": [
     "MistralAI"
    ],
@@ -30,7 +43,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "企業の公式X投稿",
+   "evidence_note": "Mistral AI公式アカウントの発表",
    "links": [
     {
      "url": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
@@ -43,27 +56,28 @@
    "value": {
     "impact": 2,
     "closeness": 2,
-    "try_cost": 1,
-    "why": "開発手法の参考になるが、提供は承認済みチーム向けで一般利用は限定的"
+    "try_cost": 2,
+    "why": "エージェント構築の選択肢として関係するが、料金や利用条件は投稿からは不明"
    },
    "first_step": null,
-   "usable": false,
+   "usable": true,
    "post": {
-    "url": "https://x.com/MistralAI/status/2117925908572991748",
+    "url": "https://x.com/MistralAI/status/2118370229466153299",
     "username": "MistralAI",
-    "text": "Can Mistral Large 4 find a critical vulnerability, prove it and fix it? We tested it on a recent Django CVE.\n\n133 agents map the code, hunt for flaws, test attack scenarios and confirm the bug. Then Le Chonk patches it.\n\nTriage, repro, patch. Shown at 90x speed. https://t.co/NTtZvTQE38",
-    "text_ja": "Mistral Large 4は重大な脆弱性を見つけ、それを証明し、修正できるか？最近のDjango CVEで試してみました。\n\n133のエージェントがコードを解析し、欠陥を探し、攻撃シナリオを試し、バグを確認します。その後、Le Chonkがパッチを当てます。\n\nトリアージ、再現、パッチ。90倍速で表示しています。"
+    "text": "🆕 Le Chonk brings the brains. Mistral Studio gets it working.\n\nIntroducing managed agents and apps, plus new capabilities for workflows, enterprise connections, observability and evaluations in Studio.\n\nBuild faster. Deploy where you choose. Keep control.\nSee what’s possible. 🧵",
+    "text_ja": "🆕 Le Chonkが頭脳を担い、Mistral Studioがそれを動かします。\n\n管理型エージェントとアプリを発表し、ワークフロー、エンタープライズ接続、オブザーバビリティ、Studioの評価機能に新たな機能を追加しました。\n\nより速く構築し、好きな場所にデプロイし、コントロールを手放さない。\nできることをぜひご覧ください。🧵"
    },
    "post_ids": [
+    "2117229259425038344",
+    "2118370229466153299",
     "2117925908572991748",
     "2117574509179900410",
-    "2117229259425038344",
     "2117670644506861900",
     "2117562068220195097",
     "2117558028111421576"
    ],
    "post_count": 6,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "85bd5693ae",

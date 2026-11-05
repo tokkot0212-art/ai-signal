@@ -2,134 +2,6 @@
  "date": "2026-11-03",
  "items": [
   {
-   "id": "f84ac24990",
-   "verdict": "confirmed",
-   "title": "OpenAIが生活支援の評価指標LifeValとロボット設計へのAI活用を紹介",
-   "summary": "OpenAIの公式アカウントは、ChatGPTユーザーの要望をもとに作った新しいベンチマーク「LifeVal」を紹介した。保育施設探し、行政サービスの利用、家計管理などの日常業務で、モデルの性能を測り改善してきたとしている。また、ChatGPTとCodexを機械設計・電気設計・シミュレーションに使い、ハードウェア開発を進めていることも投稿している。",
-   "points": [
-    "生活支援タスクを測る指標を公開した点が新しい。ただし公開詳細は本文からは分からない。",
-    "製造業の設計支援にAIを使う取り組みは、現場の業務を考える読者にも参考になる。",
-    "どの程度の成果が出ているかは投稿に数値がなく未確認。"
-   ],
-   "terms": [],
-   "score": 97,
-   "credibility": 100,
-   "heat": 58,
-   "first_seen": "2026-11-02T17:27:26.000Z",
-   "latest": "2026-11-03T18:56:45.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
-   "links": [
-    {
-     "url": "https://openai.com/index/lifeval/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "services": [
-    {
-     "name": "Codex",
-     "company": "OpenAI",
-     "category": "coding",
-     "category_label": "コーディング",
-     "tier": "major"
-    }
-   ],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "設計支援の取り組みは製造業に関係するが、現時点では企業の発表段階で個人が直接使う手段は示されていない"
-   },
-   "first_step": null,
-   "usable": true,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2117307611338997846",
-    "username": "OpenAI",
-    "text": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. So we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services to managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\nhttps://t.co/GlUjixzEM0",
-    "text_ja": "AGIが人類全体の役に立つためには、人々にとって最も重要な日常の作業を手助けすべきです。そこで私たちは、ChatGPTの数千人のユーザーからのフィードバックをもとに、個人アシスタントにどんな支援を最も求めているかを反映した新しいベンチマーク「LifeVal」を作りました。育児の預け先を探すことから、行政サービスへのアクセス、個人の資産管理まで含まれます。\n\nこの1年間、私たちはLifeValを使って、モデルがこうした日常タスクをどれだけうまくこなせるかを測り、改善してきました。\n\nhttps://t.co/GlUjixzEM0"
-   },
-   "post_ids": [
-    "2117307611338997846",
-    "2117692475775258785"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
-   "id": "d4c7b06d91",
-   "verdict": "confirmed",
-   "title": "OpenAIが脆弱性の自動発見・修正パイプラインの成果を公表",
-   "summary": "OpenAIの公式アカウントは、同社のセキュリティ研究者が構築した自律型の脆弱性発見・悪用検証・パッチ生成のパイプラインを紹介した。次期サイバー対応モデルを使った1回の実行で、Linuxカーネルの948件のローカル権限昇格の脆弱性についてパッチを検証・生成し、総APIコストは120万ドルだったと述べている。また、同アカウントは次の社内セキュリティスプリントをCathedral Systemsと組んで行うこと、バグバウンティ報奨金を引き上げること（重大な発見は最大17万2000ドル）も投稿している。",
-   "points": [
-    "AIが脆弱性を見つけ、修正案まで作る流れを企業が自ら示した点が新しい。",
-    "1回の実行に約120万ドルのAPI費用がかかる点は、個人や小規模チームにとって現実的なハードルを示している。",
-    "投稿は企業の自己発表で、第三者による検証結果は示されていない。実際の修正品質は未確認。"
-   ],
-   "terms": [],
-   "score": 96,
-   "credibility": 100,
-   "heat": 78,
-   "first_seen": "2026-11-03T02:29:35.000Z",
-   "latest": "2026-11-04T23:13:24.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
-   "links": [
-    {
-     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "セキュリティ業界の動きで製造現場の業務には遠い。試す手段も未公開の次期モデルが前提"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2118119451401048497",
-    "username": "OpenAI",
-    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\n\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API cost of $1.2 million.",
-    "text_ja": "当社のセキュリティ研究者が、脆弱性の自律的な発見・悪用・パッチ適用パイプラインを構築しました。\n\n今後公開予定のサイバー分野のモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、それぞれにパッチを生成しました。かかったAPIの総コストは120万ドルです。"
-   },
-   "post_ids": [
-    "2118119451401048497",
-    "2117444048227123277"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
    "id": "819889c93a",
    "verdict": "confirmed",
    "title": "Anthropic、AI安全研究の「Residency」応募を開始",
@@ -142,7 +14,7 @@
    "terms": [],
    "score": 91,
    "credibility": 100,
-   "heat": 68,
+   "heat": 67,
    "first_seen": "2026-11-02T19:51:45.000Z",
    "latest": "2026-11-02T19:51:45.000Z",
    "authors": [
@@ -186,7 +58,270 @@
     "2117343929960112486"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "e25b2c3e33",
+   "verdict": "confirmed",
+   "title": "OpenAI、ChatGPTとCodexを機械設計・電気設計などに活用と発表",
+   "summary": "OpenAIの公式アカウントは、ChatGPTとCodexを物理世界向けのモノづくりに使っていると投稿した。具体的には機械設計、電気設計、シミュレーションの分野で進捗を共有し、ハードウェアチームの反復の高速化や、業界の協力企業との新しいワークフローの試行を行っているとされる。",
+   "points": [
+    "AIを機械・電気設計などのハードウェア開発に使う取り組みで、製造業に近い分野の動きとして注目できる。",
+    "業務の詳細（どの工程で何%短縮したか等）は投稿からは分からない。",
+    "業界の協力企業が誰か、一般向けに提供されるかどうかは未確認。"
+   ],
+   "terms": [
+    {
+     "term": "Codex",
+     "desc": "OpenAIのコード作成を支援するAIツール。プログラムの作成や修正を手伝う。"
+    },
+    {
+     "term": "シミュレーション",
+     "desc": "実物を作る前に、コンピュータ上で動きや性能を再現して確かめる手法。"
+    }
+   ],
+   "score": 91,
+   "credibility": 90,
+   "heat": 57,
+   "first_seen": "2026-11-02T17:27:26.000Z",
+   "latest": "2026-11-03T18:56:45.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
+   "links": [],
+   "services": [
+    {
+     "name": "Codex",
+     "company": "OpenAI",
+     "category": "coding",
+     "category_label": "コーディング",
+     "tier": "major"
+    }
+   ],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "製造業の設計業務に近い話題だが、具体的な手法や成果が示されていない"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2117692475775258785",
+    "username": "OpenAI",
+    "text": "ChatGPT and Codex are helping engineers build for the physical world.\n\nWe’re sharing our progress across mechanical design, electrical engineering, and simulation—from helping our hardware teams iterate faster to testing new workflows with industry collaborators. https://t.co/b3rW9zYJGA",
+    "text_ja": "ChatGPTとCodexは、エンジニアが物理世界向けのものづくりを進める手助けをしています。\n\n機械設計、電気工学、シミュレーションの分野での進捗を共有します。社内のハードウェアチームがより速く反復作業を進められるよう支援するとともに、業界のパートナー企業と新しいワークフローのテストも行っています。 https://t.co/b3rW9zYJGA"
+   },
+   "post_ids": [
+    "2117692475775258785"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "01a0ca8cc6",
+   "verdict": "confirmed",
+   "title": "OpenAI、AIでLinuxカーネルの脆弱性を948件検出・修正",
+   "summary": "OpenAIの公式アカウントは、同社のセキュリティ研究者が自律型のサイバー脆弱性の発見・悪用・修正パイプラインを構築したと投稿した。投稿によると、今後公開予定のサイバー向けモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、修正パッチを生成した。総APIコストは120万ドルとされている。",
+   "points": [
+    "AIが脆弱性の発見から修正まで自動で行う流れを、実際の規模（948件）で示した点が新しい。",
+    "セキュリティ運用やOSの保守にAIが使われる例として注目される。ただし大規模な計算コストがかかる点も読み取れる。",
+    "対象モデルは「今後のモデル」とされ、一般に利用可能か、パッチの品質や誤検出がどの程度かは投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "ローカル権限昇格",
+     "desc": "一般ユーザー権限で動いている攻撃者が、より強い管理者権限を不正に得る脆弱性の種類。"
+    },
+    {
+     "term": "パッチ",
+     "desc": "ソフトウェアの欠陥を直すための修正プログラム。"
+    },
+    {
+     "term": "APIコスト",
+     "desc": "AIサービスを機械的に呼び出した際にかかる利用料金。"
+    }
+   ],
+   "score": 90,
+   "credibility": 90,
+   "heat": 74,
+   "first_seen": "2026-11-03T02:29:35.000Z",
+   "latest": "2026-11-04T23:13:24.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "セキュリティ研究の発表で、個人の製造業サービスには直接関係しにくい。未公開モデルで試せない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2118119451401048497",
+    "username": "OpenAI",
+    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\n\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API cost of $1.2 million.",
+    "text_ja": "当社のセキュリティ研究者が、脆弱性の自律的な発見・悪用・パッチ適用パイプラインを構築しました。\n\n今後公開予定のサイバー分野のモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、それぞれにパッチを生成しました。かかったAPIの総コストは120万ドルです。"
+   },
+   "post_ids": [
+    "2118119451401048497"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "d114e3505c",
+   "verdict": "confirmed",
+   "title": "OpenAI、個人アシスタント向け評価ベンチマーク「LifeVal」を発表",
+   "summary": "OpenAIの公式アカウントは、ChatGPTユーザーの数千件のフィードバックをもとに作成した新しいベンチマーク「LifeVal」を紹介した。育児の手配、行政サービスの利用、家計管理など、日常的な個人向けの作業をAIがどれだけこなせるかを測るもので、同社は過去1年間このベンチマークでモデルを評価・改善してきたと述べている。",
+   "points": [
+    "AIの性能を、専門的な課題ではなく日常生活の作業で測る評価指標が新しい。",
+    "個人向けAIアシスタントの実用性を比べる際の目安になりうる。ただし評価対象や採点方法の詳細は投稿からは分からない。",
+    "ベンチマークは開発元が作ったものであり、他社モデルとの比較や第三者の検証結果は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "ベンチマーク",
+     "desc": "AIの性能を同じ条件で測るための共通の課題やテスト。"
+    },
+    {
+     "term": "AGI",
+     "desc": "人間と同等以上に幅広い知的作業をこなせるAIのこと。定義は研究者により異なる。"
+    }
+   ],
+   "score": 86,
+   "credibility": 100,
+   "heat": 44,
+   "first_seen": "2026-11-02T17:27:26.000Z",
+   "latest": "2026-11-02T17:27:26.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
+   "links": [
+    {
+     "url": "https://openai.com/index/lifeval/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "日常業務の評価指標として参考になるが、ベンチマーク自体は読者が直接試せる形ではない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2117307611338997846",
+    "username": "OpenAI",
+    "text": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. So we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services to managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\nhttps://t.co/GlUjixzEM0",
+    "text_ja": "AGIが人類全体の役に立つためには、人々にとって最も重要な日常の作業を手助けすべきです。そこで私たちは、ChatGPTの数千人のユーザーからのフィードバックをもとに、個人アシスタントにどんな支援を最も求めているかを反映した新しいベンチマーク「LifeVal」を作りました。育児の預け先を探すことから、行政サービスへのアクセス、個人の資産管理まで含まれます。\n\nこの1年間、私たちはLifeValを使って、モデルがこうした日常タスクをどれだけうまくこなせるかを測り、改善してきました。\n\nhttps://t.co/GlUjixzEM0"
+   },
+   "post_ids": [
+    "2117307611338997846"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "2fbf67af7d",
+   "verdict": "confirmed",
+   "title": "OpenAIがセキュリティ強化策と報奨金増額を発表",
+   "summary": "OpenAI公式アカウントが、社内セキュリティ・スプリントの計画と、Cathedral Systemsとの提携を投稿した。研究者が同社のモデルを使って防御を試すとしている。あわせて脆弱性報奨金を引き上げ、重大な発見は4倍以上に増額し、優秀な発見には最大172,000ドル（ボーナス込み）を出すと述べた。",
+   "points": [
+    "AIが脆弱性を見つける能力が上がり、攻撃者より先に防御側がAIを使う必要があるという考えが背景にある。",
+    "報奨金の上限額は、バグ報告を募る仕組みへの投資の大きさを示す。ただし個人開発者がすぐ関わる話ではない。",
+    "Cathedral Systemsの詳細や、提携の期間・成果は投稿からは分からない。"
+   ],
+   "terms": [],
+   "score": 81,
+   "credibility": 100,
+   "heat": 37,
+   "first_seen": "2026-11-03T02:29:35.000Z",
+   "latest": "2026-11-03T02:29:35.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの投稿",
+   "links": [
+    {
+     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "セキュリティ企業向けの動きで、読者の現場作業には直接効きにくい。試せる対象もない。"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2117444048227123277",
+    "username": "OpenAI",
+    "text": "As AI becomes more capable at finding vulnerabilities, defenders need to put it to work before attackers do.\n\nWe’re planning our next internal security sprint at OpenAI and partnering with Cathedral Systems, whose researchers will use our models alongside our teams to challenge our defenses. They’ll bring differentiated expertise and approaches to our ongoing work to find and fix weaknesses with AI.\n\nWe’re also raising bug bounty rewards, including more than quadrupling rewards for critical find",
+    "text_ja": "AIが脆弱性を見つける能力を高めるにつれ、攻撃者より先に防御側がAIを活用する必要があります。\n\nOpenAIでは次回の社内セキュリティ・スプリントを計画しており、Cathedral Systemsと提携します。同社の研究者は当社のモデルを使い、当社のチームとともに当社の防御を検証します。AIで弱点を見つけて修正するという当社の継続的な取り組みに、独自の専門知識とアプローチをもたらしてくれるはずです。\n\nまた、バグバウンティの報酬も引き上げます。重大な脆弱性の発見に対する報酬は4倍以上に増額します。卓越した発見には、ボーナスを含めて最大172,000ドルが支払われる対象となります。\n\n今後もモデルの開発を進め、自社システムの強化に活用するとともに、信頼できる防御側へのアクセスを拡大していきます。\n\nhttps://t.co/vcaoHROTt2"
+   },
+   "post_ids": [
+    "2117444048227123277"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "da061e1e0b",
@@ -201,7 +336,7 @@
    "terms": [],
    "score": 78,
    "credibility": 90,
-   "heat": 50,
+   "heat": 49,
    "first_seen": "2026-11-03T00:09:30.000Z",
    "latest": "2026-11-03T00:09:30.000Z",
    "authors": [
@@ -239,103 +374,36 @@
     "2117408792346509663"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
-   "id": "36a9a04da1",
+   "id": "b127559a25",
    "verdict": "confirmed",
-   "title": "NVIDIAがAbaqusの構造解析をCUDA-Xで高速化と発表",
-   "summary": "NVIDIA公式AIアカウントは、構造シミュレーションソフトAbaqusを「NVIDIA CUDA-X」で高速化したと投稿し、詳細記事へのリンクを示した。投稿本文には性能の数値や日付は書かれていない。",
+   "title": "NVIDIAがCosmosとAgent Toolkitを更新",
+   "summary": "NVIDIAの公式アカウントは、自動運転・ロボット・手術向けのデータ生成と方策テストに使う新しい「Cosmos」シミュレーション手順（レシピ）を紹介した。昼の運転映像を、同じ道路配置と車両の軌道を保ったまま雨の夜の映像に変換する例も示した。また「Agent Toolkit」を拡張し、企業データを使って質問応答や予測を行うエージェントを作れるようにしたとし、Lila Sciences、Siemens、Dassault Systèmesの活用例を挙げている。",
    "points": [
-    "新しい点：構造解析（部品の強度や変形の計算）をGPUで速くする取り組みとされる。",
-    "影響：製造業の設計・検証の時間短縮に関係しうるが、どの程度速くなるかは投稿本文からは分からない。",
-    "注意点：リンク先の詳細を確認しないと、対象バージョンや条件は未確認。"
+    "企業データへのアクセスや実行できる操作を制御しながらAIエージェントを作れるようになったという点が新しい",
+    "Siemensなど製造業の大手が工場の生産計画などに使う例が挙げられており、製造業のエージェント活用の動きとして注目できる",
+    "投稿は公式の紹介で、価格・提供条件・性能の数値は書かれていないため、実際の使い勝手は各公式ページで確認が必要"
    ],
    "terms": [
     {
-     "term": "Abaqus",
-     "desc": "部品の強度や変形などを計算する構造解析用のシミュレーションソフト。"
+     "term": "Agent Toolkit",
+     "desc": "AIエージェント（自律的に作業するAI）を開発者が作るための道具一式"
     },
     {
-     "term": "CUDA-X",
-     "desc": "NVIDIAのGPUを使って計算を高速化するためのソフトウェア群。"
+     "term": "Cosmos",
+     "desc": "NVIDIAの、物理世界を模したシミュレーションを作るAIモデル群"
     },
     {
-     "term": "構造シミュレーション",
-     "desc": "設計した部品が力や熱にどう耐えるかをコンピュータ上で計算すること。"
+     "term": "Digital twin（デジタルツイン）",
+     "desc": "現実の工場や製品を仮想空間に再現して試す仕組み（投稿中の語ではなく一般知識）"
     }
    ],
    "score": 70,
-   "credibility": 90,
-   "heat": 20,
-   "first_seen": "2026-11-02T19:06:10.000Z",
-   "latest": "2026-11-04T16:59:10.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの告知",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "製造業の解析に関係するが、導入には専用ソフトとGPU環境が必要"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118025273710981511",
-    "username": "NVIDIAAI",
-    "text": "Accelerating Structural Simulation in Abaqus with NVIDIA CUDA-X https://t.co/HitM5YZLqa",
-    "text_ja": "NVIDIA CUDA-XによるAbaqusの構造シミュレーションの高速化 https://t.co/HitM5YZLqa"
-   },
-   "post_ids": [
-    "2118025273710981511",
-    "2117332456768717244"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
-   "id": "afe392e674",
-   "verdict": "confirmed",
-   "title": "NVIDIAがAgent Toolkitを拡張、企業データ活用型エージェントに対応",
-   "summary": "NVIDIA公式アカウントは、NVIDIA Agent Toolkitを拡張したと発表した。企業データを使って質問に答えたり予測したりするエージェントを作れるようにし、エージェントのアクセス範囲や動作を制御する仕組みを備えるとしている。LilaSciences、Siemens、Dassault Systèmesの活用例も紹介された。",
-   "points": [
-    "新しい点：エージェントが使える企業データや操作を管理できる点が強調されている。",
-    "影響：Siemens・Dassault Systèmesの例から、工程計画や設計の分野での活用が想定される。",
-    "注意点：各社の具体的な成果や料金・提供条件は本文に示されておらず、未確認。"
-   ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "人の指示を受けて、AIが情報収集や作業を自律的に進めるしくみ。"
-    },
-    {
-     "term": "Agent Toolkit",
-     "desc": "エージェント開発に必要な部品や機能をまとめたNVIDIAの開発キット。"
-    },
-    {
-     "term": "デジタルツイン",
-     "desc": "現実の工場や製品を仮想空間に再現し、シミュレーションする考え方。"
-    }
-   ],
-   "score": 69,
    "credibility": 93,
-   "heat": 8,
-   "first_seen": "2026-11-03T05:44:29.000Z",
+   "heat": 16,
+   "first_seen": "2026-11-02T19:06:10.000Z",
    "latest": "2026-11-04T16:15:51.000Z",
    "authors": [
     "NVIDIAAI"
@@ -361,24 +429,25 @@
    "services": [],
    "events": [],
    "value": {
-    "impact": 3,
+    "impact": 2,
     "closeness": 2,
     "try_cost": 1,
-    "why": "製造業の計画・設計へのエージェント活用に関係。企業向けで個人には試しにくい"
+    "why": "製造業の事例は参考になるが、主に企業向けで個人が今日試す手段は限られる"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118014372845142048",
+    "url": "https://x.com/NVIDIAAI/status/2117332456768717244",
     "username": "NVIDIAAI",
-    "text": "We expanded the NVIDIA Agent Toolkit to help developers build agents that use company data to answer questions and make predictions, with controls over what agents can access and do.\n\nWatch how @LilaSciences , @Siemens and @Dassault3DS are using AI agents to design potential therapies, plan factory production and refine vehicle designs.\n\nSee what’s new → https://t.co/GBTWEioZy1",
-    "text_ja": "NVIDIA Agent Toolkit を拡充しました。開発者が企業データを使って質問に答えたり予測を行ったりするエージェントを構築できるようにし、エージェントがアクセスできる内容や実行できる操作を制御できるようにしています。\n\n@LilaSciences、@Siemens、@Dassault3DS が AI エージェントを使って、治療法の候補を設計し、工場の生産計画を立て、車両設計を洗練させている様子をご覧ください。\n\n新機能はこちら → https://t.co/GBTWEioZy1"
+    "text": "Turn a daytime drive into a rainy night while keeping the same road layout and vehicle trajectories.\n\nNew NVIDIA Cosmos simulation recipes help developers generate data and test policies for autonomous vehicles, robots and surgical applications. 🧵 https://t.co/ULbm6vJQnA",
+    "text_ja": "道路のレイアウトと車両の軌道はそのままに、日中の運転シーンを雨の夜に変換できます。\n\n新しいNVIDIA Cosmosのシミュレーションレシピにより、開発者は自動運転車、ロボット、手術支援アプリケーション向けのデータを生成し、ポリシーをテストできます。🧵 https://t.co/ULbm6vJQnA"
    },
    "post_ids": [
+    "2117332456768717244",
     "2118014372845142048"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "4985a5a445",
@@ -437,7 +506,7 @@
     "2117516278034247708"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "7c97421fa6",
@@ -509,7 +578,7 @@
     "2117493094849622097"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "b2cbcd5ec0",
@@ -537,7 +606,7 @@
    ],
    "score": 68,
    "credibility": 73,
-   "heat": 49,
+   "heat": 47,
    "first_seen": "2026-11-03T13:25:55.000Z",
    "latest": "2026-11-03T16:31:05.000Z",
    "authors": [
@@ -594,59 +663,7 @@
     "2117609218673090886"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
-   "id": "2f52896070",
-   "verdict": "promising",
-   "title": "128GBのMacBookPro使ってて「足りない」って思ったことないもんな。むしろ512GB MacStudioは常に「なんか動かすモデルないかな」と探さない…",
-   "summary": null,
-   "points": [],
-   "terms": [],
-   "score": 51,
-   "credibility": 73,
-   "heat": 17,
-   "first_seen": "2026-11-03T07:55:47.000Z",
-   "latest": "2026-11-04T19:18:40.000Z",
-   "authors": [
-    "shi3z"
-   ],
-   "author_labels": [
-    {
-     "username": "shi3z",
-     "label": "ギリア株式会社ファウンダー・顧問",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "links": [
-    {
-     "url": "https://note.com/shi3zblog/n/n1abc371fac21?sub_rt=share_pb",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/shi3z/status/2117585244480291240",
-    "username": "shi3z",
-    "text": "128GBのMacBookPro使ってて「足りない」って思ったことないもんな。むしろ512GB MacStudioは常に「なんか動かすモデルないかな」と探さないといけない https://t.co/mzulQgx8XE",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2117585244480291240",
-    "2117526136788078646",
-    "2118060378563506303"
-   ],
-   "post_count": 3,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "c430c0500f",
@@ -705,7 +722,7 @@
     "2117378741336932757"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   }
  ]
 }

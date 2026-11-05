@@ -2,19 +2,28 @@
  "date": "2026-11-04",
  "items": [
   {
-   "id": "3ed3bb33bb",
+   "id": "c84c2f061b",
    "verdict": "confirmed",
-   "title": "Anthropicがウイルス由来の粒子構造解析とAI推論証明の研究を公表",
-   "summary": "Anthropicの公式アカウントは、同社の生物学研究チームがClaudeと共同で、細菌由来のvault粒子の3D構造を初めて明らかにしたと紹介した。vault粒子は1986年に発見された、細胞内で最大級のタンパク質構造の一つで、機能は未解明とされている。同アカウントは、あわせて大規模言語モデルの出力が特定のモデル由来であることを検証する「FlashProve」という研究も発表し、既存のオープンソース手法より効率的だと述べている。",
+   "title": "Anthropic、Claudeで細菌由来のvault粒子の3D構造を解析",
+   "summary": "Anthropicの公式アカウントは、同社の生物学研究チームがClaudeを使って、細菌由来のvault粒子の最初の3D構造をマッピングしたと発表した。vault粒子は1986年に発見された細胞内の大きなタンパク質構造で、機能は未解明とされている。投稿では、細菌やそれに感染するウイルスの類似タンパク質もvaultを形成しうることを示したと述べられている。",
    "points": [
-    "細菌由来のvaultが組み立てられることを示した点が新しいと発表されている。",
-    "FlashProveは、チャットの乗っ取り防止や提供モデルの確認に使える可能性がある。",
-    "FlashProveの効率性の具体的な数値や、vaultの機能はまだ分からない。"
+    "これまで動物や植物など複雑な生物の細胞内でしか知られていなかったvaultが、細菌でも見つかった点が新しい。",
+    "AIが科学研究の現場でどう使われるかを示す事例だが、Claudeの具体的な役割の詳細は投稿からは分からない。",
+    "vault粒子の機能はまだ不明で、今回の結果が謎の解明につながるかは未確認。"
    ],
-   "terms": [],
-   "score": 90,
+   "terms": [
+    {
+     "term": "vault粒子",
+     "desc": "細胞の中にある樽型の大きなタンパク質の殻。機能はまだ分かっていない。"
+    },
+    {
+     "term": "3D構造",
+     "desc": "分子などの立体的な形を明らかにすること。形が分かると仕組みを推測しやすくなる。"
+    }
+   ],
+   "score": 91,
    "credibility": 100,
-   "heat": 66,
+   "heat": 63,
    "first_seen": "2026-11-03T19:54:41.000Z",
    "latest": "2026-11-04T20:11:28.000Z",
    "authors": [
@@ -30,13 +39,80 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの研究発表",
+   "evidence_note": "Anthropic公式アカウントの発表",
    "links": [
     {
      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
      "domain": "anthropic.com",
      "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "科学研究の成果で、現場の業務には直接関係しにくい。試せる対象もない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/AnthropicAI/status/2118073665296228863",
+    "username": "AnthropicAI",
+    "text": "We’re sharing how our biology research team worked with Claude to map the first 3D structure of a vault particle from bacterial life.\n\nVault particles are a longstanding mystery. They are barrel-shaped objects, among the largest protein structures found in our cells. They were first discovered by Leonard Rome and Nancy Kedersha in 1986, but their function remains unknown.\n\nWith Claude, we’ve found results that might bring us closer to solving that mystery.\n\nUntil now, vaults were only known in t",
+    "text_ja": "Anthropicの生物学研究チームがClaudeと協力して、細菌由来のvault粒子の最初の3D構造をマッピングした経緯を共有します。\n\nvault粒子は長年の謎です。樽型の物体で、私たちの細胞内で見つかる最大級のタンパク質構造の一つです。1986年にLeonard RomeとNancy Kedershaによって初めて発見されましたが、その機能はいまだ不明です。\n\nClaudeを使い、その謎の解明に近づく可能性のある結果が得られました。\n\nこれまで、vaultは動物や植物のような複雑な生物の細胞内でしか知られていませんでした。私たちは、細菌（およびそれに感染するウイルス）の類似タンパク質もvaultを形成しうることを示しました。これらの構造が見つかったのは..."
+   },
+   "post_ids": [
+    "2118073665296228863"
+   ],
+   "post_count": 3,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "66671f99de",
+   "verdict": "confirmed",
+   "title": "Anthropic、AIの回答が特定モデル由来かを検証するFlashProveを公開",
+   "summary": "Anthropicの公式アカウントは、大規模言語モデルの「証明可能な推論」に関する新しい研究として、FlashProveを紹介した。FlashProveは暗号技術を応用し、ある回答が特定のAIモデルから生成されたかを検証できるとされる。既存のオープンソース手法より大幅に効率的だと述べられており、同社はオープンソースで公開すると投稿している。",
+   "points": [
+    "AIの回答が本当に指定モデルから来たかを検証できる点が新しい。提供側の信頼性確認に役立つとされる。",
+    "チャットの乗っ取り防止や、テスト対象が実際に顧客へ提供されるモデルと同一かの確認などに応用できると説明されている。",
+    "効率性の具体的な数値や、一般の開発者が実際に使える水準かは投稿からは分からない。詳細は元の研究資料で確認が必要。"
+   ],
+   "terms": [
+    {
+     "term": "証明可能な推論",
+     "desc": "AIの回答が指定したモデルから生成されたことを、暗号的な証明で確かめられる仕組み。"
     },
+    {
+     "term": "暗号技術",
+     "desc": "情報を安全に扱うための数学的な技術。ここでは検証の仕組みに使われている。"
+    },
+    {
+     "term": "オープンソース",
+     "desc": "ソフトウェアの設計図（コード）を誰でも見たり使ったりできる形で公開すること。"
+    }
+   ],
+   "score": 91,
+   "credibility": 100,
+   "heat": 53,
+   "first_seen": "2026-11-03T19:54:41.000Z",
+   "latest": "2026-11-03T20:10:08.000Z",
+   "authors": [
+    "AnthropicAI"
+   ],
+   "author_labels": [
+    {
+     "username": "AnthropicAI",
+     "label": "Anthropic公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Anthropic公式の研究発表",
+   "links": [
     {
      "url": "https://www.anthropic.com/research/provable-inference",
      "domain": "anthropic.com",
@@ -46,31 +122,35 @@
      "url": "https://github.com/anthropics/FlashProve",
      "domain": "github.com",
      "primary": true
+    },
+    {
+     "url": "http://rdalal.github.io",
+     "domain": "rdalal.github.io",
+     "primary": false
     }
    ],
    "services": [],
    "events": [],
    "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "基礎研究とAI安全技術の発表で、製造現場の業務にすぐ使える内容ではない"
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "AIの信頼性確認に関係するが、現場の業務改善への直接効果は限定的。OSS公開の詳細は要確認"
    },
    "first_step": null,
-   "usable": false,
+   "usable": true,
    "post": {
-    "url": "https://x.com/AnthropicAI/status/2118073665296228863",
+    "url": "https://x.com/AnthropicAI/status/2117710942826123294",
     "username": "AnthropicAI",
-    "text": "We’re sharing how our biology research team worked with Claude to map the first 3D structure of a vault particle from bacterial life.\n\nVault particles are a longstanding mystery. They are barrel-shaped objects, among the largest protein structures found in our cells. They were first discovered by Leonard Rome and Nancy Kedersha in 1986, but their function remains unknown.\n\nWith Claude, we’ve found results that might bring us closer to solving that mystery.\n\nUntil now, vaults were only known in t",
-    "text_ja": "当社のバイオ研究チームがClaudeと協力し、細菌由来の「ヴォルト粒子」の3D構造を初めて解明した取り組みをご紹介します。\n\nヴォルト粒子は長年の謎とされてきた存在です。樽型をしており、私たちの細胞内で見つかる最大級のタンパク質構造の一つです。1986年にLeonard RomeとNancy Kedershaによって初めて発見されましたが、その機能はいまだ不明です。\n\nClaudeとの共同研究により、この謎の解明に近づく可能性のある結果が得られました。\n\nこれまで、ヴォルトは動物や植物のような複雑な生物の細胞内でしか知られていませんでした。今回、細菌（およびそれに感染するウイルス）の類似タンパク質も、ヴォルトを形成できることを示しました。より単純な生物でこの構造が見つかったことで、私たちの細胞内での機能を調べやすくなるかもしれません。\n\nライフサイエンスチームにとって、このプロジェクトはAIを科学の加速に使うことの可能性と限界を示すものでもありました。\n\n詳しい記事では、Claudeがいくつかの段階を大幅に短縮できた点について述べています。ヴォルト粒子の構造を手作業で決定するには数週間から数か月の根気のいる作業が必要ですが、今回は数日で済みました。一方で、Claudeが単純なミスをする場面もあったことについても論じています。"
+    "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the mo",
+    "text_ja": "Anthropicの新しい研究：大規模言語モデルの「証明可能な推論（provable inference）」に関する進展です。\n\n今回、FlashProveを紹介します。確立された暗号技術を基盤として、FlashProveを使えば、開発者はある応答が特定のAIモデルから生成されたものかどうかを検証できます。これまでのオープンソースの手法と比べて大幅に効率的です。\n\nこの証明にはさまざまな用途があります。たとえば、攻撃者がチャットを乗っ取ることを難しくしたり、安全性評価者が、テストしているモデルが顧客に提供されているモデルと同一であることを検証できたりします。\n\n詳しい解説はこちらをご覧ください：https://t.co/OIZWPb6QZa\n\n証明可能な推論のさらなる進展は、AIの導入に対する信頼を高める上で重要な要素になると考えられます。そのため、FlashProveのコードをオープンソースとして公開しています。こちらからどうぞ：https://t.co/7ky3Ir8V06\n\n共同研究者の皆さまに感謝します：Alessandro Chiesa、@GiacomoFenzi、@gwberg95、@miranda__christ、Rahul Dalal（https://t.co/pjWKLHWXyz）、Ben Mayer（@transmissions11）。"
    },
    "post_ids": [
-    "2118073665296228863",
     "2117710942826123294",
     "2117707052948898271"
    ],
-   "post_count": 3,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "post_count": 2,
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "f8c41cba5d",
@@ -98,7 +178,7 @@
    ],
    "score": 66,
    "credibility": 90,
-   "heat": 16,
+   "heat": 15,
    "first_seen": "2026-11-03T17:59:36.000Z",
    "latest": "2026-11-03T17:59:36.000Z",
    "authors": [
@@ -136,7 +216,7 @@
     "2117678090918707535"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "3376f55a28",
@@ -164,7 +244,7 @@
    ],
    "score": 62,
    "credibility": 90,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-11-04T02:29:47.000Z",
    "latest": "2026-11-04T02:29:47.000Z",
    "authors": [
@@ -202,66 +282,7 @@
     "2117806486172860793"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
-  },
-  {
-   "id": "a15d66a930",
-   "verdict": "promising",
-   "title": "Google、学校向けAI機能を原則オフに変更へ",
-   "summary": "ITmedia NEWSが、Googleが学校の生徒向けAI機能を原則オフにすると報じた。「AIなしのGoogle検索」は選べない仕様になり、批判も出ているという。投稿は見出しと記事リンクのみで、対象範囲や時期は確認できない。",
-   "points": [
-    "新しい点は、学校向けにAI機能を初期設定で止める方向が示された点。",
-    "教育現場でのAI利用ルールを考える人に影響し、教育向けサービスの設計にも関係しうる。",
-    "対象地域・適用時期・批判の具体的内容は未確認。元記事で確認が必要。"
-   ],
-   "terms": [],
-   "score": 56,
-   "credibility": 78,
-   "heat": 15,
-   "first_seen": "2026-11-03T22:35:06.000Z",
-   "latest": "2026-11-03T22:35:06.000Z",
-   "authors": [
-    "itmedia_news"
-   ],
-   "author_labels": [
-    {
-     "username": "itmedia_news",
-     "label": "ITmedia NEWS公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "reporting",
-   "evidence_label": "報道（取材・出典あり）",
-   "evidence_note": "ITmedia NEWSの記事紹介",
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002849/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "教育用途の設計に関係するが、試せるツールの情報ではない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/itmedia_news/status/2117747424471179501",
-    "username": "itmedia_news",
-    "text": "Google、学校の生徒向けAI機能を原則オフへ　「AIなしのGoogle検索」は選べず批判も\nhttps://t.co/WLJsXnlVzs",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2117747424471179501"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
   },
   {
    "id": "ceb00a494e",
@@ -276,7 +297,7 @@
    "terms": [],
    "score": 56,
    "credibility": 78,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-11-04T00:40:08.000Z",
    "latest": "2026-11-04T00:40:08.000Z",
    "authors": [
@@ -320,7 +341,135 @@
     "2117778890194342039"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T11:14:46Z"
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "a15d66a930",
+   "verdict": "promising",
+   "title": "Google、学校向けAI機能を原則オフに変更へ",
+   "summary": "ITmedia NEWSが、Googleが学校の生徒向けAI機能を原則オフにすると報じた。「AIなしのGoogle検索」は選べない仕様になり、批判も出ているという。投稿は見出しと記事リンクのみで、対象範囲や時期は確認できない。",
+   "points": [
+    "新しい点は、学校向けにAI機能を初期設定で止める方向が示された点。",
+    "教育現場でのAI利用ルールを考える人に影響し、教育向けサービスの設計にも関係しうる。",
+    "対象地域・適用時期・批判の具体的内容は未確認。元記事で確認が必要。"
+   ],
+   "terms": [],
+   "score": 55,
+   "credibility": 78,
+   "heat": 14,
+   "first_seen": "2026-11-03T22:35:06.000Z",
+   "latest": "2026-11-03T22:35:06.000Z",
+   "authors": [
+    "itmedia_news"
+   ],
+   "author_labels": [
+    {
+     "username": "itmedia_news",
+     "label": "ITmedia NEWS公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "reporting",
+   "evidence_label": "報道（取材・出典あり）",
+   "evidence_note": "ITmedia NEWSの記事紹介",
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002849/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "教育用途の設計に関係するが、試せるツールの情報ではない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/itmedia_news/status/2117747424471179501",
+    "username": "itmedia_news",
+    "text": "Google、学校の生徒向けAI機能を原則オフへ　「AIなしのGoogle検索」は選べず批判も\nhttps://t.co/WLJsXnlVzs",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2117747424471179501"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "17c8e10545",
+   "verdict": "promising",
+   "title": "AIE上海が開幕、中国で初開催と主催者が投稿",
+   "summary": "AI Engineer Summitの主催者swyx氏が、AIE Shanghaiの開幕を喜ぶ投稿をした。中国で初めてのAIEで、Microsoft、MiniMax、Meta、ManusなどのAI関連企業の名前を登壇予定として挙げ、会場は満席で講演は配信されないと述べている。",
+   "points": [
+    "AIEは海外の開発者向けAIカンファレンスで、今回が中国での初開催とされる",
+    "登壇者には大手企業や新興AI企業の名前が並ぶが、個別の内容は投稿からは分からない",
+    "動画は後日投稿するとしており、講演内容は後から確認できる可能性がある"
+   ],
+   "terms": [
+    {
+     "term": "AI Engineer Summit（AIE）",
+     "desc": "AIを使ったソフトウェア開発者向けの国際カンファレンス。"
+    },
+    {
+     "term": "ライブ配信",
+     "desc": "会場の様子をインターネットでリアルタイムに流すこと。"
+    }
+   ],
+   "score": 54,
+   "credibility": 65,
+   "heat": 28,
+   "first_seen": "2026-11-03T18:03:50.000Z",
+   "latest": "2026-11-05T07:39:39.000Z",
+   "authors": [
+    "swyx"
+   ],
+   "author_labels": [
+    {
+     "username": "swyx",
+     "label": "AI Engineer Summit主催・開発者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "主催者の開幕告知投稿",
+   "links": [
+    {
+     "url": "http://aie.codes",
+     "domain": "aie.codes",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "開催報告で、読者が今日試せるツールや手法ではない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/swyx/status/2118246851136909731",
+    "username": "swyx",
+    "text": "absolutely tearing up seeing AIE Shanghai kick off and SUCH INCREDIBLE EXECUTION from @StandupPartners. \n\nthe first AIE in China is actually happening!!!\n\nand its a packed room and a hot schedule featuring @ryolu_ , @Microsoft, @MiniMax_AI , @theworldlabs, @HeyGen , @ExaAILabs , @openclaw , @StepFun_ai , @liquidai , @youdotcom , @DynaRobotics , @baseten, @Meta , @OptiverGlobal , @ManusAI  and more.\n\nnot livestreamed because Reasons but you can bet we'll be posting up some videos and takes",
+    "text_ja": "AIE上海の開幕を見て、本当に感極まっています。@StandupPartnersの素晴らしい実行力にも感動しました。\n\n中国で初めてのAIEが実際に開催されています！！！\n\n会場は満席で、スケジュールも盛りだくさんです。@ryolu_、@Microsoft、@MiniMax_AI、@theworldlabs、@HeyGen、@ExaAILabs、@openclaw、@StepFun_ai、@liquidai、@youdotcom、@DynaRobotics、@baseten、@Meta、@OptiverGlobal、@ManusAI など、多くの登壇者が参加します。\n\n事情により配信はありませんが、動画や感想はきっと投稿しますので楽しみにしていてください。"
+   },
+   "post_ids": [
+    "2118246851136909731",
+    "2117679157035602065"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-05T16:33:27Z"
   }
  ]
 }

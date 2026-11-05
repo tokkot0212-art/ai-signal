@@ -1,0 +1,177 @@
+{
+ "date": "2026-11-06",
+ "items": [
+  {
+   "id": "28d511033b",
+   "verdict": "confirmed",
+   "title": "NVIDIAがAIのメモリ効率化の5つの方法を紹介",
+   "summary": "NVIDIA公式AIアカウントが、AIのメモリを効率よく使う方法を紹介する記事への案内を投稿した。モデルの重みを小さくすることから、サーバー間でコンテキストを再利用することまで、システム全体の最適化を5つ挙げるとしている。",
+   "points": [
+    "AIのメモリ不足は処理速度とコストに直結するため、効率化は実用面で重要とされる。",
+    "重みの縮小やコンテキスト再利用は、大規模なAIサービスを運用する側の話が中心とみられる。",
+    "個々の手法の効果や数値は、この投稿だけでは確認できない。"
+   ],
+   "terms": [],
+   "score": 77,
+   "credibility": 90,
+   "heat": 43,
+   "first_seen": "2026-11-05T16:03:21.000Z",
+   "latest": "2026-11-05T16:03:21.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの記事案内",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "大規模運用向けの技術解説で、小規模な現場利用には直接効きにくい。"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118373611408945493",
+    "username": "NVIDIAAI",
+    "text": "How do you make AI memory go further?\n\nGo inside the architecture to explore 5 ways NVIDIA optimizes the full system, from shrinking model weights to reusing context across servers. https://t.co/nNY9OLL6Hf",
+    "text_ja": "AIのメモリをさらに活用するにはどうすればよいでしょうか？\n\nNVIDIAがモデルの重みの圧縮から複数サーバー間でのコンテキスト再利用まで、システム全体を最適化する5つの方法を、アーキテクチャの内側からご紹介します。 https://t.co/nNY9OLL6Hf"
+   },
+   "post_ids": [
+    "2118373611408945493"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "0e5949a8a6",
+   "verdict": "confirmed",
+   "title": "NVIDIAがAWSでPolarsをGPU実行する配信を案内",
+   "summary": "NVIDIA公式AIアカウントが、AWS上でPolarsをGPUで動かす方法を扱うライブ配信を案内した。配信のタイトルはCuDF Polarsに関するものとなっている。",
+   "points": [
+    "Polarsはデータ処理用のライブラリで、GPUで動かすと大量データの処理が速くなる場合がある。",
+    "製造業の記録データを集計する用途にも関係しうるが、本投稿では用途は示されていない。",
+    "AWSの利用料金や設定の難しさは投稿からは分からない。"
+   ],
+   "terms": [],
+   "score": 76,
+   "credibility": 90,
+   "heat": 39,
+   "first_seen": "2026-11-05T15:00:30.000Z",
+   "latest": "2026-11-05T15:00:30.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの配信告知",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "データ処理の高速化は関係するが、読者の業務課題との距離は遠く、GPUやAWSの設定が必要。"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118357795607105958",
+    "username": "NVIDIAAI",
+    "text": "Run Polars on a GPU with AWS | Live with cuDF Polars https://t.co/1S0CGF2aA4",
+    "text_ja": "AWSでPolarsをGPU上で実行：cuDF Polarsのライブ配信 https://t.co/1S0CGF2aA4"
+   },
+   "post_ids": [
+    "2118357795607105958"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
+  },
+  {
+   "id": "97e1c5b02f",
+   "verdict": "promising",
+   "title": "NVIDIA研究者がロボット向け視覚モデルVFlashを発表",
+   "summary": "NVIDIAロボティクス研究者のJim Fan氏が、物理世界向けの視覚モデル「VFlash」を紹介した。位置や軌道など長さの決まった数値を一度に出力する方式により、ロボットの行動の決定が最大12倍速くなり、Jetson ThorやDGX Sparkなどのエッジ向けGPUで全体の推論が5.1倍速くなったと述べた。投稿では、精度がVLMのバックボーンより高くなったとも述べている。",
+   "points": [
+    "トークンを一つずつ出力せず、固定長の数値をまとめて出すことで速度を上げる点が新しい",
+    "エッジGPU上での高速化はロボットを現場で動かす際に重要になりうる",
+    "投稿は途中で切れており、精度の具体的な数値や条件は未確認。論文や公式資料での確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "VLM（視覚言語モデル）",
+     "desc": "画像と文章を一緒に理解できるAIモデル"
+    },
+    {
+     "term": "トークン",
+     "desc": "AIが文章や数値を処理するための最小の単位"
+    },
+    {
+     "term": "エッジGPU",
+     "desc": "工場や機械の近くで動く小型の計算用GPU"
+    }
+   ],
+   "score": 58,
+   "credibility": 70,
+   "heat": 31,
+   "first_seen": "2026-11-05T16:31:58.000Z",
+   "latest": "2026-11-05T16:31:58.000Z",
+   "authors": [
+    "DrJimFan"
+   ],
+   "author_labels": [
+    {
+     "username": "DrJimFan",
+     "label": "NVIDIA Robotics研究者",
+     "type": "researcher",
+     "former": "元OpenAI インターン"
+    }
+   ],
+   "evidence": "official_evaluation",
+   "evidence_label": "公式評価",
+   "evidence_note": "metrの評価の紹介",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "ロボット研究の進展として重要だが、個人の製造業サービスには直接使えず未公開の可能性が高い"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/DrJimFan/status/2118380813498892301",
+    "username": "DrJimFan",
+    "text": "The era of System One Vision Model is here! Introducing VFlash: parsing the visual world in parallel at unmatched speeds for Physical AI.\n\nMost embodied prediction tasks like object localization, robot trajectory planning, and dense 3D motion are fixed-length float vectors. For example, a bounding box is always 6 tokens, a 10-waypoint robot arm trajectory is 54: we know these beforehand. Instead of decoding one token at a time, we can output the entire geometric shape in one go. \n\nVFlash enables",
+    "text_ja": "「システムワン視覚モデル」の時代が到来した！物理AI向けに、視覚世界を並列に、比類ない速度で解析するVFlashを紹介します。\n\n物体の位置特定、ロボットの軌道計画、密な3D動作などの多くの具現化予測タスクは、長さが固定された浮動小数点ベクトルです。例えばバウンディングボックスは常に6トークン、10ウェイポイントのロボットアーム軌道は54トークンです。事前にわかっているので、1トークンずつ復号する代わりに、幾何学的形状全体を一度に出力できます。\n\nVFlashは、Jetson ThorやDGX Sparkのようなエッジ GPUで、行動の復号を最大12倍、全体のロボット推論を5.1倍高速化します。驚くべきことに、VLMのバックボーンよりも精度が高くなっています。"
+   },
+   "post_ids": [
+    "2118380813498892301"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-05T16:33:27Z"
+  }
+ ]
+}

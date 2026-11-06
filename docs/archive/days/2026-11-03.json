@@ -2,52 +2,29 @@
  "date": "2026-11-03",
  "items": [
   {
-   "id": "3becaba4fa",
+   "id": "004213b4cc",
    "verdict": "confirmed",
-   "title": "OpenAIがセキュリティ研究向けモデル「GPT-6 Cyber」を発表",
-   "summary": "OpenAIは公式アカウントで「GPT-6 Cyber」の発表を行い、セキュリティ研究向けの能力向上と整合性（アライメント）の改善をうたった。Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームが利用を始めていると投稿で述べている。提供は一部の顧客（Daybreak Red）に限られ、今後アクセスを段階的に広げるとされる。",
+   "title": "OpenAIがセキュリティ研究向けの「GPT-6 Cyber」を発表",
+   "summary": "OpenAI公式アカウントは、セキュリティ研究向けモデル「GPT-6 Cyber」を発表した。同社によると、Linuxカーネル研究に使われ、Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームも利用を始めている。現在は一部の「Daybreak Red」顧客に提供され、今後アクセスを段階的に広げるとしている。\n\n同じくOpenAI公式は、自律的な脆弱性発見・悪用・修正のパイプラインを構築し、Linuxカーネルの特権昇格の脆弱性948件について、パッチを検証・生成したと投稿している（総API費用は120万ドルとされる）。",
    "points": [
-    "一般利用ではなく、選ばれた顧客向けに限定提供されている点が現時点の最大の特徴。",
-    "投稿では前日発表のLinuxカーネル研究でこのモデルが使われたとされるが、詳細は本投稿だけでは確認できない。",
-    "企業名の利用例は投稿の記述であり、性能の客観的な数値はこの投稿には示されていない。"
+    "新しい点: 攻撃の発見から修正までをAIが自律的に行う試みで、人手の多い脆弱性対応の効率化が注目される。",
+    "注意点: 利用は一部顧客に限られ、一般の人が今すぐ使えるものではない。性能の主張は公式発表のみで、第三者の検証結果は投稿内にない。",
+    "読者への関係: 製造業の現場システムでも脆弱性対応は重要だが、直接使える段階ではない。"
    ],
-   "terms": [
-    {
-     "term": "アライメント",
-     "desc": "AIが人間の意図や安全ルールに沿って動くように調整すること"
-    },
-    {
-     "term": "Linuxカーネル",
-     "desc": "Linux OSの中核部分。多くのサーバーや機器で動いている基盤ソフト"
-    }
-   ],
-   "score": 96,
+   "terms": [],
+   "score": 94,
    "credibility": 100,
-   "heat": 74,
+   "heat": 71,
    "first_seen": "2026-11-03T02:29:35.000Z",
    "latest": "2026-11-05T17:09:13.000Z",
    "authors": [
-    "OpenAI",
-    "simonw",
-    "npaka123"
+    "OpenAI"
    ],
    "author_labels": [
     {
      "username": "OpenAI",
      "label": "OpenAI公式アカウント",
      "type": "official",
-     "former": ""
-    },
-    {
-     "username": "simonw",
-     "label": "Datasette・Django共同作成者",
-     "type": "practitioner",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
      "former": ""
     }
    ],
@@ -59,16 +36,6 @@
      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
      "domain": "openai.com",
      "primary": true
-    },
-    {
-     "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-     "domain": "simonwillison.net",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n270373a5a637?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
     }
    ],
    "services": [],
@@ -77,7 +44,7 @@
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "セキュリティ領域の話で、読者の製造現場の業務とは直接関係が薄い。提供も限定的"
+    "why": "セキュリティ研究向けで限定提供。読者の製造現場業務とは遠い"
    },
    "first_step": null,
    "usable": false,
@@ -89,12 +56,12 @@
    },
    "post_ids": [
     "2117444048227123277",
+    "2117609218673090886",
     "2118390190246879554",
-    "2117655816581071203",
-    "2117609218673090886"
+    "2118119451401048497"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "819889c93a",
@@ -177,7 +144,7 @@
    ],
    "score": 89,
    "credibility": 90,
-   "heat": 53,
+   "heat": 52,
    "first_seen": "2026-11-02T17:27:26.000Z",
    "latest": "2026-11-03T18:56:45.000Z",
    "authors": [
@@ -223,7 +190,7 @@
     "2117692475775258785"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "d114e3505c",
@@ -294,72 +261,6 @@
    "archived_at": "2026-11-05T16:33:27Z"
   },
   {
-   "id": "01a0ca8cc6",
-   "verdict": "confirmed",
-   "title": "OpenAI、AIでLinuxカーネルの脆弱性を948件検出・修正",
-   "summary": "OpenAIの公式アカウントは、同社のセキュリティ研究者が自律型のサイバー脆弱性の発見・悪用・修正パイプラインを構築したと投稿した。投稿によると、今後公開予定のサイバー向けモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、修正パッチを生成した。総APIコストは120万ドルとされている。",
-   "points": [
-    "AIが脆弱性の発見から修正まで自動で行う流れを、実際の規模（948件）で示した点が新しい。",
-    "セキュリティ運用やOSの保守にAIが使われる例として注目される。ただし大規模な計算コストがかかる点も読み取れる。",
-    "対象モデルは「今後のモデル」とされ、一般に利用可能か、パッチの品質や誤検出がどの程度かは投稿からは分からない。"
-   ],
-   "terms": [
-    {
-     "term": "ローカル権限昇格",
-     "desc": "一般ユーザー権限で動いている攻撃者が、より強い管理者権限を不正に得る脆弱性の種類。"
-    },
-    {
-     "term": "パッチ",
-     "desc": "ソフトウェアの欠陥を直すための修正プログラム。"
-    },
-    {
-     "term": "APIコスト",
-     "desc": "AIサービスを機械的に呼び出した際にかかる利用料金。"
-    }
-   ],
-   "score": 86,
-   "credibility": 90,
-   "heat": 66,
-   "first_seen": "2026-11-03T02:29:35.000Z",
-   "latest": "2026-11-04T23:13:24.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの発表",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "セキュリティ研究の発表で、個人の製造業サービスには直接関係しにくい。未公開モデルで試せない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2118119451401048497",
-    "username": "OpenAI",
-    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\n\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API cost of $1.2 million.",
-    "text_ja": "当社のセキュリティ研究者が、脆弱性の自律的な発見・悪用・パッチ適用パイプラインを構築しました。\n\n今後公開予定のサイバー分野のモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、それぞれにパッチを生成しました。かかったAPIの総コストは120万ドルです。"
-   },
-   "post_ids": [
-    "2118119451401048497"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-06T11:12:35Z"
-  },
-  {
    "id": "da061e1e0b",
    "verdict": "confirmed",
    "title": "OpenAI、社内モノレポ向けGitバックエンド「Pando」を公開",
@@ -413,34 +314,21 @@
    "archived_at": "2026-11-05T20:43:50Z"
   },
   {
-   "id": "afe392e674",
+   "id": "ae6fbf1744",
    "verdict": "confirmed",
-   "title": "NVIDIAがAgent Toolkitを拡張、企業データ活用のエージェント向け",
-   "summary": "NVIDIAの公式AIアカウントは、Agent Toolkitを拡張し、企業データを使って質問に答えたり予測したりするエージェントを開発者が作れるようにしたと発表した。エージェントがアクセスできる範囲や実行できる操作を管理する機能も含まれるという。投稿では、LilaSciences、Siemens、Dassault3DSがAIエージェントを活用している例として挙げられている。",
+   "title": "NVIDIAがAIエージェント開発ツールキットを拡張",
+   "summary": "NVIDIA公式AIアカウントは、同社の「NVIDIA Agent Toolkit」を拡張し、企業データを使って質問に答えたり予測したりするエージェントを開発者が作れるようにしたと発表した。エージェントがアクセスできる範囲や動作を管理する機能も含まれるとしている。Box、Lila Sciences、Siemens、Dassault Systèmesの事例も紹介された。",
    "points": [
-    "新しい点: 企業データへのアクセス範囲や操作を制御しながらエージェントを作れるようになった点",
-    "なぜ重要か: 製造業の設計・工場生産計画にAIエージェントを使う動きが、Siemensなどの事例で示されている",
-    "注意点: 投稿に価格や提供条件は書かれておらず、利用には詳細確認が必要"
+    "新しい点: 企業データへのアクセス権限を管理しながらエージェントを作れる点が、業務利用では重要とみられる。",
+    "注意点: 投稿は概要のみで、料金や具体的な機能の詳細は未確認。大企業向けの色が強いとみられる。",
+    "読者への関係: 工場の工程計画や製品設計への応用例があり、業界の動きを知る材料になる。"
    ],
-   "terms": [
-    {
-     "term": "Agent Toolkit",
-     "desc": "エージェントを作るための開発用部品やツールの集まり"
-    },
-    {
-     "term": "AIエージェント",
-     "desc": "目的に沿って複数の作業を自律的に進めるAI"
-    },
-    {
-     "term": "デジタルツイン(設計の文脈)",
-     "desc": "現実の工場や製品を仮想空間で再現したもの。投稿では明示されていないため一般的な意味"
-    }
-   ],
-   "score": 69,
+   "terms": [],
+   "score": 75,
    "credibility": 93,
-   "heat": 4,
+   "heat": 29,
    "first_seen": "2026-11-02T19:06:10.000Z",
-   "latest": "2026-11-04T16:15:51.000Z",
+   "latest": "2026-11-05T23:46:30.000Z",
    "authors": [
     "NVIDIAAI"
    ],
@@ -454,7 +342,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の製品発表",
+   "evidence_note": "NVIDIA公式の発表・告知",
    "links": [
     {
      "url": "https://nvda.ws/4BJ7VrE",
@@ -466,24 +354,25 @@
    "events": [],
    "value": {
     "impact": 2,
-    "closeness": 3,
-    "try_cost": 2,
-    "why": "製造業向けエージェントの動きに直接関係、試用には申込や設定が必要とみられる"
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "企業向け基盤で、個人が今日すぐ試すには敷居が高い"
    },
-   "first_step": "NVIDIA Agent Toolkitの公式ページで、提供条件と無料で試せる範囲を確認してみる",
-   "usable": true,
+   "first_step": null,
+   "usable": false,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118014372845142048",
+    "url": "https://x.com/NVIDIAAI/status/2118490169745768487",
     "username": "NVIDIAAI",
-    "text": "We expanded the NVIDIA Agent Toolkit to help developers build agents that use company data to answer questions and make predictions, with controls over what agents can access and do.\n\nWatch how @LilaSciences , @Siemens and @Dassault3DS are using AI agents to design potential therapies, plan factory production and refine vehicle designs.\n\nSee what’s new → https://t.co/GBTWEioZy1",
-    "text_ja": "NVIDIA Agent Toolkit を拡充しました。開発者が企業データを使って質問に答えたり予測を行ったりするエージェントを構築できるようにし、エージェントがアクセスできる内容や実行できる操作を制御できるようにしています。\n\n@LilaSciences、@Siemens、@Dassault3DS が AI エージェントを使って、治療法の候補を設計し、工場の生産計画を立て、車両設計を洗練させている様子をご覧ください。\n\n新機能はこちら → https://t.co/GBTWEioZy1"
+    "text": "NVIDIA 🤝 @Box\n\nAt #BoxWorks 2026 today, @JensenHuang shared how NVIDIA Nemotron open models, paired with business context and tools, can help developers build AI agents that put enterprise knowledge to work. https://t.co/KuHgKZESc1",
+    "text_ja": "NVIDIA 🤝 @Box\n\n本日の #BoxWorks 2026 で、@JensenHuang が、NVIDIA Nemotron のオープンモデルがビジネスのコンテキストやツールと組み合わさることで、開発者が企業のナレッジを活用するAIエージェントを構築できることを紹介しました。 https://t.co/KuHgKZESc1"
    },
    "post_ids": [
     "2117332456768717244",
+    "2118490169745768487",
     "2118014372845142048"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "7c97421fa6",

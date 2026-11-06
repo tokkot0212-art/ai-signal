@@ -27,7 +27,7 @@
    ],
    "score": 88,
    "credibility": 100,
-   "heat": 56,
+   "heat": 55,
    "first_seen": "2026-11-03T19:54:41.000Z",
    "latest": "2026-11-04T20:11:28.000Z",
    "authors": [
@@ -83,37 +83,24 @@
     "2117707052948898271"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
-   "id": "f8c41cba5d",
+   "id": "d29b594fdb",
    "verdict": "confirmed",
-   "title": "NVIDIAがHermes Agentのトレース解析記事を公開",
-   "summary": "NVIDIAの公式AIアカウントが、『Inside Hermes Agent Traces with NeMo Relay』と題した記事へのリンクを投稿した。記事はNVIDIAのNemotron Labsに掲載されている。投稿本文は記事の題名とリンクのみで、内容の詳細は投稿からは分からない。",
+   "title": "NVIDIAの音声認識モデルがHugging Faceで総合1位に",
+   "summary": "NVIDIA公式AIアカウントは、同社の音声認識モデル「Nemotron 3.5 Transcribe」がHugging Face で総合1位（trending）になったと投稿した。同アカウントは試用・共有してくれた人々への感謝も述べている。併せて、NeMo Relayを使ったHermes Agentのトレース解説記事も紹介している。",
    "points": [
-    "新しい点: AIエージェントの動作履歴(トレース)を解析する取り組みが紹介されている",
-    "注意点: 投稿だけでは中身が分からず、記事本文の確認が必要",
-    "読者への関係: エージェントの動きを確認・改善する方法の参考になる可能性がある"
+    "Hugging Faceのtrendingは利用者の関心の集まり具合を示す指標で、性能の確かさそのものを示すものではない",
+    "音声認識（文字起こし）モデルの公開は、議事録や記録業務の自動化に関心がある人には関係しうる",
+    "ただし人気度と精度・日本語対応は別問題で、自社の用途で試して確かめる必要がある"
    ],
-   "terms": [
-    {
-     "term": "AIエージェント",
-     "desc": "人間の代わりに、目的に沿って複数の作業を自動で進めるAI"
-    },
-    {
-     "term": "トレース(trace)",
-     "desc": "AIが動いた手順や呼び出しの記録。動作の確認や改善に使う"
-    },
-    {
-     "term": "NeMo Relay",
-     "desc": "NVIDIAのAI開発関連の名称とみられるが、詳細は投稿からは不明"
-    }
-   ],
-   "score": 65,
+   "terms": [],
+   "score": 73,
    "credibility": 90,
-   "heat": 13,
+   "heat": 23,
    "first_seen": "2026-11-03T17:59:36.000Z",
-   "latest": "2026-11-03T17:59:36.000Z",
+   "latest": "2026-11-04T18:56:55.000Z",
    "authors": [
     "NVIDIAAI"
    ],
@@ -127,29 +114,84 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の記事案内",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
    "links": [],
    "services": [],
    "events": [],
    "value": {
     "impact": 1,
     "closeness": 2,
-    "try_cost": 1,
-    "why": "記事の中身が投稿から不明で、試す手段も示されていない"
+    "try_cost": 3,
+    "why": "順位の話題のみ。文字起こしは記録業務に関係するが性能の裏付けは投稿にない"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2117678090918707535",
+    "url": "https://x.com/NVIDIAAI/status/2118054904300486928",
     "username": "NVIDIAAI",
-    "text": "Inside Hermes Agent Traces with NeMo Relay | Nemotron Labs https://t.co/PoJf3zj1KF",
-    "text_ja": "NeMo RelayでHermes Agentのトレースを見る | Nemotron Labs https://t.co/PoJf3zj1KF"
+    "text": "Great to see Nemotron 3.5 Transcribe trending #1 overall on @huggingface \n\nThank you to everyone for trying it, sharing it, and building with it. 💚 https://t.co/kZhT7QH3KU https://t.co/PT00GLn8ZE",
+    "text_ja": "Nemotron 3.5 Transcribeが@huggingfaceの総合トレンドで1位になっているのは素晴らしいですね。\n\n試し、共有し、そして活用してくださったすべての方に感謝します。💚 https://t.co/kZhT7QH3KU https://t.co/PT00GLn8ZE"
    },
    "post_ids": [
+    "2118054904300486928",
     "2117678090918707535"
    ],
-   "post_count": 1,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "post_count": 2,
+   "archived_at": "2026-11-06T16:00:02Z"
+  },
+  {
+   "id": "944c8f60bc",
+   "verdict": "confirmed",
+   "title": "Mistralが「Mistral Large 4」の性能デモと提供開始を発表",
+   "summary": "Mistral AI公式アカウントは、同社のモデル「Mistral Large 4」を使い、Django の既知の脆弱性（CVE）を発見・検証・修正するデモ動画を公開した。デモでは133のエージェントが分担して作業したと説明されている。また、数学者とAIエージェントが共同作業するための研究ワークスペース「Open Math OS」で、承認済みのチームに同モデルが提供開始されたとしている。モデルは1.05兆パラメータのオープンウェイト、コンテキスト長は100万とされる。",
+   "points": [
+    "新しい点: 脆弱性の発見から修正までを複数エージェントで行うデモで、エージェント型の活用例として注目される。",
+    "注意点: デモは同社の発表で、第三者による再現検証は投稿内にない。Open Math OSは承認済みチーム限定。",
+    "読者への関係: 大規模なオープンモデルが増えることで、将来は自社でAIを動かす選択肢が広がる可能性がある。"
+   ],
+   "terms": [],
+   "score": 70,
+   "credibility": 85,
+   "heat": 33,
+   "first_seen": "2026-11-03T17:30:00.000Z",
+   "latest": "2026-11-04T10:24:20.000Z",
+   "authors": [
+    "MistralAI"
+   ],
+   "author_labels": [
+    {
+     "username": "MistralAI",
+     "label": "Mistral AI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Mistral AI公式の発表・デモ",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "承認済みチーム限定で、読者が今すぐ試せる状況にない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/MistralAI/status/2117925908572991748",
+    "username": "MistralAI",
+    "text": "Can Mistral Large 4 find a critical vulnerability, prove it and fix it? We tested it on a recent Django CVE.\n\n133 agents map the code, hunt for flaws, test attack scenarios and confirm the bug. Then Le Chonk patches it.\n\nTriage, repro, patch. Shown at 90x speed. https://t.co/NTtZvTQE38",
+    "text_ja": "Mistral Large 4は重大な脆弱性を見つけ、それを証明し、修正できるか？最近のDjango CVEで試してみました。\n\n133のエージェントがコードを解析し、欠陥を探し、攻撃シナリオを試し、バグを確認します。その後、Le Chonkがパッチを当てます。\n\nトリアージ、再現、パッチ。90倍速で表示しています。"
+   },
+   "post_ids": [
+    "2117925908572991748",
+    "2117670644506861900"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "3376f55a28",
@@ -215,60 +257,66 @@
     "2117806486172860793"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
-   "id": "b22a5a5055",
+   "id": "9e2617a97a",
    "verdict": "promising",
-   "title": "Mistral Large 4で脆弱性の発見・修正を試したと発表",
-   "summary": "Mistral AI公式アカウントは、Mistral Large 4を使い、最近のDjangoの脆弱性（CVE）を見つけて証明し修正できるかを試したと紹介した。133のエージェントがコードを解析し、攻撃シナリオを検証して不具合を確認し、その後Le Chonkが修正したとしている。投稿は90倍速の映像を含む。",
+   "title": "Simon Willison氏、GPT-6 Astraの論文をノートPCのQwenで再現試行",
+   "summary": "Datasette・Djangoの共同作成者であるSimon Willison氏は、モデルの重み（浮動小数点数の並んだプロンプト）を直接解釈できるとする話題の論文を取り上げた。同氏は、その論文の手法をQwen 3.8 27Bでノートパソコン上で試したところ、45分以上かけて同様の結果を得られたと投稿した。投稿には論文へのリンクがある。",
    "points": [
-    "複数のエージェントが分担して調査・検証・修正まで行う点が特徴とされる",
-    "ソフトウェアの脆弱性対応の自動化に関係するが、精度や再現性は投稿からは判断できない",
-    "企業側の社内テストの紹介であり、第三者による検証結果は未確認"
+    "ノートPCで動くモデルで同様の結果が出たとの報告は、手法の再現可能性を示す一つの材料になる",
+    "ただし『45分以上』という時間や結果の詳細な一致度は投稿からは読み取れず、個人の試行の範囲にとどまる",
+    "論文の内容や『GPT-6 Astra』の性能は未確認で、手法が一般に有用かは今後の検証が必要"
    ],
    "terms": [],
-   "score": 71,
-   "credibility": 85,
-   "heat": 34,
-   "first_seen": "2026-11-04T10:24:20.000Z",
-   "latest": "2026-11-04T10:24:20.000Z",
+   "score": 63,
+   "credibility": 73,
+   "heat": 43,
+   "first_seen": "2026-11-03T16:31:05.000Z",
+   "latest": "2026-11-03T16:31:05.000Z",
    "authors": [
-    "MistralAI"
+    "simonw"
    ],
    "author_labels": [
     {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
-     "type": "official",
+     "username": "simonw",
+     "label": "Datasette・Django共同作成者",
+     "type": "practitioner",
      "former": ""
     }
    ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの紹介",
-   "links": [],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人のノートPCでの試行報告",
+   "links": [
+    {
+     "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+     "domain": "simonwillison.net",
+     "primary": false
+    }
+   ],
    "services": [],
    "events": [],
    "value": {
-    "impact": 2,
+    "impact": 1,
     "closeness": 1,
-    "try_cost": 1,
-    "why": "セキュリティ自動化の参考になるが、読者の業務からは遠く、試用手段も未確認"
+    "try_cost": 2,
+    "why": "モデル内部の解釈研究で、製造現場の業務やサービス作りには直接結びつきにくい"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/MistralAI/status/2117925908572991748",
-    "username": "MistralAI",
-    "text": "Can Mistral Large 4 find a critical vulnerability, prove it and fix it? We tested it on a recent Django CVE.\n\n133 agents map the code, hunt for flaws, test attack scenarios and confirm the bug. Then Le Chonk patches it.\n\nTriage, repro, patch. Shown at 90x speed. https://t.co/NTtZvTQE38",
-    "text_ja": "Mistral Large 4は重大な脆弱性を見つけ、それを証明し、修正できるか？最近のDjango CVEで試してみました。\n\n133のエージェントがコードを解析し、欠陥を探し、攻撃シナリオを試し、バグを確認します。その後、Le Chonkがパッチを当てます。\n\nトリアージ、再現、パッチ。90倍速で表示しています。"
+    "url": "https://x.com/simonw/status/2117655816581071203",
+    "username": "simonw",
+    "text": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K",
+    "text_ja": "GPT-6 Astraがモデルの重み（浮動小数点数だらけのプロンプト）を直接解釈できるという話題の新しい論文が出ています。私の手元のノートPCでQwen 3.8 27Bを使って試してみたところ、45分以上かかりましたが、同じことができました https://t.co/6O7WltGP7K"
    },
    "post_ids": [
-    "2117925908572991748"
+    "2117655816581071203"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "ceb00a494e",
@@ -327,7 +375,7 @@
     "2117778890194342039"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "a15d66a930",
@@ -386,7 +434,7 @@
     "2117747424471179501"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   },
   {
    "id": "17c8e10545",
@@ -408,9 +456,9 @@
      "desc": "会場の様子をインターネットでリアルタイムに流すこと。"
     }
    ],
-   "score": 50,
+   "score": 49,
    "credibility": 65,
-   "heat": 18,
+   "heat": 16,
    "first_seen": "2026-11-03T18:03:50.000Z",
    "latest": "2026-11-05T07:39:39.000Z",
    "authors": [
@@ -455,7 +503,7 @@
     "2117679157035602065"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T11:12:35Z"
+   "archived_at": "2026-11-06T16:00:02Z"
   }
  ]
 }

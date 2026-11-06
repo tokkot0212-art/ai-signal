@@ -2,42 +2,52 @@
  "date": "2026-11-03",
  "items": [
   {
-   "id": "2afffdc8c7",
+   "id": "3becaba4fa",
    "verdict": "confirmed",
-   "title": "OpenAIがセキュリティ研究向けの「GPT-6 Cyber」を発表",
-   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けモデル「GPT-6 Cyber」を発表した。投稿によると、このモデルはLinuxカーネル研究に使われ、Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームも利用を始めているという。利用はDaybreak Redの一部顧客に限られ、提供範囲は順次広げるとされている。",
+   "title": "OpenAIがセキュリティ研究向けモデル「GPT-6 Cyber」を発表",
+   "summary": "OpenAIは公式アカウントで「GPT-6 Cyber」の発表を行い、セキュリティ研究向けの能力向上と整合性（アライメント）の改善をうたった。Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームが利用を始めていると投稿で述べている。提供は一部の顧客（Daybreak Red）に限られ、今後アクセスを段階的に広げるとされる。",
    "points": [
-    "新しい点: 一般向けではなく、選ばれた顧客だけが使える限定提供のセキュリティ特化モデルである",
-    "注意点: 投稿に性能の数値や評価結果はなく、『能力向上』『整合性の改善』は自社の説明にとどまる",
-    "製造業への影響: 現時点で一般の個人や小規模事業者が試せる段階ではないため、当面は直接の関係は薄い"
+    "一般利用ではなく、選ばれた顧客向けに限定提供されている点が現時点の最大の特徴。",
+    "投稿では前日発表のLinuxカーネル研究でこのモデルが使われたとされるが、詳細は本投稿だけでは確認できない。",
+    "企業名の利用例は投稿の記述であり、性能の客観的な数値はこの投稿には示されていない。"
    ],
    "terms": [
     {
-     "term": "Daybreak Red",
-     "desc": "投稿に出てくる提供先の名称。どの制度・プログラムかは投稿からは不明"
-    },
-    {
-     "term": "Linuxカーネル研究",
-     "desc": "基本ソフトの中核部分(カーネル)の安全性や不具合を調べる研究"
-    },
-    {
      "term": "アライメント",
-     "desc": "AIが人間の意図や安全基準に沿って動くように調整すること"
+     "desc": "AIが人間の意図や安全ルールに沿って動くように調整すること"
+    },
+    {
+     "term": "Linuxカーネル",
+     "desc": "Linux OSの中核部分。多くのサーバーや機器で動いている基盤ソフト"
     }
    ],
    "score": 96,
    "credibility": 100,
-   "heat": 81,
+   "heat": 74,
    "first_seen": "2026-11-03T02:29:35.000Z",
    "latest": "2026-11-05T17:09:13.000Z",
    "authors": [
-    "OpenAI"
+    "OpenAI",
+    "simonw",
+    "npaka123"
    ],
    "author_labels": [
     {
      "username": "OpenAI",
      "label": "OpenAI公式アカウント",
      "type": "official",
+     "former": ""
+    },
+    {
+     "username": "simonw",
+     "label": "Datasette・Django共同作成者",
+     "type": "practitioner",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
      "former": ""
     }
    ],
@@ -49,6 +59,16 @@
      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
      "domain": "openai.com",
      "primary": true
+    },
+    {
+     "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+     "domain": "simonwillison.net",
+     "primary": false
+    },
+    {
+     "url": "https://note.com/npaka/n/n270373a5a637?sub_rt=share_pw",
+     "domain": "note.com",
+     "primary": false
     }
    ],
    "services": [],
@@ -57,7 +77,7 @@
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "セキュリティ研究向けで限定提供、現場の手順書や教育には直接効かない"
+    "why": "セキュリティ領域の話で、読者の製造現場の業務とは直接関係が薄い。提供も限定的"
    },
    "first_step": null,
    "usable": false,
@@ -69,10 +89,12 @@
    },
    "post_ids": [
     "2117444048227123277",
-    "2118390190246879554"
+    "2118390190246879554",
+    "2117655816581071203",
+    "2117609218673090886"
    ],
-   "post_count": 2,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "post_count": 3,
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "819889c93a",
@@ -153,9 +175,9 @@
      "desc": "実物を作る前に、コンピュータ上で動きや性能を再現して確かめる手法。"
     }
    ],
-   "score": 90,
+   "score": 89,
    "credibility": 90,
-   "heat": 55,
+   "heat": 53,
    "first_seen": "2026-11-02T17:27:26.000Z",
    "latest": "2026-11-03T18:56:45.000Z",
    "authors": [
@@ -201,73 +223,7 @@
     "2117692475775258785"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T02:37:51Z"
-  },
-  {
-   "id": "01a0ca8cc6",
-   "verdict": "confirmed",
-   "title": "OpenAI、AIでLinuxカーネルの脆弱性を948件検出・修正",
-   "summary": "OpenAIの公式アカウントは、同社のセキュリティ研究者が自律型のサイバー脆弱性の発見・悪用・修正パイプラインを構築したと投稿した。投稿によると、今後公開予定のサイバー向けモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、修正パッチを生成した。総APIコストは120万ドルとされている。",
-   "points": [
-    "AIが脆弱性の発見から修正まで自動で行う流れを、実際の規模（948件）で示した点が新しい。",
-    "セキュリティ運用やOSの保守にAIが使われる例として注目される。ただし大規模な計算コストがかかる点も読み取れる。",
-    "対象モデルは「今後のモデル」とされ、一般に利用可能か、パッチの品質や誤検出がどの程度かは投稿からは分からない。"
-   ],
-   "terms": [
-    {
-     "term": "ローカル権限昇格",
-     "desc": "一般ユーザー権限で動いている攻撃者が、より強い管理者権限を不正に得る脆弱性の種類。"
-    },
-    {
-     "term": "パッチ",
-     "desc": "ソフトウェアの欠陥を直すための修正プログラム。"
-    },
-    {
-     "term": "APIコスト",
-     "desc": "AIサービスを機械的に呼び出した際にかかる利用料金。"
-    }
-   ],
-   "score": 88,
-   "credibility": 90,
-   "heat": 69,
-   "first_seen": "2026-11-03T02:29:35.000Z",
-   "latest": "2026-11-04T23:13:24.000Z",
-   "authors": [
-    "OpenAI"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAI",
-     "label": "OpenAI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの発表",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "セキュリティ研究の発表で、個人の製造業サービスには直接関係しにくい。未公開モデルで試せない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAI/status/2118119451401048497",
-    "username": "OpenAI",
-    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\n\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API cost of $1.2 million.",
-    "text_ja": "当社のセキュリティ研究者が、脆弱性の自律的な発見・悪用・パッチ適用パイプラインを構築しました。\n\n今後公開予定のサイバー分野のモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、それぞれにパッチを生成しました。かかったAPIの総コストは120万ドルです。"
-   },
-   "post_ids": [
-    "2118119451401048497"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "d114e3505c",
@@ -338,6 +294,72 @@
    "archived_at": "2026-11-05T16:33:27Z"
   },
   {
+   "id": "01a0ca8cc6",
+   "verdict": "confirmed",
+   "title": "OpenAI、AIでLinuxカーネルの脆弱性を948件検出・修正",
+   "summary": "OpenAIの公式アカウントは、同社のセキュリティ研究者が自律型のサイバー脆弱性の発見・悪用・修正パイプラインを構築したと投稿した。投稿によると、今後公開予定のサイバー向けモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、修正パッチを生成した。総APIコストは120万ドルとされている。",
+   "points": [
+    "AIが脆弱性の発見から修正まで自動で行う流れを、実際の規模（948件）で示した点が新しい。",
+    "セキュリティ運用やOSの保守にAIが使われる例として注目される。ただし大規模な計算コストがかかる点も読み取れる。",
+    "対象モデルは「今後のモデル」とされ、一般に利用可能か、パッチの品質や誤検出がどの程度かは投稿からは分からない。"
+   ],
+   "terms": [
+    {
+     "term": "ローカル権限昇格",
+     "desc": "一般ユーザー権限で動いている攻撃者が、より強い管理者権限を不正に得る脆弱性の種類。"
+    },
+    {
+     "term": "パッチ",
+     "desc": "ソフトウェアの欠陥を直すための修正プログラム。"
+    },
+    {
+     "term": "APIコスト",
+     "desc": "AIサービスを機械的に呼び出した際にかかる利用料金。"
+    }
+   ],
+   "score": 86,
+   "credibility": 90,
+   "heat": 66,
+   "first_seen": "2026-11-03T02:29:35.000Z",
+   "latest": "2026-11-04T23:13:24.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "セキュリティ研究の発表で、個人の製造業サービスには直接関係しにくい。未公開モデルで試せない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2118119451401048497",
+    "username": "OpenAI",
+    "text": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\n\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux kernel at a total API cost of $1.2 million.",
+    "text_ja": "当社のセキュリティ研究者が、脆弱性の自律的な発見・悪用・パッチ適用パイプラインを構築しました。\n\n今後公開予定のサイバー分野のモデルを使った1回の実行で、Linuxカーネルのローカル権限昇格の脆弱性948件を検証し、それぞれにパッチを生成しました。かかったAPIの総コストは120万ドルです。"
+   },
+   "post_ids": [
+    "2118119451401048497"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-06T11:12:35Z"
+  },
+  {
    "id": "da061e1e0b",
    "verdict": "confirmed",
    "title": "OpenAI、社内モノレポ向けGitバックエンド「Pando」を公開",
@@ -391,60 +413,6 @@
    "archived_at": "2026-11-05T20:43:50Z"
   },
   {
-   "id": "3c7079b761",
-   "verdict": "confirmed",
-   "title": "Mistral Large 4、衛星追跡アプリ作成や数学研究基盤への採用を発表",
-   "summary": "Mistral AI公式アカウントは、Mistral Large 4に地球を周回する約19,000個の衛星・デブリを3Dでリアルタイム追跡するアプリを作らせたと紹介した。また、同モデルが数学研究の共同ワークスペース「Open Math OS」に承認済みチーム向けに採用されたと発表し、1.05兆パラメータのオープンウェイト、100万トークンのコンテキストに言及した。",
-   "points": [
-    "オープンウェイト（重みが公開され手元で動かせるモデル）の大規模モデルとして紹介されている",
-    "数学研究の場で、研究者とAIエージェントが共同作業する基盤として使われる点が新しい",
-    "衛星アプリの性能やOpen Math OSの一般提供時期は投稿からは未確認"
-   ],
-   "terms": [],
-   "score": 71,
-   "credibility": 85,
-   "heat": 34,
-   "first_seen": "2026-11-03T11:08:00.000Z",
-   "latest": "2026-11-03T17:30:00.000Z",
-   "authors": [
-    "MistralAI"
-   ],
-   "author_labels": [
-    {
-     "username": "MistralAI",
-     "label": "Mistral AI公式アカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式アカウントの発表",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "大規模モデルの動向として参考になるが、承認済みチーム向けで個人が試しにくい"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/MistralAI/status/2117574509179900410",
-    "username": "MistralAI",
-    "text": "We tasked Mistral Large 4 with creating a real-time, 3D tracker of the roughly 19,000 satellites and debris fragments orbiting Earth. \n\nThe model built a working app, tested it like a user, made it fast, and passed strict verification. \n\nPlease meet Orbital Trace : https://t.co/8XQuBNZKMO",
-    "text_ja": "地球を周回する約19,000の衛星やデブリの破片を、リアルタイムで3D表示する追跡ツールを作るよう、Mistral Large 4に依頼しました。\n\nモデルは動作するアプリを作り、ユーザーのように試し、高速化し、厳格な検証に合格しました。\n\nOrbital Traceをご紹介します： https://t.co/8XQuBNZKMO"
-   },
-   "post_ids": [
-    "2117574509179900410",
-    "2117670644506861900"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-06T02:37:51Z"
-  },
-  {
    "id": "afe392e674",
    "verdict": "confirmed",
    "title": "NVIDIAがAgent Toolkitを拡張、企業データ活用のエージェント向け",
@@ -468,9 +436,9 @@
      "desc": "現実の工場や製品を仮想空間で再現したもの。投稿では明示されていないため一般的な意味"
     }
    ],
-   "score": 70,
+   "score": 69,
    "credibility": 93,
-   "heat": 5,
+   "heat": 4,
    "first_seen": "2026-11-02T19:06:10.000Z",
    "latest": "2026-11-04T16:15:51.000Z",
    "authors": [
@@ -515,7 +483,7 @@
     "2118014372845142048"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "7c97421fa6",
@@ -646,91 +614,6 @@
     "2117516278034247708"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
-  },
-  {
-   "id": "b2cbcd5ec0",
-   "verdict": "promising",
-   "title": "GPT-6 Astraの重み解析論文を、個人がQwenで再現試行",
-   "summary": "Datasette共同作成者のSimon Willisonは、GPT-6 Astraがモデルの重み（浮動小数点数の並び）を直接解釈できるとする話題の論文を紹介した。そのうえで自身のノートPCで27BのQwen 3.8を使って試したところ、45分以上かけて同じことができたと投稿している。日本のプログラマーnpaka氏は、この研究を「Weight-Space Programming」として概要を紹介している。",
-   "points": [
-    "重みを直接読む手法は、モデルの中身を調べる研究の新しい方向性として注目されている。",
-    "再現は本人の個人的な試行で、論文の結果を検証したものではない。どこまで同じことができたかは未確認。",
-    "製造現場の業務への直接の応用はまだ遠く、当面は研究動向として見るのが妥当。"
-   ],
-   "terms": [
-    {
-     "term": "重み（weights）",
-     "desc": "AIモデルの学習で決まる多数の数値。モデルの知識や動きを決めている。"
-    },
-    {
-     "term": "浮動小数点数",
-     "desc": "小数点を含む数値の表し方。コンピュータでAIの計算に使われる。"
-    },
-    {
-     "term": "Qwen",
-     "desc": "中国Alibabaが開発・公開しているオープンなAIモデルのシリーズ。"
-    }
-   ],
-   "score": 67,
-   "credibility": 73,
-   "heat": 45,
-   "first_seen": "2026-11-03T13:25:55.000Z",
-   "latest": "2026-11-03T16:31:05.000Z",
-   "authors": [
-    "simonw",
-    "npaka123"
-   ],
-   "author_labels": [
-    {
-     "username": "simonw",
-     "label": "Datasette・Django共同作成者",
-     "type": "practitioner",
-     "former": ""
-    },
-    {
-     "username": "npaka123",
-     "label": "プログラマー・技術書著者",
-     "type": "practitioner",
-     "former": ""
-    }
-   ],
-   "evidence": "hands_on_test",
-   "evidence_label": "本人が手を動かした検証",
-   "evidence_note": "本人のノートPCでの試行",
-   "links": [
-    {
-     "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-     "domain": "simonwillison.net",
-     "primary": false
-    },
-    {
-     "url": "https://note.com/npaka/n/n270373a5a637?sub_rt=share_pw",
-     "domain": "note.com",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "研究段階で一般の業務には遠く、試せる製品もない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/simonw/status/2117655816581071203",
-    "username": "simonw",
-    "text": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K",
-    "text_ja": "GPT-6 Astraがモデルの重み（浮動小数点数だらけのプロンプト）を直接解釈できるという話題の新しい論文が出ています。私の手元のノートPCでQwen 3.8 27Bを使って試してみたところ、45分以上かかりましたが、同じことができました https://t.co/6O7WltGP7K"
-   },
-   "post_ids": [
-    "2117655816581071203",
-    "2117609218673090886"
-   ],
-   "post_count": 2,
    "archived_at": "2026-11-06T02:37:51Z"
   },
   {

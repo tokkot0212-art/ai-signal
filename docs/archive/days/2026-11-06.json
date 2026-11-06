@@ -12,9 +12,9 @@
     "対象は現時点で米国のみ。日本からの利用可否は投稿からは不明。"
    ],
    "terms": [],
-   "score": 89,
+   "score": 87,
    "credibility": 85,
-   "heat": 86,
+   "heat": 79,
    "first_seen": "2026-11-05T18:00:35.000Z",
    "latest": "2026-11-05T18:00:35.000Z",
    "authors": [
@@ -52,7 +52,7 @@
     "2118403114890137895"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "a2794f592e",
@@ -65,9 +65,9 @@
     "ジャンプカットなどの映像の乱れが減ったとあるが、品質は実際に試して確認する必要がある。"
    ],
    "terms": [],
-   "score": 83,
+   "score": 80,
    "credibility": 90,
-   "heat": 58,
+   "heat": 51,
    "first_seen": "2026-11-05T17:08:19.000Z",
    "latest": "2026-11-05T17:08:19.000Z",
    "authors": [
@@ -105,7 +105,7 @@
     "2118389961426874879"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "3420e91a4b",
@@ -118,9 +118,9 @@
     "対象のプラン・提供地域・料金は投稿からは不明。"
    ],
    "terms": [],
-   "score": 82,
+   "score": 79,
    "credibility": 90,
-   "heat": 45,
+   "heat": 38,
    "first_seen": "2026-11-05T16:54:19.000Z",
    "latest": "2026-11-05T16:54:19.000Z",
    "authors": [
@@ -158,7 +158,146 @@
     "2118386439675420743"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
+  },
+  {
+   "id": "0b6961c04c",
+   "verdict": "confirmed",
+   "title": "NVIDIAがWorld Model向け「Cosmos」の新モデルと関連資料を公開",
+   "summary": "NVIDIAの公式アカウントが、ワールドモデル（World Model）を学習・シミュレーション・提供するための「Cosmos Framework」とNIMに関する解説記事「Cosmos Labs」を紹介した。別の投稿では、対話的な世界シミュレーション向けの「NVIDIA Cosmos 3 Open Models」が発表されたことが紹介されている。投稿からは公開の日付や性能の詳細は読み取れない。",
+   "points": [
+    "公式の解説記事へのリンクはあるが、本投稿の時点で数値や性能比較は示されていない。",
+    "オープンモデルとして公開されているとの記述があるため、詳細は公式ページで確認が必要。",
+    "ワールドモデルは主に映像やロボットの分野で使われる技術とされ、製造業の現場に応用できるかは未確認。"
+   ],
+   "terms": [
+    {
+     "term": "ワールドモデル",
+     "desc": "世界の動きや物理法則をAIが予測・再現するためのモデル"
+    },
+    {
+     "term": "NIM",
+     "desc": "NVIDIAのAIモデルを簡単に動かせるように配布される実行パッケージ"
+    }
+   ],
+   "score": 77,
+   "credibility": 90,
+   "heat": 20,
+   "first_seen": "2026-11-05T17:00:20.000Z",
+   "latest": "2026-11-06T09:29:35.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式の記事・発表リンク",
+   "links": [
+    {
+     "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "ロボットや映像の分野の基盤技術で、製造業の現場への応用余地はあるが未確認"
+   },
+   "first_step": null,
+   "usable": true,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118387953005179312",
+    "username": "NVIDIAAI",
+    "text": "Train, Simulate, and Serve World Models with NVIDIA Cosmos Framework and NIM | Cosmos Labs https://t.co/sn8NmfOWR2",
+    "text_ja": "NVIDIA Cosmos Framework と NIM でワールドモデルを学習、シミュレーション、提供する | Cosmos Labs https://t.co/sn8NmfOWR2"
+   },
+   "post_ids": [
+    "2118387953005179312",
+    "2118636906703724937"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-06T11:12:35Z"
+  },
+  {
+   "id": "9ff6040a3c",
+   "verdict": "confirmed",
+   "title": "NVIDIAがBoxやGTC Berlinでエンタープライズ向けAIエージェントの事例を紹介",
+   "summary": "NVIDIAの公式アカウントは、BoxWorks 2026でJensen Huang氏がNemotronオープンモデルを使い企業のナレッジを活用するAIエージェントの構築を紹介したと投稿した。また、GTC Berlinで取材したパートナー企業の取り組みとして、音声エージェント、市場データ分析、AIエージェントの安全な買い物支援などが挙げられている。具体的な製品名や成果の数値は投稿からは分からない。",
+   "points": [
+    "大手クラウド基盤のBoxとの連携で、企業内文書を使うエージェントの方向性が示されている。",
+    "パートナー事例は概要のみで、どの企業がどの製品を出したかは本投稿だけでは確認できない。",
+    "エージェントの業務利用は拡大傾向とされるが、本投稿に導入効果の数値はない。"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人の指示を受け、複数の作業を自分で計画して実行するAIのこと"
+    },
+    {
+     "term": "Nemotron",
+     "desc": "NVIDIAが公開しているオープンなAIモデルのシリーズ名"
+    }
+   ],
+   "score": 77,
+   "credibility": 90,
+   "heat": 33,
+   "first_seen": "2026-11-05T23:46:30.000Z",
+   "latest": "2026-11-06T01:13:23.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 3,
+    "try_cost": 1,
+    "why": "企業ナレッジを使うエージェントの動きは業界の方向性に関わるが、試せる製品名は投稿にない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118490169745768487",
+    "username": "NVIDIAAI",
+    "text": "NVIDIA 🤝 @Box\n\nAt #BoxWorks 2026 today, @JensenHuang shared how NVIDIA Nemotron open models, paired with business context and tools, can help developers build AI agents that put enterprise knowledge to work. https://t.co/KuHgKZESc1",
+    "text_ja": "NVIDIA 🤝 @Box\n\n本日の #BoxWorks 2026 で、@JensenHuang が、NVIDIA Nemotron のオープンモデルがビジネスのコンテキストやツールと組み合わさることで、開発者が企業のナレッジを活用するAIエージェントを構築できることを紹介しました。 https://t.co/KuHgKZESc1"
+   },
+   "post_ids": [
+    "2118490169745768487",
+    "2118512035029979136"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "42d31a5ca9",
@@ -171,9 +310,9 @@
     "Connectイベントでのプレビューを経て展開された段階。"
    ],
    "terms": [],
-   "score": 76,
+   "score": 73,
    "credibility": 93,
-   "heat": 41,
+   "heat": 33,
    "first_seen": "2026-11-05T18:36:25.000Z",
    "latest": "2026-11-05T18:36:25.000Z",
    "authors": [
@@ -217,7 +356,60 @@
     "2118412135340572850"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
+  },
+  {
+   "id": "5093503e18",
+   "verdict": "confirmed",
+   "title": "Hugging Face、ML InternをSlackボットとして提供開始",
+   "summary": "Hugging Faceの公式アカウントは、同社のオープンソースのML Internが、利用者が自分のSlackワークスペースに導入できるSlackボットとして利用可能になったと発表した。モデルの評価、データセット作成、モデルの微調整をその場で行えるとしている。",
+   "points": [
+    "Slackの中からモデル評価やデータ作成などを頼める形になり、社内での手軽な利用が想定される",
+    "ML Internの具体的な機能範囲や料金、導入手順は投稿からは確認できない",
+    "機械学習の知識がない人にとっては、どこまで自動化されるかを公式ドキュメントで確認する必要がある"
+   ],
+   "terms": [],
+   "score": 67,
+   "credibility": 85,
+   "heat": 21,
+   "first_seen": "2026-11-05T19:50:50.000Z",
+   "latest": "2026-11-05T19:50:50.000Z",
+   "authors": [
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "公式アカウントの告知投稿",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 2,
+    "why": "機械学習向けツールで製造現場の業務からは遠い。導入は企業内のSlack設定が必要な場合が多い"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/huggingface/status/2118430862949945612",
+    "username": "huggingface",
+    "text": "Our open-source ML Intern is now available as a Slack bot you can install in your own workspace! \n\nEvaluate models, build datasets, and fine-tune models on the fly 🚀 https://t.co/KrlSi3K6sY",
+    "text_ja": "オープンソースの ML Intern が、Slack ボットとして利用可能になりました。ご自身のワークスペースにインストールできます。\n\nモデルの評価、データセットの構築、モデルのファインチューニングをその場ですぐに行えます 🚀 https://t.co/KrlSi3K6sY"
+   },
+   "post_ids": [
+    "2118430862949945612"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "28d511033b",
@@ -230,9 +422,9 @@
     "個々の手法の効果や数値は、この投稿だけでは確認できない。"
    ],
    "terms": [],
-   "score": 68,
+   "score": 66,
    "credibility": 90,
-   "heat": 19,
+   "heat": 14,
    "first_seen": "2026-11-05T16:03:21.000Z",
    "latest": "2026-11-05T16:03:21.000Z",
    "authors": [
@@ -270,7 +462,7 @@
     "2118373611408945493"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "0e5949a8a6",
@@ -283,9 +475,9 @@
     "AWSの利用料金や設定の難しさは投稿からは分からない。"
    ],
    "terms": [],
-   "score": 68,
+   "score": 66,
    "credibility": 90,
-   "heat": 19,
+   "heat": 14,
    "first_seen": "2026-11-05T15:00:30.000Z",
    "latest": "2026-11-05T15:00:30.000Z",
    "authors": [
@@ -323,60 +515,66 @@
     "2118357795607105958"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
-   "id": "7f4cfe2d81",
-   "verdict": "confirmed",
-   "title": "NVIDIA、世界モデルの学習・提供の講座を案内",
-   "summary": "NVIDIAの公式AIアカウントは、「NVIDIA Cosmos Framework」とNIMを使い、世界モデルを学習・シミュレーション・提供する方法を扱う「Cosmos Labs」の記事を紹介した。投稿はタイトルとリンクのみで、内容の詳細は本文からは分からない。",
+   "id": "16c98b968d",
+   "verdict": "promising",
+   "title": "AIDBが『AIの人間化』を見直すための記事を紹介",
+   "summary": "AI論文紹介メディア「AIDB」の運営者が、AIエージェントが重要なファイルを消してしまった事例をめぐり、AIを人のように書いた報告文の問題点と直し方を紹介する記事を公開したと投稿した。投稿の主張は、AIが勝手に行ったと言うより、誰がどんな権限を与え、どんな条件で実行を許していたかが重要だという点にある。",
    "points": [
-    "世界モデル（映像などから物理世界の動きを予測するAI）が題材とされる",
-    "製造業のシミュレーションに関係する可能性はあるが、投稿からは用途は読み取れない",
-    "学習には計算資源が必要とみられ、個人が手軽に試せるかは未確認"
+    "AIの失敗を報告する際、責任の所在を明確にする書き方が重要になる",
+    "業務でAIエージェントに権限を渡す際の設定確認の考え方として参考になる",
+    "記事本文の具体的な事例や推奨表現は投稿からは確認できない"
    ],
    "terms": [],
-   "score": 67,
-   "credibility": 90,
-   "heat": 22,
-   "first_seen": "2026-11-05T17:00:20.000Z",
-   "latest": "2026-11-05T17:00:20.000Z",
+   "score": 63,
+   "credibility": 78,
+   "heat": 25,
+   "first_seen": "2026-11-06T11:02:49.000Z",
+   "latest": "2026-11-06T11:02:49.000Z",
    "authors": [
-    "NVIDIAAI"
+    "ai_database"
    ],
    "author_labels": [
     {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
      "former": ""
     }
    ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "企業公式の資料案内",
-   "links": [],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の制作・検証の報告",
+   "links": [
+    {
+     "url": "https://ai-data-base.com/what-is-a-skill",
+     "domain": "ai-data-base.com",
+     "primary": false
+    }
+   ],
    "services": [],
    "events": [],
    "value": {
     "impact": 1,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "読者の現場作業との直接の関係は薄く、計算資源も必要とみられる"
+    "closeness": 2,
+    "try_cost": 3,
+    "why": "報告文の書き方の参考になるが、直接ツールを試すものではない"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118387953005179312",
-    "username": "NVIDIAAI",
-    "text": "Train, Simulate, and Serve World Models with NVIDIA Cosmos Framework and NIM | Cosmos Labs https://t.co/sn8NmfOWR2",
-    "text_ja": "NVIDIA Cosmos Framework と NIM でワールドモデルを学習、シミュレーション、提供する | Cosmos Labs https://t.co/sn8NmfOWR2"
+    "url": "https://x.com/ai_database/status/2118660368650379667",
+    "username": "ai_database",
+    "text": "AIエージェントの「スキル」とは何か　はじめて使う人へ入門ページを作りました！\nhttps://t.co/qYm85WECIL\n\nコンテンツ\n■ スキルでできること\n■ スキルを使ってみる\n■ スキルを保存するアプリを選ぶ\n（Claude/Code）\n\n手順通りに進めていけば、いつの間にか\"スキル使い\"になっているはずです。",
+    "text_ja": null
    },
    "post_ids": [
-    "2118387953005179312"
+    "2118660368650379667"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   },
   {
    "id": "97e1c5b02f",
@@ -402,9 +600,9 @@
      "desc": "工場や機械の近くで動く小型の計算用GPU"
     }
    ],
-   "score": 50,
+   "score": 49,
    "credibility": 70,
-   "heat": 10,
+   "heat": 7,
    "first_seen": "2026-11-05T16:31:58.000Z",
    "latest": "2026-11-05T16:31:58.000Z",
    "authors": [
@@ -442,7 +640,7 @@
     "2118380813498892301"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T02:37:51Z"
+   "archived_at": "2026-11-06T11:12:35Z"
   }
  ]
 }

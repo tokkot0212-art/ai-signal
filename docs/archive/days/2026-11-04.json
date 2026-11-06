@@ -2,111 +2,32 @@
  "date": "2026-11-04",
  "items": [
   {
-   "id": "66671f99de",
+   "id": "3ed3bb33bb",
    "verdict": "confirmed",
-   "title": "Anthropic、AIの回答が特定モデル由来かを検証するFlashProveを公開",
-   "summary": "Anthropicの公式アカウントは、大規模言語モデルの「証明可能な推論」に関する新しい研究として、FlashProveを紹介した。FlashProveは暗号技術を応用し、ある回答が特定のAIモデルから生成されたかを検証できるとされる。既存のオープンソース手法より大幅に効率的だと述べられており、同社はオープンソースで公開すると投稿している。",
+   "title": "AnthropicがClaudeを使い細菌由来のvault粒子の3D構造を解明",
+   "summary": "Anthropicの公式アカウントは、同社の生物学研究チームがClaudeと協力して、細菌由来のvault粒子の初の3D構造をマップしたと発表した。vault粒子は1986年に発見された樽状のタンパク質構造体で、機能は未解明のままである。投稿によると、細菌やそのウイルスの類似タンパク質もvaultを形成できることが示されたという。",
    "points": [
-    "AIの回答が本当に指定モデルから来たかを検証できる点が新しい。提供側の信頼性確認に役立つとされる。",
-    "チャットの乗っ取り防止や、テスト対象が実際に顧客へ提供されるモデルと同一かの確認などに応用できると説明されている。",
-    "効率性の具体的な数値や、一般の開発者が実際に使える水準かは投稿からは分からない。詳細は元の研究資料で確認が必要。"
-   ],
-   "terms": [
-    {
-     "term": "証明可能な推論",
-     "desc": "AIの回答が指定したモデルから生成されたことを、暗号的な証明で確かめられる仕組み。"
-    },
-    {
-     "term": "暗号技術",
-     "desc": "情報を安全に扱うための数学的な技術。ここでは検証の仕組みに使われている。"
-    },
-    {
-     "term": "オープンソース",
-     "desc": "ソフトウェアの設計図（コード）を誰でも見たり使ったりできる形で公開すること。"
-    }
-   ],
-   "score": 91,
-   "credibility": 100,
-   "heat": 52,
-   "first_seen": "2026-11-03T19:54:41.000Z",
-   "latest": "2026-11-03T20:10:08.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式の研究発表",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/research/provable-inference",
-     "domain": "anthropic.com",
-     "primary": true
-    },
-    {
-     "url": "https://github.com/anthropics/FlashProve",
-     "domain": "github.com",
-     "primary": true
-    },
-    {
-     "url": "http://rdalal.github.io",
-     "domain": "rdalal.github.io",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "AIの信頼性確認に関係するが、現場の業務改善への直接効果は限定的。OSS公開の詳細は要確認"
-   },
-   "first_step": null,
-   "usable": true,
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2117710942826123294",
-    "username": "AnthropicAI",
-    "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the mo",
-    "text_ja": "Anthropicの新しい研究：大規模言語モデルの「証明可能な推論（provable inference）」に関する進展です。\n\n今回、FlashProveを紹介します。確立された暗号技術を基盤として、FlashProveを使えば、開発者はある応答が特定のAIモデルから生成されたものかどうかを検証できます。これまでのオープンソースの手法と比べて大幅に効率的です。\n\nこの証明にはさまざまな用途があります。たとえば、攻撃者がチャットを乗っ取ることを難しくしたり、安全性評価者が、テストしているモデルが顧客に提供されているモデルと同一であることを検証できたりします。\n\n詳しい解説はこちらをご覧ください：https://t.co/OIZWPb6QZa\n\n証明可能な推論のさらなる進展は、AIの導入に対する信頼を高める上で重要な要素になると考えられます。そのため、FlashProveのコードをオープンソースとして公開しています。こちらからどうぞ：https://t.co/7ky3Ir8V06\n\n共同研究者の皆さまに感謝します：Alessandro Chiesa、@GiacomoFenzi、@gwberg95、@miranda__christ、Rahul Dalal（https://t.co/pjWKLHWXyz）、Ben Mayer（@transmissions11）。"
-   },
-   "post_ids": [
-    "2117710942826123294",
-    "2117707052948898271"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
-  },
-  {
-   "id": "c84c2f061b",
-   "verdict": "confirmed",
-   "title": "Anthropic、Claudeで細菌由来のvault粒子の3D構造を解析",
-   "summary": "Anthropicの公式アカウントは、同社の生物学研究チームがClaudeを使って、細菌由来のvault粒子の最初の3D構造をマッピングしたと発表した。vault粒子は1986年に発見された細胞内の大きなタンパク質構造で、機能は未解明とされている。投稿では、細菌やそれに感染するウイルスの類似タンパク質もvaultを形成しうることを示したと述べられている。",
-   "points": [
-    "これまで動物や植物など複雑な生物の細胞内でしか知られていなかったvaultが、細菌でも見つかった点が新しい。",
-    "AIが科学研究の現場でどう使われるかを示す事例だが、Claudeの具体的な役割の詳細は投稿からは分からない。",
-    "vault粒子の機能はまだ不明で、今回の結果が謎の解明につながるかは未確認。"
+    "新しい点: これまで動植物など複雑な生物の細胞でしか知られていなかったvaultが、細菌でも形成されることが示された",
+    "なぜ重要か: AIが基礎科学の研究で実際の発見に関わった事例として注目される",
+    "注意点: 投稿は研究の概要であり、vaultの機能そのものはまだ分かっていないと明記されている"
    ],
    "terms": [
     {
      "term": "vault粒子",
-     "desc": "細胞の中にある樽型の大きなタンパク質の殻。機能はまだ分かっていない。"
+     "desc": "細胞内にある樽型の大きなタンパク質の殻。機能はまだ分かっていない"
     },
     {
      "term": "3D構造",
-     "desc": "分子などの立体的な形を明らかにすること。形が分かると仕組みを推測しやすくなる。"
+     "desc": "分子などの立体的な形を解析したもの。機能の理解につながる"
+    },
+    {
+     "term": "タンパク質",
+     "desc": "生物の体の働きを担う分子。構造によって役割が決まる"
     }
    ],
    "score": 90,
    "credibility": 100,
-   "heat": 61,
+   "heat": 59,
    "first_seen": "2026-11-03T19:54:41.000Z",
    "latest": "2026-11-04T20:11:28.000Z",
    "authors": [
@@ -122,11 +43,21 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの発表",
+   "evidence_note": "Anthropic公式の研究紹介",
    "links": [
     {
      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
      "domain": "anthropic.com",
+     "primary": true
+    },
+    {
+     "url": "https://www.anthropic.com/research/provable-inference",
+     "domain": "anthropic.com",
+     "primary": true
+    },
+    {
+     "url": "https://github.com/anthropics/FlashProve",
+     "domain": "github.com",
      "primary": true
     }
    ],
@@ -136,7 +67,7 @@
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "科学研究の成果で、現場の業務には直接関係しにくい。試せる対象もない"
+    "why": "基礎生物学の研究成果で、読者の業務に直接使える道具ではない"
    },
    "first_step": null,
    "usable": false,
@@ -147,10 +78,78 @@
     "text_ja": "Anthropicの生物学研究チームがClaudeと協力して、細菌由来のvault粒子の最初の3D構造をマッピングした経緯を共有します。\n\nvault粒子は長年の謎です。樽型の物体で、私たちの細胞内で見つかる最大級のタンパク質構造の一つです。1986年にLeonard RomeとNancy Kedershaによって初めて発見されましたが、その機能はいまだ不明です。\n\nClaudeを使い、その謎の解明に近づく可能性のある結果が得られました。\n\nこれまで、vaultは動物や植物のような複雑な生物の細胞内でしか知られていませんでした。私たちは、細菌（およびそれに感染するウイルス）の類似タンパク質もvaultを形成しうることを示しました。これらの構造が見つかったのは..."
    },
    "post_ids": [
-    "2118073665296228863"
+    "2118073665296228863",
+    "2117710942826123294",
+    "2117707052948898271"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
+  },
+  {
+   "id": "f8c41cba5d",
+   "verdict": "confirmed",
+   "title": "NVIDIAがHermes Agentのトレース解析記事を公開",
+   "summary": "NVIDIAの公式AIアカウントが、『Inside Hermes Agent Traces with NeMo Relay』と題した記事へのリンクを投稿した。記事はNVIDIAのNemotron Labsに掲載されている。投稿本文は記事の題名とリンクのみで、内容の詳細は投稿からは分からない。",
+   "points": [
+    "新しい点: AIエージェントの動作履歴(トレース)を解析する取り組みが紹介されている",
+    "注意点: 投稿だけでは中身が分からず、記事本文の確認が必要",
+    "読者への関係: エージェントの動きを確認・改善する方法の参考になる可能性がある"
+   ],
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "人間の代わりに、目的に沿って複数の作業を自動で進めるAI"
+    },
+    {
+     "term": "トレース(trace)",
+     "desc": "AIが動いた手順や呼び出しの記録。動作の確認や改善に使う"
+    },
+    {
+     "term": "NeMo Relay",
+     "desc": "NVIDIAのAI開発関連の名称とみられるが、詳細は投稿からは不明"
+    }
+   ],
+   "score": 66,
+   "credibility": 90,
+   "heat": 14,
+   "first_seen": "2026-11-03T17:59:36.000Z",
+   "latest": "2026-11-03T17:59:36.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式の記事案内",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 2,
+    "try_cost": 1,
+    "why": "記事の中身が投稿から不明で、試す手段も示されていない"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2117678090918707535",
+    "username": "NVIDIAAI",
+    "text": "Inside Hermes Agent Traces with NeMo Relay | Nemotron Labs https://t.co/PoJf3zj1KF",
+    "text_ja": "NeMo RelayでHermes Agentのトレースを見る | Nemotron Labs https://t.co/PoJf3zj1KF"
+   },
+   "post_ids": [
+    "2117678090918707535"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "3376f55a28",
@@ -176,9 +175,9 @@
      "desc": "Sakana AIの製品名とみられるが、機能の詳細は投稿からは未確認。"
     }
    ],
-   "score": 62,
+   "score": 61,
    "credibility": 90,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-11-04T02:29:47.000Z",
    "latest": "2026-11-04T02:29:47.000Z",
    "authors": [
@@ -216,7 +215,7 @@
     "2117806486172860793"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "b22a5a5055",
@@ -229,9 +228,9 @@
     "企業側の社内テストの紹介であり、第三者による検証結果は未確認"
    ],
    "terms": [],
-   "score": 72,
+   "score": 71,
    "credibility": 85,
-   "heat": 38,
+   "heat": 36,
    "first_seen": "2026-11-04T10:24:20.000Z",
    "latest": "2026-11-04T10:24:20.000Z",
    "authors": [
@@ -269,7 +268,7 @@
     "2117925908572991748"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "a15d66a930",
@@ -284,7 +283,7 @@
    "terms": [],
    "score": 55,
    "credibility": 78,
-   "heat": 13,
+   "heat": 12,
    "first_seen": "2026-11-03T22:35:06.000Z",
    "latest": "2026-11-03T22:35:06.000Z",
    "authors": [
@@ -328,7 +327,7 @@
     "2117747424471179501"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "ceb00a494e",
@@ -343,7 +342,7 @@
    "terms": [],
    "score": 55,
    "credibility": 78,
-   "heat": 9,
+   "heat": 8,
    "first_seen": "2026-11-04T00:40:08.000Z",
    "latest": "2026-11-04T00:40:08.000Z",
    "authors": [
@@ -387,7 +386,7 @@
     "2117778890194342039"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "17c8e10545",
@@ -409,9 +408,9 @@
      "desc": "会場の様子をインターネットでリアルタイムに流すこと。"
     }
    ],
-   "score": 53,
+   "score": 51,
    "credibility": 65,
-   "heat": 24,
+   "heat": 21,
    "first_seen": "2026-11-03T18:03:50.000Z",
    "latest": "2026-11-05T07:39:39.000Z",
    "authors": [
@@ -456,7 +455,7 @@
     "2117679157035602065"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   }
  ]
 }

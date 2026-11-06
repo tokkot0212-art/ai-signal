@@ -2,19 +2,32 @@
  "date": "2026-11-03",
  "items": [
   {
-   "id": "79925e9eda",
+   "id": "2afffdc8c7",
    "verdict": "confirmed",
-   "title": "OpenAIがセキュリティ研究向けGPT-6 Cyberとバグ報奨金拡充を発表",
-   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けの新モデル「GPT-6 Cyber」を発表し、一部の顧客に提供を始めたと投稿した。あわせて、社内セキュリティ検証を外部研究機関Cathedral Systemsと行うこと、重大な脆弱性へのバグ報奨金を4倍超に引き上げることも伝えている。",
+   "title": "OpenAIがセキュリティ研究向けの「GPT-6 Cyber」を発表",
+   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けモデル「GPT-6 Cyber」を発表した。投稿によると、このモデルはLinuxカーネル研究に使われ、Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームも利用を始めているという。利用はDaybreak Redの一部顧客に限られ、提供範囲は順次広げるとされている。",
    "points": [
-    "新しい点は、AIモデルを脆弱性発見と修正に使う取り組みを企業向けに広げていること。",
-    "一般の個人やスモールチームが今日すぐ使える段階ではなく、招待された一部顧客向けの提供と投稿されている。",
-    "報奨金の上限172,000ドルは投稿の記載どおり。実際の運用や効果はこの投稿だけでは判断できない。"
+    "新しい点: 一般向けではなく、選ばれた顧客だけが使える限定提供のセキュリティ特化モデルである",
+    "注意点: 投稿に性能の数値や評価結果はなく、『能力向上』『整合性の改善』は自社の説明にとどまる",
+    "製造業への影響: 現時点で一般の個人や小規模事業者が試せる段階ではないため、当面は直接の関係は薄い"
    ],
-   "terms": [],
+   "terms": [
+    {
+     "term": "Daybreak Red",
+     "desc": "投稿に出てくる提供先の名称。どの制度・プログラムかは投稿からは不明"
+    },
+    {
+     "term": "Linuxカーネル研究",
+     "desc": "基本ソフトの中核部分(カーネル)の安全性や不具合を調べる研究"
+    },
+    {
+     "term": "アライメント",
+     "desc": "AIが人間の意図や安全基準に沿って動くように調整すること"
+    }
+   ],
    "score": 96,
    "credibility": 100,
-   "heat": 91,
+   "heat": 81,
    "first_seen": "2026-11-03T02:29:35.000Z",
    "latest": "2026-11-05T17:09:13.000Z",
    "authors": [
@@ -30,15 +43,10 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの投稿",
+   "evidence_note": "OpenAI公式アカウントの発表",
    "links": [
     {
      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
-     "domain": "openai.com",
-     "primary": true
-    },
-    {
-     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
      "domain": "openai.com",
      "primary": true
     }
@@ -49,7 +57,7 @@
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "セキュリティ業界向けで読者の製造現場業務とは遠く、提供も限定的"
+    "why": "セキュリティ研究向けで限定提供、現場の手順書や教育には直接効かない"
    },
    "first_step": null,
    "usable": false,
@@ -60,11 +68,11 @@
     "text_ja": "GPT‑6 Cyber を発表します。より高い性能と、より優れたモデルのアライメントを兼ね備えた、セキュリティ研究における大きな前進です。\n\nこのモデルは、昨日発表した Linux カーネル研究の基盤となっています。Mozilla、Palo Alto Networks、Calif、Cisco などの企業のセキュリティチームや、OpenAI 社内のチームがすでにこれを活用し始めています。\n\nGPT-6 Cyber は、一部の Daybreak Red のお客様にご利用いただけます。今後、順次アクセスを拡大していく予定です。\n\nhttps://t.co/Nzab3Z1Td6"
    },
    "post_ids": [
-    "2118390190246879554",
-    "2117444048227123277"
+    "2117444048227123277",
+    "2118390190246879554"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "819889c93a",
@@ -147,7 +155,7 @@
    ],
    "score": 90,
    "credibility": 90,
-   "heat": 56,
+   "heat": 55,
    "first_seen": "2026-11-02T17:27:26.000Z",
    "latest": "2026-11-03T18:56:45.000Z",
    "authors": [
@@ -193,7 +201,7 @@
     "2117692475775258785"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "01a0ca8cc6",
@@ -219,9 +227,9 @@
      "desc": "AIサービスを機械的に呼び出した際にかかる利用料金。"
     }
    ],
-   "score": 89,
+   "score": 88,
    "credibility": 90,
-   "heat": 72,
+   "heat": 69,
    "first_seen": "2026-11-03T02:29:35.000Z",
    "latest": "2026-11-04T23:13:24.000Z",
    "authors": [
@@ -259,7 +267,7 @@
     "2118119451401048497"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "d114e3505c",
@@ -383,67 +391,6 @@
    "archived_at": "2026-11-05T20:43:50Z"
   },
   {
-   "id": "605c1100cf",
-   "verdict": "confirmed",
-   "title": "NVIDIAがAgent ToolkitとHermes Agent関連の情報を公開",
-   "summary": "NVIDIAの公式AIアカウントが、Hermes Agentのトレース（動作記録）をNeMo Relayで見る解説記事を紹介した。あわせて、NVIDIA Agent Toolkitを拡張し、企業データを使って質問に答えたり予測したりするエージェントを作れるようにしたと投稿した。投稿では、LilaSciences、Siemens、Dassault3DSがAIエージェントを使う事例も紹介されている。",
-   "points": [
-    "エージェントが使えるデータや実行できる操作を制御する仕組みが加わったと投稿されている（詳細は元記事で要確認）",
-    "製造業の計画や設計にAIエージェントを使う事例（工場計画・車両設計）が示されており、製造業向けサービスを考える際の参考になりうる",
-    "投稿は発表の紹介のみで、性能や価格、日本での提供状況は未確認"
-   ],
-   "terms": [],
-   "score": 74,
-   "credibility": 93,
-   "heat": 15,
-   "first_seen": "2026-11-02T19:06:10.000Z",
-   "latest": "2026-11-04T16:15:51.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://nvda.ws/4BJ7VrE",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 3,
-    "try_cost": 2,
-    "why": "製造業のAIエージェント動向に関係。企業向け製品で個人は導入が難しい場合が多い"
-   },
-   "first_step": null,
-   "usable": true,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2117678090918707535",
-    "username": "NVIDIAAI",
-    "text": "Inside Hermes Agent Traces with NeMo Relay | Nemotron Labs https://t.co/PoJf3zj1KF",
-    "text_ja": "NeMo RelayでHermes Agentのトレースを見る | Nemotron Labs https://t.co/PoJf3zj1KF"
-   },
-   "post_ids": [
-    "2117332456768717244",
-    "2117678090918707535",
-    "2118014372845142048"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
-  },
-  {
    "id": "3c7079b761",
    "verdict": "confirmed",
    "title": "Mistral Large 4、衛星追跡アプリ作成や数学研究基盤への採用を発表",
@@ -456,7 +403,7 @@
    "terms": [],
    "score": 71,
    "credibility": 85,
-   "heat": 35,
+   "heat": 34,
    "first_seen": "2026-11-03T11:08:00.000Z",
    "latest": "2026-11-03T17:30:00.000Z",
    "authors": [
@@ -495,7 +442,80 @@
     "2117670644506861900"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
+  },
+  {
+   "id": "afe392e674",
+   "verdict": "confirmed",
+   "title": "NVIDIAがAgent Toolkitを拡張、企業データ活用のエージェント向け",
+   "summary": "NVIDIAの公式AIアカウントは、Agent Toolkitを拡張し、企業データを使って質問に答えたり予測したりするエージェントを開発者が作れるようにしたと発表した。エージェントがアクセスできる範囲や実行できる操作を管理する機能も含まれるという。投稿では、LilaSciences、Siemens、Dassault3DSがAIエージェントを活用している例として挙げられている。",
+   "points": [
+    "新しい点: 企業データへのアクセス範囲や操作を制御しながらエージェントを作れるようになった点",
+    "なぜ重要か: 製造業の設計・工場生産計画にAIエージェントを使う動きが、Siemensなどの事例で示されている",
+    "注意点: 投稿に価格や提供条件は書かれておらず、利用には詳細確認が必要"
+   ],
+   "terms": [
+    {
+     "term": "Agent Toolkit",
+     "desc": "エージェントを作るための開発用部品やツールの集まり"
+    },
+    {
+     "term": "AIエージェント",
+     "desc": "目的に沿って複数の作業を自律的に進めるAI"
+    },
+    {
+     "term": "デジタルツイン(設計の文脈)",
+     "desc": "現実の工場や製品を仮想空間で再現したもの。投稿では明示されていないため一般的な意味"
+    }
+   ],
+   "score": 70,
+   "credibility": 93,
+   "heat": 5,
+   "first_seen": "2026-11-02T19:06:10.000Z",
+   "latest": "2026-11-04T16:15:51.000Z",
+   "authors": [
+    "NVIDIAAI"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式の製品発表",
+   "links": [
+    {
+     "url": "https://nvda.ws/4BJ7VrE",
+     "domain": "nvda.ws",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 3,
+    "try_cost": 2,
+    "why": "製造業向けエージェントの動きに直接関係、試用には申込や設定が必要とみられる"
+   },
+   "first_step": "NVIDIA Agent Toolkitの公式ページで、提供条件と無料で試せる範囲を確認してみる",
+   "usable": true,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118014372845142048",
+    "username": "NVIDIAAI",
+    "text": "We expanded the NVIDIA Agent Toolkit to help developers build agents that use company data to answer questions and make predictions, with controls over what agents can access and do.\n\nWatch how @LilaSciences , @Siemens and @Dassault3DS are using AI agents to design potential therapies, plan factory production and refine vehicle designs.\n\nSee what’s new → https://t.co/GBTWEioZy1",
+    "text_ja": "NVIDIA Agent Toolkit を拡充しました。開発者が企業データを使って質問に答えたり予測を行ったりするエージェントを構築できるようにし、エージェントがアクセスできる内容や実行できる操作を制御できるようにしています。\n\n@LilaSciences、@Siemens、@Dassault3DS が AI エージェントを使って、治療法の候補を設計し、工場の生産計画を立て、車両設計を洗練させている様子をご覧ください。\n\n新機能はこちら → https://t.co/GBTWEioZy1"
+   },
+   "post_ids": [
+    "2117332456768717244",
+    "2118014372845142048"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "7c97421fa6",
@@ -567,7 +587,7 @@
     "2117493094849622097"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "4985a5a445",
@@ -626,7 +646,7 @@
     "2117516278034247708"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "b2cbcd5ec0",
@@ -654,7 +674,7 @@
    ],
    "score": 67,
    "credibility": 73,
-   "heat": 46,
+   "heat": 45,
    "first_seen": "2026-11-03T13:25:55.000Z",
    "latest": "2026-11-03T16:31:05.000Z",
    "authors": [
@@ -711,7 +731,7 @@
     "2117609218673090886"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-05T20:43:50Z"
+   "archived_at": "2026-11-06T02:37:51Z"
   },
   {
    "id": "c430c0500f",

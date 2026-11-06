@@ -2,34 +2,30 @@
  "date": "2026-11-04",
  "items": [
   {
-   "id": "3ed3bb33bb",
+   "id": "f5c9529165",
    "verdict": "confirmed",
-   "title": "AnthropicがClaudeを使い細菌由来のvault粒子の3D構造を解明",
-   "summary": "Anthropicの公式アカウントは、同社の生物学研究チームがClaudeと協力して、細菌由来のvault粒子の初の3D構造をマップしたと発表した。vault粒子は1986年に発見された樽状のタンパク質構造体で、機能は未解明のままである。投稿によると、細菌やそのウイルスの類似タンパク質もvaultを形成できることが示されたという。",
+   "title": "Anthropic、LLMの応答が特定モデル由来かを検証するFlashProveを発表",
+   "summary": "Anthropicの公式アカウントは、新しい研究としてFlashProveを発表した。これは暗号技術を使い、開発者が「ある応答が特定のAIモデルから生成されたか」を検証できる仕組みで、従来のオープンソース手法より大幅に効率が良いとしている。投稿では、チャットの乗っ取りを防ぐことや、安全性評価者が提供中のモデルと同一であることを確認できる用途が挙げられている。",
    "points": [
-    "新しい点: これまで動植物など複雑な生物の細胞でしか知られていなかったvaultが、細菌でも形成されることが示された",
-    "なぜ重要か: AIが基礎科学の研究で実際の発見に関わった事例として注目される",
-    "注意点: 投稿は研究の概要であり、vaultの機能そのものはまだ分かっていないと明記されている"
+    "新しい点: AIの応答が本当にそのモデル由来かを、暗号の証明で確かめる方法を示した。",
+    "重要性: 業務でAIを組み込むサービスを作る場合、応答の改ざんや差し替えを疑われたときの検証手段として意味がある。",
+    "注意点: 詳細はリンク先の資料に依存し、実際の利用に必要な計算コストや対応モデルは投稿からは分からない。"
    ],
    "terms": [
     {
-     "term": "vault粒子",
-     "desc": "細胞内にある樽型の大きなタンパク質の殻。機能はまだ分かっていない"
+     "term": "暗号による証明（provable inference）",
+     "desc": "AIの応答が特定モデルから出たことを、計算の証拠で数学的に確かめる考え方。"
     },
     {
-     "term": "3D構造",
-     "desc": "分子などの立体的な形を解析したもの。機能の理解につながる"
-    },
-    {
-     "term": "タンパク質",
-     "desc": "生物の体の働きを担う分子。構造によって役割が決まる"
+     "term": "オープンソース手法",
+     "desc": "誰でも仕組みを見て使える公開された技術のこと。"
     }
    ],
-   "score": 88,
+   "score": 87,
    "credibility": 100,
-   "heat": 55,
+   "heat": 48,
    "first_seen": "2026-11-03T19:54:41.000Z",
-   "latest": "2026-11-04T20:11:28.000Z",
+   "latest": "2026-11-03T20:10:08.000Z",
    "authors": [
     "AnthropicAI"
    ],
@@ -43,13 +39,8 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式の研究紹介",
+   "evidence_note": "Anthropic公式の研究発表",
    "links": [
-    {
-     "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
-     "domain": "anthropic.com",
-     "primary": true
-    },
     {
      "url": "https://www.anthropic.com/research/provable-inference",
      "domain": "anthropic.com",
@@ -59,44 +50,61 @@
      "url": "https://github.com/anthropics/FlashProve",
      "domain": "github.com",
      "primary": true
+    },
+    {
+     "url": "http://rdalal.github.io",
+     "domain": "rdalal.github.io",
+     "primary": false
     }
    ],
    "services": [],
    "events": [],
    "value": {
     "impact": 2,
-    "closeness": 1,
+    "closeness": 2,
     "try_cost": 1,
-    "why": "基礎生物学の研究成果で、読者の業務に直接使える道具ではない"
+    "why": "検証手段として興味深いが、一般利用の手段は示されていない"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/AnthropicAI/status/2118073665296228863",
+    "url": "https://x.com/AnthropicAI/status/2117710942826123294",
     "username": "AnthropicAI",
-    "text": "We’re sharing how our biology research team worked with Claude to map the first 3D structure of a vault particle from bacterial life.\n\nVault particles are a longstanding mystery. They are barrel-shaped objects, among the largest protein structures found in our cells. They were first discovered by Leonard Rome and Nancy Kedersha in 1986, but their function remains unknown.\n\nWith Claude, we’ve found results that might bring us closer to solving that mystery.\n\nUntil now, vaults were only known in t",
-    "text_ja": "Anthropicの生物学研究チームがClaudeと協力して、細菌由来のvault粒子の最初の3D構造をマッピングした経緯を共有します。\n\nvault粒子は長年の謎です。樽型の物体で、私たちの細胞内で見つかる最大級のタンパク質構造の一つです。1986年にLeonard RomeとNancy Kedershaによって初めて発見されましたが、その機能はいまだ不明です。\n\nClaudeを使い、その謎の解明に近づく可能性のある結果が得られました。\n\nこれまで、vaultは動物や植物のような複雑な生物の細胞内でしか知られていませんでした。私たちは、細菌（およびそれに感染するウイルス）の類似タンパク質もvaultを形成しうることを示しました。これらの構造が見つかったのは..."
+    "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the mo",
+    "text_ja": "Anthropicの新しい研究：大規模言語モデルの「証明可能な推論（provable inference）」に関する進展です。\n\n今回、FlashProveを紹介します。確立された暗号技術を基盤として、FlashProveを使えば、開発者はある応答が特定のAIモデルから生成されたものかどうかを検証できます。これまでのオープンソースの手法と比べて大幅に効率的です。\n\nこの証明にはさまざまな用途があります。たとえば、攻撃者がチャットを乗っ取ることを難しくしたり、安全性評価者が、テストしているモデルが顧客に提供されているモデルと同一であることを検証できたりします。\n\n詳しい解説はこちらをご覧ください：https://t.co/OIZWPb6QZa\n\n証明可能な推論のさらなる進展は、AIの導入に対する信頼を高める上で重要な要素になると考えられます。そのため、FlashProveのコードをオープンソースとして公開しています。こちらからどうぞ：https://t.co/7ky3Ir8V06\n\n共同研究者の皆さまに感謝します：Alessandro Chiesa、@GiacomoFenzi、@gwberg95、@miranda__christ、Rahul Dalal（https://t.co/pjWKLHWXyz）、Ben Mayer（@transmissions11）。"
    },
    "post_ids": [
-    "2118073665296228863",
-    "2117710942826123294",
-    "2117707052948898271"
+    "2117707052948898271",
+    "2117710942826123294"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   },
   {
-   "id": "d29b594fdb",
+   "id": "95becc0c84",
    "verdict": "confirmed",
-   "title": "NVIDIAの音声認識モデルがHugging Faceで総合1位に",
-   "summary": "NVIDIA公式AIアカウントは、同社の音声認識モデル「Nemotron 3.5 Transcribe」がHugging Face で総合1位（trending）になったと投稿した。同アカウントは試用・共有してくれた人々への感謝も述べている。併せて、NeMo Relayを使ったHermes Agentのトレース解説記事も紹介している。",
+   "title": "NVIDIAの音声認識モデルNemotron 3.5 TranscribeがHugging Faceで総合1位",
+   "summary": "NVIDIA公式AIアカウントは、Nemotron 3.5 TranscribeがAIモデル共有サイトHugging Faceで総合トレンド1位になったと投稿した。投稿では利用者への感謝が述べられている。",
    "points": [
-    "Hugging Faceのtrendingは利用者の関心の集まり具合を示す指標で、性能の確かさそのものを示すものではない",
-    "音声認識（文字起こし）モデルの公開は、議事録や記録業務の自動化に関心がある人には関係しうる",
-    "ただし人気度と精度・日本語対応は別問題で、自社の用途で試して確かめる必要がある"
+    "新しい点: NVIDIAの音声認識系モデルが公開され、多くの人に試されている様子が示された。",
+    "重要性: 音声の文字起こしは議事録や記録業務に使えるため、現場の記録効率化の候補になりうる。",
+    "注意点: 人気（トレンド）は利用の多さを示すが、精度や日本語対応は投稿からは分からない。"
    ],
-   "terms": [],
-   "score": 73,
+   "terms": [
+    {
+     "term": "Hugging Face",
+     "desc": "AIモデルを公開・共有・試用できるオンラインの場。"
+    },
+    {
+     "term": "文字起こし（音声認識）",
+     "desc": "話した内容を自動で文字にする技術。"
+    },
+    {
+     "term": "トレンド1位",
+     "desc": "サイト上で一定期間に人気が集まった順位。利用の多さを示す。"
+    }
+   ],
+   "score": 75,
    "credibility": 90,
    "heat": 23,
    "first_seen": "2026-11-03T17:59:36.000Z",
@@ -119,13 +127,13 @@
    "services": [],
    "events": [],
    "value": {
-    "impact": 1,
+    "impact": 2,
     "closeness": 2,
     "try_cost": 3,
-    "why": "順位の話題のみ。文字起こしは記録業務に関係するが性能の裏付けは投稿にない"
+    "why": "記録業務に使えそうだが、日本語精度は未確認。公開モデルなら無料で試せる可能性"
    },
-   "first_step": null,
-   "usable": false,
+   "first_step": "Hugging Faceでモデルページを開き、日本語の作業音声で精度を試してみる",
+   "usable": true,
    "post": {
     "url": "https://x.com/NVIDIAAI/status/2118054904300486928",
     "username": "NVIDIAAI",
@@ -133,23 +141,36 @@
     "text_ja": "Nemotron 3.5 Transcribeが@huggingfaceの総合トレンドで1位になっているのは素晴らしいですね。\n\n試し、共有し、そして活用してくださったすべての方に感謝します。💚 https://t.co/kZhT7QH3KU https://t.co/PT00GLn8ZE"
    },
    "post_ids": [
-    "2118054904300486928",
-    "2117678090918707535"
+    "2117678090918707535",
+    "2118054904300486928"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   },
   {
-   "id": "944c8f60bc",
+   "id": "b22a5a5055",
    "verdict": "confirmed",
-   "title": "Mistralが「Mistral Large 4」の性能デモと提供開始を発表",
-   "summary": "Mistral AI公式アカウントは、同社のモデル「Mistral Large 4」を使い、Django の既知の脆弱性（CVE）を発見・検証・修正するデモ動画を公開した。デモでは133のエージェントが分担して作業したと説明されている。また、数学者とAIエージェントが共同作業するための研究ワークスペース「Open Math OS」で、承認済みのチームに同モデルが提供開始されたとしている。モデルは1.05兆パラメータのオープンウェイト、コンテキスト長は100万とされる。",
+   "title": "Mistral、Large 4でDjangoの脆弱性発見・修正を試したと投稿",
+   "summary": "Mistral AI公式アカウントは、Mistral Large 4が最近のDjango CVE（脆弱性）を見つけ、証明し、修正できるかを試したと投稿した。投稿によると133のエージェントがコードを調べ、攻撃シナリオを試して不具合を確認し、その後Le Chonkが修正したという。動画は90倍速で示されている。",
    "points": [
-    "新しい点: 脆弱性の発見から修正までを複数エージェントで行うデモで、エージェント型の活用例として注目される。",
-    "注意点: デモは同社の発表で、第三者による再現検証は投稿内にない。Open Math OSは承認済みチーム限定。",
-    "読者への関係: 大規模なオープンモデルが増えることで、将来は自社でAIを動かす選択肢が広がる可能性がある。"
+    "新しい点: 複数のAIエージェントが分担して脆弱性を探し、修正まで行う流れを試した。",
+    "重要性: セキュリティ対応や保守作業をAIで効率化する方向性の参考になる。",
+    "注意点: 成功率や再現性、人手の確認の要否は投稿からは分からず、動画は加工された速度で示されている。"
    ],
-   "terms": [],
+   "terms": [
+    {
+     "term": "CVE",
+     "desc": "公開された脆弱性（セキュリティ上の欠陥）に付けられる共通の識別番号。"
+    },
+    {
+     "term": "Django",
+     "desc": "Pythonで書かれたWebアプリを作るためのフレームワーク。"
+    },
+    {
+     "term": "エージェント（複数）",
+     "desc": "役割を分けた複数のAIが協力して作業する仕組み。"
+    }
+   ],
    "score": 70,
    "credibility": 85,
    "heat": 33,
@@ -168,7 +189,7 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Mistral AI公式の発表・デモ",
+   "evidence_note": "Mistral公式アカウントの投稿（動画付き）",
    "links": [],
    "services": [],
    "events": [],
@@ -176,7 +197,7 @@
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "承認済みチーム限定で、読者が今すぐ試せる状況にない"
+    "why": "開発者向けの検証事例。読者の現場作業や利用可能なツールには直結しない"
    },
    "first_step": null,
    "usable": false,
@@ -187,11 +208,11 @@
     "text_ja": "Mistral Large 4は重大な脆弱性を見つけ、それを証明し、修正できるか？最近のDjango CVEで試してみました。\n\n133のエージェントがコードを解析し、欠陥を探し、攻撃シナリオを試し、バグを確認します。その後、Le Chonkがパッチを当てます。\n\nトリアージ、再現、パッチ。90倍速で表示しています。"
    },
    "post_ids": [
-    "2117925908572991748",
-    "2117670644506861900"
+    "2117670644506861900",
+    "2117925908572991748"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   },
   {
    "id": "3376f55a28",
@@ -217,9 +238,9 @@
      "desc": "Sakana AIの製品名とみられるが、機能の詳細は投稿からは未確認。"
     }
    ],
-   "score": 61,
+   "score": 60,
    "credibility": 90,
-   "heat": 7,
+   "heat": 6,
    "first_seen": "2026-11-04T02:29:47.000Z",
    "latest": "2026-11-04T02:29:47.000Z",
    "authors": [
@@ -257,7 +278,7 @@
     "2117806486172860793"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   },
   {
    "id": "9e2617a97a",
@@ -375,7 +396,7 @@
     "2117778890194342039"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   },
   {
    "id": "a15d66a930",
@@ -390,7 +411,7 @@
    "terms": [],
    "score": 54,
    "credibility": 78,
-   "heat": 11,
+   "heat": 10,
    "first_seen": "2026-11-03T22:35:06.000Z",
    "latest": "2026-11-03T22:35:06.000Z",
    "authors": [
@@ -434,33 +455,33 @@
     "2117747424471179501"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   },
   {
-   "id": "17c8e10545",
+   "id": "8157e91294",
    "verdict": "promising",
-   "title": "AIE上海が開幕、中国で初開催と主催者が投稿",
-   "summary": "AI Engineer Summitの主催者swyx氏が、AIE Shanghaiの開幕を喜ぶ投稿をした。中国で初めてのAIEで、Microsoft、MiniMax、Meta、ManusなどのAI関連企業の名前を登壇予定として挙げ、会場は満席で講演は配信されないと述べている。",
+   "title": "AI Engineer Summit上海が開幕と発表",
+   "summary": "AI Engineer Summit主催者のswyx氏は、中国で初めてのAI Engineer Summit（AIE Shanghai）が開幕したと投稿した。登壇者としてMicrosoft、MiniMax、Meta、HeyGenなど多数の企業名を挙げ、会場が満員だったと述べた。ライブ配信はされず、後日動画投稿を予定していると述べている。",
    "points": [
-    "AIEは海外の開発者向けAIカンファレンスで、今回が中国での初開催とされる",
-    "登壇者には大手企業や新興AI企業の名前が並ぶが、個別の内容は投稿からは分からない",
-    "動画は後日投稿するとしており、講演内容は後から確認できる可能性がある"
+    "主催者本人の投稿で、開催事実は主催側の発信として確認できる",
+    "登壇企業は生成AI・ロボット・検索など幅広く、業界の動向を知る手がかりになる",
+    "投稿に具体的な日程・内容・発表された新技術の詳細はなく、後日の動画が参考になる"
    ],
    "terms": [
     {
-     "term": "AI Engineer Summit（AIE）",
-     "desc": "AIを使ったソフトウェア開発者向けの国際カンファレンス。"
+     "term": "AI Engineer Summit",
+     "desc": "AIを使ったソフトウェア開発者向けの国際カンファレンス"
     },
     {
-     "term": "ライブ配信",
-     "desc": "会場の様子をインターネットでリアルタイムに流すこと。"
+     "term": "生成メディアモデル",
+     "desc": "画像・動画・音声などを生成するAIモデルのこと"
     }
    ],
-   "score": 49,
-   "credibility": 65,
-   "heat": 16,
+   "score": 54,
+   "credibility": 70,
+   "heat": 15,
    "first_seen": "2026-11-03T18:03:50.000Z",
-   "latest": "2026-11-05T07:39:39.000Z",
+   "latest": "2026-11-06T10:55:59.000Z",
    "authors": [
     "swyx"
    ],
@@ -474,36 +495,31 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "主催者の開幕告知投稿",
-   "links": [
-    {
-     "url": "http://aie.codes",
-     "domain": "aie.codes",
-     "primary": false
-    }
-   ],
+   "evidence_note": "主催者の開幕投稿",
+   "links": [],
    "services": [],
    "events": [],
    "value": {
     "impact": 1,
     "closeness": 1,
-    "try_cost": 1,
-    "why": "開催報告で、読者が今日試せるツールや手法ではない"
+    "try_cost": 2,
+    "why": "イベント告知のため製造業の業務に直接は効かない。後日の動画で動向を追える"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/swyx/status/2118246851136909731",
+    "url": "https://x.com/swyx/status/2118658648365052385",
     "username": "swyx",
-    "text": "absolutely tearing up seeing AIE Shanghai kick off and SUCH INCREDIBLE EXECUTION from @StandupPartners. \n\nthe first AIE in China is actually happening!!!\n\nand its a packed room and a hot schedule featuring @ryolu_ , @Microsoft, @MiniMax_AI , @theworldlabs, @HeyGen , @ExaAILabs , @openclaw , @StepFun_ai , @liquidai , @youdotcom , @DynaRobotics , @baseten, @Meta , @OptiverGlobal , @ManusAI  and more.\n\nnot livestreamed because Reasons but you can bet we'll be posting up some videos and takes",
-    "text_ja": "AIE上海の開幕を見て、本当に感極まっています。@StandupPartnersの素晴らしい実行力にも感動しました。\n\n中国で初めてのAIEが実際に開催されています！！！\n\n会場は満席で、スケジュールも盛りだくさんです。@ryolu_、@Microsoft、@MiniMax_AI、@theworldlabs、@HeyGen、@ExaAILabs、@openclaw、@StepFun_ai、@liquidai、@youdotcom、@DynaRobotics、@baseten、@Meta、@OptiverGlobal、@ManusAI など、多くの登壇者が参加します。\n\n事情により配信はありませんが、動画や感想はきっと投稿しますので楽しみにしていてください。"
+    "text": "aie shanghai is making me push my generative media model usage to new heights.. https://t.co/yneuTBmUor https://t.co/OOdQ9hs1ZK",
+    "text_ja": "AIE Shanghaiのおかげで、生成メディアモデルの使用量がどんどん増えています.. https://t.co/yneuTBmUor https://t.co/OOdQ9hs1ZK"
    },
    "post_ids": [
-    "2118246851136909731",
-    "2117679157035602065"
+    "2117679157035602065",
+    "2118658648365052385",
+    "2118246851136909731"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-06T16:00:02Z"
+   "archived_at": "2026-11-06T19:59:28Z"
   }
  ]
 }

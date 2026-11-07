@@ -2,65 +2,57 @@
  "date": "2026-11-06",
  "items": [
   {
-   "id": "2614cbd0e7",
+   "id": "8c56092f71",
    "verdict": "confirmed",
-   "title": "Google、動画生成モデル「Gemini Omni 1.2 Flash」を発表",
-   "summary": "Google AIの公式アカウントは、動画の生成・編集モデル「Gemini Omni 1.2 Flash」を発表した。コストを下げ、動画の生成・編集上限を15秒に延ばし、シーンの一貫性や台詞の表現を改善したとしている。あわせて、NVIDIAの研究者Jim Fan氏は、ロボット向け視覚モデル「VFlash」を紹介し、対応GPUでの行動生成が最大12倍速く、ロボットの推論が5.1倍速くなると述べた。",
+   "title": "AnthropicがClaudeの個人資産管理機能をUS向けベータで公開",
+   "summary": "Anthropicは公式アカウントで、Claudeに「Personal Finance」機能をUS向けベータとして導入したと投稿した。ユーザーが選んだ口座を接続すると、Claudeが残高や取引内容をもとに家計の質問に答える仕組みで、アクセスは読み取りのみ、送金や投資はできないと説明している。",
    "points": [
-    "動画生成の長さが15秒に延び、ジャンプカットなどの乱れが減ったとされる点が新しい",
-    "動画制作の業務に使えるが、料金や提供地域は投稿からは分からず未確認",
-    "VFlashの速度向上はJim Fan氏の投稿での主張で、独立した検証はまだ確認できていない"
+    "新しい点は、AIが個人の口座データを参照して質問に答える点。",
+    "読み取り専用で、送金や運用は行えないと明記されている。",
+    "対象は現時点で米国のみ。日本からの利用可否は投稿からは不明。"
    ],
    "terms": [],
-   "score": 87,
-   "credibility": 90,
-   "heat": 45,
-   "first_seen": "2026-11-05T16:31:58.000Z",
-   "latest": "2026-11-05T17:08:19.000Z",
+   "score": 83,
+   "credibility": 85,
+   "heat": 69,
+   "first_seen": "2026-11-05T18:00:35.000Z",
+   "latest": "2026-11-05T18:00:35.000Z",
    "authors": [
-    "GoogleAI",
-    "DrJimFan"
+    "claudeai"
    ],
    "author_labels": [
     {
-     "username": "GoogleAI",
-     "label": "Google AI公式アカウント",
+     "username": "claudeai",
+     "label": "Anthropic（Claude公式アカウント）",
      "type": "official",
      "former": ""
-    },
-    {
-     "username": "DrJimFan",
-     "label": "NVIDIA Robotics研究者",
-     "type": "researcher",
-     "former": "元OpenAI インターン"
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Google AI公式投稿、研究者の投稿",
+   "evidence_note": "Anthropic公式アカウントの投稿",
    "links": [],
    "services": [],
    "events": [],
    "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 2,
-    "why": "動画生成の選択肢として有用だが、製造業の業務への直接効果は限定的"
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "個人の家計向けで現場業務とは無関係、米国のみのベータ"
    },
    "first_step": null,
-   "usable": true,
+   "usable": false,
    "post": {
-    "url": "https://x.com/GoogleAI/status/2118389961426874879",
-    "username": "GoogleAI",
-    "text": "Meet Gemini Omni 1.2 Flash ⚡️\n\nWe’ve made the model more cost-effective, bumped the video generation and editing limit up to 15 seconds, and made updates to how scenes hold together over time. We've also given character speech an upgrade, reduced visual glitches like jump cuts, and made sure the model stays even truer to any reference assets you upload.\n\nSo… what does all of that actually mean for you?\n\nIt gives you more room to tell your story. With up to 15 seconds to work with, you have more ",
-    "text_ja": "Gemini Omni 1.2 Flash ⚡️ が登場しました。\n\nモデルのコスト効率を高め、動画の生成・編集における上限を 15 秒に引き上げました。また、時間の経過に伴うシーンの一貫性を改善しました。キャラクターの音声も強化し、ジャンプカットなどの映像の乱れを減らしました。さらに、アップロードされた参照素材にこれまで以上に忠実になるよう調整しました。\n\nでは、これらは実際にどんなメリットがあるのでしょうか？\n\n最大 15 秒で、ストーリーをより自由に表現できるようになります。映像はより映画的でなめらかになり、開始から終了まで被写体がしっかり安定する一貫性も高まりました。キャラクターが話すときのセリフも、より自然で流れるようになります。\n\nクリエイターや一般ユーザーは、@FlowbyGoogle でシーンやマルチターン編集の指示を始められます。Google Vids では追加料金なしで 15 秒のクリップを生成でき、@GeminiApp では 15 秒の動画を作成できます。さらに、API を使って開発や事業構築を行う開発者や企業向けには、前世代から価格を 30% 引き下げ、720p 動画で 1 秒あたり 0.07 ドルという価格を実現しました。\n\n1 枚のスタイルフレームから 4 カット・15 秒の動画が生成される様子をぜひご覧ください。"
+    "url": "https://x.com/claudeai/status/2118403114890137895",
+    "username": "claudeai",
+    "text": "Introducing Personal Finance in Claude, in beta in the US.\n\nConnect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money. https://t.co/V1JLYuWwrS",
+    "text_ja": "Claude に「パーソナルファイナンス」機能を導入します。米国でベータ版として提供を開始します。\n\nお好きな口座を接続すると、Claude がご自身の残高や取引履歴に基づいて、お金に関する質問に身近な言葉で答えます。アクセスは読み取り専用で、Claude がお金を移動したり、管理したり、投資したりすることはできません。https://t.co/V1JLYuWwrS"
    },
    "post_ids": [
-    "2118389961426874879",
-    "2118380813498892301"
+    "2118403114890137895"
    ],
-   "post_count": 2,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "post_count": 1,
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "9f981626c9",
@@ -73,9 +65,9 @@
     "2.4倍・67%という数値は投稿者側の社内評価とみられ、測定条件は未確認"
    ],
    "terms": [],
-   "score": 85,
+   "score": 81,
    "credibility": 93,
-   "heat": 52,
+   "heat": 44,
    "first_seen": "2026-11-05T18:36:25.000Z",
    "latest": "2026-11-06T18:14:23.000Z",
    "authors": [
@@ -125,60 +117,60 @@
     "2118412135340572850"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
-   "id": "8c56092f71",
+   "id": "a2794f592e",
    "verdict": "confirmed",
-   "title": "AnthropicがClaudeの個人資産管理機能をUS向けベータで公開",
-   "summary": "Anthropicは公式アカウントで、Claudeに「Personal Finance」機能をUS向けベータとして導入したと投稿した。ユーザーが選んだ口座を接続すると、Claudeが残高や取引内容をもとに家計の質問に答える仕組みで、アクセスは読み取りのみ、送金や投資はできないと説明している。",
+   "title": "Google、動画生成モデル Gemini Omni 1.2 Flash を発表",
+   "summary": "Google AI公式アカウントが、Gemini Omni 1.2 Flashを発表した。動画の生成・編集の上限が15秒に延び、コストを抑えたとし、シーンの連続性やキャラクターの音声、ジャンプカットなどの映像の乱れも改善したと説明している。投稿は途中で切れており、詳細は元の発表で確認が必要。",
    "points": [
-    "新しい点は、AIが個人の口座データを参照して質問に答える点。",
-    "読み取り専用で、送金や運用は行えないと明記されている。",
-    "対象は現時点で米国のみ。日本からの利用可否は投稿からは不明。"
+    "新しい点は、動画の長さ上限が15秒になったことと、映像の一貫性や音声の改善。",
+    "コスト低下は発表された内容だが、具体的な価格は投稿にない。",
+    "投稿は途中で切れているため、対応地域や提供方法は未確認。"
    ],
    "terms": [],
-   "score": 84,
-   "credibility": 85,
-   "heat": 72,
-   "first_seen": "2026-11-05T18:00:35.000Z",
-   "latest": "2026-11-05T18:00:35.000Z",
+   "score": 79,
+   "credibility": 90,
+   "heat": 42,
+   "first_seen": "2026-11-05T16:31:58.000Z",
+   "latest": "2026-11-05T17:08:19.000Z",
    "authors": [
-    "claudeai"
+    "GoogleAI"
    ],
    "author_labels": [
     {
-     "username": "claudeai",
-     "label": "Anthropic（Claude公式アカウント）",
+     "username": "GoogleAI",
+     "label": "Google AI公式アカウント",
      "type": "official",
      "former": ""
     }
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "Anthropic公式アカウントの投稿",
+   "evidence_note": "Google公式アカウントの発表",
    "links": [],
    "services": [],
    "events": [],
    "value": {
-    "impact": 1,
+    "impact": 2,
     "closeness": 1,
-    "try_cost": 1,
-    "why": "個人の家計向けで現場業務とは無関係、米国のみのベータ"
+    "try_cost": 2,
+    "why": "動画生成の性能向上。製造業の手順書や教育用途とは遠く、利用条件も要確認"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/claudeai/status/2118403114890137895",
-    "username": "claudeai",
-    "text": "Introducing Personal Finance in Claude, in beta in the US.\n\nConnect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money. https://t.co/V1JLYuWwrS",
-    "text_ja": "Claude に「パーソナルファイナンス」機能を導入します。米国でベータ版として提供を開始します。\n\nお好きな口座を接続すると、Claude がご自身の残高や取引履歴に基づいて、お金に関する質問に身近な言葉で答えます。アクセスは読み取り専用で、Claude がお金を移動したり、管理したり、投資したりすることはできません。https://t.co/V1JLYuWwrS"
+    "url": "https://x.com/GoogleAI/status/2118389961426874879",
+    "username": "GoogleAI",
+    "text": "Meet Gemini Omni 1.2 Flash ⚡️\n\nWe’ve made the model more cost-effective, bumped the video generation and editing limit up to 15 seconds, and made updates to how scenes hold together over time. We've also given character speech an upgrade, reduced visual glitches like jump cuts, and made sure the model stays even truer to any reference assets you upload.\n\nSo… what does all of that actually mean for you?\n\nIt gives you more room to tell your story. With up to 15 seconds to work with, you have more ",
+    "text_ja": "Gemini Omni 1.2 Flash ⚡️ が登場しました。\n\nモデルのコスト効率を高め、動画の生成・編集における上限を 15 秒に引き上げました。また、時間の経過に伴うシーンの一貫性を改善しました。キャラクターの音声も強化し、ジャンプカットなどの映像の乱れを減らしました。さらに、アップロードされた参照素材にこれまで以上に忠実になるよう調整しました。\n\nでは、これらは実際にどんなメリットがあるのでしょうか？\n\n最大 15 秒で、ストーリーをより自由に表現できるようになります。映像はより映画的でなめらかになり、開始から終了まで被写体がしっかり安定する一貫性も高まりました。キャラクターが話すときのセリフも、より自然で流れるようになります。\n\nクリエイターや一般ユーザーは、@FlowbyGoogle でシーンやマルチターン編集の指示を始められます。Google Vids では追加料金なしで 15 秒のクリップを生成でき、@GeminiApp では 15 秒の動画を作成できます。さらに、API を使って開発や事業構築を行う開発者や企業向けには、前世代から価格を 30% 引き下げ、720p 動画で 1 秒あたり 0.07 ドルという価格を実現しました。\n\n1 枚のスタイルフレームから 4 カット・15 秒の動画が生成される様子をぜひご覧ください。"
    },
    "post_ids": [
-    "2118403114890137895"
+    "2118389961426874879"
    ],
-   "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "post_count": 2,
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "3420e91a4b",
@@ -191,9 +183,9 @@
     "対象のプラン・提供地域・料金は投稿からは不明。"
    ],
    "terms": [],
-   "score": 77,
+   "score": 76,
    "credibility": 90,
-   "heat": 32,
+   "heat": 30,
    "first_seen": "2026-11-05T16:54:19.000Z",
    "latest": "2026-11-05T16:54:19.000Z",
    "authors": [
@@ -231,7 +223,7 @@
     "2118386439675420743"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "429130f74b",
@@ -243,9 +235,9 @@
     "注意点: 投稿は概要のみで、利用条件や料金、日本での提供状況は未確認。"
    ],
    "terms": [],
-   "score": 72,
+   "score": 71,
    "credibility": 85,
-   "heat": 27,
+   "heat": 25,
    "first_seen": "2026-11-05T15:49:54.000Z",
    "latest": "2026-11-05T15:49:54.000Z",
    "authors": [
@@ -283,7 +275,60 @@
     "2118370229466153299"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
+  },
+  {
+   "id": "5093503e18",
+   "verdict": "confirmed",
+   "title": "Hugging FaceのML InternがSlackボットとして提供開始",
+   "summary": "Hugging Face公式アカウントが、同社のオープンソースの ML Intern を、利用者が自分のSlackワークスペースに導入できるボットとして提供開始したと発表した。モデルの評価、データセット作成、ファインチューニングを行えるとしている。",
+   "points": [
+    "機械学習の作業を会話形式で依頼できる形になり、チーム内での利用が始めやすくなる",
+    "オープンソースで自社環境に入れられる点は、社内データを扱う小規模チームにとって検討材料になる",
+    "対応範囲や料金、利用条件は投稿からは不明なので公式ページで確認が必要"
+   ],
+   "terms": [],
+   "score": 68,
+   "credibility": 85,
+   "heat": 13,
+   "first_seen": "2026-11-05T19:50:50.000Z",
+   "latest": "2026-11-05T19:50:50.000Z",
+   "authors": [
+    "huggingface"
+   ],
+   "author_labels": [
+    {
+     "username": "huggingface",
+     "label": "Hugging Face公式",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "Hugging Face公式の発表",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 3,
+    "why": "社内チームでの機械学習作業を効率化しうるが、製造業の手順書用途には直接は合わない"
+   },
+   "first_step": "ML InternのSlackボットを自分のワークスペースに入れて動きを確かめてみる",
+   "usable": true,
+   "post": {
+    "url": "https://x.com/huggingface/status/2118430862949945612",
+    "username": "huggingface",
+    "text": "Our open-source ML Intern is now available as a Slack bot you can install in your own workspace! \n\nEvaluate models, build datasets, and fine-tune models on the fly 🚀 https://t.co/KrlSi3K6sY",
+    "text_ja": "オープンソースの ML Intern が、Slack ボットとして利用可能になりました。ご自身のワークスペースにインストールできます。\n\nモデルの評価、データセットの構築、モデルのファインチューニングをその場ですぐに行えます 🚀 https://t.co/KrlSi3K6sY"
+   },
+   "post_ids": [
+    "2118430862949945612"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "da50b8febf",
@@ -295,9 +340,9 @@
     "注意点: 投稿は一行のみで、仕様・料金・対象ユーザーは未確認。"
    ],
    "terms": [],
-   "score": 66,
+   "score": 64,
    "credibility": 85,
-   "heat": 28,
+   "heat": 23,
    "first_seen": "2026-11-06T14:43:51.000Z",
    "latest": "2026-11-06T14:43:51.000Z",
    "authors": [
@@ -335,188 +380,7 @@
     "2118715992343789911"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
-  },
-  {
-   "id": "3956bfa068",
-   "verdict": "confirmed",
-   "title": "NVIDIA GTCベルリンでパートナーが開発中のAI事例を紹介",
-   "summary": "NVIDIA公式アカウントが、GTC Berlinでパートナー企業が開発しているものを取材し、紹介した。投稿では、顧客の言語で話す音声エージェント、市場データの分析の高速化、AIエージェントが安全に作業や買い物をするためのツールが挙げられている。具体的な企業名や効果の数値は本投稿には記載されていない。",
-   "points": [
-    "音声エージェントや市場データ分析など、業務寄りの用途が並んでいる",
-    "イベントの紹介投稿であり、各事例の性能や導入実績は確認できない",
-    "詳細は元のスレッドや各パートナーの発表で確認する必要がある"
-   ],
-   "terms": [
-    {
-     "term": "GTC",
-     "desc": "NVIDIAが毎年開く技術カンファレンス"
-    },
-    {
-     "term": "音声エージェント",
-     "desc": "話しかけに音声で応答し、業務を進めるAIの仕組み"
-    }
-   ],
-   "score": 66,
-   "credibility": 90,
-   "heat": 15,
-   "first_seen": "2026-11-06T01:13:23.000Z",
-   "latest": "2026-11-06T01:13:23.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの紹介スレッド",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "事例紹介が中心で、今すぐ試せる具体的なツールは示されていない"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118512035029979136",
-    "username": "NVIDIAAI",
-    "text": "We caught up with our partners at @NVIDIAGTC Berlin to hear what they’re building.\n\nVoice agents that speak your customers’ language. Faster ways to analyze market data. Tools to help AI agents work and shop securely.\n\nHere’s what they shared. 🧵",
-    "text_ja": "NVIDIA GTC Berlin で協業パートナーの皆さんに、いま開発中のものについて話を聞いてきました。\n\nお客様の言語で話せる音声エージェント。市場データをより速く分析する方法。AIエージェントが安全に業務を行い、買い物もできるようにするツール。\n\nその内容をご紹介します。🧵"
-   },
-   "post_ids": [
-    "2118512035029979136"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
-  },
-  {
-   "id": "7f4cfe2d81",
-   "verdict": "confirmed",
-   "title": "NVIDIA Cosmosで世界モデルの学習・シミュレーション・提供を紹介",
-   "summary": "NVIDIA公式アカウントが、NVIDIA Cosmos FrameworkとNIMを使い、世界モデルを学習・シミュレーション・提供する方法を紹介するCosmos Labsのページを案内した。投稿は記事への誘導で、具体的な手順や結果は本文に含まれていない。",
-   "points": [
-    "世界モデルは映像などからロボットや物理環境の動きを予測するAIとして注目されている",
-    "開発者向けの技術解説で、一般の業務で今すぐ使うものかは内容を読んで判断が必要",
-    "ロボットやシミュレーションの経験がない場合は、用途との相性を確認する必要がある"
-   ],
-   "terms": [
-    {
-     "term": "世界モデル",
-     "desc": "現実世界の動きや物理の仕組みをAIが内部で予測するモデル"
-    },
-    {
-     "term": "NIM",
-     "desc": "NVIDIAのAIモデルを簡単に動かすための配布・実行の仕組み"
-    },
-    {
-     "term": "シミュレーション",
-     "desc": "コンピュータ上で現実に近い状況を再現して試すこと"
-    }
-   ],
-   "score": 65,
-   "credibility": 90,
-   "heat": 12,
-   "first_seen": "2026-11-05T17:00:20.000Z",
-   "latest": "2026-11-05T17:00:20.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式の技術ページ案内",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 2,
-    "why": "製造業の現場に直結しにくく、開発環境の準備も必要"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118387953005179312",
-    "username": "NVIDIAAI",
-    "text": "Train, Simulate, and Serve World Models with NVIDIA Cosmos Framework and NIM | Cosmos Labs https://t.co/sn8NmfOWR2",
-    "text_ja": "NVIDIA Cosmos Framework と NIM でワールドモデルを学習、シミュレーション、提供する | Cosmos Labs https://t.co/sn8NmfOWR2"
-   },
-   "post_ids": [
-    "2118387953005179312"
-   ],
-   "post_count": 2,
-   "archived_at": "2026-11-07T02:05:41Z"
-  },
-  {
-   "id": "28d511033b",
-   "verdict": "confirmed",
-   "title": "NVIDIAがAIのメモリ効率化の5つの方法を紹介",
-   "summary": "NVIDIA公式AIアカウントが、AIのメモリを効率よく使う方法を紹介する記事への案内を投稿した。モデルの重みを小さくすることから、サーバー間でコンテキストを再利用することまで、システム全体の最適化を5つ挙げるとしている。",
-   "points": [
-    "AIのメモリ不足は処理速度とコストに直結するため、効率化は実用面で重要とされる。",
-    "重みの縮小やコンテキスト再利用は、大規模なAIサービスを運用する側の話が中心とみられる。",
-    "個々の手法の効果や数値は、この投稿だけでは確認できない。"
-   ],
-   "terms": [],
-   "score": 64,
-   "credibility": 90,
-   "heat": 10,
-   "first_seen": "2026-11-05T16:03:21.000Z",
-   "latest": "2026-11-05T16:03:21.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの記事案内",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "大規模運用向けの技術解説で、小規模な現場利用には直接効きにくい。"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118373611408945493",
-    "username": "NVIDIAAI",
-    "text": "How do you make AI memory go further?\n\nGo inside the architecture to explore 5 ways NVIDIA optimizes the full system, from shrinking model weights to reusing context across servers. https://t.co/nNY9OLL6Hf",
-    "text_ja": "AIのメモリをさらに活用するにはどうすればよいでしょうか？\n\nNVIDIAがモデルの重みの圧縮から複数サーバー間でのコンテキスト再利用まで、システム全体を最適化する5つの方法を、アーキテクチャの内側からご紹介します。 https://t.co/nNY9OLL6Hf"
-   },
-   "post_ids": [
-    "2118373611408945493"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "0e5949a8a6",
@@ -531,7 +395,7 @@
    "terms": [],
    "score": 64,
    "credibility": 90,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-11-05T15:00:30.000Z",
    "latest": "2026-11-05T15:00:30.000Z",
    "authors": [
@@ -569,7 +433,7 @@
     "2118357795607105958"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "88fd62d92b",
@@ -582,9 +446,9 @@
     "性能、ライセンス、利用条件は投稿からは確認できないため、公式発表の確認が必要。"
    ],
    "terms": [],
-   "score": 58,
+   "score": 57,
    "credibility": 85,
-   "heat": 5,
+   "heat": 3,
    "first_seen": "2026-11-06T09:29:35.000Z",
    "latest": "2026-11-06T09:29:35.000Z",
    "authors": [
@@ -628,7 +492,7 @@
     "2118636906703724937"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
   },
   {
    "id": "16c98b968d",
@@ -641,9 +505,9 @@
     "記事本文の具体的な事例や推奨表現は投稿からは確認できない"
    ],
    "terms": [],
-   "score": 55,
+   "score": 54,
    "credibility": 78,
-   "heat": 5,
+   "heat": 4,
    "first_seen": "2026-11-06T11:02:49.000Z",
    "latest": "2026-11-06T11:02:49.000Z",
    "authors": [
@@ -687,7 +551,73 @@
     "2118660368650379667"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T02:05:41Z"
+   "archived_at": "2026-11-07T10:29:46Z"
+  },
+  {
+   "id": "97e1c5b02f",
+   "verdict": "promising",
+   "title": "NVIDIAの研究者がVFlashという視覚モデル手法を発表",
+   "summary": "NVIDIAロボティクス研究者のJim Fan氏が、VFlashという手法を紹介した。投稿によると、物体の位置や移動経路など長さが決まった予測を一度に出力することで、ロボットの行動の解読を最大12倍速くし、エッジGPU上でロボット推論を全体で5.1倍速くしたとされる。投稿では精度も基盤となるVLMより高くなったと述べられている。",
+   "points": [
+    "新しさ: 1トークンずつ出力する従来方式に代えて、形状を一度に出力する点が特徴とされる",
+    "重要性: ロボットを現場で素早く動かすための推論速度の改善が中心で、製造現場の自動化にも関係しうる",
+    "注意点: 速度の数値は投稿者による発表で、論文や公開ベンチマークの確認は未確認。現時点で一般向けに試せるかも不明"
+   ],
+   "terms": [
+    {
+     "term": "VLM",
+     "desc": "画像と文章を同時に理解できるAIモデルのこと"
+    },
+    {
+     "term": "エッジGPU",
+     "desc": "工場や機器の中など現場側で動く小型の画像処理用GPU"
+    },
+    {
+     "term": "トークン",
+     "desc": "AIが文章や数値を処理する際の最小単位のこと"
+    }
+   ],
+   "score": 50,
+   "credibility": 70,
+   "heat": 4,
+   "first_seen": "2026-11-05T16:31:58.000Z",
+   "latest": "2026-11-05T16:31:58.000Z",
+   "authors": [
+    "DrJimFan"
+   ],
+   "author_labels": [
+    {
+     "username": "DrJimFan",
+     "label": "NVIDIA Robotics研究者",
+     "type": "researcher",
+     "former": "元OpenAI インターン"
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "研究者本人の発表投稿",
+   "links": [],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "ロボット推論の高速化だが、一般に試せる形か不明"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/DrJimFan/status/2118380813498892301",
+    "username": "DrJimFan",
+    "text": "The era of System One Vision Model is here! Introducing VFlash: parsing the visual world in parallel at unmatched speeds for Physical AI.\n\nMost embodied prediction tasks like object localization, robot trajectory planning, and dense 3D motion are fixed-length float vectors. For example, a bounding box is always 6 tokens, a 10-waypoint robot arm trajectory is 54: we know these beforehand. Instead of decoding one token at a time, we can output the entire geometric shape in one go. \n\nVFlash enables",
+    "text_ja": "「システム1の視覚モデル」の時代が到来した！ フィジカルAI向けに、視覚世界を並列に、比類ない速度で解析するVFlashを紹介する。\n\n物体の位置特定、ロボットの軌道計画、密な3D動作といった多くの身体性予測タスクは、固定長の浮動小数点ベクトルである。例えば、バウンディングボックスは常に6トークン、10地点のロボットアーム軌道は54トークンになる。こうした長さはあらかじめ分かっている。1トークンずつ復号する代わりに、幾何学的な形状全体を一度に出力できる。\n\nVFlashは、Jetson ThorやDGX Sparkのようなエッジ GPU上で、行動の復号を最大12倍、ロボットの推論全体を5.1倍高速化できる。驚くべきことに、基盤のVLMより精度も高くなるという。"
+   },
+   "post_ids": [
+    "2118380813498892301"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-07T10:29:46Z"
   }
  ]
 }

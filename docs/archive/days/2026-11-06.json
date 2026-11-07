@@ -2,6 +2,71 @@
  "date": "2026-11-06",
  "items": [
   {
+   "id": "25cf0035aa",
+   "verdict": "confirmed",
+   "title": "OpenAI、サイバーセキュリティ向けモデル「GPT-6 Cyber」を発表",
+   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けの新モデル「GPT-6 Cyber」を発表した。同社は、このモデルがLinuxカーネル研究に使われ、Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームが活用し始めていると述べた。利用は一部の「Daybreak Red」顧客に限られ、今後段階的に広げるとしている。また、AIの安全防護を回避する「サイバー脱獄」の深刻度を評価する枠組みを、Frontier Model Forumと共同で作ったことも示した。",
+   "points": [
+    "新しさ: 防御側のセキュリティ研究に特化したモデルとして、提供先を限定して始めた点",
+    "注意点: 利用は一部顧客に限られ、一般の個人や小規模チームが今すぐ使える段階ではない",
+    "注意点: 性能や発見件数の第三者による検証はこの投稿からは確認できない"
+   ],
+   "terms": [],
+   "score": 91,
+   "credibility": 100,
+   "heat": 63,
+   "first_seen": "2026-11-05T17:09:13.000Z",
+   "latest": "2026-11-06T19:58:39.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式発表",
+   "links": [
+    {
+     "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+     "domain": "openai.com",
+     "primary": true
+    },
+    {
+     "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/",
+     "domain": "frontiermodelforum.org",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "セキュリティ専門の一部顧客向けで、現場の業務には直接関係しにくい"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2118390190246879554",
+    "username": "OpenAI",
+    "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://t.co/Nzab3Z1Td6",
+    "text_ja": "GPT‑6 Cyber を発表します。より高い性能と、より優れたモデルのアライメントを兼ね備えた、セキュリティ研究における大きな前進です。\n\nこのモデルは、昨日発表した Linux カーネル研究の基盤となっています。Mozilla、Palo Alto Networks、Calif、Cisco などの企業のセキュリティチームや、OpenAI 社内のチームがすでにこれを活用し始めています。\n\nGPT-6 Cyber は、一部の Daybreak Red のお客様にご利用いただけます。今後、順次アクセスを拡大していく予定です。\n\nhttps://t.co/Nzab3Z1Td6"
+   },
+   "post_ids": [
+    "2118390190246879554",
+    "2118795218099253606"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-07T18:07:20Z"
+  },
+  {
    "id": "8c56092f71",
    "verdict": "confirmed",
    "title": "AnthropicがClaudeの個人資産管理機能をUS向けベータで公開",
@@ -14,7 +79,7 @@
    "terms": [],
    "score": 82,
    "credibility": 85,
-   "heat": 68,
+   "heat": 67,
    "first_seen": "2026-11-05T18:00:35.000Z",
    "latest": "2026-11-05T18:00:35.000Z",
    "authors": [
@@ -52,7 +117,7 @@
     "2118403114890137895"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "9f981626c9",
@@ -67,7 +132,7 @@
    "terms": [],
    "score": 80,
    "credibility": 93,
-   "heat": 41,
+   "heat": 40,
    "first_seen": "2026-11-05T18:36:25.000Z",
    "latest": "2026-11-06T18:14:23.000Z",
    "authors": [
@@ -110,14 +175,14 @@
     "url": "https://x.com/AIatMeta/status/2118768974779634084",
     "username": "AIatMeta",
     "text": "Today we're bringing specialized models trained using Muse Wonder to @Muse and Meta AI, giving users access to some of Muse Wonder's frontier capabilities for complex tasks at work and in everyday life.\n\nThese specialized models include Muse Wonder's Active Memory and Active Focus, helping them stay aligned with your goals as tasks unfold:\n\n→ Active Memory helps recognize when earlier information matters and distinguish what's still relevant from what's become stale\n\n→ Active Focus helps recover",
-    "text_ja": null
+    "text_ja": "本日より、Muse Wonderで訓練された特化モデルを @Muse と Meta AI に提供開始します。これにより、ユーザーは複雑な仕事や日常生活のタスクでMuse Wonderの最先端の機能の一部を利用できるようになります。\n\nこの特化モデルには、Muse WonderのActive MemoryとActive Focusが含まれており、タスクが進む中でも目標に沿った動きを保つのに役立ちます。\n\n→ Active Memory は、以前の情報がいつ重要になるかを見極め、まだ関連のある情報と古くなった情報を区別します。\n\n→ Active Focus は、つまずいたときの立て直しや、制約が変わったときの代替案の発見を助けます。\n\nMuseでは、改良されたモデルにより、目標にとって重要な情報を忘れる度合いが2.4分の1に減り、制約が変化した際に行き詰まりから抜け出す能力が67%向上しました。つまり、同じことを何度も説明し直す必要が減り、計画が変わったときの行き止まりも減ります。\n\nMeta AIでは、これらの改善により、複雑な問題を段階に分解し、より的確なフォローアップの質問をし、話の方向が変わったときにも適応できるようになります。\n\n詳しくは研究ブログをご覧ください: https://t.co/ACWFr9xPtS"
    },
    "post_ids": [
     "2118768974779634084",
     "2118412135340572850"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "a2794f592e",
@@ -170,7 +235,7 @@
     "2118389961426874879"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "3420e91a4b",
@@ -223,7 +288,7 @@
     "2118386439675420743"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "429130f74b",
@@ -235,9 +300,9 @@
     "注意点: 投稿は概要のみで、利用条件や料金、日本での提供状況は未確認。"
    ],
    "terms": [],
-   "score": 71,
+   "score": 70,
    "credibility": 85,
-   "heat": 24,
+   "heat": 23,
    "first_seen": "2026-11-05T15:49:54.000Z",
    "latest": "2026-11-05T15:49:54.000Z",
    "authors": [
@@ -275,60 +340,7 @@
     "2118370229466153299"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
-  },
-  {
-   "id": "5093503e18",
-   "verdict": "confirmed",
-   "title": "Hugging FaceのML InternがSlackボットとして提供開始",
-   "summary": "Hugging Face公式アカウントが、同社のオープンソースの ML Intern を、利用者が自分のSlackワークスペースに導入できるボットとして提供開始したと発表した。モデルの評価、データセット作成、ファインチューニングを行えるとしている。",
-   "points": [
-    "機械学習の作業を会話形式で依頼できる形になり、チーム内での利用が始めやすくなる",
-    "オープンソースで自社環境に入れられる点は、社内データを扱う小規模チームにとって検討材料になる",
-    "対応範囲や料金、利用条件は投稿からは不明なので公式ページで確認が必要"
-   ],
-   "terms": [],
-   "score": 68,
-   "credibility": 85,
-   "heat": 12,
-   "first_seen": "2026-11-05T19:50:50.000Z",
-   "latest": "2026-11-05T19:50:50.000Z",
-   "authors": [
-    "huggingface"
-   ],
-   "author_labels": [
-    {
-     "username": "huggingface",
-     "label": "Hugging Face公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "Hugging Face公式の発表",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 3,
-    "why": "社内チームでの機械学習作業を効率化しうるが、製造業の手順書用途には直接は合わない"
-   },
-   "first_step": "ML InternのSlackボットを自分のワークスペースに入れて動きを確かめてみる",
-   "usable": true,
-   "post": {
-    "url": "https://x.com/huggingface/status/2118430862949945612",
-    "username": "huggingface",
-    "text": "Our open-source ML Intern is now available as a Slack bot you can install in your own workspace! \n\nEvaluate models, build datasets, and fine-tune models on the fly 🚀 https://t.co/KrlSi3K6sY",
-    "text_ja": "オープンソースの ML Intern が、Slack ボットとして利用可能になりました。ご自身のワークスペースにインストールできます。\n\nモデルの評価、データセットの構築、モデルのファインチューニングをその場ですぐに行えます 🚀 https://t.co/KrlSi3K6sY"
-   },
-   "post_ids": [
-    "2118430862949945612"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "3956bfa068",
@@ -341,9 +353,9 @@
     "AIエージェントの安全性（何を見て何を買えるか）は、業界全体で注目されている分野"
    ],
    "terms": [],
-   "score": 65,
+   "score": 64,
    "credibility": 90,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-11-06T01:13:23.000Z",
    "latest": "2026-11-06T01:13:23.000Z",
    "authors": [
@@ -381,7 +393,7 @@
     "2118512035029979136"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "f3e681350e",
@@ -394,9 +406,9 @@
     "参加費用や参加条件も投稿からは確認できない"
    ],
    "terms": [],
-   "score": 65,
+   "score": 64,
    "credibility": 90,
-   "heat": 7,
+   "heat": 6,
    "first_seen": "2026-11-05T19:02:20.000Z",
    "latest": "2026-11-05T19:02:20.000Z",
    "authors": [
@@ -428,13 +440,13 @@
     "url": "https://x.com/NVIDIAAI/status/2118418654278623594",
     "username": "NVIDIAAI",
     "text": "Dev Community Live:  NVIDIA Developer Live Agent Gauntlet https://t.co/QdooPpj15v",
-    "text_ja": null
+    "text_ja": "Dev Community Live: NVIDIA Developer Live Agent Gauntlet https://t.co/QdooPpj15v"
    },
    "post_ids": [
     "2118418654278623594"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "da50b8febf",
@@ -448,7 +460,7 @@
    "terms": [],
    "score": 63,
    "credibility": 85,
-   "heat": 21,
+   "heat": 20,
    "first_seen": "2026-11-06T14:43:51.000Z",
    "latest": "2026-11-06T14:43:51.000Z",
    "authors": [
@@ -486,7 +498,7 @@
     "2118715992343789911"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "0e5949a8a6",
@@ -539,7 +551,7 @@
     "2118357795607105958"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "28d511033b",
@@ -592,7 +604,7 @@
     "2118373611408945493"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "16c98b968d",
@@ -651,7 +663,7 @@
     "2118660368650379667"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "97e1c5b02f",
@@ -717,7 +729,7 @@
     "2118380813498892301"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   }
  ]
 }

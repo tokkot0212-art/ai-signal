@@ -21,9 +21,9 @@
      "desc": "学習内容を整理・修正する仕組みの名称とみられる（未確認）"
     }
    ],
-   "score": 94,
+   "score": 93,
    "credibility": 100,
-   "heat": 70,
+   "heat": 68,
    "first_seen": "2026-11-06T21:16:17.000Z",
    "latest": "2026-11-06T21:16:17.000Z",
    "authors": [
@@ -67,37 +67,24 @@
     "2118814753154064501"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
-   "id": "4dca201402",
+   "id": "0f2d533878",
    "verdict": "confirmed",
-   "title": "OpenAIがFrontier Model Forumと悪用対策の評価枠組みを公表",
-   "summary": "OpenAIは公式アカウントで、Frontier Model Forum（FMF）およびその加盟企業と共同で、AIの安全策を回避する行為がサイバー被害につながるかを判断する枠組みを作ったと投稿した。OpenAIのSasha Baker（National Security Policy責任者）は、攻撃の深刻度を比較する共通の方法論に向けた一歩だと述べている。",
+   "title": "OpenAI、生物実験の基礎分析を測る「BioBasicsBench」を発表",
+   "summary": "OpenAIは公式アカウントで、AIエージェントが湿式実験（ウェットラボ）の定型的な解析を行えるかを測る新しいベンチマーク「BioBasicsBench」を発表した。酵素設計のバイオ企業Ligoと共同で開発し、実験から得た100件のタスクで、生データの解釈、誤りの特定、証拠が結論を支えないことの判断を試すという。",
    "points": [
-    "サイバー悪用の深刻度を業界で共通に比べる方法を目指す取り組みである",
-    "防御策の優先順位付けに使われるため、AI開発の安全基準に影響しうる",
-    "枠組みの具体的な中身や公開範囲は投稿からは確認できない"
+    "新しさ: 実際の実験データを使い、AIの『基礎的な作業の正確さ』を測る点",
+    "注意点: 公開されたタスクの中身や各モデルの点数は、この投稿からは確認できない",
+    "読者への関係: 実験記録の確認や誤り検出の精度を見る物差しの考え方として参考になる"
    ],
-   "terms": [
-    {
-     "term": "Frontier Model Forum",
-     "desc": "主要AI企業が安全性の研究や基準づくりで協力する業界団体"
-    },
-    {
-     "term": "ジェイルブレイク",
-     "desc": "AIの安全装置を回避して禁止された出力を引き出す行為"
-    },
-    {
-     "term": "サイバー被害",
-     "desc": "不正アクセスやマルウェアなどによる情報・システムへの損害"
-    }
-   ],
-   "score": 79,
-   "credibility": 93,
-   "heat": 48,
-   "first_seen": "2026-11-06T19:58:39.000Z",
-   "latest": "2026-11-06T19:58:39.000Z",
+   "terms": [],
+   "score": 87,
+   "credibility": 100,
+   "heat": 57,
+   "first_seen": "2026-11-06T19:08:57.000Z",
+   "latest": "2026-11-06T19:08:57.000Z",
    "authors": [
     "OpenAI"
    ],
@@ -111,12 +98,12 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "公式発表（業界団体との共同枠組み）",
+   "evidence_note": "OpenAI公式発表",
    "links": [
     {
-     "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/",
-     "domain": "frontiermodelforum.org",
-     "primary": false
+     "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+     "domain": "openai.com",
+     "primary": true
     }
    ],
    "services": [],
@@ -125,21 +112,21 @@
     "impact": 1,
     "closeness": 1,
     "try_cost": 1,
-    "why": "安全基準の話で、個人が今日使えるツールではない"
+    "why": "生物学研究向けで、製造現場の業務からは遠い"
    },
    "first_step": null,
    "usable": false,
    "post": {
-    "url": "https://x.com/OpenAI/status/2118795218099253606",
+    "url": "https://x.com/OpenAI/status/2118782708767965238",
     "username": "OpenAI",
-    "text": "We partnered with @fmf_org and its member firms on a new framework to help identify when bypassing an AI system's safeguards could enable serious cyber harm, and prioritize stronger protections.\n\n\"...This framework is an important step toward a common methodology for evaluating and comparing the severity of cyber jailbreaks, including the capabilities they unlock and how readily they can be used. Shared approaches like this can help the AI and security communities build a clearer evidence base a",
-    "text_ja": null
+    "text": "A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench.\n\nDeveloped with Ligo, a biotech company focused on enzyme design, the benchmark draws on 100 tasks from real experiments to test whether agents can interpret raw lab data, identify errors, and recognize when the evidence doesn’t support a conclusion.\n\nAccelerating biological research starts with getting the everyday work right. BioBasicsBench shows where models need to improve, and helps us track wh",
+    "text_ja": "AIエージェントが湿式実験科学の日常的な分析をどう処理するかを測る新しい方法、BioBasicsBenchを紹介します。\n\n酵素設計に取り組むバイオテック企業Ligoと共同開発したこのベンチマークは、実際の実験に基づく100のタスクを用いて、エージェントが生の実験データを解釈し、誤りを特定し、証拠が結論を支持していないことを見抜けるかどうかを検証します。\n\n生物学研究を加速させるには、日々の基礎的な作業を正確にこなすことが出発点です。BioBasicsBenchは、モデルがどこを改善すべきかを示すとともに、その進歩が科学の発展、バイオセーフティ、バイオセキュリティにとって何を意味するのかを追跡する助けになります。\n\nhttps://t.co/wN2xLk0YeW"
    },
    "post_ids": [
-    "2118795218099253606"
+    "2118782708767965238"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "0578392aff",
@@ -154,7 +141,7 @@
    "terms": [],
    "score": 79,
    "credibility": 90,
-   "heat": 48,
+   "heat": 47,
    "first_seen": "2026-11-06T17:20:31.000Z",
    "latest": "2026-11-06T17:20:31.000Z",
    "authors": [
@@ -186,13 +173,13 @@
     "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
     "username": "GoogleDeepMind",
     "text": "We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption.\n\nGuided by humans, our models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems.\n\nOur VP Science @Pushmeet explains more ↓ https://t.co/SqNkBbkih2",
-    "text_ja": null
+    "text_ja": "暗号の耐性テストを加速するためにAIエージェントをどう活用できるかを示す新しい研究を公開します。\n\n人間の指導のもと、私たちのモデルはレガシーな1024ビットRSA暗号システムに含まれる2つの重大な弱点を発見しました。\n\nVP Science の @Pushmeet が詳しく説明しています ↓ https://t.co/SqNkBbkih2"
    },
    "post_ids": [
     "2118755418675765656"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "31fb658300",
@@ -207,7 +194,7 @@
    "terms": [],
    "score": 79,
    "credibility": 93,
-   "heat": 39,
+   "heat": 38,
    "first_seen": "2026-11-06T20:17:45.000Z",
    "latest": "2026-11-06T20:17:45.000Z",
    "authors": [
@@ -245,13 +232,13 @@
     "url": "https://x.com/NVIDIAAI/status/2118800021013643269",
     "username": "NVIDIAAI",
     "text": "Turn a single image into a 3D world you can explore with Lyra 2.0.\n\nBy combining video generation with 3D reconstruction, our researchers create environments along a camera path you choose. Lyra draws on earlier views and learns to correct accumulating visual errors, helping the world stay consistent as you explore and return to familiar places.\n\nPaper, code, and demos: https://t.co/NbtE0I9SVc",
-    "text_ja": null
+    "text_ja": "Lyra 2.0を使えば、1枚の画像を探索できる3D空間に変換できます。\n\n動画生成と3D再構成を組み合わせることで、研究者たちはユーザーが選んだカメラの軌道に沿った環境を作成します。Lyraは過去の視点を活用し、蓄積する視覚的な誤差を補正する学習を行うため、探索したり既視感のある場所に戻ったりしても、世界の一貫性が保たれます。\n\n論文、コード、デモはこちら: https://t.co/NbtE0I9SVc"
    },
    "post_ids": [
     "2118800021013643269"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "83b39d7af7",
@@ -266,7 +253,7 @@
    "terms": [],
    "score": 78,
    "credibility": 90,
-   "heat": 41,
+   "heat": 39,
    "first_seen": "2026-11-07T00:02:21.000Z",
    "latest": "2026-11-07T00:02:21.000Z",
    "authors": [
@@ -298,66 +285,13 @@
     "url": "https://x.com/OpenAIDevs/status/2118856544733532452",
     "username": "OpenAIDevs",
     "text": "Kickstart your weekend build with the new Showcase tab in the OpenAI Developers plugin.\n\nEligible ChatGPT Pro and Business subscribers can claim API credits in billing settings to cover their app’s API usage. https://t.co/NcM12ToGsH",
-    "text_ja": null
+    "text_ja": "OpenAI Developersプラグインの新しいShowcaseタブで、週末の開発をスタートしましょう。\n\n対象のChatGPT ProおよびBusinessのサブスクリプション利用者は、請求設定でAPIクレジットを受け取り、アプリのAPI利用料に充てることができます。 https://t.co/NcM12ToGsH"
    },
    "post_ids": [
     "2118856544733532452"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
-  },
-  {
-   "id": "64b0853bc2",
-   "verdict": "confirmed",
-   "title": "GPT-Image-2.6 でGIF作成が可能に",
-   "summary": "OpenAIの開発者向け公式アカウントが、GPT-Image-2.6を使って誰でも、またはチームでもGIFを作成できると案内した。投稿はリンクのみで、具体的な機能や提供範囲の詳細は本文にない。",
-   "points": [
-    "新しい点は、画像モデルでGIF作成ができるという案内のみ。",
-    "詳細（対象プラン、利用方法）は投稿のリンク先を見ないと分からない。",
-    "業務利用で使えるかは、リンク先の条件を確認する必要がある。"
-   ],
-   "terms": [],
-   "score": 77,
-   "credibility": 90,
-   "heat": 43,
-   "first_seen": "2026-11-06T23:46:33.000Z",
-   "latest": "2026-11-06T23:46:33.000Z",
-   "authors": [
-    "OpenAIDevs"
-   ],
-   "author_labels": [
-    {
-     "username": "OpenAIDevs",
-     "label": "OpenAI開発者向け公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "OpenAI公式アカウントの案内",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 1,
-    "closeness": 1,
-    "try_cost": 2,
-    "why": "製造現場の業務との関連は薄い。試す条件はリンク先次第"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/OpenAIDevs/status/2118852567509909716",
-    "username": "OpenAIDevs",
-    "text": "Everyone, or every team, can create GIFs with GPT-Image-2.6.\n\nhttps://t.co/rJIMLuDrPT",
-    "text_ja": null
-   },
-   "post_ids": [
-    "2118852567509909716"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   },
   {
    "id": "d69dc41c92",
@@ -370,9 +304,9 @@
     "詳細な手順や効果の再現性は記事本文を読んで確認が必要"
    ],
    "terms": [],
-   "score": 56,
+   "score": 55,
    "credibility": 73,
-   "heat": 26,
+   "heat": 22,
    "first_seen": "2026-11-07T08:29:49.000Z",
    "latest": "2026-11-07T08:29:49.000Z",
    "authors": [
@@ -416,7 +350,7 @@
     "2118984253799293073"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T14:56:53Z"
+   "archived_at": "2026-11-07T18:07:20Z"
   }
  ]
 }

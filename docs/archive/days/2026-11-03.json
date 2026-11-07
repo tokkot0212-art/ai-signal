@@ -2,34 +2,34 @@
  "date": "2026-11-03",
  "items": [
   {
-   "id": "2afffdc8c7",
+   "id": "cee2c53056",
    "verdict": "confirmed",
-   "title": "OpenAIがセキュリティ研究向け「GPT-6 Cyber」を発表、限定提供開始",
-   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けの新モデル「GPT-6 Cyber」を発表した。Linuxカーネル研究に使われたとされ、Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームが利用を始めていると述べている。提供は「Daybreak Red」の一部顧客に限られ、今後段階的に拡大するとしている。",
+   "title": "OpenAIがサイバーセキュリティ向け「GPT-6 Cyber」を発表",
+   "summary": "OpenAIは公式アカウントで、セキュリティ研究向けモデル「GPT-6 Cyber」を発表した。投稿によると、Linuxカーネル研究に使われ、Mozilla、Palo Alto Networks、Cisco などの企業のセキュリティチームも利用を始めているという。利用は一部の「Daybreak Red」顧客に限られ、提供範囲は段階的に広げるとしている。",
    "points": [
-    "提供先が限定されており、個人や小規模チームがすぐ使える状況ではない",
-    "セキュリティ研究の性能と安全性（alignment）の両立をうたっているが、具体的な評価結果は投稿からは確認できない",
-    "AIによる脆弱性発見が進むと、防御側と攻撃側の双方に影響しうる点に注意が必要"
+    "新しい点: セキュリティ研究に特化したモデルとして、性能と安全性の整合（alignment）を両立させたと説明されている",
+    "影響: 脆弱性の発見など、セキュリティ担当者の作業効率に関わる可能性がある。一般の中小事業者がすぐ使える状況ではない",
+    "注意: 性能の具体的な数値や評価方法は投稿に含まれず、未確認"
    ],
    "terms": [
     {
      "term": "Linuxカーネル",
-     "desc": "Linux系OSの中核となるソフトウェア部分"
+     "desc": "Linuxというパソコンやサーバー向けOSの中核部分のこと"
     },
     {
-     "term": "alignment（アラインメント）",
-     "desc": "AIが人間の意図や安全ルールに沿って動くようにする調整"
+     "term": "alignment（整合）",
+     "desc": "AIが人間の意図や安全ルールに沿って動くように調整すること"
     },
     {
      "term": "脆弱性",
-     "desc": "ソフトウェアの弱点で、悪用されると被害が出うる箇所"
+     "desc": "システムに存在するセキュリティ上の弱点やすき間のこと"
     }
    ],
    "score": 92,
    "credibility": 100,
-   "heat": 65,
+   "heat": 64,
    "first_seen": "2026-11-03T02:29:35.000Z",
-   "latest": "2026-11-05T17:09:13.000Z",
+   "latest": "2026-11-06T19:08:57.000Z",
    "authors": [
     "OpenAI"
    ],
@@ -43,10 +43,15 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "公式製品発表",
+   "evidence_note": "OpenAI公式アカウントの発表",
    "links": [
     {
      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+     "domain": "openai.com",
+     "primary": true
+    },
+    {
+     "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
      "domain": "openai.com",
      "primary": true
     }
@@ -57,7 +62,7 @@
     "impact": 2,
     "closeness": 1,
     "try_cost": 1,
-    "why": "限定提供で一般の読者は利用できず、業務への直接効果も遠い"
+    "why": "セキュリティ分野で一般の製造現場とは遠い。利用は限定顧客のみ"
    },
    "first_step": null,
    "usable": false,
@@ -70,10 +75,11 @@
    "post_ids": [
     "2117444048227123277",
     "2117609218673090886",
-    "2118390190246879554"
+    "2118390190246879554",
+    "2118782708767965238"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-07T10:29:46Z"
+   "archived_at": "2026-11-07T14:56:53Z"
   },
   {
    "id": "819889c93a",
@@ -326,21 +332,34 @@
    "archived_at": "2026-11-05T20:43:50Z"
   },
   {
-   "id": "7dd52c6ea5",
+   "id": "017bcb6fb4",
    "verdict": "confirmed",
-   "title": "NVIDIA、企業データを使うAIエージェント向けツールを拡充",
-   "summary": "NVIDIAの公式アカウントが、Agent Toolkitを拡充し、企業データを使って質問に答えたり予測したりするAIエージェントを開発者が作れるようにしたと発表した。エージェントがアクセスできる範囲や動作を管理する機能も加わったとしている。Box、GTC Berlinでのパートナー事例も紹介されている。",
+   "title": "NVIDIAとBoxが企業向けAIエージェント構築で連携、Nemotronの話題も",
+   "summary": "NVIDIA公式アカウントは、Boxのイベント「BoxWorks 2026」でJensen Huang氏がNemotronオープンモデルを使い、企業の知識を活かすAIエージェントを開発者が作れると説明したと投稿した。また、Nemotron 3.5 Transcribe がHugging Faceで総合1位に入ったとも紹介している。",
    "points": [
-    "新しい点は、企業データへのアクセス管理を備えたエージェント開発ツールの拡充。",
-    "BoxやSiemensなどの事例は紹介にとどまり、導入効果の数値は投稿にない。",
-    "開発者向けのため、中小事業者が直接使うには技術的な準備が必要とみられる。"
+    "新しい点: 業務文脈とツールを組み合わせ、企業の知識を使うエージェントの構築が打ち出された",
+    "影響: 企業向けAIエージェント市場で大手が提携を進めている動きとして参考になる",
+    "注意: 1位になった理由（利用数か評価か）は投稿からは不明で、性能の裏付けではない"
    ],
-   "terms": [],
-   "score": 73,
-   "credibility": 93,
-   "heat": 22,
+   "terms": [
+    {
+     "term": "AIエージェント",
+     "desc": "目標に向けて複数の作業を自分で計画・実行するAIのこと"
+    },
+    {
+     "term": "Nemotron",
+     "desc": "NVIDIAが公開しているオープンモデルのシリーズ名"
+    },
+    {
+     "term": "Hugging Face",
+     "desc": "AIモデルやデータを公開・共有する代表的なプラットフォーム"
+    }
+   ],
+   "score": 72,
+   "credibility": 90,
+   "heat": 21,
    "first_seen": "2026-11-02T19:06:10.000Z",
-   "latest": "2026-11-06T01:13:23.000Z",
+   "latest": "2026-11-05T23:46:30.000Z",
    "authors": [
     "NVIDIAAI"
    ],
@@ -354,24 +373,18 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの発表",
-   "links": [
-    {
-     "url": "https://nvda.ws/4BJ7VrE",
-     "domain": "nvda.ws",
-     "primary": false
-    }
-   ],
+   "evidence_note": "NVIDIA公式アカウントの投稿",
+   "links": [],
    "services": [],
    "events": [],
    "value": {
     "impact": 2,
     "closeness": 2,
-    "try_cost": 1,
-    "why": "企業向けエージェント基盤の動きで業界の方向性に関係。開発者・企業向けで個人が今日試すのは難しい"
+    "try_cost": 2,
+    "why": "企業向けエージェントの業界動向として参考になる。直接の導入は大規模向け"
    },
    "first_step": null,
-   "usable": false,
+   "usable": true,
    "post": {
     "url": "https://x.com/NVIDIAAI/status/2118490169745768487",
     "username": "NVIDIAAI",
@@ -379,13 +392,13 @@
     "text_ja": "NVIDIA 🤝 @Box\n\n本日の #BoxWorks 2026 で、@JensenHuang が、NVIDIA Nemotron のオープンモデルがビジネスのコンテキストやツールと組み合わさることで、開発者が企業のナレッジを活用するAIエージェントを構築できることを紹介しました。 https://t.co/KuHgKZESc1"
    },
    "post_ids": [
+    "2117678090918707535",
     "2117332456768717244",
     "2118490169745768487",
-    "2118512035029979136",
-    "2118014372845142048"
+    "2118054904300486928"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-07T10:29:46Z"
+   "archived_at": "2026-11-07T14:56:53Z"
   },
   {
    "id": "7c97421fa6",

@@ -2,28 +2,19 @@
  "date": "2026-11-05",
  "items": [
   {
-   "id": "8e870adf87",
+   "id": "219c250642",
    "verdict": "confirmed",
-   "title": "Anthropicが「dreaming」による記憶整理の仕組みを公開",
-   "summary": "Anthropic公式アカウントは、Claudeが経験から学ぶための記憶の仕組みとして「dreaming」を紹介する Engineering Blog の記事を公開したと投稿した。投稿によると、この仕組みはClaudeが学んだ内容を整理し、誤りを修正し、次回に必要な情報を見つけやすくするためのものとされる。もう一つの投稿では、Science Blogで、AIが科学モデリングをどう変え始めているかを扱うゲスト記事が紹介されている。",
+   "title": "AnthropicがClaudeの「ドリーミング」機能を解説",
+   "summary": "Anthropic公式アカウントは、Engineering Blogの新記事で「ドリーミング（dreaming）」と呼ぶ仕組みを紹介したと投稿した。投稿によると、この仕組みはClaudeが学んだことを整理し、誤りを直し、次回に必要な情報を見つけやすくするためのものとされている。",
    "points": [
-    "新しいのは、AIが過去の経験を整理して次に活かす仕組みの説明が公式に示された点。",
-    "「dreaming」の具体的な仕組みや効果の大きさは、投稿だけでは確認できない。ブログ本文での確認が必要。",
-    "科学モデリングの記事は、研究者がAIにモデルのコードを書かせて検証する流れを扱うとされるが、一般の業務への影響は未確認。"
+    "Claudeが経験から学ぶための「記憶」の仕組みに関する技術解説で、AIエージェントの継続的な作業に関わる話題",
+    "個人や小さなチームが使う場合、記憶の整理や誤りの修正が自動化されるかどうかは、記事本文を読むまで分からない",
+    "具体的な動作・対象製品・利用条件は投稿からは読み取れないため、記事の確認が必要"
    ],
-   "terms": [
-    {
-     "term": "Engineering Blog",
-     "desc": "企業が技術的な取り組みを解説する公式ブログのこと。"
-    },
-    {
-     "term": "科学モデリング",
-     "desc": "現象を数式やコードで表し、データから予測・説明する研究手法のこと。"
-    }
-   ],
-   "score": 96,
+   "terms": [],
+   "score": 93,
    "credibility": 100,
-   "heat": 65,
+   "heat": 62,
    "first_seen": "2026-11-04T20:11:28.000Z",
    "latest": "2026-11-06T21:16:17.000Z",
    "authors": [
@@ -39,15 +30,10 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "公式エンジニアリングブログ・サイエンスブログ",
+   "evidence_note": "公式ブログ（Engineering Blog）",
    "links": [
     {
      "url": "https://www.anthropic.com/research/components-of-agent-memory",
-     "domain": "anthropic.com",
-     "primary": true
-    },
-    {
-     "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
      "domain": "anthropic.com",
      "primary": true
     }
@@ -57,11 +43,11 @@
    "value": {
     "impact": 2,
     "closeness": 2,
-    "try_cost": 2,
-    "why": "記憶機能は業務効率に関係するが、投稿は告知のみで試し方が不明"
+    "try_cost": 1,
+    "why": "エージェントの記憶設計に関係するが、試せる機能かは未確認"
    },
    "first_step": null,
-   "usable": true,
+   "usable": false,
    "post": {
     "url": "https://x.com/AnthropicAI/status/2118814753154064501",
     "username": "AnthropicAI",
@@ -69,11 +55,10 @@
     "text_ja": "記憶は、Claudeが経験から学ぶことを可能にするものです。新しいEngineering Blogの記事で、「dreaming（ドリーミング）」がClaudeの学習内容を整理し、間違いを修正し、次に必要な情報をより見つけやすくする仕組みをどう助けるかを紹介しています。"
    },
    "post_ids": [
-    "2118814753154064501",
-    "2118792930211107115"
+    "2118814753154064501"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-08T01:36:33Z"
+   "archived_at": "2026-11-08T10:36:40Z"
   },
   {
    "id": "3e0ee75821",
@@ -260,9 +245,9 @@
      "desc": "短い動く画像を作る一般的な画像形式のこと。"
     }
    ],
-   "score": 75,
+   "score": 74,
    "credibility": 90,
-   "heat": 37,
+   "heat": 34,
    "first_seen": "2026-11-04T23:34:28.000Z",
    "latest": "2026-11-06T23:46:33.000Z",
    "authors": [
@@ -301,7 +286,7 @@
     "2118852567509909716"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-08T01:36:33Z"
+   "archived_at": "2026-11-08T10:36:40Z"
   },
   {
    "id": "d10044b568",
@@ -329,7 +314,7 @@
    ],
    "score": 74,
    "credibility": 85,
-   "heat": 28,
+   "heat": 27,
    "first_seen": "2026-11-05T11:36:58.000Z",
    "latest": "2026-11-05T11:36:58.000Z",
    "authors": [
@@ -367,7 +352,74 @@
     "2118306577203822976"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-08T01:36:33Z"
+   "archived_at": "2026-11-08T10:36:40Z"
+  },
+  {
+   "id": "0b6961c04c",
+   "verdict": "confirmed",
+   "title": "NVIDIAがCosmos 3のオープンモデルと関連資料を公開",
+   "summary": "NVIDIA公式AIアカウントは、Cosmos Frameworkと NIMを使って世界モデルを学習・シミュレーション・提供するための「Cosmos Labs」記事を紹介した。別のプログラマーは、インタラクティブな世界シミュレーション向けの「NVIDIA Cosmos 3 Open Models」の発表を紹介した。",
+   "points": [
+    "世界モデルは、物理世界の動きをAIが予測・シミュレーションする技術で、ロボットや自動化の分野で注目される",
+    "製造業の装置や工程のシミュレーションに将来役立つ可能性はあるが、本投稿からは具体的な用途は分からない",
+    "オープンモデルとされているものの、ライセンス・必要なGPU性能・利用条件は未確認"
+   ],
+   "terms": [],
+   "score": 72,
+   "credibility": 90,
+   "heat": 8,
+   "first_seen": "2026-11-04T16:59:10.000Z",
+   "latest": "2026-11-06T09:29:35.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式告知・公式モデル紹介記事",
+   "links": [
+    {
+     "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "製造業の仮想検証に関係しうるが、今すぐ業務に使えるかは未確認"
+   },
+   "first_step": "NVIDIA Cosmos 3の公開情報を読み、ライセンスと必要環境を確認してみる",
+   "usable": true,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118387953005179312",
+    "username": "NVIDIAAI",
+    "text": "Train, Simulate, and Serve World Models with NVIDIA Cosmos Framework and NIM | Cosmos Labs https://t.co/sn8NmfOWR2",
+    "text_ja": "NVIDIA Cosmos Framework と NIM でワールドモデルを学習、シミュレーション、提供する | Cosmos Labs https://t.co/sn8NmfOWR2"
+   },
+   "post_ids": [
+    "2118387953005179312",
+    "2118636906703724937"
+   ],
+   "post_count": 4,
+   "archived_at": "2026-11-08T10:36:40Z"
   },
   {
    "id": "9ff6040a3c",
@@ -380,9 +432,9 @@
     "具体的な製品名・提供時期・価格は投稿に含まれず未確認"
    ],
    "terms": [],
-   "score": 70,
+   "score": 69,
    "credibility": 90,
-   "heat": 19,
+   "heat": 17,
    "first_seen": "2026-11-04T18:56:55.000Z",
    "latest": "2026-11-06T01:13:23.000Z",
    "authors": [
@@ -422,7 +474,7 @@
     "2118512035029979136"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-08T01:36:33Z"
+   "archived_at": "2026-11-08T10:36:40Z"
   },
   {
    "id": "afe392e674",
@@ -535,59 +587,6 @@
    ],
    "post_count": 1,
    "archived_at": "2026-11-07T14:56:53Z"
-  },
-  {
-   "id": "7f4cfe2d81",
-   "verdict": "confirmed",
-   "title": "NVIDIA、Cosmos FrameworkとNIMで世界モデルの活用解説を公開",
-   "summary": "NVIDIA公式AIアカウントが、「Cosmos Labs」として、Cosmos FrameworkとNIMを使い世界モデル（ロボットや物理世界を模擬するAI）を学習・シミュレーション・提供する方法を紹介する記事へのリンクを投稿した。",
-   "points": [
-    "世界モデルは、物理世界の動きを予測・模擬するAIで、ロボット開発などで注目されている。",
-    "NIMはNVIDIAのAI推論を配布するためのパッケージ形式とみられる（未確認）。",
-    "投稿はリンク紹介のみで、具体的な手順や費用は本文からは分からない。"
-   ],
-   "terms": [],
-   "score": 65,
-   "credibility": 90,
-   "heat": 8,
-   "first_seen": "2026-11-04T16:59:10.000Z",
-   "latest": "2026-11-05T17:00:20.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式アカウントの技術記事案内",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 2,
-    "why": "ロボットや物理AI向けで、製造現場の文書業務とは直接の関係が薄い"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118387953005179312",
-    "username": "NVIDIAAI",
-    "text": "Train, Simulate, and Serve World Models with NVIDIA Cosmos Framework and NIM | Cosmos Labs https://t.co/sn8NmfOWR2",
-    "text_ja": "NVIDIA Cosmos Framework と NIM でワールドモデルを学習、シミュレーション、提供する | Cosmos Labs https://t.co/sn8NmfOWR2"
-   },
-   "post_ids": [
-    "2118387953005179312"
-   ],
-   "post_count": 4,
-   "archived_at": "2026-11-08T01:36:33Z"
   },
   {
    "id": "93f83faba2",

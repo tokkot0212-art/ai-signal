@@ -2,74 +2,6 @@
  "date": "2026-11-07",
  "items": [
   {
-   "id": "219c250642",
-   "verdict": "confirmed",
-   "title": "AnthropicがClaudeの「ドリーミング」機能を解説",
-   "summary": "Anthropicは公式アカウントで、新しいEngineering Blog記事を公開したと投稿した。記事では「ドリーミング（dreaming）」によりClaudeが学んだ内容を整理し、誤りを修正し、次回に必要な情報を見つけやすくする仕組みを紹介しているとされる。詳細は投稿からは読み取れない。",
-   "points": [
-    "Claudeの「記憶」を経験からの学習に結びつける試みとして紹介されている",
-    "学習内容の整理や誤りの修正を行う仕組みとみられるが、具体的な動作条件は本文を確認する必要がある",
-    "現場で使える機能かどうかは、投稿だけでは判断できない"
-   ],
-   "terms": [
-    {
-     "term": "Engineering Blog",
-     "desc": "企業が技術的な内容を公開する技術ブログ"
-    },
-    {
-     "term": "ドリーミング（dreaming）",
-     "desc": "学習内容を整理・修正する仕組みの名称とみられる（未確認）"
-    }
-   ],
-   "score": 93,
-   "credibility": 100,
-   "heat": 68,
-   "first_seen": "2026-11-06T21:16:17.000Z",
-   "latest": "2026-11-06T21:16:17.000Z",
-   "authors": [
-    "AnthropicAI"
-   ],
-   "author_labels": [
-    {
-     "username": "AnthropicAI",
-     "label": "Anthropic公式",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "公式ブログ告知",
-   "links": [
-    {
-     "url": "https://www.anthropic.com/research/components-of-agent-memory",
-     "domain": "anthropic.com",
-     "primary": true
-    }
-   ],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 1,
-    "try_cost": 1,
-    "why": "記憶機能の概要のみで、現場の業務への直接の効果は不明"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/AnthropicAI/status/2118814753154064501",
-    "username": "AnthropicAI",
-    "text": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://t.co/uUEN4bNkr9",
-    "text_ja": "記憶は、Claudeが経験から学ぶための土台です。新しいEngineering Blogの記事では、「ドリーミング（dreaming）」によってClaudeが学んだことを整理し、間違いを修正し、次回により簡単に必要な情報を見つけられるようになる仕組みを紹介しています。https://t.co/uUEN4bNkr9"
-   },
-   "post_ids": [
-    "2118814753154064501"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-07T18:07:20Z"
-  },
-  {
    "id": "0f2d533878",
    "verdict": "confirmed",
    "title": "OpenAI、生物実験の基礎分析を測る「BioBasicsBench」を発表",
@@ -80,9 +12,9 @@
     "読者への関係: 実験記録の確認や誤り検出の精度を見る物差しの考え方として参考になる"
    ],
    "terms": [],
-   "score": 87,
+   "score": 86,
    "credibility": 100,
-   "heat": 57,
+   "heat": 54,
    "first_seen": "2026-11-06T19:08:57.000Z",
    "latest": "2026-11-06T19:08:57.000Z",
    "authors": [
@@ -126,7 +58,7 @@
     "2118782708767965238"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T18:07:20Z"
+   "archived_at": "2026-11-08T01:36:33Z"
   },
   {
    "id": "0578392aff",
@@ -139,9 +71,9 @@
     "投稿では脆弱性の具体的な内容や影響範囲は書かれておらず、詳細は未確認"
    ],
    "terms": [],
-   "score": 79,
+   "score": 78,
    "credibility": 90,
-   "heat": 47,
+   "heat": 44,
    "first_seen": "2026-11-06T17:20:31.000Z",
    "latest": "2026-11-06T17:20:31.000Z",
    "authors": [
@@ -179,7 +111,7 @@
     "2118755418675765656"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T18:07:20Z"
+   "archived_at": "2026-11-08T01:36:33Z"
   },
   {
    "id": "31fb658300",
@@ -192,9 +124,9 @@
     "論文・コードは公開されているが、本投稿の時点で精度や実行環境の条件は未確認"
    ],
    "terms": [],
-   "score": 79,
+   "score": 78,
    "credibility": 93,
-   "heat": 38,
+   "heat": 35,
    "first_seen": "2026-11-06T20:17:45.000Z",
    "latest": "2026-11-06T20:17:45.000Z",
    "authors": [
@@ -238,7 +170,79 @@
     "2118800021013643269"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T18:07:20Z"
+   "archived_at": "2026-11-08T01:36:33Z"
+  },
+  {
+   "id": "4dca201402",
+   "verdict": "confirmed",
+   "title": "OpenAIなど、AI安全対策を破る攻撃の深刻度を比べる枠組みを発表",
+   "summary": "OpenAI公式アカウントは、Frontier Model Forum（FMF）と共同で、AIの安全対策を回避する行為がサイバー被害につながる場合を見極め、保護を優先するための新しい枠組みを作ったと投稿した。OpenAIのSasha Baker（国家安全保障政策責任者）は、サイバー攻撃の深刻度を比較する共通の方法論に向けた重要な一歩だと述べたと引用されている。",
+   "points": [
+    "新しいのは、AIの安全対策破り（ジェイルブレイク）の深刻さを業界で共通に比べる方法を目指す点。",
+    "業界全体の安全対策の基準づくりに関わる話で、中小企業の日常業務には直接の影響は小さい。",
+    "枠組みの具体的な内容や評価基準は投稿からは読み取れず、詳細は未確認。"
+   ],
+   "terms": [
+    {
+     "term": "Frontier Model Forum（FMF）",
+     "desc": "主要なAI企業が安全対策について協力する業界団体。"
+    },
+    {
+     "term": "ジェイルブレイク",
+     "desc": "AIの安全制限を回避させて、本来拒否される出力を引き出す行為のこと。"
+    },
+    {
+     "term": "安全対策（safeguards）",
+     "desc": "AIが有害な出力や悪用をしないようにする仕組みのこと。"
+    }
+   ],
+   "score": 77,
+   "credibility": 93,
+   "heat": 44,
+   "first_seen": "2026-11-06T19:58:39.000Z",
+   "latest": "2026-11-06T19:58:39.000Z",
+   "authors": [
+    "OpenAI"
+   ],
+   "author_labels": [
+    {
+     "username": "OpenAI",
+     "label": "OpenAI公式アカウント",
+     "type": "official",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "OpenAI公式投稿・FMFとの共同発表",
+   "links": [
+    {
+     "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/",
+     "domain": "frontiermodelforum.org",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 1,
+    "closeness": 1,
+    "try_cost": 1,
+    "why": "業界の安全基準の話で、現場の業務や個人の試用とは遠い"
+   },
+   "first_step": null,
+   "usable": false,
+   "post": {
+    "url": "https://x.com/OpenAI/status/2118795218099253606",
+    "username": "OpenAI",
+    "text": "We partnered with @fmf_org and its member firms on a new framework to help identify when bypassing an AI system's safeguards could enable serious cyber harm, and prioritize stronger protections.\n\n\"...This framework is an important step toward a common methodology for evaluating and comparing the severity of cyber jailbreaks, including the capabilities they unlock and how readily they can be used. Shared approaches like this can help the AI and security communities build a clearer evidence base a",
+    "text_ja": "私たちは@fmf_orgおよびその加盟企業と協力し、AIシステムの安全対策を回避することで深刻なサイバー被害が生じうる場合を特定し、より強固な保護を優先するための新しい枠組みを策定しました。\n\n「……この枠組みは、サイバー脱獄（ジェイルブレイク）の深刻度を評価・比較するための共通手法に向けた重要な一歩です。そこで解放される能力や、どれだけ容易に悪用されうるかも含みます。このような共有のアプローチは、AIコミュニティとセキュリティコミュニティがより明確な証拠基盤を築き、安全対策の改善を優先するのに役立ちます。」 ――OpenAI 国家安全保障政策責任者 Sasha Baker\n\nhttps://t.co/epOq98YPau"
+   },
+   "post_ids": [
+    "2118795218099253606"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-08T01:36:33Z"
   },
   {
    "id": "83b39d7af7",
@@ -251,9 +255,9 @@
     "クレジットの金額や期限、対象条件の詳細は投稿からは分からず未確認"
    ],
    "terms": [],
-   "score": 78,
+   "score": 76,
    "credibility": 90,
-   "heat": 39,
+   "heat": 35,
    "first_seen": "2026-11-07T00:02:21.000Z",
    "latest": "2026-11-07T00:02:21.000Z",
    "authors": [
@@ -291,7 +295,7 @@
     "2118856544733532452"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T18:07:20Z"
+   "archived_at": "2026-11-08T01:36:33Z"
   },
   {
    "id": "d69dc41c92",
@@ -304,9 +308,9 @@
     "詳細な手順や効果の再現性は記事本文を読んで確認が必要"
    ],
    "terms": [],
-   "score": 55,
+   "score": 53,
    "credibility": 73,
-   "heat": 22,
+   "heat": 17,
    "first_seen": "2026-11-07T08:29:49.000Z",
    "latest": "2026-11-07T08:29:49.000Z",
    "authors": [
@@ -350,7 +354,7 @@
     "2118984253799293073"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-07T18:07:20Z"
+   "archived_at": "2026-11-08T01:36:33Z"
   }
  ]
 }

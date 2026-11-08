@@ -70,6 +70,78 @@
    "archived_at": "2026-11-08T15:22:55Z"
   },
   {
+   "id": "dfa0bc541a",
+   "verdict": "confirmed",
+   "title": "NVIDIAがLyra 2.0とCosmos 3の公開を案内",
+   "summary": "NVIDIA公式アカウントは、1枚の画像からカメラ経路に沿って探索できる3D空間を作るLyra 2.0を紹介し、論文・コード・デモを公開したと投稿した。投稿によると、映像生成と3D再構成を組み合わせ、視点の戻りでも空間の一貫性を保つ仕組みとされている。プログラマーのnpaka123氏は、NVIDIA Cosmos 3のオープンモデル（対話型ワールドシミュレーション向け）を紹介している。",
+   "points": [
+    "3D空間や物理シミュレーションの生成AIは、ロボットや工場設備の仮想検証に応用が期待される",
+    "公式デモはあるが、実際の精度や実用性は自分で試すまで分からない",
+    "Cosmos 3は見出しのみで、性能や利用条件は投稿からは確認できず未確認"
+   ],
+   "terms": [],
+   "score": 83,
+   "credibility": 93,
+   "heat": 30,
+   "first_seen": "2026-11-06T09:29:35.000Z",
+   "latest": "2026-11-06T20:17:45.000Z",
+   "authors": [
+    "NVIDIAAI",
+    "npaka123"
+   ],
+   "author_labels": [
+    {
+     "username": "NVIDIAAI",
+     "label": "NVIDIA公式AIアカウント",
+     "type": "official",
+     "former": ""
+    },
+    {
+     "username": "npaka123",
+     "label": "プログラマー・技術書著者",
+     "type": "practitioner",
+     "former": ""
+    }
+   ],
+   "evidence": "official_announcement",
+   "evidence_label": "公式発表",
+   "evidence_note": "NVIDIA公式告知と論文・コードへのリンク",
+   "links": [
+    {
+     "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+     "domain": "huggingface.co",
+     "primary": true
+    },
+    {
+     "url": "http://nv-tlabs.github.io/Project-Lyra/",
+     "domain": "nv-tlabs.github.io",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 2,
+    "try_cost": 2,
+    "why": "製造業の仮想検証に関係しうるが直接の業務効果は未知。公開コードがあれば試せる可能性"
+   },
+   "first_step": "Lyra 2.0の公式デモやコードを確認してみる",
+   "usable": true,
+   "post": {
+    "url": "https://x.com/NVIDIAAI/status/2118800021013643269",
+    "username": "NVIDIAAI",
+    "text": "Turn a single image into a 3D world you can explore with Lyra 2.0.\n\nBy combining video generation with 3D reconstruction, our researchers create environments along a camera path you choose. Lyra draws on earlier views and learns to correct accumulating visual errors, helping the world stay consistent as you explore and return to familiar places.\n\nPaper, code, and demos: https://t.co/NbtE0I9SVc",
+    "text_ja": "Lyra 2.0を使えば、1枚の画像を探索できる3D空間に変換できます。\n\n動画生成と3D再構成を組み合わせることで、研究者たちはユーザーが選んだカメラの軌道に沿った環境を作成します。Lyraは過去の視点を活用し、蓄積する視覚的な誤差を補正する学習を行うため、探索したり既視感のある場所に戻ったりしても、世界の一貫性が保たれます。\n\n論文、コード、デモはこちら: https://t.co/NbtE0I9SVc"
+   },
+   "post_ids": [
+    "2118800021013643269",
+    "2118636906703724937"
+   ],
+   "post_count": 2,
+   "archived_at": "2026-11-08T18:24:28Z"
+  },
+  {
    "id": "8c56092f71",
    "verdict": "confirmed",
    "title": "AnthropicがClaudeの個人資産管理機能をUS向けベータで公開",
@@ -232,7 +304,7 @@
     "2118768974779634084"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-08T15:22:55Z"
+   "archived_at": "2026-11-08T18:24:28Z"
   },
   {
    "id": "3420e91a4b",
@@ -396,7 +468,7 @@
     "2118412135340572850"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-08T15:22:55Z"
+   "archived_at": "2026-11-08T18:24:28Z"
   },
   {
    "id": "5093503e18",
@@ -449,60 +521,7 @@
     "2118430862949945612"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-08T15:22:55Z"
-  },
-  {
-   "id": "3956bfa068",
-   "verdict": "confirmed",
-   "title": "NVIDIA GTC Berlinで、パートナー企業が音声エージェントや市場分析などを紹介",
-   "summary": "NVIDIA公式AIアカウントは、GTC Berlinで取材したパートナー企業の取り組みを紹介するスレッドを投稿した。投稿文によると、顧客の言語で話す音声エージェント、市場データを素早く分析する手法、AIエージェントが安全に買い物や作業をするためのツールが挙げられている。具体的な企業名や詳細はこの投稿からは分からない。",
-   "points": [
-    "新しい点: 音声エージェント、市場分析、エージェントの安全な決済や作業の3分野が挙がっている。",
-    "注意点: 紹介はパートナー企業の取り組みの要約で、性能や導入実績は投稿からは確認できない。",
-    "読者への関連: エージェントの安全な実行に関する動きは、業界の方向性を知る手がかりになる。"
-   ],
-   "terms": [],
-   "score": 65,
-   "credibility": 90,
-   "heat": 8,
-   "first_seen": "2026-11-06T01:13:23.000Z",
-   "latest": "2026-11-06T01:13:23.000Z",
-   "authors": [
-    "NVIDIAAI"
-   ],
-   "author_labels": [
-    {
-     "username": "NVIDIAAI",
-     "label": "NVIDIA公式AIアカウント",
-     "type": "official",
-     "former": ""
-    }
-   ],
-   "evidence": "official_announcement",
-   "evidence_label": "公式発表",
-   "evidence_note": "NVIDIA公式アカウントの投稿",
-   "links": [],
-   "services": [],
-   "events": [],
-   "value": {
-    "impact": 2,
-    "closeness": 2,
-    "try_cost": 1,
-    "why": "エージェントの業界動向として参考になるが、具体的に試せるツールは未確認"
-   },
-   "first_step": null,
-   "usable": false,
-   "post": {
-    "url": "https://x.com/NVIDIAAI/status/2118512035029979136",
-    "username": "NVIDIAAI",
-    "text": "We caught up with our partners at @NVIDIAGTC Berlin to hear what they’re building.\n\nVoice agents that speak your customers’ language. Faster ways to analyze market data. Tools to help AI agents work and shop securely.\n\nHere’s what they shared. 🧵",
-    "text_ja": "NVIDIA GTC Berlinで、パートナーの皆さんが開発していることを取材しました。\n\n顧客の言語で話す音声エージェント。市場データをより速く分析する方法。AIエージェントが安全に働き、買い物もできるようにするツール。\n\n彼らが共有した内容はこちらです。🧵"
-   },
-   "post_ids": [
-    "2118512035029979136"
-   ],
-   "post_count": 1,
-   "archived_at": "2026-11-08T15:22:55Z"
+   "archived_at": "2026-11-08T18:24:28Z"
   },
   {
    "id": "f3e681350e",
@@ -555,7 +574,7 @@
     "2118418654278623594"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-08T15:22:55Z"
+   "archived_at": "2026-11-08T18:24:28Z"
   },
   {
    "id": "0e5949a8a6",
@@ -622,7 +641,7 @@
    "terms": [],
    "score": 61,
    "credibility": 85,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-11-06T14:43:51.000Z",
    "latest": "2026-11-06T14:43:51.000Z",
    "authors": [
@@ -660,7 +679,7 @@
     "2118715992343789911"
    ],
    "post_count": 1,
-   "archived_at": "2026-11-08T15:22:55Z"
+   "archived_at": "2026-11-08T18:24:28Z"
   },
   {
    "id": "28d511033b",
@@ -714,6 +733,65 @@
    ],
    "post_count": 1,
    "archived_at": "2026-11-08T15:22:55Z"
+  },
+  {
+   "id": "16c98b968d",
+   "verdict": "promising",
+   "title": "AIDBが『AIエージェントのスキル』入門ページを公開",
+   "summary": "AI論文紹介メディア『AIDB』の運営者は、AIエージェントの『スキル』とは何かを初心者向けに解説する入門ページを作成したと投稿した。内容は『スキルでできること』『スキルを使ってみる』『スキルを保存するアプリを選ぶ』の3部構成で、Claude/Codeの利用が例示されている。",
+   "points": [
+    "スキルとは、エージェントに特定の作業手順や知識を与える仕組みとみられ、手順書の自動化と相性が良い可能性がある",
+    "入門ページの手順を実際に試したかどうかは投稿からは確認できない",
+    "Claude/Codeの具体的な料金や利用条件は未確認"
+   ],
+   "terms": [],
+   "score": 58,
+   "credibility": 78,
+   "heat": 2,
+   "first_seen": "2026-11-06T11:02:49.000Z",
+   "latest": "2026-11-06T11:02:49.000Z",
+   "authors": [
+    "ai_database"
+   ],
+   "author_labels": [
+    {
+     "username": "ai_database",
+     "label": "AI論文紹介メディア「AIDB」運営",
+     "type": "commentator",
+     "former": ""
+    }
+   ],
+   "evidence": "hands_on_test",
+   "evidence_label": "本人が手を動かした検証",
+   "evidence_note": "本人の制作・検証の報告",
+   "links": [
+    {
+     "url": "https://ai-data-base.com/what-is-a-skill",
+     "domain": "ai-data-base.com",
+     "primary": false
+    }
+   ],
+   "services": [],
+   "events": [],
+   "value": {
+    "impact": 2,
+    "closeness": 3,
+    "try_cost": 3,
+    "why": "手順書化や教育資料作りに直結し、無料で試せる可能性が高い"
+   },
+   "first_step": "AIDBの入門ページを読み、手順書を一つスキル化してみる",
+   "usable": true,
+   "post": {
+    "url": "https://x.com/ai_database/status/2118660368650379667",
+    "username": "ai_database",
+    "text": "AIエージェントの「スキル」とは何か　はじめて使う人へ入門ページを作りました！\nhttps://t.co/qYm85WECIL\n\nコンテンツ\n■ スキルでできること\n■ スキルを使ってみる\n■ スキルを保存するアプリを選ぶ\n（Claude/Code）\n\n手順通りに進めていけば、いつの間にか\"スキル使い\"になっているはずです。",
+    "text_ja": null
+   },
+   "post_ids": [
+    "2118660368650379667"
+   ],
+   "post_count": 1,
+   "archived_at": "2026-11-08T18:24:28Z"
   },
   {
    "id": "97e1c5b02f",

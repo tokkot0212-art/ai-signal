@@ -55,19 +55,32 @@
    "archived_at": "2026-11-07T18:07:20Z"
   },
   {
-   "id": "219c250642",
+   "id": "8e870adf87",
    "verdict": "confirmed",
-   "title": "AnthropicがClaudeの「ドリーミング」機能を解説",
-   "summary": "Anthropic公式アカウントは、Engineering Blogの新記事で「ドリーミング（dreaming）」と呼ぶ仕組みを紹介したと投稿した。投稿によると、この仕組みはClaudeが学んだことを整理し、誤りを直し、次回に必要な情報を見つけやすくするためのものとされている。",
+   "title": "AnthropicがClaudeの「ドリーミング」と科学モデリングへのAI活用を紹介",
+   "summary": "Anthropic公式アカウントは、Engineering Blogで「ドリーミング」によりClaudeが学んだことを整理し、誤りを直し、次に必要な情報を見つけやすくする仕組みを紹介した。あわせてScience Blogでは、ゲスト投稿としてJakob Macke氏らが、AIが科学モデルをコードとして書き、実行し、当てはめ、修正する形で研究の一部を支援し始めていることを説明した。",
    "points": [
-    "Claudeが経験から学ぶための「記憶」の仕組みに関する技術解説で、AIエージェントの継続的な作業に関わる話題",
-    "個人や小さなチームが使う場合、記憶の整理や誤りの修正が自動化されるかどうかは、記事本文を読むまで分からない",
-    "具体的な動作・対象製品・利用条件は投稿からは読み取れないため、記事の確認が必要"
+    "ドリーミングは、記憶を整理して次回の作業に活かす仕組みとして紹介されている（具体的な方式は元記事で確認が必要）",
+    "科学モデルの作成をAIが手伝う話は、研究者の作業効率に関わる話題",
+    "投稿だけでは効果の大きさや一般提供の時期は分からない"
    ],
-   "terms": [],
-   "score": 92,
+   "terms": [
+    {
+     "term": "ドリーミング",
+     "desc": "AIが学んだ内容を整理・見直しして、後で使いやすくする仕組みとみられる（詳細は元記事で確認）"
+    },
+    {
+     "term": "科学モデリング",
+     "desc": "現象を数式やコードで表し、データに当てはめて予測・説明する研究手法"
+    },
+    {
+     "term": "ニューロン（神経細胞）の発火",
+     "desc": "神経細胞が電気信号を出すこと。投稿の例として挙げられている"
+    }
+   ],
+   "score": 91,
    "credibility": 100,
-   "heat": 60,
+   "heat": 58,
    "first_seen": "2026-11-04T20:11:28.000Z",
    "latest": "2026-11-06T21:16:17.000Z",
    "authors": [
@@ -83,10 +96,15 @@
    ],
    "evidence": "official_announcement",
    "evidence_label": "公式発表",
-   "evidence_note": "公式ブログ（Engineering Blog）",
+   "evidence_note": "公式ブログ（Engineering/Science Blog）",
    "links": [
     {
      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+     "domain": "anthropic.com",
+     "primary": true
+    },
+    {
+     "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
      "domain": "anthropic.com",
      "primary": true
     }
@@ -97,7 +115,7 @@
     "impact": 2,
     "closeness": 2,
     "try_cost": 1,
-    "why": "エージェントの記憶設計に関係するが、試せる機能かは未確認"
+    "why": "AIの記憶・科学利用の動向。現場の手順書作成へは間接的。すぐ試せる機能かは不明"
    },
    "first_step": null,
    "usable": false,
@@ -105,13 +123,14 @@
     "url": "https://x.com/AnthropicAI/status/2118814753154064501",
     "username": "AnthropicAI",
     "text": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://t.co/uUEN4bNkr9",
-    "text_ja": "記憶は、Claudeが経験から学ぶことを可能にするものです。新しいEngineering Blogの記事で、「dreaming（ドリーミング）」がClaudeの学習内容を整理し、間違いを修正し、次に必要な情報をより見つけやすくする仕組みをどう助けるかを紹介しています。"
+    "text_ja": "記憶は、Claudeが経験から学ぶための土台です。新しいEngineering Blogの記事で、「ドリーミング」によってClaudeが学んだことを整理し、間違いを正し、次に必要なものをより簡単に見つけられるようになる仕組みを紹介しています。https://t.co/uUEN4bNkr9"
    },
    "post_ids": [
-    "2118814753154064501"
+    "2118814753154064501",
+    "2118792930211107115"
    ],
    "post_count": 3,
-   "archived_at": "2026-11-08T18:24:28Z"
+   "archived_at": "2026-11-09T01:48:15Z"
   },
   {
    "id": "c84c2f061b",
@@ -311,9 +330,9 @@
      "desc": "短い動く画像を作る一般的な画像形式のこと。"
     }
    ],
-   "score": 73,
+   "score": 72,
    "credibility": 90,
-   "heat": 32,
+   "heat": 30,
    "first_seen": "2026-11-04T23:34:28.000Z",
    "latest": "2026-11-06T23:46:33.000Z",
    "authors": [
@@ -352,7 +371,7 @@
     "2118852567509909716"
    ],
    "post_count": 2,
-   "archived_at": "2026-11-08T18:24:28Z"
+   "archived_at": "2026-11-09T01:48:15Z"
   },
   {
    "id": "9ff6040a3c",

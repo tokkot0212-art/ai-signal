@@ -1,37 +1,115 @@
 {
- "generated_at": "2026-11-25T18:41:44Z",
+ "generated_at": "2026-11-25T22:37:47Z",
  "demo": false,
  "note": null,
  "stats": {
-  "posts": 97,
-  "clusters": 96,
-  "confirmed": 22,
-  "promising": 34,
-  "unverified": 3,
-  "excluded": 37,
+  "posts": 106,
+  "clusters": 104,
+  "confirmed": 27,
+  "promising": 35,
+  "unverified": 4,
+  "excluded": 38,
   "dropped_low_quality": 0,
   "llm_reviewed": 0,
   "usable": 0,
   "service_topics": 5,
-  "month_spend_usd": 7.995,
+  "month_spend_usd": 8.115,
   "month_budget_usd": 20,
-  "today_spend_usd": 0.025,
+  "today_spend_usd": 0.145,
   "today_budget_usd": 0.501
  },
  "digest": [
+  "80fc502c0d",
   "e9e891f2ce",
-  "9f132f4ad4",
-  "2d78199326"
+  "762c1fa2cf"
  ],
  "clusters": [
+  {
+   "id": "80fc502c0d",
+   "verdict": "confirmed",
+   "title": "We recently migrated our Messages API from Python to Rust.",
+   "summary": null,
+   "score": 93,
+   "credibility": 100,
+   "heat": 83,
+   "first_seen": "2026-11-25T16:26:59.000Z",
+   "latest": "2026-11-25T16:26:59.000Z",
+   "authors": [
+    {
+     "username": "AnthropicAI",
+     "name": "Anthropic",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Anthropic公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125627317263466739",
+     "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+     "username": "AnthropicAI",
+     "name": "Anthropic",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+     "text": "We recently migrated our Messages API from Python to Rust.\n\nOn our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.\n\nhttps://t.co/NdrMzgrOwP",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T16:26:59.000Z",
+     "metrics": {
+      "bookmark_count": 3355,
+      "impression_count": 1562574,
+      "like_count": 7223,
+      "quote_count": 409,
+      "reply_count": 412,
+      "retweet_count": 484
+     },
+     "cred": 100,
+     "heat": 83,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（anthropic.com）"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Anthropic公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+     "domain": "anthropic.com",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "一次情報リンク（anthropic.com）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
   {
    "id": "e9e891f2ce",
    "verdict": "confirmed",
    "title": "We’re sharing a new preprint showing wet lab validation of intrinsic protein des…",
    "summary": null,
-   "score": 92,
+   "score": 91,
    "credibility": 100,
-   "heat": 68,
+   "heat": 66,
    "first_seen": "2026-11-24T21:02:58.000Z",
    "latest": "2026-11-24T22:56:46.000Z",
    "authors": [
@@ -75,7 +153,7 @@
       "retweet_count": 761
      },
      "cred": 100,
-     "heat": 68,
+     "heat": 66,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -104,7 +182,7 @@
       "retweet_count": 2
      },
      "cred": 70,
-     "heat": 14,
+     "heat": 12,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -141,71 +219,103 @@
    "usable": false
   },
   {
-   "id": "ec5e35abfd",
+   "id": "762c1fa2cf",
    "verdict": "confirmed",
-   "title": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defen…",
+   "title": "It’s been two weeks since we released Claude Fable 5.2. Here’s what people have …",
    "summary": null,
-   "score": 86,
-   "credibility": 100,
-   "heat": 64,
-   "first_seen": "2026-11-23T21:37:07.000Z",
-   "latest": "2026-11-23T21:37:07.000Z",
+   "score": 89,
+   "credibility": 85,
+   "heat": 82,
+   "first_seen": "2026-11-25T15:42:14.000Z",
+   "latest": "2026-11-25T17:19:13.000Z",
    "authors": [
     {
-     "username": "OpenAI",
-     "name": "OpenAI",
+     "username": "claudeai",
+     "name": "Claude",
      "tier": 1,
      "type": "official",
      "type_label": "公式",
-     "role": "OpenAI公式アカウント",
+     "role": "Anthropic（Claude公式アカウント）",
+     "former": ""
+    },
+    {
+     "username": "simonw",
+     "name": "Simon Willison",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "Datasette・Django共同作成者",
      "former": ""
     }
    ],
-   "post_count": 1,
+   "post_count": 2,
    "posts": [
     {
-     "id": "2124980590717911527",
-     "url": "https://x.com/OpenAI/status/2124980590717911527",
-     "username": "OpenAI",
-     "name": "OpenAI",
-     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-     "text": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime. It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches. Built by @cisco together with OpenAI.\n\nShirudo is a first step toward self-defending infrastructure that can adapt to new threats while keeping services running. Our goal is for defenders to work with AI agents to find affected systems, test and share shields, and deploy them without disrupting workloads.\n\nhttps://t.co/0AqGmcbxWH",
+     "id": "2125616057788637364",
+     "url": "https://x.com/claudeai/status/2125616057788637364",
+     "username": "claudeai",
+     "name": "Claude",
+     "avatar": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+     "text": "It’s been two weeks since we released Claude Fable 5.2. Here’s what people have been exploring with it:\n\nWhere the letter A came from, one alphabet at a time. https://t.co/BTSn7Js8yR",
      "lang": "en",
      "text_ja": null,
-     "created_at": "2026-11-23T21:37:07.000Z",
+     "created_at": "2026-11-25T15:42:14.000Z",
      "metrics": {
-      "bookmark_count": 4438,
-      "impression_count": 533664,
-      "like_count": 8214,
-      "quote_count": 364,
-      "reply_count": 328,
-      "retweet_count": 942
+      "bookmark_count": 2483,
+      "impression_count": 710097,
+      "like_count": 9692,
+      "quote_count": 104,
+      "reply_count": 335,
+      "retweet_count": 407
      },
-     "cred": 100,
-     "heat": 64,
+     "cred": 85,
+     "heat": 82,
      "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント",
-      "一次情報リンク（openai.com）"
+      "公式アカウントの発表"
      ],
      "neg": [],
      "author_type": "official",
-     "author_role": "OpenAI公式アカウント"
-    }
-   ],
-   "links": [
+     "author_role": "Anthropic（Claude公式アカウント）"
+    },
     {
-     "url": "https://openai.com/index/introducing-shirudo/",
-     "domain": "openai.com",
-     "primary": true
+     "id": "2125640464863056148",
+     "url": "https://x.com/simonw/status/2125640464863056148",
+     "username": "simonw",
+     "name": "Simon Willison",
+     "avatar": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
+     "text": "It's only been two weeks?\n\nI've made 194 commits to my open source projects that were co-authored by Fable 5.2 https://t.co/2GOarP4t5b",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T17:19:13.000Z",
+     "metrics": {
+      "bookmark_count": 14,
+      "impression_count": 9173,
+      "like_count": 86,
+      "quote_count": 0,
+      "reply_count": 65,
+      "retweet_count": 1
+     },
+     "cred": 70,
+     "heat": 36,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "practitioner",
+     "author_role": "Datasette・Django共同作成者"
     }
    ],
+   "links": [],
    "reasons_pos": [
+    "独立した2アカウントが言及",
     "公式アカウントの発表",
-    "組織認証アカウント",
-    "一次情報リンク（openai.com）"
+    "信頼リストの研究者・記者"
    ],
-   "reasons_neg": [],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
    "llm_note": null,
    "points": [],
    "terms": [],
@@ -225,7 +335,7 @@
    "summary": null,
    "score": 86,
    "credibility": 100,
-   "heat": 56,
+   "heat": 54,
    "first_seen": "2026-11-24T21:32:51.000Z",
    "latest": "2026-11-24T21:32:51.000Z",
    "authors": [
@@ -260,7 +370,7 @@
       "retweet_count": 207
      },
      "cred": 100,
-     "heat": 56,
+     "heat": 54,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -306,13 +416,169 @@
    "usable": false
   },
   {
-   "id": "2d78199326",
+   "id": "ec5e35abfd",
    "verdict": "confirmed",
-   "title": "New Anthropic Fellows research: Returning to the neuron basis for interpretabili…",
+   "title": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defen…",
    "summary": null,
    "score": 85,
    "credibility": 100,
    "heat": 63,
+   "first_seen": "2026-11-23T21:37:07.000Z",
+   "latest": "2026-11-23T21:37:07.000Z",
+   "authors": [
+    {
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "OpenAI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2124980590717911527",
+     "url": "https://x.com/OpenAI/status/2124980590717911527",
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+     "text": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime. It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches. Built by @cisco together with OpenAI.\n\nShirudo is a first step toward self-defending infrastructure that can adapt to new threats while keeping services running. Our goal is for defenders to work with AI agents to find affected systems, test and share shields, and deploy them without disrupting workloads.\n\nhttps://t.co/0AqGmcbxWH",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-23T21:37:07.000Z",
+     "metrics": {
+      "bookmark_count": 4438,
+      "impression_count": 533664,
+      "like_count": 8214,
+      "quote_count": 364,
+      "reply_count": 328,
+      "retweet_count": 942
+     },
+     "cred": 100,
+     "heat": 63,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（openai.com）"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "OpenAI公式アカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://openai.com/index/introducing-shirudo/",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "一次情報リンク（openai.com）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "afc2607350",
+   "verdict": "confirmed",
+   "title": "Through our new program OpenWorks, we fund local AI experts to help small busine…",
+   "summary": null,
+   "score": 84,
+   "credibility": 100,
+   "heat": 60,
+   "first_seen": "2026-11-23T17:44:50.000Z",
+   "latest": "2026-11-23T17:44:50.000Z",
+   "authors": [
+    {
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "OpenAI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2124922133545714160",
+     "url": "https://x.com/OpenAI/status/2124922133545714160",
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+     "text": "Through our new program OpenWorks, we fund local AI experts to help small businesses develop the tools and skills they need to grow their own business, at no cost to them.\n\nWe invite AI experts who love teaching others and small business owners who want to learn to implement AI to join us at https://t.co/Z9h8Mal5X3.",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-23T17:44:50.000Z",
+     "metrics": {
+      "bookmark_count": 6009,
+      "impression_count": 880137,
+      "like_count": 5221,
+      "quote_count": 218,
+      "reply_count": 551,
+      "retweet_count": 354
+     },
+     "cred": 100,
+     "heat": 60,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント",
+      "一次情報リンク（openai.com）"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "OpenAI公式アカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "http://openai.com/openworks",
+     "domain": "openai.com",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント",
+    "一次情報リンク（openai.com）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "2d78199326",
+   "verdict": "confirmed",
+   "title": "New Anthropic Fellows research: Returning to the neuron basis for interpretabili…",
+   "summary": null,
+   "score": 84,
+   "credibility": 100,
+   "heat": 61,
    "first_seen": "2026-11-24T23:05:42.000Z",
    "latest": "2026-11-24T23:05:42.000Z",
    "authors": [
@@ -347,7 +613,7 @@
       "retweet_count": 329
      },
      "cred": 100,
-     "heat": 63,
+     "heat": 61,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -389,91 +655,13 @@
    "usable": false
   },
   {
-   "id": "afc2607350",
-   "verdict": "confirmed",
-   "title": "Through our new program OpenWorks, we fund local AI experts to help small busine…",
-   "summary": null,
-   "score": 84,
-   "credibility": 100,
-   "heat": 61,
-   "first_seen": "2026-11-23T17:44:50.000Z",
-   "latest": "2026-11-23T17:44:50.000Z",
-   "authors": [
-    {
-     "username": "OpenAI",
-     "name": "OpenAI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "OpenAI公式アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2124922133545714160",
-     "url": "https://x.com/OpenAI/status/2124922133545714160",
-     "username": "OpenAI",
-     "name": "OpenAI",
-     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-     "text": "Through our new program OpenWorks, we fund local AI experts to help small businesses develop the tools and skills they need to grow their own business, at no cost to them.\n\nWe invite AI experts who love teaching others and small business owners who want to learn to implement AI to join us at https://t.co/Z9h8Mal5X3.",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-23T17:44:50.000Z",
-     "metrics": {
-      "bookmark_count": 6009,
-      "impression_count": 880137,
-      "like_count": 5221,
-      "quote_count": 218,
-      "reply_count": 551,
-      "retweet_count": 354
-     },
-     "cred": 100,
-     "heat": 61,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント",
-      "一次情報リンク（openai.com）"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "OpenAI公式アカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "http://openai.com/openworks",
-     "domain": "openai.com",
-     "primary": true
-    }
-   ],
-   "reasons_pos": [
-    "公式アカウントの発表",
-    "組織認証アカウント",
-    "一次情報リンク（openai.com）"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "74eaacf478",
    "verdict": "confirmed",
    "title": "Zero data retention (ZDR) with Enterprise Frontier Safeguards (EFS) is now in pu…",
    "summary": null,
    "score": 81,
    "credibility": 100,
-   "heat": 53,
+   "heat": 52,
    "first_seen": "2026-11-23T18:15:52.000Z",
    "latest": "2026-11-23T18:15:52.000Z",
    "authors": [
@@ -508,7 +696,7 @@
       "retweet_count": 236
      },
      "cred": 100,
-     "heat": 53,
+     "heat": 52,
      "pos": [
       "公式アカウントの発表",
       "一次情報リンク（claude.com）"
@@ -543,13 +731,153 @@
    "usable": false
   },
   {
+   "id": "64db751c5f",
+   "verdict": "confirmed",
+   "title": "For ordinary days that feel like a movie.",
+   "summary": null,
+   "score": 80,
+   "credibility": 90,
+   "heat": 64,
+   "first_seen": "2026-11-25T17:00:00.000Z",
+   "latest": "2026-11-25T17:00:00.000Z",
+   "authors": [
+    {
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "OpenAI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125635627341561995",
+     "url": "https://x.com/OpenAI/status/2125635627341561995",
+     "username": "OpenAI",
+     "name": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+     "text": "For ordinary days that feel like a movie. \n\nMake a Day Do Anything with ChatGPT. https://t.co/YBMlfbNaOb",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T17:00:00.000Z",
+     "metrics": {
+      "bookmark_count": 211,
+      "impression_count": 181664,
+      "like_count": 1467,
+      "quote_count": 30,
+      "reply_count": 200,
+      "retweet_count": 82
+     },
+     "cred": 90,
+     "heat": 64,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "OpenAI公式アカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "b5b8c72168",
+   "verdict": "confirmed",
+   "title": "Gemini 4 Neon coded a Rube Goldberg machine inside a 1980s arcade.",
+   "summary": null,
+   "score": 79,
+   "credibility": 90,
+   "heat": 63,
+   "first_seen": "2026-11-25T20:52:47.000Z",
+   "latest": "2026-11-25T20:52:47.000Z",
+   "authors": [
+    {
+     "username": "GoogleDeepMind",
+     "name": "Google DeepMind",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Google DeepMind公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125694207197110560",
+     "url": "https://x.com/GoogleDeepMind/status/2125694207197110560",
+     "username": "GoogleDeepMind",
+     "name": "Google DeepMind",
+     "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+     "text": "Gemini 4 Neon coded a Rube Goldberg machine inside a 1980s arcade.\n\nBuilt in @Antigravity with simulated physics and a Lyria 3.5 synth track, it runs through pinball bumpers before lighting up glass tubes. https://t.co/kGkjmpQCtK",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T20:52:47.000Z",
+     "metrics": {
+      "bookmark_count": 62,
+      "impression_count": 27494,
+      "like_count": 407,
+      "quote_count": 10,
+      "reply_count": 62,
+      "retweet_count": 31
+     },
+     "cred": 90,
+     "heat": 63,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Google DeepMind公式アカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "406603fc17",
    "verdict": "confirmed",
    "title": "「Sakana Namazu Small」（30Bモデル）を発表",
    "summary": null,
-   "score": 78,
+   "score": 77,
    "credibility": 100,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-11-25T00:35:45.000Z",
    "latest": "2026-11-25T00:35:45.000Z",
    "authors": [
@@ -584,7 +912,7 @@
       "retweet_count": 118
      },
      "cred": 100,
-     "heat": 45,
+     "heat": 43,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -627,7 +955,7 @@
    "summary": null,
    "score": 76,
    "credibility": 100,
-   "heat": 41,
+   "heat": 40,
    "first_seen": "2026-11-23T23:25:45.000Z",
    "latest": "2026-11-23T23:25:45.000Z",
    "authors": [
@@ -662,7 +990,7 @@
       "retweet_count": 81
      },
      "cred": 100,
-     "heat": 41,
+     "heat": 40,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -699,13 +1027,87 @@
    "usable": false
   },
   {
+   "id": "b3db71942c",
+   "verdict": "confirmed",
+   "title": "There’s now one way to connect your tools to Claude, teach it a new skill, or do…",
+   "summary": null,
+   "score": 75,
+   "credibility": 88,
+   "heat": 55,
+   "first_seen": "2026-11-23T20:56:12.000Z",
+   "latest": "2026-11-23T20:56:12.000Z",
+   "authors": [
+    {
+     "username": "claudeai",
+     "name": "Claude",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Anthropic（Claude公式アカウント）",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2124970294523945328",
+     "url": "https://x.com/claudeai/status/2124970294523945328",
+     "username": "claudeai",
+     "name": "Claude",
+     "avatar": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+     "text": "There’s now one way to connect your tools to Claude, teach it a new skill, or do both.\n\nConnectors and skills come together as plugins. Live on Free, Pro, Max, and Ultra plans, with Team and Enterprise coming soon.\n\nBrowse 10,000+ plugins: https://t.co/gSwpY9HDPY https://t.co/K78lwls8qh",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-23T20:56:12.000Z",
+     "metrics": {
+      "bookmark_count": 2062,
+      "impression_count": 367537,
+      "like_count": 4854,
+      "quote_count": 123,
+      "reply_count": 183,
+      "retweet_count": 239
+     },
+     "cred": 88,
+     "heat": 55,
+     "pos": [
+      "公式アカウントの発表"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Anthropic（Claude公式アカウント）"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://claude.ai/plugins",
+     "domain": "claude.ai",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "公式アカウントの発表"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "b201329796",
    "verdict": "confirmed",
    "title": "Two amateur astronomers, Kevin Bond (@canvrno) and Ethan Byrd (@itsjustemail), i…",
    "summary": null,
-   "score": 76,
+   "score": 75,
    "credibility": 90,
-   "heat": 45,
+   "heat": 43,
    "first_seen": "2026-11-24T19:08:37.000Z",
    "latest": "2026-11-24T19:08:37.000Z",
    "authors": [
@@ -740,7 +1142,7 @@
       "retweet_count": 77
      },
      "cred": 90,
-     "heat": 45,
+     "heat": 43,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -778,87 +1180,13 @@
    "usable": false
   },
   {
-   "id": "b3db71942c",
-   "verdict": "confirmed",
-   "title": "There’s now one way to connect your tools to Claude, teach it a new skill, or do…",
-   "summary": null,
-   "score": 75,
-   "credibility": 88,
-   "heat": 56,
-   "first_seen": "2026-11-23T20:56:12.000Z",
-   "latest": "2026-11-23T20:56:12.000Z",
-   "authors": [
-    {
-     "username": "claudeai",
-     "name": "Claude",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "Anthropic（Claude公式アカウント）",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2124970294523945328",
-     "url": "https://x.com/claudeai/status/2124970294523945328",
-     "username": "claudeai",
-     "name": "Claude",
-     "avatar": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
-     "text": "There’s now one way to connect your tools to Claude, teach it a new skill, or do both.\n\nConnectors and skills come together as plugins. Live on Free, Pro, Max, and Ultra plans, with Team and Enterprise coming soon.\n\nBrowse 10,000+ plugins: https://t.co/gSwpY9HDPY https://t.co/K78lwls8qh",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-23T20:56:12.000Z",
-     "metrics": {
-      "bookmark_count": 2062,
-      "impression_count": 367537,
-      "like_count": 4854,
-      "quote_count": 123,
-      "reply_count": 183,
-      "retweet_count": 239
-     },
-     "cred": 88,
-     "heat": 56,
-     "pos": [
-      "公式アカウントの発表"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "Anthropic（Claude公式アカウント）"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://claude.ai/plugins",
-     "domain": "claude.ai",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "公式アカウントの発表"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "3da3ef3d63",
    "verdict": "confirmed",
    "title": "Quantum computers could one day transform fusion energy, chemistry, and drug dis…",
    "summary": null,
    "score": 74,
    "credibility": 90,
-   "heat": 51,
+   "heat": 50,
    "first_seen": "2026-11-23T17:00:53.000Z",
    "latest": "2026-11-23T17:00:53.000Z",
    "authors": [
@@ -893,7 +1221,7 @@
       "retweet_count": 376
      },
      "cred": 90,
-     "heat": 51,
+     "heat": 50,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -922,13 +1250,151 @@
    "usable": false
   },
   {
+   "id": "667dd6eb26",
+   "verdict": "confirmed",
+   "title": "Better code-review routing at about half the inference cost.",
+   "summary": null,
+   "score": 74,
+   "credibility": 90,
+   "heat": 50,
+   "first_seen": "2026-11-25T21:46:18.000Z",
+   "latest": "2026-11-25T21:46:18.000Z",
+   "authors": [
+    {
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "NVIDIA公式AIアカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125707678244892736",
+     "url": "https://x.com/NVIDIAAI/status/2125707678244892736",
+     "username": "NVIDIAAI",
+     "name": "NVIDIA AI",
+     "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+     "text": "Better code-review routing at about half the inference cost.\n\n@CodeRabbitAI and @Baseten customized NVIDIA Nemotron 3.5 Lightning for their workflow. 🔥 https://t.co/WjYO79qZDK",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T21:46:18.000Z",
+     "metrics": {
+      "bookmark_count": 14,
+      "impression_count": 4347,
+      "like_count": 58,
+      "quote_count": 2,
+      "reply_count": 11,
+      "retweet_count": 6
+     },
+     "cred": 90,
+     "heat": 50,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "NVIDIA公式AIアカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "a1aed074a8",
+   "verdict": "promising",
+   "title": "We’re now testing Private Inference, our latest offering as part of OpenAI Priva…",
+   "summary": null,
+   "score": 74,
+   "credibility": 70,
+   "heat": 80,
+   "first_seen": "2026-11-25T17:12:34.000Z",
+   "latest": "2026-11-25T17:12:34.000Z",
+   "authors": [
+    {
+     "username": "sama",
+     "name": "Sam Altman",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "OpenAI CEO",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125638790593274259",
+     "url": "https://x.com/sama/status/2125638790593274259",
+     "username": "sama",
+     "name": "Sam Altman",
+     "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+     "text": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.\n\nStronger privacy protections will make frontier AI useful for a lot more work, and business privacy is important for a healthy ecosystem. Reach out to @shekar4x if interested!\n\n(Also, ZDR with Private Safety Processing enables automated safety reviews without giving OpenAI personnel access to the underlying content.)",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T17:12:34.000Z",
+     "metrics": {
+      "bookmark_count": 1131,
+      "impression_count": 602902,
+      "like_count": 6122,
+      "quote_count": 235,
+      "reply_count": 687,
+      "retweet_count": 319
+     },
+     "cred": 70,
+     "heat": 80,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "OpenAI CEO"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "6073f12255",
    "verdict": "confirmed",
    "title": "Gemini 4 Hydrogen built an interactive 3D globe that turns live lightning strike…",
    "summary": null,
-   "score": 74,
+   "score": 73,
    "credibility": 93,
-   "heat": 46,
+   "heat": 44,
    "first_seen": "2026-11-24T23:28:43.000Z",
    "latest": "2026-11-24T23:28:43.000Z",
    "authors": [
@@ -963,7 +1429,7 @@
       "retweet_count": 73
      },
      "cred": 93,
-     "heat": 46,
+     "heat": 44,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1002,9 +1468,9 @@
    "verdict": "confirmed",
    "title": "To climb from a base model to the frontier you need RL runs that last weeks to m…",
    "summary": null,
-   "score": 72,
+   "score": 71,
    "credibility": 93,
-   "heat": 40,
+   "heat": 39,
    "first_seen": "2026-11-23T17:46:31.000Z",
    "latest": "2026-11-23T17:46:31.000Z",
    "authors": [
@@ -1039,7 +1505,7 @@
       "retweet_count": 110
      },
      "cred": 93,
-     "heat": 40,
+     "heat": 39,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1078,9 +1544,9 @@
    "verdict": "confirmed",
    "title": "Introducing the Sakana AI Applied Research Lab",
    "summary": null,
-   "score": 72,
+   "score": 71,
    "credibility": 100,
-   "heat": 29,
+   "heat": 28,
    "first_seen": "2026-11-24T01:57:55.000Z",
    "latest": "2026-11-24T01:57:55.000Z",
    "authors": [
@@ -1115,7 +1581,7 @@
       "retweet_count": 45
      },
      "cred": 100,
-     "heat": 29,
+     "heat": 28,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント",
@@ -1152,83 +1618,13 @@
    "usable": false
   },
   {
-   "id": "ae00fbf66c",
-   "verdict": "confirmed",
-   "title": "Gemini 4 Neon recreated Alan Turing’s 1936 study at @Cambridge_Uni in interactiv…",
-   "summary": null,
-   "score": 70,
-   "credibility": 90,
-   "heat": 39,
-   "first_seen": "2026-11-23T20:12:34.000Z",
-   "latest": "2026-11-23T20:12:34.000Z",
-   "authors": [
-    {
-     "username": "GoogleDeepMind",
-     "name": "Google DeepMind",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "Google DeepMind公式アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2124959312606818597",
-     "url": "https://x.com/GoogleDeepMind/status/2124959312606818597",
-     "username": "GoogleDeepMind",
-     "name": "Google DeepMind",
-     "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
-     "text": "Gemini 4 Neon recreated Alan Turing’s 1936 study at @Cambridge_Uni in interactive 3D.\n\nUsing archival photos in @Antigravity, the model built Room X.8 at King’s College with a running Universal Turing Machine. https://t.co/mHYg9CW6jJ",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-23T20:12:34.000Z",
-     "metrics": {
-      "bookmark_count": 204,
-      "impression_count": 56828,
-      "like_count": 1163,
-      "quote_count": 18,
-      "reply_count": 83,
-      "retweet_count": 80
-     },
-     "cred": 90,
-     "heat": 39,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "Google DeepMind公式アカウント"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "公式アカウントの発表",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "29ba42573e",
    "verdict": "confirmed",
    "title": "GPT-6.2 can make sense of the world around us, simulate how things work, and hel…",
    "summary": null,
    "score": 70,
    "credibility": 90,
-   "heat": 41,
+   "heat": 40,
    "first_seen": "2026-11-23T19:12:37.000Z",
    "latest": "2026-11-23T19:12:37.000Z",
    "authors": [
@@ -1263,7 +1659,7 @@
       "retweet_count": 94
      },
      "cred": 90,
-     "heat": 41,
+     "heat": 40,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1292,13 +1688,83 @@
    "usable": false
   },
   {
+   "id": "ae00fbf66c",
+   "verdict": "confirmed",
+   "title": "Gemini 4 Neon recreated Alan Turing’s 1936 study at @Cambridge_Uni in interactiv…",
+   "summary": null,
+   "score": 69,
+   "credibility": 90,
+   "heat": 38,
+   "first_seen": "2026-11-23T20:12:34.000Z",
+   "latest": "2026-11-23T20:12:34.000Z",
+   "authors": [
+    {
+     "username": "GoogleDeepMind",
+     "name": "Google DeepMind",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Google DeepMind公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2124959312606818597",
+     "url": "https://x.com/GoogleDeepMind/status/2124959312606818597",
+     "username": "GoogleDeepMind",
+     "name": "Google DeepMind",
+     "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+     "text": "Gemini 4 Neon recreated Alan Turing’s 1936 study at @Cambridge_Uni in interactive 3D.\n\nUsing archival photos in @Antigravity, the model built Room X.8 at King’s College with a running Universal Turing Machine. https://t.co/mHYg9CW6jJ",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-23T20:12:34.000Z",
+     "metrics": {
+      "bookmark_count": 204,
+      "impression_count": 56828,
+      "like_count": 1163,
+      "quote_count": 18,
+      "reply_count": 83,
+      "retweet_count": 80
+     },
+     "cred": 90,
+     "heat": 38,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Google DeepMind公式アカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "15a9c67f54",
    "verdict": "confirmed",
    "title": "Neuroscience has long inspired artificial intelligence. Now, we're using AI to b…",
    "summary": null,
-   "score": 68,
+   "score": 67,
    "credibility": 90,
-   "heat": 35,
+   "heat": 33,
    "first_seen": "2026-11-24T17:54:09.000Z",
    "latest": "2026-11-24T17:54:09.000Z",
    "authors": [
@@ -1333,7 +1799,7 @@
       "retweet_count": 33
      },
      "cred": 90,
-     "heat": 35,
+     "heat": 33,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1362,159 +1828,13 @@
    "usable": false
   },
   {
-   "id": "987749b732",
-   "verdict": "confirmed",
-   "title": "Forbes JAPAN「日本の起業家ランキング2027」にて、Sakana AIを1位に選出いただきました。日頃からご支援くださる皆様に感謝申し上げます。こう…",
-   "summary": null,
-   "score": 68,
-   "credibility": 90,
-   "heat": 35,
-   "first_seen": "2026-11-25T09:00:53.000Z",
-   "latest": "2026-11-25T09:00:53.000Z",
-   "authors": [
-    {
-     "username": "SakanaAILabs",
-     "name": "Sakana AI",
-     "tier": 1,
-     "type": "official",
-     "type_label": "公式",
-     "role": "Sakana AI公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125515053869023284",
-     "url": "https://x.com/SakanaAILabs/status/2125515053869023284",
-     "username": "SakanaAILabs",
-     "name": "Sakana AI",
-     "avatar": "https://pbs.twimg.com/profile_images/1885939209388929024/dtnrOdGp_normal.jpg",
-     "text": "Forbes JAPAN「日本の起業家ランキング2027」にて、Sakana AIを1位に選出いただきました。日頃からご支援くださる皆様に感謝申し上げます。こうしたご期待に応えるべく、今後も最先端の研究成果の社会実装に向けて邁進してまいります。 https://t.co/dHTZuUjUIo",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-25T09:00:53.000Z",
-     "metrics": {
-      "bookmark_count": 9,
-      "impression_count": 9019,
-      "like_count": 142,
-      "quote_count": 6,
-      "reply_count": 9,
-      "retweet_count": 27
-     },
-     "cred": 90,
-     "heat": 35,
-     "pos": [
-      "公式アカウントの発表",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "Sakana AI公式"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "公式アカウントの発表",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "a89ddd9917",
-   "verdict": "promising",
-   "title": "AIでドーピングしたコンサルの実力は 使わない人材との能力差、BCG約500人で検証 Nature系列誌",
-   "summary": null,
-   "score": 67,
-   "credibility": 78,
-   "heat": 50,
-   "first_seen": "2026-11-25T03:05:07.000Z",
-   "latest": "2026-11-25T03:05:07.000Z",
-   "authors": [
-    {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
-     "type": "official",
-     "type_label": "公式",
-     "role": "ITmedia NEWS公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125425522171912698",
-     "url": "https://x.com/itmedia_news/status/2125425522171912698",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "AIでドーピングしたコンサルの実力は　使わない人材との能力差、BCG約500人で検証　Nature系列誌\nhttps://t.co/GnKcIyUbhN",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-25T03:05:07.000Z",
-     "metrics": {
-      "bookmark_count": 491,
-      "impression_count": 161493,
-      "like_count": 643,
-      "quote_count": 55,
-      "reply_count": 10,
-      "retweet_count": 98
-     },
-     "cred": 78,
-     "heat": 50,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003421/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "9dba70be92",
    "verdict": "confirmed",
    "title": "We worked with @mencap_charity and people with learning disabilities to build th…",
    "summary": null,
    "score": 66,
    "credibility": 90,
-   "heat": 30,
+   "heat": 29,
    "first_seen": "2026-11-24T12:15:46.000Z",
    "latest": "2026-11-24T12:15:46.000Z",
    "authors": [
@@ -1549,7 +1869,7 @@
       "retweet_count": 19
      },
      "cred": 90,
-     "heat": 30,
+     "heat": 29,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1584,7 +1904,7 @@
    "summary": null,
    "score": 66,
    "credibility": 70,
-   "heat": 60,
+   "heat": 59,
    "first_seen": "2026-11-24T16:38:46.000Z",
    "latest": "2026-11-24T16:38:46.000Z",
    "authors": [
@@ -1619,7 +1939,7 @@
       "retweet_count": 267
      },
      "cred": 70,
-     "heat": 60,
+     "heat": 59,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -1646,13 +1966,159 @@
    "usable": false
   },
   {
+   "id": "a89ddd9917",
+   "verdict": "promising",
+   "title": "AIでドーピングしたコンサルの実力は 使わない人材との能力差、BCG約500人で検証 Nature系列誌",
+   "summary": null,
+   "score": 66,
+   "credibility": 78,
+   "heat": 47,
+   "first_seen": "2026-11-25T03:05:07.000Z",
+   "latest": "2026-11-25T03:05:07.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125425522171912698",
+     "url": "https://x.com/itmedia_news/status/2125425522171912698",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "AIでドーピングしたコンサルの実力は　使わない人材との能力差、BCG約500人で検証　Nature系列誌\nhttps://t.co/GnKcIyUbhN",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-25T03:05:07.000Z",
+     "metrics": {
+      "bookmark_count": 491,
+      "impression_count": 161493,
+      "like_count": 643,
+      "quote_count": 55,
+      "reply_count": 10,
+      "retweet_count": 98
+     },
+     "cred": 78,
+     "heat": 47,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003421/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "987749b732",
+   "verdict": "confirmed",
+   "title": "Forbes JAPAN「日本の起業家ランキング2027」にて、Sakana AIを1位に選出いただきました。日頃からご支援くださる皆様に感謝申し上げます。こう…",
+   "summary": null,
+   "score": 66,
+   "credibility": 90,
+   "heat": 31,
+   "first_seen": "2026-11-25T09:00:53.000Z",
+   "latest": "2026-11-25T09:00:53.000Z",
+   "authors": [
+    {
+     "username": "SakanaAILabs",
+     "name": "Sakana AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Sakana AI公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125515053869023284",
+     "url": "https://x.com/SakanaAILabs/status/2125515053869023284",
+     "username": "SakanaAILabs",
+     "name": "Sakana AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885939209388929024/dtnrOdGp_normal.jpg",
+     "text": "Forbes JAPAN「日本の起業家ランキング2027」にて、Sakana AIを1位に選出いただきました。日頃からご支援くださる皆様に感謝申し上げます。こうしたご期待に応えるべく、今後も最先端の研究成果の社会実装に向けて邁進してまいります。 https://t.co/dHTZuUjUIo",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-25T09:00:53.000Z",
+     "metrics": {
+      "bookmark_count": 9,
+      "impression_count": 9019,
+      "like_count": 142,
+      "quote_count": 6,
+      "reply_count": 9,
+      "retweet_count": 27
+     },
+     "cred": 90,
+     "heat": 31,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "Sakana AI公式"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "e17d4fa616",
    "verdict": "confirmed",
    "title": "Qwen4 Max × @pendev — design systems meet creativity. Give it a try! 🎨",
    "summary": null,
    "score": 64,
    "credibility": 90,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-11-24T06:57:06.000Z",
    "latest": "2026-11-24T06:57:06.000Z",
    "authors": [
@@ -1687,7 +2153,7 @@
       "retweet_count": 17
      },
      "cred": 90,
-     "heat": 26,
+     "heat": 25,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1701,142 +2167,6 @@
    "reasons_pos": [
     "公式アカウントの発表",
     "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "cb0fda9e57",
-   "verdict": "promising",
-   "title": "\"Cost per task is a misleading metric; the scarce resource is human attention, n…",
-   "summary": null,
-   "score": 64,
-   "credibility": 70,
-   "heat": 54,
-   "first_seen": "2026-11-25T16:26:50.000Z",
-   "latest": "2026-11-25T16:26:50.000Z",
-   "authors": [
-    {
-     "username": "swyx",
-     "name": "swyx 🔜 aie.codes",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "AI Engineer Summit主催・開発者",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125627281230205435",
-     "url": "https://x.com/swyx/status/2125627281230205435",
-     "username": "swyx",
-     "name": "swyx 🔜 aie.codes",
-     "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
-     "text": "\"Cost per task is a misleading metric; the scarce resource is human attention, not token cost.\"\n\nbeware the pareto frontier charts that make you believe you can reduce every model to 2 numbers; it can hide some AWFUL reliability issues👏 https://t.co/ICtqiXhE4f https://t.co/6LJLlCP8tr",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-25T16:26:50.000Z",
-     "metrics": {
-      "bookmark_count": 76,
-      "impression_count": 7109,
-      "like_count": 155,
-      "quote_count": 7,
-      "reply_count": 93,
-      "retweet_count": 8
-     },
-     "cred": 70,
-     "heat": 54,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "AI Engineer Summit主催・開発者"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "0586e8494d",
-   "verdict": "promising",
-   "title": "One imaginable outcome is that AI Labs, unwilling or unable (due to more careful…",
-   "summary": null,
-   "score": 64,
-   "credibility": 70,
-   "heat": 55,
-   "first_seen": "2026-11-25T15:59:49.000Z",
-   "latest": "2026-11-25T15:59:49.000Z",
-   "authors": [
-    {
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "Wharton教授",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125620479461573034",
-     "url": "https://x.com/emollick/status/2125620479461573034",
-     "username": "emollick",
-     "name": "Ethan Mollick",
-     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
-     "text": "One imaginable outcome is that AI Labs, unwilling or unable (due to more careful government oversight) release new models to the public, become (regulated?) monopolies of intelligence: launching their own efforts in areas like finance &amp; biotech where frontier intelligence wins. https://t.co/TOfvOzQLYX",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-25T15:59:49.000Z",
-     "metrics": {
-      "bookmark_count": 53,
-      "impression_count": 19321,
-      "like_count": 257,
-      "quote_count": 9,
-      "reply_count": 82,
-      "retweet_count": 17
-     },
-     "cred": 70,
-     "heat": 55,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "researcher",
-     "author_role": "Wharton教授"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
    ],
    "reasons_neg": [],
    "llm_note": null,
@@ -1928,7 +2258,7 @@
    "summary": null,
    "score": 63,
    "credibility": 90,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-11-23T21:39:00.000Z",
    "latest": "2026-11-23T21:39:00.000Z",
    "authors": [
@@ -1963,7 +2293,7 @@
       "retweet_count": 8
      },
      "cred": 90,
-     "heat": 23,
+     "heat": 22,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -1996,9 +2326,9 @@
    "verdict": "promising",
    "title": "On-Policy Codec Distillation for Efficient All-in-One Video Generation",
    "summary": null,
-   "score": 63,
+   "score": 62,
    "credibility": 85,
-   "heat": 30,
+   "heat": 27,
    "first_seen": "2026-11-25T04:46:14.000Z",
    "latest": "2026-11-25T04:46:14.000Z",
    "authors": [
@@ -2033,7 +2363,7 @@
       "retweet_count": 8
      },
      "cred": 85,
-     "heat": 30,
+     "heat": 27,
      "pos": [
       "信頼リストの研究者・記者",
       "一次情報リンク（huggingface.co）"
@@ -2077,9 +2407,9 @@
    "verdict": "promising",
    "title": "Two kinds of people: those watching the agent swarm trying to crack P=NP and tho…",
    "summary": null,
-   "score": 62,
+   "score": 61,
    "credibility": 73,
-   "heat": 45,
+   "heat": 44,
    "first_seen": "2026-11-24T06:12:37.000Z",
    "latest": "2026-11-24T06:12:37.000Z",
    "authors": [
@@ -2114,7 +2444,7 @@
       "retweet_count": 67
      },
      "cred": 73,
-     "heat": 45,
+     "heat": 44,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2147,89 +2477,13 @@
    "usable": false
   },
   {
-   "id": "149dbef5fc",
-   "verdict": "promising",
-   "title": "Motion Mamba 2.0",
-   "summary": null,
-   "score": 62,
-   "credibility": 85,
-   "heat": 27,
-   "first_seen": "2026-11-25T04:54:35.000Z",
-   "latest": "2026-11-25T04:54:35.000Z",
-   "authors": [
-    {
-     "username": "_akhaliq",
-     "name": "AK",
-     "tier": 2,
-     "type": "commentator",
-     "type_label": "評論・解説",
-     "role": "AI論文紹介アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125453071446843442",
-     "url": "https://x.com/_akhaliq/status/2125453071446843442",
-     "username": "_akhaliq",
-     "name": "AK",
-     "avatar": "https://pbs.twimg.com/profile_images/1451191636810092553/kpM5Fe12_normal.jpg",
-     "text": "Motion Mamba 2.0\n\nAutoregressive Diffusion Mamba for Long-Horizon Humanoid Control\n\npaper: https://t.co/qeEMo2NKnS https://t.co/ThcyiSLmrP",
-     "lang": "fr",
-     "text_ja": null,
-     "created_at": "2026-11-25T04:54:35.000Z",
-     "metrics": {
-      "bookmark_count": 50,
-      "impression_count": 9978,
-      "like_count": 70,
-      "quote_count": 5,
-      "reply_count": 8,
-      "retweet_count": 10
-     },
-     "cred": 85,
-     "heat": 27,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "一次情報リンク（huggingface.co）"
-     ],
-     "neg": [],
-     "author_type": "commentator",
-     "author_role": "AI論文紹介アカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://huggingface.co/papers/2611.29897",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "一次情報リンク（huggingface.co）"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "0bf7e977f7",
    "verdict": "promising",
    "title": "WorldLatent",
    "summary": null,
    "score": 61,
    "credibility": 85,
-   "heat": 26,
+   "heat": 25,
    "first_seen": "2026-11-24T18:26:42.000Z",
    "latest": "2026-11-24T18:26:42.000Z",
    "authors": [
@@ -2264,7 +2518,7 @@
       "retweet_count": 10
      },
      "cred": 85,
-     "heat": 26,
+     "heat": 25,
      "pos": [
       "信頼リストの研究者・記者",
       "一次情報リンク（huggingface.co）"
@@ -2299,15 +2553,15 @@
    "usable": false
   },
   {
-   "id": "3c8b08bf44",
+   "id": "149dbef5fc",
    "verdict": "promising",
-   "title": "Nvidia just released Nemotron-Labs-VisualCreation",
+   "title": "Motion Mamba 2.0",
    "summary": null,
    "score": 61,
    "credibility": 85,
    "heat": 25,
-   "first_seen": "2026-11-25T07:58:57.000Z",
-   "latest": "2026-11-25T07:58:57.000Z",
+   "first_seen": "2026-11-25T04:54:35.000Z",
+   "latest": "2026-11-25T04:54:35.000Z",
    "authors": [
     {
      "username": "_akhaliq",
@@ -2322,22 +2576,22 @@
    "post_count": 1,
    "posts": [
     {
-     "id": "2125499465587208669",
-     "url": "https://x.com/_akhaliq/status/2125499465587208669",
+     "id": "2125453071446843442",
+     "url": "https://x.com/_akhaliq/status/2125453071446843442",
      "username": "_akhaliq",
      "name": "AK",
      "avatar": "https://pbs.twimg.com/profile_images/1451191636810092553/kpM5Fe12_normal.jpg",
-     "text": "Nvidia just released Nemotron-Labs-VisualCreation\n\nPixel as Code for Agentic Visual Creation\n\npaper: https://t.co/zmgjxR3KYx https://t.co/G7oxjabSos",
-     "lang": "en",
+     "text": "Motion Mamba 2.0\n\nAutoregressive Diffusion Mamba for Long-Horizon Humanoid Control\n\npaper: https://t.co/qeEMo2NKnS https://t.co/ThcyiSLmrP",
+     "lang": "fr",
      "text_ja": null,
-     "created_at": "2026-11-25T07:58:57.000Z",
+     "created_at": "2026-11-25T04:54:35.000Z",
      "metrics": {
-      "bookmark_count": 20,
-      "impression_count": 7033,
-      "like_count": 57,
-      "quote_count": 1,
-      "reply_count": 18,
-      "retweet_count": 6
+      "bookmark_count": 50,
+      "impression_count": 9978,
+      "like_count": 70,
+      "quote_count": 5,
+      "reply_count": 8,
+      "retweet_count": 10
      },
      "cred": 85,
      "heat": 25,
@@ -2352,7 +2606,7 @@
    ],
    "links": [
     {
-     "url": "https://huggingface.co/papers/2611.31358",
+     "url": "https://huggingface.co/papers/2611.29897",
      "domain": "huggingface.co",
      "primary": true
     }
@@ -2381,7 +2635,7 @@
    "summary": null,
    "score": 60,
    "credibility": 85,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-11-24T05:24:54.000Z",
    "latest": "2026-11-24T05:24:54.000Z",
    "authors": [
@@ -2416,7 +2670,7 @@
       "retweet_count": 9
      },
      "cred": 85,
-     "heat": 23,
+     "heat": 22,
      "pos": [
       "信頼リストの研究者・記者",
       "一次情報リンク（anthropic.com）"
@@ -2451,13 +2705,306 @@
    "usable": false
   },
   {
+   "id": "3c8b08bf44",
+   "verdict": "promising",
+   "title": "Nvidia just released Nemotron-Labs-VisualCreation",
+   "summary": null,
+   "score": 60,
+   "credibility": 85,
+   "heat": 22,
+   "first_seen": "2026-11-25T07:58:57.000Z",
+   "latest": "2026-11-25T07:58:57.000Z",
+   "authors": [
+    {
+     "username": "_akhaliq",
+     "name": "AK",
+     "tier": 2,
+     "type": "commentator",
+     "type_label": "評論・解説",
+     "role": "AI論文紹介アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125499465587208669",
+     "url": "https://x.com/_akhaliq/status/2125499465587208669",
+     "username": "_akhaliq",
+     "name": "AK",
+     "avatar": "https://pbs.twimg.com/profile_images/1451191636810092553/kpM5Fe12_normal.jpg",
+     "text": "Nvidia just released Nemotron-Labs-VisualCreation\n\nPixel as Code for Agentic Visual Creation\n\npaper: https://t.co/zmgjxR3KYx https://t.co/G7oxjabSos",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T07:58:57.000Z",
+     "metrics": {
+      "bookmark_count": 20,
+      "impression_count": 7033,
+      "like_count": 57,
+      "quote_count": 1,
+      "reply_count": 18,
+      "retweet_count": 6
+     },
+     "cred": 85,
+     "heat": 22,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "一次情報リンク（huggingface.co）"
+     ],
+     "neg": [],
+     "author_type": "commentator",
+     "author_role": "AI論文紹介アカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://huggingface.co/papers/2611.31358",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "一次情報リンク（huggingface.co）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "0586e8494d",
+   "verdict": "promising",
+   "title": "One imaginable outcome is that AI Labs, unwilling or unable (due to more careful…",
+   "summary": null,
+   "score": 60,
+   "credibility": 70,
+   "heat": 45,
+   "first_seen": "2026-11-25T15:59:49.000Z",
+   "latest": "2026-11-25T15:59:49.000Z",
+   "authors": [
+    {
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "tier": 2,
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "Wharton教授",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125620479461573034",
+     "url": "https://x.com/emollick/status/2125620479461573034",
+     "username": "emollick",
+     "name": "Ethan Mollick",
+     "avatar": "https://pbs.twimg.com/profile_images/1601382188712398850/3AAOlqrX_normal.jpg",
+     "text": "One imaginable outcome is that AI Labs, unwilling or unable (due to more careful government oversight) release new models to the public, become (regulated?) monopolies of intelligence: launching their own efforts in areas like finance &amp; biotech where frontier intelligence wins. https://t.co/TOfvOzQLYX",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T15:59:49.000Z",
+     "metrics": {
+      "bookmark_count": 53,
+      "impression_count": 19321,
+      "like_count": 257,
+      "quote_count": 9,
+      "reply_count": 82,
+      "retweet_count": 17
+     },
+     "cred": 70,
+     "heat": 45,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "researcher",
+     "author_role": "Wharton教授"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "cb0fda9e57",
+   "verdict": "promising",
+   "title": "\"Cost per task is a misleading metric; the scarce resource is human attention, n…",
+   "summary": null,
+   "score": 59,
+   "credibility": 70,
+   "heat": 43,
+   "first_seen": "2026-11-25T16:26:50.000Z",
+   "latest": "2026-11-25T16:26:50.000Z",
+   "authors": [
+    {
+     "username": "swyx",
+     "name": "swyx 🔜 aie.codes",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "AI Engineer Summit主催・開発者",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125627281230205435",
+     "url": "https://x.com/swyx/status/2125627281230205435",
+     "username": "swyx",
+     "name": "swyx 🔜 aie.codes",
+     "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
+     "text": "\"Cost per task is a misleading metric; the scarce resource is human attention, not token cost.\"\n\nbeware the pareto frontier charts that make you believe you can reduce every model to 2 numbers; it can hide some AWFUL reliability issues👏 https://t.co/ICtqiXhE4f https://t.co/6LJLlCP8tr",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T16:26:50.000Z",
+     "metrics": {
+      "bookmark_count": 76,
+      "impression_count": 7109,
+      "like_count": 155,
+      "quote_count": 7,
+      "reply_count": 93,
+      "retweet_count": 8
+     },
+     "cred": 70,
+     "heat": 43,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "AI Engineer Summit主催・開発者"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "0d87a34932",
+   "verdict": "promising",
+   "title": "AlphaAnything",
+   "summary": null,
+   "score": 57,
+   "credibility": 85,
+   "heat": 15,
+   "first_seen": "2026-11-23T09:28:27.000Z",
+   "latest": "2026-11-23T09:28:27.000Z",
+   "authors": [
+    {
+     "username": "_akhaliq",
+     "name": "AK",
+     "tier": 2,
+     "type": "commentator",
+     "type_label": "評論・解説",
+     "role": "AI論文紹介アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2124797213272690972",
+     "url": "https://x.com/_akhaliq/status/2124797213272690972",
+     "username": "_akhaliq",
+     "name": "AK",
+     "avatar": "https://pbs.twimg.com/profile_images/1451191636810092553/kpM5Fe12_normal.jpg",
+     "text": "AlphaAnything\n\nExtending Pretrained RGB Generators to RGBA\n\npaper: https://t.co/D7c9rYuYGg\nmodel: https://t.co/qS4lJhvotO https://t.co/4eYsKSywqe",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-23T09:28:27.000Z",
+     "metrics": {
+      "bookmark_count": 61,
+      "impression_count": 8454,
+      "like_count": 88,
+      "quote_count": 3,
+      "reply_count": 12,
+      "retweet_count": 9
+     },
+     "cred": 85,
+     "heat": 15,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "一次情報リンク（huggingface.co）"
+     ],
+     "neg": [],
+     "author_type": "commentator",
+     "author_role": "AI論文紹介アカウント"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://huggingface.co/papers/2610.32413",
+     "domain": "huggingface.co",
+     "primary": true
+    },
+    {
+     "url": "https://huggingface.co/WLuLi/AlphaAnything",
+     "domain": "huggingface.co",
+     "primary": true
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "一次情報リンク（huggingface.co）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "4664e6bf2c",
    "verdict": "promising",
    "title": "Non-penetrating World Models",
    "summary": null,
-   "score": 58,
+   "score": 57,
    "credibility": 85,
-   "heat": 17,
+   "heat": 16,
    "first_seen": "2026-11-23T07:49:21.000Z",
    "latest": "2026-11-23T07:49:21.000Z",
    "authors": [
@@ -2492,7 +3039,7 @@
       "retweet_count": 14
      },
      "cred": 85,
-     "heat": 17,
+     "heat": 16,
      "pos": [
       "信頼リストの研究者・記者",
       "一次情報リンク（huggingface.co）"
@@ -2531,9 +3078,9 @@
    "verdict": "promising",
    "title": "There is a lot of focus on AI-aided discoveries in quantitative fields, but they…",
    "summary": null,
-   "score": 58,
+   "score": 57,
    "credibility": 73,
-   "heat": 35,
+   "heat": 33,
    "first_seen": "2026-11-24T15:07:55.000Z",
    "latest": "2026-11-24T15:07:55.000Z",
    "authors": [
@@ -2568,7 +3115,7 @@
       "retweet_count": 29
      },
      "cred": 73,
-     "heat": 35,
+     "heat": 33,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2605,9 +3152,9 @@
    "verdict": "promising",
    "title": "研究者らによる実験で「たくさんのAIを集めて自由に交流させると、\"何度やり直しても\"同じ2人組ができる」ことが分かりました。",
    "summary": null,
-   "score": 58,
+   "score": 57,
    "credibility": 75,
-   "heat": 33,
+   "heat": 30,
    "first_seen": "2026-11-25T07:34:05.000Z",
    "latest": "2026-11-25T07:34:05.000Z",
    "authors": [
@@ -2642,7 +3189,7 @@
       "retweet_count": 23
      },
      "cred": 75,
-     "heat": 33,
+     "heat": 30,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -2656,87 +3203,6 @@
    "reasons_pos": [
     "信頼リストの研究者・記者",
     "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "0d87a34932",
-   "verdict": "promising",
-   "title": "AlphaAnything",
-   "summary": null,
-   "score": 57,
-   "credibility": 85,
-   "heat": 16,
-   "first_seen": "2026-11-23T09:28:27.000Z",
-   "latest": "2026-11-23T09:28:27.000Z",
-   "authors": [
-    {
-     "username": "_akhaliq",
-     "name": "AK",
-     "tier": 2,
-     "type": "commentator",
-     "type_label": "評論・解説",
-     "role": "AI論文紹介アカウント",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2124797213272690972",
-     "url": "https://x.com/_akhaliq/status/2124797213272690972",
-     "username": "_akhaliq",
-     "name": "AK",
-     "avatar": "https://pbs.twimg.com/profile_images/1451191636810092553/kpM5Fe12_normal.jpg",
-     "text": "AlphaAnything\n\nExtending Pretrained RGB Generators to RGBA\n\npaper: https://t.co/D7c9rYuYGg\nmodel: https://t.co/qS4lJhvotO https://t.co/4eYsKSywqe",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-23T09:28:27.000Z",
-     "metrics": {
-      "bookmark_count": 61,
-      "impression_count": 8454,
-      "like_count": 88,
-      "quote_count": 3,
-      "reply_count": 12,
-      "retweet_count": 9
-     },
-     "cred": 85,
-     "heat": 16,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "一次情報リンク（huggingface.co）"
-     ],
-     "neg": [],
-     "author_type": "commentator",
-     "author_role": "AI論文紹介アカウント"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://huggingface.co/papers/2610.32413",
-     "domain": "huggingface.co",
-     "primary": true
-    },
-    {
-     "url": "https://huggingface.co/WLuLi/AlphaAnything",
-     "domain": "huggingface.co",
-     "primary": true
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "一次情報リンク（huggingface.co）"
    ],
    "reasons_neg": [],
    "llm_note": null,
@@ -2834,7 +3300,7 @@
    "summary": null,
    "score": 56,
    "credibility": 70,
-   "heat": 35,
+   "heat": 34,
    "first_seen": "2026-11-23T04:27:35.000Z",
    "latest": "2026-11-23T04:27:35.000Z",
    "authors": [
@@ -2869,7 +3335,7 @@
       "retweet_count": 60
      },
      "cred": 70,
-     "heat": 35,
+     "heat": 34,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -2896,157 +3362,13 @@
    "usable": false
   },
   {
-   "id": "abd099b0bb",
-   "verdict": "promising",
-   "title": "子どもの成績や月謝、口座番号など最大5万件漏えいか 学習塾「ベスト個別」運営元に不正アクセス",
-   "summary": null,
-   "score": 56,
-   "credibility": 78,
-   "heat": 23,
-   "first_seen": "2026-11-25T05:10:09.000Z",
-   "latest": "2026-11-25T05:10:09.000Z",
-   "authors": [
-    {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
-     "type": "official",
-     "type_label": "公式",
-     "role": "ITmedia NEWS公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125456985374232710",
-     "url": "https://x.com/itmedia_news/status/2125456985374232710",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "子どもの成績や月謝、口座番号など最大5万件漏えいか　学習塾「ベスト個別」運営元に不正アクセス\nhttps://t.co/bVwH1GHB2l",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-25T05:10:09.000Z",
-     "metrics": {
-      "bookmark_count": 4,
-      "impression_count": 7778,
-      "like_count": 25,
-      "quote_count": 3,
-      "reply_count": 0,
-      "retweet_count": 32
-     },
-     "cred": 78,
-     "heat": 23,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [],
-     "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003440/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "c116ce3ab7",
-   "verdict": "promising",
-   "title": "How many of those infuriating reply bots are running on an unmodified Grok Bot?",
-   "summary": null,
-   "score": 56,
-   "credibility": 70,
-   "heat": 36,
-   "first_seen": "2026-11-25T15:57:54.000Z",
-   "latest": "2026-11-25T15:57:54.000Z",
-   "authors": [
-    {
-     "username": "simonw",
-     "name": "Simon Willison",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "Datasette・Django共同作成者",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125619997796123135",
-     "url": "https://x.com/simonw/status/2125619997796123135",
-     "username": "simonw",
-     "name": "Simon Willison",
-     "avatar": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
-     "text": "How many of those infuriating reply bots are running on an unmodified Grok Bot? https://t.co/TKCO5WdYWk",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-25T15:57:54.000Z",
-     "metrics": {
-      "bookmark_count": 5,
-      "impression_count": 12651,
-      "like_count": 55,
-      "quote_count": 0,
-      "reply_count": 31,
-      "retweet_count": 0
-     },
-     "cred": 70,
-     "heat": 36,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "Datasette・Django共同作成者"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "5737f3afc7",
    "verdict": "promising",
    "title": "AVTR",
    "summary": null,
    "score": 55,
    "credibility": 85,
-   "heat": 10,
+   "heat": 9,
    "first_seen": "2026-11-24T20:09:35.000Z",
    "latest": "2026-11-24T20:09:35.000Z",
    "authors": [
@@ -3081,7 +3403,7 @@
       "retweet_count": 0
      },
      "cred": 85,
-     "heat": 10,
+     "heat": 9,
      "pos": [
       "信頼リストの研究者・記者",
       "一次情報リンク（huggingface.co）"
@@ -3106,6 +3428,82 @@
    "reasons_pos": [
     "信頼リストの研究者・記者",
     "一次情報リンク（huggingface.co）"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "abd099b0bb",
+   "verdict": "promising",
+   "title": "子どもの成績や月謝、口座番号など最大5万件漏えいか 学習塾「ベスト個別」運営元に不正アクセス",
+   "summary": null,
+   "score": 55,
+   "credibility": 78,
+   "heat": 21,
+   "first_seen": "2026-11-25T05:10:09.000Z",
+   "latest": "2026-11-25T05:10:09.000Z",
+   "authors": [
+    {
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "tier": 2,
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125456985374232710",
+     "url": "https://x.com/itmedia_news/status/2125456985374232710",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "子どもの成績や月謝、口座番号など最大5万件漏えいか　学習塾「ベスト個別」運営元に不正アクセス\nhttps://t.co/bVwH1GHB2l",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-25T05:10:09.000Z",
+     "metrics": {
+      "bookmark_count": 4,
+      "impression_count": 7778,
+      "like_count": 25,
+      "quote_count": 3,
+      "reply_count": 0,
+      "retweet_count": 32
+     },
+     "cred": 78,
+     "heat": 21,
+     "pos": [
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
+     ],
+     "neg": [],
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
+    }
+   ],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003440/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
+   "reasons_pos": [
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
    ],
    "reasons_neg": [],
    "llm_note": null,
@@ -3263,7 +3661,7 @@
    "summary": null,
    "score": 53,
    "credibility": 70,
-   "heat": 28,
+   "heat": 27,
    "first_seen": "2026-11-23T13:20:01.000Z",
    "latest": "2026-11-23T13:20:01.000Z",
    "authors": [
@@ -3298,7 +3696,7 @@
       "retweet_count": 17
      },
      "cred": 70,
-     "heat": 28,
+     "heat": 27,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3417,13 +3815,81 @@
    "usable": false
   },
   {
+   "id": "c116ce3ab7",
+   "verdict": "promising",
+   "title": "How many of those infuriating reply bots are running on an unmodified Grok Bot?",
+   "summary": null,
+   "score": 53,
+   "credibility": 70,
+   "heat": 27,
+   "first_seen": "2026-11-25T15:57:54.000Z",
+   "latest": "2026-11-25T15:57:54.000Z",
+   "authors": [
+    {
+     "username": "simonw",
+     "name": "Simon Willison",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "Datasette・Django共同作成者",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125619997796123135",
+     "url": "https://x.com/simonw/status/2125619997796123135",
+     "username": "simonw",
+     "name": "Simon Willison",
+     "avatar": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
+     "text": "How many of those infuriating reply bots are running on an unmodified Grok Bot? https://t.co/TKCO5WdYWk",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T15:57:54.000Z",
+     "metrics": {
+      "bookmark_count": 5,
+      "impression_count": 12651,
+      "like_count": 55,
+      "quote_count": 0,
+      "reply_count": 31,
+      "retweet_count": 0
+     },
+     "cred": 70,
+     "heat": 27,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "Datasette・Django共同作成者"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "8a6503b513",
    "verdict": "promising",
    "title": "メリーランド大学やGoogle DeepMindなどの研究者らによると、「匿名の文章でも最新のAIに読ませると、書いた本人の名前を当てられてしまうことがある」そ…",
    "summary": null,
    "score": 51,
    "credibility": 75,
-   "heat": 15,
+   "heat": 14,
    "first_seen": "2026-11-24T03:16:04.000Z",
    "latest": "2026-11-24T03:16:04.000Z",
    "authors": [
@@ -3458,7 +3924,7 @@
       "retweet_count": 19
      },
      "cred": 75,
-     "heat": 15,
+     "heat": 14,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -3472,74 +3938,6 @@
    "reasons_pos": [
     "信頼リストの研究者・記者",
     "組織認証アカウント"
-   ],
-   "reasons_neg": [],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "d5924d0d8b",
-   "verdict": "promising",
-   "title": "おめでとうございます！",
-   "summary": null,
-   "score": 51,
-   "credibility": 70,
-   "heat": 23,
-   "first_seen": "2026-11-25T10:33:29.000Z",
-   "latest": "2026-11-25T10:33:29.000Z",
-   "authors": [
-    {
-     "username": "shi3z",
-     "name": "shi3z",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125538356088242549",
-     "url": "https://x.com/shi3z/status/2125538356088242549",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "おめでとうございます！ #NVIDIA https://t.co/5bwnaPt3q4",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-25T10:33:29.000Z",
-     "metrics": {
-      "bookmark_count": 5,
-      "impression_count": 4491,
-      "like_count": 50,
-      "quote_count": 1,
-      "reply_count": 3,
-      "retweet_count": 1
-     },
-     "cred": 70,
-     "heat": 23,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
    ],
    "reasons_neg": [],
    "llm_note": null,
@@ -3616,6 +4014,74 @@
    "reasons_pos": [
     "信頼リストの研究者・記者",
     "組織認証アカウント"
+   ],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "d5924d0d8b",
+   "verdict": "promising",
+   "title": "おめでとうございます！",
+   "summary": null,
+   "score": 50,
+   "credibility": 70,
+   "heat": 20,
+   "first_seen": "2026-11-25T10:33:29.000Z",
+   "latest": "2026-11-25T10:33:29.000Z",
+   "authors": [
+    {
+     "username": "shi3z",
+     "name": "shi3z",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "ギリア株式会社ファウンダー・顧問",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125538356088242549",
+     "url": "https://x.com/shi3z/status/2125538356088242549",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "おめでとうございます！ #NVIDIA https://t.co/5bwnaPt3q4",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-25T10:33:29.000Z",
+     "metrics": {
+      "bookmark_count": 5,
+      "impression_count": 4491,
+      "like_count": 50,
+      "quote_count": 1,
+      "reply_count": 3,
+      "retweet_count": 1
+     },
+     "cred": 70,
+     "heat": 20,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [],
+     "author_type": "practitioner",
+     "author_role": "ギリア株式会社ファウンダー・顧問"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
    ],
    "reasons_neg": [],
    "llm_note": null,
@@ -3713,7 +4179,7 @@
    "summary": null,
    "score": 49,
    "credibility": 78,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-11-24T22:45:08.000Z",
    "latest": "2026-11-24T22:45:08.000Z",
    "authors": [
@@ -3748,7 +4214,7 @@
       "retweet_count": 1
      },
      "cred": 78,
-     "heat": 6,
+     "heat": 5,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -3787,9 +4253,9 @@
    "verdict": "promising",
    "title": "A verifying, self-correcting agent harness with a live web console for local LLM…",
    "summary": null,
-   "score": 47,
+   "score": 46,
    "credibility": 70,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-11-24T10:30:41.000Z",
    "latest": "2026-11-24T10:30:41.000Z",
    "authors": [
@@ -3824,7 +4290,7 @@
       "retweet_count": 4
      },
      "cred": 70,
-     "heat": 12,
+     "heat": 11,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -3857,7 +4323,7 @@
    "summary": null,
    "score": 46,
    "credibility": 73,
-   "heat": 6,
+   "heat": 5,
    "first_seen": "2026-11-24T22:20:04.000Z",
    "latest": "2026-11-24T22:20:04.000Z",
    "authors": [
@@ -3892,7 +4358,7 @@
       "retweet_count": 0
      },
      "cred": 73,
-     "heat": 6,
+     "heat": 5,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4077,9 +4543,9 @@
    "verdict": "unverified",
    "title": "LayerXのセキュリティ事業「AgenticSec」のCompanyDeckがリリースされました！ぜひ皆さんご覧いただけますと嬉しいです。",
    "summary": null,
-   "score": 45,
+   "score": 44,
    "credibility": 53,
-   "heat": 12,
+   "heat": 11,
    "first_seen": "2026-11-24T00:56:36.000Z",
    "latest": "2026-11-24T00:56:36.000Z",
    "authors": [
@@ -4114,7 +4580,7 @@
       "retweet_count": 14
      },
      "cred": 53,
-     "heat": 12,
+     "heat": 11,
      "pos": [],
      "neg": [],
      "author_type": "",
@@ -4229,7 +4695,7 @@
    "summary": null,
    "score": 42,
    "credibility": 65,
-   "heat": 8,
+   "heat": 7,
    "first_seen": "2026-11-23T11:16:07.000Z",
    "latest": "2026-11-23T11:16:07.000Z",
    "authors": [
@@ -4264,7 +4730,7 @@
       "retweet_count": 3
      },
      "cred": 65,
-     "heat": 8,
+     "heat": 7,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -4303,7 +4769,7 @@
    "summary": null,
    "score": 39,
    "credibility": 62,
-   "heat": 5,
+   "heat": 4,
    "first_seen": "2026-11-24T03:35:12.000Z",
    "latest": "2026-11-24T03:35:12.000Z",
    "authors": [
@@ -4338,7 +4804,7 @@
       "retweet_count": 0
      },
      "cred": 62,
-     "heat": 5,
+     "heat": 4,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -4470,13 +4936,223 @@
    "usable": false
   },
   {
+   "id": "b40a2d891b",
+   "verdict": "unverified",
+   "title": "連休明けの日本株へ。NVIDIAのCEO復帰で米株は急反発しましたが、20日の急落を含めた主要3指数の累計上昇は約1%。調査・規制、AI投資、セキュリティ再編、…",
+   "summary": null,
+   "score": 32,
+   "credibility": 50,
+   "heat": 4,
+   "first_seen": "2026-11-23T23:38:21.000Z",
+   "latest": "2026-11-23T23:38:21.000Z",
+   "authors": [
+    {
+     "username": "stock_unknown",
+     "name": "たかぴー",
+     "tier": 0,
+     "type": "",
+     "type_label": "",
+     "role": "",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125011099779280991",
+     "url": "https://x.com/stock_unknown/status/2125011099779280991",
+     "username": "stock_unknown",
+     "name": "たかぴー",
+     "avatar": "https://pbs.twimg.com/profile_images/2019985590666817537/zH43Wvu4_normal.jpg",
+     "text": "連休明けの日本株へ。NVIDIAのCEO復帰で米株は急反発しましたが、20日の急落を含めた主要3指数の累計上昇は約1%。調査・規制、AI投資、セキュリティ再編、今夜以降の予定を整理しました。寄り付き後の持続と買いの広がりを確認するための、11月24日朝の日米マーケットノート https://t.co/vM3hk43X0r",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-23T23:38:21.000Z",
+     "metrics": {
+      "bookmark_count": 2,
+      "impression_count": 7783,
+      "like_count": 11,
+      "quote_count": 1,
+      "reply_count": 1,
+      "retweet_count": 1
+     },
+     "cred": 50,
+     "heat": 4,
+     "pos": [],
+     "neg": [],
+     "author_type": "",
+     "author_role": ""
+    }
+   ],
+   "links": [],
+   "reasons_pos": [],
+   "reasons_neg": [],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "781b9a14f0",
+   "verdict": "excluded",
+   "title": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one.",
+   "summary": null,
+   "score": 73,
+   "credibility": 70,
+   "heat": 77,
+   "first_seen": "2026-11-25T17:15:04.000Z",
+   "latest": "2026-11-25T17:15:04.000Z",
+   "authors": [
+    {
+     "username": "sama",
+     "name": "Sam Altman",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "OpenAI CEO",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125639418849714280",
+     "url": "https://x.com/sama/status/2125639418849714280",
+     "username": "sama",
+     "name": "Sam Altman",
+     "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+     "text": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one. https://t.co/0I1yz7jivU",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T17:15:04.000Z",
+     "metrics": {
+      "bookmark_count": 1380,
+      "impression_count": 596063,
+      "like_count": 4056,
+      "quote_count": 186,
+      "reply_count": 607,
+      "retweet_count": 187
+     },
+     "cred": 70,
+     "heat": 77,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "practitioner",
+     "author_role": "OpenAI CEO"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "31c068572c",
+   "verdict": "excluded",
+   "title": "",
+   "summary": null,
+   "score": 72,
+   "credibility": 90,
+   "heat": 44,
+   "first_seen": "2026-11-25T19:13:21.000Z",
+   "latest": "2026-11-25T19:13:21.000Z",
+   "authors": [
+    {
+     "username": "GoogleAI",
+     "name": "Google AI",
+     "tier": 1,
+     "type": "official",
+     "type_label": "公式",
+     "role": "Google AI公式アカウント",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125669184503709789",
+     "url": "https://x.com/GoogleAI/status/2125669184503709789",
+     "username": "GoogleAI",
+     "name": "Google AI",
+     "avatar": "https://pbs.twimg.com/profile_images/2057682346074058752/zTpu89C1_normal.jpg",
+     "text": "https://t.co/lEo1BhdoUH",
+     "lang": "zxx",
+     "text_ja": null,
+     "created_at": "2026-11-25T19:13:21.000Z",
+     "metrics": {
+      "bookmark_count": 29,
+      "impression_count": 16058,
+      "like_count": 123,
+      "quote_count": 6,
+      "reply_count": 7,
+      "retweet_count": 8
+     },
+     "cred": 90,
+     "heat": 44,
+     "pos": [
+      "公式アカウントの発表",
+      "組織認証アカウント"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "official",
+     "author_role": "Google AI公式アカウント"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "公式アカウントの発表",
+    "組織認証アカウント"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "c0e30efd50",
    "verdict": "excluded",
    "title": "Happy one year, @OpenClaw! 🦞🥳",
    "summary": null,
-   "score": 65,
+   "score": 64,
    "credibility": 90,
-   "heat": 27,
+   "heat": 26,
    "first_seen": "2026-11-24T17:25:19.000Z",
    "latest": "2026-11-24T17:25:19.000Z",
    "authors": [
@@ -4511,7 +5187,7 @@
       "retweet_count": 17
      },
      "cred": 90,
-     "heat": 27,
+     "heat": 26,
      "pos": [
       "公式アカウントの発表",
       "組織認証アカウント"
@@ -4548,9 +5224,9 @@
    "verdict": "excluded",
    "title": "楽天証券、金融資産情報など約441万件の漏えい確認 ログインIDなど約1198万口座分も",
    "summary": null,
-   "score": 64,
+   "score": 63,
    "credibility": 78,
-   "heat": 43,
+   "heat": 41,
    "first_seen": "2026-11-25T02:30:14.000Z",
    "latest": "2026-11-25T02:30:14.000Z",
    "authors": [
@@ -4585,7 +5261,7 @@
       "retweet_count": 226
      },
      "cred": 78,
-     "heat": 43,
+     "heat": 41,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -4628,9 +5304,9 @@
    "verdict": "excluded",
    "title": "タワレコ、会員情報約1100万件流出 「3年以内の退会者」も対象 通販サイト停止続く",
    "summary": null,
-   "score": 63,
+   "score": 62,
    "credibility": 78,
-   "heat": 41,
+   "heat": 39,
    "first_seen": "2026-11-25T04:30:14.000Z",
    "latest": "2026-11-25T04:30:14.000Z",
    "authors": [
@@ -4665,7 +5341,7 @@
       "retweet_count": 187
      },
      "cred": 78,
-     "heat": 41,
+     "heat": 39,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -4704,165 +5380,13 @@
    "usable": false
   },
   {
-   "id": "f0f22d98cf",
-   "verdict": "excluded",
-   "title": "タイムズカー免許画像漏えいの見舞金、「現金かカーシェアeチケット3000円分」 12月1日から案内",
-   "summary": null,
-   "score": 62,
-   "credibility": 78,
-   "heat": 37,
-   "first_seen": "2026-11-25T05:55:08.000Z",
-   "latest": "2026-11-25T05:55:08.000Z",
-   "authors": [
-    {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
-     "type": "official",
-     "type_label": "公式",
-     "role": "ITmedia NEWS公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125468309026136184",
-     "url": "https://x.com/itmedia_news/status/2125468309026136184",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "タイムズカー免許画像漏えいの見舞金、「現金かカーシェアeチケット3000円分」　12月1日から案内\nhttps://t.co/163jeDxaEs",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-25T05:55:08.000Z",
-     "metrics": {
-      "bookmark_count": 29,
-      "impression_count": 32907,
-      "like_count": 86,
-      "quote_count": 27,
-      "reply_count": 5,
-      "retweet_count": 87
-     },
-     "cred": 78,
-     "heat": 37,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003443/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "a414d4de52",
-   "verdict": "excluded",
-   "title": "It's only been two weeks?",
-   "summary": null,
-   "score": 62,
-   "credibility": 70,
-   "heat": 50,
-   "first_seen": "2026-11-25T17:19:13.000Z",
-   "latest": "2026-11-25T17:19:13.000Z",
-   "authors": [
-    {
-     "username": "simonw",
-     "name": "Simon Willison",
-     "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "Datasette・Django共同作成者",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125640464863056148",
-     "url": "https://x.com/simonw/status/2125640464863056148",
-     "username": "simonw",
-     "name": "Simon Willison",
-     "avatar": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
-     "text": "It's only been two weeks?\n\nI've made 194 commits to my open source projects that were co-authored by Fable 5.2 https://t.co/2GOarP4t5b",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-25T17:19:13.000Z",
-     "metrics": {
-      "bookmark_count": 14,
-      "impression_count": 9173,
-      "like_count": 86,
-      "quote_count": 0,
-      "reply_count": 65,
-      "retweet_count": 1
-     },
-     "cred": 70,
-     "heat": 50,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "practitioner",
-     "author_role": "Datasette・Django共同作成者"
-    }
-   ],
-   "links": [],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
    "id": "8b579c1478",
    "verdict": "excluded",
    "title": "ソフトバンク、アイティメディアの売却検討か 2社「コメント控える」「決定した事実ない」",
    "summary": null,
    "score": 60,
    "credibility": 78,
-   "heat": 33,
+   "heat": 32,
    "first_seen": "2026-11-24T12:05:08.000Z",
    "latest": "2026-11-24T12:05:08.000Z",
    "authors": [
@@ -4897,7 +5421,7 @@
       "retweet_count": 169
      },
      "cred": 78,
-     "heat": 33,
+     "heat": 32,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -4936,61 +5460,69 @@
    "usable": false
   },
   {
-   "id": "1ada42a433",
+   "id": "f0f22d98cf",
    "verdict": "excluded",
-   "title": "hey is silicon valley okay because wtf",
+   "title": "タイムズカー免許画像漏えいの見舞金、「現金かカーシェアeチケット3000円分」 12月1日から案内",
    "summary": null,
-   "score": 58,
-   "credibility": 70,
-   "heat": 39,
-   "first_seen": "2026-11-25T04:18:39.000Z",
-   "latest": "2026-11-25T04:18:39.000Z",
+   "score": 60,
+   "credibility": 78,
+   "heat": 34,
+   "first_seen": "2026-11-25T05:55:08.000Z",
+   "latest": "2026-11-25T05:55:08.000Z",
    "authors": [
     {
-     "username": "swyx",
-     "name": "swyx 🔜 aie.codes",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
      "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "AI Engineer Summit主催・開発者",
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
      "former": ""
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2125444028527468699",
-     "url": "https://x.com/swyx/status/2125444028527468699",
-     "username": "swyx",
-     "name": "swyx 🔜 aie.codes",
-     "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
-     "text": "hey is silicon valley okay because wtf https://t.co/XM7o4KRgQt https://t.co/Rk9n9G5peG",
-     "lang": "en",
+     "id": "2125468309026136184",
+     "url": "https://x.com/itmedia_news/status/2125468309026136184",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "タイムズカー免許画像漏えいの見舞金、「現金かカーシェアeチケット3000円分」　12月1日から案内\nhttps://t.co/163jeDxaEs",
+     "lang": "ja",
      "text_ja": null,
-     "created_at": "2026-11-25T04:18:39.000Z",
+     "created_at": "2026-11-25T05:55:08.000Z",
      "metrics": {
-      "bookmark_count": 94,
-      "impression_count": 24552,
-      "like_count": 361,
-      "quote_count": 5,
-      "reply_count": 28,
-      "retweet_count": 10
+      "bookmark_count": 29,
+      "impression_count": 32907,
+      "like_count": 86,
+      "quote_count": 27,
+      "reply_count": 5,
+      "retweet_count": 87
      },
-     "cred": 70,
-     "heat": 39,
+     "cred": 78,
+     "heat": 34,
      "pos": [
-      "信頼リストの研究者・記者"
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
      ],
      "neg": [
       "AIと関係のない投稿"
      ],
-     "author_type": "practitioner",
-     "author_role": "AI Engineer Summit主催・開発者"
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003443/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
    "reasons_pos": [
-    "信頼リストの研究者・記者"
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
    ],
    "reasons_neg": [
     "AIと関係のない投稿"
@@ -5014,7 +5546,7 @@
    "summary": null,
    "score": 58,
    "credibility": 78,
-   "heat": 29,
+   "heat": 27,
    "first_seen": "2026-11-25T02:35:08.000Z",
    "latest": "2026-11-25T02:35:08.000Z",
    "authors": [
@@ -5049,7 +5581,7 @@
       "retweet_count": 41
      },
      "cred": 78,
-     "heat": 29,
+     "heat": 27,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -5092,9 +5624,9 @@
    "verdict": "excluded",
    "title": "よし来た！メモリ価格暴落来い！",
    "summary": null,
-   "score": 58,
+   "score": 57,
    "credibility": 70,
-   "heat": 40,
+   "heat": 38,
    "first_seen": "2026-11-25T02:28:47.000Z",
    "latest": "2026-11-25T02:28:47.000Z",
    "authors": [
@@ -5129,7 +5661,7 @@
       "retweet_count": 96
      },
      "cred": 70,
-     "heat": 40,
+     "heat": 38,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5164,9 +5696,9 @@
    "verdict": "excluded",
    "title": "It was the worst of times, it is the best of times. It was the season of Darknes…",
    "summary": null,
-   "score": 57,
+   "score": 56,
    "credibility": 70,
-   "heat": 37,
+   "heat": 36,
    "first_seen": "2026-11-23T19:36:35.000Z",
    "latest": "2026-11-23T19:36:35.000Z",
    "authors": [
@@ -5201,7 +5733,7 @@
       "retweet_count": 90
      },
      "cred": 70,
-     "heat": 37,
+     "heat": 36,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5232,15 +5764,15 @@
    "usable": false
   },
   {
-   "id": "269119dcfa",
+   "id": "1ada42a433",
    "verdict": "excluded",
-   "title": "really hurtful to be a new media founder when old media is dying this quickly.",
+   "title": "hey is silicon valley okay because wtf",
    "summary": null,
    "score": 56,
    "credibility": 70,
-   "heat": 35,
-   "first_seen": "2026-11-25T17:09:45.000Z",
-   "latest": "2026-11-25T17:09:45.000Z",
+   "heat": 36,
+   "first_seen": "2026-11-25T04:18:39.000Z",
+   "latest": "2026-11-25T04:18:39.000Z",
    "authors": [
     {
      "username": "swyx",
@@ -5255,25 +5787,25 @@
    "post_count": 1,
    "posts": [
     {
-     "id": "2125638081848250634",
-     "url": "https://x.com/swyx/status/2125638081848250634",
+     "id": "2125444028527468699",
+     "url": "https://x.com/swyx/status/2125444028527468699",
      "username": "swyx",
      "name": "swyx 🔜 aie.codes",
      "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
-     "text": "really hurtful to be a new media founder when old media is dying this quickly.\n\nlike; its not a \"haha they suck this is a skill issue\" thing, it's a \"we need to figure out what they couldn't with 31 years of experience\" https://t.co/ampl4QdDGU https://t.co/Gi9jyxD3Pi",
+     "text": "hey is silicon valley okay because wtf https://t.co/XM7o4KRgQt https://t.co/Rk9n9G5peG",
      "lang": "en",
      "text_ja": null,
-     "created_at": "2026-11-25T17:09:45.000Z",
+     "created_at": "2026-11-25T04:18:39.000Z",
      "metrics": {
-      "bookmark_count": 1,
-      "impression_count": 4374,
-      "like_count": 25,
-      "quote_count": 0,
-      "reply_count": 20,
-      "retweet_count": 1
+      "bookmark_count": 94,
+      "impression_count": 24552,
+      "like_count": 361,
+      "quote_count": 5,
+      "reply_count": 28,
+      "retweet_count": 10
      },
      "cred": 70,
-     "heat": 35,
+     "heat": 36,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5380,9 +5912,9 @@
    "verdict": "excluded",
    "title": "突然「未来の約定通知」届く……三菱UFJ eスマート証券、メンテ中のミス謝罪",
    "summary": null,
-   "score": 55,
+   "score": 54,
    "credibility": 78,
-   "heat": 21,
+   "heat": 19,
    "first_seen": "2026-11-25T06:15:11.000Z",
    "latest": "2026-11-25T06:15:11.000Z",
    "authors": [
@@ -5417,7 +5949,7 @@
       "retweet_count": 16
      },
      "cred": 78,
-     "heat": 21,
+     "heat": 19,
      "pos": [
       "信頼リストの研究者・記者",
       "組織認証アカウント"
@@ -5432,86 +5964,6 @@
    "links": [
     {
      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003445/",
-     "domain": "itmedia.co.jp",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者",
-    "組織認証アカウント"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "48023117be",
-   "verdict": "excluded",
-   "title": "京王、1100万人超の個人情報漏えいか 一部クレカ番号なども 9月のランサム被害で",
-   "summary": null,
-   "score": 54,
-   "credibility": 78,
-   "heat": 17,
-   "first_seen": "2026-11-24T22:05:05.000Z",
-   "latest": "2026-11-24T22:05:05.000Z",
-   "authors": [
-    {
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "tier": 2,
-     "type": "official",
-     "type_label": "公式",
-     "role": "ITmedia NEWS公式",
-     "former": ""
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2125350015786971617",
-     "url": "https://x.com/itmedia_news/status/2125350015786971617",
-     "username": "itmedia_news",
-     "name": "ITmedia NEWS",
-     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
-     "text": "京王、1100万人超の個人情報漏えいか　一部クレカ番号なども　9月のランサム被害で\nhttps://t.co/mannZpltF7",
-     "lang": "ja",
-     "text_ja": null,
-     "created_at": "2026-11-24T22:05:05.000Z",
-     "metrics": {
-      "bookmark_count": 4,
-      "impression_count": 5388,
-      "like_count": 17,
-      "quote_count": 0,
-      "reply_count": 1,
-      "retweet_count": 27
-     },
-     "cred": 78,
-     "heat": 17,
-     "pos": [
-      "信頼リストの研究者・記者",
-      "組織認証アカウント"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "official",
-     "author_role": "ITmedia NEWS公式"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003429/",
      "domain": "itmedia.co.jp",
      "primary": false
     }
@@ -5622,7 +6074,7 @@
    "summary": null,
    "score": 53,
    "credibility": 65,
-   "heat": 36,
+   "heat": 35,
    "first_seen": "2026-11-23T14:53:37.000Z",
    "latest": "2026-11-23T14:53:37.000Z",
    "authors": [
@@ -5657,7 +6109,7 @@
       "retweet_count": 60
      },
      "cred": 65,
-     "heat": 36,
+     "heat": 35,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5696,7 +6148,7 @@
    "summary": null,
    "score": 53,
    "credibility": 73,
-   "heat": 23,
+   "heat": 22,
    "first_seen": "2026-11-23T23:22:11.000Z",
    "latest": "2026-11-23T23:22:11.000Z",
    "authors": [
@@ -5731,7 +6183,7 @@
       "retweet_count": 6
      },
      "cred": 73,
-     "heat": 23,
+     "heat": 22,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5768,61 +6220,69 @@
    "usable": false
   },
   {
-   "id": "b994221913",
+   "id": "48023117be",
    "verdict": "excluded",
-   "title": "Congrats to Prof. Yuke Zhu!! Princeton is so lucky to have you 🙌",
+   "title": "京王、1100万人超の個人情報漏えいか 一部クレカ番号なども 9月のランサム被害で",
    "summary": null,
    "score": 53,
-   "credibility": 70,
-   "heat": 27,
-   "first_seen": "2026-11-24T16:29:41.000Z",
-   "latest": "2026-11-24T16:29:41.000Z",
+   "credibility": 78,
+   "heat": 15,
+   "first_seen": "2026-11-24T22:05:05.000Z",
+   "latest": "2026-11-24T22:05:05.000Z",
    "authors": [
     {
-     "username": "DrJimFan",
-     "name": "Jim Fan",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
      "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "NVIDIA Robotics研究者",
-     "former": "元OpenAI インターン"
+     "type": "official",
+     "type_label": "公式",
+     "role": "ITmedia NEWS公式",
+     "former": ""
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2125265607491047793",
-     "url": "https://x.com/DrJimFan/status/2125265607491047793",
-     "username": "DrJimFan",
-     "name": "Jim Fan",
-     "avatar": "https://pbs.twimg.com/profile_images/1554922493101559808/SYSZhbcd_normal.jpg",
-     "text": "Congrats to Prof. Yuke Zhu!! Princeton is so lucky to have you 🙌 https://t.co/id0r4SLfO8",
-     "lang": "en",
+     "id": "2125350015786971617",
+     "url": "https://x.com/itmedia_news/status/2125350015786971617",
+     "username": "itmedia_news",
+     "name": "ITmedia NEWS",
+     "avatar": "https://pbs.twimg.com/profile_images/825970721004285955/tAkGGM0s_normal.jpg",
+     "text": "京王、1100万人超の個人情報漏えいか　一部クレカ番号なども　9月のランサム被害で\nhttps://t.co/mannZpltF7",
+     "lang": "ja",
      "text_ja": null,
-     "created_at": "2026-11-24T16:29:41.000Z",
+     "created_at": "2026-11-24T22:05:05.000Z",
      "metrics": {
-      "bookmark_count": 17,
-      "impression_count": 27890,
-      "like_count": 269,
-      "quote_count": 1,
-      "reply_count": 7,
-      "retweet_count": 1
+      "bookmark_count": 4,
+      "impression_count": 5388,
+      "like_count": 17,
+      "quote_count": 0,
+      "reply_count": 1,
+      "retweet_count": 27
      },
-     "cred": 70,
-     "heat": 27,
+     "cred": 78,
+     "heat": 15,
      "pos": [
-      "信頼リストの研究者・記者"
+      "信頼リストの研究者・記者",
+      "組織認証アカウント"
      ],
      "neg": [
       "AIと関係のない投稿"
      ],
-     "author_type": "researcher",
-     "author_role": "NVIDIA Robotics研究者"
+     "author_type": "official",
+     "author_role": "ITmedia NEWS公式"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003429/",
+     "domain": "itmedia.co.jp",
+     "primary": false
+    }
+   ],
    "reasons_pos": [
-    "信頼リストの研究者・記者"
+    "信頼リストの研究者・記者",
+    "組織認証アカウント"
    ],
    "reasons_neg": [
     "AIと関係のない投稿"
@@ -5846,7 +6306,7 @@
    "summary": null,
    "score": 52,
    "credibility": 70,
-   "heat": 25,
+   "heat": 24,
    "first_seen": "2026-11-23T23:02:08.000Z",
    "latest": "2026-11-23T23:02:08.000Z",
    "authors": [
@@ -5881,7 +6341,7 @@
       "retweet_count": 5
      },
      "cred": 70,
-     "heat": 25,
+     "heat": 24,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -5992,6 +6452,78 @@
    "usable": false
   },
   {
+   "id": "b994221913",
+   "verdict": "excluded",
+   "title": "Congrats to Prof. Yuke Zhu!! Princeton is so lucky to have you 🙌",
+   "summary": null,
+   "score": 52,
+   "credibility": 70,
+   "heat": 26,
+   "first_seen": "2026-11-24T16:29:41.000Z",
+   "latest": "2026-11-24T16:29:41.000Z",
+   "authors": [
+    {
+     "username": "DrJimFan",
+     "name": "Jim Fan",
+     "tier": 2,
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "NVIDIA Robotics研究者",
+     "former": "元OpenAI インターン"
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125265607491047793",
+     "url": "https://x.com/DrJimFan/status/2125265607491047793",
+     "username": "DrJimFan",
+     "name": "Jim Fan",
+     "avatar": "https://pbs.twimg.com/profile_images/1554922493101559808/SYSZhbcd_normal.jpg",
+     "text": "Congrats to Prof. Yuke Zhu!! Princeton is so lucky to have you 🙌 https://t.co/id0r4SLfO8",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-24T16:29:41.000Z",
+     "metrics": {
+      "bookmark_count": 17,
+      "impression_count": 27890,
+      "like_count": 269,
+      "quote_count": 1,
+      "reply_count": 7,
+      "retweet_count": 1
+     },
+     "cred": 70,
+     "heat": 26,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "researcher",
+     "author_role": "NVIDIA Robotics研究者"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "bc62653233",
    "verdict": "excluded",
    "title": "Stupidest timeline always the real timeline",
@@ -6070,7 +6602,7 @@
    "summary": null,
    "score": 51,
    "credibility": 73,
-   "heat": 18,
+   "heat": 17,
    "first_seen": "2026-11-24T00:04:33.000Z",
    "latest": "2026-11-24T00:04:33.000Z",
    "authors": [
@@ -6105,7 +6637,7 @@
       "retweet_count": 2
      },
      "cred": 73,
-     "heat": 18,
+     "heat": 17,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -6142,13 +6674,85 @@
    "usable": false
   },
   {
+   "id": "269119dcfa",
+   "verdict": "excluded",
+   "title": "really hurtful to be a new media founder when old media is dying this quickly.",
+   "summary": null,
+   "score": 51,
+   "credibility": 70,
+   "heat": 23,
+   "first_seen": "2026-11-25T17:09:45.000Z",
+   "latest": "2026-11-25T17:09:45.000Z",
+   "authors": [
+    {
+     "username": "swyx",
+     "name": "swyx 🔜 aie.codes",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "AI Engineer Summit主催・開発者",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2125638081848250634",
+     "url": "https://x.com/swyx/status/2125638081848250634",
+     "username": "swyx",
+     "name": "swyx 🔜 aie.codes",
+     "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
+     "text": "really hurtful to be a new media founder when old media is dying this quickly.\n\nlike; its not a \"haha they suck this is a skill issue\" thing, it's a \"we need to figure out what they couldn't with 31 years of experience\" https://t.co/ampl4QdDGU https://t.co/Gi9jyxD3Pi",
+     "lang": "en",
+     "text_ja": null,
+     "created_at": "2026-11-25T17:09:45.000Z",
+     "metrics": {
+      "bookmark_count": 1,
+      "impression_count": 4374,
+      "like_count": 25,
+      "quote_count": 0,
+      "reply_count": 20,
+      "retweet_count": 1
+     },
+     "cred": 70,
+     "heat": 23,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "practitioner",
+     "author_role": "AI Engineer Summit主催・開発者"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
    "id": "9a51e88d14",
    "verdict": "excluded",
    "title": "incredible founder journey breakdown from founding to acquisition complete with …",
    "summary": null,
    "score": 50,
    "credibility": 70,
-   "heat": 20,
+   "heat": 19,
    "first_seen": "2026-11-23T05:04:17.000Z",
    "latest": "2026-11-23T05:04:17.000Z",
    "authors": [
@@ -6183,7 +6787,7 @@
       "retweet_count": 5
      },
      "cred": 70,
-     "heat": 20,
+     "heat": 19,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -6357,84 +6961,6 @@
    "reasons_pos": [
     "信頼リストの研究者・記者",
     "組織認証アカウント"
-   ],
-   "reasons_neg": [
-    "AIと関係のない投稿"
-   ],
-   "llm_note": null,
-   "points": [],
-   "terms": [],
-   "evidence": null,
-   "evidence_label": null,
-   "evidence_note": null,
-   "services": [],
-   "events": [],
-   "value": null,
-   "first_step": null,
-   "usable": false
-  },
-  {
-   "id": "052743f8d3",
-   "verdict": "excluded",
-   "title": "Happy to be a part of this open intelligence mini-doc by Modal. Very happy to ge…",
-   "summary": null,
-   "score": 47,
-   "credibility": 73,
-   "heat": 7,
-   "first_seen": "2026-11-23T19:44:45.000Z",
-   "latest": "2026-11-23T19:44:45.000Z",
-   "authors": [
-    {
-     "username": "natolambert",
-     "name": "Nathan Lambert",
-     "tier": 2,
-     "type": "researcher",
-     "type_label": "研究者",
-     "role": "Trillium Labs創設者・オープンモデル",
-     "former": "元Ai2 Olmo共同リード"
-    }
-   ],
-   "post_count": 1,
-   "posts": [
-    {
-     "id": "2124952313148186931",
-     "url": "https://x.com/natolambert/status/2124952313148186931",
-     "username": "natolambert",
-     "name": "Nathan Lambert",
-     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
-     "text": "Happy to be a part of this open intelligence mini-doc by Modal. Very happy to get work on this mission with great friends in the space. https://t.co/BtR6WF889t",
-     "lang": "en",
-     "text_ja": null,
-     "created_at": "2026-11-23T19:44:45.000Z",
-     "metrics": {
-      "bookmark_count": 6,
-      "impression_count": 2494,
-      "like_count": 26,
-      "quote_count": 0,
-      "reply_count": 2,
-      "retweet_count": 3
-     },
-     "cred": 73,
-     "heat": 7,
-     "pos": [
-      "信頼リストの研究者・記者"
-     ],
-     "neg": [
-      "AIと関係のない投稿"
-     ],
-     "author_type": "researcher",
-     "author_role": "Trillium Labs創設者・オープンモデル"
-    }
-   ],
-   "links": [
-    {
-     "url": "https://www.youtube.com/watch?v=2Q31Q4Ougzs",
-     "domain": "youtube.com",
-     "primary": false
-    }
-   ],
-   "reasons_pos": [
-    "信頼リストの研究者・記者"
    ],
    "reasons_neg": [
     "AIと関係のない投稿"
@@ -6676,59 +7202,65 @@
    "usable": false
   },
   {
-   "id": "0b226d6d08",
+   "id": "052743f8d3",
    "verdict": "excluded",
-   "title": "これはやばい",
+   "title": "Happy to be a part of this open intelligence mini-doc by Modal. Very happy to ge…",
    "summary": null,
    "score": 46,
-   "credibility": 70,
-   "heat": 9,
-   "first_seen": "2026-11-23T01:18:21.000Z",
-   "latest": "2026-11-23T01:18:21.000Z",
+   "credibility": 73,
+   "heat": 6,
+   "first_seen": "2026-11-23T19:44:45.000Z",
+   "latest": "2026-11-23T19:44:45.000Z",
    "authors": [
     {
-     "username": "shi3z",
-     "name": "shi3z",
+     "username": "natolambert",
+     "name": "Nathan Lambert",
      "tier": 2,
-     "type": "practitioner",
-     "type_label": "実務家",
-     "role": "ギリア株式会社ファウンダー・顧問",
-     "former": ""
+     "type": "researcher",
+     "type_label": "研究者",
+     "role": "Trillium Labs創設者・オープンモデル",
+     "former": "元Ai2 Olmo共同リード"
     }
    ],
    "post_count": 1,
    "posts": [
     {
-     "id": "2124673875439153464",
-     "url": "https://x.com/shi3z/status/2124673875439153464",
-     "username": "shi3z",
-     "name": "shi3z",
-     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "これはやばい https://t.co/YhrchpYzBv",
-     "lang": "ja",
+     "id": "2124952313148186931",
+     "url": "https://x.com/natolambert/status/2124952313148186931",
+     "username": "natolambert",
+     "name": "Nathan Lambert",
+     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
+     "text": "Happy to be a part of this open intelligence mini-doc by Modal. Very happy to get work on this mission with great friends in the space. https://t.co/BtR6WF889t",
+     "lang": "en",
      "text_ja": null,
-     "created_at": "2026-11-23T01:18:21.000Z",
+     "created_at": "2026-11-23T19:44:45.000Z",
      "metrics": {
-      "bookmark_count": 24,
-      "impression_count": 13972,
-      "like_count": 45,
+      "bookmark_count": 6,
+      "impression_count": 2494,
+      "like_count": 26,
       "quote_count": 0,
-      "reply_count": 0,
-      "retweet_count": 6
+      "reply_count": 2,
+      "retweet_count": 3
      },
-     "cred": 70,
-     "heat": 9,
+     "cred": 73,
+     "heat": 6,
      "pos": [
       "信頼リストの研究者・記者"
      ],
      "neg": [
       "AIと関係のない投稿"
      ],
-     "author_type": "practitioner",
-     "author_role": "ギリア株式会社ファウンダー・顧問"
+     "author_type": "researcher",
+     "author_role": "Trillium Labs創設者・オープンモデル"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "url": "https://www.youtube.com/watch?v=2Q31Q4Ougzs",
+     "domain": "youtube.com",
+     "primary": false
+    }
+   ],
    "reasons_pos": [
     "信頼リストの研究者・記者"
    ],
@@ -6820,15 +7352,15 @@
    "usable": false
   },
   {
-   "id": "12c162df07",
+   "id": "0b226d6d08",
    "verdict": "excluded",
-   "title": "わいのinkling2-mini x2によるハーネスが互いを監視しながらこれまでSonnetにしか出来なかったタスクを爆速で実行しておる。A6000×1を使用",
+   "title": "これはやばい",
    "summary": null,
    "score": 45,
    "credibility": 70,
-   "heat": 7,
-   "first_seen": "2026-11-23T02:20:12.000Z",
-   "latest": "2026-11-23T02:20:12.000Z",
+   "heat": 8,
+   "first_seen": "2026-11-23T01:18:21.000Z",
+   "latest": "2026-11-23T01:18:21.000Z",
    "authors": [
     {
      "username": "shi3z",
@@ -6843,25 +7375,25 @@
    "post_count": 1,
    "posts": [
     {
-     "id": "2124689442275459328",
-     "url": "https://x.com/shi3z/status/2124689442275459328",
+     "id": "2124673875439153464",
+     "url": "https://x.com/shi3z/status/2124673875439153464",
      "username": "shi3z",
      "name": "shi3z",
      "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
-     "text": "わいのinkling2-mini x2によるハーネスが互いを監視しながらこれまでSonnetにしか出来なかったタスクを爆速で実行しておる。A6000×1を使用 https://t.co/z9Uy2EYnP4",
+     "text": "これはやばい https://t.co/YhrchpYzBv",
      "lang": "ja",
      "text_ja": null,
-     "created_at": "2026-11-23T02:20:12.000Z",
+     "created_at": "2026-11-23T01:18:21.000Z",
      "metrics": {
-      "bookmark_count": 15,
-      "impression_count": 2965,
-      "like_count": 32,
-      "quote_count": 1,
+      "bookmark_count": 24,
+      "impression_count": 13972,
+      "like_count": 45,
+      "quote_count": 0,
       "reply_count": 0,
-      "retweet_count": 2
+      "retweet_count": 6
      },
      "cred": 70,
-     "heat": 7,
+     "heat": 8,
      "pos": [
       "信頼リストの研究者・記者"
      ],
@@ -6934,6 +7466,78 @@
      },
      "cred": 70,
      "heat": 4,
+     "pos": [
+      "信頼リストの研究者・記者"
+     ],
+     "neg": [
+      "AIと関係のない投稿"
+     ],
+     "author_type": "practitioner",
+     "author_role": "ギリア株式会社ファウンダー・顧問"
+    }
+   ],
+   "links": [],
+   "reasons_pos": [
+    "信頼リストの研究者・記者"
+   ],
+   "reasons_neg": [
+    "AIと関係のない投稿"
+   ],
+   "llm_note": null,
+   "points": [],
+   "terms": [],
+   "evidence": null,
+   "evidence_label": null,
+   "evidence_note": null,
+   "services": [],
+   "events": [],
+   "value": null,
+   "first_step": null,
+   "usable": false
+  },
+  {
+   "id": "12c162df07",
+   "verdict": "excluded",
+   "title": "わいのinkling2-mini x2によるハーネスが互いを監視しながらこれまでSonnetにしか出来なかったタスクを爆速で実行しておる。A6000×1を使用",
+   "summary": null,
+   "score": 44,
+   "credibility": 70,
+   "heat": 6,
+   "first_seen": "2026-11-23T02:20:12.000Z",
+   "latest": "2026-11-23T02:20:12.000Z",
+   "authors": [
+    {
+     "username": "shi3z",
+     "name": "shi3z",
+     "tier": 2,
+     "type": "practitioner",
+     "type_label": "実務家",
+     "role": "ギリア株式会社ファウンダー・顧問",
+     "former": ""
+    }
+   ],
+   "post_count": 1,
+   "posts": [
+    {
+     "id": "2124689442275459328",
+     "url": "https://x.com/shi3z/status/2124689442275459328",
+     "username": "shi3z",
+     "name": "shi3z",
+     "avatar": "https://pbs.twimg.com/profile_images/1561804523773243392/dvAlvW-t_normal.jpg",
+     "text": "わいのinkling2-mini x2によるハーネスが互いを監視しながらこれまでSonnetにしか出来なかったタスクを爆速で実行しておる。A6000×1を使用 https://t.co/z9Uy2EYnP4",
+     "lang": "ja",
+     "text_ja": null,
+     "created_at": "2026-11-23T02:20:12.000Z",
+     "metrics": {
+      "bookmark_count": 15,
+      "impression_count": 2965,
+      "like_count": 32,
+      "quote_count": 1,
+      "reply_count": 0,
+      "retweet_count": 2
+     },
+     "cred": 70,
+     "heat": 6,
      "pos": [
       "信頼リストの研究者・記者"
      ],
